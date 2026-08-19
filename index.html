@@ -1,1146 +1,2794 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>NLpokopia | De Nederlandse Pokémon Pokopia Gids</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    :root {
-      /* VASTE NLPOKOPIA / MASTER BALL KLEUREN */
-      --master-purple: #6f2dbd;
-      --master-dark: #38105f;
-      --master-light: #eee4fa;
-      --master-pink: #e94192;
-      --white: #ffffff;
-      --text: #201827;
-      --soft: #f8f5fb;
-
-      /* POKÉMON TYPEKLEUR - verandert per Pokémon */
-      --pokemon-main: #3d963f;
-      --pokemon-light: #edf8eb;
-      --pokemon-dark: #17651e;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 10% 10%, rgba(233,65,146,0.08), transparent 25%),
-        radial-gradient(circle at 90% 20%, rgba(111,45,189,0.10), transparent 30%),
-        #f8f5fb;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* =========================
-       HEADER
-    ========================== */
-
-    header {
-      background:
-        linear-gradient(135deg, var(--master-dark), var(--master-purple));
-      color: white;
-      padding: 18px 24px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.20);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .header-inner {
-      max-width: 1400px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 25px;
-    }
-
-    .logo {
-      font-size: 34px;
-      font-weight: 900;
-      letter-spacing: -2px;
-    }
-
-    .logo span:first-child {
-      color: white;
-    }
-
-    .logo span:last-child {
-      color: #ff6cb3;
-    }
-
-    .tagline {
-      font-size: 13px;
-      opacity: 0.9;
-      margin-top: 3px;
-      letter-spacing: 0;
-    }
-
-    nav {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      padding: 10px 15px;
-      border-radius: 12px;
-      font-weight: bold;
-      transition: 0.2s;
-    }
-
-    nav a:hover {
-      background: rgba(255,255,255,0.15);
-    }
-
-    /* =========================
-       PAGINA
-    ========================== */
-
-    .page {
-      max-width: 1400px;
-      margin: 25px auto;
-      padding: 0 18px;
-      display: grid;
-      grid-template-columns: 250px 1fr;
-      gap: 22px;
-    }
-
-    /* =========================
-       SIDEBAR
-    ========================== */
-
-    .sidebar {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .side-card {
-      background: white;
-      border-radius: 18px;
-      padding: 18px;
-      box-shadow: 0 5px 18px rgba(54,16,95,0.10);
-      border: 1px solid #e7dff0;
-    }
-
-    .side-card h3 {
-      color: var(--master-purple);
-      margin-bottom: 14px;
-    }
-
-    .searchbox {
-      display: flex;
-      border: 2px solid var(--master-purple);
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
-    .searchbox input {
-      border: none;
-      flex: 1;
-      min-width: 0;
-      padding: 12px;
-      outline: none;
-    }
-
-    .searchbox button {
-      border: none;
-      background: var(--master-purple);
-      color: white;
-      padding: 10px 13px;
-      cursor: pointer;
-      font-size: 17px;
-    }
-
-    .side-menu {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .side-menu a {
-      padding: 12px;
-      border-radius: 10px;
-      font-weight: bold;
-    }
-
-    .side-menu a:hover {
-      background: var(--master-light);
-      color: var(--master-purple);
-    }
-
-    .progress {
-      height: 10px;
-      background: #eee8f4;
-      border-radius: 999px;
-      overflow: hidden;
-      margin: 14px 0;
-    }
-
-    .progress-bar {
-      width: 0.33%;
-      height: 100%;
-      background: linear-gradient(90deg, var(--master-purple), var(--master-pink));
-    }
-
-    /* =========================
-       MAIN CONTENT
-    ========================== */
-
-    main {
-      min-width: 0;
-    }
-
-    /* =========================
-       POKEMON HERO
-    ========================== */
-
-    .pokemon-hero {
-      position: relative;
-      overflow: hidden;
-      background: var(--pokemon-light);
-      border: 2px solid color-mix(in srgb, var(--pokemon-main), white 55%);
-      border-radius: 22px;
-      padding: 24px;
-      min-height: 340px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.10);
-    }
-
-    /* LICHTE ONGECOLORDE POKÉMON ACHTERGROND */
-    .pokemon-pattern {
-      position: absolute;
-      inset: 0;
-      opacity: 0.055;
-      pointer-events: none;
-      overflow: hidden;
-    }
-
-    .pokemon-pattern span {
-      position: absolute;
-      font-size: 75px;
-      filter: grayscale(1);
-    }
-
-    .pokemon-pattern span:nth-child(1) {
-      left: 5%;
-      top: 20%;
-      transform: rotate(-12deg);
-    }
-
-    .pokemon-pattern span:nth-child(2) {
-      right: 7%;
-      top: 8%;
-      transform: rotate(15deg);
-    }
-
-    .pokemon-pattern span:nth-child(3) {
-      left: 45%;
-      bottom: 3%;
-      transform: rotate(8deg);
-    }
-
-    .pokemon-content {
-      position: relative;
-      z-index: 2;
-      display: grid;
-      grid-template-columns: 1fr 380px;
-      gap: 25px;
-      align-items: center;
-    }
-
-    .pokemon-number {
-      display: inline-block;
-      background: var(--pokemon-main);
-      color: white;
-      font-size: 27px;
-      font-weight: 900;
-      padding: 9px 16px;
-      border-radius: 12px;
-      margin-bottom: 10px;
-    }
-
-    .pokemon-name {
-      font-size: clamp(40px, 7vw, 70px);
-      font-weight: 900;
-      line-height: 0.95;
-      margin-bottom: 14px;
-    }
-
-    .types {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 18px;
-    }
-
-    .type {
-      color: white;
-      padding: 7px 13px;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    .grass {
-      background: #4a9d49;
-    }
-
-    .poison {
-      background: #9854af;
-    }
-
-    .quick-info {
-      width: 100%;
-      max-width: 500px;
-      border-collapse: collapse;
-      background: rgba(255,255,255,0.83);
-      border-radius: 15px;
-      overflow: hidden;
-    }
-
-    .quick-info td {
-      padding: 10px 12px;
-      border-bottom: 1px solid #e7e2e9;
-    }
-
-    .quick-info td:first-child {
-      font-weight: bold;
-      width: 130px;
-    }
-
-    .pokemon-image {
-      min-height: 280px;
-      border-radius: 20px;
-      background:
-        radial-gradient(circle at center, #ffffff 0%, rgba(255,255,255,0.65) 45%, transparent 75%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 170px;
-    }
-
-    /* =========================
-       CONTENT BLOKKEN
-    ========================== */
-
-    .grid-two {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr;
-      gap: 18px;
-      margin-top: 20px;
-    }
-
-    .content-card {
-      background: white;
-      border-radius: 18px;
-      padding: 22px;
-      box-shadow: 0 5px 18px rgba(54,16,95,0.08);
-      border: 1px solid #e8e0ef;
-    }
-
-    .pokemon-card {
-      background: var(--pokemon-light);
-      border-color: color-mix(in srgb, var(--pokemon-main), white 60%);
-    }
-
-    .content-card h2,
-    .content-card h3 {
-      margin-bottom: 12px;
-    }
-
-    .pokemon-title {
-      color: var(--pokemon-dark);
-    }
-
-    /* =========================
-       STAPPEN
-    ========================== */
-
-    .steps {
-      margin-top: 20px;
-      background: white;
-      border-radius: 20px;
-      padding: 22px;
-      box-shadow: 0 5px 18px rgba(54,16,95,0.08);
-    }
-
-    .steps h2 {
-      margin-bottom: 20px;
-    }
-
-    .step-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 12px;
-    }
-
-    .step {
-      padding: 12px;
-      background: var(--pokemon-light);
-      border-radius: 14px;
-      border: 1px solid color-mix(in srgb, var(--pokemon-main), white 65%);
-    }
-
-    .step-number {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background: var(--pokemon-main);
-      color: white;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 10px;
-    }
-
-    .step-image {
-      height: 130px;
-      border-radius: 12px;
-      background:
-        linear-gradient(135deg, #9ed179, #5a9e50);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 55px;
-      margin: 10px 0;
-    }
-
-    .step h4 {
-      color: var(--pokemon-dark);
-      min-height: 40px;
-    }
-
-    .step p {
-      line-height: 1.5;
-      font-size: 14px;
-    }
-
-    /* =========================
-       VIDEO
-    ========================== */
-
-    .video-card {
-      margin-top: 20px;
-      background: var(--pokemon-light);
-      border: 1px solid color-mix(in srgb, var(--pokemon-main), white 60%);
-      padding: 22px;
-      border-radius: 20px;
-    }
-
-    .video-layout {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 18px;
-      align-items: center;
-    }
-
-    .video-placeholder {
-      min-height: 260px;
-      border-radius: 17px;
-      background:
-        linear-gradient(135deg, #17331b, #4c9a45);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .play-button {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      background: white;
-      color: #ff0033;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      margin-top: 15px;
-    }
-
-    .youtube-button {
-      display: inline-block;
-      margin-top: 14px;
-      background: #ff0033;
-      color: white;
-      padding: 11px 17px;
-      border-radius: 10px;
-      font-weight: bold;
-    }
-
-    /* =========================
-       TIP
-    ========================== */
-
-    .personal-tip {
-      background: #fff8db;
-      border: 1px solid #f2d568;
-    }
-
-    .tip-person {
-      display: grid;
-      grid-template-columns: 75px 1fr;
-      gap: 12px;
-      align-items: center;
-    }
-
-    .boy {
-      width: 75px;
-      height: 75px;
-      border-radius: 50%;
-      background: #ffd34f;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 47px;
-    }
-
-    /* =========================
-       CHECKLIST
-    ========================== */
-
-    .checklist {
-      margin-top: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .check {
-      background: white;
-      border-radius: 12px;
-      padding: 11px 14px;
-      border: 1px solid #e8dfef;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-    }
-
-    /* =========================
-       FOOTER
-    ========================== */
-
-    footer {
-      margin-top: 30px;
-      background: var(--master-dark);
-      color: white;
-      padding: 28px 20px;
-      text-align: center;
-    }
-
-    footer strong {
-      color: #ff70b8;
-    }
-
-    /* =========================
-       MOBIEL
-    ========================== */
-
-    @media (max-width: 1000px) {
-      .page {
-        grid-template-columns: 1fr;
-      }
-
-      .sidebar {
-        display: none;
-      }
-
-      .pokemon-content {
-        grid-template-columns: 1fr;
-      }
-
-      .pokemon-image {
-        min-height: 220px;
-      }
-
-      .step-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .video-layout,
-      .grid-two {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 650px) {
-      header {
-        position: static;
-      }
-
-      .header-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav {
-        width: 100%;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-      }
-
-      nav a {
-        white-space: nowrap;
-      }
-
-      .page {
-        padding: 0 10px;
-      }
-
-      .pokemon-hero {
-        padding: 16px;
-      }
-
-      .pokemon-name {
-        font-size: 43px;
-      }
-
-      .pokemon-image {
-        font-size: 125px;
-      }
-
-      .step-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NLpokopia | Nederlandse Pokémon Pokopia Gids</title>
+
+<style>
+
+/* =========================================================
+   NLPOKOPIA - MASTER BALL THEMA
+   ========================================================= */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+:root{
+
+    /* vaste websitekleuren */
+    --master:#6f35a5;
+    --master-dark:#3b165c;
+    --master-light:#eee5f6;
+    --pink:#e74791;
+    --pink-light:#ffd6e8;
+
+    --white:#ffffff;
+    --background:#f7f5fa;
+    --text:#23182b;
+    --grey:#726b78;
+
+    /* standaard Pokémonkleur */
+    --poke-main:#5d9f55;
+    --poke-light:#edf7ea;
+    --poke-dark:#32672e;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:
+        radial-gradient(circle at 5% 10%,rgba(231,71,145,.07),transparent 22%),
+        radial-gradient(circle at 95% 5%,rgba(111,53,165,.10),transparent 25%),
+        var(--background);
+    color:var(--text);
+}
+
+button,
+input,
+select{
+    font:inherit;
+}
+
+button{
+    cursor:pointer;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header{
+    background:
+        linear-gradient(135deg,var(--master-dark),var(--master));
+    color:white;
+    box-shadow:0 5px 18px rgba(0,0,0,.18);
+}
+
+.header-inner{
+    max-width:1450px;
+    margin:auto;
+    padding:17px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.master-icon{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:
+        linear-gradient(
+            to bottom,
+            #7c3fb0 0 44%,
+            #242424 44% 55%,
+            white 55%
+        );
+    border:3px solid #261333;
+    position:relative;
+    box-shadow:0 3px 8px rgba(0,0,0,.25);
+}
+
+.master-icon::after{
+    content:"M";
+    position:absolute;
+    left:50%;
+    top:7px;
+    transform:translateX(-50%);
+    color:white;
+    font-size:17px;
+    font-weight:900;
+}
+
+.master-icon::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-38%);
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:white;
+    border:3px solid #222;
+    z-index:2;
+}
+
+.brand{
+    font-size:31px;
+    font-weight:900;
+    line-height:1;
+}
+
+.brand span{
+    color:#ff6db1;
+}
+
+.tagline{
+    margin-top:4px;
+    opacity:.9;
+    font-size:12px;
+}
+
+nav{
+    display:flex;
+    gap:7px;
+    flex-wrap:wrap;
+}
+
+nav button{
+    border:0;
+    background:transparent;
+    color:white;
+    padding:10px 13px;
+    border-radius:10px;
+    font-weight:700;
+}
+
+nav button:hover{
+    background:rgba(255,255,255,.14);
+}
+
+
+/* =========================================================
+   LAYOUT
+   ========================================================= */
+
+.container{
+    max-width:1450px;
+    margin:24px auto;
+    padding:0 16px;
+}
+
+.view{
+    display:none;
+}
+
+.view.active{
+    display:block;
+}
+
+
+/* =========================================================
+   HOMEPAGE
+   ========================================================= */
+
+.home-hero{
+    background:white;
+    min-height:310px;
+    border-radius:24px;
+    box-shadow:0 7px 24px rgba(60,20,90,.10);
+    padding:35px;
+    position:relative;
+    overflow:hidden;
+}
+
+.home-hero::before{
+    content:"M";
+    position:absolute;
+    right:-10px;
+    top:-50px;
+    font-size:330px;
+    font-weight:900;
+    color:rgba(111,53,165,.045);
+}
+
+.home-hero h1{
+    font-size:clamp(40px,7vw,74px);
+    color:var(--master-dark);
+    position:relative;
+}
+
+.home-hero h1 span{
+    color:var(--pink);
+}
+
+.home-hero p{
+    max-width:720px;
+    font-size:19px;
+    line-height:1.6;
+    margin:16px 0 25px;
+    position:relative;
+}
+
+.big-search{
+    display:flex;
+    max-width:720px;
+    border:3px solid var(--master);
+    border-radius:15px;
+    overflow:hidden;
+    background:white;
+    position:relative;
+}
+
+.big-search input{
+    flex:1;
+    min-width:0;
+    padding:16px;
+    border:0;
+    outline:0;
+    font-size:17px;
+}
+
+.big-search button{
+    border:0;
+    background:var(--master);
+    color:white;
+    padding:0 24px;
+    font-weight:800;
+}
+
+.home-buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-top:22px;
+}
+
+.home-button{
+    border:0;
+    border-radius:17px;
+    background:white;
+    padding:22px 12px;
+    box-shadow:0 5px 16px rgba(60,20,90,.09);
+    font-size:16px;
+    font-weight:800;
+}
+
+.home-button:hover{
+    outline:2px solid var(--master-light);
+    transform:translateY(-1px);
+}
+
+
+/* =========================================================
+   POKEDEX
+   ========================================================= */
+
+.dex-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:18px;
+    margin-bottom:18px;
+}
+
+.dex-top h1{
+    color:var(--master-dark);
+    font-size:38px;
+}
+
+.dex-top p{
+    color:var(--grey);
+    margin-top:4px;
+}
+
+.counter{
+    background:var(--master-light);
+    color:var(--master-dark);
+    padding:12px 17px;
+    border-radius:13px;
+    font-weight:900;
+}
+
+.filters{
+    background:white;
+    padding:15px;
+    border-radius:18px;
+    box-shadow:0 4px 14px rgba(60,20,90,.08);
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.filters input,
+.filters select{
+    border:1px solid #ddd3e6;
+    border-radius:10px;
+    padding:11px;
+    outline:none;
+}
+
+.filters input{
+    flex:1;
+    min-width:200px;
+}
+
+.filters button{
+    border:0;
+    background:var(--master);
+    color:white;
+    padding:11px 16px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.dex-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:14px;
+}
+
+.dex-card{
+    position:relative;
+    overflow:hidden;
+    background:white;
+    min-height:190px;
+    border-radius:17px;
+    border:1px solid #ece5f0;
+    box-shadow:0 4px 13px rgba(50,20,70,.07);
+    padding:16px;
+    cursor:pointer;
+    transition:.15s;
+}
+
+.dex-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(50,20,70,.14);
+}
+
+.dex-number{
+    display:inline-block;
+    padding:5px 9px;
+    border-radius:8px;
+    color:white;
+    background:var(--poke-main);
+    font-weight:900;
+    font-size:13px;
+}
+
+.dex-card h3{
+    margin-top:12px;
+    font-size:19px;
+}
+
+.dex-picture{
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:48px;
+    opacity:.8;
+}
+
+.dlc-label{
+    position:absolute;
+    right:8px;
+    top:8px;
+    background:#e74791;
+    color:white;
+    font-size:11px;
+    font-weight:900;
+    border-radius:7px;
+    padding:5px 7px;
+}
+
+.base-label{
+    font-size:11px;
+    color:var(--grey);
+    margin-top:9px;
+}
+
+
+/* =========================================================
+   POKEMON DETAILPAGINA
+   ========================================================= */
+
+.back-button{
+    border:0;
+    background:white;
+    padding:10px 14px;
+    border-radius:10px;
+    font-weight:800;
+    margin-bottom:13px;
+    box-shadow:0 3px 10px rgba(0,0,0,.07);
+}
+
+.pokemon-hero{
+    border-radius:24px;
+    background:var(--poke-light);
+    border:2px solid color-mix(in srgb,var(--poke-main),white 65%);
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 7px 24px rgba(0,0,0,.09);
+}
+
+.pokemon-silhouettes{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.silhouette{
+    position:absolute;
+    width:150px;
+    height:150px;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    filter:grayscale(1);
+    opacity:.055;
+}
+
+.silhouette.one{
+    left:3%;
+    top:7%;
+    transform:rotate(-15deg);
+}
+
+.silhouette.two{
+    right:5%;
+    bottom:5%;
+    transform:rotate(13deg);
+}
+
+.silhouette.three{
+    left:45%;
+    bottom:-35px;
+    transform:rotate(-5deg);
+}
+
+.pokemon-hero-inner{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:1.25fr .75fr;
+    padding:28px;
+    gap:30px;
+    align-items:center;
+}
+
+.number{
+    background:var(--poke-main);
+    color:white;
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:10px;
+    font-size:22px;
+    font-weight:900;
+}
+
+.pokemon-name{
+    font-size:clamp(40px,7vw,72px);
+    font-weight:900;
+    line-height:1;
+    margin:10px 0 13px;
+}
+
+.type-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+    margin-bottom:17px;
+}
+
+.type-badge{
+    color:white;
+    padding:7px 11px;
+    border-radius:8px;
+    font-weight:900;
+    font-size:13px;
+}
+
+.info-table{
+    background:rgba(255,255,255,.85);
+    border-radius:14px;
+    overflow:hidden;
+    max-width:610px;
+}
+
+.info-row{
+    display:grid;
+    grid-template-columns:150px 1fr;
+    border-bottom:1px solid rgba(0,0,0,.06);
+}
+
+.info-row:last-child{
+    border-bottom:0;
+}
+
+.info-row strong,
+.info-row span{
+    padding:10px 12px;
+}
+
+.pokemon-art{
+    min-height:290px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.pokemon-art img{
+    max-width:100%;
+    max-height:300px;
+    object-fit:contain;
+}
+
+.fallback-pokemon{
+    width:190px;
+    height:190px;
+    border-radius:50%;
+    border:9px solid color-mix(in srgb,var(--poke-main),white 30%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:70px;
+    color:var(--poke-main);
+    background:rgba(255,255,255,.65);
+}
+
+
+/* DLC WAARSCHUWING */
+
+.dlc-warning{
+    display:none;
+    margin-top:16px;
+    padding:17px 20px;
+    border-radius:15px;
+    background:#ffe4f0;
+    border:2px solid var(--pink);
+}
+
+.dlc-warning.visible{
+    display:block;
+}
+
+.dlc-warning h3{
+    color:#9a1857;
+    margin-bottom:6px;
+}
+
+
+/* BLOKKEN */
+
+.content-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+    margin-top:17px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 5px 17px rgba(50,20,70,.08);
+    line-height:1.55;
+}
+
+.pokemon-card{
+    background:var(--poke-light);
+    border:1px solid color-mix(in srgb,var(--poke-main),white 67%);
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.pokemon-heading{
+    color:var(--poke-dark);
+}
+
+
+/* STAPPEN */
+
+.steps-section{
+    background:white;
+    border-radius:20px;
+    padding:21px;
+    margin-top:17px;
+    box-shadow:0 5px 17px rgba(50,20,70,.08);
+}
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:11px;
+    margin-top:17px;
+}
+
+.step{
+    border-radius:14px;
+    padding:12px;
+    background:var(--poke-light);
+    border:1px solid color-mix(in srgb,var(--poke-main),white 65%);
+}
+
+.step-number{
+    width:33px;
+    height:33px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:var(--poke-main);
+    color:white;
+    font-weight:900;
+    margin-bottom:8px;
+}
+
+.step-image{
+    height:120px;
+    border-radius:11px;
+    background:rgba(255,255,255,.65);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:9px 0;
+    overflow:hidden;
+    font-size:44px;
+}
+
+.step-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+/* VIDEO */
+
+.video-section{
+    background:var(--poke-light);
+    border:1px solid color-mix(in srgb,var(--poke-main),white 65%);
+    border-radius:20px;
+    padding:20px;
+    margin-top:17px;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:1.3fr .7fr;
+    gap:18px;
+    margin-top:14px;
+}
+
+.video-wrapper{
+    aspect-ratio:16/9;
+    background:#222;
+    border-radius:14px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.video-wrapper iframe{
+    width:100%;
+    height:100%;
+    border:0;
+}
+
+.video-link{
+    display:inline-block;
+    background:#f00035;
+    color:white;
+    margin-top:13px;
+    padding:10px 14px;
+    border-radius:9px;
+    font-weight:900;
+}
+
+
+/* PERSOONLIJKE TIP */
+
+.personal-tip{
+    margin-top:17px;
+    background:#fff5cc;
+    border:1px solid #ead170;
+    border-radius:18px;
+    padding:18px;
+}
+
+.tip-inner{
+    display:grid;
+    grid-template-columns:75px 1fr;
+    align-items:center;
+    gap:14px;
+}
+
+.blond-person{
+    width:72px;
+    height:72px;
+    border-radius:50%;
+    background:#ffd65c;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:46px;
+}
+
+
+/* CHECKLIST */
+
+.checklist{
+    margin-top:17px;
+}
+
+.check-items{
+    display:flex;
+    flex-wrap:wrap;
+    gap:9px;
+    margin-top:12px;
+}
+
+.check-item{
+    background:white;
+    border:1px solid #e6dde9;
+    padding:10px 12px;
+    border-radius:10px;
+}
+
+.check-item input{
+    margin-right:6px;
+}
+
+
+/* NEXT PREV */
+
+.navigation{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    margin-top:20px;
+}
+
+.navigation button{
+    flex:1;
+    border:0;
+    padding:14px;
+    border-radius:12px;
+    background:var(--master);
+    color:white;
+    font-weight:900;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+    margin-top:35px;
+    background:var(--master-dark);
+    color:white;
+    text-align:center;
+    padding:28px 17px;
+    line-height:1.6;
+}
+
+footer strong{
+    color:#ff70b8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media(max-width:1100px){
+
+    .dex-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .steps{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:800px){
+
+    .header-inner{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    nav{
+        overflow-x:auto;
+        flex-wrap:nowrap;
+        width:100%;
+    }
+
+    nav button{
+        white-space:nowrap;
+    }
+
+    .home-buttons{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .dex-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .pokemon-hero-inner{
+        grid-template-columns:1fr;
+    }
+
+    .content-grid,
+    .video-grid{
+        grid-template-columns:1fr;
+    }
+
+    .steps{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:500px){
+
+    .container{
+        padding:0 9px;
+    }
+
+    .home-hero{
+        padding:23px 17px;
+    }
+
+    .home-buttons{
+        grid-template-columns:1fr;
+    }
+
+    .dex-grid{
+        grid-template-columns:1fr 1fr;
+        gap:8px;
+    }
+
+    .dex-card{
+        padding:11px;
+    }
+
+    .pokemon-hero-inner{
+        padding:17px;
+    }
+
+    .pokemon-name{
+        font-size:39px;
+    }
+
+    .info-row{
+        grid-template-columns:115px 1fr;
+        font-size:14px;
+    }
+
+    .steps{
+        grid-template-columns:1fr;
+    }
+
+    .tip-inner{
+        grid-template-columns:60px 1fr;
+    }
+
+    .blond-person{
+        width:58px;
+        height:58px;
+        font-size:37px;
+    }
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-  <div class="header-inner">
 
-    <div>
-      <div class="logo">
-        <span>NL</span><span>POKOPIA</span>
-      </div>
-      <div class="tagline">
-        De Nederlandse gids voor Pokémon Pokopia
-      </div>
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header>
+
+<div class="header-inner">
+
+    <div class="logo">
+
+        <div class="master-icon"></div>
+
+        <div>
+            <div class="brand">
+                NL<span>POKOPIA</span>
+            </div>
+
+            <div class="tagline">
+                De Nederlandse gids voor Pokémon Pokopia
+            </div>
+        </div>
+
     </div>
 
+
     <nav>
-      <a href="#">🏠 Home</a>
-      <a href="#">🔴 Pokémon</a>
-      <a href="#">🌿 Habitats</a>
-      <a href="#">🪵 Materialen</a>
-      <a href="#">📋 Mijn Pokédex</a>
+
+        <button onclick="showHome()">🏠 Home</button>
+
+        <button onclick="showDex('all')">🔴 Pokémon</button>
+
+        <button onclick="showDex('base')">🎮 Basisgame</button>
+
+        <button onclick="showDex('dlc')">🫧 DLC</button>
+
+        <button onclick="alert('Habitats bouwen we hierna!')">
+            🌿 Habitats
+        </button>
+
+        <button onclick="alert('Materialen bouwen we hierna!')">
+            🪵 Materialen
+        </button>
+
     </nav>
 
-  </div>
+</div>
+
 </header>
 
 
-<div class="page">
-
-  <!-- LINKER MENU -->
-  <aside class="sidebar">
-
-    <div class="side-card">
-
-      <h3>🔎 Zoek een Pokémon</h3>
-
-      <div class="searchbox">
-        <input
-          id="pokemonSearch"
-          type="text"
-          placeholder="Pikachu, Lapras..."
-        >
-        <button onclick="zoekPokemon()">🔍</button>
-      </div>
-
-    </div>
+<div class="container">
 
 
-    <div class="side-card side-menu">
+<!-- =========================================================
+     HOMEPAGE
+     ========================================================= -->
 
-      <a href="#">🔴 Alle Pokémon</a>
-      <a href="#">🌿 Habitats</a>
-      <a href="#">🪵 Materialen</a>
-      <a href="#">📋 Mijn Pokédex</a>
-      <a href="#">💡 Tips & Gidsen</a>
-      <a href="#">⚙️ Updates</a>
+<section id="homeView" class="view active">
 
-    </div>
+    <div class="home-hero">
 
-
-    <div class="side-card">
-
-      <h3>Mijn Pokédex</h3>
-
-      <h2>1 / 300</h2>
-
-      <p>0% compleet</p>
-
-      <div class="progress">
-        <div class="progress-bar"></div>
-      </div>
-
-      <strong>Je bent begonnen! 🌱</strong>
-
-    </div>
-
-
-    <div class="side-card personal-tip">
-
-      <h3>⭐ Persoonlijke tip</h3>
-
-      <div class="tip-person">
-
-        <div class="boy">👱‍♂️</div>
+        <h1>
+            NL<span>pokopia</span>
+        </h1>
 
         <p>
-          Bulbasaur is een mooie Pokémon om mee te beginnen.
-          Maak je habitat rustig stap voor stap en controleer
-          daarna goed of alles klopt.
+            Zoek een Pokémon en zie direct waar je hem vindt,
+            wat je ervoor nodig hebt, welke habitat je moet maken,
+            welke voorwaarden gelden en bekijk een video als voorbeeld.
         </p>
 
-      </div>
+        <div class="big-search">
+
+            <input
+                id="homeSearch"
+                placeholder="Zoek bijvoorbeeld Bulbasaur, Charmander of #007"
+            >
+
+            <button onclick="searchFromHome()">
+                🔍 Zoeken
+            </button>
+
+        </div>
 
     </div>
 
-  </aside>
+
+    <div class="home-buttons">
+
+        <button
+            class="home-button"
+            onclick="showDex('all')"
+        >
+            🔴<br><br>
+            Alle 365 Pokémon
+        </button>
 
 
-  <!-- HOOFDINHOUD -->
-  <main>
+        <button
+            class="home-button"
+            onclick="showDex('base')"
+        >
+            🎮<br><br>
+            300 Basisgame
+        </button>
 
 
-    <!-- POKEMON -->
-    <section class="pokemon-hero">
+        <button
+            class="home-button"
+            onclick="showDex('dlc')"
+        >
+            🫧<br><br>
+            65 DLC
+        </button>
 
-      <div class="pokemon-pattern">
-        <span>🌱</span>
-        <span>🌱</span>
-        <span>🌱</span>
-      </div>
 
-      <div class="pokemon-content">
+        <button
+            class="home-button"
+            onclick="showMyPokemon()"
+        >
+            ✅<br><br>
+            Mijn Pokédex
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     POKEDEX
+     ========================================================= -->
+
+<section id="dexView" class="view">
+
+    <div class="dex-top">
 
         <div>
+            <h1 id="dexTitle">
+                Alle Pokémon
+            </h1>
 
-          <div class="pokemon-number">
-            #001
-          </div>
+            <p id="dexDescription">
+                Basisgame en DLC
+            </p>
+        </div>
 
-          <div class="pokemon-name">
-            BULBASAUR
-          </div>
+        <div class="counter" id="dexCounter">
+            365 Pokémon
+        </div>
 
-          <div class="types">
-
-            <span class="type grass">
-              🌿 GRASS
-            </span>
-
-            <span class="type poison">
-              ☠️ POISON
-            </span>
-
-          </div>
+    </div>
 
 
-          <table class="quick-info">
+    <div class="filters">
 
-            <tr>
-              <td>Moeilijkheid</td>
-              <td>🟢 Makkelijk</td>
-            </tr>
+        <input
+            id="dexSearch"
+            placeholder="Zoek naam of nummer..."
+            oninput="renderDex()"
+        >
 
-            <tr>
-              <td>Habitat</td>
-              <td>🌿 Tall Grass</td>
-            </tr>
 
-            <tr>
-              <td>Nodig</td>
-              <td>🌱 4x Tall Grass</td>
-            </tr>
+        <select id="gameFilter" onchange="renderDex()">
 
-            <tr>
-              <td>Tijd</td>
-              <td>🕐 Hele dag</td>
-            </tr>
+            <option value="all">
+                Alles
+            </option>
 
-            <tr>
-              <td>Weer</td>
-              <td>☀️ Alle weersomstandigheden</td>
-            </tr>
+            <option value="base">
+                Basisgame
+            </option>
 
-            <tr>
-              <td>Specialiteit</td>
-              <td>🌱 Grow / Leafage</td>
-            </tr>
+            <option value="dlc">
+                DLC
+            </option>
 
-          </table>
+        </select>
+
+
+        <select id="typeFilter" onchange="renderDex()">
+
+            <option value="all">
+                Alle types
+            </option>
+
+            <option value="grass">Grass</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="electric">Electric</option>
+            <option value="normal">Normal</option>
+            <option value="poison">Poison</option>
+            <option value="bug">Bug</option>
+            <option value="flying">Flying</option>
+            <option value="ground">Ground</option>
+            <option value="rock">Rock</option>
+            <option value="fighting">Fighting</option>
+            <option value="psychic">Psychic</option>
+            <option value="ghost">Ghost</option>
+            <option value="ice">Ice</option>
+            <option value="dragon">Dragon</option>
+            <option value="dark">Dark</option>
+            <option value="steel">Steel</option>
+            <option value="fairy">Fairy</option>
+
+        </select>
+
+    </div>
+
+
+    <div id="dexGrid" class="dex-grid"></div>
+
+</section>
+
+
+
+<!-- =========================================================
+     POKEMON DETAILPAGINA
+     ========================================================= -->
+
+<section id="pokemonView" class="view">
+
+    <button class="back-button" onclick="showDex()">
+        ← Terug naar Pokédex
+    </button>
+
+
+    <section class="pokemon-hero">
+
+
+        <div class="pokemon-silhouettes">
+
+            <div
+                id="silhouette1"
+                class="silhouette one"
+            ></div>
+
+            <div
+                id="silhouette2"
+                class="silhouette two"
+            ></div>
+
+            <div
+                id="silhouette3"
+                class="silhouette three"
+            ></div>
 
         </div>
 
 
-        <div class="pokemon-image">
-          🌱
-        </div>
+        <div class="pokemon-hero-inner">
 
-      </div>
+
+            <div>
+
+                <div
+                    id="pokemonNumber"
+                    class="number"
+                >
+                    #001
+                </div>
+
+
+                <h1
+                    id="pokemonName"
+                    class="pokemon-name"
+                >
+                    Pokémon
+                </h1>
+
+
+                <div
+                    id="pokemonTypes"
+                    class="type-row"
+                ></div>
+
+
+                <div class="info-table">
+
+
+                    <div class="info-row">
+
+                        <strong>Moeilijkheid</strong>
+
+                        <span id="difficulty">
+                            Nog invullen
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <strong>Habitat</strong>
+
+                        <span id="habitat">
+                            Nog invullen
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <strong>Nodig</strong>
+
+                        <span id="requirements">
+                            Nog invullen
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <strong>Tijd</strong>
+
+                        <span id="time">
+                            Nog invullen
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <strong>Weer</strong>
+
+                        <span id="weather">
+                            Nog invullen
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <strong>Specialiteit</strong>
+
+                        <span id="specialty">
+                            Nog invullen
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div id="pokemonArt" class="pokemon-art">
+
+                <div class="fallback-pokemon">
+                    ?
+                </div>
+
+            </div>
+
+
+        </div>
 
     </section>
 
 
-    <div class="grid-two">
 
-      <div class="content-card pokemon-card">
+    <!-- DLC WAARSCHUWING -->
 
-        <h2 class="pokemon-title">
-          Korte uitleg
-        </h2>
+    <div id="dlcWarning" class="dlc-warning">
 
-        <p>
-          Hier komt straks onze korte uitleg over Bulbasaur.
-          Je ziet direct wat je nodig hebt zonder eerst een
-          heel artikel door te hoeven lezen.
-        </p>
-
-      </div>
-
-
-      <div class="content-card pokemon-card">
-
-        <h2 class="pokemon-title">
-          Tweede manier
-        </h2>
+        <h3>
+            🫧 DLC POKÉMON
+        </h3>
 
         <p>
-          Later kunnen we hier alternatieve habitats,
-          speciale voorwaarden of andere manieren
-          om deze Pokémon te krijgen laten zien.
+            Deze Pokémon hoort bij
+            <strong id="dlcName">Bubbly Basin</strong>.
+            Zonder de benodigde DLC heb je geen toegang tot
+            de DLC-content die voor deze Pokémon nodig is.
         </p>
-
-      </div>
 
     </div>
+
+
+
+    <div class="content-grid">
+
+
+        <section class="card pokemon-card">
+
+            <h2 class="pokemon-heading">
+                📖 Over deze Pokémon
+            </h2>
+
+            <p id="description">
+                De uitleg voor deze Pokémon wordt hier ingevuld.
+            </p>
+
+        </section>
+
+
+        <section class="card pokemon-card">
+
+            <h2 class="pokemon-heading">
+                🏡 Alternatieve manier
+            </h2>
+
+            <p id="alternative">
+                Geen alternatieve manier ingevuld.
+            </p>
+
+        </section>
+
+
+    </div>
+
 
 
     <!-- STAPPEN -->
-    <section class="steps">
 
-      <h2>
-        🌿 Zo krijg je Bulbasaur
-      </h2>
+    <section class="steps-section">
 
+        <h2>
+            🛠️ Zo krijg je
+            <span id="stepsPokemonName">
+                deze Pokémon
+            </span>
+        </h2>
 
-      <div class="step-grid">
-
-
-        <div class="step">
-
-          <div class="step-number">1</div>
-
-          <h4>
-            Verzamel Tall Grass
-          </h4>
-
-          <div class="step-image">
-            🌿
-          </div>
-
-          <p>
-            Verzamel de materialen die je nodig hebt
-            om de juiste habitat te maken.
-          </p>
-
-        </div>
-
-
-        <div class="step">
-
-          <div class="step-number">2</div>
-
-          <h4>
-            Plaats alles bij elkaar
-          </h4>
-
-          <div class="step-image">
-            🌿🌿
-          </div>
-
-          <p>
-            Zet de onderdelen op de juiste plaats
-            zodat het spel de habitat herkent.
-          </p>
-
-        </div>
-
-
-        <div class="step">
-
-          <div class="step-number">3</div>
-
-          <h4>
-            Activeer de omgeving
-          </h4>
-
-          <div class="step-image">
-            💧
-          </div>
-
-          <p>
-            Gebruik indien nodig een vaardigheid
-            om de omgeving te activeren.
-          </p>
-
-        </div>
-
-
-        <div class="step">
-
-          <div class="step-number">4</div>
-
-          <h4>
-            Kijk goed rond
-          </h4>
-
-          <div class="step-image">
-            👀
-          </div>
-
-          <p>
-            Kijk of je beweging of andere aanwijzingen
-            in de omgeving ziet.
-          </p>
-
-        </div>
-
-
-        <div class="step">
-
-          <div class="step-number">5</div>
-
-          <h4>
-            Daar is Bulbasaur!
-          </h4>
-
-          <div class="step-image">
-            🌱
-          </div>
-
-          <p>
-            Praat met Bulbasaur en voeg hem toe
-            aan je Pokédex.
-          </p>
-
-        </div>
-
-
-      </div>
+        <div id="stepsContainer" class="steps"></div>
 
     </section>
+
 
 
     <!-- VIDEO -->
-    <section class="video-card">
 
-      <h2 class="pokemon-title">
-        🎬 Video voorbeeld
-      </h2>
+    <section class="video-section">
 
-      <br>
+        <h2 class="pokemon-heading">
+            🎬 Video voorbeeld
+        </h2>
 
-      <div class="video-layout">
-
-        <div class="video-placeholder">
-
-          <div>
-            HOW TO GET BULBASAUR
-          </div>
-
-          <div class="play-button">
-            ▶
-          </div>
-
-        </div>
+        <div class="video-grid">
 
 
-        <div>
+            <div id="videoWrapper" class="video-wrapper">
 
-          <h3>
-            Liever zien hoe het werkt?
-          </h3>
+                Nog geen video toegevoegd
 
-          <br>
+            </div>
 
-          <p>
-            Hier plaatsen we een goede video van YouTube,
-            TikTok of een ander platform waarin je kunt
-            zien hoe deze Pokémon wordt verkregen.
-          </p>
 
-          <a
-            class="youtube-button"
-            href="#"
-            target="_blank"
-          >
-            ▶ Bekijk originele video
-          </a>
+            <div>
 
-          <p style="margin-top:12px;font-size:13px;">
-            Video blijft eigendom van de oorspronkelijke maker.
-          </p>
+                <h3>
+                    Liever zien hoe het werkt?
+                </h3>
+
+                <br>
+
+                <p>
+                    Hier tonen we een video van een oorspronkelijke
+                    maker via YouTube of een ander sociaal platform.
+                </p>
+
+                <div id="videoCredit"></div>
+
+            </div>
+
 
         </div>
-
-      </div>
 
     </section>
 
 
-    <!-- EXTRA -->
-    <div class="grid-two">
 
-      <div class="content-card pokemon-card">
-
-        <h2 class="pokemon-title">
-          🌿 Wat leer je van Bulbasaur?
-        </h2>
-
-        <p>
-          Hier leggen we straks uit welke vaardigheid,
-          functie of andere voordelen Bulbasaur
-          in Pokopia heeft.
-        </p>
-
-      </div>
+    <div class="content-grid">
 
 
-      <div class="content-card pokemon-card">
+        <section class="card pokemon-card">
 
-        <h2 class="pokemon-title">
-          ❤️ Comfort wens
-        </h2>
+            <h2 class="pokemon-heading">
+                ✨ Vaardigheid / Specialiteit
+            </h2>
 
-        <p>
-          Hier laten we zien welke voorwerpen of
-          voorzieningen Bulbasaur graag in zijn
-          omgeving wil hebben.
-        </p>
+            <p id="abilityText">
+                Nog invullen.
+            </p>
 
-      </div>
+        </section>
+
+
+        <section class="card pokemon-card">
+
+            <h2 class="pokemon-heading">
+                ❤️ Comfort & wensen
+            </h2>
+
+            <p id="comfortText">
+                Nog invullen.
+            </p>
+
+        </section>
+
 
     </div>
 
 
-    <!-- CHECKLIST -->
-    <section class="content-card" style="margin-top:20px;">
 
-      <h2>
-        📋 Checklist
-      </h2>
+    <!-- PERSOONLIJKE TIP -->
 
-      <div class="checklist">
+    <section class="personal-tip">
 
-        <div class="check">
-          ✅ Habitat gebouwd
+        <div class="tip-inner">
+
+            <div class="blond-person">
+                👱‍♂️
+            </div>
+
+            <div>
+
+                <h2>
+                    ⭐ Persoonlijke tip
+                </h2>
+
+                <p id="personalTip">
+                    Nog geen persoonlijke tip toegevoegd.
+                </p>
+
+            </div>
+
         </div>
-
-        <div class="check">
-          ✅ Benodigdheden verzameld
-        </div>
-
-        <div class="check">
-          ✅ Bulbasaur verschenen
-        </div>
-
-        <div class="check">
-          ✅ Met Bulbasaur gesproken
-        </div>
-
-        <div class="check">
-          ✅ Toegevoegd aan mijn Pokédex
-        </div>
-
-      </div>
 
     </section>
 
 
-  </main>
+
+    <!-- CHECKLIST -->
+
+    <section class="card checklist">
+
+        <h2>
+            ✅ Mijn checklist
+        </h2>
+
+        <div class="check-items">
+
+            <label class="check-item">
+                <input
+                    id="checkHabitat"
+                    type="checkbox"
+                    onchange="saveChecks()"
+                >
+                Habitat gemaakt
+            </label>
+
+
+            <label class="check-item">
+                <input
+                    id="checkItems"
+                    type="checkbox"
+                    onchange="saveChecks()"
+                >
+                Benodigdheden
+            </label>
+
+
+            <label class="check-item">
+                <input
+                    id="checkSeen"
+                    type="checkbox"
+                    onchange="saveChecks()"
+                >
+                Pokémon verschenen
+            </label>
+
+
+            <label class="check-item">
+                <input
+                    id="checkCaught"
+                    type="checkbox"
+                    onchange="saveChecks()"
+                >
+                Pokémon compleet
+            </label>
+
+        </div>
+
+    </section>
+
+
+
+    <div class="navigation">
+
+        <button onclick="previousPokemon()">
+            ← Vorige
+        </button>
+
+        <button onclick="nextPokemon()">
+            Volgende →
+        </button>
+
+    </div>
+
+
+</section>
 
 </div>
 
 
+
 <footer>
 
-  <h2>
-    ✅ Gevonden? Dan is <strong>#001 Bulbasaur</strong> binnen.
-  </h2>
+    <strong>NLpokopia</strong>
 
-  <br>
+    <br>
 
-  <p>
-    ➜ Op naar <strong>#002 Ivysaur!</strong>
-  </p>
+    De Nederlandse Pokémon Pokopia-fangids.
 
-  <br>
+    <br><br>
 
-  <small>
-    NLpokopia is een onafhankelijke fansite en is niet
-    officieel verbonden aan Nintendo, The Pokémon Company
-    of Game Freak.
-  </small>
+    <small>
+        NLpokopia is een onafhankelijke fansite en is niet
+        officieel verbonden aan Nintendo, The Pokémon Company
+        of Game Freak.
+    </small>
 
 </footer>
 
 
+
 <script>
 
-function zoekPokemon() {
+/* =========================================================
+   TYPEKLEUREN
+   Alleen Pokémon-elementen veranderen van kleur.
+   De website zelf blijft Master Ball.
+   ========================================================= */
 
-  const zoekwoord =
-    document
-    .getElementById("pokemonSearch")
-    .value
-    .toLowerCase()
-    .trim();
+const typeColors = {
 
-  if (
-    zoekwoord === "bulbasaur" ||
-    zoekwoord === "001" ||
-    zoekwoord === "#001"
-  ) {
+    grass:{
+        main:"#4f9848",
+        light:"#edf7e9",
+        dark:"#2f672c"
+    },
 
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
+    fire:{
+        main:"#e4543d",
+        light:"#fff0ec",
+        dark:"#a52d20"
+    },
+
+    water:{
+        main:"#4597d5",
+        light:"#eaf5fc",
+        dark:"#226b9f"
+    },
+
+    electric:{
+        main:"#e4b92d",
+        light:"#fff9df",
+        dark:"#9b7610"
+    },
+
+    normal:{
+        main:"#8d8d78",
+        light:"#f3f3ed",
+        dark:"#595949"
+    },
+
+    poison:{
+        main:"#9855aa",
+        light:"#f5ebf8",
+        dark:"#683574"
+    },
+
+    bug:{
+        main:"#8da735",
+        light:"#f3f7e4",
+        dark:"#5d701d"
+    },
+
+    flying:{
+        main:"#779acb",
+        light:"#edf3fb",
+        dark:"#456489"
+    },
+
+    ground:{
+        main:"#bb8b4c",
+        light:"#f8f0e4",
+        dark:"#79572d"
+    },
+
+    rock:{
+        main:"#9d8548",
+        light:"#f3efe2",
+        dark:"#66542c"
+    },
+
+    fighting:{
+        main:"#b64338",
+        light:"#f9eae8",
+        dark:"#762922"
+    },
+
+    psychic:{
+        main:"#d65a8e",
+        light:"#fcecf3",
+        dark:"#96325e"
+    },
+
+    ghost:{
+        main:"#675087",
+        light:"#f0ecf6",
+        dark:"#443259"
+    },
+
+    ice:{
+        main:"#62b8c4",
+        light:"#eaf8fa",
+        dark:"#347c87"
+    },
+
+    dragon:{
+        main:"#5b59b0",
+        light:"#ececfa",
+        dark:"#373574"
+    },
+
+    dark:{
+        main:"#504854",
+        light:"#efedf0",
+        dark:"#302a33"
+    },
+
+    steel:{
+        main:"#778a94",
+        light:"#eff3f5",
+        dark:"#4c5b62"
+    },
+
+    fairy:{
+        main:"#d77dad",
+        light:"#faedf4",
+        dark:"#934f72"
+    }
+
+};
+
+
+
+/* =========================================================
+   DATABASE
+   We maken direct 365 plaatsen.
+   
+   001 - 300 = BASISGAME
+   301 - 365 = DLC
+
+   De echte namen/data vullen we daarna gecontroleerd in.
+   ========================================================= */
+
+const pokemon = [];
+
+
+for(let i = 1; i <= 365; i++){
+
+    pokemon.push({
+
+        number:i,
+
+        name:`Pokémon #${String(i).padStart(3,"0")}`,
+
+        types:["normal"],
+
+        dlc:i > 300,
+
+        dlcName:i > 300
+            ? "Bubbly Basin"
+            : "",
+
+        difficulty:"Nog invullen",
+
+        habitat:"Nog invullen",
+
+        requirements:"Nog invullen",
+
+        time:"Nog invullen",
+
+        weather:"Nog invullen",
+
+        specialty:"Nog invullen",
+
+        description:
+            "Deze Pokémon-pagina wordt nog aangevuld met gecontroleerde informatie.",
+
+        alternative:
+            "Nog geen alternatieve methode toegevoegd.",
+
+        ability:
+            "Nog invullen.",
+
+        comfort:
+            "Nog invullen.",
+
+        personalTip:
+            "Hier komt de persoonlijke NLpokopia-tip.",
+
+        image:"",
+
+        silhouette:"",
+
+        videoEmbed:"",
+
+        videoUrl:"",
+
+        videoCreator:"",
+
+        steps:[
+            {
+                title:"Stap 1",
+                text:"Wordt nog ingevuld.",
+                image:""
+            },
+
+            {
+                title:"Stap 2",
+                text:"Wordt nog ingevuld.",
+                image:""
+            },
+
+            {
+                title:"Stap 3",
+                text:"Wordt nog ingevuld.",
+                image:""
+            },
+
+            {
+                title:"Stap 4",
+                text:"Wordt nog ingevuld.",
+                image:""
+            },
+
+            {
+                title:"Stap 5",
+                text:"Wordt nog ingevuld.",
+                image:""
+            }
+        ]
+
     });
-
-  } else {
-
-    alert(
-      "Deze Pokémon staat nog niet op NLpokopia. We zijn de Pokédex aan het uitbreiden!"
-    );
-
-  }
 
 }
 
-</script>
 
+
+/* =========================================================
+   VOORBEELDEN
+   Deze bewijzen dat de typekleuren automatisch veranderen.
+
+   Deze records vervangen we later door compleet
+   gecontroleerde Pokopia-data.
+   ========================================================= */
+
+pokemon[0] = {
+
+    ...pokemon[0],
+
+    number:1,
+
+    name:"Bulbasaur",
+
+    types:["grass","poison"],
+
+    dlc:false,
+
+    personalTip:
+        "Controleer rustig of alle voorwaarden van de habitat kloppen voordat je verder zoekt."
+
+};
+
+
+pokemon[3] = {
+
+    ...pokemon[3],
+
+    number:4,
+
+    name:"Charmander",
+
+    types:["fire"],
+
+    dlc:false,
+
+    personalTip:
+        "Bij Charmander krijgt alleen zijn eigen gedeelte de warme vuurkleuren. De rest van NLpokopia blijft Master Ball-paars."
+
+};
+
+
+pokemon[6] = {
+
+    ...pokemon[6],
+
+    number:7,
+
+    name:"Squirtle",
+
+    types:["water"],
+
+    dlc:false,
+
+    personalTip:
+        "Squirtle gebruikt automatisch het blauwe Water-thema op zijn eigen Pokémon-gedeelte."
+
+};
+
+
+
+/* =========================================================
+   STATE
+   ========================================================= */
+
+let currentPokemon = 1;
+
+
+
+/* =========================================================
+   NAVIGATIE
+   ========================================================= */
+
+function hideViews(){
+
+    document
+        .querySelectorAll(".view")
+        .forEach(view => view.classList.remove("active"));
+
+}
+
+
+function showHome(){
+
+    hideViews();
+
+    document
+        .getElementById("homeView")
+        .classList.add("active");
+
+    window.scrollTo(0,0);
+
+}
+
+
+function showDex(filter){
+
+    hideViews();
+
+    document
+        .getElementById("dexView")
+        .classList.add("active");
+
+
+    if(filter){
+
+        document
+            .getElementById("gameFilter")
+            .value = filter;
+
+    }
+
+    renderDex();
+
+    window.scrollTo(0,0);
+
+}
+
+
+
+/* =========================================================
+   POKEDEX WEERGAVE
+   ========================================================= */
+
+function renderDex(){
+
+    const grid =
+        document.getElementById("dexGrid");
+
+    const search =
+        document
+        .getElementById("dexSearch")
+        .value
+        .toLowerCase()
+        .trim();
+
+    const game =
+        document
+        .getElementById("gameFilter")
+        .value;
+
+    const type =
+        document
+        .getElementById("typeFilter")
+        .value;
+
+
+    let result = pokemon.filter(p => {
+
+
+        const number =
+            String(p.number).padStart(3,"0");
+
+
+        const matchesSearch =
+
+            !search ||
+
+            p.name
+            .toLowerCase()
+            .includes(search) ||
+
+            number.includes(
+                search.replace("#","")
+            );
+
+
+        const matchesGame =
+
+            game === "all" ||
+
+            (
+                game === "base" &&
+                !p.dlc
+            ) ||
+
+            (
+                game === "dlc" &&
+                p.dlc
+            );
+
+
+        const matchesType =
+
+            type === "all" ||
+
+            p.types.includes(type);
+
+
+        return (
+            matchesSearch &&
+            matchesGame &&
+            matchesType
+        );
+
+    });
+
+
+    const gameFilter =
+        document
+        .getElementById("gameFilter")
+        .value;
+
+
+    if(gameFilter === "base"){
+
+        document
+            .getElementById("dexTitle")
+            .textContent =
+            "Basisgame";
+
+        document
+            .getElementById("dexDescription")
+            .textContent =
+            "Pokémon uit de basisgame";
+
+    }
+
+    else if(gameFilter === "dlc"){
+
+        document
+            .getElementById("dexTitle")
+            .textContent =
+            "DLC Pokémon";
+
+        document
+            .getElementById("dexDescription")
+            .textContent =
+            "Pokémon waarvoor aanvullende DLC-content nodig is";
+
+    }
+
+    else{
+
+        document
+            .getElementById("dexTitle")
+            .textContent =
+            "Alle Pokémon";
+
+        document
+            .getElementById("dexDescription")
+            .textContent =
+            "Basisgame + DLC";
+
+    }
+
+
+    document
+        .getElementById("dexCounter")
+        .textContent =
+        `${result.length} Pokémon`;
+
+
+    grid.innerHTML =
+        result
+        .map(p => {
+
+
+            const color =
+                typeColors[p.types[0]]
+                || typeColors.normal;
+
+
+            const number =
+                String(p.number)
+                .padStart(3,"0");
+
+
+            return `
+
+            <article
+                class="dex-card"
+                onclick="openPokemon(${p.number})"
+                style="
+                    --poke-main:${color.main};
+                    --poke-light:${color.light};
+                "
+            >
+
+                ${
+                    p.dlc
+                    ?
+                    `<span class="dlc-label">
+                        DLC
+                    </span>`
+                    :
+                    ""
+                }
+
+                <span class="dex-number">
+                    #${number}
+                </span>
+
+                <div class="dex-picture">
+
+                    ${
+                        p.image
+                        ?
+                        `<img
+                            src="${p.image}"
+                            alt="${p.name}"
+                            style="
+                                max-height:80px;
+                                max-width:100%;
+                            "
+                        >`
+                        :
+                        `◉`
+                    }
+
+                </div>
+
+                <h3>
+                    ${p.name}
+                </h3>
+
+                <div class="base-label">
+
+                    ${
+                        p.dlc
+                        ?
+                        "🫧 DLC"
+                        :
+                        "🎮 Basisgame"
+                    }
+
+                </div>
+
+            </article>
+
+            `;
+
+        })
+        .join("");
+
+}
+
+
+
+/* =========================================================
+   POKEMON OPENEN
+   ========================================================= */
+
+function openPokemon(number){
+
+    const p =
+        pokemon.find(
+            item => item.number === number
+        );
+
+    if(!p) return;
+
+
+    currentPokemon =
+        p.number;
+
+
+    hideViews();
+
+    document
+        .getElementById("pokemonView")
+        .classList
+        .add("active");
+
+
+    const mainType =
+        p.types[0] || "normal";
+
+
+    const colors =
+        typeColors[mainType]
+        || typeColors.normal;
+
+
+    document.documentElement.style
+        .setProperty(
+            "--poke-main",
+            colors.main
+        );
+
+    document.documentElement.style
+        .setProperty(
+            "--poke-light",
+            colors.light
+        );
+
+    document.documentElement.style
+        .setProperty(
+            "--poke-dark",
+            colors.dark
+        );
+
+
+    const number =
+        String(p.number)
+        .padStart(3,"0");
+
+
+    document
+        .getElementById("pokemonNumber")
+        .textContent =
+        `#${number}`;
+
+
+    document
+        .getElementById("pokemonName")
+        .textContent =
+        p.name;
+
+
+    document
+        .getElementById("stepsPokemonName")
+        .textContent =
+        p.name;
+
+
+    document
+        .getElementById("difficulty")
+        .textContent =
+        p.difficulty;
+
+
+    document
+        .getElementById("habitat")
+        .textContent =
+        p.habitat;
+
+
+    document
+        .getElementById("requirements")
+        .textContent =
+        p.requirements;
+
+
+    document
+        .getElementById("time")
+        .textContent =
+        p.time;
+
+
+    document
+        .getElementById("weather")
+        .textContent =
+        p.weather;
+
+
+    document
+        .getElementById("specialty")
+        .textContent =
+        p.specialty;
+
+
+    document
+        .getElementById("description")
+        .textContent =
+        p.description;
+
+
+    document
+        .getElementById("alternative")
+        .textContent =
+        p.alternative;
+
+
+    document
+        .getElementById("abilityText")
+        .textContent =
+        p.ability;
+
+
+    document
+        .getElementById("comfortText")
+        .textContent =
+        p.comfort;
+
+
+    document
+        .getElementById("personalTip")
+        .textContent =
+        p.personalTip;
+
+
+
+    /* TYPES */
+
+    document
+        .getElementById("pokemonTypes")
+        .innerHTML =
+        p.types
+        .map(type => {
+
+            const typeColor =
+                typeColors[type]
+                || typeColors.normal;
+
+            return `
+
+            <span
+                class="type-badge"
+                style="
+                    background:${typeColor.main}
+                "
+            >
+                ${type.toUpperCase()}
+            </span>
+
+            `;
+
+        })
+        .join("");
+
+
+
+    /* FOTO */
+
+    const art =
+        document
+        .getElementById("pokemonArt");
+
+
+    if(p.image){
+
+        art.innerHTML = `
+
+            <img
+                src="${p.image}"
+                alt="${p.name}"
+            >
+
+        `;
+
+    }
+
+    else{
+
+        art.innerHTML = `
+
+            <div class="fallback-pokemon">
+
+                ${number}
+
+            </div>
+
+        `;
+
+    }
+
+
+
+    /* ACHTERGRONDTEKENINGEN */
+
+    const silhouettes = [
+        document.getElementById("silhouette1"),
+        document.getElementById("silhouette2"),
+        document.getElementById("silhouette3")
+    ];
+
+
+    silhouettes.forEach(el => {
+
+        if(p.silhouette){
+
+            el.style.backgroundImage =
+                `url('${p.silhouette}')`;
+
+        }
+
+        else if(p.image){
+
+            el.style.backgroundImage =
+                `url('${p.image}')`;
+
+        }
+
+        else{
+
+            el.style.backgroundImage =
+                "none";
+
+        }
+
+    });
+
+
+
+    /* DLC */
+
+    const warning =
+        document
+        .getElementById("dlcWarning");
+
+
+    if(p.dlc){
+
+        warning
+            .classList
+            .add("visible");
+
+        document
+            .getElementById("dlcName")
+            .textContent =
+            p.dlcName || "DLC";
+
+    }
+
+    else{
+
+        warning
+            .classList
+            .remove("visible");
+
+    }
+
+
+
+    /* STAPPEN */
+
+    document
+        .getElementById("stepsContainer")
+        .innerHTML =
+        p.steps
+        .map((step,index) => `
+
+            <div class="step">
+
+                <div class="step-number">
+                    ${index + 1}
+                </div>
+
+                <strong>
+                    ${step.title}
+                </strong>
+
+                <div class="step-image">
+
+                    ${
+                        step.image
+                        ?
+                        `<img
+                            src="${step.image}"
+                            alt="${step.title}"
+                        >`
+                        :
+                        "🖼️"
+                    }
+
+                </div>
+
+                <p>
+                    ${step.text}
+                </p>
+
+            </div>
+
+        `)
+        .join("");
+
+
+
+    /* VIDEO */
+
+    const videoWrapper =
+        document
+        .getElementById("videoWrapper");
+
+
+    const credit =
+        document
+        .getElementById("videoCredit");
+
+
+    if(p.videoEmbed){
+
+        videoWrapper.innerHTML = `
+
+            <iframe
+                src="${p.videoEmbed}"
+                title="${p.name} video"
+                allowfullscreen
+            ></iframe>
+
+        `;
+
+    }
+
+    else{
+
+        videoWrapper.innerHTML = `
+
+            🎬
+            <br><br>
+            Nog geen video toegevoegd
+
+        `;
+
+    }
+
+
+    if(p.videoUrl){
+
+        credit.innerHTML = `
+
+            <a
+                class="video-link"
+                href="${p.videoUrl}"
+                target="_blank"
+                rel="noopener"
+            >
+                ▶ Bekijk originele video
+            </a>
+
+            <p style="
+                margin-top:10px;
+                font-size:13px;
+            ">
+
+                ${
+                    p.videoCreator
+                    ?
+                    `Maker: ${p.videoCreator}`
+                    :
+                    "Originele maker wordt vermeld"
+                }
+
+            </p>
+
+        `;
+
+    }
+
+    else{
+
+        credit.innerHTML = `
+
+            <p style="
+                margin-top:12px;
+                color:#6d6670;
+            ">
+
+                We zoeken hiervoor nog
+                een geschikte video.
+
+            </p>
+
+        `;
+
+    }
+
+
+    loadChecks();
+
+    window.scrollTo(0,0);
+
+}
+
+
+
+/* =========================================================
+   ZOEKEN VANAF HOME
+   ========================================================= */
+
+function searchFromHome(){
+
+    const value =
+        document
+        .getElementById("homeSearch")
+        .value
+        .trim()
+        .toLowerCase();
+
+
+    if(!value) return;
+
+
+    const cleaned =
+        value.replace("#","");
+
+
+    let result =
+        pokemon.find(p =>
+
+            p.name
+            .toLowerCase() === value
+
+            ||
+
+            String(p.number) === cleaned
+
+            ||
+
+            String(p.number)
+            .padStart(3,"0")
+            === cleaned
+
+        );
+
+
+    if(result){
+
+        openPokemon(result.number);
+
+        return;
+
+    }
+
+
+    showDex();
+
+
+    document
+        .getElementById("dexSearch")
+        .value =
+        value;
+
+
+    renderDex();
+
+}
+
+
+
+/* =========================================================
+   MIJN POKEDEX
+   ========================================================= */
+
+function showMyPokemon(){
+
+    showDex("all");
+
+    document
+        .getElementById("dexTitle")
+        .textContent =
+        "Mijn Pokédex";
+
+
+    const completed =
+        pokemon
+        .filter(p => {
+
+            return localStorage
+                .getItem(
+                    `nlpokopia_${p.number}_caught`
+                ) === "true";
+
+        });
+
+
+    document
+        .getElementById("dexCounter")
+        .textContent =
+        `${completed.length} / 365`;
+
+
+    const grid =
+        document
+        .getElementById("dexGrid");
+
+
+    grid.innerHTML =
+        completed.length
+        ?
+
+        completed
+        .map(p => `
+
+            <article
+                class="dex-card"
+                onclick="openPokemon(${p.number})"
+            >
+
+                <span class="dex-number">
+                    #${String(p.number).padStart(3,"0")}
+                </span>
+
+                <div class="dex-picture">
+                    ✅
+                </div>
+
+                <h3>
+                    ${p.name}
+                </h3>
+
+            </article>
+
+        `)
+        .join("")
+
+        :
+
+        `
+
+        <div class="card">
+
+            Je hebt nog geen Pokémon als compleet
+            afgevinkt.
+
+        </div>
+
+        `;
+
+}
+
+
+
+/* =========================================================
+   CHECKLIST OPSLAAN
+   ========================================================= */
+
+function saveChecks(){
+
+    const ids = [
+        "checkHabitat",
+        "checkItems",
+        "checkSeen",
+        "checkCaught"
+    ];
+
+
+    ids.forEach(id => {
+
+        localStorage.setItem(
+
+            `nlpokopia_${currentPokemon}_${id}`,
+
+            document
+                .getElementById(id)
+                .checked
+
+        );
+
+    });
+
+
+    localStorage.setItem(
+
+        `nlpokopia_${currentPokemon}_caught`,
+
+        document
+            .getElementById("checkCaught")
+            .checked
+
+    );
+
+}
+
+
+function loadChecks(){
+
+    const ids = [
+        "checkHabitat",
+        "checkItems",
+        "checkSeen",
+        "checkCaught"
+    ];
+
+
+    ids.forEach(id => {
+
+        const saved =
+            localStorage.getItem(
+                `nlpokopia_${currentPokemon}_${id}`
+            );
+
+
+        document
+            .getElementById(id)
+            .checked =
+            saved === "true";
+
+    });
+
+}
+
+
+
+/* =========================================================
+   VORIGE / VOLGENDE
+   ========================================================= */
+
+function previousPokemon(){
+
+    if(currentPokemon > 1){
+
+        openPokemon(
+            currentPokemon - 1
+        );
+
+    }
+
+}
+
+
+function nextPokemon(){
+
+    if(currentPokemon < 365){
+
+        openPokemon(
+            currentPokemon + 1
+        );
+
+    }
+
+}
+
+
+
+/* =========================================================
+   START
+   ========================================================= */
+
+renderDex();
+
+</script>
 
 </body>
 </html>

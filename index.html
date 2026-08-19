@@ -1,1 +1,1157 @@
-https://vinniestyle010.github.io/NLPokopia/?
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NLPokopia | Nederlandse Pokémon Pokopia Gids</title>
+<meta name="description" content="NLPokopia: Nederlandse Pokémon Pokopia gids met Pokémon, habitats, DLC, tips en video's.">
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#24162d;
+  background:#f7f3fb;
+  min-height:100vh
+}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.hidden{display:none!important}
+
+:root{
+  --master:#6e35a6;
+  --master2:#3c145f;
+  --pink:#eb4d9b;
+  --soft:#f1e8f8;
+  --poke:#777;
+  --pokeLight:#f4f4f4;
+  --pokeDark:#444
+}
+
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 8% 8%,rgba(235,77,155,.08),transparent 24%),
+    radial-gradient(circle at 92% 12%,rgba(110,53,166,.10),transparent 27%);
+  z-index:-3
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  color:#fff;
+  background:linear-gradient(135deg,var(--master2),var(--master));
+  box-shadow:0 5px 20px #0003
+}
+
+.head{
+  max-width:1440px;
+  margin:auto;
+  padding:14px 18px;
+  display:flex;
+  gap:20px;
+  justify-content:space-between;
+  align-items:center
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  border:0;
+  color:#fff;
+  background:transparent;
+  text-align:left
+}
+
+.brand strong{font-size:29px}
+.brand small{display:block;opacity:.85}
+
+.masterball{
+  width:49px;
+  height:49px;
+  border-radius:50%;
+  border:3px solid #23142c;
+  background:linear-gradient(#793bab 0 43%,#222 43% 55%,#fff 55%);
+  position:relative
+}
+
+.masterball:after{
+  content:"M";
+  position:absolute;
+  top:5px;
+  left:50%;
+  transform:translateX(-50%);
+  font-weight:900
+}
+
+.masterball:before{
+  content:"";
+  position:absolute;
+  top:44%;
+  left:50%;
+  transform:translate(-50%);
+  width:13px;
+  height:13px;
+  border-radius:50%;
+  background:#fff;
+  border:3px solid #222;
+  z-index:2
+}
+
+nav{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap
+}
+
+nav button{
+  border:0;
+  color:#fff;
+  background:transparent;
+  padding:10px 12px;
+  border-radius:10px;
+  font-weight:800
+}
+
+nav button:hover{background:#ffffff20}
+
+.wrap{
+  max-width:1440px;
+  margin:24px auto;
+  padding:0 16px
+}
+
+.view{display:none}
+.view.active{display:block}
+
+/* ACHTERGROND POKEBALLS */
+
+.decor{
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  pointer-events:none;
+  overflow:hidden
+}
+
+.ball{
+  position:absolute;
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  border:5px solid #252025;
+  opacity:.12
+}
+
+.ball:after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:18px;
+  height:18px;
+  border:4px solid #252025;
+  border-radius:50%;
+  background:#fff
+}
+
+.ball:before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:46%;
+  height:8px;
+  background:#252025
+}
+
+.pokeball{
+  background:linear-gradient(#ed3b3b 0 48%,#fff 48%)
+}
+
+.greatball{
+  background:linear-gradient(#2769bd 0 48%,#fff 48%)
+}
+
+.ultraball{
+  background:linear-gradient(#252525 0 48%,#f3c52c 48% 60%,#fff 60%)
+}
+
+.masterball2{
+  background:linear-gradient(#6e35a6 0 48%,#ec4f9b 48% 60%,#fff 60%)
+}
+
+.diveball{
+  background:linear-gradient(#56bdda 0 48%,#185a9d 48% 60%,#fff 60%)
+}
+
+.luxuryball{
+  background:linear-gradient(#202020 0 48%,#d3a72e 48% 60%,#fff 60%)
+}
+
+.quickball{
+  background:linear-gradient(#2d76ba 0 48%,#f2d13a 48% 60%,#fff 60%)
+}
+
+/* POPULAIRE POKEMON ACHTERGROND */
+
+.popular{
+  position:absolute;
+  width:120px;
+  opacity:.08;
+  filter:grayscale(1);
+  pointer-events:none
+}
+
+.popular img{width:100%}
+
+/* HOME */
+
+.hero{
+  background:#fff;
+  border-radius:26px;
+  padding:38px;
+  min-height:370px;
+  box-shadow:0 8px 28px #35134f18;
+  position:relative;
+  overflow:hidden
+}
+
+.hero h1{
+  font-size:clamp(52px,8vw,88px);
+  margin:5px 0;
+  color:var(--master2);
+  line-height:1
+}
+
+.hero h1 span{color:var(--master)}
+
+.hero h2{
+  font-size:25px;
+  margin:16px 0 6px
+}
+
+.hero p{
+  max-width:790px;
+  line-height:1.6;
+  font-size:17px
+}
+
+.hero:after{
+  content:"M";
+  position:absolute;
+  right:-30px;
+  top:-70px;
+  font-size:360px;
+  font-weight:900;
+  color:#6e35a60a;
+  pointer-events:none
+}
+
+.search{
+  display:flex;
+  max-width:740px;
+  border:3px solid var(--master);
+  border-radius:15px;
+  overflow:hidden;
+  margin-top:23px;
+  position:relative;
+  z-index:2
+}
+
+.search input{
+  flex:1;
+  min-width:0;
+  border:0;
+  outline:0;
+  padding:15px
+}
+
+.search button{
+  border:0;
+  background:var(--master);
+  color:#fff;
+  padding:0 22px;
+  font-weight:900
+}
+
+.small{
+  font-size:13px!important;
+  color:#716978
+}
+
+.homecards{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin-top:20px
+}
+
+.homecard{
+  border:0;
+  background:#fff;
+  border-radius:18px;
+  padding:23px 14px;
+  box-shadow:0 5px 17px #35134f12
+}
+
+.homecard span{
+  display:block;
+  font-size:34px;
+  margin-bottom:9px
+}
+
+.homecard strong{display:block}
+
+.homecard small{
+  color:#756d7a;
+  display:block;
+  margin-top:5px
+}
+
+/* POKEDEX */
+
+.heading{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:15px;
+  margin-bottom:17px
+}
+
+.heading h1{
+  margin:0;
+  color:var(--master2);
+  font-size:38px
+}
+
+.heading p{
+  margin:5px 0 0;
+  color:#746b79
+}
+
+.count{
+  background:var(--soft);
+  color:var(--master2);
+  padding:11px 15px;
+  border-radius:12px;
+  font-weight:900
+}
+
+.filters{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  background:#fff;
+  padding:14px;
+  border-radius:17px;
+  box-shadow:0 4px 14px #35134f12;
+  margin-bottom:18px
+}
+
+.filters input,
+.filters select{
+  border:1px solid #ddd1e5;
+  border-radius:10px;
+  padding:11px
+}
+
+.filters input{
+  flex:1;
+  min-width:220px
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:13px
+}
+
+.pcard{
+  background:#fff;
+  border:1px solid #ece4f0;
+  border-radius:18px;
+  padding:14px;
+  min-height:205px;
+  box-shadow:0 4px 13px #35134f0e;
+  position:relative;
+  cursor:pointer;
+  overflow:hidden
+}
+
+.pcard:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px #35134f1d
+}
+
+.num{
+  display:inline-block;
+  background:var(--poke);
+  color:#fff;
+  padding:5px 9px;
+  border-radius:8px;
+  font-weight:900
+}
+
+.pball{
+  height:100px;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+
+.pball img{
+  max-height:100px;
+  max-width:100%
+}
+
+.mini-ball{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  border:5px solid var(--poke);
+  color:var(--poke);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  background:var(--pokeLight)
+}
+
+.pcard h3{
+  margin:7px 0 3px;
+  font-size:18px
+}
+
+.source{
+  font-size:12px;
+  color:#746b79
+}
+
+.badge{
+  position:absolute;
+  right:8px;
+  top:8px;
+  color:#fff;
+  padding:5px 7px;
+  border-radius:7px;
+  font-weight:900;
+  font-size:10px
+}
+
+.dlc{background:var(--pink)}
+.event{background:#d19b16}
+
+/* DETAIL */
+
+.back{
+  border:0;
+  background:#fff;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:900;
+  box-shadow:0 3px 10px #0001;
+  margin-bottom:13px
+}
+
+.detailhero{
+  background:var(--pokeLight);
+  border:2px solid color-mix(in srgb,var(--poke),white 65%);
+  border-radius:25px;
+  overflow:hidden;
+  position:relative;
+  box-shadow:0 8px 25px #0001
+}
+
+.pattern img{
+  position:absolute;
+  width:150px;
+  opacity:.055;
+  filter:grayscale(1)
+}
+
+.pattern img:nth-child(1){
+  left:3%;
+  top:4%;
+  transform:rotate(-15deg)
+}
+
+.pattern img:nth-child(2){
+  right:4%;
+  top:8%;
+  transform:rotate(16deg)
+}
+
+.pattern img:nth-child(3){
+  left:43%;
+  bottom:-35px;
+  transform:rotate(-8deg)
+}
+
+.detailinner{
+  position:relative;
+  z-index:2;
+  padding:28px;
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:28px;
+  align-items:center
+}
+
+.dnum{
+  display:inline-block;
+  background:var(--poke);
+  color:#fff;
+  padding:8px 14px;
+  border-radius:10px;
+  font-size:22px;
+  font-weight:900
+}
+
+.detailhero h1{
+  font-size:clamp(42px,7vw,72px);
+  margin:9px 0
+}
+
+.types{
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap
+}
+
+.type{
+  color:#fff;
+  padding:7px 10px;
+  border-radius:8px;
+  font-size:12px;
+  font-weight:900
+}
+
+.info{
+  background:#ffffffd9;
+  border-radius:14px;
+  overflow:hidden;
+  margin-top:15px;
+  max-width:680px
+}
+
+.row{
+  display:grid;
+  grid-template-columns:150px 1fr;
+  border-bottom:1px solid #0000000d
+}
+
+.row:last-child{border:0}
+
+.row strong,
+.row span{
+  padding:10px 12px
+}
+
+.art{
+  min-height:300px;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+
+.art img{
+  max-height:310px;
+  max-width:100%;
+  object-fit:contain
+}
+
+.artplaceholder{
+  width:190px;
+  height:190px;
+  border-radius:50%;
+  border:8px solid var(--poke);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:var(--poke);
+  font-weight:900;
+  background:#ffffff90
+}
+
+.notice{
+  margin-top:16px;
+  padding:17px 19px;
+  border-radius:16px;
+  border:2px solid var(--pink);
+  background:#ffe4f1
+}
+
+.notice.eventnotice{
+  border-color:#d3a72e;
+  background:#fff3c9
+}
+
+.twocol{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  margin-top:16px
+}
+
+.card{
+  background:#fff;
+  border-radius:18px;
+  padding:20px;
+  box-shadow:0 5px 17px #35134f12;
+  line-height:1.55
+}
+
+.pokecard{
+  background:var(--pokeLight);
+  border:1px solid color-mix(in srgb,var(--poke),white 67%)
+}
+
+.pokecard h2{color:var(--pokeDark)}
+
+.tip{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  margin-top:16px;
+  background:#fff4c8;
+  border:1px solid #e4ca67;
+  border-radius:18px;
+  padding:18px
+}
+
+.avatar{
+  width:72px;
+  height:72px;
+  flex:0 0 72px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#ffd65c;
+  font-size:45px
+}
+
+.video{
+  margin-top:16px;
+  background:var(--pokeLight);
+  border:1px solid color-mix(in srgb,var(--poke),white 65%);
+  border-radius:18px;
+  padding:20px
+}
+
+.videobtns{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:12px
+}
+
+.videobtn{
+  display:inline-block;
+  text-decoration:none;
+  color:#fff;
+  padding:11px 14px;
+  border-radius:9px;
+  font-weight:900
+}
+
+.yt{background:#ed1836}
+.tt{background:#222}
+.sourcebtn{background:var(--master)}
+
+.checks{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap
+}
+
+.checks label{
+  background:#faf8fb;
+  border:1px solid #e6ddeb;
+  border-radius:10px;
+  padding:11px 13px
+}
+
+.prevnext{
+  display:flex;
+  gap:10px;
+  margin-top:17px
+}
+
+.prevnext button{
+  flex:1;
+  border:0;
+  background:var(--master);
+  color:#fff;
+  padding:14px;
+  border-radius:11px;
+  font-weight:900
+}
+
+.loading{
+  text-align:center;
+  padding:70px 15px;
+  background:#fff;
+  border-radius:20px
+}
+
+.error{
+  background:#fff0f0;
+  border:1px solid #e27777;
+  padding:18px;
+  border-radius:15px;
+  line-height:1.5
+}
+
+footer{
+  margin-top:35px;
+  background:var(--master2);
+  color:#fff;
+  text-align:center;
+  padding:27px 16px;
+  line-height:1.55
+}
+
+footer strong{
+  color:#ff75b9;
+  font-size:20px
+}
+
+@media(max-width:1100px){
+  .grid{grid-template-columns:repeat(4,1fr)}
+}
+
+@media(max-width:850px){
+  header{position:static}
+  .head{
+    align-items:flex-start;
+    flex-direction:column
+  }
+  nav{
+    width:100%;
+    overflow-x:auto;
+    flex-wrap:nowrap
+  }
+  nav button{white-space:nowrap}
+  .homecards{grid-template-columns:1fr 1fr}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .detailinner,.twocol{grid-template-columns:1fr}
+}
+
+@media(max-width:600px){
+  .wrap{padding:0 9px}
+  .hero{padding:25px 17px}
+  .hero h1{font-size:50px}
+  .homecards{
+    grid-template-columns:1fr 1fr;
+    gap:8px
+  }
+  .grid{
+    grid-template-columns:1fr 1fr;
+    gap:8px
+  }
+  .pcard{
+    padding:10px;
+    min-height:185px
+  }
+  .detailinner{padding:17px}
+  .detailhero h1{font-size:40px}
+  .row{
+    grid-template-columns:115px 1fr;
+    font-size:14px
+  }
+  .heading{
+    align-items:flex-start;
+    flex-direction:column
+  }
+  .popular{width:80px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="decor" aria-hidden="true">
+  <div class="ball pokeball" style="left:2%;top:15%"></div>
+  <div class="ball greatball" style="right:3%;top:28%;width:95px;height:95px"></div>
+  <div class="ball ultraball" style="left:5%;top:65%;width:90px;height:90px"></div>
+  <div class="ball masterball2" style="right:5%;top:73%"></div>
+  <div class="ball diveball" style="left:30%;top:88%;width:55px;height:55px"></div>
+  <div class="ball luxuryball" style="right:28%;top:8%;width:55px;height:55px"></div>
+  <div class="ball quickball" style="right:15%;top:52%;width:60px;height:60px"></div>
+
+  <div class="popular" style="left:1%;top:36%">
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png">
+  </div>
+
+  <div class="popular" style="right:1%;top:40%">
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png">
+  </div>
+
+  <div class="popular" style="left:8%;top:78%">
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png">
+  </div>
+
+  <div class="popular" style="right:8%;top:82%">
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png">
+  </div>
+</div>
+
+
+<header>
+  <div class="head">
+
+    <button class="brand" onclick="showHome()">
+      <span class="masterball"></span>
+      <span>
+        <strong>NLPokopia</strong>
+        <small>De Nederlandse Pokopia Gids</small>
+      </span>
+    </button>
+
+    <nav>
+      <button onclick="showHome()">🏠 Home</button>
+      <button onclick="showDex('all')">🔴 Pokémon</button>
+      <button onclick="showDex('main')">🎮 Basisgame</button>
+      <button onclick="showDex('basin')">🫧 DLC</button>
+      <button onclick="showDex('event')">⭐ Event</button>
+      <button onclick="showMyDex()">✅ Mijn Pokédex</button>
+    </nav>
+
+  </div>
+</header>
+
+
+<main class="wrap">
+
+<section id="home" class="view active">
+
+  <div class="hero">
+
+    <div style="position:relative;z-index:2">
+
+      <b style="color:var(--master)">
+        Welkom bij
+      </b>
+
+      <h1>
+        <span>NLP</span>okopia
+      </h1>
+
+      <h2>
+        Vind je Pokémon. Bouw de juiste habitat.
+      </h2>
+
+      <p>
+        Zoek een Pokémon en zie direct het type,
+        de Pokopia-specialiteit, welke habitat(s)
+        je nodig hebt en of de Pokémon uit de
+        basisgame, Bubbly Basin DLC of een event komt.
+      </p>
+
+      <form class="search" onsubmit="homeSearch(event)">
+
+        <input
+          id="homeSearch"
+          placeholder="Zoek Bulbasaur, Charmander, Pikachu, #007..."
+          autocomplete="off"
+        >
+
+        <button>
+          🔍 Zoeken
+        </button>
+
+      </form>
+
+      <p class="small">
+        Typ je Pokémon en druk op Enter.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="homecards">
+
+    <button class="homecard" onclick="showDex('all')">
+      <span>🔴</span>
+      <strong>Alle Pokémon</strong>
+      <small id="allHome">365 vermeldingen</small>
+    </button>
+
+    <button class="homecard" onclick="showDex('main')">
+      <span>🎮</span>
+      <strong>Basisgame</strong>
+      <small id="mainHome">308 vermeldingen</small>
+    </button>
+
+    <button class="homecard" onclick="showDex('basin')">
+      <span>🫧</span>
+      <strong>Bubbly Basin DLC</strong>
+      <small id="basinHome">52 vermeldingen</small>
+    </button>
+
+    <button class="homecard" onclick="showDex('event')">
+      <span>⭐</span>
+      <strong>Event</strong>
+      <small id="eventHome">5 vermeldingen</small>
+    </button>
+
+  </div>
+
+  <div id="homeStatus" class="loading" style="margin-top:20px">
+    Pokémon-data laden…
+  </div>
+
+</section>
+
+
+<section id="dex" class="view">
+
+  <div class="heading">
+    <div>
+      <h1 id="dexTitle">Alle Pokémon</h1>
+      <p id="dexSubtitle">NLPokopia Pokédex</p>
+    </div>
+
+    <div id="dexCount" class="count">
+      365 Pokémon
+    </div>
+  </div>
+
+  <div class="filters">
+
+    <input
+      id="dexSearch"
+      placeholder="Zoek Pokémon of nummer..."
+      oninput="renderDex()"
+    >
+
+    <select id="sectionFilter" onchange="renderDex()">
+      <option value="all">Alles</option>
+      <option value="main">Basisgame</option>
+      <option value="basin">Bubbly Basin DLC</option>
+      <option value="event">Event</option>
+    </select>
+
+    <select id="typeFilter" onchange="renderDex()">
+      <option value="all">Alle types</option>
+      <option value="normal">Normal</option>
+      <option value="fire">Fire</option>
+      <option value="water">Water</option>
+      <option value="electric">Electric</option>
+      <option value="grass">Grass</option>
+      <option value="ice">Ice</option>
+      <option value="fighting">Fighting</option>
+      <option value="poison">Poison</option>
+      <option value="ground">Ground</option>
+      <option value="flying">Flying</option>
+      <option value="psychic">Psychic</option>
+      <option value="bug">Bug</option>
+      <option value="rock">Rock</option>
+      <option value="ghost">Ghost</option>
+      <option value="dragon">Dragon</option>
+      <option value="dark">Dark</option>
+      <option value="steel">Steel</option>
+      <option value="fairy">Fairy</option>
+    </select>
+
+  </div>
+
+  <div id="dexGrid" class="grid"></div>
+
+</section>
+
+
+<section id="detail" class="view">
+
+  <button class="back" onclick="showDex(lastSection)">
+    ← Terug naar Pokédex
+  </button>
+
+  <div id="detailContent"></div>
+
+</section>
+
+
+<section id="mydex" class="view">
+
+  <div class="heading">
+    <div>
+      <h1>Mijn Pokédex</h1>
+      <p>Pokémon die jij hebt afgevinkt.</p>
+    </div>
+
+    <div id="myCount" class="count">
+      0 / 365
+    </div>
+  </div>
+
+  <div id="myGrid" class="grid"></div>
+
+</section>
+
+</main>
+
+
+<footer>
+  <strong>NLPokopia</strong>
+
+  <div>
+    De Nederlandse Pokémon Pokopia-fangids.
+  </div>
+
+  <small>
+    Onafhankelijke fansite. Niet officieel verbonden
+    aan Nintendo, The Pokémon Company of Game Freak.
+  </small>
+</footer>
+
+
+<script>
+
+const TYPE_COLORS = {
+  normal:["#919185","#f4f4ef","#5b5b51"],
+  fire:["#e4543d","#fff0ec","#a52d20"],
+  water:["#4597d5","#eaf5fc","#226b9f"],
+  electric:["#e4b92d","#fff9df","#9b7610"],
+  grass:["#4f9848","#edf7e9","#2f672c"],
+  ice:["#62b8c4","#eaf8fa","#347c87"],
+  fighting:["#b44339","#f9eae8","#762a23"],
+  poison:["#9855aa","#f5ebf8","#683574"],
+  ground:["#b8874d","#f8efe3","#76542d"],
+  flying:["#7698c5","#edf3fa","#485f84"],
+  psychic:["#d65a8e","#fcecf3","#96325e"],
+  bug:["#91a738","#f3f7e5","#5e701f"],
+  rock:["#9b844c","#f4efe2","#62532e"],
+  ghost:["#675087","#f0ecf6","#443259"],
+  dragon:["#5b59b0","#ececfa","#373574"],
+  dark:["#504854","#efedf0","#302a33"],
+  steel:["#778a94","#eff3f5","#4c5b62"],
+  fairy:["#d77dad","#faedf4","#934f72"]
+};
+
+let pokemon = [];
+let currentIndex = 0;
+let lastSection = "all";
+
+
+function hideViews(){
+  document.querySelectorAll(".view").forEach(v=>{
+    v.classList.remove("active");
+  });
+}
+
+
+function showHome(){
+  hideViews();
+  document.getElementById("home").classList.add("active");
+  window.scrollTo(0,0);
+}
+
+
+function showDex(section="all"){
+
+  lastSection=section;
+
+  hideViews();
+
+  document.getElementById("dex").classList.add("active");
+
+  document.getElementById("sectionFilter").value=section;
+
+  renderDex();
+
+  window.scrollTo(0,0);
+}
+
+
+function typeColor(type){
+
+  const key=(type||"normal").toLowerCase();
+
+  return TYPE_COLORS[key] || TYPE_COLORS.normal;
+}
+
+
+function sectionName(section){
+
+  if(section==="basin") return "Bubbly Basin DLC";
+  if(section==="event") return "Event";
+
+  return "Basisgame";
+}
+
+
+function spriteFor(p){
+
+  if(p.nationalDex){
+
+    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.nationalDex}.png`;
+
+  }
+
+  return "";
+}
+
+
+function homeSearch(e){
+
+  e.preventDefault();
+
+  const q=document
+    .getElementById("homeSearch")
+    .value
+    .trim()
+    .toLowerCase();
+
+  if(!q) return;
+
+  const clean=q.replace("#","");
+
+  const found=pokemon.find(p=>
+
+    p.name.toLowerCase()===q ||
+
+    String(p.number)===clean ||
+
+    String(p.number).padStart(3,"0")===clean
+
+  );
+
+  if(found){
+
+    openPokemon(pokemon.indexOf(found));
+
+  }else{
+
+    showDex("all");
+
+    document.getElementById("dexSearch").value=q;
+
+    renderDex();
+
+  }
+}
+
+
+function renderDex(){
+
+  const grid=document.getElementById("dexGrid");
+
+  if(!pokemon.length){
+
+    grid.innerHTML=`
+      <div class="error">
+        De Pokémon-data kon nog niet

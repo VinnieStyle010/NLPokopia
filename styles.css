@@ -1,0 +1,1100 @@
+let currentPokemon = 1;
+let lastDexFilter = "all";
+
+
+function hideAllViews() {
+
+  document
+    .querySelectorAll(".view")
+    .forEach(view => {
+      view.classList.remove("active");
+    });
+
+}
+
+
+function showHome() {
+
+  hideAllViews();
+
+  document
+    .getElementById("homeView")
+    .classList.add("active");
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+}
+
+
+function showDex(filter) {
+
+  hideAllViews();
+
+  document
+    .getElementById("dexView")
+    .classList.add("active");
+
+
+  if (filter) {
+
+    lastDexFilter = filter;
+
+    document
+      .getElementById("gameFilter")
+      .value = filter;
+
+  }
+
+
+  renderDex();
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+}
+
+
+function showHabitats() {
+
+  hideAllViews();
+
+  document
+    .getElementById("habitatsView")
+    .classList.add("active");
+
+  window.scrollTo(0, 0);
+
+}
+
+
+function showMaterials() {
+
+  hideAllViews();
+
+  document
+    .getElementById("materialsView")
+    .classList.add("active");
+
+  window.scrollTo(0, 0);
+
+}
+
+
+/* =========================================================
+   HOME SEARCH
+   ENTER WERKT OOK
+   ========================================================= */
+
+function searchFromHome(event) {
+
+  event.preventDefault();
+
+
+  const input =
+    document
+      .getElementById("homeSearch")
+      .value
+      .trim()
+      .toLowerCase();
+
+
+  if (!input) {
+    return;
+  }
+
+
+  const cleaned =
+    input.replace("#", "");
+
+
+  const exactPokemon =
+    pokemon.find(p => {
+
+      const number =
+        String(p.number);
+
+      const padded =
+        number.padStart(3, "0");
+
+
+      return (
+
+        p.name
+          .toLowerCase() === input
+
+        ||
+
+        number === cleaned
+
+        ||
+
+        padded === cleaned
+
+      );
+
+    });
+
+
+  if (exactPokemon) {
+
+    openPokemon(
+      exactPokemon.number
+    );
+
+    return;
+
+  }
+
+
+  showDex("all");
+
+
+  document
+    .getElementById("dexSearch")
+    .value = input;
+
+
+  renderDex();
+
+}
+
+
+/* =========================================================
+   DEX
+   ========================================================= */
+
+function renderDex() {
+
+  const search =
+    document
+      .getElementById("dexSearch")
+      .value
+      .trim()
+      .toLowerCase();
+
+
+  const game =
+    document
+      .getElementById("gameFilter")
+      .value;
+
+
+  const type =
+    document
+      .getElementById("typeFilter")
+      .value;
+
+
+  const results =
+    pokemon.filter(p => {
+
+      const number =
+        String(p.number)
+          .padStart(3, "0");
+
+
+      const matchesSearch =
+
+        !search
+
+        ||
+
+        p.name
+          .toLowerCase()
+          .includes(search)
+
+        ||
+
+        number.includes(
+          search.replace("#", "")
+        );
+
+
+      const matchesGame =
+
+        game === "all"
+
+        ||
+
+        game === p.game;
+
+
+      const matchesType =
+
+        type === "all"
+
+        ||
+
+        p.types.includes(type);
+
+
+      return (
+        matchesSearch &&
+        matchesGame &&
+        matchesType
+      );
+
+    });
+
+
+  updateDexHeading(
+    game,
+    results.length
+  );
+
+
+  const grid =
+    document
+      .getElementById("dexGrid");
+
+
+  grid.innerHTML =
+    results
+      .map(p => {
+
+        const primaryType =
+          p.types[0] || "normal";
+
+
+        const colors =
+          typeColors[primaryType]
+          || typeColors.normal;
+
+
+        return `
+
+          <article
+            class="dex-card"
+            onclick="openPokemon(${p.number})"
+            style="
+              --pokemon-main:${colors.main};
+              --pokemon-light:${colors.light};
+            "
+          >
+
+            ${
+              p.dlc
+                ? `
+                  <span class="card-dlc">
+                    DLC
+                  </span>
+                `
+                : ""
+            }
+
+
+            <span class="dex-number">
+              #${String(p.number).padStart(3, "0")}
+            </span>
+
+
+            <div class="dex-image">
+
+              ${
+                p.image
+                  ? `
+                    <img
+                      src="${p.image}"
+                      alt="${p.name}"
+                    >
+                  `
+                  : `
+                    <div class="no-image">
+                      ${String(p.number).padStart(3, "0")}
+                    </div>
+                  `
+              }
+
+            </div>
+
+
+            <h3>
+              ${p.name}
+            </h3>
+
+
+            <div class="dex-source">
+
+              ${
+                p.dlc
+                  ? "🫧 DLC"
+                  : "🎮 Basisgame"
+              }
+
+            </div>
+
+          </article>
+
+        `;
+
+      })
+      .join("");
+
+}
+
+
+function updateDexHeading(
+  game,
+  count
+) {
+
+  const title =
+    document.getElementById("dexTitle");
+
+
+  const description =
+    document.getElementById("dexDescription");
+
+
+  if (game === "base") {
+
+    title.textContent =
+      "Basisgame";
+
+    description.textContent =
+      "Pokémon uit de basisgame";
+
+  }
+
+  else if (game === "dlc") {
+
+    title.textContent =
+      "DLC Pokémon";
+
+    description.textContent =
+      "Pokémon uit aanvullende Pokopia-content";
+
+  }
+
+  else {
+
+    title.textContent =
+      "Alle Pokémon";
+
+    description.textContent =
+      "Basisgame + DLC";
+
+  }
+
+
+  document
+    .getElementById("dexCounter")
+    .textContent =
+    `${count} Pokémon`;
+
+}
+
+
+/* =========================================================
+   OPEN POKEMON
+   ========================================================= */
+
+function openPokemon(number) {
+
+  const p =
+    pokemon.find(
+      item => item.number === number
+    );
+
+
+  if (!p) {
+    return;
+  }
+
+
+  currentPokemon =
+    p.number;
+
+
+  hideAllViews();
+
+
+  document
+    .getElementById("pokemonView")
+    .classList.add("active");
+
+
+  setPokemonTheme(p);
+
+
+  document
+    .getElementById("pokemonNumber")
+    .textContent =
+    `#${String(p.number).padStart(3, "0")}`;
+
+
+  document
+    .getElementById("pokemonName")
+    .textContent =
+    p.name;
+
+
+  document
+    .getElementById("stepsPokemonName")
+    .textContent =
+    p.name;
+
+
+  document
+    .getElementById("difficulty")
+    .textContent =
+    p.difficulty;
+
+
+  document
+    .getElementById("habitat")
+    .textContent =
+    p.habitat;
+
+
+  document
+    .getElementById("requirements")
+    .textContent =
+    p.requirements;
+
+
+  document
+    .getElementById("time")
+    .textContent =
+    p.time;
+
+
+  document
+    .getElementById("weather")
+    .textContent =
+    p.weather;
+
+
+  document
+    .getElementById("specialty")
+    .textContent =
+    p.specialty;
+
+
+  document
+    .getElementById("description")
+    .textContent =
+    p.description;
+
+
+  document
+    .getElementById("alternative")
+    .textContent =
+    p.alternative;
+
+
+  document
+    .getElementById("abilityText")
+    .textContent =
+    p.ability;
+
+
+  document
+    .getElementById("comfortText")
+    .textContent =
+    p.comfort;
+
+
+  document
+    .getElementById("personalTip")
+    .textContent =
+    p.personalTip;
+
+
+  renderTypes(p);
+
+  renderPokemonImage(p);
+
+  renderPokemonPattern(p);
+
+  renderDLC(p);
+
+  renderSteps(p);
+
+  renderVideo(p);
+
+  loadChecks();
+
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+}
+
+
+/* =========================================================
+   THEME
+   ========================================================= */
+
+function setPokemonTheme(p) {
+
+  const primaryType =
+    p.types[0] || "normal";
+
+
+  const colors =
+    typeColors[primaryType]
+    || typeColors.normal;
+
+
+  document
+    .documentElement
+    .style
+    .setProperty(
+      "--pokemon-main",
+      colors.main
+    );
+
+
+  document
+    .documentElement
+    .style
+    .setProperty(
+      "--pokemon-light",
+      colors.light
+    );
+
+
+  document
+    .documentElement
+    .style
+    .setProperty(
+      "--pokemon-dark",
+      colors.dark
+    );
+
+}
+
+
+/* =========================================================
+   TYPES
+   ========================================================= */
+
+function renderTypes(p) {
+
+  const container =
+    document
+      .getElementById("pokemonTypes");
+
+
+  container.innerHTML =
+    p.types
+      .map(type => {
+
+        const colors =
+          typeColors[type]
+          || typeColors.normal;
+
+
+        return `
+
+          <span
+            class="type-badge"
+            style="background:${colors.main}"
+          >
+            ${type.toUpperCase()}
+          </span>
+
+        `;
+
+      })
+      .join("");
+
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+function renderPokemonImage(p) {
+
+  const container =
+    document
+      .getElementById("pokemonArtwork");
+
+
+  if (p.image) {
+
+    container.innerHTML = `
+
+      <img
+        src="${p.image}"
+        alt="${p.name}"
+      >
+
+    `;
+
+  }
+
+  else {
+
+    container.innerHTML = `
+
+      <div class="image-placeholder">
+
+        #${String(p.number).padStart(3, "0")}
+        <br>
+        ${p.name}
+
+      </div>
+
+    `;
+
+  }
+
+}
+
+
+/* =========================================================
+   BACKGROUND FIGURES
+   ========================================================= */
+
+function renderPokemonPattern(p) {
+
+  const image =
+    p.backgroundImage
+    || p.image;
+
+
+  const ids = [
+    "pattern1",
+    "pattern2",
+    "pattern3",
+    "pattern4"
+  ];
+
+
+  ids.forEach(id => {
+
+    const element =
+      document
+        .getElementById(id);
+
+
+    if (image) {
+
+      element.src =
+        image;
+
+      element.style.display =
+        "block";
+
+    }
+
+    else {
+
+      element.removeAttribute("src");
+
+      element.style.display =
+        "none";
+
+    }
+
+  });
+
+}
+
+
+/* =========================================================
+   DLC
+   ========================================================= */
+
+function renderDLC(p) {
+
+  const warning =
+    document
+      .getElementById("dlcWarning");
+
+
+  const badge =
+    document
+      .getElementById("dlcBadge");
+
+
+  if (p.dlc) {
+
+    warning
+      .classList
+      .remove("hidden");
+
+
+    badge
+      .classList
+      .remove("hidden");
+
+
+    document
+      .getElementById("dlcName")
+      .textContent =
+      p.dlcName || "Pokopia DLC";
+
+  }
+
+  else {
+
+    warning
+      .classList
+      .add("hidden");
+
+
+    badge
+      .classList
+      .add("hidden");
+
+  }
+
+}
+
+
+/* =========================================================
+   STEPS
+   ========================================================= */
+
+function renderSteps(p) {
+
+  const container =
+    document
+      .getElementById("stepsContainer");
+
+
+  container.innerHTML =
+    p.steps
+      .map(
+        (step,index) => `
+
+          <article class="step-card">
+
+            <div class="step-number">
+              ${index + 1}
+            </div>
+
+            <h3>
+              ${step.title}
+            </h3>
+
+            <div class="step-picture">
+
+              ${
+                step.image
+                  ? `
+                    <img
+                      src="${step.image}"
+                      alt="${step.title}"
+                    >
+                  `
+                  : "🖼️"
+              }
+
+            </div>
+
+            <p>
+              ${step.text}
+            </p>
+
+          </article>
+
+        `
+      )
+      .join("");
+
+}
+
+
+/* =========================================================
+   VIDEO
+   ========================================================= */
+
+function renderVideo(p) {
+
+  const container =
+    document
+      .getElementById("videoContainer");
+
+
+  const credit =
+    document
+      .getElementById("videoCredit");
+
+
+  document
+    .getElementById("videoTitle")
+    .textContent =
+    p.video.title
+    || `Zo krijg je ${p.name}`;
+
+
+  document
+    .getElementById("videoDescription")
+    .textContent =
+    p.video.description
+    || `Bekijk een video waarin je kunt zien hoe ${p.name} wordt verkregen.`;
+
+
+  if (p.video.embed) {
+
+    container.innerHTML = `
+
+      <iframe
+        src="${p.video.embed}"
+        title="${p.name} video"
+        allowfullscreen
+      ></iframe>
+
+    `;
+
+  }
+
+  else {
+
+    container.innerHTML = `
+
+      <div class="video-empty">
+
+        🎬
+
+        <strong>
+          Nog geen video toegevoegd
+        </strong>
+
+      </div>
+
+    `;
+
+  }
+
+
+  if (p.video.url) {
+
+    credit.innerHTML = `
+
+      <a
+        href="${p.video.url}"
+        class="video-link"
+        target="_blank"
+        rel="noopener"
+      >
+        ▶ Bekijk originele video
+      </a>
+
+      <p>
+        ${
+          p.video.creator
+            ? `Video van: ${p.video.creator}`
+            : "Video van de oorspronkelijke maker."
+        }
+      </p>
+
+    `;
+
+  }
+
+  else {
+
+    credit.innerHTML = `
+
+      <p>
+        Voor deze Pokémon zoeken we nog
+        een geschikt videovoorbeeld.
+      </p>
+
+    `;
+
+  }
+
+}
+
+
+/* =========================================================
+   CHECKLIST
+   ========================================================= */
+
+function saveChecks() {
+
+  const ids = [
+    "checkHabitat",
+    "checkItems",
+    "checkSeen",
+    "checkCaught"
+  ];
+
+
+  ids.forEach(id => {
+
+    const checked =
+      document
+        .getElementById(id)
+        .checked;
+
+
+    localStorage.setItem(
+      `nlpokopia_${currentPokemon}_${id}`,
+      checked
+    );
+
+  });
+
+
+  localStorage.setItem(
+
+    `nlpokopia_${currentPokemon}_complete`,
+
+    document
+      .getElementById("checkCaught")
+      .checked
+
+  );
+
+}
+
+
+function loadChecks() {
+
+  const ids = [
+    "checkHabitat",
+    "checkItems",
+    "checkSeen",
+    "checkCaught"
+  ];
+
+
+  ids.forEach(id => {
+
+    document
+      .getElementById(id)
+      .checked =
+
+      localStorage.getItem(
+        `nlpokopia_${currentPokemon}_${id}`
+      ) === "true";
+
+  });
+
+}
+
+
+/* =========================================================
+   MY DEX
+   ========================================================= */
+
+function showMyDex() {
+
+  hideAllViews();
+
+
+  document
+    .getElementById("myDexView")
+    .classList
+    .add("active");
+
+
+  const completed =
+    pokemon.filter(p =>
+
+      localStorage.getItem(
+        `nlpokopia_${p.number}_complete`
+      ) === "true"
+
+    );
+
+
+  document
+    .getElementById("myDexCounter")
+    .textContent =
+    `${completed.length} / 365`;
+
+
+  const grid =
+    document
+      .getElementById("myDexGrid");
+
+
+  if (!completed.length) {
+
+    grid.innerHTML = `
+
+      <article class="content-card">
+        Je hebt nog geen Pokémon als compleet afgevinkt.
+      </article>
+
+    `;
+
+    return;
+
+  }
+
+
+  grid.innerHTML =
+    completed
+      .map(p => `
+
+        <article
+          class="dex-card"
+          onclick="openPokemon(${p.number})"
+        >
+
+          <span class="dex-number">
+            #${String(p.number).padStart(3,"0")}
+          </span>
+
+          <div class="dex-image">
+            ✅
+          </div>
+
+          <h3>
+            ${p.name}
+          </h3>
+
+        </article>
+
+      `)
+      .join("");
+
+
+  window.scrollTo(0,0);
+
+}
+
+
+/* =========================================================
+   PREVIOUS / NEXT
+   ========================================================= */
+
+function previousPokemon() {
+
+  if (currentPokemon > 1) {
+
+    openPokemon(
+      currentPokemon - 1
+    );
+
+  }
+
+}
+
+
+function nextPokemon() {
+
+  if (currentPokemon < pokemon.length) {
+
+    openPokemon(
+      currentPokemon + 1
+    );
+
+  }
+
+}
+
+
+/* =========================================================
+   START
+   ========================================================= */
+
+renderDex();

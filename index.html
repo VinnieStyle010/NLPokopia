@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NLpokopia | De Nederlandse Pokémon Pokopia Gids</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      /* VASTE NLPOKOPIA / MASTER BALL KLEUREN */
+      --master-purple: #6f2dbd;
+      --master-dark: #38105f;
+      --master-light: #eee4fa;
+      --master-pink: #e94192;
+      --white: #ffffff;
+      --text: #201827;
+      --soft: #f8f5fb;
+
+      /* POKÉMON TYPEKLEUR - verandert per Pokémon */
+      --pokemon-main: #3d963f;
+      --pokemon-light: #edf8eb;
+      --pokemon-dark: #17651e;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(233,65,146,0.08), transparent 25%),
+        radial-gradient(circle at 90% 20%, rgba(111,45,189,0.10), transparent 30%),
+        #f8f5fb;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      background:
+        linear-gradient(135deg, var(--master-dark), var(--master-purple));
+      color: white;
+      padding: 18px 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.20);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .logo {
+      font-size: 34px;
+      font-weight: 900;
+      letter-spacing: -2px;
+    }
+
+    .logo span:first-child {
+      color: white;
+    }
+
+    .logo span:last-child {
+      color: #ff6cb3;
+    }
+
+    .tagline {
+      font-size: 13px;
+      opacity: 0.9;
+      margin-top: 3px;
+      letter-spacing: 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 10px 15px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.15);
+    }
+
+    /* =========================
+       PAGINA
+    ========================== */
+
+    .page {
+      max-width: 1400px;
+      margin: 25px auto;
+      padding: 0 18px;
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      gap: 22px;
+    }
+
+    /* =========================
+       SIDEBAR
+    ========================== */
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .side-card {
+      background: white;
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 5px 18px rgba(54,16,95,0.10);
+      border: 1px solid #e7dff0;
+    }
+
+    .side-card h3 {
+      color: var(--master-purple);
+      margin-bottom: 14px;
+    }
+
+    .searchbox {
+      display: flex;
+      border: 2px solid var(--master-purple);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .searchbox input {
+      border: none;
+      flex: 1;
+      min-width: 0;
+      padding: 12px;
+      outline: none;
+    }
+
+    .searchbox button {
+      border: none;
+      background: var(--master-purple);
+      color: white;
+      padding: 10px 13px;
+      cursor: pointer;
+      font-size: 17px;
+    }
+
+    .side-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .side-menu a {
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .side-menu a:hover {
+      background: var(--master-light);
+      color: var(--master-purple);
+    }
+
+    .progress {
+      height: 10px;
+      background: #eee8f4;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 14px 0;
+    }
+
+    .progress-bar {
+      width: 0.33%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--master-purple), var(--master-pink));
+    }
+
+    /* =========================
+       MAIN CONTENT
+    ========================== */
+
+    main {
+      min-width: 0;
+    }
+
+    /* =========================
+       POKEMON HERO
+    ========================== */
+
+    .pokemon-hero {
+      position: relative;
+      overflow: hidden;
+      background: var(--pokemon-light);
+      border: 2px solid color-mix(in srgb, var(--pokemon-main), white 55%);
+      border-radius: 22px;
+      padding: 24px;
+      min-height: 340px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+    }
+
+    /* LICHTE ONGECOLORDE POKÉMON ACHTERGROND */
+    .pokemon-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.055;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .pokemon-pattern span {
+      position: absolute;
+      font-size: 75px;
+      filter: grayscale(1);
+    }
+
+    .pokemon-pattern span:nth-child(1) {
+      left: 5%;
+      top: 20%;
+      transform: rotate(-12deg);
+    }
+
+    .pokemon-pattern span:nth-child(2) {
+      right: 7%;
+      top: 8%;
+      transform: rotate(15deg);
+    }
+
+    .pokemon-pattern span:nth-child(3) {
+      left: 45%;
+      bottom: 3%;
+      transform: rotate(8deg);
+    }
+
+    .pokemon-content {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .pokemon-number {
+      display: inline-block;
+      background: var(--pokemon-main);
+      color: white;
+      font-size: 27px;
+      font-weight: 900;
+      padding: 9px 16px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .pokemon-name {
+      font-size: clamp(40px, 7vw, 70px);
+      font-weight: 900;
+      line-height: 0.95;
+      margin-bottom: 14px;
+    }
+
+    .types {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .type {
+      color: white;
+      padding: 7px 13px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .grass {
+      background: #4a9d49;
+    }
+
+    .poison {
+      background: #9854af;
+    }
+
+    .quick-info {
+      width: 100%;
+      max-width: 500px;
+      border-collapse: collapse;
+      background: rgba(255,255,255,0.83);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .quick-info td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #e7e2e9;
+    }
+
+    .quick-info td:first-child {
+      font-weight: bold;
+      width: 130px;
+    }
+
+    .pokemon-image {
+      min-height: 280px;
+      border-radius: 20px;
+      background:
+        radial-gradient(circle at center, #ffffff 0%, rgba(255,255,255,0.65) 45%, transparent 75%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 170px;
+    }
+
+    /* =========================
+       CONTENT BLOKKEN
+    ========================== */
+
+    .grid-two {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .content-card {
+      background: white;
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 5px 18px rgba(54,16,95,0.08);
+      border: 1px solid #e8e0ef;
+    }
+
+    .pokemon-card {
+      background: var(--pokemon-light);
+      border-color: color-mix(in srgb, var(--pokemon-main), white 60%);
+    }
+
+    .content-card h2,
+    .content-card h3 {
+      margin-bottom: 12px;
+    }
+
+    .pokemon-title {
+      color: var(--pokemon-dark);
+    }
+
+    /* =========================
+       STAPPEN
+    ========================== */
+
+    .steps {
+      margin-top: 20px;
+      background: white;
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: 0 5px 18px rgba(54,16,95,0.08);
+    }
+
+    .steps h2 {
+      margin-bottom: 20px;
+    }
+
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+    }
+
+    .step {
+      padding: 12px;
+      background: var(--pokemon-light);
+      border-radius: 14px;
+      border: 1px solid color-mix(in srgb, var(--pokemon-main), white 65%);
+    }
+
+    .step-number {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--pokemon-main);
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .step-image {
+      height: 130px;
+      border-radius: 12px;
+      background:
+        linear-gradient(135deg, #9ed179, #5a9e50);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 55px;
+      margin: 10px 0;
+    }
+
+    .step h4 {
+      color: var(--pokemon-dark);
+      min-height: 40px;
+    }
+
+    .step p {
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    /* =========================
+       VIDEO
+    ========================== */
+
+    .video-card {
+      margin-top: 20px;
+      background: var(--pokemon-light);
+      border: 1px solid color-mix(in srgb, var(--pokemon-main), white 60%);
+      padding: 22px;
+      border-radius: 20px;
+    }
+
+    .video-layout {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .video-placeholder {
+      min-height: 260px;
+      border-radius: 17px;
+      background:
+        linear-gradient(135deg, #17331b, #4c9a45);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .play-button {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: white;
+      color: #ff0033;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      margin-top: 15px;
+    }
+
+    .youtube-button {
+      display: inline-block;
+      margin-top: 14px;
+      background: #ff0033;
+      color: white;
+      padding: 11px 17px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    /* =========================
+       TIP
+    ========================== */
+
+    .personal-tip {
+      background: #fff8db;
+      border: 1px solid #f2d568;
+    }
+
+    .tip-person {
+      display: grid;
+      grid-template-columns: 75px 1fr;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .boy {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background: #ffd34f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 47px;
+    }
+
+    /* =========================
+       CHECKLIST
+    ========================== */
+
+    .checklist {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .check {
+      background: white;
+      border-radius: 12px;
+      padding: 11px 14px;
+      border: 1px solid #e8dfef;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      margin-top: 30px;
+      background: var(--master-dark);
+      color: white;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    footer strong {
+      color: #ff70b8;
+    }
+
+    /* =========================
+       MOBIEL
+    ========================== */
+
+    @media (max-width: 1000px) {
+      .page {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        display: none;
+      }
+
+      .pokemon-content {
+        grid-template-columns: 1fr;
+      }
+
+      .pokemon-image {
+        min-height: 220px;
+      }
+
+      .step-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .video-layout,
+      .grid-two {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      header {
+        position: static;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+      }
+
+      nav a {
+        white-space: nowrap;
+      }
+
+      .page {
+        padding: 0 10px;
+      }
+
+      .pokemon-hero {
+        padding: 16px;
+      }
+
+      .pokemon-name {
+        font-size: 43px;
+      }
+
+      .pokemon-image {
+        font-size: 125px;
+      }
+
+      .step-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+
+    <div>
+      <div class="logo">
+        <span>NL</span><span>POKOPIA</span>
+      </div>
+      <div class="tagline">
+        De Nederlandse gids voor Pokémon Pokopia
+      </div>
+    </div>
+
+    <nav>
+      <a href="#">🏠 Home</a>
+      <a href="#">🔴 Pokémon</a>
+      <a href="#">🌿 Habitats</a>
+      <a href="#">🪵 Materialen</a>
+      <a href="#">📋 Mijn Pokédex</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<div class="page">
+
+  <!-- LINKER MENU -->
+  <aside class="sidebar">
+
+    <div class="side-card">
+
+      <h3>🔎 Zoek een Pokémon</h3>
+
+      <div class="searchbox">
+        <input
+          id="pokemonSearch"
+          type="text"
+          placeholder="Pikachu, Lapras..."
+        >
+        <button onclick="zoekPokemon()">🔍</button>
+      </div>
+
+    </div>
+
+
+    <div class="side-card side-menu">
+
+      <a href="#">🔴 Alle Pokémon</a>
+      <a href="#">🌿 Habitats</a>
+      <a href="#">🪵 Materialen</a>
+      <a href="#">📋 Mijn Pokédex</a>
+      <a href="#">💡 Tips & Gidsen</a>
+      <a href="#">⚙️ Updates</a>
+
+    </div>
+
+
+    <div class="side-card">
+
+      <h3>Mijn Pokédex</h3>
+
+      <h2>1 / 300</h2>
+
+      <p>0% compleet</p>
+
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+
+      <strong>Je bent begonnen! 🌱</strong>
+
+    </div>
+
+
+    <div class="side-card personal-tip">
+
+      <h3>⭐ Persoonlijke tip</h3>
+
+      <div class="tip-person">
+
+        <div class="boy">👱‍♂️</div>
+
+        <p>
+          Bulbasaur is een mooie Pokémon om mee te beginnen.
+          Maak je habitat rustig stap voor stap en controleer
+          daarna goed of alles klopt.
+        </p>
+
+      </div>
+
+    </div>
+
+  </aside>
+
+
+  <!-- HOOFDINHOUD -->
+  <main>
+
+
+    <!-- POKEMON -->
+    <section class="pokemon-hero">
+
+      <div class="pokemon-pattern">
+        <span>🌱</span>
+        <span>🌱</span>
+        <span>🌱</span>
+      </div>
+
+      <div class="pokemon-content">
+
+        <div>
+
+          <div class="pokemon-number">
+            #001
+          </div>
+
+          <div class="pokemon-name">
+            BULBASAUR
+          </div>
+
+          <div class="types">
+
+            <span class="type grass">
+              🌿 GRASS
+            </span>
+
+            <span class="type poison">
+              ☠️ POISON
+            </span>
+
+          </div>
+
+
+          <table class="quick-info">
+
+            <tr>
+              <td>Moeilijkheid</td>
+              <td>🟢 Makkelijk</td>
+            </tr>
+
+            <tr>
+              <td>Habitat</td>
+              <td>🌿 Tall Grass</td>
+            </tr>
+
+            <tr>
+              <td>Nodig</td>
+              <td>🌱 4x Tall Grass</td>
+            </tr>
+
+            <tr>
+              <td>Tijd</td>
+              <td>🕐 Hele dag</td>
+            </tr>
+
+            <tr>
+              <td>Weer</td>
+              <td>☀️ Alle weersomstandigheden</td>
+            </tr>
+
+            <tr>
+              <td>Specialiteit</td>
+              <td>🌱 Grow / Leafage</td>
+            </tr>
+
+          </table>
+
+        </div>
+
+
+        <div class="pokemon-image">
+          🌱
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <div class="grid-two">
+
+      <div class="content-card pokemon-card">
+
+        <h2 class="pokemon-title">
+          Korte uitleg
+        </h2>
+
+        <p>
+          Hier komt straks onze korte uitleg over Bulbasaur.
+          Je ziet direct wat je nodig hebt zonder eerst een
+          heel artikel door te hoeven lezen.
+        </p>
+
+      </div>
+
+
+      <div class="content-card pokemon-card">
+
+        <h2 class="pokemon-title">
+          Tweede manier
+        </h2>
+
+        <p>
+          Later kunnen we hier alternatieve habitats,
+          speciale voorwaarden of andere manieren
+          om deze Pokémon te krijgen laten zien.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- STAPPEN -->
+    <section class="steps">
+
+      <h2>
+        🌿 Zo krijg je Bulbasaur
+      </h2>
+
+
+      <div class="step-grid">
+
+
+        <div class="step">
+
+          <div class="step-number">1</div>
+
+          <h4>
+            Verzamel Tall Grass
+          </h4>
+
+          <div class="step-image">
+            🌿
+          </div>
+
+          <p>
+            Verzamel de materialen die je nodig hebt
+            om de juiste habitat te maken.
+          </p>
+
+        </div>
+
+
+        <div class="step">
+
+          <div class="step-number">2</div>
+
+          <h4>
+            Plaats alles bij elkaar
+          </h4>
+
+          <div class="step-image">
+            🌿🌿
+          </div>
+
+          <p>
+            Zet de onderdelen op de juiste plaats
+            zodat het spel de habitat herkent.
+          </p>
+
+        </div>
+
+
+        <div class="step">
+
+          <div class="step-number">3</div>
+
+          <h4>
+            Activeer de omgeving
+          </h4>
+
+          <div class="step-image">
+            💧
+          </div>
+
+          <p>
+            Gebruik indien nodig een vaardigheid
+            om de omgeving te activeren.
+          </p>
+
+        </div>
+
+
+        <div class="step">
+
+          <div class="step-number">4</div>
+
+          <h4>
+            Kijk goed rond
+          </h4>
+
+          <div class="step-image">
+            👀
+          </div>
+
+          <p>
+            Kijk of je beweging of andere aanwijzingen
+            in de omgeving ziet.
+          </p>
+
+        </div>
+
+
+        <div class="step">
+
+          <div class="step-number">5</div>
+
+          <h4>
+            Daar is Bulbasaur!
+          </h4>
+
+          <div class="step-image">
+            🌱
+          </div>
+
+          <p>
+            Praat met Bulbasaur en voeg hem toe
+            aan je Pokédex.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- VIDEO -->
+    <section class="video-card">
+
+      <h2 class="pokemon-title">
+        🎬 Video voorbeeld
+      </h2>
+
+      <br>
+
+      <div class="video-layout">
+
+        <div class="video-placeholder">
+
+          <div>
+            HOW TO GET BULBASAUR
+          </div>
+
+          <div class="play-button">
+            ▶
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Liever zien hoe het werkt?
+          </h3>
+
+          <br>
+
+          <p>
+            Hier plaatsen we een goede video van YouTube,
+            TikTok of een ander platform waarin je kunt
+            zien hoe deze Pokémon wordt verkregen.
+          </p>
+
+          <a
+            class="youtube-button"
+            href="#"
+            target="_blank"
+          >
+            ▶ Bekijk originele video
+          </a>
+
+          <p style="margin-top:12px;font-size:13px;">
+            Video blijft eigendom van de oorspronkelijke maker.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- EXTRA -->
+    <div class="grid-two">
+
+      <div class="content-card pokemon-card">
+
+        <h2 class="pokemon-title">
+          🌿 Wat leer je van Bulbasaur?
+        </h2>
+
+        <p>
+          Hier leggen we straks uit welke vaardigheid,
+          functie of andere voordelen Bulbasaur
+          in Pokopia heeft.
+        </p>
+
+      </div>
+
+
+      <div class="content-card pokemon-card">
+
+        <h2 class="pokemon-title">
+          ❤️ Comfort wens
+        </h2>
+
+        <p>
+          Hier laten we zien welke voorwerpen of
+          voorzieningen Bulbasaur graag in zijn
+          omgeving wil hebben.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- CHECKLIST -->
+    <section class="content-card" style="margin-top:20px;">
+
+      <h2>
+        📋 Checklist
+      </h2>
+
+      <div class="checklist">
+
+        <div class="check">
+          ✅ Habitat gebouwd
+        </div>
+
+        <div class="check">
+          ✅ Benodigdheden verzameld
+        </div>
+
+        <div class="check">
+          ✅ Bulbasaur verschenen
+        </div>
+
+        <div class="check">
+          ✅ Met Bulbasaur gesproken
+        </div>
+
+        <div class="check">
+          ✅ Toegevoegd aan mijn Pokédex
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+</div>
+
+
+<footer>
+
+  <h2>
+    ✅ Gevonden? Dan is <strong>#001 Bulbasaur</strong> binnen.
+  </h2>
+
+  <br>
+
+  <p>
+    ➜ Op naar <strong>#002 Ivysaur!</strong>
+  </p>
+
+  <br>
+
+  <small>
+    NLpokopia is een onafhankelijke fansite en is niet
+    officieel verbonden aan Nintendo, The Pokémon Company
+    of Game Freak.
+  </small>
+
+</footer>
+
+
+<script>
+
+function zoekPokemon() {
+
+  const zoekwoord =
+    document
+    .getElementById("pokemonSearch")
+    .value
+    .toLowerCase()
+    .trim();
+
+  if (
+    zoekwoord === "bulbasaur" ||
+    zoekwoord === "001" ||
+    zoekwoord === "#001"
+  ) {
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+  } else {
+
+    alert(
+      "Deze Pokémon staat nog niet op NLpokopia. We zijn de Pokédex aan het uitbreiden!"
+    );
+
+  }
+
+}
+
+</script>
+
+
+</body>
+</html>

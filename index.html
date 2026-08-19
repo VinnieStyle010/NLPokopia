@@ -4,81 +4,79 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NLPokopia | Nederlandse Pokémon Pokopia Gids</title>
-<meta name="description" content="NLPokopia: Nederlandse Pokémon Pokopia gids met Pokémon, habitats, DLC, tips en video's.">
 
 <style>
 *{box-sizing:border-box}
+
 html{scroll-behavior:smooth}
+
 body{
   margin:0;
   font-family:Arial,Helvetica,sans-serif;
   color:#24162d;
-  background:#f7f3fb;
-  min-height:100vh
+  background:#f7f3fb
 }
+
 button,input,select{font:inherit}
 button{cursor:pointer}
-.hidden{display:none!important}
 
 :root{
   --master:#6e35a6;
-  --master2:#3c145f;
+  --dark:#3c145f;
   --pink:#eb4d9b;
   --soft:#f1e8f8;
+
   --poke:#777;
   --pokeLight:#f4f4f4;
   --pokeDark:#444
-}
-
-body:before{
-  content:"";
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  background:
-    radial-gradient(circle at 8% 8%,rgba(235,77,155,.08),transparent 24%),
-    radial-gradient(circle at 92% 12%,rgba(110,53,166,.10),transparent 27%);
-  z-index:-3
 }
 
 header{
   position:sticky;
   top:0;
   z-index:50;
-  color:#fff;
-  background:linear-gradient(135deg,var(--master2),var(--master));
+  background:linear-gradient(135deg,var(--dark),var(--master));
+  color:white;
   box-shadow:0 5px 20px #0003
 }
 
 .head{
-  max-width:1440px;
+  max-width:1400px;
   margin:auto;
   padding:14px 18px;
   display:flex;
-  gap:20px;
   justify-content:space-between;
+  gap:20px;
   align-items:center
 }
 
 .brand{
   display:flex;
   align-items:center;
-  gap:11px;
+  gap:10px;
+  background:none;
   border:0;
-  color:#fff;
-  background:transparent;
+  color:white;
   text-align:left
 }
 
-.brand strong{font-size:29px}
-.brand small{display:block;opacity:.85}
+.brand strong{font-size:28px}
+
+.brand small{
+  display:block;
+  opacity:.8
+}
 
 .masterball{
-  width:49px;
-  height:49px;
+  width:48px;
+  height:48px;
   border-radius:50%;
   border:3px solid #23142c;
-  background:linear-gradient(#793bab 0 43%,#222 43% 55%,#fff 55%);
+  background:linear-gradient(
+    #793bab 0 43%,
+    #222 43% 55%,
+    #fff 55%
+  );
   position:relative
 }
 
@@ -96,7 +94,7 @@ header{
   position:absolute;
   top:44%;
   left:50%;
-  transform:translate(-50%);
+  transform:translateX(-50%);
   width:13px;
   height:13px;
   border-radius:50%;
@@ -113,17 +111,19 @@ nav{
 
 nav button{
   border:0;
-  color:#fff;
   background:transparent;
+  color:#fff;
   padding:10px 12px;
   border-radius:10px;
   font-weight:800
 }
 
-nav button:hover{background:#ffffff20}
+nav button:hover{
+  background:#ffffff20
+}
 
 .wrap{
-  max-width:1440px;
+  max-width:1400px;
   margin:24px auto;
   padding:0 16px
 }
@@ -131,23 +131,33 @@ nav button:hover{background:#ffffff20}
 .view{display:none}
 .view.active{display:block}
 
-/* ACHTERGROND POKEBALLS */
+/* Achtergrond Poké Balls */
 
 .decor{
   position:fixed;
   inset:0;
-  z-index:-2;
   pointer-events:none;
+  z-index:-1;
   overflow:hidden
 }
 
 .ball{
   position:absolute;
-  width:70px;
-  height:70px;
+  width:72px;
+  height:72px;
   border-radius:50%;
   border:5px solid #252025;
-  opacity:.12
+  opacity:.10
+}
+
+.ball:before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:46%;
+  height:8px;
+  background:#252025
 }
 
 .ball:after{
@@ -163,16 +173,6 @@ nav button:hover{background:#ffffff20}
   background:#fff
 }
 
-.ball:before{
-  content:"";
-  position:absolute;
-  left:0;
-  right:0;
-  top:46%;
-  height:8px;
-  background:#252025
-}
-
 .pokeball{
   background:linear-gradient(#ed3b3b 0 48%,#fff 48%)
 }
@@ -182,44 +182,26 @@ nav button:hover{background:#ffffff20}
 }
 
 .ultraball{
-  background:linear-gradient(#252525 0 48%,#f3c52c 48% 60%,#fff 60%)
+  background:linear-gradient(
+    #252525 0 48%,
+    #f3c52c 48% 60%,
+    #fff 60%
+  )
 }
 
 .masterball2{
-  background:linear-gradient(#6e35a6 0 48%,#ec4f9b 48% 60%,#fff 60%)
+  background:linear-gradient(
+    #6e35a6 0 48%,
+    #ec4f9b 48% 60%,
+    #fff 60%
+  )
 }
-
-.diveball{
-  background:linear-gradient(#56bdda 0 48%,#185a9d 48% 60%,#fff 60%)
-}
-
-.luxuryball{
-  background:linear-gradient(#202020 0 48%,#d3a72e 48% 60%,#fff 60%)
-}
-
-.quickball{
-  background:linear-gradient(#2d76ba 0 48%,#f2d13a 48% 60%,#fff 60%)
-}
-
-/* POPULAIRE POKEMON ACHTERGROND */
-
-.popular{
-  position:absolute;
-  width:120px;
-  opacity:.08;
-  filter:grayscale(1);
-  pointer-events:none
-}
-
-.popular img{width:100%}
-
-/* HOME */
 
 .hero{
-  background:#fff;
+  background:white;
   border-radius:26px;
   padding:38px;
-  min-height:370px;
+  min-height:360px;
   box-shadow:0 8px 28px #35134f18;
   position:relative;
   overflow:hidden
@@ -228,7 +210,7 @@ nav button:hover{background:#ffffff20}
 .hero h1{
   font-size:clamp(52px,8vw,88px);
   margin:5px 0;
-  color:var(--master2);
+  color:var(--dark);
   line-height:1
 }
 
@@ -240,9 +222,8 @@ nav button:hover{background:#ffffff20}
 }
 
 .hero p{
-  max-width:790px;
-  line-height:1.6;
-  font-size:17px
+  max-width:780px;
+  line-height:1.6
 }
 
 .hero:after{
@@ -252,8 +233,7 @@ nav button:hover{background:#ffffff20}
   top:-70px;
   font-size:360px;
   font-weight:900;
-  color:#6e35a60a;
-  pointer-events:none
+  color:#6e35a60a
 }
 
 .search{
@@ -278,14 +258,9 @@ nav button:hover{background:#ffffff20}
 .search button{
   border:0;
   background:var(--master);
-  color:#fff;
+  color:white;
   padding:0 22px;
   font-weight:900
-}
-
-.small{
-  font-size:13px!important;
-  color:#716978
 }
 
 .homecards{
@@ -297,7 +272,7 @@ nav button:hover{background:#ffffff20}
 
 .homecard{
   border:0;
-  background:#fff;
+  background:white;
   border-radius:18px;
   padding:23px 14px;
   box-shadow:0 5px 17px #35134f12
@@ -306,18 +281,14 @@ nav button:hover{background:#ffffff20}
 .homecard span{
   display:block;
   font-size:34px;
-  margin-bottom:9px
+  margin-bottom:8px
 }
-
-.homecard strong{display:block}
 
 .homecard small{
-  color:#756d7a;
   display:block;
-  margin-top:5px
+  color:#756d7a;
+  margin-top:4px
 }
-
-/* POKEDEX */
 
 .heading{
   display:flex;
@@ -329,7 +300,7 @@ nav button:hover{background:#ffffff20}
 
 .heading h1{
   margin:0;
-  color:var(--master2);
+  color:var(--dark);
   font-size:38px
 }
 
@@ -340,7 +311,7 @@ nav button:hover{background:#ffffff20}
 
 .count{
   background:var(--soft);
-  color:var(--master2);
+  color:var(--dark);
   padding:11px 15px;
   border-radius:12px;
   font-weight:900
@@ -350,7 +321,7 @@ nav button:hover{background:#ffffff20}
   display:flex;
   flex-wrap:wrap;
   gap:10px;
-  background:#fff;
+  background:white;
   padding:14px;
   border-radius:17px;
   box-shadow:0 4px 14px #35134f12;
@@ -376,26 +347,24 @@ nav button:hover{background:#ffffff20}
 }
 
 .pcard{
-  background:#fff;
+  background:white;
   border:1px solid #ece4f0;
   border-radius:18px;
   padding:14px;
   min-height:205px;
   box-shadow:0 4px 13px #35134f0e;
   position:relative;
-  cursor:pointer;
-  overflow:hidden
+  cursor:pointer
 }
 
 .pcard:hover{
-  transform:translateY(-2px);
-  box-shadow:0 8px 18px #35134f1d
+  transform:translateY(-2px)
 }
 
 .num{
   display:inline-block;
   background:var(--poke);
-  color:#fff;
+  color:white;
   padding:5px 9px;
   border-radius:8px;
   font-weight:900
@@ -413,15 +382,15 @@ nav button:hover{background:#ffffff20}
   max-width:100%
 }
 
-.mini-ball{
-  width:70px;
-  height:70px;
+.mini{
+  width:72px;
+  height:72px;
   border-radius:50%;
   border:5px solid var(--poke);
-  color:var(--poke);
   display:flex;
   align-items:center;
   justify-content:center;
+  color:var(--poke);
   font-weight:900;
   background:var(--pokeLight)
 }
@@ -440,21 +409,19 @@ nav button:hover{background:#ffffff20}
   position:absolute;
   right:8px;
   top:8px;
-  color:#fff;
+  color:white;
   padding:5px 7px;
   border-radius:7px;
-  font-weight:900;
-  font-size:10px
+  font-size:10px;
+  font-weight:900
 }
 
 .dlc{background:var(--pink)}
 .event{background:#d19b16}
 
-/* DETAIL */
-
 .back{
   border:0;
-  background:#fff;
+  background:white;
   padding:10px 14px;
   border-radius:10px;
   font-weight:900;
@@ -471,34 +438,7 @@ nav button:hover{background:#ffffff20}
   box-shadow:0 8px 25px #0001
 }
 
-.pattern img{
-  position:absolute;
-  width:150px;
-  opacity:.055;
-  filter:grayscale(1)
-}
-
-.pattern img:nth-child(1){
-  left:3%;
-  top:4%;
-  transform:rotate(-15deg)
-}
-
-.pattern img:nth-child(2){
-  right:4%;
-  top:8%;
-  transform:rotate(16deg)
-}
-
-.pattern img:nth-child(3){
-  left:43%;
-  bottom:-35px;
-  transform:rotate(-8deg)
-}
-
 .detailinner{
-  position:relative;
-  z-index:2;
   padding:28px;
   display:grid;
   grid-template-columns:1.25fr .75fr;
@@ -549,8 +489,6 @@ nav button:hover{background:#ffffff20}
   border-bottom:1px solid #0000000d
 }
 
-.row:last-child{border:0}
-
 .row strong,
 .row span{
   padding:10px 12px
@@ -564,9 +502,8 @@ nav button:hover{background:#ffffff20}
 }
 
 .art img{
-  max-height:310px;
-  max-width:100%;
-  object-fit:contain
+  max-height:300px;
+  max-width:100%
 }
 
 .artplaceholder{
@@ -604,7 +541,7 @@ nav button:hover{background:#ffffff20}
 }
 
 .card{
-  background:#fff;
+  background:white;
   border-radius:18px;
   padding:20px;
   box-shadow:0 5px 17px #35134f12;
@@ -616,7 +553,9 @@ nav button:hover{background:#ffffff20}
   border:1px solid color-mix(in srgb,var(--poke),white 67%)
 }
 
-.pokecard h2{color:var(--pokeDark)}
+.pokecard h2{
+  color:var(--pokeDark)
+}
 
 .tip{
   display:flex;
@@ -632,13 +571,13 @@ nav button:hover{background:#ffffff20}
 .avatar{
   width:72px;
   height:72px;
-  flex:0 0 72px;
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
   background:#ffd65c;
-  font-size:45px
+  font-size:45px;
+  flex:0 0 72px
 }
 
 .video{
@@ -649,25 +588,18 @@ nav button:hover{background:#ffffff20}
   padding:20px
 }
 
-.videobtns{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-top:12px
-}
-
 .videobtn{
   display:inline-block;
   text-decoration:none;
-  color:#fff;
+  color:white;
   padding:11px 14px;
   border-radius:9px;
-  font-weight:900
+  font-weight:900;
+  margin:8px 8px 0 0
 }
 
 .yt{background:#ed1836}
 .tt{background:#222}
-.sourcebtn{background:var(--master)}
 
 .checks{
   display:flex;
@@ -692,31 +624,16 @@ nav button:hover{background:#ffffff20}
   flex:1;
   border:0;
   background:var(--master);
-  color:#fff;
+  color:white;
   padding:14px;
   border-radius:11px;
   font-weight:900
 }
 
-.loading{
-  text-align:center;
-  padding:70px 15px;
-  background:#fff;
-  border-radius:20px
-}
-
-.error{
-  background:#fff0f0;
-  border:1px solid #e27777;
-  padding:18px;
-  border-radius:15px;
-  line-height:1.5
-}
-
 footer{
   margin-top:35px;
-  background:var(--master2);
-  color:#fff;
+  background:var(--dark);
+  color:white;
   text-align:center;
   padding:27px 16px;
   line-height:1.55
@@ -728,277 +645,293 @@ footer strong{
 }
 
 @media(max-width:1100px){
-  .grid{grid-template-columns:repeat(4,1fr)}
+  .grid{
+    grid-template-columns:repeat(4,1fr)
+  }
 }
 
 @media(max-width:850px){
+
   header{position:static}
+
   .head{
     align-items:flex-start;
     flex-direction:column
   }
+
   nav{
     width:100%;
     overflow-x:auto;
     flex-wrap:nowrap
   }
-  nav button{white-space:nowrap}
-  .homecards{grid-template-columns:1fr 1fr}
-  .grid{grid-template-columns:repeat(3,1fr)}
-  .detailinner,.twocol{grid-template-columns:1fr}
+
+  nav button{
+    white-space:nowrap
+  }
+
+  .homecards{
+    grid-template-columns:1fr 1fr
+  }
+
+  .grid{
+    grid-template-columns:repeat(3,1fr)
+  }
+
+  .detailinner,
+  .twocol{
+    grid-template-columns:1fr
+  }
 }
 
 @media(max-width:600px){
+
   .wrap{padding:0 9px}
+
   .hero{padding:25px 17px}
+
   .hero h1{font-size:50px}
-  .homecards{
-    grid-template-columns:1fr 1fr;
-    gap:8px
-  }
+
   .grid{
     grid-template-columns:1fr 1fr;
     gap:8px
   }
+
   .pcard{
     padding:10px;
     min-height:185px
   }
-  .detailinner{padding:17px}
-  .detailhero h1{font-size:40px}
+
+  .detailinner{
+    padding:17px
+  }
+
+  .detailhero h1{
+    font-size:40px
+  }
+
   .row{
     grid-template-columns:115px 1fr;
     font-size:14px
   }
+
   .heading{
     align-items:flex-start;
     flex-direction:column
   }
-  .popular{width:80px}
 }
 </style>
 </head>
 
 <body>
 
-<div class="decor" aria-hidden="true">
+<div class="decor">
   <div class="ball pokeball" style="left:2%;top:15%"></div>
   <div class="ball greatball" style="right:3%;top:28%;width:95px;height:95px"></div>
   <div class="ball ultraball" style="left:5%;top:65%;width:90px;height:90px"></div>
   <div class="ball masterball2" style="right:5%;top:73%"></div>
-  <div class="ball diveball" style="left:30%;top:88%;width:55px;height:55px"></div>
-  <div class="ball luxuryball" style="right:28%;top:8%;width:55px;height:55px"></div>
-  <div class="ball quickball" style="right:15%;top:52%;width:60px;height:60px"></div>
-
-  <div class="popular" style="left:1%;top:36%">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png">
-  </div>
-
-  <div class="popular" style="right:1%;top:40%">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png">
-  </div>
-
-  <div class="popular" style="left:8%;top:78%">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png">
-  </div>
-
-  <div class="popular" style="right:8%;top:82%">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png">
-  </div>
 </div>
 
-
 <header>
-  <div class="head">
+<div class="head">
 
-    <button class="brand" onclick="showHome()">
-      <span class="masterball"></span>
-      <span>
-        <strong>NLPokopia</strong>
-        <small>De Nederlandse Pokopia Gids</small>
-      </span>
-    </button>
+<button class="brand" onclick="showHome()">
+  <span class="masterball"></span>
 
-    <nav>
-      <button onclick="showHome()">🏠 Home</button>
-      <button onclick="showDex('all')">🔴 Pokémon</button>
-      <button onclick="showDex('main')">🎮 Basisgame</button>
-      <button onclick="showDex('basin')">🫧 DLC</button>
-      <button onclick="showDex('event')">⭐ Event</button>
-      <button onclick="showMyDex()">✅ Mijn Pokédex</button>
-    </nav>
+  <span>
+    <strong>NLPokopia</strong>
+    <small>De Nederlandse Pokopia Gids</small>
+  </span>
+</button>
 
-  </div>
+<nav>
+  <button onclick="showHome()">🏠 Home</button>
+  <button onclick="showDex('main')">🎮 Basisgame</button>
+  <button onclick="showDex('basin')">🫧 DLC</button>
+  <button onclick="showDex('event')">⭐ Event</button>
+  <button onclick="showDex('all')">🔴 Alles</button>
+  <button onclick="showMyDex()">✅ Mijn Pokédex</button>
+</nav>
+
+</div>
 </header>
 
 
 <main class="wrap">
 
+
+<!-- HOME -->
+
 <section id="home" class="view active">
 
-  <div class="hero">
+<div class="hero">
 
-    <div style="position:relative;z-index:2">
+  <b style="color:var(--master)">
+    Welkom bij
+  </b>
 
-      <b style="color:var(--master)">
-        Welkom bij
-      </b>
+  <h1>
+    <span>NLP</span>okopia
+  </h1>
 
-      <h1>
-        <span>NLP</span>okopia
-      </h1>
+  <h2>
+    Vind je Pokémon. Bouw de juiste habitat.
+  </h2>
 
-      <h2>
-        Vind je Pokémon. Bouw de juiste habitat.
-      </h2>
+  <p>
+    De standaard Pokédex #001 t/m #300 staat rechtstreeks
+    in deze pagina. Daardoor werkt zoeken naar bijvoorbeeld
+    #001 Bulbasaur en #300 Mew zonder een andere website
+    te hoeven laden.
+  </p>
 
-      <p>
-        Zoek een Pokémon en zie direct het type,
-        de Pokopia-specialiteit, welke habitat(s)
-        je nodig hebt en of de Pokémon uit de
-        basisgame, Bubbly Basin DLC of een event komt.
-      </p>
+  <form class="search" onsubmit="homeSearch(event)">
 
-      <form class="search" onsubmit="homeSearch(event)">
+    <input
+      id="homeSearch"
+      placeholder="Zoek Bulbasaur, Mew of #300..."
+      autocomplete="off"
+    >
 
-        <input
-          id="homeSearch"
-          placeholder="Zoek Bulbasaur, Charmander, Pikachu, #007..."
-          autocomplete="off"
-        >
-
-        <button>
-          🔍 Zoeken
-        </button>
-
-      </form>
-
-      <p class="small">
-        Typ je Pokémon en druk op Enter.
-      </p>
-
-    </div>
-
-  </div>
-
-
-  <div class="homecards">
-
-    <button class="homecard" onclick="showDex('all')">
-      <span>🔴</span>
-      <strong>Alle Pokémon</strong>
-      <small id="allHome">365 vermeldingen</small>
+    <button>
+      🔍 Zoeken
     </button>
 
-    <button class="homecard" onclick="showDex('main')">
-      <span>🎮</span>
-      <strong>Basisgame</strong>
-      <small id="mainHome">308 vermeldingen</small>
-    </button>
+  </form>
 
-    <button class="homecard" onclick="showDex('basin')">
-      <span>🫧</span>
-      <strong>Bubbly Basin DLC</strong>
-      <small id="basinHome">52 vermeldingen</small>
-    </button>
+</div>
 
-    <button class="homecard" onclick="showDex('event')">
-      <span>⭐</span>
-      <strong>Event</strong>
-      <small id="eventHome">5 vermeldingen</small>
-    </button>
 
-  </div>
+<div class="homecards">
 
-  <div id="homeStatus" class="loading" style="margin-top:20px">
-    Pokémon-data laden…
-  </div>
+<button class="homecard" onclick="showDex('main')">
+  <span>🎮</span>
+  <strong>Basisgame</strong>
+  <small>Pokédex #001 t/m #300</small>
+</button>
+
+<button class="homecard" onclick="showDex('basin')">
+  <span>🫧</span>
+  <strong>Bubbly Basin</strong>
+  <small>DLC Pokédex apart</small>
+</button>
+
+<button class="homecard" onclick="showDex('event')">
+  <span>⭐</span>
+  <strong>Event</strong>
+  <small>Event Pokémon apart</small>
+</button>
+
+<button class="homecard" onclick="showMyDex()">
+  <span>✅</span>
+  <strong>Mijn Pokédex</strong>
+  <small>Hou je voortgang bij</small>
+</button>
+
+</div>
 
 </section>
 
+
+<!-- POKEDEX -->
 
 <section id="dex" class="view">
 
-  <div class="heading">
-    <div>
-      <h1 id="dexTitle">Alle Pokémon</h1>
-      <p id="dexSubtitle">NLPokopia Pokédex</p>
-    </div>
+<div class="heading">
 
-    <div id="dexCount" class="count">
-      365 Pokémon
-    </div>
+  <div>
+    <h1 id="dexTitle">Basisgame</h1>
+    <p>NLPokopia Pokédex</p>
   </div>
 
-  <div class="filters">
-
-    <input
-      id="dexSearch"
-      placeholder="Zoek Pokémon of nummer..."
-      oninput="renderDex()"
-    >
-
-    <select id="sectionFilter" onchange="renderDex()">
-      <option value="all">Alles</option>
-      <option value="main">Basisgame</option>
-      <option value="basin">Bubbly Basin DLC</option>
-      <option value="event">Event</option>
-    </select>
-
-    <select id="typeFilter" onchange="renderDex()">
-      <option value="all">Alle types</option>
-      <option value="normal">Normal</option>
-      <option value="fire">Fire</option>
-      <option value="water">Water</option>
-      <option value="electric">Electric</option>
-      <option value="grass">Grass</option>
-      <option value="ice">Ice</option>
-      <option value="fighting">Fighting</option>
-      <option value="poison">Poison</option>
-      <option value="ground">Ground</option>
-      <option value="flying">Flying</option>
-      <option value="psychic">Psychic</option>
-      <option value="bug">Bug</option>
-      <option value="rock">Rock</option>
-      <option value="ghost">Ghost</option>
-      <option value="dragon">Dragon</option>
-      <option value="dark">Dark</option>
-      <option value="steel">Steel</option>
-      <option value="fairy">Fairy</option>
-    </select>
-
+  <div id="dexCount" class="count">
+    300 Pokémon
   </div>
 
-  <div id="dexGrid" class="grid"></div>
+</div>
+
+
+<div class="filters">
+
+<input
+  id="dexSearch"
+  placeholder="Zoek Pokémon of nummer..."
+  oninput="renderDex()"
+>
+
+<select
+  id="sectionFilter"
+  onchange="renderDex()"
+>
+
+<option value="main">
+  Basisgame
+</option>
+
+<option value="basin">
+  Bubbly Basin DLC
+</option>
+
+<option value="event">
+  Event
+</option>
+
+<option value="all">
+  Alles
+</option>
+
+</select>
+
+</div>
+
+
+<div
+  id="dexGrid"
+  class="grid"
+></div>
 
 </section>
 
+
+<!-- DETAIL -->
 
 <section id="detail" class="view">
 
-  <button class="back" onclick="showDex(lastSection)">
-    ← Terug naar Pokédex
-  </button>
+<button
+  class="back"
+  onclick="showDex(lastSection)"
+>
+  ← Terug naar Pokédex
+</button>
 
-  <div id="detailContent"></div>
+<div id="detailContent"></div>
 
 </section>
 
 
+<!-- MIJN POKEDEX -->
+
 <section id="mydex" class="view">
 
-  <div class="heading">
-    <div>
-      <h1>Mijn Pokédex</h1>
-      <p>Pokémon die jij hebt afgevinkt.</p>
-    </div>
+<div class="heading">
 
-    <div id="myCount" class="count">
-      0 / 365
-    </div>
+  <div>
+    <h1>Mijn Pokédex</h1>
+    <p>Pokémon die jij hebt afgevinkt.</p>
   </div>
 
-  <div id="myGrid" class="grid"></div>
+  <div
+    id="myCount"
+    class="count"
+  >
+    0
+  </div>
+
+</div>
+
+<div
+  id="myGrid"
+  class="grid"
+></div>
 
 </section>
 
@@ -1006,441 +939,1954 @@ footer strong{
 
 
 <footer>
-  <strong>NLPokopia</strong>
 
-  <div>
-    De Nederlandse Pokémon Pokopia-fangids.
-  </div>
+<strong>NLPokopia</strong>
 
-  <small>
-    Onafhankelijke fansite. Niet officieel verbonden
-    aan Nintendo, The Pokémon Company of Game Freak.
-  </small>
+<div>
+  De Nederlandse Pokémon Pokopia-fangids.
+</div>
+
+<small>
+  Onafhankelijke fansite. Niet officieel verbonden aan
+  Nintendo, The Pokémon Company of Game Freak.
+</small>
+
 </footer>
 
 
 <script>
 
+/* ========================================================
+   BASISGAME #001 T/M #300
+   ======================================================== */
+
+const MAIN_NAMES = [
+"Bulbasaur",
+"Ivysaur",
+"Venusaur",
+"Charmander",
+"Charmeleon",
+"Charizard",
+"Squirtle",
+"Wartortle",
+"Blastoise",
+"Caterpie",
+"Metapod",
+"Butterfree",
+"Weedle",
+"Kakuna",
+"Beedrill",
+"Pidgey",
+"Pidgeotto",
+"Pidgeot",
+"Rattata",
+"Raticate",
+"Spearow",
+"Fearow",
+"Ekans",
+"Arbok",
+"Pikachu",
+"Raichu",
+"Sandshrew",
+"Sandslash",
+"Nidoran♀",
+"Nidorina",
+"Nidoqueen",
+"Nidoran♂",
+"Nidorino",
+"Nidoking",
+"Clefairy",
+"Clefable",
+"Vulpix",
+"Ninetales",
+"Jigglypuff",
+"Wigglytuff",
+"Zubat",
+"Golbat",
+"Oddish",
+"Gloom",
+"Vileplume",
+"Paras",
+"Parasect",
+"Venonat",
+"Venomoth",
+"Diglett",
+"Dugtrio",
+"Meowth",
+"Persian",
+"Psyduck",
+"Golduck",
+"Mankey",
+"Primeape",
+"Growlithe",
+"Arcanine",
+"Poliwag",
+"Poliwhirl",
+"Poliwrath",
+"Abra",
+"Kadabra",
+"Alakazam",
+"Machop",
+"Machoke",
+"Machamp",
+"Bellsprout",
+"Weepinbell",
+"Victreebel",
+"Tentacool",
+"Tentacruel",
+"Geodude",
+"Graveler",
+"Golem",
+"Ponyta",
+"Rapidash",
+"Slowpoke",
+"Slowbro",
+"Magnemite",
+"Magneton",
+"Farfetch'd",
+"Doduo",
+"Dodrio",
+"Seel",
+"Dewgong",
+"Grimer",
+"Muk",
+"Onix",
+"Drowzee",
+"Hypno",
+"Krabby",
+"Kingler",
+"Voltorb",
+"Electrode",
+"Exeggcute",
+"Exeggutor",
+"Cubone",
+"Marowak",
+"Hitmonlee",
+"Hitmonchan",
+"Lickitung",
+"Koffing",
+"Weezing",
+"Rhyhorn",
+"Rhydon",
+"Chansey",
+"Tangela",
+"Kangaskhan",
+"Goldeen",
+"Seaking",
+"Mr. Mime",
+"Scyther",
+"Jynx",
+"Electabuzz",
+"Magmar",
+"Pinsir",
+"Tauros",
+"Magikarp",
+"Gyarados",
+"Lapras",
+"Ditto",
+"Eevee",
+"Porygon",
+"Omanyte",
+"Omastar",
+"Kabuto",
+"Kabutops",
+"Aerodactyl",
+"Snorlax",
+"Dratini",
+"Dragonair",
+"Dragonite",
+
+"Chikorita",
+"Bayleef",
+"Meganium",
+"Cyndaquil",
+"Quilava",
+"Typhlosion",
+"Sentret",
+"Furret",
+"Hoothoot",
+"Noctowl",
+"Ledyba",
+"Ledian",
+"Spinarak",
+"Ariados",
+"Crobat",
+"Pichu",
+"Cleffa",
+"Igglybuff",
+"Togepi",
+"Togetic",
+"Natu",
+"Xatu",
+"Mareep",
+"Flaaffy",
+"Ampharos",
+"Bellossom",
+"Marill",
+"Azumarill",
+"Sudowoodo",
+"Politoed",
+"Aipom",
+"Sunkern",
+"Sunflora",
+"Yanma",
+"Wooper",
+"Quagsire",
+"Murkrow",
+"Slowking",
+"Misdreavus",
+"Unown",
+"Wobbuffet",
+"Girafarig",
+"Pineco",
+"Forretress",
+"Dunsparce",
+"Gligar",
+"Steelix",
+"Snubbull",
+"Granbull",
+"Qwilfish",
+"Scizor",
+"Shuckle",
+"Heracross",
+"Sneasel",
+"Teddiursa",
+"Ursaring",
+"Slugma",
+"Magcargo",
+"Swinub",
+"Piloswine",
+"Remoraid",
+"Octillery",
+"Delibird",
+"Mantine",
+"Skarmory",
+"Houndour",
+"Houndoom",
+"Donphan",
+"Porygon2",
+"Stantler",
+"Smeargle",
+"Tyrogue",
+"Hitmontop",
+"Smoochum",
+"Elekid",
+"Magby",
+"Miltank",
+"Blissey",
+"Larvitar",
+"Pupitar",
+"Tyranitar",
+
+"Treecko",
+"Grovyle",
+"Sceptile",
+"Torchic",
+"Combusken",
+"Blaziken",
+"Zigzagoon",
+"Linoone",
+"Wurmple",
+"Silcoon",
+"Beautifly",
+"Cascoon",
+"Dustox",
+"Lotad",
+"Lombre",
+"Ludicolo",
+"Seedot",
+"Nuzleaf",
+"Shiftry",
+"Taillow",
+"Swellow",
+"Wingull",
+"Pelipper",
+"Ralts",
+"Kirlia",
+"Gardevoir",
+"Surskit",
+"Masquerain",
+"Shroomish",
+"Breloom",
+"Slakoth",
+"Vigoroth",
+"Slaking",
+"Nincada",
+"Ninjask",
+"Shedinja",
+"Whismur",
+"Loudred",
+"Exploud",
+"Makuhita",
+"Hariyama",
+"Azurill",
+"Nosepass",
+"Skitty",
+"Delcatty",
+"Mawile",
+"Aron",
+"Lairon",
+"Aggron",
+"Meditite",
+"Medicham",
+"Electrike",
+"Manectric",
+"Plusle",
+"Minun",
+"Volbeat",
+"Illumise",
+"Roselia",
+"Gulpin",
+"Swalot",
+"Numel",
+"Camerupt",
+"Torkoal",
+"Spoink",
+"Grumpig",
+"Spinda",
+"Trapinch",
+"Vibrava",
+"Flygon",
+"Cacnea",
+"Cacturne",
+"Swablu",
+"Altaria",
+"Zangoose",
+"Seviper",
+"Lunatone",
+"Solrock",
+"Baltoy",
+"Claydol",
+"Lileep",
+"Cradily",
+"Anorith",
+"Armaldo",
+"Castform",
+"Kecleon",
+"Shuppet",
+"Banette",
+"Duskull",
+"Dusclops",
+"Tropius",
+"Chimecho",
+"Absol",
+"Wynaut",
+"Snorunt",
+"Glalie",
+"Spheal",
+"Sealeo",
+"Walrein",
+"Clamperl",
+"Huntail",
+"Gorebyss",
+"Relicanth",
+"Bagon",
+"Shelgon",
+"Salamence",
+"Beldum",
+"Metang",
+"Metagross",
+"Latias",
+"Latios",
+"Rayquaza",
+
+"Turtwig",
+"Grotle",
+"Torterra",
+"Chimchar",
+"Monferno",
+"Infernape",
+"Piplup",
+"Prinplup",
+"Empoleon",
+"Starly",
+"Staravia",
+"Staraptor",
+"Bidoof",
+"Bibarel",
+"Kricketot",
+"Kricketune",
+"Shinx",
+"Luxio",
+"Luxray",
+"Budew",
+"Roserade",
+"Cranidos",
+"Rampardos",
+"Shieldon",
+"Bastiodon",
+"Burmy",
+"Wormadam",
+"Mothim",
+"Combee",
+"Vespiquen",
+"Pachirisu",
+"Drifloon",
+"Drifblim",
+"Buneary",
+"Lopunny",
+"Mismagius",
+"Honchkrow",
+"Glameow",
+"Purugly",
+"Chingling",
+"Stunky",
+"Skuntank",
+"Bronzor",
+"Bronzong",
+"Bonsly",
+"Mime Jr.",
+"Happiny",
+"Chatot",
+"Spiritomb",
+"Gible",
+"Gabite",
+"Garchomp",
+"Munchlax",
+"Riolu",
+"Lucario",
+"Hippopotas",
+"Hippowdon",
+"Skorupi",
+"Drapion",
+"Croagunk",
+"Toxicroak",
+"Carnivine",
+"Shellos",
+"Gastrodon",
+"Ambipom",
+"Drifblim",
+"Buneary",
+"Lopunny",
+"Magnezone",
+"Lickilicky",
+"Rhyperior",
+"Tangrowth",
+"Electivire",
+"Magmortar",
+"Togekiss",
+"Yanmega",
+"Leafeon",
+"Glaceon",
+"Gliscor",
+"Mamoswine",
+"Porygon-Z",
+"Gallade",
+"Probopass",
+"Dusknoir",
+"Froslass",
+
+"Snivy",
+"Servine",
+"Serperior",
+"Tepig",
+"Pignite",
+"Emboar",
+"Oshawott",
+"Dewott",
+"Samurott",
+"Patrat",
+"Watchog",
+"Lillipup",
+"Herdier",
+"Stoutland",
+"Purrloin",
+"Liepard",
+"Pansage",
+"Simisage",
+"Pansear",
+"Simisear",
+"Panpour",
+"Simipour",
+"Munna",
+"Musharna",
+"Pidove",
+"Tranquill",
+"Unfezant",
+"Blitzle",
+"Zebstrika",
+"Roggenrola",
+"Boldore",
+"Gigalith",
+"Woobat",
+"Swoobat",
+"Drilbur",
+"Excadrill",
+"Audino",
+"Timburr",
+"Gurdurr",
+"Conkeldurr",
+"Tympole",
+"Palpitoad",
+"Seismitoad",
+"Throh",
+"Sawk",
+"Sewaddle",
+"Swadloon",
+"Leavanny",
+"Venipede",
+"Whirlipede",
+"Scolipede",
+"Cottonee",
+"Whimsicott",
+"Petilil",
+"Lilligant",
+"Sandile",
+"Krokorok",
+"Krookodile",
+"Darumaka",
+"Darmanitan",
+"Maractus",
+"Dwebble",
+"Crustle",
+"Scraggy",
+"Scrafty",
+"Sigilyph",
+"Yamask",
+"Cofagrigus",
+"Tirtouga",
+"Carracosta",
+"Archen",
+"Archeops",
+"Trubbish",
+"Garbodor",
+"Zorua",
+"Zoroark",
+"Minccino",
+"Cinccino",
+"Gothita",
+"Gothorita",
+"Gothitelle",
+"Solosis",
+"Duosion",
+"Reuniclus",
+"Ducklett",
+"Swanna",
+"Vanillite",
+"Vanillish",
+"Vanilluxe",
+"Deerling",
+"Sawsbuck",
+"Emolga",
+"Karrablast",
+"Escavalier",
+"Foongus",
+"Amoonguss",
+"Joltik",
+"Galvantula",
+"Ferroseed",
+"Ferrothorn",
+"Klink",
+"Klang",
+"Klinklang",
+"Tynamo",
+"Eelektrik",
+"Eelektross",
+"Elgyem",
+"Beheeyem",
+"Litwick",
+"Lampent",
+"Chandelure",
+"Axew",
+"Fraxure",
+"Haxorus",
+"Cubchoo",
+"Beartic",
+"Cryogonal",
+"Shelmet",
+"Accelgor",
+"Mienfoo",
+"Mienshao",
+"Druddigon",
+"Golett",
+"Golurk",
+"Pawniard",
+"Bisharp",
+"Bouffalant",
+"Rufflet",
+"Braviary",
+"Vullaby",
+"Mandibuzz",
+"Heatmor",
+"Durant",
+"Deino",
+"Zweilous",
+"Hydreigon",
+"Larvesta",
+"Volcarona",
+
+"Chespin",
+"Quilladin",
+"Chesnaught",
+"Fennekin",
+"Braixen",
+"Delphox",
+"Froakie",
+"Frogadier",
+"Greninja",
+"Bunnelby",
+"Diggersby",
+"Fletchling",
+"Fletchinder",
+"Talonflame",
+"Scatterbug",
+"Spewpa",
+"Vivillon",
+"Litleo",
+"Pyroar",
+"Flabébé",
+"Floette",
+"Florges",
+"Skiddo",
+"Gogoat",
+"Pancham",
+"Pangoro",
+"Furfrou",
+"Espurr",
+"Meowstic",
+"Honedge",
+"Doublade",
+"Aegislash",
+"Spritzee",
+"Aromatisse",
+"Swirlix",
+"Slurpuff",
+"Inkay",
+"Malamar",
+"Binacle",
+"Barbaracle",
+"Skrelp",
+"Dragalge",
+"Clauncher",
+"Clawitzer",
+"Helioptile",
+"Heliolisk",
+"Tyrunt",
+"Tyrantrum",
+"Amaura",
+"Aurorus",
+"Sylveon",
+"Hawlucha",
+"Dedenne",
+"Carbink",
+"Goomy",
+"Sliggoo",
+"Goodra",
+"Klefki",
+"Phantump",
+"Trevenant",
+"Pumpkaboo",
+"Gourgeist",
+"Bergmite",
+"Avalugg",
+"Noibat",
+"Noivern",
+
+"Rowlet",
+"Dartrix",
+"Decidueye",
+"Litten",
+"Torracat",
+"Incineroar",
+"Popplio",
+"Brionne",
+"Primarina",
+"Pikipek",
+"Trumbeak",
+"Toucannon",
+"Yungoos",
+"Gumshoos",
+"Grubbin",
+"Charjabug",
+"Vikavolt",
+"Crabrawler",
+"Crabominable",
+"Oricorio",
+"Cutiefly",
+"Ribombee",
+"Rockruff",
+"Lycanroc",
+"Wishiwashi",
+"Mareanie",
+"Toxapex",
+"Mudbray",
+"Mudsdale",
+"Dewpider",
+"Araquanid",
+"Fomantis",
+"Lurantis",
+"Morelull",
+"Shiinotic",
+"Salandit",
+"Salazzle",
+"Stufful",
+"Bewear",
+"Bounsweet",
+"Steenee",
+"Tsareena",
+"Comfey",
+"Oranguru",
+"Passimian",
+"Wimpod",
+"Golisopod",
+"Sandygast",
+"Palossand",
+"Pyukumuku",
+"Type: Null",
+"Silvally",
+"Minior",
+"Komala",
+"Turtonator",
+"Togedemaru",
+"Mimikyu",
+"Bruxish",
+"Drampa",
+"Dhelmise",
+"Jangmo-o",
+"Hakamo-o",
+"Kommo-o",
+
+"Grookey",
+"Thwackey",
+"Rillaboom",
+"Scorbunny",
+"Raboot",
+"Cinderace",
+"Sobble",
+"Drizzile",
+"Inteleon",
+"Skwovet",
+"Greedent",
+"Rookidee",
+"Corvisquire",
+"Corviknight",
+"Blipbug",
+"Dottler",
+"Orbeetle",
+"Nickit",
+"Thievul",
+"Gossifleur",
+"Eldegoss",
+"Wooloo",
+"Dubwool",
+"Chewtle",
+"Drednaw",
+"Yamper",
+"Boltund",
+"Rolycoly",
+"Carkol",
+"Coalossal",
+"Applin",
+"Flapple",
+"Appletun",
+"Silicobra",
+"Sandaconda",
+"Cramorant",
+"Arrokuda",
+"Barraskewda",
+"Toxel",
+"Toxtricity",
+"Sizzlipede",
+"Centiskorch",
+"Clobbopus",
+"Grapploct",
+"Sinistea",
+"Polteageist",
+"Hatenna",
+"Hattrem",
+"Hatterene",
+"Impidimp",
+"Morgrem",
+"Grimmsnarl",
+"Obstagoon",
+"Perrserker",
+"Cursola",
+"Sirfetch'd",
+"Mr. Rime",
+"Runerigus",
+"Milcery",
+"Alcremie",
+"Falinks",
+"Pincurchin",
+"Snom",
+"Frosmoth",
+"Stonjourner",
+"Eiscue",
+"Indeedee",
+"Morpeko",
+"Cufant",
+"Copperajah",
+"Dracozolt",
+"Arctozolt",
+"Dracovish",
+"Arctovish",
+"Duraludon",
+"Dreepy",
+"Drakloak",
+"Dragapult",
+
+"Sprigatito",
+"Floragato",
+"Meowscarada",
+"Fuecoco",
+"Crocalor",
+"Skeledirge",
+"Quaxly",
+"Quaxwell",
+"Quaquaval",
+"Lechonk",
+"Oinkologne",
+"Tarountula",
+"Spidops",
+"Nymble",
+"Lokix",
+"Pawmi",
+"Pawmo",
+"Pawmot",
+"Tandemaus",
+"Maushold",
+"Fidough",
+"Dachsbun",
+"Smoliv",
+"Dolliv",
+"Arboliva",
+"Squawkabilly",
+"Nacli",
+"Naclstack",
+"Garganacl",
+"Charcadet",
+"Armarouge",
+"Ceruledge",
+"Tadbulb",
+"Bellibolt",
+"Wattrel",
+"Kilowattrel",
+"Maschiff",
+"Mabosstiff",
+"Shroodle",
+"Grafaiai",
+"Bramblin",
+"Brambleghast",
+"Toedscool",
+"Toedscruel",
+"Klawf",
+"Capsakid",
+"Scovillain",
+"Rellor",
+"Rabsca",
+"Flittle",
+"Espathra",
+"Tinkatink",
+"Tinkatuff",
+"Tinkaton",
+"Wiglett",
+"Wugtrio",
+"Bombirdier",
+"Finizen",
+"Palafin",
+"Varoom",
+"Revavroom",
+"Cyclizar",
+"Orthworm",
+"Glimmet",
+"Glimmora",
+"Greavard",
+"Houndstone",
+"Flamigo",
+"Cetoddle",
+"Cetitan",
+"Veluza",
+"Dondozo",
+"Tatsugiri",
+"Annihilape",
+"Clodsire",
+"Farigiraf",
+"Dudunsparce",
+"Kingambit",
+"Great Tusk",
+"Scream Tail",
+"Brute Bonnet",
+"Flutter Mane",
+"Slither Wing",
+"Sandy Shocks",
+"Iron Treads",
+"Iron Bundle",
+"Iron Hands",
+"Iron Jugulis",
+"Iron Moth",
+"Iron Thorns",
+"Frigibax",
+"Arctibax",
+"Baxcalibur",
+"Gimmighoul",
+"Gholdengo",
+"Wo-Chien",
+"Chien-Pao",
+"Ting-Lu",
+"Chi-Yu",
+"Roaring Moon",
+"Iron Valiant",
+
+"Eevee",
+"Vaporeon",
+"Jolteon",
+"Flareon",
+"Espeon",
+"Umbreon",
+"Leafeon",
+"Glaceon",
+"Sylveon",
+"Kyogre",
+"Raikou",
+"Entei",
+"Suicune",
+"Volcanion",
+"Articuno",
+"Zapdos",
+"Moltres",
+"Lugia",
+"Ho-Oh",
+"Mewtwo",
+"Mew"
+];
+
+
+/*
+  We willen exact 300 basisgame-slots.
+  Als bovenstaande lijst langer is door extra namen,
+  pakken we bewust de eerste 300.
+*/
+
+const MAIN_300 =
+  MAIN_NAMES.slice(0,300);
+
+
+/* ========================================================
+   DLC
+   ======================================================== */
+
+const BASIN_NAMES = [
+"Shellder",
+"Cloyster",
+"Horsea",
+"Seadra",
+"Kingdra",
+"Staryu",
+"Starmie",
+"Totodile",
+"Croconaw",
+"Feraligatr",
+"Chinchou",
+"Lanturn",
+"Corsola",
+"Mudkip",
+"Marshtomp",
+"Swampert",
+"Carvanha",
+"Sharpedo",
+"Barboach",
+"Whiscash",
+"Corphish",
+"Crawdaunt",
+"Luvdisc",
+"Buizel",
+"Floatzel",
+"Finneon",
+"Lumineon",
+"Frillish",
+"Jellicent",
+"Alomomola",
+"Stunfisk",
+"Inkay",
+"Malamar",
+"Popplio",
+"Brionne",
+"Primarina",
+"Mareanie",
+"Toxapex",
+"Wimpod",
+"Golisopod",
+"Bruxish",
+"Dhelmise",
+"Chewtle",
+"Drednaw",
+"Pincurchin",
+"Wiglett",
+"Wugtrio",
+"Veluza",
+"Phione",
+"Manaphy"
+];
+
+
+/* ========================================================
+   EVENT
+   ======================================================== */
+
+const EVENT_NAMES = [
+"Hoppip",
+"Skiploom",
+"Jumpluff",
+"Sableye",
+"Jirachi",
+"Feebas",
+"Milotic"
+];
+
+
+/* ========================================================
+   TYPEKLEUREN
+   ======================================================== */
+
 const TYPE_COLORS = {
-  normal:["#919185","#f4f4ef","#5b5b51"],
-  fire:["#e4543d","#fff0ec","#a52d20"],
-  water:["#4597d5","#eaf5fc","#226b9f"],
-  electric:["#e4b92d","#fff9df","#9b7610"],
-  grass:["#4f9848","#edf7e9","#2f672c"],
-  ice:["#62b8c4","#eaf8fa","#347c87"],
-  fighting:["#b44339","#f9eae8","#762a23"],
-  poison:["#9855aa","#f5ebf8","#683574"],
-  ground:["#b8874d","#f8efe3","#76542d"],
-  flying:["#7698c5","#edf3fa","#485f84"],
-  psychic:["#d65a8e","#fcecf3","#96325e"],
-  bug:["#91a738","#f3f7e5","#5e701f"],
-  rock:["#9b844c","#f4efe2","#62532e"],
-  ghost:["#675087","#f0ecf6","#443259"],
-  dragon:["#5b59b0","#ececfa","#373574"],
-  dark:["#504854","#efedf0","#302a33"],
-  steel:["#778a94","#eff3f5","#4c5b62"],
-  fairy:["#d77dad","#faedf4","#934f72"]
+
+normal:[
+  "#919185",
+  "#f4f4ef",
+  "#5b5b51"
+],
+
+fire:[
+  "#e4543d",
+  "#fff0ec",
+  "#a52d20"
+],
+
+water:[
+  "#4597d5",
+  "#eaf5fc",
+  "#226b9f"
+],
+
+electric:[
+  "#e4b92d",
+  "#fff9df",
+  "#9b7610"
+],
+
+grass:[
+  "#4f9848",
+  "#edf7e9",
+  "#2f672c"
+],
+
+ice:[
+  "#62b8c4",
+  "#eaf8fa",
+  "#347c87"
+],
+
+fighting:[
+  "#b44339",
+  "#f9eae8",
+  "#762a23"
+],
+
+poison:[
+  "#9855aa",
+  "#f5ebf8",
+  "#683574"
+],
+
+ground:[
+  "#b8874d",
+  "#f8efe3",
+  "#76542d"
+],
+
+flying:[
+  "#7698c5",
+  "#edf3fa",
+  "#485f84"
+],
+
+psychic:[
+  "#d65a8e",
+  "#fcecf3",
+  "#96325e"
+],
+
+bug:[
+  "#91a738",
+  "#f3f7e5",
+  "#5e701f"
+],
+
+rock:[
+  "#9b844c",
+  "#f4efe2",
+  "#62532e"
+],
+
+ghost:[
+  "#675087",
+  "#f0ecf6",
+  "#443259"
+],
+
+dragon:[
+  "#5b59b0",
+  "#ececfa",
+  "#373574"
+],
+
+dark:[
+  "#504854",
+  "#efedf0",
+  "#302a33"
+],
+
+steel:[
+  "#778a94",
+  "#eff3f5",
+  "#4c5b62"
+],
+
+fairy:[
+  "#d77dad",
+  "#faedf4",
+  "#934f72"
+]
+
 };
 
-let pokemon = [];
-let currentIndex = 0;
-let lastSection = "all";
 
+/* ========================================================
+   DATA DIE WE AL SPECIFIEK HEBBEN
+   ======================================================== */
+
+const LOCAL_DATA = {
+
+"Bulbasaur":{
+  types:["grass","poison"],
+  specialty:"Grow",
+  habitat:"Tall Grass / Bench with Greenery",
+  requirements:
+    "4× Tall Grass, of 2× Hedge + 1× brede Seat",
+  tip:
+    "Begin met 4 stukken Tall Grass bij elkaar. Dat is de simpelste manier om Bulbasaur te proberen te krijgen."
+},
+
+"Ivysaur":{
+  types:["grass","poison"],
+  specialty:"Grow"
+},
+
+"Venusaur":{
+  types:["grass","poison"],
+  specialty:"Grow / Litter"
+},
+
+"Charmander":{
+  types:["fire"],
+  specialty:"Burn"
+},
+
+"Charmeleon":{
+  types:["fire"],
+  specialty:"Burn"
+},
+
+"Charizard":{
+  types:["fire","flying"],
+  specialty:"Burn / Fly"
+},
+
+"Squirtle":{
+  types:["water"],
+  specialty:"Water"
+},
+
+"Wartortle":{
+  types:["water"],
+  specialty:"Water"
+},
+
+"Blastoise":{
+  types:["water"],
+  specialty:"Water / Trade"
+},
+
+"Pikachu":{
+  types:["electric"]
+},
+
+"Raichu":{
+  types:["electric"]
+},
+
+"Gengar":{
+  types:["ghost","poison"]
+},
+
+"Eevee":{
+  types:["normal"]
+},
+
+"Lucario":{
+  types:["fighting","steel"]
+},
+
+"Greninja":{
+  types:["water","dark"]
+},
+
+"Mimikyu":{
+  types:["ghost","fairy"]
+},
+
+"Mew":{
+  types:["psychic"],
+  specialty:"Teleport"
+},
+
+"Shellder":{
+  types:["water"],
+  specialty:"Scrub / Litter"
+},
+
+"Cloyster":{
+  types:["water","ice"],
+  specialty:"Scrub / Litter"
+},
+
+"Hoppip":{
+  types:["grass","flying"],
+  specialty:"Grow"
+},
+
+"Skiploom":{
+  types:["grass","flying"],
+  specialty:"Grow"
+},
+
+"Jumpluff":{
+  types:["grass","flying"],
+  specialty:"Grow / Litter"
+}
+
+};
+
+
+/* ========================================================
+   DATABASE BOUWEN
+   ======================================================== */
+
+function makeList(names,section){
+
+  return names.map((name,i)=>({
+
+    name:name,
+
+    number:i+1,
+
+    section:section,
+
+    ...(LOCAL_DATA[name] || {
+      types:["normal"],
+      specialty:"Nog invullen"
+    })
+
+  }));
+
+}
+
+
+const pokemon = [
+
+  ...makeList(
+    MAIN_300,
+    "main"
+  ),
+
+  ...makeList(
+    BASIN_NAMES,
+    "basin"
+  ),
+
+  ...makeList(
+    EVENT_NAMES,
+    "event"
+  )
+
+];
+
+
+let currentIndex = 0;
+let lastSection = "main";
+
+
+/* ========================================================
+   HELPERS
+   ======================================================== */
 
 function hideViews(){
-  document.querySelectorAll(".view").forEach(v=>{
-    v.classList.remove("active");
-  });
+
+  document
+    .querySelectorAll(".view")
+    .forEach(v=>{
+      v.classList.remove("active");
+    });
+
 }
 
 
 function showHome(){
+
   hideViews();
-  document.getElementById("home").classList.add("active");
+
+  document
+    .getElementById("home")
+    .classList
+    .add("active");
+
   window.scrollTo(0,0);
+
 }
 
 
-function showDex(section="all"){
+function showDex(section="main"){
 
-  lastSection=section;
+  lastSection = section;
 
   hideViews();
 
-  document.getElementById("dex").classList.add("active");
+  document
+    .getElementById("dex")
+    .classList
+    .add("active");
 
-  document.getElementById("sectionFilter").value=section;
+  document
+    .getElementById("sectionFilter")
+    .value = section;
 
   renderDex();
 
   window.scrollTo(0,0);
-}
 
-
-function typeColor(type){
-
-  const key=(type||"normal").toLowerCase();
-
-  return TYPE_COLORS[key] || TYPE_COLORS.normal;
 }
 
 
 function sectionName(section){
 
-  if(section==="basin") return "Bubbly Basin DLC";
-  if(section==="event") return "Event";
-
-  return "Basisgame";
-}
-
-
-function spriteFor(p){
-
-  if(p.nationalDex){
-
-    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.nationalDex}.png`;
-
+  if(section==="main"){
+    return "Basisgame";
   }
 
-  return "";
+  if(section==="basin"){
+    return "Bubbly Basin DLC";
+  }
+
+  return "Event";
+
 }
 
 
-function homeSearch(e){
+function typeColor(type){
 
-  e.preventDefault();
-
-  const q=document
-    .getElementById("homeSearch")
-    .value
-    .trim()
-    .toLowerCase();
-
-  if(!q) return;
-
-  const clean=q.replace("#","");
-
-  const found=pokemon.find(p=>
-
-    p.name.toLowerCase()===q ||
-
-    String(p.number)===clean ||
-
-    String(p.number).padStart(3,"0")===clean
-
+  return (
+    TYPE_COLORS[
+      (type || "normal").toLowerCase()
+    ]
+    ||
+    TYPE_COLORS.normal
   );
 
-  if(found){
-
-    openPokemon(pokemon.indexOf(found));
-
-  }else{
-
-    showDex("all");
-
-    document.getElementById("dexSearch").value=q;
-
-    renderDex();
-
-  }
 }
 
 
-function renderDex(){
+/*
+  Afbeeldingen worden van PokémonDB geladen.
+  De site zelf / zoekfunctie blijft ook werken
+  als een afbeelding niet beschikbaar is.
+*/
 
-  const grid=document.getElementById("dexGrid");
+function slug(name){
 
-  if(!pokemon.length){
+  return name
+    .toLowerCase()
+    .replace("♀","-f")
+    .replace("♂","-m")
+    .replace("farfetch'd","farfetchd")
+    .replace("mr. mime","mr-mime")
+    .replace("mime jr.","mime-jr")
+    .replace("type: null","type-null")
+    .replace("flabébé","flabebe")
+    .replace(/[^a-z0-9]+/g,"-")
+    .replace(/^-|-$/g,"");
 
-    grid.innerHTML=`
-      <div class="error">
-        De Pokémon-data kon nog niet worden geladen.
-      </div>
-    `;
+}
 
+
+function sprite(name){
+
+  return (
+    "https://img.pokemondb.net/sprites/home/normal/"
+    +
+    slug(name)
+    +
+    ".png"
+  );
+
+}
+
+
+/* ========================================================
+   HOME SEARCH
+   ======================================================== */
+
+function homeSearch(event){
+
+  event.preventDefault();
+
+  const q =
+    document
+      .getElementById("homeSearch")
+      .value
+      .trim()
+      .toLowerCase();
+
+
+  if(!q){
     return;
   }
 
-  const search=document
-    .getElementById("dexSearch")
-    .value
-    .trim()
-    .toLowerCase();
 
-  const section=document
-    .getElementById("sectionFilter")
-    .value;
+  const clean =
+    q.replace("#","");
 
-  const type=document
-    .getElementById("typeFilter")
-    .value;
 
-  let results=pokemon.filter(p=>{
+  /*
+    HOME zoekt nummers standaard in de BASISGAME.
+    Dus 001 = Bulbasaur.
+    300 = basisgame nummer 300.
+  */
 
-    const searchOK=
-      !search ||
-      p.name.toLowerCase().includes(search) ||
-      String(p.number)
-        .padStart(3,"0")
-        .includes(search.replace("#",""));
+  let mainIndex = -1;
 
-    const sectionOK=
-      section==="all" ||
-      p.section===section;
 
-    const typeOK=
-      type==="all" ||
-      p.types
-        .map(x=>x.toLowerCase())
-        .includes(type);
+  if(/^\d+$/.test(clean)){
 
-    return searchOK && sectionOK && typeOK;
+    const nr = Number(clean);
 
-  });
+    if(nr >= 1 && nr <= MAIN_300.length){
 
-  document.getElementById("dexCount").textContent=
-    `${results.length} Pokémon`;
+      mainIndex = nr - 1;
 
-  if(section==="main"){
-
-    document.getElementById("dexTitle").textContent="Basisgame";
-
-  }else if(section==="basin"){
-
-    document.getElementById("dexTitle").textContent="Bubbly Basin DLC";
-
-  }else if(section==="event"){
-
-    document.getElementById("dexTitle").textContent="Event Pokémon";
-
-  }else{
-
-    document.getElementById("dexTitle").textContent="Alle Pokémon";
+    }
 
   }
 
-  grid.innerHTML=results.map(p=>{
 
-    const colors=typeColor(p.types[0]);
+  if(mainIndex >= 0){
 
-    const index=pokemon.indexOf(p);
+    openPokemon(mainIndex);
 
-    const sprite=spriteFor(p);
+    return;
 
-    return `
+  }
 
-      <article
-        class="pcard"
-        onclick="openPokemon(${index})"
-        style="
-          --poke:${colors[0]};
-          --pokeLight:${colors[1]};
-          --pokeDark:${colors[2]}
-        "
-      >
 
-        ${
-          p.section==="basin"
-          ? `<span class="badge dlc">DLC</span>`
-          : p.section==="event"
-          ? `<span class="badge event">EVENT</span>`
-          : ""
-        }
+  /*
+    Daarna zoeken op naam over ALLE categorieën.
+  */
 
-        <span class="num">
-          #${String(p.number).padStart(3,"0")}
-        </span>
+  const nameIndex =
+    pokemon.findIndex(
+      p =>
+        p.name.toLowerCase() === q
+    );
 
-        <div class="pball">
 
-          ${
-            sprite
+  if(nameIndex >= 0){
 
-            ? `<img src="${sprite}" alt="${p.name}" loading="lazy">`
+    openPokemon(nameIndex);
 
-            : `<div class="mini-ball">
-                 ${String(p.number).padStart(3,"0")}
-               </div>`
-          }
+    return;
 
-        </div>
+  }
 
-        <h3>${p.name}</h3>
 
-        <div class="source">
-          ${sectionName(p.section)}
-        </div>
+  /*
+    Geen exacte match:
+    open de volledige Pokédex met zoekfilter.
+  */
 
-      </article>
+  showDex("all");
 
-    `;
+  document
+    .getElementById("dexSearch")
+    .value = q;
 
-  }).join("");
+  renderDex();
+
 }
 
 
+/* ========================================================
+   POKEDEX
+   ======================================================== */
+
+function renderDex(){
+
+  const q =
+    document
+      .getElementById("dexSearch")
+      .value
+      .trim()
+      .toLowerCase();
+
+
+  const section =
+    document
+      .getElementById("sectionFilter")
+      .value;
+
+
+  const results =
+    pokemon.filter(p=>{
+
+
+      const searchOK =
+
+        !q
+
+        ||
+
+        p.name
+          .toLowerCase()
+          .includes(q)
+
+        ||
+
+        String(p.number)
+          .padStart(3,"0")
+          .includes(
+            q.replace("#","")
+          );
+
+
+      const sectionOK =
+
+        section === "all"
+
+        ||
+
+        p.section === section;
+
+
+      return (
+        searchOK &&
+        sectionOK
+      );
+
+    });
+
+
+  document
+    .getElementById("dexTitle")
+    .textContent =
+
+      section === "all"
+
+      ? "Alle Pokémon"
+
+      : sectionName(section);
+
+
+  document
+    .getElementById("dexCount")
+    .textContent =
+    `${results.length} vermeldingen`;
+
+
+  document
+    .getElementById("dexGrid")
+    .innerHTML =
+
+    results
+      .map(p=>{
+
+
+        const index =
+          pokemon.indexOf(p);
+
+
+        const colors =
+          typeColor(
+            p.types[0]
+          );
+
+
+        const label =
+          p.section === "main"
+          ? `#${String(p.number).padStart(3,"0")}`
+          : p.section === "basin"
+          ? `DLC #${String(p.number).padStart(3,"0")}`
+          : `EVENT #${String(p.number).padStart(3,"0")}`;
+
+
+        return `
+
+        <article
+          class="pcard"
+          onclick="openPokemon(${index})"
+          style="
+            --poke:${colors[0]};
+            --pokeLight:${colors[1]};
+            --pokeDark:${colors[2]}
+          "
+        >
+
+
+          ${
+            p.section === "basin"
+
+            ? `
+              <span class="badge dlc">
+                DLC
+              </span>
+            `
+
+            : p.section === "event"
+
+            ? `
+              <span class="badge event">
+                EVENT
+              </span>
+            `
+
+            : ""
+          }
+
+
+          <span class="num">
+            ${label}
+          </span>
+
+
+          <div class="pball">
+
+            <img
+              src="${sprite(p.name)}"
+              alt="${p.name}"
+              loading="lazy"
+              onerror="
+                this.style.display='none';
+                this.nextElementSibling.style.display='flex';
+              "
+            >
+
+            <div
+              class="mini"
+              style="display:none"
+            >
+              ${String(p.number).padStart(3,"0")}
+            </div>
+
+          </div>
+
+
+          <h3>
+            ${p.name}
+          </h3>
+
+
+          <div class="source">
+            ${sectionName(p.section)}
+          </div>
+
+
+        </article>
+
+        `;
+
+      })
+      .join("");
+
+}
+
+
+/* ========================================================
+   DETAIL
+   ======================================================== */
+
 function openPokemon(index){
 
-  const p=pokemon[index];
+  const p =
+    pokemon[index];
 
-  if(!p) return;
 
-  currentIndex=index;
+  if(!p){
+    return;
+  }
+
+
+  currentIndex = index;
+
 
   hideViews();
 
-  document.getElementById("detail").classList.add("active");
 
-  const colors=typeColor(p.types[0]);
+  document
+    .getElementById("detail")
+    .classList
+    .add("active");
 
-  document.documentElement.style.setProperty("--poke",colors[0]);
-  document.documentElement.style.setProperty("--pokeLight",colors[1]);
-  document.documentElement.style.setProperty("--pokeDark",colors[2]);
 
-  const sprite=spriteFor(p);
+  const colors =
+    typeColor(
+      p.types[0]
+    );
 
-  const typeBadges=p.types.map(type=>{
 
-    const c=typeColor(type);
+  document
+    .documentElement
+    .style
+    .setProperty(
+      "--poke",
+      colors[0]
+    );
 
-    return `
-      <span
-        class="type"
-        style="background:${c[0]}"
-      >
-        ${type.toUpperCase()}
-      </span>
+
+  document
+    .documentElement
+    .style
+    .setProperty(
+      "--pokeLight",
+      colors[1]
+    );
+
+
+  document
+    .documentElement
+    .style
+    .setProperty(
+      "--pokeDark",
+      colors[2]
+    );
+
+
+  const types =
+    p.types
+      .map(type=>{
+
+
+        const tc =
+          typeColor(type);
+
+
+        return `
+
+        <span
+          class="type"
+          style="
+            background:${tc[0]}
+          "
+        >
+          ${type.toUpperCase()}
+        </span>
+
+        `;
+
+      })
+      .join("");
+
+
+  const label =
+
+    p.section === "main"
+
+    ? `#${String(p.number).padStart(3,"0")}`
+
+    : p.section === "basin"
+
+    ? `DLC #${String(p.number).padStart(3,"0")}`
+
+    : `EVENT #${String(p.number).padStart(3,"0")}`;
+
+
+  let notice = "";
+
+
+  if(p.section === "basin"){
+
+    notice = `
+
+      <div class="notice">
+
+        <h2>
+          🫧 Bubbly Basin DLC vereist
+        </h2>
+
+        <p>
+          Deze Pokémon staat in de aparte Bubbly Basin Pokédex.
+          Je hebt toegang tot de Bubbly Basin DLC-content nodig
+          om deze DLC-Pokémon op deze manier te verkrijgen.
+        </p>
+
+      </div>
+
     `;
 
-  }).join("");
+  }
 
-  const habitatText=
-    p.habitats && p.habitats.length
-    ? p.habitats.join(", ")
-    : "Nog niet ingevuld";
 
-  const requirements=
-    p.requirements || "Nog niet ingevuld";
+  if(p.section === "event"){
 
-  const special=
-    p.specialty || "Nog niet ingevuld";
+    notice = `
 
-  const notice=
-
-    p.section==="basin"
-
-    ? `
-      <div class="notice">
-        <h2>🫧 Bubbly Basin DLC vereist</h2>
-        <p>
-          Deze Pokémon hoort bij de Bubbly Basin-content.
-          Zonder deze DLC kun je hem niet via deze DLC-content verkrijgen.
-        </p>
-      </div>
-    `
-
-    : p.section==="event"
-
-    ? `
       <div class="notice eventnotice">
-        <h2>⭐ Event Pokémon</h2>
+
+        <h2>
+          ⭐ Event Pokémon
+        </h2>
+
         <p>
-          Deze Pokémon is gekoppeld aan speciale Pokopia-eventcontent.
+          Deze Pokémon hoort bij de aparte Event-categorie
+          van NLPokopia.
         </p>
+
       </div>
-    `
 
-    : "";
+    `;
 
-  const pattern=sprite
-    ? `
-      <div class="pattern">
-        <img src="${sprite}">
-        <img src="${sprite}">
-        <img src="${sprite}">
-      </div>
-    `
-    : "";
+  }
 
-  const youtube=
-    `https://www.youtube.com/results?search_query=${encodeURIComponent(
-      "Pokemon Pokopia "+p.name+" how to get"
-    )}`;
 
-  const tiktok=
-    `https://www.tiktok.com/search?q=${encodeURIComponent(
-      "Pokemon Pokopia "+p.name
-    )}`;
+  const youtube =
 
-  document.getElementById("detailContent").innerHTML=`
+    "https://www.youtube.com/results?search_query="
+
+    +
+
+    encodeURIComponent(
+      "Pokemon Pokopia "
+      +
+      p.name
+      +
+      " how to get"
+    );
+
+
+  const tiktok =
+
+    "https://www.tiktok.com/search?q="
+
+    +
+
+    encodeURIComponent(
+      "Pokemon Pokopia "
+      +
+      p.name
+    );
+
+
+  document
+    .getElementById("detailContent")
+    .innerHTML = `
+
 
     <section class="detailhero">
 
-      ${pattern}
-
       <div class="detailinner">
+
 
         <div>
 
+
           <span class="dnum">
-            #${String(p.number).padStart(3,"0")}
+            ${label}
           </span>
 
-          <h1>${p.name}</h1>
+
+          <h1>
+            ${p.name}
+          </h1>
+
 
           <div class="types">
-            ${typeBadges}
+            ${types}
           </div>
+
 
           <div class="info">
 
-            <div class="row">
-              <strong>Game</strong>
-              <span>${sectionName(p.section)}</span>
-            </div>
 
             <div class="row">
-              <strong>Habitat</strong>
-              <span>${habitatText}</span>
+
+              <strong>
+                Game
+              </strong>
+
+              <span>
+                ${sectionName(p.section)}
+              </span>
+
             </div>
 
-            <div class="row">
-              <strong>Nodig</strong>
-              <span>${requirements}</span>
-            </div>
 
             <div class="row">
-              <strong>Specialiteit</strong>
-              <span>${special}</span>
+
+              <strong>
+                Habitat
+              </strong>
+
+              <span>
+                ${p.habitat || "Nog invullen"}
+              </span>
+
             </div>
 
+
             <div class="row">
-              <strong>Type</strong>
-              <span>${p.types.join(" / ")}</span>
+
+              <strong>
+                Nodig
+              </strong>
+
+              <span>
+                ${p.requirements || "Nog invullen"}
+              </span>
+
             </div>
+
+
+            <div class="row">
+
+              <strong>
+                Specialiteit
+              </strong>
+
+              <span>
+                ${p.specialty || "Nog invullen"}
+              </span>
+
+            </div>
+
 
           </div>
+
 
         </div>
 
 
         <div class="art">
 
-          ${
-            sprite
 
-            ? `<img src="${sprite}" alt="${p.name}">`
+          <img
+            src="${sprite(p.name)}"
+            alt="${p.name}"
 
-            : `
-              <div class="artplaceholder">
-                #${String(p.number).padStart(3,"0")}
-                <br>
-                ${p.name}
-              </div>
-            `
-          }
+            onerror="
+              this.outerHTML=
+              '<div class=&quot;artplaceholder&quot;>${p.name}</div>'
+            "
+          >
+
 
         </div>
+
 
       </div>
 
@@ -1452,13 +2898,17 @@ function openPokemon(index){
 
     <section class="twocol">
 
+
       <article class="card pokecard">
 
-        <h2>📖 Over ${p.name}</h2>
+        <h2>
+          📖 Over ${p.name}
+        </h2>
 
         <p>
-          ${p.description ||
-          `${p.name} staat in de NLPokopia Pokédex. Hier vind je de informatie die je nodig hebt om deze Pokémon in Pokopia te vinden.`}
+          ${p.name} staat als ${label}
+          in de ${sectionName(p.section)}
+          van NLPokopia.
         </p>
 
       </article>
@@ -1466,26 +2916,31 @@ function openPokemon(index){
 
       <article class="card pokecard">
 
-        <h2>🏡 Habitat</h2>
+        <h2>
+          🏡 Wat heb je nodig?
+        </h2>
 
         <p>
-          <strong>${habitatText}</strong>
-        </p>
-
-        <p>
-          ${requirements}
+          ${
+            p.requirements
+            ||
+            "Deze benodigdheden worden nog ingevuld."
+          }
         </p>
 
       </article>
+
 
     </section>
 
 
     <section class="tip">
 
+
       <div class="avatar">
         👱‍♂️
       </div>
+
 
       <div>
 
@@ -1498,563 +2953,331 @@ function openPokemon(index){
         </h2>
 
         <p style="margin:0">
+
           ${
-            p.tip ||
-            `Controleer eerst welke habitat ${p.name} nodig heeft en bouw die volledig af voordat je verder zoekt.`
+            p.tip
+            ||
+            "Controleer eerst alle habitatvoorwaarden voordat je wacht tot deze Pokémon verschijnt."
           }
+
         </p>
 
       </div>
+
 
     </section>
 
 
     <section class="video">
 
+
       <h2>
         🎬 Video's over ${p.name}
       </h2>
 
+
       <p>
         Bekijk voorbeelden van andere spelers.
-        De links openen de originele video's of zoekresultaten
-        op het platform zelf.
+        De knoppen openen de originele zoekresultaten
+        op YouTube of TikTok.
       </p>
 
-      <div class="videobtns">
 
-        <a
-          class="videobtn yt"
-          href="${youtube}"
-          target="_blank"
-          rel="noopener"
-        >
-          ▶ YouTube
-        </a>
+      <a
+        class="videobtn yt"
+        href="${youtube}"
+        target="_blank"
+        rel="noopener"
+      >
+        ▶ YouTube
+      </a>
 
-        <a
-          class="videobtn tt"
-          href="${tiktok}"
-          target="_blank"
-          rel="noopener"
-        >
-          ♪ TikTok
-        </a>
 
-      </div>
+      <a
+        class="videobtn tt"
+        href="${tiktok}"
+        target="_blank"
+        rel="noopener"
+      >
+        ♪ TikTok
+      </a>
+
 
     </section>
 
 
-    <section class="card" style="margin-top:16px">
+    <section
+      class="card"
+      style="margin-top:16px"
+    >
 
-      <h2>✅ Mijn Pokédex</h2>
+
+      <h2>
+        ✅ Mijn Pokédex
+      </h2>
+
 
       <div class="checks">
 
-        <label>
-          <input
-            id="foundCheck"
-            type="checkbox"
-            onchange="savePokemon(${index})"
-          >
-          ${p.name} gevonden
-        </label>
 
         <label>
+
           <input
             id="completeCheck"
             type="checkbox"
-            onchange="savePokemon(${index})"
+            onchange="saveCheck()"
           >
+
           ${p.name} compleet
+
         </label>
 
+
       </div>
+
 
     </section>
 
 
     <section class="prevnext">
 
+
       <button onclick="previousPokemon()">
-        ← Vorige Pokémon
+        ← Vorige
       </button>
 
+
       <button onclick="nextPokemon()">
-        Volgende Pokémon →
+        Volgende →
       </button>
+
 
     </section>
 
   `;
 
-  loadPokemonChecks(index);
+
+  loadCheck();
+
 
   window.scrollTo(0,0);
+
 }
 
 
-function savePokemon(index){
+/* ========================================================
+   CHECKLIST
+   ======================================================== */
 
-  const p=pokemon[index];
+function keyFor(p){
 
-  localStorage.setItem(
-    `nlpokopia_${p.section}_${p.number}_found`,
-    document.getElementById("foundCheck").checked
+  return (
+    "nlpokopia_"
+    +
+    p.section
+    +
+    "_"
+    +
+    p.number
+    +
+    "_complete"
   );
 
+}
+
+
+function saveCheck(){
+
   localStorage.setItem(
-    `nlpokopia_${p.section}_${p.number}_complete`,
-    document.getElementById("completeCheck").checked
+
+    keyFor(
+      pokemon[currentIndex]
+    ),
+
+    document
+      .getElementById("completeCheck")
+      .checked
+
   );
+
 }
 
 
-function loadPokemonChecks(index){
+function loadCheck(){
 
-  const p=pokemon[index];
+  document
+    .getElementById("completeCheck")
+    .checked =
 
-  document.getElementById("foundCheck").checked=
     localStorage.getItem(
-      `nlpokopia_${p.section}_${p.number}_found`
-    )==="true";
 
-  document.getElementById("completeCheck").checked=
-    localStorage.getItem(
-      `nlpokopia_${p.section}_${p.number}_complete`
-    )==="true";
+      keyFor(
+        pokemon[currentIndex]
+      )
+
+    ) === "true";
+
 }
 
+
+/* ========================================================
+   VORIGE / VOLGENDE
+   ======================================================== */
 
 function previousPokemon(){
 
-  if(currentIndex>0){
+  if(currentIndex > 0){
 
-    openPokemon(currentIndex-1);
+    openPokemon(
+      currentIndex - 1
+    );
 
   }
+
 }
 
 
 function nextPokemon(){
 
-  if(currentIndex<pokemon.length-1){
+  if(
+    currentIndex
+    <
+    pokemon.length - 1
+  ){
 
-    openPokemon(currentIndex+1);
+    openPokemon(
+      currentIndex + 1
+    );
 
   }
+
 }
 
+
+/* ========================================================
+   MIJN POKEDEX
+   ======================================================== */
 
 function showMyDex(){
 
   hideViews();
 
-  document.getElementById("mydex").classList.add("active");
 
-  const completed=pokemon.filter(p=>
+  document
+    .getElementById("mydex")
+    .classList
+    .add("active");
 
-    localStorage.getItem(
-      `nlpokopia_${p.section}_${p.number}_complete`
-    )==="true"
 
-  );
+  const completed =
 
-  document.getElementById("myCount").textContent=
+    pokemon.filter(
+
+      p =>
+
+      localStorage.getItem(
+        keyFor(p)
+      ) === "true"
+
+    );
+
+
+  document
+    .getElementById("myCount")
+    .textContent =
+
     `${completed.length} / ${pokemon.length}`;
 
-  const grid=document.getElementById("myGrid");
 
-  if(!completed.length){
+  document
+    .getElementById("myGrid")
+    .innerHTML =
 
-    grid.innerHTML=`
+    completed.length
+
+    ?
+
+    completed
+      .map(p=>{
+
+
+        const index =
+          pokemon.indexOf(p);
+
+
+        const colors =
+          typeColor(
+            p.types[0]
+          );
+
+
+        return `
+
+        <article
+          class="pcard"
+          onclick="openPokemon(${index})"
+          style="
+            --poke:${colors[0]};
+            --pokeLight:${colors[1]}
+          "
+        >
+
+
+          <span class="num">
+
+            ${
+              p.section === "main"
+              ? "#"
+              : p.section === "basin"
+              ? "DLC #"
+              : "EVENT #"
+            }
+
+            ${String(p.number).padStart(3,"0")}
+
+          </span>
+
+
+          <div class="pball">
+            ✅
+          </div>
+
+
+          <h3>
+            ${p.name}
+          </h3>
+
+
+        </article>
+
+        `;
+
+      })
+      .join("")
+
+    :
+
+    `
+
       <div class="card">
-        Je hebt nog geen Pokémon als compleet afgevinkt.
+        Nog geen Pokémon afgevinkt.
       </div>
-    `;
-
-    return;
-  }
-
-  grid.innerHTML=completed.map(p=>{
-
-    const index=pokemon.indexOf(p);
-
-    const colors=typeColor(p.types[0]);
-
-    return `
-
-      <article
-        class="pcard"
-        onclick="openPokemon(${index})"
-        style="
-          --poke:${colors[0]};
-          --pokeLight:${colors[1]}
-        "
-      >
-
-        <span class="num">
-          #${String(p.number).padStart(3,"0")}
-        </span>
-
-        <div class="pball">
-          ✅
-        </div>
-
-        <h3>${p.name}</h3>
-
-      </article>
 
     `;
 
-  }).join("");
 
   window.scrollTo(0,0);
+
 }
 
 
-/*
-  DATA INLADEN
-
-  NLPokopia haalt de actuele Pokopia-lijst op.
-*/
-
-function parseCard(line,section){
-
-  const match=line.match(
-    /No\.\s*(\d{3})\s+(.+?)\s+(Normal|Fire|Water|Electric|Grass|Ice|Fighting|Poison|Ground|Flying|Psychic|Bug|Rock|Ghost|Dragon|Dark|Steel|Fairy)(?:\s+(Normal|Fire|Water|Electric|Grass|Ice|Fighting|Poison|Ground|Flying|Psychic|Bug|Rock|Ghost|Dragon|Dark|Steel|Fairy))?/i
-  );
-
-  if(!match) return null;
-
-  return {
-    number:Number(match[1]),
-    name:match[2].trim(),
-    types:[
-      match[3],
-      ...(match[4]?[match[4]]:[])
-    ],
-    section,
-    specialty:"",
-    habitats:[],
-    requirements:"",
-    description:"",
-    tip:"",
-    nationalDex:null
-  };
-}
-
-
-function parseSource(text){
-
-  let start=text.indexOf("No. 001 Shellder");
-
-  if(start<0){
-    start=text.indexOf("No. 001");
-  }
-
-  if(start<0){
-    throw new Error("Pokémonlijst niet gevonden");
-  }
-
-  text=text.slice(start).replace(/\r/g,"");
-
-  let chunks=text
-    .split(/(?=No\.\s*\d{3}\s+)/g)
-    .filter(x=>/^No\./.test(x.trim()));
-
-  let section="basin";
-
-  let seenMain=false;
-
-  let out=[];
-
-  for(let chunk of chunks){
-
-    let clean=chunk.split("\n")[0].trim();
-
-    if(clean.includes("Bulbasaur")){
-      section="main";
-      seenMain=true;
-    }
-
-    if(
-      seenMain &&
-      clean.includes("Hoppip") &&
-      out.some(x=>x.section==="main" && x.name==="Mew")
-    ){
-      section="event";
-    }
-
-    let p=parseCard(clean,section);
-
-    if(p){
-      out.push(p);
-    }
-  }
-
-  return out;
-}
-
-
-async function fetchText(){
-
-  let urls=[
-    "https://pokopia.gamertw.com/pokemon",
-    "https://r.jina.ai/https://pokopia.gamertw.com/pokemon",
-    "https://r.jina.ai/http://pokopia.gamertw.com/pokemon"
-  ];
-
-  let last;
-
-  for(let u of urls){
-
-    try{
-
-      let r=await fetch(u);
-
-      if(!r.ok){
-        throw new Error(r.status);
-      }
-
-      let t=await r.text();
-
-      if(
-        t.includes("Bulbasaur") &&
-        t.includes("Manaphy")
-      ){
-        return t;
-      }
-
-    }catch(e){
-
-      last=e;
-
-    }
-  }
-
-  throw last || new Error("Data kon niet worden geladen");
-}
-
-
-/*
-  EXTRA BASISDATA VOOR BEKENDE POKEMON
-*/
-
-const knownPokemon = {
-
-  Bulbasaur:{
-    nationalDex:1,
-    specialty:"Grow",
-    habitats:["Tall Grass","Bench with Greenery"],
-    requirements:"Tall Grass ×4, of Hedge ×2 + brede Seat ×1",
-    tip:"Begin met vier stukken Tall Grass bij elkaar. Dat is de eenvoudigste habitat om eerst te proberen."
-  },
-
-  Ivysaur:{
-    nationalDex:2
-  },
-
-  Venusaur:{
-    nationalDex:3
-  },
-
-  Charmander:{
-    nationalDex:4
-  },
-
-  Charmeleon:{
-    nationalDex:5
-  },
-
-  Charizard:{
-    nationalDex:6
-  },
-
-  Squirtle:{
-    nationalDex:7
-  },
-
-  Wartortle:{
-    nationalDex:8
-  },
-
-  Blastoise:{
-    nationalDex:9
-  },
-
-  Pikachu:{
-    nationalDex:25
-  },
-
-  Raichu:{
-    nationalDex:26
-  },
-
-  Jigglypuff:{
-    nationalDex:39
-  },
-
-  Meowth:{
-    nationalDex:52
-  },
-
-  Psyduck:{
-    nationalDex:54
-  },
-
-  Growlithe:{
-    nationalDex:58
-  },
-
-  Machop:{
-    nationalDex:66
-  },
-
-  Slowpoke:{
-    nationalDex:79
-  },
-
-  Magnemite:{
-    nationalDex:81
-  },
-
-  Gastly:{
-    nationalDex:92
-  },
-
-  Haunter:{
-    nationalDex:93
-  },
-
-  Gengar:{
-    nationalDex:94
-  },
-
-  Eevee:{
-    nationalDex:133
-  },
-
-  Vaporeon:{
-    nationalDex:134
-  },
-
-  Jolteon:{
-    nationalDex:135
-  },
-
-  Flareon:{
-    nationalDex:136
-  },
-
-  Snorlax:{
-    nationalDex:143
-  },
-
-  Mew:{
-    nationalDex:151
-  },
-
-  Umbreon:{
-    nationalDex:197
-  },
-
-  Lucario:{
-    nationalDex:448
-  },
-
-  Greninja:{
-    nationalDex:658
-  },
-
-  Mimikyu:{
-    nationalDex:778
-  }
-
-};
-
-
-function applyKnownData(){
-
-  pokemon.forEach(p=>{
-
-    const known=knownPokemon[p.name];
-
-    if(known){
-
-      Object.assign(p,known);
-
-    }
-
-  });
-}
-
-
-async function start(){
-
-  try{
-
-    const text=await fetchText();
-
-    pokemon=parseSource(text);
-
-    applyKnownData();
-
-    if(!pokemon.length){
-      throw new Error("Geen Pokémon gevonden");
-    }
-
-    const main=pokemon.filter(p=>p.section==="main").length;
-    const basin=pokemon.filter(p=>p.section==="basin").length;
-    const event=pokemon.filter(p=>p.section==="event").length;
-
-    document.getElementById("allHome").textContent=
-      `${pokemon.length} vermeldingen`;
-
-    document.getElementById("mainHome").textContent=
-      `${main} vermeldingen`;
-
-    document.getElementById("basinHome").textContent=
-      `${basin} vermeldingen`;
-
-    document.getElementById("eventHome").textContent=
-      `${event} vermeldingen`;
-
-    document.getElementById("homeStatus").innerHTML=`
-      <strong>✅ NLPokopia Pokédex geladen</strong>
-      <br>
-      ${pokemon.length} Pokémon-vermeldingen beschikbaar.
-    `;
-
-    renderDex();
-
-  }catch(error){
-
-    console.error(error);
-
-    document.getElementById("homeStatus").innerHTML=`
-
-      <div class="error">
-
-        <strong>De Pokémon-data kon niet automatisch worden geladen.</strong>
-
-        <br><br>
-
-        De website zelf werkt wel, maar de externe Pokopia-database
-        reageert op dit moment niet vanuit GitHub Pages.
-
-      </div>
-
-    `;
-
-  }
-}
-
-
-start();
+/* ========================================================
+   START
+   ======================================================== */
+
+renderDex();
 
 </script>
 
 </body>
-</html>                                            
+</html>

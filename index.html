@@ -1,1 +1,1419 @@
-commit die
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLPokopia | Nederlandse Pokémon Pokopia Gids</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --master: #7139a5;
+      --master-dark: #35134f;
+      --master-pink: #e64996;
+      --master-light: #eee5f6;
+      --background: #f7f5fa;
+      --card: #ffffff;
+      --text: #251a2b;
+      --muted: #716978;
+
+      --pokemon-main: #4f9848;
+      --pokemon-light: #edf7e9;
+      --pokemon-dark: #2f672c;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 5% 5%, rgba(230,73,150,.07), transparent 25%),
+        radial-gradient(circle at 95% 15%, rgba(113,57,165,.09), transparent 28%),
+        var(--background);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .site-header {
+      background: linear-gradient(135deg, var(--master-dark), var(--master));
+      color: white;
+      box-shadow: 0 5px 20px rgba(0,0,0,.2);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1450px;
+      margin: auto;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      border: 0;
+      background: transparent;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-align: left;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-text strong {
+      font-size: 29px;
+      font-weight: 900;
+    }
+
+    .brand-text small {
+      font-size: 11px;
+      opacity: .85;
+      margin-top: 3px;
+    }
+
+    .master-ball {
+      width: 51px;
+      height: 51px;
+      border-radius: 50%;
+      background:
+        linear-gradient(
+          to bottom,
+          #7938a8 0 44%,
+          #222 44% 56%,
+          white 56%
+        );
+      border: 3px solid #211326;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .master-ball::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background: white;
+      border: 3px solid #222;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-35%);
+      z-index: 2;
+    }
+
+    .master-m {
+      color: white;
+      font-weight: 900;
+      position: absolute;
+      left: 50%;
+      top: 5px;
+      transform: translateX(-50%);
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+
+    .main-nav button {
+      background: transparent;
+      color: white;
+      border: 0;
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
+    .main-nav button:hover {
+      background: rgba(255,255,255,.14);
+    }
+
+    .site-container {
+      max-width: 1450px;
+      margin: 25px auto;
+      padding: 0 17px;
+    }
+
+    .view {
+      display: none;
+    }
+
+    .view.active {
+      display: block;
+    }
+
+    .home-hero {
+      min-height: 350px;
+      background: white;
+      border-radius: 25px;
+      padding: 38px;
+      box-shadow: 0 8px 30px rgba(53,19,79,.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .home-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+
+    .welcome-label {
+      color: var(--master);
+      font-weight: 900;
+    }
+
+    .home-hero h1 {
+      margin-top: 5px;
+      font-size: clamp(50px,8vw,85px);
+      line-height: 1;
+      color: var(--master-dark);
+    }
+
+    .home-hero h1 span {
+      color: var(--master);
+    }
+
+    .home-hero h2 {
+      margin-top: 17px;
+      font-size: 25px;
+    }
+
+    .home-hero p {
+      margin-top: 13px;
+      line-height: 1.6;
+      font-size: 17px;
+    }
+
+    .home-search {
+      display: flex;
+      max-width: 720px;
+      margin-top: 24px;
+      border: 3px solid var(--master);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .home-search input {
+      flex: 1;
+      min-width: 0;
+      border: 0;
+      padding: 15px;
+      outline: 0;
+    }
+
+    .home-search button {
+      border: 0;
+      color: white;
+      background: var(--master);
+      padding: 0 21px;
+      font-weight: 900;
+    }
+
+    .home-menu {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .menu-card {
+      border: 0;
+      background: white;
+      padding: 24px 15px;
+      border-radius: 18px;
+      box-shadow: 0 5px 17px rgba(53,19,79,.09);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .menu-card > span {
+      font-size: 35px;
+    }
+
+    .menu-card strong {
+      font-size: 17px;
+    }
+
+    .menu-card small {
+      color: var(--muted);
+    }
+
+    .page-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 15px;
+      margin-bottom: 18px;
+    }
+
+    .page-heading h1 {
+      color: var(--master-dark);
+      font-size: 38px;
+    }
+
+    .counter {
+      background: var(--master-light);
+      color: var(--master-dark);
+      padding: 12px 16px;
+      border-radius: 12px;
+    }
+
+    .filters {
+      background: white;
+      padding: 15px;
+      border-radius: 17px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      box-shadow: 0 4px 15px rgba(53,19,79,.07);
+      margin-bottom: 18px;
+    }
+
+    .filters input,
+    .filters select {
+      padding: 11px;
+      border: 1px solid #ded4e6;
+      border-radius: 10px;
+      outline: 0;
+    }
+
+    .filters input {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .dex-grid {
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      gap: 13px;
+    }
+
+    .dex-card {
+      border: 1px solid #ebe4ef;
+      background: white;
+      min-height: 210px;
+      border-radius: 17px;
+      padding: 14px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 13px rgba(53,19,79,.06);
+      cursor: pointer;
+    }
+
+    .dex-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(53,19,79,.12);
+    }
+
+    .dex-number {
+      display: inline-block;
+      padding: 5px 9px;
+      background: var(--pokemon-main);
+      color: white;
+      border-radius: 8px;
+      font-weight: 900;
+    }
+
+    .dex-image {
+      height: 105px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .no-image {
+      width: 73px;
+      height: 73px;
+      border: 5px solid var(--pokemon-main);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--pokemon-main);
+      font-weight: 900;
+    }
+
+    .dex-card h3 {
+      margin-top: 8px;
+    }
+
+    .dex-source {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .card-dlc {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      background: var(--master-pink);
+      color: white;
+      padding: 5px 7px;
+      border-radius: 7px;
+      font-size: 10px;
+      font-weight: 900;
+    }
+
+    .back-button {
+      border: 0;
+      background: white;
+      padding: 10px 14px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.07);
+      font-weight: 800;
+      margin-bottom: 13px;
+    }
+
+    .pokemon-hero {
+      background: var(--pokemon-light);
+      border: 2px solid color-mix(in srgb,var(--pokemon-main),white 65%);
+      border-radius: 25px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    }
+
+    .pokemon-hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 29px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .pokemon-number {
+      display: inline-block;
+      background: var(--pokemon-main);
+      color: white;
+      padding: 8px 14px;
+      border-radius: 10px;
+      font-weight: 900;
+      font-size: 22px;
+    }
+
+    .pokemon-main-info h1 {
+      font-size: clamp(42px,7vw,72px);
+      line-height: 1;
+      margin: 10px 0;
+    }
+
+    .type-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .type-badge {
+      color: white;
+      padding: 7px 11px;
+      border-radius: 8px;
+      font-weight: 900;
+      font-size: 12px;
+    }
+
+    .quick-info {
+      background: rgba(255,255,255,.82);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-top: 16px;
+      max-width: 640px;
+    }
+
+    .quick-info > div {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+
+    .quick-info strong,
+    .quick-info span {
+      padding: 10px 12px;
+    }
+
+    .pokemon-artwork {
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-placeholder {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      border: 8px solid var(--pokemon-main);
+      color: var(--pokemon-main);
+      background: rgba(255,255,255,.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: 900;
+    }
+
+    .dlc-warning {
+      margin-top: 17px;
+      background: #ffe3f0;
+      border: 2px solid var(--master-pink);
+      border-radius: 17px;
+      padding: 18px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 17px;
+    }
+
+    .content-card {
+      background: white;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 5px 17px rgba(53,19,79,.07);
+    }
+
+    .pokemon-colored {
+      background: var(--pokemon-light);
+      border: 1px solid color-mix(in srgb,var(--pokemon-main),white 68%);
+    }
+
+    .steps-section {
+      margin-top: 17px;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      gap: 11px;
+      margin-top: 16px;
+    }
+
+    .step-card {
+      background: var(--pokemon-light);
+      border-radius: 14px;
+      padding: 12px;
+    }
+
+    .step-number {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--pokemon-main);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+    }
+
+    .personal-tip {
+      background: #fff4c8;
+      border: 1px solid #e5c85a;
+      padding: 18px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 17px;
+    }
+
+    .tip-avatar {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: #ffd34f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 46px;
+    }
+
+    .video-section {
+      background: var(--pokemon-light);
+      margin-top: 17px;
+      padding: 20px;
+      border-radius: 19px;
+    }
+
+    .checklist {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .checklist label {
+      background: #faf9fb;
+      padding: 11px 13px;
+      border: 1px solid #e7dfea;
+      border-radius: 10px;
+    }
+
+    .previous-next {
+      display: flex;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .previous-next button {
+      flex: 1;
+      background: var(--master);
+      color: white;
+      border: 0;
+      padding: 14px;
+      border-radius: 11px;
+      font-weight: 900;
+    }
+
+    footer {
+      margin-top: 35px;
+      background: var(--master-dark);
+      color: white;
+      text-align: center;
+      padding: 28px 17px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 850px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .home-menu {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .dex-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .pokemon-hero-content,
+      .two-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .steps-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+
+    <button class="brand" onclick="showHome()">
+      <span class="master-ball">
+        <span class="master-m">M</span>
+      </span>
+
+      <span class="brand-text">
+        <strong>NLPokopia</strong>
+        <small>De Nederlandse Pokopia Gids</small>
+      </span>
+    </button>
+
+    <nav class="main-nav">
+      <button onclick="showHome()">🏠 Home</button>
+      <button onclick="showDex('all')">🔴 Pokémon</button>
+      <button onclick="showDex('base')">🎮 Basisgame</button>
+      <button onclick="showDex('dlc')">🫧 DLC</button>
+      <button onclick="showMyDex()">✅ Mijn Pokédex</button>
+    </nav>
+
+  </div>
+</header>
+
+
+<main class="site-container">
+
+<section id="homeView" class="view active">
+
+  <section class="home-hero">
+
+    <div class="home-content">
+
+      <span class="welcome-label">Welkom bij</span>
+
+      <h1><span>NLP</span>okopia</h1>
+
+      <h2>Vind je Pokémon. Bouw de juiste habitat.</h2>
+
+      <p>
+        Zoek een Pokémon en bekijk direct wat je nodig hebt,
+        waar je hem kunt krijgen, welke voorwaarden gelden
+        en welke video je kunt bekijken.
+      </p>
+
+      <form class="home-search" onsubmit="searchFromHome(event)">
+
+        <input
+          id="homeSearch"
+          type="search"
+          placeholder="Zoek Bulbasaur, Charmander, #007..."
+        >
+
+        <button type="submit">
+          🔍 Zoeken
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <section class="home-menu">
+
+    <button onclick="showDex('all')" class="menu-card">
+      <span>🔴</span>
+      <strong>Alle 365 Pokémon</strong>
+      <small>Basisgame + DLC</small>
+    </button>
+
+    <button onclick="showDex('base')" class="menu-card">
+      <span>🎮</span>
+      <strong>Basisgame</strong>
+      <small>300 Pokémon</small>
+    </button>
+
+    <button onclick="showDex('dlc')" class="menu-card">
+      <span>🫧</span>
+      <strong>DLC Pokémon</strong>
+      <small>65 Pokémon</small>
+    </button>
+
+    <button onclick="showMyDex()" class="menu-card">
+      <span>✅</span>
+      <strong>Mijn Pokédex</strong>
+      <small>Hou je voortgang bij</small>
+    </button>
+
+  </section>
+
+</section>
+
+
+<section id="dexView" class="view">
+
+  <div class="page-heading">
+
+    <div>
+      <h1 id="dexTitle">Alle Pokémon</h1>
+      <p id="dexDescription">Basisgame + DLC</p>
+    </div>
+
+    <strong id="dexCounter" class="counter">
+      365 Pokémon
+    </strong>
+
+  </div>
+
+
+  <div class="filters">
+
+    <input
+      id="dexSearch"
+      type="search"
+      placeholder="Zoek naam of nummer..."
+      oninput="renderDex()"
+    >
+
+    <select id="gameFilter" onchange="renderDex()">
+      <option value="all">Alles</option>
+      <option value="base">Basisgame</option>
+      <option value="dlc">DLC</option>
+    </select>
+
+  </div>
+
+
+  <div id="dexGrid" class="dex-grid"></div>
+
+</section>
+
+
+<section id="pokemonView" class="view">
+
+  <button class="back-button" onclick="showDex()">
+    ← Terug
+  </button>
+
+
+  <section class="pokemon-hero">
+
+    <div class="pokemon-hero-content">
+
+      <div class="pokemon-main-info">
+
+        <span id="pokemonNumber" class="pokemon-number">
+          #001
+        </span>
+
+        <h1 id="pokemonName">
+          Bulbasaur
+        </h1>
+
+        <div id="pokemonTypes" class="type-row"></div>
+
+
+        <div class="quick-info">
+
+          <div>
+            <strong>Moeilijkheid</strong>
+            <span id="difficulty">Nog invullen</span>
+          </div>
+
+          <div>
+            <strong>Habitat</strong>
+            <span id="habitat">Nog invullen</span>
+          </div>
+
+          <div>
+            <strong>Nodig</strong>
+            <span id="requirements">Nog invullen</span>
+          </div>
+
+          <div>
+            <strong>Tijd</strong>
+            <span id="time">Nog invullen</span>
+          </div>
+
+          <div>
+            <strong>Weer</strong>
+            <span id="weather">Nog invullen</span>
+          </div>
+
+          <div>
+            <strong>Specialiteit</strong>
+            <span id="specialty">Nog invullen</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="pokemon-artwork">
+
+        <div id="pokemonImage" class="image-placeholder">
+          Pokémon
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="dlcWarning" class="dlc-warning hidden">
+    <h2>🫧 DLC Pokémon</h2>
+    <p>
+      Deze Pokémon hoort bij de DLC. Zonder de betreffende uitbreiding
+      kun je deze Pokémon niet via deze DLC-content verkrijgen.
+    </p>
+  </section>
+
+
+  <section class="two-columns">
+
+    <article class="content-card pokemon-colored">
+      <h2>📖 Over deze Pokémon</h2>
+      <p id="description">Nog invullen.</p>
+    </article>
+
+    <article class="content-card pokemon-colored">
+      <h2>🏡 Alternatieve manier</h2>
+      <p id="alternative">Nog invullen.</p>
+    </article>
+
+  </section>
+
+
+  <section class="content-card steps-section">
+
+    <h2>
+      🛠️ Zo krijg je
+      <span id="stepsPokemonName">deze Pokémon</span>
+    </h2>
+
+    <div id="stepsContainer" class="steps-grid"></div>
+
+  </section>
+
+
+  <section class="personal-tip">
+
+    <div class="tip-avatar">
+      👱‍♂️
+    </div>
+
+    <div>
+      <h2>⭐ Persoonlijke tip</h2>
+      <p id="personalTip">Nog invullen.</p>
+    </div>
+
+  </section>
+
+
+  <section class="video-section">
+
+    <h2>🎬 Video voorbeeld</h2>
+
+    <p id="videoText">
+      Hier komt de originele video van de maker.
+    </p>
+
+  </section>
+
+
+  <section class="two-columns">
+
+    <article class="content-card pokemon-colored">
+      <h2>✨ Vaardigheid</h2>
+      <p id="abilityText">Nog invullen.</p>
+    </article>
+
+    <article class="content-card pokemon-colored">
+      <h2>❤️ Comfort & wensen</h2>
+      <p id="comfortText">Nog invullen.</p>
+    </article>
+
+  </section>
+
+
+  <section class="content-card" style="margin-top:17px;">
+
+    <h2>✅ Mijn checklist</h2>
+
+    <div class="checklist">
+
+      <label>
+        <input id="checkHabitat" type="checkbox" onchange="saveChecks()">
+        Habitat gemaakt
+      </label>
+
+      <label>
+        <input id="checkCaught" type="checkbox" onchange="saveChecks()">
+        Pokémon compleet
+      </label>
+
+    </div>
+
+  </section>
+
+
+  <section class="previous-next">
+
+    <button onclick="previousPokemon()">
+      ← Vorige
+    </button>
+
+    <button onclick="nextPokemon()">
+      Volgende →
+    </button>
+
+  </section>
+
+</section>
+
+
+<section id="myDexView" class="view">
+
+  <div class="page-heading">
+
+    <div>
+      <h1>Mijn Pokédex</h1>
+      <p>Jouw afgevinkte Pokémon.</p>
+    </div>
+
+    <strong id="myDexCounter" class="counter">
+      0 / 365
+    </strong>
+
+  </div>
+
+  <div id="myDexGrid" class="dex-grid"></div>
+
+</section>
+
+</main>
+
+
+<footer>
+  <strong>NLPokopia</strong>
+  <p>De Nederlandse Pokémon Pokopia-fangids.</p>
+</footer>
+
+
+<script>
+
+const typeColors = {
+  grass: ["#4f9848","#edf7e9","#2f672c"],
+  fire: ["#e4543d","#fff0ec","#a52d20"],
+  water: ["#4597d5","#eaf5fc","#226b9f"],
+  electric: ["#e4b92d","#fff9df","#9b7610"],
+  normal: ["#919185","#f4f4ef","#5b5b51"],
+  poison: ["#9855aa","#f5ebf8","#683574"]
+};
+
+
+const pokemon = [];
+
+
+for (let i = 1; i <= 365; i++) {
+
+  pokemon.push({
+    number: i,
+    name: `Pokémon #${String(i).padStart(3,"0")}`,
+    types: ["normal"],
+    game: i <= 300 ? "base" : "dlc",
+    dlc: i > 300,
+    difficulty: "Nog invullen",
+    habitat: "Nog invullen",
+    requirements: "Nog invullen",
+    time: "Nog invullen",
+    weather: "Nog invullen",
+    specialty: "Nog invullen",
+    description: "Deze Pokémon wordt nog aangevuld.",
+    alternative: "Nog invullen.",
+    ability: "Nog invullen.",
+    comfort: "Nog invullen.",
+    personalTip: "Hier komt de persoonlijke tip.",
+    video: "Nog geen video toegevoegd.",
+    steps: [
+      "Stap 1",
+      "Stap 2",
+      "Stap 3",
+      "Stap 4",
+      "Stap 5"
+    ]
+  });
+
+}
+
+
+pokemon[0] = {
+  ...pokemon[0],
+  name: "Bulbasaur",
+  types: ["grass","poison"]
+};
+
+pokemon[1] = {
+  ...pokemon[1],
+  name: "Ivysaur",
+  types: ["grass","poison"]
+};
+
+pokemon[2] = {
+  ...pokemon[2],
+  name: "Venusaur",
+  types: ["grass","poison"]
+};
+
+pokemon[3] = {
+  ...pokemon[3],
+  name: "Charmander",
+  types: ["fire"]
+};
+
+pokemon[4] = {
+  ...pokemon[4],
+  name: "Charmeleon",
+  types: ["fire"]
+};
+
+pokemon[5] = {
+  ...pokemon[5],
+  name: "Charizard",
+  types: ["fire"]
+};
+
+pokemon[6] = {
+  ...pokemon[6],
+  name: "Squirtle",
+  types: ["water"]
+};
+
+pokemon[7] = {
+  ...pokemon[7],
+  name: "Wartortle",
+  types: ["water"]
+};
+
+pokemon[8] = {
+  ...pokemon[8],
+  name: "Blastoise",
+  types: ["water"]
+};
+
+
+let currentPokemon = 1;
+
+
+function hideViews() {
+  document.querySelectorAll(".view").forEach(v => {
+    v.classList.remove("active");
+  });
+}
+
+
+function showHome() {
+  hideViews();
+  document.getElementById("homeView").classList.add("active");
+}
+
+
+function showDex(filter = "all") {
+
+  hideViews();
+
+  document.getElementById("dexView").classList.add("active");
+
+  document.getElementById("gameFilter").value = filter;
+
+  renderDex();
+}
+
+
+function renderDex() {
+
+  const search =
+    document.getElementById("dexSearch").value.toLowerCase().trim();
+
+  const game =
+    document.getElementById("gameFilter").value;
+
+  const results =
+    pokemon.filter(p => {
+
+      const matchesSearch =
+        !search ||
+        p.name.toLowerCase().includes(search) ||
+        String(p.number).padStart(3,"0").includes(search.replace("#",""));
+
+      const matchesGame =
+        game === "all" ||
+        p.game === game;
+
+      return matchesSearch && matchesGame;
+    });
+
+
+  document.getElementById("dexCounter").textContent =
+    `${results.length} Pokémon`;
+
+
+  document.getElementById("dexGrid").innerHTML =
+    results.map(p => {
+
+      const color =
+        typeColors[p.types[0]] || typeColors.normal;
+
+      return `
+        <article
+          class="dex-card"
+          onclick="openPokemon(${p.number})"
+          style="--pokemon-main:${color[0]}"
+        >
+
+          ${p.dlc ? `<span class="card-dlc">DLC</span>` : ""}
+
+          <span class="dex-number">
+            #${String(p.number).padStart(3,"0")}
+          </span>
+
+          <div class="dex-image">
+            <div class="no-image">
+              ${String(p.number).padStart(3,"0")}
+            </div>
+          </div>
+
+          <h3>${p.name}</h3>
+
+          <div class="dex-source">
+            ${p.dlc ? "🫧 DLC" : "🎮 Basisgame"}
+          </div>
+
+        </article>
+      `;
+
+    }).join("");
+
+}
+
+
+function searchFromHome(event) {
+
+  event.preventDefault();
+
+  const input =
+    document.getElementById("homeSearch").value.toLowerCase().trim();
+
+  const cleaned =
+    input.replace("#","");
+
+  const found =
+    pokemon.find(p =>
+      p.name.toLowerCase() === input ||
+      String(p.number) === cleaned ||
+      String(p.number).padStart(3,"0") === cleaned
+    );
+
+  if (found) {
+    openPokemon(found.number);
+  } else {
+    showDex();
+    document.getElementById("dexSearch").value = input;
+    renderDex();
+  }
+
+}
+
+
+function openPokemon(number) {
+
+  const p =
+    pokemon.find(x => x.number === number);
+
+  if (!p) return;
+
+  currentPokemon = number;
+
+  hideViews();
+
+  document.getElementById("pokemonView").classList.add("active");
+
+
+  const colors =
+    typeColors[p.types[0]] || typeColors.normal;
+
+
+  document.documentElement.style.setProperty("--pokemon-main", colors[0]);
+  document.documentElement.style.setProperty("--pokemon-light", colors[1]);
+  document.documentElement.style.setProperty("--pokemon-dark", colors[2]);
+
+
+  document.getElementById("pokemonNumber").textContent =
+    `#${String(p.number).padStart(3,"0")}`;
+
+  document.getElementById("pokemonName").textContent =
+    p.name;
+
+  document.getElementById("stepsPokemonName").textContent =
+    p.name;
+
+  document.getElementById("difficulty").textContent =
+    p.difficulty;
+
+  document.getElementById("habitat").textContent =
+    p.habitat;
+
+  document.getElementById("requirements").textContent =
+    p.requirements;
+
+  document.getElementById("time").textContent =
+    p.time;
+
+  document.getElementById("weather").textContent =
+    p.weather;
+
+  document.getElementById("specialty").textContent =
+    p.specialty;
+
+  document.getElementById("description").textContent =
+    p.description;
+
+  document.getElementById("alternative").textContent =
+    p.alternative;
+
+  document.getElementById("abilityText").textContent =
+    p.ability;
+
+  document.getElementById("comfortText").textContent =
+    p.comfort;
+
+  document.getElementById("personalTip").textContent =
+    p.personalTip;
+
+  document.getElementById("videoText").textContent =
+    p.video;
+
+
+  document.getElementById("pokemonTypes").innerHTML =
+    p.types.map(type => {
+
+      const c =
+        typeColors[type] || typeColors.normal;
+
+      return `
+        <span
+          class="type-badge"
+          style="background:${c[0]}"
+        >
+          ${type.toUpperCase()}
+        </span>
+      `;
+
+    }).join("");
+
+
+  document.getElementById("pokemonImage").innerHTML =
+    `#${String(p.number).padStart(3,"0")}<br>${p.name}`;
+
+
+  document.getElementById("dlcWarning").classList.toggle(
+    "hidden",
+    !p.dlc
+  );
+
+
+  document.getElementById("stepsContainer").innerHTML =
+    p.steps.map((step,index) => `
+      <div class="step-card">
+
+        <div class="step-number">
+          ${index + 1}
+        </div>
+
+        <h3>${step}</h3>
+
+        <p>Wordt nog ingevuld.</p>
+
+      </div>
+    `).join("");
+
+
+  loadChecks();
+
+  window.scrollTo(0,0);
+}
+
+
+function saveChecks() {
+
+  localStorage.setItem(
+    `nlpokopia_${currentPokemon}_habitat`,
+    document.getElementById("checkHabitat").checked
+  );
+
+  localStorage.setItem(
+    `nlpokopia_${currentPokemon}_complete`,
+    document.getElementById("checkCaught").checked
+  );
+
+}
+
+
+function loadChecks() {
+
+  document.getElementById("checkHabitat").checked =
+    localStorage.getItem(
+      `nlpokopia_${currentPokemon}_habitat`
+    ) === "true";
+
+  document.getElementById("checkCaught").checked =
+    localStorage.getItem(
+      `nlpokopia_${currentPokemon}_complete`
+    ) === "true";
+}
+
+
+function showMyDex() {
+
+  hideViews();
+
+  document.getElementById("myDexView").classList.add("active");
+
+  const completed =
+    pokemon.filter(p =>
+      localStorage.getItem(
+        `nlpokopia_${p.number}_complete`
+      ) === "true"
+    );
+
+
+  document.getElementById("myDexCounter").textContent =
+    `${completed.length} / 365`;
+
+
+  document.getElementById("myDexGrid").innerHTML =
+    completed.length
+      ? completed.map(p => `
+          <article
+            class="dex-card"
+            onclick="openPokemon(${p.number})"
+          >
+            <span class="dex-number">
+              #${String(p.number).padStart(3,"0")}
+            </span>
+
+            <div class="dex-image">
+              ✅
+            </div>
+
+            <h3>${p.name}</h3>
+          </article>
+        `).join("")
+      : `<div class="content-card">Nog geen Pokémon afgevinkt.</div>`;
+}
+
+
+function previousPokemon() {
+  if (currentPokemon > 1) {
+    openPokemon(currentPokemon - 1);
+  }
+}
+
+
+function nextPokemon() {
+  if (currentPokemon < 365) {
+    openPokemon(currentPokemon + 1);
+  }
+}
+
+
+renderDex();
+
+</script>
+
+</body>
+</html>

@@ -7,983 +7,730 @@
 
 <style>
 *{box-sizing:border-box}
-
-:root{
---master:#7138a6;
---masterDark:#351451;
---pink:#ed4e9b;
---bg:#f8f5fb;
---card:#fff;
---text:#26192e;
---muted:#766c7c;
-
---poke:#777;
---pokeLight:#f3f3f3;
---pokeDark:#444;
-}
-
 html{scroll-behavior:smooth}
-
-body{
-margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:var(--bg);
-color:var(--text);
+:root{
+ --master:#7138a6;
+ --masterDark:#351451;
+ --pink:#ed4e9b;
+ --summer:#42b7a6;
+ --bg:#f8f5fb;
+ --card:#fff;
+ --text:#26192e;
+ --muted:#766c7c;
+ --poke:#777;
+ --pokeLight:#f3f3f3;
+ --pokeDark:#444;
 }
-
+body{
+ margin:0;
+ font-family:Arial,Helvetica,sans-serif;
+ color:var(--text);
+ background:
+  radial-gradient(circle at 5% 10%,rgba(66,183,166,.09),transparent 25%),
+  radial-gradient(circle at 95% 15%,rgba(113,56,166,.10),transparent 27%),
+  var(--bg);
+}
 button,input,select{font:inherit}
 button{cursor:pointer}
+a{text-decoration:none}
 .hidden{display:none!important}
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header{
-position:sticky;
-top:0;
-z-index:100;
-background:linear-gradient(135deg,var(--masterDark),var(--master));
-color:white;
-box-shadow:0 4px 18px #0004;
+ position:sticky;
+ top:0;
+ z-index:100;
+ color:white;
+ background:linear-gradient(135deg,var(--masterDark),var(--master));
+ box-shadow:0 4px 18px #0004;
 }
-
 .head{
-max-width:1450px;
-margin:auto;
-padding:14px 18px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:20px;
+ max-width:1450px;
+ margin:auto;
+ padding:14px 18px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:20px;
 }
-
 .brand{
-border:0;
-background:none;
-color:white;
-display:flex;
-align-items:center;
-gap:11px;
-text-align:left;
+ border:0;
+ background:none;
+ color:white;
+ display:flex;
+ align-items:center;
+ gap:11px;
+ text-align:left;
 }
-
 .brand strong{font-size:29px}
 .brand small{display:block;opacity:.85}
-
 .masterball{
-width:50px;
-height:50px;
-border-radius:50%;
-border:3px solid #221429;
-background:linear-gradient(
-#7438a9 0 43%,
-#222 43% 55%,
-white 55%
-);
-position:relative;
+ width:50px;
+ height:50px;
+ border-radius:50%;
+ border:3px solid #221429;
+ background:linear-gradient(#7438a9 0 43%,#222 43% 55%,white 55%);
+ position:relative;
 }
-
 .masterball:before{
-content:"";
-position:absolute;
-left:50%;
-top:48%;
-transform:translate(-50%,-50%);
-width:14px;
-height:14px;
-border-radius:50%;
-background:white;
-border:3px solid #222;
+ content:"";
+ position:absolute;
+ left:50%;
+ top:48%;
+ transform:translate(-50%,-50%);
+ width:14px;
+ height:14px;
+ border-radius:50%;
+ background:white;
+ border:3px solid #222;
 }
-
 .masterball:after{
-content:"M";
-position:absolute;
-top:5px;
-left:50%;
-transform:translateX(-50%);
-font-weight:900;
+ content:"M";
+ position:absolute;
+ top:5px;
+ left:50%;
+ transform:translateX(-50%);
+ font-weight:900;
 }
-
-nav{
-display:flex;
-gap:5px;
-flex-wrap:wrap;
-}
-
+nav{display:flex;gap:5px;flex-wrap:wrap}
 nav button{
-border:0;
-background:transparent;
-color:white;
-padding:10px 12px;
-border-radius:10px;
-font-weight:800;
+ border:0;
+ color:white;
+ background:transparent;
+ padding:10px 12px;
+ border-radius:10px;
+ font-weight:800;
 }
+nav button:hover{background:#ffffff20}
 
-nav button:hover{
-background:#ffffff20;
-}
-
-/* =========================
-   ALGEMEEN
-========================= */
+/* BASIS */
 
 .wrap{
-max-width:1450px;
-margin:24px auto;
-padding:0 16px;
+ max-width:1450px;
+ margin:24px auto;
+ padding:0 16px;
 }
-
 .view{display:none}
 .view.active{display:block}
 
-/* =========================
-   ACHTERGRONDDECORATIE
-========================= */
+/* ACHTERGROND */
 
 .decor{
-position:fixed;
-inset:0;
-pointer-events:none;
-z-index:-1;
-overflow:hidden;
+ position:fixed;
+ inset:0;
+ z-index:-1;
+ pointer-events:none;
+ overflow:hidden;
 }
-
 .ball{
-position:absolute;
-width:75px;
-height:75px;
-border-radius:50%;
-border:5px solid #282228;
-opacity:.08;
+ position:absolute;
+ width:76px;
+ height:76px;
+ border-radius:50%;
+ border:5px solid #282228;
+ opacity:.075;
 }
-
 .ball:before{
-content:"";
-position:absolute;
-left:0;
-right:0;
-top:45%;
-height:8px;
-background:#282228;
+ content:"";
+ position:absolute;
+ left:0;right:0;top:45%;
+ height:8px;
+ background:#282228;
 }
-
 .ball:after{
-content:"";
-position:absolute;
-left:50%;
-top:50%;
-transform:translate(-50%,-50%);
-width:18px;
-height:18px;
-border-radius:50%;
-background:white;
-border:4px solid #282228;
+ content:"";
+ position:absolute;
+ left:50%;top:50%;
+ transform:translate(-50%,-50%);
+ width:18px;height:18px;
+ border-radius:50%;
+ border:4px solid #282228;
+ background:white;
 }
-
-.pb{
-background:linear-gradient(#e94040 0 48%,white 48%);
-}
-
-.gb{
-background:linear-gradient(#2f6fc1 0 48%,white 48%);
-}
-
-.ub{
-background:linear-gradient(
-#222 0 42%,
-#e5bd29 42% 55%,
-white 55%
-);
-}
-
-.mb{
-background:linear-gradient(
-#7438a9 0 42%,
-#eb4d9a 42% 55%,
-white 55%
-);
-}
-
-.db{
-background:linear-gradient(
-#5ab9dc 0 48%,
-#236bad 48% 58%,
-white 58%
-);
-}
-
-.qb{
-background:linear-gradient(
-#3477bd 0 43%,
-#f0d037 43% 57%,
-white 57%
-);
-}
+.pb{background:linear-gradient(#e94040 0 48%,white 48%)}
+.gb{background:linear-gradient(#2f6fc1 0 48%,white 48%)}
+.ub{background:linear-gradient(#222 0 42%,#e5bd29 42% 55%,white 55%)}
+.mb{background:linear-gradient(#7438a9 0 42%,#eb4d9a 42% 55%,white 55%)}
+.db{background:linear-gradient(#5ab9dc 0 48%,#236bad 48% 58%,white 58%)}
+.qb{background:linear-gradient(#3477bd 0 43%,#f0d037 43% 57%,white 57%)}
+.lb{background:linear-gradient(#191919 0 42%,#cda42a 42% 56%,white 56%)}
+.premier{background:linear-gradient(#eee 0 48%,#d73244 48% 57%,white 57%)}
 
 .bgPokemon{
-position:absolute;
-width:130px;
-opacity:.055;
-filter:grayscale(1);
+ position:absolute;
+ width:135px;
+ opacity:.055;
+ filter:grayscale(1);
 }
 
-/* =========================
-   HOME
-========================= */
+/* HOME */
 
 .hero{
-background:white;
-border-radius:26px;
-padding:38px;
-min-height:380px;
-box-shadow:0 8px 28px #35134f18;
-position:relative;
-overflow:hidden;
+ background:white;
+ min-height:390px;
+ border-radius:26px;
+ padding:38px;
+ position:relative;
+ overflow:hidden;
+ box-shadow:0 8px 28px #35134f18;
 }
-
 .hero:after{
-content:"M";
-position:absolute;
-right:-25px;
-top:-90px;
-font-size:380px;
-font-weight:900;
-color:#7138a608;
+ content:"M";
+ position:absolute;
+ right:-25px;
+ top:-90px;
+ font-size:380px;
+ font-weight:900;
+ color:#7138a608;
 }
-
-.heroContent{
-position:relative;
-z-index:2;
-max-width:830px;
-}
-
-.heroLabel{
-font-weight:900;
-color:var(--master);
-}
-
+.heroContent{position:relative;z-index:2;max-width:850px}
+.heroLabel{font-weight:900;color:var(--master)}
 .hero h1{
-font-size:clamp(52px,8vw,88px);
-margin:5px 0;
-color:var(--masterDark);
-line-height:1;
+ font-size:clamp(52px,8vw,88px);
+ line-height:1;
+ margin:5px 0;
+ color:var(--masterDark);
 }
-
-.hero h1 span{
-color:var(--master);
-}
-
-.hero h2{
-font-size:25px;
-margin:18px 0 8px;
-}
-
-.hero p{
-font-size:17px;
-line-height:1.6;
-}
+.hero h1 span{color:var(--master)}
+.hero h2{font-size:26px;margin:18px 0 8px}
+.hero p{font-size:17px;line-height:1.6}
 
 .search{
-display:flex;
-max-width:760px;
-border:3px solid var(--master);
-border-radius:15px;
-overflow:hidden;
-margin-top:22px;
-background:white;
+ display:flex;
+ max-width:770px;
+ margin-top:23px;
+ border:3px solid var(--master);
+ border-radius:15px;
+ overflow:hidden;
+ background:white;
 }
-
 .search input{
-flex:1;
-min-width:0;
-border:0;
-outline:0;
-padding:16px;
+ flex:1;
+ min-width:0;
+ border:0;
+ outline:0;
+ padding:16px;
 }
-
 .search button{
-border:0;
-background:var(--master);
-color:white;
-padding:0 23px;
-font-weight:900;
+ border:0;
+ color:white;
+ background:var(--master);
+ padding:0 23px;
+ font-weight:900;
 }
 
 .homeCards{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:14px;
-margin-top:20px;
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:14px;
+ margin-top:20px;
 }
-
 .homeCard{
-border:0;
-background:white;
-border-radius:18px;
-padding:23px 13px;
-box-shadow:0 5px 17px #35134f12;
+ border:0;
+ background:white;
+ border-radius:18px;
+ padding:23px 13px;
+ box-shadow:0 5px 17px #35134f12;
 }
+.homeCard:hover{transform:translateY(-2px)}
+.homeCard .ico{display:block;font-size:36px;margin-bottom:7px}
+.homeCard strong{display:block;font-size:17px}
+.homeCard small{display:block;color:var(--muted);margin-top:5px}
 
-.homeCard:hover{
-transform:translateY(-2px);
-}
-
-.homeCard .ico{
-display:block;
-font-size:36px;
-margin-bottom:7px;
-}
-
-.homeCard strong{
-display:block;
-font-size:17px;
-}
-
-.homeCard small{
-display:block;
-color:var(--muted);
-margin-top:5px;
-}
-
-/* =========================
-   POKEDEX
-========================= */
+/* POKEDEX */
 
 .heading{
-display:flex;
-justify-content:space-between;
-align-items:flex-end;
-gap:15px;
-margin-bottom:17px;
+ display:flex;
+ align-items:flex-end;
+ justify-content:space-between;
+ gap:15px;
+ margin-bottom:17px;
 }
-
-.heading h1{
-margin:0;
-color:var(--masterDark);
-font-size:38px;
-}
-
-.heading p{
-margin:5px 0 0;
-color:var(--muted);
-}
-
+.heading h1{margin:0;color:var(--masterDark);font-size:38px}
+.heading p{margin:5px 0 0;color:var(--muted)}
 .counter{
-background:#efe6f7;
-color:var(--masterDark);
-padding:12px 16px;
-border-radius:12px;
-font-weight:900;
+ padding:12px 16px;
+ border-radius:12px;
+ background:#efe6f7;
+ color:var(--masterDark);
+ font-weight:900;
 }
 
 .filters{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-background:white;
-padding:15px;
-border-radius:17px;
-box-shadow:0 4px 14px #35134f12;
-margin-bottom:18px;
+ display:flex;
+ flex-wrap:wrap;
+ gap:10px;
+ padding:15px;
+ margin-bottom:18px;
+ background:white;
+ border-radius:17px;
+ box-shadow:0 4px 14px #35134f12;
 }
-
-.filters input,
-.filters select{
-border:1px solid #ded4e6;
-border-radius:10px;
-padding:11px;
-outline:0;
+.filters input,.filters select{
+ border:1px solid #ded4e6;
+ border-radius:10px;
+ padding:11px;
+ outline:0;
 }
-
-.filters input{
-flex:1;
-min-width:220px;
-}
+.filters input{flex:1;min-width:220px}
 
 .dexGrid{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:13px;
+ display:grid;
+ grid-template-columns:repeat(5,1fr);
+ gap:13px;
 }
-
 .dexCard{
-background:white;
-border:1px solid #ece4f0;
-border-radius:18px;
-padding:14px;
-min-height:220px;
-box-shadow:0 4px 13px #35134f0f;
-position:relative;
-cursor:pointer;
-overflow:hidden;
+ min-height:225px;
+ padding:14px;
+ position:relative;
+ overflow:hidden;
+ cursor:pointer;
+ background:white;
+ border:1px solid #ece4f0;
+ border-radius:18px;
+ box-shadow:0 4px 13px #35134f0f;
 }
-
 .dexCard:hover{
-transform:translateY(-3px);
-box-shadow:0 8px 18px #35134f20;
+ transform:translateY(-3px);
+ box-shadow:0 8px 18px #35134f20;
 }
-
 .dexNo{
-display:inline-block;
-background:var(--poke);
-color:white;
-padding:5px 9px;
-border-radius:8px;
-font-size:13px;
-font-weight:900;
+ display:inline-block;
+ padding:5px 9px;
+ border-radius:8px;
+ color:white;
+ background:var(--poke);
+ font-size:13px;
+ font-weight:900;
 }
-
 .dexPic{
-height:112px;
-display:flex;
-align-items:center;
-justify-content:center;
+ height:112px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
 }
-
-.dexPic img{
-max-width:100%;
-max-height:108px;
-}
-
+.dexPic img{max-width:100%;max-height:108px}
 .fallback{
-width:75px;
-height:75px;
-border:5px solid var(--poke);
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-color:var(--poke);
-background:var(--pokeLight);
-font-weight:900;
+ width:76px;height:76px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ border:5px solid var(--poke);
+ border-radius:50%;
+ color:var(--poke);
+ background:var(--pokeLight);
+ font-weight:900;
 }
-
-.dexCard h3{
-font-size:18px;
-margin:6px 0;
-}
-
-.dexSource{
-font-size:12px;
-color:var(--muted);
-}
+.dexCard h3{font-size:18px;margin:6px 0}
+.dexSource{font-size:12px;color:var(--muted);line-height:1.45}
 
 .label{
-position:absolute;
-right:8px;
-top:8px;
-color:white;
-padding:5px 7px;
-border-radius:7px;
-font-size:10px;
-font-weight:900;
+ position:absolute;
+ right:8px;
+ top:8px;
+ padding:5px 7px;
+ border-radius:7px;
+ color:white;
+ font-size:10px;
+ font-weight:900;
 }
+.labelDlc{background:var(--pink)}
+.labelEvent{background:#c7971b}
+.labelVariant{top:36px;background:#555}
 
-.labelDlc{
-background:var(--pink);
-}
-
-.labelEvent{
-background:#c7971b;
-}
-
-.labelVariant{
-background:#555;
-top:36px;
-}
-
-/* =========================
-   DETAILPAGINA
-========================= */
+/* DETAIL */
 
 .back{
-border:0;
-background:white;
-padding:10px 14px;
-border-radius:10px;
-font-weight:900;
-box-shadow:0 3px 11px #0001;
-margin-bottom:13px;
+ margin-bottom:13px;
+ padding:10px 14px;
+ border:0;
+ border-radius:10px;
+ background:white;
+ font-weight:900;
+ box-shadow:0 3px 11px #0001;
 }
 
 .pokemonHero{
-background:var(--pokeLight);
-border:2px solid color-mix(in srgb,var(--poke),white 65%);
-border-radius:25px;
-overflow:hidden;
-position:relative;
-box-shadow:0 8px 25px #0001;
+ position:relative;
+ overflow:hidden;
+ border:2px solid color-mix(in srgb,var(--poke),white 65%);
+ border-radius:25px;
+ background:var(--pokeLight);
+ box-shadow:0 8px 25px #0001;
 }
-
 .pokemonPattern{
-position:absolute;
-inset:0;
-overflow:hidden;
-pointer-events:none;
+ position:absolute;
+ inset:0;
+ overflow:hidden;
+ pointer-events:none;
 }
-
 .pokemonPattern img{
-position:absolute;
-width:165px;
-opacity:.055;
-filter:grayscale(1);
+ position:absolute;
+ width:165px;
+ opacity:.055;
+ filter:grayscale(1);
 }
-
-.pokemonPattern img:nth-child(1){
-left:3%;
-top:4%;
-transform:rotate(-15deg);
-}
-
-.pokemonPattern img:nth-child(2){
-right:4%;
-top:8%;
-transform:rotate(14deg);
-}
-
-.pokemonPattern img:nth-child(3){
-left:43%;
-bottom:-40px;
-transform:rotate(-7deg);
-}
+.pokemonPattern img:nth-child(1){left:3%;top:4%;transform:rotate(-15deg)}
+.pokemonPattern img:nth-child(2){right:4%;top:8%;transform:rotate(14deg)}
+.pokemonPattern img:nth-child(3){left:43%;bottom:-40px;transform:rotate(-7deg)}
+.pokemonPattern img:nth-child(4){right:28%;bottom:8%;transform:rotate(8deg)}
 
 .pokemonInner{
-position:relative;
-z-index:2;
-padding:29px;
-display:grid;
-grid-template-columns:1.2fr .8fr;
-gap:30px;
-align-items:center;
+ position:relative;
+ z-index:2;
+ padding:29px;
+ display:grid;
+ grid-template-columns:1.2fr .8fr;
+ gap:30px;
+ align-items:center;
 }
-
 .pokemonNumber{
-display:inline-block;
-background:var(--poke);
-color:white;
-padding:8px 14px;
-border-radius:10px;
-font-size:22px;
-font-weight:900;
+ display:inline-block;
+ padding:8px 14px;
+ border-radius:10px;
+ color:white;
+ background:var(--poke);
+ font-size:22px;
+ font-weight:900;
 }
-
 .pokemonHero h1{
-font-size:clamp(42px,7vw,72px);
-line-height:1;
-margin:10px 0;
+ margin:10px 0;
+ font-size:clamp(42px,7vw,72px);
+ line-height:1;
 }
-
-.types{
-display:flex;
-gap:7px;
-flex-wrap:wrap;
-}
-
+.types{display:flex;gap:7px;flex-wrap:wrap}
 .type{
-color:white;
-padding:7px 11px;
-border-radius:8px;
-font-size:12px;
-font-weight:900;
+ padding:7px 11px;
+ border-radius:8px;
+ color:white;
+ font-size:12px;
+ font-weight:900;
 }
 
 .info{
-margin-top:16px;
-max-width:700px;
-background:#ffffffda;
-border-radius:14px;
-overflow:hidden;
+ max-width:730px;
+ margin-top:16px;
+ overflow:hidden;
+ border-radius:14px;
+ background:#ffffffda;
 }
-
 .infoRow{
-display:grid;
-grid-template-columns:155px 1fr;
-border-bottom:1px solid #0000000d;
+ display:grid;
+ grid-template-columns:165px 1fr;
+ border-bottom:1px solid #0000000d;
 }
-
-.infoRow:last-child{
-border:0;
-}
-
-.infoRow strong,
-.infoRow span{
-padding:11px 12px;
-}
+.infoRow:last-child{border:0}
+.infoRow strong,.infoRow span{padding:11px 12px}
 
 .art{
-min-height:310px;
-display:flex;
-align-items:center;
-justify-content:center;
+ min-height:310px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
 }
-
-.art img{
-max-width:100%;
-max-height:320px;
-}
-
+.art img{max-width:100%;max-height:320px}
 .artFallback{
-width:190px;
-height:190px;
-border:8px solid var(--poke);
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-font-weight:900;
-color:var(--poke);
-background:#ffffff90;
+ width:190px;height:190px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
+ border:8px solid var(--poke);
+ border-radius:50%;
+ color:var(--poke);
+ background:#ffffff90;
+ font-weight:900;
 }
 
 .notice{
-margin-top:17px;
-border:2px solid var(--pink);
-background:#ffe3f0;
-border-radius:17px;
-padding:18px;
+ margin-top:17px;
+ padding:18px;
+ border:2px solid var(--pink);
+ border-radius:17px;
+ background:#ffe3f0;
 }
-
 .eventNotice{
-border-color:#c7971b;
-background:#fff3cb;
+ border-color:#c7971b;
+ background:#fff3cb;
 }
 
 .twoCol{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:16px;
-margin-top:17px;
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:16px;
+ margin-top:17px;
 }
-
 .card{
-background:white;
-border-radius:18px;
-padding:20px;
-box-shadow:0 5px 17px #35134f12;
-line-height:1.55;
+ padding:20px;
+ border-radius:18px;
+ background:white;
+ line-height:1.55;
+ box-shadow:0 5px 17px #35134f12;
 }
-
 .pokeCard{
-background:var(--pokeLight);
-border:1px solid color-mix(in srgb,var(--poke),white 67%);
+ border:1px solid color-mix(in srgb,var(--poke),white 67%);
+ background:var(--pokeLight);
+}
+.pokeCard h2{color:var(--pokeDark)}
+
+/* HABITAT DETAIL */
+
+.habitatTabs{
+ display:flex;
+ flex-wrap:wrap;
+ gap:8px;
+ margin-top:12px;
+}
+.habitatTab{
+ border:1px solid color-mix(in srgb,var(--poke),white 50%);
+ background:white;
+ color:var(--pokeDark);
+ padding:9px 12px;
+ border-radius:10px;
+ font-weight:800;
+}
+.habitatTab.active{
+ color:white;
+ background:var(--poke);
+}
+.habitatDetail{
+ margin-top:15px;
+ padding:17px;
+ border-radius:15px;
+ background:white;
+ border:1px solid color-mix(in srgb,var(--poke),white 65%);
+}
+.detailGrid{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:10px;
+ margin-top:12px;
+}
+.smallBox{
+ padding:12px;
+ border-radius:12px;
+ background:var(--pokeLight);
+}
+.materials{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:10px;
+ margin-top:12px;
+}
+.material{
+ min-height:76px;
+ padding:10px;
+ display:flex;
+ align-items:center;
+ gap:10px;
+ border-radius:12px;
+ background:#fafafa;
+ border:1px solid #eee;
+}
+.material img{
+ width:52px;height:52px;
+ object-fit:contain;
+}
+.materialIcon{
+ width:52px;height:52px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ border-radius:10px;
+ background:var(--pokeLight);
+ font-size:27px;
 }
 
-.pokeCard h2{
-color:var(--pokeDark);
-}
-
-/* =========================
-   PERSOONLIJKE TIP
-========================= */
+/* TIP */
 
 .tip{
-display:flex;
-align-items:center;
-gap:15px;
-background:#fff4c8;
-border:1px solid #e4ca67;
-border-radius:18px;
-padding:18px;
-margin-top:17px;
+ display:flex;
+ align-items:center;
+ gap:15px;
+ padding:18px;
+ margin-top:17px;
+ border:1px solid #e4ca67;
+ border-radius:18px;
+ background:#fff4c8;
 }
-
 .avatar{
-width:74px;
-height:74px;
-border-radius:50%;
-background:#ffd65c;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:47px;
-flex:0 0 74px;
+ width:74px;height:74px;
+ flex:0 0 74px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ border-radius:50%;
+ background:#ffd65c;
+ font-size:47px;
 }
 
-/* =========================
-   STAPPEN
-========================= */
+/* STAPPEN */
 
-.steps{
-margin-top:17px;
-}
-
+.steps{margin-top:17px}
 .stepGrid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:11px;
-margin-top:14px;
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:11px;
+ margin-top:14px;
 }
-
 .step{
-background:var(--pokeLight);
-border-radius:14px;
-padding:13px;
-border:1px solid color-mix(in srgb,var(--poke),white 67%);
+ padding:13px;
+ border:1px solid color-mix(in srgb,var(--poke),white 67%);
+ border-radius:14px;
+ background:var(--pokeLight);
 }
-
 .stepNo{
-width:34px;
-height:34px;
-border-radius:50%;
-background:var(--poke);
-color:white;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:900;
+ width:34px;height:34px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ border-radius:50%;
+ color:white;
+ background:var(--poke);
+ font-weight:900;
+}
+.step h3{font-size:15px}
+.step p{font-size:14px;line-height:1.5}
+
+/* FAVORIETEN */
+
+.favoriteList{
+ display:flex;
+ flex-wrap:wrap;
+ gap:8px;
+ margin-top:11px;
+}
+.favoriteChip{
+ padding:8px 10px;
+ border-radius:999px;
+ background:white;
+ border:1px solid color-mix(in srgb,var(--poke),white 60%);
+ font-size:13px;
+ font-weight:700;
 }
 
-.step h3{
-font-size:15px;
-}
-
-.step p{
-font-size:14px;
-line-height:1.5;
-}
-
-/* =========================
-   SOCIAL VIDEO'S
-========================= */
+/* VIDEO */
 
 .video{
-margin-top:17px;
-background:var(--pokeLight);
-border:1px solid color-mix(in srgb,var(--poke),white 65%);
-border-radius:18px;
-padding:20px;
+ padding:20px;
+ margin-top:17px;
+ border:1px solid color-mix(in srgb,var(--poke),white 65%);
+ border-radius:18px;
+ background:var(--pokeLight);
 }
-
 .videoButtons{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-margin-top:14px;
+ display:flex;
+ flex-wrap:wrap;
+ gap:10px;
+ margin-top:14px;
 }
-
 .videoButton{
-display:inline-flex;
-align-items:center;
-gap:6px;
-color:white;
-text-decoration:none;
-padding:11px 15px;
-border-radius:10px;
-font-weight:900;
-box-shadow:0 3px 8px #0002;
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ gap:6px;
+ padding:11px 15px;
+ border-radius:10px;
+ color:white;
+ font-weight:900;
+ box-shadow:0 3px 8px #0002;
+}
+.youtube{background:#ff0033}
+.tiktok{background:#111}
+.instagram{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)}
+.facebook{background:#1877f2}
+.twitter{background:#111}
+
+/* STATUS */
+
+.dataStatus{
+ padding:12px;
+ margin-top:12px;
+ border-radius:11px;
+ background:#f5f1f8;
+ color:#655b69;
+ font-size:13px;
+}
+.dataStatus.ok{
+ background:#eaf7ee;
+ color:#276238;
+}
+.dataStatus.warn{
+ background:#fff3d8;
+ color:#765b14;
 }
 
-.youtube{
-background:#ff0033;
-}
+/* CHECKLIST */
 
-.tiktok{
-background:#111;
-}
-
-.instagram{
-background:linear-gradient(
-135deg,
-#833ab4,
-#fd1d1d,
-#fcb045
-);
-}
-
-.facebook{
-background:#1877f2;
-}
-
-.twitter{
-background:#111;
-}
-
-/* =========================
-   CHECKLIST
-========================= */
-
-.checks{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-}
-
+.checks{display:flex;flex-wrap:wrap;gap:10px}
 .checks label{
-background:#faf9fb;
-border:1px solid #e5dce9;
-border-radius:10px;
-padding:11px 13px;
+ padding:11px 13px;
+ border:1px solid #e5dce9;
+ border-radius:10px;
+ background:#faf9fb;
 }
 
-.prevNext{
-display:flex;
-gap:10px;
-margin-top:18px;
-}
-
+.prevNext{display:flex;gap:10px;margin-top:18px}
 .prevNext button{
-flex:1;
-border:0;
-background:var(--master);
-color:white;
-padding:14px;
-border-radius:11px;
-font-weight:900;
+ flex:1;
+ padding:14px;
+ border:0;
+ border-radius:11px;
+ color:white;
+ background:var(--master);
+ font-weight:900;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
-margin-top:35px;
-background:var(--masterDark);
-color:white;
-text-align:center;
-padding:28px 17px;
-line-height:1.55;
+ margin-top:35px;
+ padding:28px 17px;
+ text-align:center;
+ color:white;
+ background:var(--masterDark);
+ line-height:1.55;
 }
+footer strong{font-size:20px;color:#ff75b9}
 
-footer strong{
-font-size:20px;
-color:#ff75b9;
-}
-
-/* =========================
-   MOBIEL
-========================= */
+/* RESPONSIVE */
 
 @media(max-width:1100px){
-
-.dexGrid{
-grid-template-columns:repeat(4,1fr);
+ .dexGrid{grid-template-columns:repeat(4,1fr)}
+ .stepGrid{grid-template-columns:repeat(2,1fr)}
+ .materials{grid-template-columns:repeat(2,1fr)}
+ .detailGrid{grid-template-columns:repeat(2,1fr)}
 }
-
-.stepGrid{
-grid-template-columns:repeat(2,1fr);
-}
-
-}
-
 @media(max-width:850px){
-
-header{
-position:static;
+ header{position:static}
+ .head{flex-direction:column;align-items:flex-start}
+ nav{width:100%;overflow-x:auto;flex-wrap:nowrap}
+ nav button{white-space:nowrap}
+ .homeCards{grid-template-columns:1fr 1fr}
+ .dexGrid{grid-template-columns:repeat(3,1fr)}
+ .pokemonInner,.twoCol{grid-template-columns:1fr}
 }
-
-.head{
-flex-direction:column;
-align-items:flex-start;
-}
-
-nav{
-width:100%;
-overflow-x:auto;
-flex-wrap:nowrap;
-}
-
-nav button{
-white-space:nowrap;
-}
-
-.homeCards{
-grid-template-columns:1fr 1fr;
-}
-
-.dexGrid{
-grid-template-columns:repeat(3,1fr);
-}
-
-.pokemonInner,
-.twoCol{
-grid-template-columns:1fr;
-}
-
-}
-
 @media(max-width:600px){
-
-.wrap{
-padding:0 9px;
-}
-
-.hero{
-padding:25px 17px;
-}
-
-.hero h1{
-font-size:50px;
-}
-
-.homeCards{
-grid-template-columns:1fr 1fr;
-gap:8px;
-}
-
-.dexGrid{
-grid-template-columns:1fr 1fr;
-gap:8px;
-}
-
-.dexCard{
-padding:10px;
-min-height:195px;
-}
-
-.pokemonInner{
-padding:17px;
-}
-
-.pokemonHero h1{
-font-size:40px;
-}
-
-.infoRow{
-grid-template-columns:115px 1fr;
-font-size:14px;
-}
-
-.stepGrid{
-grid-template-columns:1fr;
-}
-
-.heading{
-flex-direction:column;
-align-items:flex-start;
-}
-
-.tip{
-align-items:flex-start;
-}
-
-.avatar{
-width:58px;
-height:58px;
-flex-basis:58px;
-font-size:37px;
-}
-
-.videoButtons{
-display:grid;
-grid-template-columns:1fr 1fr;
-}
-
-.videoButton{
-justify-content:center;
-}
-
+ .wrap{padding:0 9px}
+ .hero{padding:25px 17px}
+ .hero h1{font-size:50px}
+ .homeCards{grid-template-columns:1fr 1fr;gap:8px}
+ .dexGrid{grid-template-columns:1fr 1fr;gap:8px}
+ .dexCard{padding:10px;min-height:195px}
+ .pokemonInner{padding:17px}
+ .pokemonHero h1{font-size:40px}
+ .infoRow{grid-template-columns:120px 1fr;font-size:14px}
+ .stepGrid,.materials,.detailGrid{grid-template-columns:1fr}
+ .heading{flex-direction:column;align-items:flex-start}
+ .tip{align-items:flex-start}
+ .avatar{width:58px;height:58px;flex-basis:58px;font-size:37px}
+ .videoButtons{display:grid;grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
 
 <body>
-
-<!-- =========================
-     ACHTERGROND
-========================= -->
 
 <div class="decor">
 
@@ -993,36 +740,29 @@ justify-content:center;
 <div class="ball mb" style="right:5%;top:76%"></div>
 <div class="ball db" style="left:31%;top:88%;width:55px;height:55px"></div>
 <div class="ball qb" style="right:24%;top:9%;width:58px;height:58px"></div>
+<div class="ball lb" style="left:22%;top:48%;width:54px;height:54px"></div>
+<div class="ball premier" style="right:40%;top:69%;width:62px;height:62px"></div>
 
-<img
-class="bgPokemon"
-style="left:1%;top:37%"
-src="https://img.pokemondb.net/sprites/home/normal/pikachu.png"
->
+<img class="bgPokemon" style="left:1%;top:37%"
+src="https://img.pokemondb.net/sprites/home/normal/pikachu.png">
 
-<img
-class="bgPokemon"
-style="right:1%;top:43%"
-src="https://img.pokemondb.net/sprites/home/normal/charizard.png"
->
+<img class="bgPokemon" style="right:1%;top:43%"
+src="https://img.pokemondb.net/sprites/home/normal/charizard.png">
 
-<img
-class="bgPokemon"
-style="left:8%;top:78%"
-src="https://img.pokemondb.net/sprites/home/normal/eevee.png"
->
+<img class="bgPokemon" style="left:8%;top:78%"
+src="https://img.pokemondb.net/sprites/home/normal/eevee.png">
 
-<img
-class="bgPokemon"
-style="right:8%;top:84%"
-src="https://img.pokemondb.net/sprites/home/normal/gengar.png"
->
+<img class="bgPokemon" style="right:8%;top:84%"
+src="https://img.pokemondb.net/sprites/home/normal/gengar.png">
+
+<img class="bgPokemon" style="right:18%;top:17%"
+src="https://img.pokemondb.net/sprites/home/normal/lucario.png">
+
+<img class="bgPokemon" style="left:18%;top:57%"
+src="https://img.pokemondb.net/sprites/home/normal/greninja.png">
 
 </div>
 
-<!-- =========================
-     HEADER
-========================= -->
 
 <header>
 
@@ -1041,29 +781,12 @@ src="https://img.pokemondb.net/sprites/home/normal/gengar.png"
 
 <nav>
 
-<button onclick="showHome()">
-🏠 Home
-</button>
-
-<button onclick="showDex('main')">
-🎮 Basisgame
-</button>
-
-<button onclick="showDex('basin')">
-🫧 DLC
-</button>
-
-<button onclick="showDex('event')">
-⭐ Event
-</button>
-
-<button onclick="showDex('all')">
-🔴 Alle Pokémon
-</button>
-
-<button onclick="showMyDex()">
-✅ Mijn Pokédex
-</button>
+<button onclick="showHome()">🏠 Home</button>
+<button onclick="showDex('main')">🎮 Basisgame</button>
+<button onclick="showDex('basin')">🫧 Bubbly Basin</button>
+<button onclick="showDex('event')">⭐ Event</button>
+<button onclick="showDex('all')">🔴 Alle Pokémon</button>
+<button onclick="showMyDex()">✅ Mijn Pokédex</button>
 
 </nav>
 
@@ -1071,18 +794,11 @@ src="https://img.pokemondb.net/sprites/home/normal/gengar.png"
 
 </header>
 
-<!-- =========================
-     WEBSITE
-========================= -->
 
 <main class="wrap">
 
-<!-- HOME -->
 
-<section
-id="homeView"
-class="view active"
->
+<section id="homeView" class="view active">
 
 <div class="hero">
 
@@ -1101,20 +817,16 @@ Vind je Pokémon. Bouw de juiste habitat.
 </h2>
 
 <p>
-Zoek een Pokémon en bekijk direct het nummer,
-type, specialiteit, habitat, benodigdheden,
-persoonlijke tip en voorbeelden op verschillende
-socialmediaplatforms.
+Zoek een Pokémon en bekijk zijn nummer, type, specialiteiten,
+habitats, exacte benodigdheden, tijdstip, weer, favoriete
+omgevingen, persoonlijke tips en voorbeelden van andere spelers.
 </p>
 
-<form
-class="search"
-onsubmit="searchHome(event)"
->
+<form class="search" onsubmit="searchHome(event)">
 
 <input
 id="homeSearch"
-placeholder="Zoek Bulbasaur, Ivysaur, #300..."
+placeholder="Zoek Bulbasaur, Ivysaur, Mew of #300..."
 autocomplete="off"
 >
 
@@ -1128,120 +840,51 @@ autocomplete="off"
 
 </div>
 
+
 <div class="homeCards">
 
-<button
-class="homeCard"
-onclick="showDex('main')"
->
-
-<span class="ico">
-🎮
-</span>
-
-<strong>
-Basisgame
-</strong>
-
-<small>
-Pokédex #001 t/m #300 + vormen
-</small>
-
+<button class="homeCard" onclick="showDex('main')">
+<span class="ico">🎮</span>
+<strong>Basisgame</strong>
+<small>308 vermeldingen · #001 t/m #300 + speciale vormen</small>
 </button>
 
-
-<button
-class="homeCard"
-onclick="showDex('basin')"
->
-
-<span class="ico">
-🫧
-</span>
-
-<strong>
-Bubbly Basin
-</strong>
-
-<small>
-DLC Pokémon apart vermeld
-</small>
-
+<button class="homeCard" onclick="showDex('basin')">
+<span class="ico">🫧</span>
+<strong>Bubbly Basin</strong>
+<small>52 DLC-vermeldingen</small>
 </button>
 
-
-<button
-class="homeCard"
-onclick="showDex('event')"
->
-
-<span class="ico">
-⭐
-</span>
-
-<strong>
-Event
-</strong>
-
-<small>
-Event Pokémon apart
-</small>
-
+<button class="homeCard" onclick="showDex('event')">
+<span class="ico">⭐</span>
+<strong>Event</strong>
+<small>5 event-vermeldingen</small>
 </button>
 
-
-<button
-class="homeCard"
-onclick="showMyDex()"
->
-
-<span class="ico">
-✅
-</span>
-
-<strong>
-Mijn Pokédex
-</strong>
-
-<small>
-Hou zelf je voortgang bij
-</small>
-
+<button class="homeCard" onclick="showMyDex()">
+<span class="ico">✅</span>
+<strong>Mijn Pokédex</strong>
+<small>Bewaar je voortgang op dit apparaat</small>
 </button>
 
 </div>
 
 </section>
 
-<!-- =========================
-     DEX
-========================= -->
 
-<section
-id="dexView"
-class="view"
->
+<section id="dexView" class="view">
 
 <div class="heading">
 
 <div>
+<h1 id="dexTitle">Basisgame</h1>
+<p>NLPokopia Pokédex</p>
+</div>
 
-<h1 id="dexTitle">
-Basisgame
-</h1>
-
-<p id="dexSubtitle">
-NLPokopia Pokédex
-</p>
+<div id="dexCounter" class="counter"></div>
 
 </div>
 
-<div
-id="dexCounter"
-class="counter"
-></div>
-
-</div>
 
 <div class="filters">
 
@@ -1256,33 +899,20 @@ id="sectionFilter"
 onchange="renderDex()"
 >
 
-<option value="main">
-Basisgame
-</option>
-
-<option value="basin">
-Bubbly Basin DLC
-</option>
-
-<option value="event">
-Event
-</option>
-
-<option value="all">
-Alles
-</option>
+<option value="main">Basisgame</option>
+<option value="basin">Bubbly Basin DLC</option>
+<option value="event">Event</option>
+<option value="all">Alles</option>
 
 </select>
+
 
 <select
 id="typeFilter"
 onchange="renderDex()"
 >
 
-<option value="all">
-Alle types
-</option>
-
+<option value="all">Alle types</option>
 <option value="normal">Normal</option>
 <option value="fire">Fire</option>
 <option value="water">Water</option>
@@ -1306,217 +936,94 @@ Alle types
 
 </div>
 
-<div
-id="dexGrid"
-class="dexGrid"
-></div>
+<div id="dexGrid" class="dexGrid"></div>
 
 </section>
 
-<!-- =========================
-     DETAIL
-========================= -->
 
-<section
-id="detailView"
-class="view"
->
+<section id="detailView" class="view">
 
-<button
-class="back"
-onclick="showDex(lastSection)"
->
-
+<button class="back" onclick="showDex(lastSection)">
 ← Terug naar Pokédex
-
 </button>
 
 <div id="detailContent"></div>
 
 </section>
 
-<!-- =========================
-     MIJN DEX
-========================= -->
 
-<section
-id="myDexView"
-class="view"
->
+<section id="myDexView" class="view">
 
 <div class="heading">
 
 <div>
+<h1>Mijn Pokédex</h1>
+<p>Pokémon die jij als compleet hebt afgevinkt.</p>
+</div>
 
-<h1>
-Mijn Pokédex
-</h1>
-
-<p>
-Pokémon die jij als compleet hebt afgevinkt.
-</p>
+<div id="myDexCounter" class="counter"></div>
 
 </div>
 
-<div
-id="myDexCounter"
-class="counter"
-></div>
-
-</div>
-
-<div
-id="myDexGrid"
-class="dexGrid"
-></div>
+<div id="myDexGrid" class="dexGrid"></div>
 
 </section>
 
 </main>
 
+
 <footer>
 
-<strong>
-NLPokopia
-</strong>
-
-<br>
+<strong>NLPokopia</strong><br>
 
 De Nederlandse Pokémon Pokopia-fangids.
 
 <br><br>
 
 <small>
-NLPokopia is een onafhankelijke fansite en is niet
-officieel verbonden aan Nintendo, The Pokémon Company
-of Game Freak.
+NLPokopia is een onafhankelijke fansite en is niet officieel
+verbonden aan Nintendo, The Pokémon Company, Game Freak of Koei Tecmo.
 </small>
 
 </footer>
 
+
 <script>
 
-/* =========================
+/* =========================================================
    TYPEKLEUREN
-========================= */
+========================================================= */
 
 const COLORS={
 
-normal:[
-"#919185",
-"#f4f4ef",
-"#5b5b51"
-],
-
-fire:[
-"#e4543d",
-"#fff0ec",
-"#a52d20"
-],
-
-water:[
-"#4597d5",
-"#eaf5fc",
-"#226b9f"
-],
-
-electric:[
-"#e4b92d",
-"#fff9df",
-"#9b7610"
-],
-
-grass:[
-"#4f9848",
-"#edf7e9",
-"#2f672c"
-],
-
-ice:[
-"#62b8c4",
-"#eaf8fa",
-"#347c87"
-],
-
-fighting:[
-"#b44339",
-"#f9eae8",
-"#762a23"
-],
-
-poison:[
-"#9855aa",
-"#f5ebf8",
-"#683574"
-],
-
-ground:[
-"#b8874d",
-"#f8efe3",
-"#76542d"
-],
-
-flying:[
-"#7698c5",
-"#edf3fa",
-"#485f84"
-],
-
-psychic:[
-"#d65a8e",
-"#fcecf3",
-"#96325e"
-],
-
-bug:[
-"#91a738",
-"#f3f7e5",
-"#5e701f"
-],
-
-rock:[
-"#9b844c",
-"#f4efe2",
-"#62532e"
-],
-
-ghost:[
-"#675087",
-"#f0ecf6",
-"#443259"
-],
-
-dragon:[
-"#5b59b0",
-"#ececfa",
-"#373574"
-],
-
-dark:[
-"#504854",
-"#efedf0",
-"#302a33"
-],
-
-steel:[
-"#778a94",
-"#eff3f5",
-"#4c5b62"
-],
-
-fairy:[
-"#d77dad",
-"#faedf4",
-"#934f72"
-]
+normal:["#919185","#f4f4ef","#5b5b51"],
+fire:["#e4543d","#fff0ec","#a52d20"],
+water:["#4597d5","#eaf5fc","#226b9f"],
+electric:["#e4b92d","#fff9df","#9b7610"],
+grass:["#4f9848","#edf7e9","#2f672c"],
+ice:["#62b8c4","#eaf8fa","#347c87"],
+fighting:["#b44339","#f9eae8","#762a23"],
+poison:["#9855aa","#f5ebf8","#683574"],
+ground:["#b8874d","#f8efe3","#76542d"],
+flying:["#7698c5","#edf3fa","#485f84"],
+psychic:["#d65a8e","#fcecf3","#96325e"],
+bug:["#91a738","#f3f7e5","#5e701f"],
+rock:["#9b844c","#f4efe2","#62532e"],
+ghost:["#675087","#f0ecf6","#443259"],
+dragon:["#5b59b0","#ececfa","#373574"],
+dark:["#504854","#efedf0","#302a33"],
+steel:["#778a94","#eff3f5","#4c5b62"],
+fairy:["#d77dad","#faedf4","#934f72"]
 
 };
 
 
-/*
-nummer | naam | types | specialiteit | habitats
-*/
+/* =========================================================
+   BASISGAME
+   nummer | naam | type(s) | specialiteit(en) | habitat(s)
 
+   #001 t/m #300 + de 8 extra vorm/verhaal-vermeldingen
+========================================================= */
 
 const MAIN_RAW=`
 001|Bulbasaur|Grass,Poison|Grow|Tall Grass;Bench with Greenery
@@ -1579,7 +1086,9 @@ const MAIN_RAW=`
 057|Combee|Bug,Flying|Litter|Pretty Flower Bed
 058|Vespiquen|Bug,Flying|Gather Honey,Search|Field of Flowers
 059|Shellos|Water|Water|Road Sign
+059|Shellos East Sea|Water|Water|Road Sign
 060|Gastrodon|Water,Ground|Water,Trade|Ocean fishing spot
+060|Gastrodon East Sea|Ground|Water,Trade|Ocean fishing spot
 061|Drifloon|Ghost,Flying|Dream Island|Riding Warm Updrafts;Bed with a Plush;Plush central
 062|Drifblim|Ghost,Flying|Fly,Gather|Plush central
 063|Drilbur|Ground|Search|Fresh Veggie Field
@@ -1598,6 +1107,7 @@ const MAIN_RAW=`
 076|Goodra|Dragon|Water,Trade|Very-berry space
 077|Cramorant|Flying,Water|Fly,Water|Hydrated Tall Grass
 078|Pichu|Electric|Generate|Picnic Set
+079|Peakychu|Electric|Illuminate|Full Recovery
 079|Pikachu|Electric|Generate|Picnic Set
 080|Raichu|Electric|Generate,Hype|Nature's Market
 081|Zubat|Poison,Flying|Search|Tree-Shaded Yellow Tall Grass;Park Bench
@@ -1627,6 +1137,7 @@ const MAIN_RAW=`
 105|Electivire|Electric|Generate,Crush|Light-up Stage;Vending Machine Set
 106|Lapras|Water,Ice|Water|Tropical Seaside
 107|Munchlax|Normal|Bulldoze|Bed with a Plush;Tree-shaded Snoozing Snorlax
+108|Mosslax|Normal|Eat|Gourmet's Altar
 108|Snorlax|Normal|Trade,Bulldoze|Tree-shaded Snoozing Snorlax;Good Old-fashioned Antiques
 109|Spinarak|Bug,Poison|Litter|Yellow Tall Grass
 110|Ariados|Bug,Poison|Litter|Yellow Tall Grass
@@ -1637,47 +1148,49 @@ const MAIN_RAW=`
 115|Marill|Water,Fairy|Water,Hype|Hydrated Yellow Tall Grass;Dock
 116|Azumarill|Water,Fairy|Water,Build|Dock
 117|Paldean Wooper|Poison,Ground|Litter|Marshy Tall Grass
-118|Clodsire|Poison,Ground|Litter,Bulldoze|Marshy Tall Grass
+118|Clodsire|Poison,Ground|Litter,Bulldoze|Marshy Tall Grass;Marsh fishing spot
 119|Smeargle|Normal|Paint|Tiny Atelier
-120|Torchic|Fire|Burn|Chirp-Chirp Meal
-121|Combusken|Fire,Fighting|Burn,Build|Resort Meal Prep
-122|Blaziken|Fire,Fighting|Burn,Build|Furnace Spot
-123|Wingull|Water,Flying|Water,Fly|Elevated Yellow Tall Grass
-124|Pelipper|Water,Flying|Water,Fly|Windy Flower Bed
-125|Makuhita|Fighting|Build,Bulldoze|Tree-Shaded Yellow Tall Grass
-126|Hariyama|Fighting|Build,Bulldoze|All Packed Up
+120|Torchic|Fire|Burn|Chirp-Chirp Meal;Resort Meal Prep
+121|Combusken|Fire,Fighting|Burn,Build|Resort Meal Prep;Furnace Spot
+122|Blaziken|Fire,Fighting|Burn,Build|Chirp-Chirp Meal;Furnace Spot
+123|Wingull|Water,Flying|Water,Fly|Elevated Yellow Tall Grass;Windy Flower Bed
+124|Pelipper|Water,Flying|Water,Fly|Elevated Yellow Tall Grass;Windy Flower Bed
+125|Makuhita|Fighting|Build,Bulldoze|Tree-Shaded Yellow Tall Grass;All Packed Up
+126|Hariyama|Fighting|Build,Bulldoze|Tree-Shaded Yellow Tall Grass;All Packed Up
 127|Absol|Dark|Chop|Welcoming Resort
 128|Piplup|Water|Water|Hydrated Yellow Tall Grass
-129|Prinplup|Water|Water,Trade|Waterwheel Spot
-130|Empoleon|Water,Steel|Water,Trade|Waterwheel Spot
+129|Prinplup|Water|Water,Trade|Hydrated Yellow Tall Grass;Waterwheel Spot
+130|Empoleon|Water,Steel|Water,Trade|Tableside Delivery Cart;Waterwheel Spot
 131|Audino|Normal|Trade|Working the Register
 132|Trubbish|Poison|Recycle|Trash Collection Site
 133|Garbodor|Poison|Recycle,Litter|Trash Collection Site
 134|Zorua|Dark|Trade|Breezy Flower Bed
-135|Zoroark|Dark|Trade,Chop|Surprise in Store
-136|Minccino|Normal|Gather|Changing Area
+135|Zoroark|Dark|Trade,Chop|Breezy Flower Bed;Surprise in Store
+136|Minccino|Normal|Gather|Changing Area;Private Makeup Stand
 137|Cinccino|Normal|Gather,Recycle|Private Makeup Stand
-138|Grubbin|Bug|Chop|Yellow Tall Grass
+138|Grubbin|Bug|Chop|Yellow Tall Grass;Vending Machine Break Area
 139|Charjabug|Bug,Electric|Generate,Chop|Vending Machine Break Area
 140|Vikavolt|Bug,Electric|Generate,Chop|Tree-Shaded Flower Bed
 141|Mimikyu|Ghost,Fairy|Trade|Pikachu Space
-142|Pawmi|Electric|Generate|Breezy Flower Bed
-143|Pawmo|Electric,Fighting|Generate,Crush|Café Space
+142|Pawmi|Electric|Generate|Breezy Flower Bed;Tantalizing Restaurant
+143|Pawmo|Electric,Fighting|Generate,Crush|Tantalizing Restaurant;Café Space
 144|Pawmot|Electric,Fighting|Generate,Crush|Café Space
 145|Tatsugiri Curly Form|Water|Trade|Beach Set
+145|Tatsugiri Droopy Form|Water|Trade|Beach Set
+145|Tatsugiri Stretchy Form|Water|Trade|Beach Set
 146|Ekans|Poison|Search|Hydrated Graceful Flower Bed
 147|Arbok|Poison|Search|Hydrated Graceful Flower Bed
 148|Cleffa|Fairy|Hype|Graceful Flower Bed
-149|Clefairy|Fairy|Hype|Bronze Landmark
-150|Clefable|Fairy|Hype,Trade|Bronze Landmark
+149|Clefairy|Fairy|Hype|Graceful Flower Bed;Bronze Landmark
+150|Clefable|Fairy|Hype,Trade|Graceful Flower Bed;Bronze Landmark
 151|Igglybuff|Normal,Fairy|Hype|Flower Garden Stump Stage
-152|Jigglypuff|Normal,Fairy|Hype|Recital Stage
+152|Jigglypuff|Normal,Fairy|Hype|Flower Garden Stump Stage;Recital Stage
 153|Wigglytuff|Normal,Fairy|Hype,Trade|Recital Stage
-154|Diglett|Ground|Hype|Tree-Shaded Red Tall Grass
-155|Dugtrio|Ground|Hype,Crush|House Party
+154|Diglett|Ground|Hype|Tree-Shaded Red Tall Grass;Container Snacking
+155|Dugtrio|Ground|Hype,Crush|Tree-Shaded Red Tall Grass;House Party
 156|Machop|Fighting|Build,Gather|Boulder-Shaded Tall Grass
-157|Machoke|Fighting|Build,Gather|Grassy Training Field
-158|Machamp|Fighting|Build,Gather|Clink-Clang Iron Construction
+157|Machoke|Fighting|Build,Gather|Grassy Training Field;Box to the Rhythm
+158|Machamp|Fighting|Build,Gather|Grassy Training Field;Clink-Clang Iron Construction
 159|Geodude|Rock,Ground|Crush|Tall Grass
 160|Graveler|Rock,Ground|Crush|Mossy Boulder
 161|Golem|Rock,Ground|Crush,Trade|Mossy Boulder
@@ -1685,1765 +1198,20 @@ const MAIN_RAW=`
 163|Magmar|Fire|Burn|Digging and Burning
 164|Magmortar|Fire|Burn,Crush|Mini Kitchen
 165|Bonsly|Rock|Bulldoze|Tree-Shaded Red Tall Grass
-166|Sudowoodo|Rock|Trade|House Party
-167|Murkrow|Dark,Flying|Trade,Fly|Elevated Red Tall Grass
+166|Sudowoodo|Rock|Trade|Tree-Shaded Red Tall Grass;House Party
+167|Murkrow|Dark,Flying|Trade,Fly|Elevated Red Tall Grass;Tree-shaded Graceful Flower Bed
 168|Honchkrow|Dark,Flying|Trade,Fly|Chirping Recital
 169|Larvitar|Rock,Ground|Crush,Bulldoze|Mossy Rest Spot
 170|Pupitar|Rock,Ground|Crush,Bulldoze|Tree-shaded Pink Tall Grass
-171|Tyranitar|Rock,Dark|Crush,Bulldoze|Toil in the Soil
-172|Lotad|Water,Grass|Water|Hydrated Red Tall Grass
-173|Lombre|Water,Grass|Water|Hot-spring Fishing Spot
+171|Tyranitar|Rock,Dark|Crush,Bulldoze|Toil in the Soil;Mossy Rest Spot
+172|Lotad|Water,Grass|Water|Hydrated Red Tall Grass;Uplifting Duckweed;Hot-spring Fishing Spot
+173|Lombre|Water,Grass|Water|Hydrated Red Tall Grass;Hot-spring Fishing Spot
 174|Ludicolo|Water,Grass|Water,Hype|Uplifting Duckweed
 175|Mawile|Steel,Fairy|Trade,Build|Working the Register
 176|Torkoal|Fire|Burn|Mossy Hot Spring
-177|Kricketot|Bug|Hype|Red Tall Grass
+177|Kricketot|Bug|Hype|Red Tall Grass;Music and Magazines
 178|Kricketune|Bug|Hype|Music and Magazines
-179|Chatot|Normal,Flying|Hype,Fly|Chirping Recital
-180|Riolu|Fighting|Build|Red Tall Grass
+179|Chatot|Normal,Flying|Hype,Fly|Elevated Red Tall Grass;Chirping Recital
+180|Riolu|Fighting|Build|Red Tall Grass;Box to the Rhythm
 181|Lucario|Fighting,Steel|Build|Box to the Rhythm
-182|Rotom|Electric,Ghost|Generate|Music and Magazines
-183|Larvesta|Bug,Fire|Burn,Litter|Tree-shaded Graceful Flower Bed
-184|Volcarona|Bug,Fire|Burn,Litter|Piping-hot Lava
-185|Rowlet|Grass,Flying|Grow|Fresh Veggie Field
-186|Dartrix|Grass,Flying|Grow,Chop|Pointy Tree-Shaded Rocky Tall Grass
-187|Decidueye|Grass,Ghost|Grow,Chop|Modern Living
-188|Scorbunny|Fire|Burn|Red Tall Grass
-189|Raboot|Fire|Burn|Open-air bath
-190|Cinderace|Fire|Burn,Hype|Refreshing Locker Room
-191|Skwovet|Normal|Search,Hype|Tree-Shaded Tall Grass
-192|Greedent|Normal|Party|Chef's Kitchen
-193|Rolycoly|Rock|Burn,Gather|Railroad Crossing
-194|Carkol|Rock,Fire|Burn,Gather|Railroad Crossing
-195|Coalossal|Rock,Fire|Burn,Gather|Heavy Iron
-196|Toxel|Electric,Poison|Generate|Lazy-photo album scrolling
-197|Toxtricity|Electric,Poison|Generate,Hype|Amped Rock Stage
-198|Fidough|Fairy|Search|Best Bread Bakery
-199|Dachsbun|Fairy|Search,Trade|Best Bread Bakery
-200|Charcadet|Fire|Burn|Piping-hot Lava
-201|Armarouge|Fire,Psychic|Burn,Trade|Auspicious Knight's Shrine
-202|Ceruledge|Fire,Ghost|Burn,Trade|Malicious Knight's Shrine
-203|Glimmet|Rock,Poison|Litter|Creepy White Rocks
-204|Glimmora|Rock,Poison|Litter|Container Snacking
-205|Gimmighoul|Ghost|Collect|Mini Museum
-206|Gholdengo|Steel,Ghost|Collect|Absolute Luxury
-207|Vulpix|Fire|Burn|Fluffy Flower Bed
-208|Ninetales|Fire|Burn|Nine flames
-209|Poliwag|Water|Water|Squeaky Clean
-210|Poliwhirl|Water|Water|Hydrated Fluffy Flower Bed
-211|Poliwrath|Water,Fighting|Water,Build|Dojo Training
-212|Politoed|Water|Water,Hype|Harmonious Hot Spring
-213|Abra|Psychic|Teleport|Surging Psychic Power
-214|Kadabra|Psychic|Teleport|Fortune-teller's Table
-215|Alakazam|Psychic|Teleport,Trade|Experiment Space
-216|Mime Jr.|Psychic,Fairy|Gather|Spotless Washing Station
-217|Mr. Mime|Psychic,Fairy|Gather,Build|Spotless Washing Station
-218|Porygon|Normal|Recycle|Researcher's Desk
-219|Porygon2|Normal|Recycle|Work Desk
-220|Porygon-Z|Normal|Rarify|Game Corner Battle Zone
-221|Dratini|Dragon|Water|Hydrated Fluffy Flower Bed
-222|Dragonair|Dragon|Water|Simple Bathroom
-223|Dragonite|Dragon,Flying|Water,Fly|Waterside Dinghy
-224|Cyndaquil|Fire|Burn|Concrete Pipe Secret Base
-225|Quilava|Fire|Burn|Fireplace Nap Spot
-226|Typhlosion|Fire|Burn,Trade|Top Pop
-227|Misdreavus|Ghost|Trade|Fluffy Flower Bed
-228|Mismagius|Ghost|Gather,Trade|Home Theater
-229|Girafarig|Normal,Psychic|Gather|Tree-shaded Fluffy Flower Bed
-230|Farigiraf|Normal,Psychic|Gather,Search|Tree-shaded Fluffy Flower Bed
-231|Ralts|Psychic,Fairy|Teleport|Study Area
-232|Kirlia|Psychic,Fairy|Teleport|Moisturizing Makeup Stand
-233|Gardevoir|Psychic,Fairy|Teleport,Trade|Mini Library
-234|Gallade|Psychic,Fighting|Teleport,Build|Dojo Training
-235|Plusle|Electric|Generate|Picturesque Photo Cutout Board
-236|Minun|Electric|Generate|Picturesque Photo Cutout Board
-237|Trapinch|Ground|Bulldoze,Litter|Pink Tall Grass
-238|Vibrava|Ground,Dragon|Bulldoze,Fly|Pink Tall Grass
-239|Flygon|Ground,Dragon|Bulldoze,Fly|Pink Tall Grass
-240|Swablu|Normal,Flying|Litter|Pink Tall Grass
-241|Altaria|Dragon,Flying|Litter,Fly|Birdsong Garden
-242|Duskull|Ghost|Gather|Pink Tall Grass
-243|Dusclops|Ghost|Gather|Trash Site TV
-244|Dusknoir|Ghost|Gather,Trade|Trash Site TV
-245|Beldum|Steel,Psychic|Recycle|Cycling Rest Stop
-246|Metang|Steel,Psychic|Recycle|Professor's Apprentice Program
-247|Metagross|Steel,Psychic|Recycle,Crush|Gamer's Paradise
-248|Snivy|Grass|Grow,Litter|Playland
-249|Servine|Grass|Grow,Litter|Tree-shaded Fluffy Flower Bed
-250|Serperior|Grass|Grow,Litter|Public Reading Material
-251|Froakie|Water|Water|Hydrated Pink Tall Grass
-252|Frogadier|Water|Water|Prank Button
-253|Greninja|Water,Dark|Water,Chop|Prank Button
-254|Dedenne|Electric,Fairy|Search|Tire Park
-255|Noibat|Flying,Dragon|Search|Rhythmic Living Room
-256|Noivern|Flying,Dragon|Search,Fly|Rhythmic Living Room
-257|Rookidee|Flying|Chop|Fluffy Flower Bed
-258|Corvisquire|Flying|Chop|Elevated Pink Tall Grass
-259|Corviknight|Flying,Steel|Chop,Fly|Sewer hole inspection
-260|Dreepy|Dragon,Ghost|Gather,Search|Tree-shaded Pink Tall Grass
-261|Drakloak|Dragon,Ghost|Gather,Search|Office Storeroom
-262|Dragapult|Dragon,Ghost|Gather,Trade|Office Storeroom
-263|Sprigatito|Grass|Grow|Tree-shaded Pink Tall Grass
-264|Floragato|Grass|Grow|Interrogation Desk
-265|Meowscarada|Grass,Dark|Grow,Hype|Heart-pounding Surprise Box
-266|Wattrel|Electric,Flying|Generate|Elevated Pink Tall Grass
-267|Kilowattrel|Electric,Flying|Generate,Fly|Elevated Pink Tall Grass
-268|Tinkatink|Fairy,Steel|Build|Large Luggage Carrier
-269|Tinkatuff|Fairy,Steel|Build|Large Luggage Carrier
-270|Tinkaton|Fairy,Steel|Engineer|Oversized Dumping Ground
-271|Aerodactyl|Rock,Flying|Fly|Wing Fossil Display
-272|Cranidos|Rock|Crush|Skull Fossil Display
-273|Rampardos|Rock|Crush,Litter|Headbutt Fossil Display
-274|Shieldon|Rock,Steel|Crush|Armor Fossil Display
-275|Bastiodon|Rock,Steel|Crush,Litter|Shield Fossil Display
-276|Tyrunt|Rock,Dragon|Crush|Jaw Fossil Display
-277|Tyrantrum|Rock,Dragon|Crush,Litter|Despot Fossil Display
-278|Amaura|Rock,Ice|Crush|Sail Fossil Display
-279|Aurorus|Rock,Ice|Crush,Litter|Tundra Fossil Display
-280|Eevee|Normal|Trade|Pretty Flower Bed
-281|Vaporeon|Water|Water|Boundless blue beverage
-282|Jolteon|Electric|Generate|Electrifying potatoes
-283|Flareon|Fire|Burn|Burning-hot spice
-284|Espeon|Psychic|Gather|Elegant daytime treats
-285|Umbreon|Dark|Search|Dark-chocolate cookies
-286|Leafeon|Grass|Grow|Leafy greens sandwich
-287|Glaceon|Ice|Trade|Chilly shaved ice
-288|Sylveon|Fairy|Hype|Lovely ribbon cake
-289|Kyogre|Water|Special|Speciale ontmoeting
-290|Raikou|Electric|Generate|Speciale ontmoeting
-291|Entei|Fire|Burn|Speciale ontmoeting
-292|Suicune|Water|Water|Speciale ontmoeting
-293|Volcanion|Fire,Water|Burn|Speciale ontmoeting
-294|Articuno|Ice,Flying|Fly|Speciale ontmoeting
-295|Zapdos|Electric,Flying|Fly|Speciale ontmoeting
-296|Moltres|Fire,Flying|Fly|Speciale ontmoeting
-297|Lugia|Psychic,Flying|Special|Speciale ontmoeting
-298|Ho-Oh|Fire,Flying|Special|Speciale ontmoeting
-299|Mewtwo|Psychic|Teleport|Speciale ontmoeting
-300|Mew|Psychic|Teleport|Speciale ontmoeting
-`;
-
-
-const BASIN_RAW=`
-001|Shellder|Water|Scrub,Litter|Basin tall grass and coral;Sandy digging spot
-002|Cloyster|Water,Ice|Scrub,Litter|Swaying flower bed and seaweed
-003|Horsea|Water|Water|Coral congregation
-004|Seadra|Water|Water,Litter|Coral congregation
-005|Kingdra|Water,Dragon|Water,Litter|Coral congregation;Marine makeup stand
-006|Staryu|Water|Teleport|Swaying flower bed
-007|Starmie|Water,Psychic|Teleport,Gather|Mermaid's Gym
-008|Totodile|Water|Chop|Basin tall grass;Canoe dock;Bubbly bathtub
-009|Croconaw|Water|Chop,Crush|Chimney rocks dig site;Canoe dock
-010|Feraligatr|Water|Chop,Crush|Basin tall grass and coral;Biteable punching bag
-011|Chinchou|Water,Electric|Generate|Fluffy relaxation
-012|Lanturn|Water,Electric|Generate,Water|Nostalgia zone
-013|Corsola|Water,Rock|Grow|Basin tall grass and coral;Coral congregation
-014|Mudkip|Water|Water|Basin tall grass;Fluffy relaxation
-015|Marshtomp|Water,Ground|Water,Build|Creepy chimney rocks;Muddy playtime
-016|Swampert|Water,Ground|Build,Bulldoze|Basin tall grass and coral;Muddy spa
-017|Carvanha|Water,Dark|Chop|Seaweed and netting
-018|Sharpedo|Water,Dark|Chop,Scrub|Chimney rocks dig site
-019|Barboach|Water,Ground|Search|Sandy speech;Ocean rest spot;Muddy playtime
-020|Whiscash|Water,Ground|Search,Bulldoze|Gorgeous Sleeping Area
-021|Corphish|Water|Build|Sandy basin tall grass;Sandy digging spot
-022|Crawdaunt|Water,Dark|Build,Crush|Sandy digging spot
-023|Luvdisc|Water|Hype|Swaying flower bed and coral;Treasure chest and sparkling jewels
-024|Buizel|Water|Chop,Trade|Basin tall grass;Smoothie-making spot
-025|Floatzel|Water|Trade,Build|Marine shop
-026|Finneon|Water|Hype|Swaying flower bed;Marine mossy rest spot
-027|Lumineon|Water|Hype,Water|Swaying flower bed and seaweed
-028|Frillish|Water,Ghost|Search,Burn|Playing sailor;Ocean treasures
-029|Jellicent|Water,Ghost|Search,Burn|Marine teatime
-030|Alomomola|Water|Water,Scrub|Ocean treasures
-031|Stunfisk|Ground,Electric|Generate,Bulldoze|Swaying flower bed
-032|Inkay|Dark,Psychic|Gather,Teleport|Muddy playtime
-033|Malamar|Dark,Psychic|Gather,Teleport|Topsy-turvy
-034|Popplio|Water|Hype,Water|Swaying flower bed
-035|Brionne|Water|Hype,Trade|Speciale ontmoeting
-036|Primarina|Water,Fairy|Hype,Scrub|Elegant concert
-037|Mareanie|Poison,Water|Recycle|Swaying flower bed and coral
-038|Toxapex|Poison,Water|Recycle,Build|Treasure chest and sparkling jewels
-039|Wimpod|Bug,Water|Recycle|Discarded treasure
-040|Golisopod|Bug,Water|Recycle,Chop|Discarded treasure
-041|Bruxish|Water,Psychic|Gather,Teleport|Molten mossy rest spot
-042|Dhelmise|Ghost,Grass|Grow,Litter|Playing sailor
-043|Chewtle|Water|Chop|Smoothie-making spot
-044|Drednaw|Water,Rock|Chop,Bulldoze|Canoe dock
-045|Pincurchin|Electric|Generate|Creepy chimney rocks
-046|Wiglett|Water|Bulldoze|Sandy speech
-047|Wugtrio|Water|Bulldoze,Search|Glowing stage for three
-048|Veluza|Water,Psychic|Gather,Teleport|Marine mossy rest spot
-049|Phione|Water|Trade|Speciale ontmoeting
-050|Manaphy|Water|Trade,Hype|Speciale ontmoeting
-`;
-
-
-const EVENT_RAW=`
-001|Hoppip|Grass,Flying|Grow|Yellow carpet
-002|Skiploom|Grass,Flying|Grow|Yellow carpet;Field-trip friends
-003|Jumpluff|Grass,Flying|Grow,Litter|Yellow carpet;Dandelion lunchtime
-004|Sableye|Dark,Ghost|Search|Treasure-hunting set
-005|Jirachi|Steel,Psychic|Litter|Surrounded by stars
-`;
-
-
-/* =========================
-   DATA PARSER
-========================= */
-
-function parse(raw,section){
-
-return raw
-.trim()
-.split("\n")
-.map((line,index)=>{
-
-const p=line.split("|");
-
-return{
-
-id:section+"-"+index,
-
-number:Number(p[0]),
-
-name:p[1],
-
-types:p[2]
-.split(",")
-.map(x=>x.trim().toLowerCase()),
-
-specialties:p[3]
-.split(",")
-.map(x=>x.trim()),
-
-habitats:p[4]
-.split(";")
-.map(x=>x.trim()),
-
-section
-
-};
-
-});
-
-}
-
-
-const pokemon=[
-...parse(MAIN_RAW,"main"),
-...parse(BASIN_RAW,"basin"),
-...parse(EVENT_RAW,"event")
-];
-
-
-let currentIndex=0;
-let lastSection="main";
-
-
-/* =========================
-   HELPERS
-========================= */
-
-function color(type){
-
-return COLORS[type] || COLORS.normal;
-
-}
-
-
-function sectionName(section){
-
-if(section==="main"){
-return"Basisgame";
-}
-
-if(section==="basin"){
-return"Bubbly Basin DLC";
-}
-
-return"Event";
-
-}
-
-
-function numberLabel(p){
-
-if(p.section==="main"){
-return"#"+String(p.number).padStart(3,"0");
-}
-
-if(p.section==="basin"){
-return"DLC #"+String(p.number).padStart(3,"0");
-}
-
-return"EVENT #"+String(p.number).padStart(3,"0");
-
-}
-
-
-function slug(name){
-
-return name
-.toLowerCase()
-.replace(" male form","")
-.replace(" female form","")
-.replace(" curly form","")
-.replace(" droopy form","")
-.replace(" stretchy form","")
-.replace(" amped form","")
-.replace(" low key form","")
-.replace("paldean ","")
-.replace("mr. mime","mr-mime")
-.replace("mime jr.","mime-jr")
-.replace("farfetch'd","farfetchd")
-.replace(/[^a-z0-9]+/g,"-")
-.replace(/^-|-$/g,"");
-
-}
-
-
-function imageURL(name){
-
-return(
-"https://img.pokemondb.net/sprites/home/normal/"
-+
-slug(name)
-+
-".png"
-);
-
-}
-
-
-/* =========================
-   PAGINA'S
-========================= */
-
-function hideViews(){
-
-document
-.querySelectorAll(".view")
-.forEach(v=>
-v.classList.remove("active")
-);
-
-}
-
-
-function showHome(){
-
-hideViews();
-
-document
-.getElementById("homeView")
-.classList
-.add("active");
-
-window.scrollTo(0,0);
-
-}
-
-
-function showDex(section="main"){
-
-lastSection=section;
-
-hideViews();
-
-document
-.getElementById("dexView")
-.classList
-.add("active");
-
-document
-.getElementById("sectionFilter")
-.value=section;
-
-renderDex();
-
-window.scrollTo(0,0);
-
-}
-
-
-/* =========================
-   HOME ZOEKEN
-========================= */
-
-function searchHome(e){
-
-e.preventDefault();
-
-const q=
-document
-.getElementById("homeSearch")
-.value
-.trim()
-.toLowerCase();
-
-if(!q){
-return;
-}
-
-
-const cleaned=
-q
-.replace("#","")
-.replace("dlc","")
-.replace("event","")
-.trim();
-
-
-if(/^\d+$/.test(cleaned)){
-
-const no=Number(cleaned);
-
-const matches=
-pokemon.filter(
-p=>
-p.section==="main"
-&&
-p.number===no
-);
-
-if(matches.length){
-
-openPokemon(
-pokemon.indexOf(matches[0])
-);
-
-return;
-
-}
-
-}
-
-
-const nameMatches=
-pokemon.filter(
-p=>
-p.name.toLowerCase()===q
-);
-
-
-if(nameMatches.length===1){
-
-openPokemon(
-pokemon.indexOf(nameMatches[0])
-);
-
-return;
-
-}
-
-
-showDex("all");
-
-document
-.getElementById("dexSearch")
-.value=q;
-
-renderDex();
-
-}
-
-
-/* =========================
-   POKEDEX RENDEREN
-========================= */
-
-function renderDex(){
-
-const q=
-document
-.getElementById("dexSearch")
-.value
-.trim()
-.toLowerCase();
-
-
-const section=
-document
-.getElementById("sectionFilter")
-.value;
-
-
-const type=
-document
-.getElementById("typeFilter")
-.value;
-
-
-const results=
-pokemon.filter(p=>{
-
-
-const qClean=
-q
-.replace("#","")
-.replace("dlc","")
-.replace("event","")
-.trim();
-
-
-const searchOK=
-
-!q
-
-||
-
-p.name
-.toLowerCase()
-.includes(q)
-
-||
-
-String(p.number)
-.padStart(3,"0")
-.includes(qClean);
-
-
-const sectionOK=
-
-section==="all"
-
-||
-
-p.section===section;
-
-
-const typeOK=
-
-type==="all"
-
-||
-
-p.types.includes(type);
-
-
-return(
-searchOK
-&&
-sectionOK
-&&
-typeOK
-);
-
-});
-
-
-document
-.getElementById("dexTitle")
-.textContent=
-
-section==="all"
-?
-"Alle Pokémon"
-:
-sectionName(section);
-
-
-document
-.getElementById("dexCounter")
-.textContent=
-
-results.length
-+
-" vermeldingen";
-
-
-document
-.getElementById("dexGrid")
-.innerHTML=
-
-results
-.map(p=>{
-
-
-const idx=
-pokemon.indexOf(p);
-
-
-const c=
-color(
-p.types[0]
-);
-
-
-const sameNumber=
-pokemon.filter(
-x=>
-x.section===p.section
-&&
-x.number===p.number
-).length>1;
-
-
-return`
-
-<article
-class="dexCard"
-
-onclick="openPokemon(${idx})"
-
-style="
---poke:${c[0]};
---pokeLight:${c[1]};
---pokeDark:${c[2]}
-"
->
-
-
-${
-p.section==="basin"
-?
-'<span class="label labelDlc">DLC</span>'
-:
-""
-}
-
-
-${
-p.section==="event"
-?
-'<span class="label labelEvent">EVENT</span>'
-:
-""
-}
-
-
-${
-sameNumber
-?
-'<span class="label labelVariant">VORM</span>'
-:
-""
-}
-
-
-<span class="dexNo">
-
-${numberLabel(p)}
-
-</span>
-
-
-<div class="dexPic">
-
-<img
-src="${imageURL(p.name)}"
-alt="${p.name}"
-loading="lazy"
-
-onerror="
-this.style.display='none';
-this.nextElementSibling.style.display='flex'
-"
->
-
-
-<div
-class="fallback"
-style="display:none"
->
-
-${String(p.number).padStart(3,"0")}
-
-</div>
-
-</div>
-
-
-<h3>
-${p.name}
-</h3>
-
-
-<div class="dexSource">
-
-${p.types
-.map(x=>x.toUpperCase())
-.join(" / ")}
-
-<br>
-
-${sectionName(p.section)}
-
-</div>
-
-
-</article>
-
-`;
-
-})
-.join("");
-
-}
-
-
-/* =========================
-   POKEMON DETAIL
-========================= */
-
-function openPokemon(index){
-
-const p=
-pokemon[index];
-
-if(!p){
-return;
-}
-
-
-currentIndex=index;
-
-
-hideViews();
-
-
-document
-.getElementById("detailView")
-.classList
-.add("active");
-
-
-const c=
-color(
-p.types[0]
-);
-
-
-document
-.documentElement
-.style
-.setProperty(
-"--poke",
-c[0]
-);
-
-
-document
-.documentElement
-.style
-.setProperty(
-"--pokeLight",
-c[1]
-);
-
-
-document
-.documentElement
-.style
-.setProperty(
-"--pokeDark",
-c[2]
-);
-
-
-const types=
-p.types
-.map(t=>{
-
-
-const tc=
-color(t);
-
-
-return`
-
-<span
-class="type"
-style="
-background:${tc[0]}
-"
->
-
-${t.toUpperCase()}
-
-</span>
-
-`;
-
-})
-.join("");
-
-
-const habitats=
-p.habitats.join(", ");
-
-
-const specialty=
-p.specialties.join(" + ");
-
-
-const requirements=
-
-p.habitats[0]
-.toLowerCase()
-.includes("speciale ontmoeting")
-
-?
-
-"Deze Pokémon gebruikt geen gewone habitat. Volg de speciale ontmoeting of voortgang in het spel."
-
-:
-
-`Maak minimaal één geschikte habitat: ${habitats}.`;
-
-
-/* DLC / EVENT WAARSCHUWING */
-
-let notice="";
-
-
-if(p.section==="basin"){
-
-notice=`
-
-<div class="notice">
-
-<h2>
-🫧 Bubbly Basin DLC vereist
-</h2>
-
-<p>
-
-Deze Pokémon hoort bij de
-<strong>Bubbly Basin-DLC</strong>.
-
-Heb je alleen de basisgame,
-dan kun je deze Pokémon niet via
-deze DLC-content verkrijgen.
-
-</p>
-
-</div>
-
-`;
-
-}
-
-
-if(p.section==="event"){
-
-notice=`
-
-<div class="notice eventNotice">
-
-<h2>
-⭐ Event Pokémon
-</h2>
-
-<p>
-
-Deze Pokémon hoort bij speciale
-Pokopia-eventcontent.
-
-</p>
-
-</div>
-
-`;
-
-}
-
-
-/* PERSOONLIJKE TIP */
-
-const tip=
-
-p.habitats.length>1
-
-?
-
-`Begin met <strong>${p.habitats[0]}</strong>.
-Lukt het daar niet snel, probeer daarna
-<strong>${p.habitats[1]}</strong>.`
-
-:
-
-p.habitats[0]
-.toLowerCase()
-.includes("speciale")
-
-?
-
-`Deze Pokémon werkt anders dan een gewone habitat-Pokémon.
-Controleer eerst of je ver genoeg bent met de speciale content.`
-
-:
-
-`Maak eerst <strong>${p.habitats[0]}</strong>
-helemaal goed voordat je op ${p.name} gaat wachten.`;
-
-
-/* =========================
-   SOCIAL MEDIA LINKS
-========================= */
-
-const socialSearch=
-
-"Pokemon Pokopia "
-+
-p.name
-+
-" how to get";
-
-
-const youtube=
-
-"https://www.youtube.com/results?search_query="
-+
-encodeURIComponent(
-socialSearch
-);
-
-
-const tiktok=
-
-"https://www.tiktok.com/search?q="
-+
-encodeURIComponent(
-socialSearch
-);
-
-
-const instagram=
-
-"https://www.google.com/search?q="
-+
-encodeURIComponent(
-"site:instagram.com "
-+
-socialSearch
-);
-
-
-const facebook=
-
-"https://www.google.com/search?q="
-+
-encodeURIComponent(
-"site:facebook.com "
-+
-socialSearch
-);
-
-
-const twitter=
-
-"https://x.com/search?q="
-+
-encodeURIComponent(
-socialSearch
-)
-+
-"&src=typed_query";
-
-
-/* =========================
-   PAGINA TONEN
-========================= */
-
-document
-.getElementById("detailContent")
-.innerHTML=`
-
-<section class="pokemonHero">
-
-
-<div class="pokemonPattern">
-
-<img src="${imageURL(p.name)}">
-
-<img src="${imageURL(p.name)}">
-
-<img src="${imageURL(p.name)}">
-
-</div>
-
-
-<div class="pokemonInner">
-
-
-<div>
-
-
-<span class="pokemonNumber">
-
-${numberLabel(p)}
-
-</span>
-
-
-<h1>
-
-${p.name}
-
-</h1>
-
-
-<div class="types">
-
-${types}
-
-</div>
-
-
-<div class="info">
-
-
-<div class="infoRow">
-
-<strong>
-Categorie
-</strong>
-
-<span>
-${sectionName(p.section)}
-</span>
-
-</div>
-
-
-<div class="infoRow">
-
-<strong>
-Habitat
-</strong>
-
-<span>
-${habitats}
-</span>
-
-</div>
-
-
-<div class="infoRow">
-
-<strong>
-Wat heb je nodig?
-</strong>
-
-<span>
-${requirements}
-</span>
-
-</div>
-
-
-<div class="infoRow">
-
-<strong>
-Specialiteit
-</strong>
-
-<span>
-${specialty}
-</span>
-
-</div>
-
-
-<div class="infoRow">
-
-<strong>
-Type
-</strong>
-
-<span>
-
-${p.types
-.map(
-x=>
-x[0].toUpperCase()
-+
-x.slice(1)
-)
-.join(" / ")}
-
-</span>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-<div class="art">
-
-<img
-src="${imageURL(p.name)}"
-alt="${p.name}"
-
-onerror="
-this.outerHTML=
-'<div class=&quot;artFallback&quot;>${p.name}</div>'
-"
->
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-${notice}
-
-
-<section class="twoCol">
-
-
-<article class="card pokeCard">
-
-<h2>
-📖 Hoe krijg je ${p.name}?
-</h2>
-
-<p>
-
-Voor ${p.name} kun je de volgende
-habitat${p.habitats.length>1?"s":""}
-gebruiken:
-
-<strong>
-${habitats}
-</strong>.
-
-</p>
-
-<p>
-
-De Pokopia-specialiteit van
-${p.name} is:
-
-<strong>
-${specialty}
-</strong>.
-
-</p>
-
-</article>
-
-
-<article class="card pokeCard">
-
-<h2>
-🏡 Wat moet je bouwen?
-</h2>
-
-<p>
-${requirements}
-</p>
-
-<p>
-
-Heb je meerdere mogelijke habitats,
-dan hoef je ze niet allemaal tegelijk
-te bouwen.
-
-Begin met de eerste mogelijkheid.
-
-</p>
-
-</article>
-
-
-</section>
-
-
-<section class="card steps">
-
-
-<h2>
-🛠️ Zo krijg je ${p.name}
-</h2>
-
-
-<div class="stepGrid">
-
-
-<div class="step">
-
-<div class="stepNo">
-1
-</div>
-
-<h3>
-Kies een habitat
-</h3>
-
-<p>
-
-Gebruik als eerste:
-
-<strong>
-${p.habitats[0]}
-</strong>.
-
-</p>
-
-</div>
-
-
-<div class="step">
-
-<div class="stepNo">
-2
-</div>
-
-<h3>
-Bouw hem volledig
-</h3>
-
-<p>
-
-Plaats alle onderdelen zo dat
-Pokopia de habitat daadwerkelijk
-herkent.
-
-</p>
-
-</div>
-
-
-<div class="step">
-
-<div class="stepNo">
-3
-</div>
-
-<h3>
-Controleer de omgeving
-</h3>
-
-<p>
-
-Laat voldoende ruimte rond de
-habitat en controleer regelmatig
-of er een nieuwe Pokémon verschijnt.
-
-</p>
-
-</div>
-
-
-<div class="step">
-
-<div class="stepNo">
-4
-</div>
-
-<h3>
-${p.name} gevonden
-</h3>
-
-<p>
-
-Ga naar ${p.name},
-rond de ontmoeting af
-en vink hem daarna af.
-
-</p>
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-<section class="tip">
-
-
-<div class="avatar">
-👱‍♂️
-</div>
-
-
-<div>
-
-
-<small>
-⭐ NLPokopia
-</small>
-
-
-<h2 style="margin:3px 0">
-
-Persoonlijke tip
-
-</h2>
-
-
-<p style="margin:0">
-
-${tip}
-
-</p>
-
-
-</div>
-
-
-</section>
-
-
-<section class="video">
-
-
-<h2>
-
-🎬 Bekijk ${p.name} op social media
-
-</h2>
-
-
-<p>
-
-Wil je liever zien hoe andere spelers
-${p.name} vinden of bouwen?
-
-Kies hieronder het platform dat jij
-het liefst gebruikt.
-
-Je gaat altijd naar het originele
-platform of de oorspronkelijke maker.
-
-</p>
-
-
-<div class="videoButtons">
-
-
-<a
-class="videoButton youtube"
-href="${youtube}"
-target="_blank"
-rel="noopener"
->
-
-▶ YouTube
-
-</a>
-
-
-<a
-class="videoButton tiktok"
-href="${tiktok}"
-target="_blank"
-rel="noopener"
->
-
-♪ TikTok
-
-</a>
-
-
-<a
-class="videoButton instagram"
-href="${instagram}"
-target="_blank"
-rel="noopener"
->
-
-📸 Instagram
-
-</a>
-
-
-<a
-class="videoButton facebook"
-href="${facebook}"
-target="_blank"
-rel="noopener"
->
-
-📘 Facebook
-
-</a>
-
-
-<a
-class="videoButton twitter"
-href="${twitter}"
-target="_blank"
-rel="noopener"
->
-
-𝕏 Twitter / X
-
-</a>
-
-
-</div>
-
-
-</section>
-
-
-<section
-class="card"
-style="margin-top:17px"
->
-
-
-<h2>
-
-✅ Mijn ${p.name}-checklist
-
-</h2>
-
-
-<div class="checks">
-
-
-<label>
-
-<input
-id="habitatCheck"
-type="checkbox"
-onchange="saveChecks()"
->
-
-Habitat gebouwd
-
-</label>
-
-
-<label>
-
-<input
-id="foundCheck"
-type="checkbox"
-onchange="saveChecks()"
->
-
-${p.name} gevonden
-
-</label>
-
-
-<label>
-
-<input
-id="completeCheck"
-type="checkbox"
-onchange="saveChecks()"
->
-
-Compleet
-
-</label>
-
-
-</div>
-
-
-</section>
-
-
-<section class="prevNext">
-
-
-<button onclick="previousPokemon()">
-
-← Vorige Pokémon
-
-</button>
-
-
-<button onclick="nextPokemon()">
-
-Volgende Pokémon →
-
-</button>
-
-
-</section>
-
-`;
-
-
-loadChecks();
-
-
-window.scrollTo(0,0);
-
-}
-
-
-/* =========================
-   CHECKLIST OPSLAAN
-========================= */
-
-function storageKey(kind){
-
-const p=
-pokemon[currentIndex];
-
-return(
-"nlpokopia_"
-+
-p.id
-+
-"_"
-+
-kind
-);
-
-}
-
-
-function saveChecks(){
-
-localStorage.setItem(
-
-storageKey("habitat"),
-
-document
-.getElementById("habitatCheck")
-.checked
-
-);
-
-
-localStorage.setItem(
-
-storageKey("found"),
-
-document
-.getElementById("foundCheck")
-.checked
-
-);
-
-
-localStorage.setItem(
-
-storageKey("complete"),
-
-document
-.getElementById("completeCheck")
-.checked
-
-);
-
-}
-
-
-function loadChecks(){
-
-document
-.getElementById("habitatCheck")
-.checked=
-
-localStorage.getItem(
-storageKey("habitat")
-)
-==="true";
-
-
-document
-.getElementById("foundCheck")
-.checked=
-
-localStorage.getItem(
-storageKey("found")
-)
-==="true";
-
-
-document
-.getElementById("completeCheck")
-.checked=
-
-localStorage.getItem(
-storageKey("complete")
-)
-==="true";
-
-}
-
-
-/* =========================
-   VORIGE / VOLGENDE
-========================= */
-
-function previousPokemon(){
-
-if(currentIndex>0){
-
-openPokemon(
-currentIndex-1
-);
-
-}
-
-}
-
-
-function nextPokemon(){
-
-if(
-currentIndex
-<
-pokemon.length-1
-){
-
-openPokemon(
-currentIndex+1
-);
-
-}
-
-}
-
-
-/* =========================
-   MIJN POKEDEX
-========================= */
-
-function showMyDex(){
-
-hideViews();
-
-
-document
-.getElementById("myDexView")
-.classList
-.add("active");
-
-
-const completed=
-pokemon.filter(
-
-p=>
-
-localStorage.getItem(
-`nlpokopia_${p.id}_complete`
-)
-==="true"
-
-);
-
-
-document
-.getElementById("myDexCounter")
-.textContent=
-
-`${completed.length} / ${pokemon.length}`;
-
-
-document
-.getElementById("myDexGrid")
-.innerHTML=
-
-completed.length
-
-?
-
-completed
-.map(p=>{
-
-
-const idx=
-pokemon.indexOf(p);
-
-
-const c=
-color(
-p.types[0]
-);
-
-
-return`
-
-<article
-class="dexCard"
-
-onclick="openPokemon(${idx})"
-
-style="
---poke:${c[0]};
---pokeLight:${c[1]};
---pokeDark:${c[2]}
-"
->
-
-
-<span class="dexNo">
-
-${numberLabel(p)}
-
-</span>
-
-
-<div class="dexPic">
-
-<img
-src="${imageURL(p.name)}"
-alt="${p.name}"
->
-
-</div>
-
-
-<h3>
-
-${p.name}
-
-</h3>
-
-
-<div class="dexSource">
-
-✅ Compleet
-
-</div>
-
-
-</article>
-
-`;
-
-})
-.join("")
-
-:
-
-`
-
-<div class="card">
-
-Je hebt nog geen Pokémon als
-compleet afgevinkt.
-
-</div>
-
-`;
-
-
-window.scrollTo(0,0);
-
-}
-
-
-/* =========================
-   START WEBSITE
-========================= */
-
-renderDex();
-
-</script>
-
-</body>
-</html>
+182|Stereo Rotom|Electric,Normal|DJ|Music and Magazines

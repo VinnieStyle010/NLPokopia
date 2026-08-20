@@ -1095,5 +1095,165 @@ const pokemonKanto = [
   dlc: false,
   evolvesFrom: "",
   evolvesInto: "Combusken"
+},
+{
+  number: 121,
+  name: "Combusken",
+  type: ["Fire", "Fighting"],
+  dlc: false,
+  evolvesFrom: "Torchic",
+  evolvesInto: "Blaziken"
+},
+{
+  number: 122,
+  name: "Blaziken",
+  type: ["Fire", "Fighting"],
+  dlc: false,
+  evolvesFrom: "Combusken",
+  evolvesInto: ""
+},
+{
+  number: 123,
+  name: "Wingull",
+  type: ["Water", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Pelipper"
+},
+{
+  number: 124,
+  name: "Pelipper",
+  type: ["Water", "Flying"],
+  dlc: false,
+  evolvesFrom: "Wingull",
+  evolvesInto: ""
+},
+{
+  number: 125,
+  name: "Makuhita",
+  type: ["Fighting"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Hariyama"
+},
+{
+  number: 126,
+  name: "Hariyama",
+  type: ["Fighting"],
+  dlc: false,
+  evolvesFrom: "Makuhita",
+  evolvesInto: ""
+},
+{
+  number: 127,
+  name: "Absol",
+  type: ["Dark"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 128,
+  name: "Piplup",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Prinplup"
+},
+{
+  number: 129,
+  name: "Prinplup",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "Piplup",
+  evolvesInto: "Empoleon"
+},
+{
+  number: 130,
+  name: "Empoleon",
+  type: ["Water", "Steel"],
+  dlc: false,
+  evolvesFrom: "Prinplup",
+  evolvesInto: ""
+},
+{
+  number: 131,
+  name: "Audino",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 132,
+  name: "Trubbish",
+  type: ["Poison"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Garbodor"
+},
+{
+  number: 133,
+  name: "Garbodor",
+  type: ["Poison"],
+  dlc: false,
+  evolvesFrom: "Trubbish",
+  evolvesInto: ""
+},
+{
+  number: 134,
+  name: "Zorua",
+  type: ["Dark"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Zoroark"
+},
+{
+  number: 135,
+  name: "Zoroark",
+  type: ["Dark"],
+  dlc: false,
+  evolvesFrom: "Zorua",
+  evolvesInto: ""
+},
+{
+  number: 136,
+  name: "Minccino",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Cinccino"
+},
+{
+  number: 137,
+  name: "Cinccino",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "Minccino",
+  evolvesInto: ""
+},
+{
+  number: 138,
+  name: "Grubbin",
+  type: ["Bug"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Charjabug"
+},
+{
+  number: 139,
+  name: "Charjabug",
+  type: ["Bug", "Electric"],
+  dlc: false,
+  evolvesFrom: "Grubbin",
+  evolvesInto: "Vikavolt"
+},
+{
+  number: 140,
+  name: "Vikavolt",
+  type: ["Bug", "Electric"],
+  dlc: false,
+  evolvesFrom: "Charjabug",
+  evolvesInto: ""
 }
 ];

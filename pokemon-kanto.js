@@ -144,7 +144,6 @@ const pokemonKanto = [
     tip: ""
   },
   {
-{
   number: 10,
   name: "Pidgey",
   type: ["Normal", "Flying"],

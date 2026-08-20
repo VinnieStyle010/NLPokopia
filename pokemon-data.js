@@ -21,102 +21,192 @@ const pokemonData = [
   tip: ""
 },
   {
-    number: 2,
-    name: "Ivysaur",
-    type: ["Grass", "Poison"],
-    game: "",
-    location: "",
-    habitat: "",
-    requirements: "",
-    dlc: false,
-    tip: ""
-  },
-  {
-    number: 3,
-    name: "Venusaur",
-    type: ["Grass", "Poison"],
-    game: "",
-    location: "",
-    habitat: "",
-    requirements: "",
-    dlc: false,
-    tip: ""
-  },
-  {
-    number: 4,
-    name: "Charmander",
-    type: ["Fire"],
-    game: "",
-    location: "",
-    habitat: "",
-    requirements: "",
-    dlc: false,
-    tip: ""
-  },
-  {
-    number: 5,
-    name: "Charmeleon",
-    type: ["Fire"],
-    game: "",
-    location: "",
-    habitat: "",
-    requirements: "",
-    dlc: false,
-    tip: ""
-  },
-  {
-    number: 6,
-    name: "Charizard",
-    type: ["Fire", "Flying"],
-    game: "",
-    location: "",
-    habitat: "",
-    requirements: "",
-    dlc: false,
-    tip: ""
-  },
-  {
-    number: 7,
-    name: "Squirtle",
-    type: ["Water"],
-    game: "",
-    location: "",
-    habitat: "",
-    requirements: "",
-    dlc: false,
-    tip: ""
-  },
-  {
-    number: 8,
-    name: "Wartortle",
-    type: ["Water"],
-    game: "",
-    location: "",
-    habitat: "",
-    requirements: "",
-    dlc: false,
-    tip: ""
-  },
-  {
-    number: 9,
-    name: "Blastoise",
-    type: ["Water"],
-    game: "",
-    location: "",
-    habitat: "",
-    requirements: "",
-    dlc: false,
-    tip: ""
-  },
-  {
-    number: 10,
-    name: "Caterpie",
-    type: ["Bug"],
-    game: "",
-    location: "",
-    habitat: "",
-    requirements: "",
-    dlc: false,
-    tip: ""
-  }
-];
+{
+  number: 2,
+  name: "Ivysaur",
+  type: ["Grass", "Poison"],
+
+  game: "",
+  dlc: false,
+
+  location: "",
+  area: "",
+  habitat: "",
+
+  obtainMethod: "",
+  requirements: "",
+
+  evolvesFrom: "Bulbasaur",
+  evolvesInto: "Venusaur",
+  evolutionMethod: "",
+
+  tip: ""
+},
+{
+  number: 3,
+  name: "Venusaur",
+  type: ["Grass", "Poison"],
+
+  game: "",
+  dlc: false,
+
+  location: "",
+  area: "",
+  habitat: "",
+
+  obtainMethod: "",
+  requirements: "",
+
+  evolvesFrom: "Ivysaur",
+  evolvesInto: "",
+  evolutionMethod: "",
+
+  tip: ""
+},
+{
+  number: 4,
+  name: "Charmander",
+  type: ["Fire"],
+
+  game: "",
+  dlc: false,
+
+  location: "",
+  area: "",
+  habitat: "",
+
+  obtainMethod: "",
+  requirements: "",
+
+  evolvesFrom: "",
+  evolvesInto: "Charmeleon",
+  evolutionMethod: "",
+
+  tip: ""
+},
+{
+  number: 5,
+  name: "Charmeleon",
+  type: ["Fire"],
+
+  game: "",
+  dlc: false,
+
+  location: "",
+  area: "",
+  habitat: "",
+
+  obtainMethod: "",
+  requirements: "",
+
+  evolvesFrom: "Charmander",
+  evolvesInto: "Charizard",
+  evolutionMethod: "",
+
+  tip: ""
+},
+{
+  number: 6,
+  name: "Charizard",
+  type: ["Fire", "Flying"],
+
+  game: "",
+  dlc: false,
+
+  location: "",
+  area: "",
+  habitat: "",
+
+  obtainMethod: "",
+  requirements: "",
+
+  evolvesFrom: "Charmeleon",
+  evolvesInto: "",
+  evolutionMethod: "",
+
+  tip: ""
+},
+{
+  number: 7,
+  name: "Squirtle",
+  type: ["Water"],
+
+  game: "",
+  dlc: false,
+
+  location: "",
+  area: "",
+  habitat: "",
+
+  obtainMethod: "",
+  requirements: "",
+
+  evolvesFrom: "",
+  evolvesInto: "Wartortle",
+  evolutionMethod: "",
+
+  tip: ""
+},
+{
+  number: 8,
+  name: "Wartortle",
+  type: ["Water"],
+
+  game: "",
+  dlc: false,
+
+  location: "",
+  area: "",
+  habitat: "",
+
+  obtainMethod: "",
+  requirements: "",
+
+  evolvesFrom: "Squirtle",
+  evolvesInto: "Blastoise",
+  evolutionMethod: "",
+
+  tip: ""
+},
+{
+  number: 9,
+  name: "Blastoise",
+  type: ["Water"],
+
+  game: "",
+  dlc: false,
+
+  location: "",
+  area: "",
+  habitat: "",
+
+  obtainMethod: "",
+  requirements: "",
+
+  evolvesFrom: "Wartortle",
+  evolvesInto: "",
+  evolutionMethod: "",
+
+  tip: ""
+},
+{
+  number: 10,
+  name: "Caterpie",
+  type: ["Bug"],
+
+  game: "",
+  dlc: false,
+
+  location: "",
+  area: "",
+  habitat: "",
+
+  obtainMethod: "",
+  requirements: "",
+
+  evolvesFrom: "",
+  evolvesInto: "Metapod",
+  evolutionMethod: "",
+
+  tip: ""
+}

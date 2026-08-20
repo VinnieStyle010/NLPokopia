@@ -70,7 +70,7 @@ function renderPokemon(list) {
         card.innerHTML = `
             <img
                 class="pokemon-image"
-                src="${getPokemonImage(pokemon.number)}"
+                src="${getPokemonImage(pokemon.name)}"
                 alt="${pokemon.name}"
                 loading="lazy"
             >

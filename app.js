@@ -98,24 +98,37 @@ function renderPokemon(list) {
     });
 }
 
-function searchPokemon() {
+function filterPokemon() {
     const search = searchInput.value.trim().toLowerCase();
+    const selectedGame = gameFilter.value;
+    const selectedType = typeFilter.value;
 
     const filteredPokemon = pokemonData.filter((pokemon) => {
         const number = String(pokemon.number);
         const paddedNumber = number.padStart(3, "0");
         const name = pokemon.name.toLowerCase();
 
-        return (
+        const matchesSearch =
             name.includes(search) ||
             number.includes(search) ||
-            paddedNumber.includes(search)
-        );
+            paddedNumber.includes(search);
+
+        const matchesGame =
+            selectedGame === "all" ||
+            (selectedGame === "base" && pokemon.dlc === false) ||
+            (selectedGame === "dlc" && pokemon.dlc === true);
+
+        const matchesType =
+            selectedType === "all" ||
+            pokemon.type.includes(selectedType);
+
+        return matchesSearch && matchesGame && matchesType;
     });
 
     renderPokemon(filteredPokemon);
 }
-
-searchInput.addEventListener("input", searchPokemon);
+searchInput.addEventListener("input", filterPokemon);
+gameFilter.addEventListener("change", filterPokemon);
+typeFilter.addEventListener("change", filterPokemon);
 
 renderPokemon(pokemonData);

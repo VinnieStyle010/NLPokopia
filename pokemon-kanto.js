@@ -1895,5 +1895,165 @@ const pokemonKanto = [
   dlc: false,
   evolvesFrom: "Porygon2",
   evolvesInto: ""
+},
+{
+  number: 221,
+  name: "Dratini",
+  type: ["Dragon"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Dragonair"
+},
+{
+  number: 222,
+  name: "Dragonair",
+  type: ["Dragon"],
+  dlc: false,
+  evolvesFrom: "Dratini",
+  evolvesInto: "Dragonite"
+},
+{
+  number: 223,
+  name: "Dragonite",
+  type: ["Dragon", "Flying"],
+  dlc: false,
+  evolvesFrom: "Dragonair",
+  evolvesInto: ""
+},
+{
+  number: 224,
+  name: "Cyndaquil",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Quilava"
+},
+{
+  number: 225,
+  name: "Quilava",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "Cyndaquil",
+  evolvesInto: "Typhlosion"
+},
+{
+  number: 226,
+  name: "Typhlosion",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "Quilava",
+  evolvesInto: ""
+},
+{
+  number: 227,
+  name: "Misdreavus",
+  type: ["Ghost"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Mismagius"
+},
+{
+  number: 228,
+  name: "Mismagius",
+  type: ["Ghost"],
+  dlc: false,
+  evolvesFrom: "Misdreavus",
+  evolvesInto: ""
+},
+{
+  number: 229,
+  name: "Girafarig",
+  type: ["Normal", "Psychic"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Farigiraf"
+},
+{
+  number: 230,
+  name: "Farigiraf",
+  type: ["Normal", "Psychic"],
+  dlc: false,
+  evolvesFrom: "Girafarig",
+  evolvesInto: ""
+},
+{
+  number: 231,
+  name: "Ralts",
+  type: ["Psychic", "Fairy"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Kirlia"
+},
+{
+  number: 232,
+  name: "Kirlia",
+  type: ["Psychic", "Fairy"],
+  dlc: false,
+  evolvesFrom: "Ralts",
+  evolvesInto: "Gardevoir / Gallade"
+},
+{
+  number: 233,
+  name: "Gardevoir",
+  type: ["Psychic", "Fairy"],
+  dlc: false,
+  evolvesFrom: "Kirlia",
+  evolvesInto: ""
+},
+{
+  number: 234,
+  name: "Gallade",
+  type: ["Psychic", "Fighting"],
+  dlc: false,
+  evolvesFrom: "Kirlia",
+  evolvesInto: ""
+},
+{
+  number: 235,
+  name: "Plusle",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 236,
+  name: "Minun",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 237,
+  name: "Trapinch",
+  type: ["Ground"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Vibrava"
+},
+{
+  number: 238,
+  name: "Vibrava",
+  type: ["Ground", "Dragon"],
+  dlc: false,
+  evolvesFrom: "Trapinch",
+  evolvesInto: "Flygon"
+},
+{
+  number: 239,
+  name: "Flygon",
+  type: ["Ground", "Dragon"],
+  dlc: false,
+  evolvesFrom: "Vibrava",
+  evolvesInto: ""
+},
+{
+  number: 240,
+  name: "Swablu",
+  type: ["Normal", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Altaria"
 }
 ];

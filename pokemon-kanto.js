@@ -935,5 +935,165 @@ const pokemonKanto = [
   dlc: false,
   evolvesFrom: "",
   evolvesInto: "Chansey"
+},  
+{
+  number: 101,
+  name: "Chansey",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "Happiny",
+  evolvesInto: "Blissey"
+},
+{
+  number: 102,
+  name: "Blissey",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "Chansey",
+  evolvesInto: ""
+},
+{
+  number: 103,
+  name: "Elekid",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Electabuzz"
+},
+{
+  number: 104,
+  name: "Electabuzz",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "Elekid",
+  evolvesInto: "Electivire"
+},
+{
+  number: 105,
+  name: "Electivire",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "Electabuzz",
+  evolvesInto: ""
+},
+{
+  number: 106,
+  name: "Lapras",
+  type: ["Water", "Ice"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 107,
+  name: "Munchlax",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Snorlax"
+},
+{
+  number: 108,
+  name: "Snorlax",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "Munchlax",
+  evolvesInto: ""
+},
+{
+  number: 109,
+  name: "Spinarak",
+  type: ["Bug", "Poison"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Ariados"
+},
+{
+  number: 110,
+  name: "Ariados",
+  type: ["Bug", "Poison"],
+  dlc: false,
+  evolvesFrom: "Spinarak",
+  evolvesInto: ""
+},
+{
+  number: 111,
+  name: "Mareep",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Flaaffy"
+},
+{
+  number: 112,
+  name: "Flaaffy",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "Mareep",
+  evolvesInto: "Ampharos"
+},
+{
+  number: 113,
+  name: "Ampharos",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "Flaaffy",
+  evolvesInto: ""
+},
+{
+  number: 114,
+  name: "Azurill",
+  type: ["Normal", "Fairy"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Marill"
+},
+{
+  number: 115,
+  name: "Marill",
+  type: ["Water", "Fairy"],
+  dlc: false,
+  evolvesFrom: "Azurill",
+  evolvesInto: "Azumarill"
+},
+{
+  number: 116,
+  name: "Azumarill",
+  type: ["Water", "Fairy"],
+  dlc: false,
+  evolvesFrom: "Marill",
+  evolvesInto: ""
+},
+{
+  number: 117,
+  name: "Paldean Wooper",
+  type: ["Poison", "Ground"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Clodsire"
+},
+{
+  number: 118,
+  name: "Clodsire",
+  type: ["Poison", "Ground"],
+  dlc: false,
+  evolvesFrom: "Paldean Wooper",
+  evolvesInto: ""
+},
+{
+  number: 119,
+  name: "Smeargle",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 120,
+  name: "Torchic",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Combusken"
 }
-];  
+];

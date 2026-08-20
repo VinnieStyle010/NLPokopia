@@ -83,3 +83,25 @@ code dit stukje:
 .search-bar input:focus {
     border-color: #555;
 }
+.pokemon-card {
+    text-align: center;
+}
+
+.pokemon-image {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.pokemon-card p {
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .pokemon-image {
+        width: 150px;
+        height: 150px;
+    }
+}

@@ -615,5 +615,165 @@ const pokemonKanto = [
   dlc: false,
   evolvesFrom: "Shellos",
   evolvesInto: ""
+},
+{
+  number: 61,
+  name: "Drifloon",
+  type: ["Ghost", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Drifblim"
+},
+{
+  number: 62,
+  name: "Drifblim",
+  type: ["Ghost", "Flying"],
+  dlc: false,
+  evolvesFrom: "Drifloon",
+  evolvesInto: ""
+},
+{
+  number: 63,
+  name: "Drilbur",
+  type: ["Ground"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Excadrill"
+},
+{
+  number: 64,
+  name: "Excadrill",
+  type: ["Ground", "Steel"],
+  dlc: false,
+  evolvesFrom: "Drilbur",
+  evolvesInto: ""
+},
+{
+  number: 65,
+  name: "Timburr",
+  type: ["Fighting"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Gurdurr"
+},
+{
+  number: 66,
+  name: "Gurdurr",
+  type: ["Fighting"],
+  dlc: false,
+  evolvesFrom: "Timburr",
+  evolvesInto: "Conkeldurr"
+},
+{
+  number: 67,
+  name: "Conkeldurr",
+  type: ["Fighting"],
+  dlc: false,
+  evolvesFrom: "Gurdurr",
+  evolvesInto: ""
+},
+{
+  number: 68,
+  name: "Litwick",
+  type: ["Ghost", "Fire"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Lampent"
+},
+{
+  number: 69,
+  name: "Lampent",
+  type: ["Ghost", "Fire"],
+  dlc: false,
+  evolvesFrom: "Litwick",
+  evolvesInto: "Chandelure"
+},
+{
+  number: 70,
+  name: "Chandelure",
+  type: ["Ghost", "Fire"],
+  dlc: false,
+  evolvesFrom: "Lampent",
+  evolvesInto: ""
+},
+{
+  number: 71,
+  name: "Axew",
+  type: ["Dragon"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Fraxure"
+},
+{
+  number: 72,
+  name: "Fraxure",
+  type: ["Dragon"],
+  dlc: false,
+  evolvesFrom: "Axew",
+  evolvesInto: "Haxorus"
+},
+{
+  number: 73,
+  name: "Haxorus",
+  type: ["Dragon"],
+  dlc: false,
+  evolvesFrom: "Fraxure",
+  evolvesInto: ""
+},
+{
+  number: 74,
+  name: "Goomy",
+  type: ["Dragon"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Sliggoo"
+},
+{
+  number: 75,
+  name: "Sliggoo",
+  type: ["Dragon"],
+  dlc: false,
+  evolvesFrom: "Goomy",
+  evolvesInto: "Goodra"
+},
+{
+  number: 76,
+  name: "Goodra",
+  type: ["Dragon"],
+  dlc: false,
+  evolvesFrom: "Sliggoo",
+  evolvesInto: ""
+},
+{
+  number: 77,
+  name: "Cramorant",
+  type: ["Flying", "Water"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 78,
+  name: "Pichu",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Pikachu"
+},
+{
+  number: 79,
+  name: "Pikachu",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "Pichu",
+  evolvesInto: "Raichu"
+},
+{
+  number: 80,
+  name: "Raichu",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "Pikachu",
+  evolvesInto: ""
 }
 ];

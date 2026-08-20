@@ -1255,5 +1255,165 @@ const pokemonKanto = [
   dlc: false,
   evolvesFrom: "Charjabug",
   evolvesInto: ""
+},
+{
+  number: 141,
+  name: "Mimikyu",
+  type: ["Ghost", "Fairy"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 142,
+  name: "Pawmi",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Pawmo"
+},
+{
+  number: 143,
+  name: "Pawmo",
+  type: ["Electric", "Fighting"],
+  dlc: false,
+  evolvesFrom: "Pawmi",
+  evolvesInto: "Pawmot"
+},
+{
+  number: 144,
+  name: "Pawmot",
+  type: ["Electric", "Fighting"],
+  dlc: false,
+  evolvesFrom: "Pawmo",
+  evolvesInto: ""
+},
+{
+  number: 145,
+  name: "Tatsugiri",
+  type: ["Dragon", "Water"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 146,
+  name: "Ekans",
+  type: ["Poison"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Arbok"
+},
+{
+  number: 147,
+  name: "Arbok",
+  type: ["Poison"],
+  dlc: false,
+  evolvesFrom: "Ekans",
+  evolvesInto: ""
+},
+{
+  number: 148,
+  name: "Cleffa",
+  type: ["Fairy"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Clefairy"
+},
+{
+  number: 149,
+  name: "Clefairy",
+  type: ["Fairy"],
+  dlc: false,
+  evolvesFrom: "Cleffa",
+  evolvesInto: "Clefable"
+},
+{
+  number: 150,
+  name: "Clefable",
+  type: ["Fairy"],
+  dlc: false,
+  evolvesFrom: "Clefairy",
+  evolvesInto: ""
+},
+{
+  number: 151,
+  name: "Igglybuff",
+  type: ["Normal", "Fairy"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Jigglypuff"
+},
+{
+  number: 152,
+  name: "Jigglypuff",
+  type: ["Normal", "Fairy"],
+  dlc: false,
+  evolvesFrom: "Igglybuff",
+  evolvesInto: "Wigglytuff"
+},
+{
+  number: 153,
+  name: "Wigglytuff",
+  type: ["Normal", "Fairy"],
+  dlc: false,
+  evolvesFrom: "Jigglypuff",
+  evolvesInto: ""
+},
+{
+  number: 154,
+  name: "Diglett",
+  type: ["Ground"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Dugtrio"
+},
+{
+  number: 155,
+  name: "Dugtrio",
+  type: ["Ground"],
+  dlc: false,
+  evolvesFrom: "Diglett",
+  evolvesInto: ""
+},
+{
+  number: 156,
+  name: "Machop",
+  type: ["Fighting"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Machoke"
+},
+{
+  number: 157,
+  name: "Machoke",
+  type: ["Fighting"],
+  dlc: false,
+  evolvesFrom: "Machop",
+  evolvesInto: "Machamp"
+},
+{
+  number: 158,
+  name: "Machamp",
+  type: ["Fighting"],
+  dlc: false,
+  evolvesFrom: "Machoke",
+  evolvesInto: ""
+},
+{
+  number: 159,
+  name: "Geodude",
+  type: ["Rock", "Ground"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Graveler"
+},
+{
+  number: 160,
+  name: "Graveler",
+  type: ["Rock", "Ground"],
+  dlc: false,
+  evolvesFrom: "Geodude",
+  evolvesInto: "Golem"
 }
 ];

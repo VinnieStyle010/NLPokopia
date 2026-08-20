@@ -455,5 +455,165 @@ const pokemonKanto = [
   dlc: false,
   evolvesFrom: "",
   evolvesInto: "Tangrowth"
+},
+{
+  number: 41,
+  name: "Tangrowth",
+  type: ["Grass"],
+  dlc: false,
+  evolvesFrom: "Tangela",
+  evolvesInto: ""
+},
+{
+  number: 42,
+  name: "Scyther",
+  type: ["Bug", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Scizor"
+},
+{
+  number: 43,
+  name: "Scizor",
+  type: ["Bug", "Steel"],
+  dlc: false,
+  evolvesFrom: "Scyther",
+  evolvesInto: ""
+},
+{
+  number: 44,
+  name: "Pinsir",
+  type: ["Bug"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 45,
+  name: "Magikarp",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Gyarados"
+},
+{
+  number: 46,
+  name: "Gyarados",
+  type: ["Water", "Flying"],
+  dlc: false,
+  evolvesFrom: "Magikarp",
+  evolvesInto: ""
+},
+{
+  number: 47,
+  name: "Ditto",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 48,
+  name: "Hoothoot",
+  type: ["Normal", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Noctowl"
+},
+{
+  number: 49,
+  name: "Noctowl",
+  type: ["Normal", "Flying"],
+  dlc: false,
+  evolvesFrom: "Hoothoot",
+  evolvesInto: ""
+},
+{
+  number: 50,
+  name: "Heracross",
+  type: ["Bug", "Fighting"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 51,
+  name: "Volbeat",
+  type: ["Bug"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 52,
+  name: "Illumise",
+  type: ["Bug"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 53,
+  name: "Gulpin",
+  type: ["Poison"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Swalot"
+},
+{
+  number: 54,
+  name: "Swalot",
+  type: ["Poison"],
+  dlc: false,
+  evolvesFrom: "Gulpin",
+  evolvesInto: ""
+},
+{
+  number: 55,
+  name: "Cacnea",
+  type: ["Grass"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Cacturne"
+},
+{
+  number: 56,
+  name: "Cacturne",
+  type: ["Grass", "Dark"],
+  dlc: false,
+  evolvesFrom: "Cacnea",
+  evolvesInto: ""
+},
+{
+  number: 57,
+  name: "Combee",
+  type: ["Bug", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Vespiquen"
+},
+{
+  number: 58,
+  name: "Vespiquen",
+  type: ["Bug", "Flying"],
+  dlc: false,
+  evolvesFrom: "Combee",
+  evolvesInto: ""
+},
+{
+  number: 59,
+  name: "Shellos",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Gastrodon"
+},
+{
+  number: 60,
+  name: "Gastrodon",
+  type: ["Water", "Ground"],
+  dlc: false,
+  evolvesFrom: "Shellos",
+  evolvesInto: ""
 }
 ];

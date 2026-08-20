@@ -13,6 +13,7 @@ function normalizePokemon(pokemon) {
 
         obtainMethod: pokemon.obtainMethod ?? "",
         requirements: pokemon.requirements ?? "",
+        specialties: pokemon.specialties ?? [],
 
         evolvesFrom: pokemon.evolvesFrom ?? "",
         evolvesInto: pokemon.evolvesInto ?? "",

@@ -2215,5 +2215,165 @@ const pokemonKanto = [
   dlc: false,
   evolvesFrom: "",
   evolvesInto: "Drakloak"
+},
+{
+  number: 261,
+  name: "Drakloak",
+  type: ["Dragon", "Ghost"],
+  dlc: false,
+  evolvesFrom: "Dreepy",
+  evolvesInto: "Dragapult"
+},
+{
+  number: 262,
+  name: "Dragapult",
+  type: ["Dragon", "Ghost"],
+  dlc: false,
+  evolvesFrom: "Drakloak",
+  evolvesInto: ""
+},
+{
+  number: 263,
+  name: "Sprigatito",
+  type: ["Grass"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Floragato"
+},
+{
+  number: 264,
+  name: "Floragato",
+  type: ["Grass"],
+  dlc: false,
+  evolvesFrom: "Sprigatito",
+  evolvesInto: "Meowscarada"
+},
+{
+  number: 265,
+  name: "Meowscarada",
+  type: ["Grass", "Dark"],
+  dlc: false,
+  evolvesFrom: "Floragato",
+  evolvesInto: ""
+},
+{
+  number: 266,
+  name: "Wattrel",
+  type: ["Electric", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Kilowattrel"
+},
+{
+  number: 267,
+  name: "Kilowattrel",
+  type: ["Electric", "Flying"],
+  dlc: false,
+  evolvesFrom: "Wattrel",
+  evolvesInto: ""
+},
+{
+  number: 268,
+  name: "Tinkatink",
+  type: ["Fairy", "Steel"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Tinkatuff"
+},
+{
+  number: 269,
+  name: "Tinkatuff",
+  type: ["Fairy", "Steel"],
+  dlc: false,
+  evolvesFrom: "Tinkatink",
+  evolvesInto: "Tinkaton"
+},
+{
+  number: 270,
+  name: "Tinkaton",
+  type: ["Fairy", "Steel"],
+  dlc: false,
+  evolvesFrom: "Tinkatuff",
+  evolvesInto: ""
+},
+{
+  number: 271,
+  name: "Aerodactyl",
+  type: ["Rock", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 272,
+  name: "Cranidos",
+  type: ["Rock"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Rampardos"
+},
+{
+  number: 273,
+  name: "Rampardos",
+  type: ["Rock"],
+  dlc: false,
+  evolvesFrom: "Cranidos",
+  evolvesInto: ""
+},
+{
+  number: 274,
+  name: "Shieldon",
+  type: ["Rock", "Steel"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Bastiodon"
+},
+{
+  number: 275,
+  name: "Bastiodon",
+  type: ["Rock", "Steel"],
+  dlc: false,
+  evolvesFrom: "Shieldon",
+  evolvesInto: ""
+},
+{
+  number: 276,
+  name: "Tyrunt",
+  type: ["Rock", "Dragon"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Tyrantrum"
+},
+{
+  number: 277,
+  name: "Tyrantrum",
+  type: ["Rock", "Dragon"],
+  dlc: false,
+  evolvesFrom: "Tyrunt",
+  evolvesInto: ""
+},
+{
+  number: 278,
+  name: "Amaura",
+  type: ["Rock", "Ice"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Aurorus"
+},
+{
+  number: 279,
+  name: "Aurorus",
+  type: ["Rock", "Ice"],
+  dlc: false,
+  evolvesFrom: "Amaura",
+  evolvesInto: ""
+},
+{
+  number: 280,
+  name: "Eevee",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Vaporeon / Jolteon / Flareon / Espeon / Umbreon / Leafeon / Glaceon / Sylveon"
 }
 ];

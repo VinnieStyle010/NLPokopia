@@ -24,22 +24,31 @@ const pokemonKanto = [
 
   tip: "Begin met 4 stukken Tall Grass om Bulbasaur naar je gebied te lokken. Geef hem daarna een lichte, groene plek. Zijn Grow-vaardigheid is vooral handig wanneer je veel planten en groen gebruikt."
 },
-  {
-    number: 2,
-    name: "Ivysaur",
-    type: ["Grass", "Poison"],
-    game: "",
-    dlc: null,
-    location: "",
-    area: "",
-    habitat: "",
-    obtainMethod: "",
-    requirements: "",
-    evolvesFrom: "Bulbasaur",
-    evolvesInto: "Venusaur",
-    evolutionMethod: "",
-    tip: ""
-  },
+{
+  number: 2,
+  name: "Ivysaur",
+  type: ["Grass", "Poison"],
+  game: "Pokémon Pokopia",
+  dlc: false,
+
+  location: "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town / Cloud Island",
+
+  area: "Alle tijden van de dag - zon, bewolking of regen",
+
+  habitat: "Field of Flowers / Bench with greenery",
+
+  obtainMethod: "Maak een Field of Flowers of een Bench with greenery om Ivysaur te laten verschijnen.",
+
+  requirements: "Field of Flowers: 8x Wildflowers.",
+
+  specialties: ["Grow"],
+
+  evolvesFrom: "Bulbasaur",
+  evolvesInto: "Venusaur",
+  evolutionMethod: "",
+
+  tip: "Ivysaur is zeldzamer dan Bulbasaur. Bouw daarom eerst een Field of Flowers met 8 Wildflowers en geef hem een lichte, groene omgeving. Zijn Grow-vaardigheid blijft erg handig voor gebieden met veel planten."
+},
   {
     number: 3,
     name: "Venusaur",

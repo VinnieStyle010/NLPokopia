@@ -1,6 +1,20 @@
 const app = document.getElementById("app");
 const searchInput = document.getElementById("searchInput");
 
+function createSearchUrl(platform, pokemonName) {
+    const query = encodeURIComponent(`${pokemonName} Pokemon Pokopia`);
+
+    const urls = {
+        youtube: `https://www.youtube.com/results?search_query=${query}`,
+        tiktok: `https://www.tiktok.com/search?q=${query}`,
+        instagram: `https://www.instagram.com/explore/search/keyword/?q=${query}`,
+        facebook: `https://www.facebook.com/search/top?q=${query}`,
+        twitter: `https://x.com/search?q=${query}`
+    };
+
+    return urls[platform];
+}
+
 function renderPokemon(list) {
     app.innerHTML = "";
 
@@ -22,6 +36,50 @@ function renderPokemon(list) {
             <p><strong>Benodigdheden:</strong> ${pokemon.requirements || "Geen"}</p>
             <p><strong>DLC:</strong> ${pokemon.dlc ? "Ja" : "Nee"}</p>
             <p><strong>NLPokopia-tip:</strong> ${pokemon.tip || "Nog niet ingevuld"}</p>
+
+            <div class="video-links">
+                <h3>Zoek video's</h3>
+
+                <a
+                    href="${createSearchUrl("youtube", pokemon.name)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    YouTube
+                </a>
+
+                <a
+                    href="${createSearchUrl("tiktok", pokemon.name)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    TikTok
+                </a>
+
+                <a
+                    href="${createSearchUrl("instagram", pokemon.name)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Instagram
+                </a>
+
+                <a
+                    href="${createSearchUrl("facebook", pokemon.name)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Facebook
+                </a>
+
+                <a
+                    href="${createSearchUrl("twitter", pokemon.name)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    X
+                </a>
+            </div>
         `;
 
         app.appendChild(card);

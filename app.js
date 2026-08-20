@@ -139,10 +139,11 @@ function filterPokemon() {
             number.includes(search) ||
             paddedNumber.includes(search);
 
-        const matchesGame =
-            selectedGame === "all" ||
-            (selectedGame === "base" && pokemon.dlc === false) ||
-            (selectedGame === "dlc" && pokemon.dlc === true);
+const matchesGame =
+    selectedGame === "all" ||
+    (selectedGame === "base" && pokemon.dlc === false) ||
+    (selectedGame === "dlc" && pokemon.dlc === true) ||
+    (selectedGame === "unknown" && pokemon.dlc === null);
 
         const matchesType =
             selectedType === "all" ||

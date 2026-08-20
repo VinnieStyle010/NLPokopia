@@ -279,5 +279,181 @@ const pokemonKanto = [
   evolvesInto: "",
   evolutionMethod: "",
   tip: ""
+},
+{
+  number: 19,
+  name: "Venonat",
+  type: ["Bug", "Poison"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Venomoth"
+},
+{
+  number: 20,
+  name: "Venomoth",
+  type: ["Bug", "Poison"],
+  dlc: false,
+  evolvesFrom: "Venonat",
+  evolvesInto: ""
+},
+{
+  number: 21,
+  name: "Bellsprout",
+  type: ["Grass", "Poison"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Weepinbell"
+},
+{
+  number: 22,
+  name: "Weepinbell",
+  type: ["Grass", "Poison"],
+  dlc: false,
+  evolvesFrom: "Bellsprout",
+  evolvesInto: "Victreebel"
+},
+{
+  number: 23,
+  name: "Victreebel",
+  type: ["Grass", "Poison"],
+  dlc: false,
+  evolvesFrom: "Weepinbell",
+  evolvesInto: ""
+},
+{
+  number: 24,
+  name: "Slowpoke",
+  type: ["Water", "Psychic"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Slowbro / Slowking"
+},
+{
+  number: 25,
+  name: "Slowbro",
+  type: ["Water", "Psychic"],
+  dlc: false,
+  evolvesFrom: "Slowpoke",
+  evolvesInto: ""
+},
+{
+  number: 26,
+  name: "Slowking",
+  type: ["Water", "Psychic"],
+  dlc: false,
+  evolvesFrom: "Slowpoke",
+  evolvesInto: ""
+},
+{
+  number: 27,
+  name: "Magnemite",
+  type: ["Electric", "Steel"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Magneton"
+},
+{
+  number: 28,
+  name: "Magneton",
+  type: ["Electric", "Steel"],
+  dlc: false,
+  evolvesFrom: "Magnemite",
+  evolvesInto: "Magnezone"
+},
+{
+  number: 29,
+  name: "Magnezone",
+  type: ["Electric", "Steel"],
+  dlc: false,
+  evolvesFrom: "Magneton",
+  evolvesInto: ""
+},
+{
+  number: 30,
+  name: "Onix",
+  type: ["Rock", "Ground"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Steelix"
+},
+{
+  number: 31,
+  name: "Steelix",
+  type: ["Steel", "Ground"],
+  dlc: false,
+  evolvesFrom: "Onix",
+  evolvesInto: ""
+},
+{
+  number: 32,
+  name: "Cubone",
+  type: ["Ground"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Marowak"
+},
+{
+  number: 33,
+  name: "Marowak",
+  type: ["Ground"],
+  dlc: false,
+  evolvesFrom: "Cubone",
+  evolvesInto: ""
+},
+{
+  number: 34,
+  name: "Tyrogue",
+  type: ["Fighting"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Hitmonlee / Hitmonchan / Hitmontop"
+},
+{
+  number: 35,
+  name: "Hitmonlee",
+  type: ["Fighting"],
+  dlc: false,
+  evolvesFrom: "Tyrogue",
+  evolvesInto: ""
+},
+{
+  number: 36,
+  name: "Hitmonchan",
+  type: ["Fighting"],
+  dlc: false,
+  evolvesFrom: "Tyrogue",
+  evolvesInto: ""
+},
+{
+  number: 37,
+  name: "Hitmontop",
+  type: ["Fighting"],
+  dlc: false,
+  evolvesFrom: "Tyrogue",
+  evolvesInto: ""
+},
+{
+  number: 38,
+  name: "Koffing",
+  type: ["Poison"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Weezing"
+},
+{
+  number: 39,
+  name: "Weezing",
+  type: ["Poison"],
+  dlc: false,
+  evolvesFrom: "Koffing",
+  evolvesInto: ""
+},
+{
+  number: 40,
+  name: "Tangela",
+  type: ["Grass"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Tangrowth"
 }
 ];

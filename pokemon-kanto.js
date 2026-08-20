@@ -1,20 +1,29 @@
 const pokemonKanto = [
-  {
-    number: 1,
-    name: "Bulbasaur",
-    type: ["Grass", "Poison"],
-    game: "",
-    dlc: null,
-    location: "",
-    area: "",
-    habitat: "",
-    obtainMethod: "",
-    requirements: "",
-    evolvesFrom: "",
-    evolvesInto: "Ivysaur",
-    evolutionMethod: "",
-    tip: ""
-  },
+ {
+  number: 1,
+  name: "Bulbasaur",
+  type: ["Grass", "Poison"],
+  game: "Pokémon Pokopia",
+  dlc: false,
+
+  location: "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town / Cloud Island",
+
+  area: "Alle tijden van de dag - zon, bewolking of regen",
+
+  habitat: "Tall Grass / Bench with Greenery",
+
+  obtainMethod: "Maak een geschikt habitat om Bulbasaur te laten verschijnen.",
+
+  requirements: "Tall Grass: 4x Tall Grass. Bench with Greenery: 2x Hedge + 1x brede zitplaats.",
+
+  specialties: ["Grow"],
+
+  evolvesFrom: "",
+  evolvesInto: "Ivysaur",
+  evolutionMethod: "",
+
+  tip: "Begin met 4 stukken Tall Grass om Bulbasaur naar je gebied te lokken. Geef hem daarna een lichte, groene plek. Zijn Grow-vaardigheid is vooral handig wanneer je veel planten en groen gebruikt."
+},
   {
     number: 2,
     name: "Ivysaur",

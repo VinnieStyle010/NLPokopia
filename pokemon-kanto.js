@@ -1575,5 +1575,165 @@ const pokemonKanto = [
   dlc: false,
   evolvesFrom: "",
   evolvesInto: "Lucario"
+},
+{
+  number: 181,
+  name: "Lucario",
+  type: ["Fighting", "Steel"],
+  dlc: false,
+  evolvesFrom: "Riolu",
+  evolvesInto: ""
+},
+{
+  number: 182,
+  name: "Stereo Rotom",
+  type: ["Electric", "Normal"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 183,
+  name: "Larvesta",
+  type: ["Bug", "Fire"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Volcarona"
+},
+{
+  number: 184,
+  name: "Volcarona",
+  type: ["Bug", "Fire"],
+  dlc: false,
+  evolvesFrom: "Larvesta",
+  evolvesInto: ""
+},
+{
+  number: 185,
+  name: "Rowlet",
+  type: ["Grass", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Dartrix"
+},
+{
+  number: 186,
+  name: "Dartrix",
+  type: ["Grass", "Flying"],
+  dlc: false,
+  evolvesFrom: "Rowlet",
+  evolvesInto: "Decidueye"
+},
+{
+  number: 187,
+  name: "Decidueye",
+  type: ["Grass", "Ghost"],
+  dlc: false,
+  evolvesFrom: "Dartrix",
+  evolvesInto: ""
+},
+{
+  number: 188,
+  name: "Scorbunny",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Raboot"
+},
+{
+  number: 189,
+  name: "Raboot",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "Scorbunny",
+  evolvesInto: "Cinderace"
+},
+{
+  number: 190,
+  name: "Cinderace",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "Raboot",
+  evolvesInto: ""
+},
+{
+  number: 191,
+  name: "Skwovet",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Greedent"
+},
+{
+  number: 192,
+  name: "Greedent",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "Skwovet",
+  evolvesInto: ""
+},
+{
+  number: 193,
+  name: "Rolycoly",
+  type: ["Rock"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Carkol"
+},
+{
+  number: 194,
+  name: "Carkol",
+  type: ["Rock", "Fire"],
+  dlc: false,
+  evolvesFrom: "Rolycoly",
+  evolvesInto: "Coalossal"
+},
+{
+  number: 195,
+  name: "Coalossal",
+  type: ["Rock", "Fire"],
+  dlc: false,
+  evolvesFrom: "Carkol",
+  evolvesInto: ""
+},
+{
+  number: 196,
+  name: "Toxel",
+  type: ["Electric", "Poison"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Toxtricity"
+},
+{
+  number: 197,
+  name: "Toxtricity",
+  type: ["Electric", "Poison"],
+  dlc: false,
+  evolvesFrom: "Toxel",
+  evolvesInto: ""
+},
+{
+  number: 198,
+  name: "Fidough",
+  type: ["Fairy"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Dachsbun"
+},
+{
+  number: 199,
+  name: "Dachsbun",
+  type: ["Fairy"],
+  dlc: false,
+  evolvesFrom: "Fidough",
+  evolvesInto: ""
+},
+{
+  number: 200,
+  name: "Charcadet",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Armarouge / Ceruledge"
 }
 ];

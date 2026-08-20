@@ -73,11 +73,19 @@ function renderPokemon(list) {
                 ${pokemon.name}
             </h2>
 
-            ${infoRow("Type", pokemon.type.join(" / "))}
-            ${infoRow("Game", pokemon.game)}
-            ${infoRow("Locatie", pokemon.location)}
-            ${infoRow("Habitat", pokemon.habitat)}
-            ${infoRow("Benodigdheden", pokemon.requirements)}
+           ${infoRow("Type", pokemon.type.join(" / "))}
+${infoRow("Game", pokemon.game)}
+
+${infoRow("Locatie", pokemon.location)}
+${infoRow("Gebied", pokemon.area)}
+${infoRow("Habitat", pokemon.habitat)}
+
+${infoRow("Hoe te verkrijgen", pokemon.obtainMethod)}
+${infoRow("Benodigdheden", pokemon.requirements)}
+
+${infoRow("Evolueert van", pokemon.evolvesFrom)}
+${infoRow("Evolueert naar", pokemon.evolvesInto)}
+${infoRow("Evolutiemethode", pokemon.evolutionMethod)}
 
             ${
                 pokemon.dlc

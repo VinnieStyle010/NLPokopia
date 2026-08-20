@@ -44,3 +44,29 @@ function checkDuplicatePokemonNumbers() {
 }
 
 checkDuplicatePokemonNumbers();
+function checkPokemonDexComplete() {
+    const numbers = pokemonData.map((pokemon) => pokemon.number);
+
+    const missingNumbers = [];
+
+    for (let number = 1; number <= 300; number++) {
+        if (!numbers.includes(number)) {
+            missingNumbers.push(number);
+        }
+    }
+
+    if (missingNumbers.length === 0) {
+        console.log("✅ Pokopia Pokédex compleet: #001 t/m #300 aanwezig.");
+    } else {
+        console.warn(
+            "⚠️ Ontbrekende Pokopia-nummers:",
+            missingNumbers.map((number) =>
+                `#${String(number).padStart(3, "0")}`
+            )
+        );
+    }
+
+    console.log(`Totaal aantal Pokémon-entries: ${pokemonData.length}`);
+}
+
+checkPokemonDexComplete();

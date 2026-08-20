@@ -29,7 +29,25 @@ function infoRow(label, value) {
         </p>
     `;
 }
+function fillTypeFilter() {
+    const types = new Set();
 
+    pokemonData.forEach((pokemon) => {
+        pokemon.type.forEach((type) => {
+            types.add(type);
+        });
+    });
+
+    const sortedTypes = Array.from(types).sort();
+
+    sortedTypes.forEach((type) => {
+        const option = document.createElement("option");
+        option.value = type;
+        option.textContent = type;
+
+        typeFilter.appendChild(option);
+    });
+}
 function renderPokemon(list) {
     app.innerHTML = "";
 
@@ -130,5 +148,6 @@ function filterPokemon() {
 searchInput.addEventListener("input", filterPokemon);
 gameFilter.addEventListener("change", filterPokemon);
 typeFilter.addEventListener("change", filterPokemon);
+fillTypeFilter();
 
 renderPokemon(pokemonData);

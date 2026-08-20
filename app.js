@@ -90,6 +90,13 @@ ${infoRow("Habitat", pokemon.habitat)}
 ${infoRow("Hoe te verkrijgen", pokemon.obtainMethod)}
 ${infoRow("Benodigdheden", pokemon.requirements)}
 
+${infoRow(
+    "Pokopia-vaardigheden",
+    pokemon.specialties.length
+        ? pokemon.specialties.join(" / ")
+        : ""
+)}
+
 ${infoRow("Evolueert van", pokemon.evolvesFrom)}
 ${infoRow("Evolueert naar", pokemon.evolvesInto)}
 ${infoRow("Evolutiemethode", pokemon.evolutionMethod)}

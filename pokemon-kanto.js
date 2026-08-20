@@ -2375,5 +2375,165 @@ const pokemonKanto = [
   dlc: false,
   evolvesFrom: "",
   evolvesInto: "Vaporeon / Jolteon / Flareon / Espeon / Umbreon / Leafeon / Glaceon / Sylveon"
+},
+{
+  number: 281,
+  name: "Vaporeon",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "Eevee",
+  evolvesInto: ""
+},
+{
+  number: 282,
+  name: "Jolteon",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "Eevee",
+  evolvesInto: ""
+},
+{
+  number: 283,
+  name: "Flareon",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "Eevee",
+  evolvesInto: ""
+},
+{
+  number: 284,
+  name: "Espeon",
+  type: ["Psychic"],
+  dlc: false,
+  evolvesFrom: "Eevee",
+  evolvesInto: ""
+},
+{
+  number: 285,
+  name: "Umbreon",
+  type: ["Dark"],
+  dlc: false,
+  evolvesFrom: "Eevee",
+  evolvesInto: ""
+},
+{
+  number: 286,
+  name: "Leafeon",
+  type: ["Grass"],
+  dlc: false,
+  evolvesFrom: "Eevee",
+  evolvesInto: ""
+},
+{
+  number: 287,
+  name: "Glaceon",
+  type: ["Ice"],
+  dlc: false,
+  evolvesFrom: "Eevee",
+  evolvesInto: ""
+},
+{
+  number: 288,
+  name: "Sylveon",
+  type: ["Fairy"],
+  dlc: false,
+  evolvesFrom: "Eevee",
+  evolvesInto: ""
+},
+{
+  number: 289,
+  name: "Kyogre",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 290,
+  name: "Raikou",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 291,
+  name: "Entei",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 292,
+  name: "Suicune",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 293,
+  name: "Volcanion",
+  type: ["Fire", "Water"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 294,
+  name: "Articuno",
+  type: ["Ice", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 295,
+  name: "Zapdos",
+  type: ["Electric", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 296,
+  name: "Moltres",
+  type: ["Fire", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 297,
+  name: "Lugia",
+  type: ["Psychic", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 298,
+  name: "Ho-Oh",
+  type: ["Fire", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 299,
+  name: "Mewtwo",
+  type: ["Psychic"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 300,
+  name: "Mew",
+  type: ["Psychic"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
 }
 ];

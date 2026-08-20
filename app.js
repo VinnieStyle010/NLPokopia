@@ -105,5 +105,29 @@ function searchPokemon() {
 }
 
 searchInput.addEventListener("input", searchPokemon);
+.video-links {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid #ddd;
+}
 
+.video-links h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.video-links a {
+    display: inline-block;
+    margin: 4px 6px 4px 0;
+    padding: 8px 12px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.video-links a:hover {
+    opacity: 0.8;
+}
 renderPokemon(pokemonData);

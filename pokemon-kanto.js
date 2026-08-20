@@ -480,3 +480,4 @@ const pokemonKanto = [
   evolutionMethod: "",
   tip: ""
 }
+];

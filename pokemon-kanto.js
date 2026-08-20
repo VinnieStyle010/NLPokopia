@@ -1,7 +1,5 @@
-// NLPokopia - Hoofd-Pokédex #001 t/m #300
-// Correctieronde 1: Pokopia-volgorde, types, habitats, tijden/weerscondities en specialties.
-// Speciale Pokémon zonder gewone habitat blijven leeg waar verkrijgmethode nog niet individueel is geverifieerd.
-
+// NLPokopia - gecontroleerde hoofd-Pokédex #001 t/m #300
+// Geen 'Mijn tip:' prefix. Onbevestigde habitat-recepten blijven bewust leeg.
 const pokemonKanto = [
   {
     "number": 1,
@@ -12,18 +10,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town / Cloud Island",
-    "area": "Alle tijden van de dag - zon, bewolking of regen",
+    "location": "Withered Wastelands",
+    "area": "Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Bench with greenery (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tall Grass / Bench with greenery | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat om Bulbasaur te laten verschijnen.",
-    "requirements": "Tall Grass: 4x Tall Grass. Bench with greenery: 2x Hedge + 1x brede zitplaats.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Tall Grass: 4x Tall Grass",
     "specialties": [
       "Grow"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Ivysaur",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin met 4 stukken Tall Grass. Dat is een eenvoudige manier om Bulbasaur naar je gebied te lokken."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tall Grass; dat is de eerste habitat die je voor Bulbasaur kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 2,
@@ -34,18 +32,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town / Cloud Island",
-    "area": "Alle tijden van de dag - zon, bewolking of regen",
+    "location": "Withered Wastelands",
+    "area": "Field of Flowers (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Bench with greenery (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Field of Flowers / Bench with greenery | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een Field of Flowers of een Bench with greenery om Ivysaur te laten verschijnen.",
-    "requirements": "Field of Flowers: 8x Wildflowers.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "",
     "specialties": [
       "Grow"
     ],
     "evolvesFrom": "Bulbasaur",
     "evolvesInto": "Venusaur",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: bouw eerst een Field of Flowers met 8 Wildflowers als je gericht voor Ivysaur wilt gaan."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Field of Flowers; dat is de eerste habitat die je voor Ivysaur kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 3,
@@ -56,19 +54,19 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town / Cloud Island",
-    "area": "Ochtend / Dag / Avond / Nacht - zon, bewolking of regen",
+    "location": "Withered Wastelands",
+    "area": "Field of Flowers (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Garden Terrace (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Field of Flowers / Garden Terrace | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een Field of Flowers of Garden Terrace om Venusaur te laten verschijnen.",
-    "requirements": "Field of Flowers: 8x Wildflowers. Garden Terrace: 4x Wildflowers + 1x Garden chair + 1x Garden light + 1x Garden table.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "",
     "specialties": [
       "Grow",
       "Litter"
     ],
     "evolvesFrom": "Ivysaur",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: bouw meteen een volledige Field of Flowers of Garden Terrace als je specifiek voor Venusaur gaat."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Field of Flowers; dat is de eerste habitat die je voor Venusaur kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 4,
@@ -78,18 +76,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tall Grass | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Tall Grass.",
-    "requirements": "",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Tall Grass: 4x Tall Grass",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Charmeleon",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tall Grass. Zo werk je gericht aan Charmander."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tall Grass; dat is de eerste habitat die je voor Charmander kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 5,
@@ -99,18 +97,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Campsite (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Campsite (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Campsite | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Campsite.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "Charmander",
     "evolvesInto": "Charizard",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Campsite. Zo werk je gericht aan Charmeleon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Campsite; dat is de eerste habitat die je voor Charmeleon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 6,
@@ -121,19 +119,19 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud) ; Berry-feast Campsite (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud)",
+    "location": "Withered Wastelands",
+    "area": "Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud | Zeldzaamheid: Very Rare) ; Berry-feast Campsite (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud | Zeldzaamheid: Rare)",
     "habitat": "Tall Grass / Berry-feast Campsite | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Tall Grass / Berry-feast Campsite.",
-    "requirements": "",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Tall Grass: 4x Tall Grass",
     "specialties": [
       "Burn",
       "Fly"
     ],
     "evolvesFrom": "Charmeleon",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tall Grass. Zo werk je gericht aan Charizard."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tall Grass; dat is de eerste habitat die je voor Charizard kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud."
   },
   {
     "number": 7,
@@ -143,18 +141,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Hydrated tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Hydrated tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tall Grass / Hydrated tall grass | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Tall Grass / Hydrated tall grass.",
-    "requirements": "",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Tall Grass: 4x Tall Grass",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Wartortle",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tall Grass. Zo werk je gericht aan Squirtle."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tall Grass; dat is de eerste habitat die je voor Squirtle kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 8,
@@ -164,18 +162,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Hydrated tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Hydrated tall grass | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "Squirtle",
     "evolvesInto": "Blastoise",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated tall grass. Zo werk je gericht aan Wartortle."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated tall grass; dat is de eerste habitat die je voor Wartortle kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 9,
@@ -185,10 +183,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Floating in the shade (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Hydrated tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Floating in the shade (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Hydrated tall grass / Floating in the shade | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated tall grass / Floating in the shade.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -196,8 +194,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Wartortle",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated tall grass. Zo werk je gericht aan Blastoise."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated tall grass; dat is de eerste habitat die je voor Blastoise kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 10,
@@ -208,10 +206,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated tall grass (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain) ; Pretty flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Elevated tall grass (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Pretty flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Elevated tall grass / Pretty flower bed | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Elevated tall grass / Pretty flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Fly",
@@ -219,8 +217,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pidgeotto",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated tall grass. Zo werk je gericht aan Pidgey."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated tall grass; dat is de eerste habitat die je voor Pidgey kunt proberen. Let op: Morning, Day, Evening, Sun, Cloud, Rain."
   },
   {
     "number": 11,
@@ -231,10 +229,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated tall grass (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain) ; Pretty flower bed (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Elevated tall grass (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Pretty flower bed (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Elevated tall grass / Pretty flower bed | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Elevated tall grass / Pretty flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Fly",
@@ -242,8 +240,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pidgey",
     "evolvesInto": "Pidgeot",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated tall grass. Zo werk je gericht aan Pidgeotto."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated tall grass; dat is de eerste habitat die je voor Pidgeotto kunt proberen. Let op: Morning, Day, Evening, Sun, Cloud, Rain."
   },
   {
     "number": 12,
@@ -254,10 +252,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Luxury chirp-chirp meal (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Luxury chirp-chirp meal (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Luxury chirp-chirp meal | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Luxury chirp-chirp meal.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Fly",
@@ -265,8 +263,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pidgeotto",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Luxury chirp-chirp meal. Zo werk je gericht aan Pidgeot."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Luxury chirp-chirp meal; dat is de eerste habitat die je voor Pidgeot kunt proberen. Let op: Morning, Day, Evening, Sun, Cloud, Rain."
   },
   {
     "number": 13,
@@ -277,18 +275,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tall Grass (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Tall Grass (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tall Grass | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Tall Grass.",
-    "requirements": "",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Tall Grass: 4x Tall Grass",
     "specialties": [
       "Grow"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gloom",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tall Grass. Zo werk je gericht aan Oddish."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tall Grass; dat is de eerste habitat die je voor Oddish kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 14,
@@ -299,18 +297,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tropical vibes (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Tropical vibes (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tropical vibes | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Tropical vibes.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow"
     ],
     "evolvesFrom": "Oddish",
     "evolvesInto": "Vileplume / Bellossom",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tropical vibes. Zo werk je gericht aan Gloom."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tropical vibes; dat is de eerste habitat die je voor Gloom kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 15,
@@ -321,10 +319,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Chansey Resting area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Chansey Resting area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Chansey Resting area | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Chansey Resting area.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -332,8 +330,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gloom",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chansey Resting area. Zo werk je gericht aan Vileplume."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Chansey Resting area; dat is de eerste habitat die je voor Vileplume kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 16,
@@ -343,10 +341,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Chansey Resting area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Chansey Resting area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Chansey Resting area | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Chansey Resting area.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -354,8 +352,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gloom",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chansey Resting area. Zo werk je gericht aan Bellossom."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Chansey Resting area; dat is de eerste habitat die je voor Bellossom kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 17,
@@ -366,18 +364,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Flower garden (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Elevated flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Flower garden (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Elevated flower bed / Flower garden | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Elevated flower bed / Flower garden.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Parasect",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated flower bed. Zo werk je gericht aan Paras."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated flower bed; dat is de eerste habitat die je voor Paras kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 18,
@@ -388,18 +386,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Flower garden (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Elevated flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Flower garden (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Elevated flower bed / Flower garden | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Elevated flower bed / Flower garden.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "Paras",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated flower bed. Zo werk je gericht aan Parasect."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated flower bed; dat is de eerste habitat die je voor Parasect kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 19,
@@ -410,18 +408,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Illuminated tall grass (Tijd: Night | Weer: Sun, Cloud, Rain) ; Illuminated bench (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Illuminated tall grass (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Illuminated bench (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Illuminated tall grass / Illuminated bench | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Illuminated tall grass / Illuminated bench.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Venomoth",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Illuminated tall grass. Zo werk je gericht aan Venonat."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Illuminated tall grass; dat is de eerste habitat die je voor Venonat kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 20,
@@ -432,18 +430,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Illuminated tall grass (Tijd: Night | Weer: Sun, Cloud, Rain) ; Illuminated bench (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Illuminated tall grass (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Illuminated bench (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Illuminated tall grass / Illuminated bench | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Illuminated tall grass / Illuminated bench.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "Venonat",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Illuminated tall grass. Zo werk je gericht aan Venomoth."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Illuminated tall grass; dat is de eerste habitat die je voor Venomoth kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 21,
@@ -454,10 +452,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded  tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Tree-shaded  tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded  tall grass | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded  tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -465,8 +463,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Weepinbell",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded  tall grass. Zo werk je gericht aan Bellsprout."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded  tall grass; dat is de eerste habitat die je voor Bellsprout kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 22,
@@ -477,10 +475,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Flowery table (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Irresistible scent and glow (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Flowery table (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Irresistible scent and glow (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Flowery table / Irresistible scent and glow | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Flowery table / Irresistible scent and glow.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -488,8 +486,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Bellsprout",
     "evolvesInto": "Victreebel",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Flowery table. Zo werk je gericht aan Weepinbell."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Flowery table; dat is de eerste habitat die je voor Weepinbell kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 23,
@@ -500,10 +498,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Flowery table (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Irresistible scent and glow (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Flowery table (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Irresistible scent and glow (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Flowery table / Irresistible scent and glow | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Flowery table / Irresistible scent and glow.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -511,8 +509,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Weepinbell",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Flowery table. Zo werk je gericht aan Victreebel."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Flowery table; dat is de eerste habitat die je voor Victreebel kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 24,
@@ -523,19 +521,19 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Seaside Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Seaside Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Seaside Tall Grass | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Seaside Tall Grass.",
-    "requirements": "",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Seaside Tall Grass: 4x Tall Grass + 2x Ocean Water",
     "specialties": [
       "Water",
       "Yawn"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Slowbro / Slowking",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Seaside Tall Grass. Zo werk je gericht aan Slowpoke."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Seaside Tall Grass; dat is de eerste habitat die je voor Slowpoke kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 25,
@@ -546,19 +544,19 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Seaside Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Bed with a plush (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Seaside Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Bed with a plush (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Seaside Tall Grass / Bed with a plush | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Seaside Tall Grass / Bed with a plush.",
-    "requirements": "",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Seaside Tall Grass: 4x Tall Grass + 2x Ocean Water",
     "specialties": [
       "Water",
       "Trade"
     ],
     "evolvesFrom": "Slowpoke",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Seaside Tall Grass. Zo werk je gericht aan Slowbro."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Seaside Tall Grass; dat is de eerste habitat die je voor Slowbro kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 26,
@@ -569,19 +567,19 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Seaside Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Bed with a plush (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Seaside Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Bed with a plush (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Fishing pond ()",
     "habitat": "Seaside Tall Grass / Bed with a plush / Fishing pond | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Seaside Tall Grass / Bed with a plush / Fishing pond.",
-    "requirements": "",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Seaside Tall Grass: 4x Tall Grass + 2x Ocean Water",
     "specialties": [
       "Water",
       "Teleport"
     ],
     "evolvesFrom": "Slowpoke",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Seaside Tall Grass. Zo werk je gericht aan Slowking."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Seaside Tall Grass; dat is de eerste habitat die je voor Slowking kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 27,
@@ -592,18 +590,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Factory Storage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Factory Storage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Factory Storage | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Factory Storage.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Magneton",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Factory Storage. Zo werk je gericht aan Magnemite."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Factory Storage; dat is de eerste habitat die je voor Magnemite kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 28,
@@ -614,18 +612,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Trash can central (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Mini Game Corner (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Trash can central (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Mini Game Corner (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Trash can central / Mini Game Corner | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Trash can central / Mini Game Corner.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate"
     ],
     "evolvesFrom": "Magnemite",
     "evolvesInto": "Magnezone",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash can central. Zo werk je gericht aan Magneton."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Trash can central; dat is de eerste habitat die je voor Magneton kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 29,
@@ -636,10 +634,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Trash can central (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Mini Game Corner (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Trash can central (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Mini Game Corner (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Trash can central / Mini Game Corner | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Trash can central / Mini Game Corner.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate",
@@ -647,8 +645,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Magneton",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash can central. Zo werk je gericht aan Magnezone."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Trash can central; dat is de eerste habitat die je voor Magnezone kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 30,
@@ -659,10 +657,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Smooth tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Smooth tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Smooth tall grass | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Smooth tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush",
@@ -670,8 +668,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Steelix",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Smooth tall grass. Zo werk je gericht aan Onix."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Smooth tall grass; dat is de eerste habitat die je voor Onix kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 31,
@@ -682,10 +680,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Clink-clang iron construction (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Clink-clang iron construction (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Clink-clang iron construction | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Clink-clang iron construction.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush",
@@ -693,8 +691,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Onix",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Clink-clang iron construction. Zo werk je gericht aan Steelix."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Clink-clang iron construction; dat is de eerste habitat die je voor Steelix kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 32,
@@ -704,18 +702,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Grave with flowers (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Grave with flowers (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Grave with flowers | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Grave with flowers.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Marowak",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grave with flowers. Zo werk je gericht aan Cubone."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Grave with flowers; dat is de eerste habitat die je voor Cubone kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 33,
@@ -725,18 +723,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Grave with flowers (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Grave with flowers (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Grave with flowers | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Grave with flowers.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build"
     ],
     "evolvesFrom": "Cubone",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grave with flowers. Zo werk je gericht aan Marowak."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Grave with flowers; dat is de eerste habitat die je voor Marowak kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 34,
@@ -746,18 +744,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Training waterfall (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Training waterfall (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: CommonCommon)",
     "habitat": "Training waterfall | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Training waterfall.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Hitmonlee / Hitmonchan / Hitmontop",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Training waterfall. Zo werk je gericht aan Tyrogue."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Training waterfall; dat is de eerste habitat die je voor Tyrogue kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 35,
@@ -767,18 +765,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Urgent Care (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Urgent Care (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Urgent Care | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Urgent Care.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
     ],
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Urgent Care. Zo werk je gericht aan Hitmonlee."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Urgent Care; dat is de eerste habitat die je voor Hitmonlee kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 36,
@@ -788,18 +786,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Exercise resting spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Exercise resting spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Exercise resting spot | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Exercise resting spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
     ],
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Exercise resting spot. Zo werk je gericht aan Hitmonchan."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Exercise resting spot; dat is de eerste habitat die je voor Hitmonchan kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 37,
@@ -809,18 +807,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Gym first aid (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Gym first aid (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Gym first aid | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Gym first aid.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
     ],
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Gym first aid. Zo werk je gericht aan Hitmontop."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Gym first aid; dat is de eerste habitat die je voor Hitmontop kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 38,
@@ -831,17 +829,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Trash collection site (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Trash collection site (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Trash collection site | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Trash collection site.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Recycle"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Weezing",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Trash collection site. Zo werk je gericht aan Koffing."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Trash collection site; dat is de eerste habitat die je voor Koffing kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 39,
@@ -852,17 +850,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Good old-fashioned antiques (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Trash collection site (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Good old-fashioned antiques (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Trash collection site (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Good old-fashioned antiques / Trash collection site | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Good old-fashioned antiques / Trash collection site.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Recyvle"
     ],
     "evolvesFrom": "Koffing",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Good old-fashioned antiques. Zo werk je gericht aan Weezing."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Good old-fashioned antiques; dat is de eerste habitat die je voor Weezing kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 40,
@@ -873,9 +871,9 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Nothin' but Poke Balls (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Nothin' but Poke Balls (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Nothin' but Poke Balls | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Nothin' but Poke Balls.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -883,8 +881,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Tangrowth",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Nothin' but Poke Balls. Zo werk je gericht aan Tangela."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Nothin' but Poke Balls; dat is de eerste habitat die je voor Tangela kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 41,
@@ -894,7 +892,7 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "",
+    "location": "Withered Wastelands",
     "area": "Bench with greenery (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
     "habitat": "Bench with greenery | Ideale omgeving: Humid",
     "obtainMethod": "Maak een geschikt habitat: Bench with greenery.",
@@ -905,8 +903,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tangela",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: bouw eerst Bench with greenery. Zo werk je gericht aan Tangrowth."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "begin in Withered Wastelands en bouw eerst Bench with greenery. Dat is de duidelijkste plek om voor Tangrowth te werken."
   },
   {
     "number": 42,
@@ -917,18 +915,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded  tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Tree-shaded  tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded  tall grass | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded  tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Chop"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Scizor",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded  tall grass. Zo werk je gericht aan Scyther."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded  tall grass; dat is de eerste habitat die je voor Scyther kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 43,
@@ -940,17 +938,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Tree-shaded  tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Tree-shaded  tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded  tall grass | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded  tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Chop"
     ],
     "evolvesFrom": "Scyther",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Tree-shaded  tall grass. Zo werk je gericht aan Scizor."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded  tall grass; dat is de eerste habitat die je voor Scizor kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 44,
@@ -960,10 +958,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded  tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Tree-shaded  tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Tree-shaded  tall grass | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded  tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Chop",
@@ -972,7 +970,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded  tall grass. Zo werk je gericht aan Pinsir."
+    "tip": "Begin met Tree-shaded  tall grass; dat is de eerste habitat die je voor Pinsir kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 45,
@@ -982,16 +980,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Ocean fishing spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Ocean fishing spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Ocean fishing spot | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Ocean fishing spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
-    "specialties": [],
+    "specialties": [
+      "???"
+    ],
     "evolvesFrom": "",
     "evolvesInto": "Gyarados",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Ocean fishing spot. Zo werk je gericht aan Magikarp."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Ocean fishing spot; dat is de eerste habitat die je voor Magikarp kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 46,
@@ -1002,18 +1002,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Illuminated waterfall (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Illuminated waterfall (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Illuminated waterfall | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Illuminated waterfall.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "Magikarp",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Illuminated waterfall. Zo werk je gericht aan Gyarados."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Illuminated waterfall; dat is de eerste habitat die je voor Gyarados kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 47,
@@ -1023,10 +1023,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "",
+    "location": "Dream Island",
     "area": "",
     "habitat": "Ideale omgeving: Bright",
-    "obtainMethod": "",
+    "obtainMethod": "Deze Pokémon is gekoppeld aan Dream Island.",
     "requirements": "",
     "specialties": [
       "Transform"
@@ -1034,7 +1034,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": ""
+    "tip": "Richt je eerst op Dream Island en controleer daar de Pokédex-aanwijzingen voor Ditto."
   },
   {
     "number": 48,
@@ -1045,10 +1045,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated tall grass (Tijd: Night | Weer: Sun, Cloud, Rain) ; Pretty flower bed (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Elevated tall grass (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Pretty flower bed (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Gently lit bed ()",
     "habitat": "Elevated tall grass / Pretty flower bed / Gently lit bed | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Elevated tall grass / Pretty flower bed / Gently lit bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade",
@@ -1056,8 +1056,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Noctowl",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated tall grass. Zo werk je gericht aan Hoothoot."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated tall grass; dat is de eerste habitat die je voor Hoothoot kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 49,
@@ -1068,10 +1068,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated tall grass (Tijd: Night | Weer: Sun, Cloud, Rain) ; Gently lit bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Elevated tall grass (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Gently lit bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Elevated tall grass / Gently lit bed | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Elevated tall grass / Gently lit bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade",
@@ -1079,8 +1079,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Hoothoot",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated tall grass. Zo werk je gericht aan Noctowl."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated tall grass; dat is de eerste habitat die je voor Noctowl kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 50,
@@ -1091,10 +1091,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded  tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Tree-shaded  tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Tree-shaded  tall grass | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded  tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Chop",
@@ -1103,7 +1103,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded  tall grass. Zo werk je gericht aan Heracross."
+    "tip": "Begin met Tree-shaded  tall grass; dat is de eerste habitat die je voor Heracross kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 51,
@@ -1113,10 +1113,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Hydrated flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Hydrated flower bed | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype"
@@ -1124,7 +1124,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated flower bed. Zo werk je gericht aan Volbeat."
+    "tip": "Begin met Hydrated flower bed; dat is de eerste habitat die je voor Volbeat kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 52,
@@ -1134,10 +1134,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Hydrated flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Hydrated flower bed | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype"
@@ -1145,7 +1145,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated flower bed. Zo werk je gericht aan Illumise."
+    "tip": "Begin met Hydrated flower bed; dat is de eerste habitat die je voor Illumise kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 53,
@@ -1158,15 +1158,15 @@ const pokemonKanto = [
     "location": "Withered Wastelands",
     "area": "Tantalizing dining set (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
     "habitat": "Tantalizing dining set | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Tantalizing dining set.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Storage"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Swalot",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tantalizing dining set. Zo werk je gericht aan Gulpin."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tantalizing dining set; dat is de eerste habitat die je voor Gulpin kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 54,
@@ -1176,18 +1176,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Dinner table surprise (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Dinner table surprise (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Dinner table surprise | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Dinner table surprise.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Storage"
     ],
     "evolvesFrom": "Gulpin",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Dinner table surprise. Zo werk je gericht aan Swalot."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Dinner table surprise; dat is de eerste habitat die je voor Swalot kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 55,
@@ -1197,18 +1197,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Sunny Day site (Tijd: Morning, Day, Evening, Night | Weer: Sun)",
+    "location": "Withered Wastelands",
+    "area": "Sunny Day site (Tijd: Morning, Day, Evening, Night | Weer: Sun | Zeldzaamheid: Common)",
     "habitat": "Sunny Day site | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Sunny Day site.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Cacturne",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Sunny Day site. Zo werk je gericht aan Cacnea."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Sunny Day site; dat is de eerste habitat die je voor Cacnea kunt proberen. Let op: Morning, Day, Evening, Night, Sun."
   },
   {
     "number": 56,
@@ -1219,10 +1219,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded flower bed (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Tree-shaded flower bed (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Tree-shaded flower bed | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -1230,8 +1230,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Cacnea",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded flower bed. Zo werk je gericht aan Cacturne."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded flower bed; dat is de eerste habitat die je voor Cacturne kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 57,
@@ -1242,18 +1242,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Pretty flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Pretty flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Pretty flower bed | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Pretty flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Litter"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Vespiquen",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pretty flower bed. Zo werk je gericht aan Combee."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Pretty flower bed; dat is de eerste habitat die je voor Combee kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 58,
@@ -1264,10 +1264,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Field of Flowers (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Field of Flowers (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Field of Flowers | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Field of Flowers.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather Honey",
@@ -1275,8 +1275,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Combee",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Field of Flowers. Zo werk je gericht aan Vespiquen."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Field of Flowers; dat is de eerste habitat die je voor Vespiquen kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 59,
@@ -1296,8 +1296,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gastrodon",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Road Sign. Zo werk je gericht aan Shellos."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "begin in Withered Wastelands en bouw eerst Road Sign. Dat is de duidelijkste plek om voor Shellos te werken."
   },
   {
     "number": 60,
@@ -1319,8 +1319,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Shellos",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Ocean fishing spot. Zo werk je gericht aan Gastrodon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "begin in Withered Wastelands en bouw eerst Ocean fishing spot. Dat is de duidelijkste plek om voor Gastrodon te werken."
   },
   {
     "number": 61,
@@ -1331,18 +1331,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Riding warm updrafts (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Bed with a plush (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Riding warm updrafts (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Bed with a plush (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Plush central ()",
     "habitat": "Riding warm updrafts / Bed with a plush / Plush central | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Riding warm updrafts / Bed with a plush / Plush central.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Dream Island"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Drifblim",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Riding warm updrafts. Zo werk je gericht aan Drifloon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Riding warm updrafts; dat is de eerste habitat die je voor Drifloon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 62,
@@ -1353,10 +1353,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Plush central (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Plush central (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Plush central | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Plush central.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Fly",
@@ -1364,8 +1364,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Drifloon",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Plush central. Zo werk je gericht aan Drifblim."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Plush central; dat is de eerste habitat die je voor Drifblim kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 63,
@@ -1375,18 +1375,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Fresh Veggie Field (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Fresh Veggie Field (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Fresh Veggie Field | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Fresh Veggie Field.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Excadrill",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fresh Veggie Field. Zo werk je gericht aan Drilbur."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Fresh Veggie Field; dat is de eerste habitat die je voor Drilbur kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 64,
@@ -1397,10 +1397,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Fresh Veggie Field (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Fresh Veggie Field (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Fresh Veggie Field | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Fresh Veggie Field.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search",
@@ -1408,8 +1408,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Drilbur",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fresh Veggie Field. Zo werk je gericht aan Excadrill."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Fresh Veggie Field; dat is de eerste habitat die je voor Excadrill kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 65,
@@ -1419,18 +1419,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Boulder-shaded Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Boulder-shaded Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Boulder-shaded Tall Grass | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Boulder-shaded Tall Grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gurdurr",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Boulder-shaded Tall Grass. Zo werk je gericht aan Timburr."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Boulder-shaded Tall Grass; dat is de eerste habitat die je voor Timburr kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 66,
@@ -1440,18 +1440,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Boulder-shaded Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Large luggage carrier (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Boulder-shaded Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Large luggage carrier (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Boulder-shaded Tall Grass / Large luggage carrier | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Boulder-shaded Tall Grass / Large luggage carrier.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build"
     ],
     "evolvesFrom": "Timburr",
     "evolvesInto": "Conkeldurr",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Boulder-shaded Tall Grass. Zo werk je gericht aan Gurdurr."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Boulder-shaded Tall Grass; dat is de eerste habitat die je voor Gurdurr kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 67,
@@ -1461,10 +1461,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Construction-site generator (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Construction-site generator (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Construction-site generator | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Construction-site generator.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build",
@@ -1472,8 +1472,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gurdurr",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Construction-site generator. Zo werk je gericht aan Conkeldurr."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Construction-site generator; dat is de eerste habitat die je voor Conkeldurr kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 68,
@@ -1484,18 +1484,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Grave offering (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Creepy grave offering (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Grave offering (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Creepy grave offering (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Grave offering / Creepy grave offering | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Grave offering / Creepy grave offering.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lampent",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grave offering. Zo werk je gericht aan Litwick."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Grave offering; dat is de eerste habitat die je voor Litwick kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 69,
@@ -1506,18 +1506,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Grave offering (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Creepy grave offering (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Grave offering (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Creepy grave offering (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Grave offering / Creepy grave offering | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Grave offering / Creepy grave offering.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "Litwick",
     "evolvesInto": "Chandelure",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grave offering. Zo werk je gericht aan Lampent."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Grave offering; dat is de eerste habitat die je voor Lampent kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 70,
@@ -1528,18 +1528,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Creepy grave offering (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Creepy grave offering (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Creepy grave offering | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Creepy grave offering.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "Lampent",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Creepy grave offering. Zo werk je gericht aan Chandelure."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Creepy grave offering; dat is de eerste habitat die je voor Chandelure kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 71,
@@ -1549,18 +1549,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Lumberjack's workplace (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Crazy log handicrafts (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Lumberjack's workplace (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Crazy log handicrafts (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Lumberjack's workplace / Crazy log handicrafts | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Lumberjack's workplace / Crazy log handicrafts.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Chop"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Fraxure",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Lumberjack's workplace. Zo werk je gericht aan Axew."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Lumberjack's workplace; dat is de eerste habitat die je voor Axew kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 72,
@@ -1570,18 +1570,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Lumberjack's workplace (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Crazy log handicrafts (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Lumberjack's workplace (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Crazy log handicrafts (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Lumberjack's workplace / Crazy log handicrafts | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Lumberjack's workplace / Crazy log handicrafts.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Chop"
     ],
     "evolvesFrom": "Axew",
     "evolvesInto": "Haxorus",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Lumberjack's workplace. Zo werk je gericht aan Fraxure."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Lumberjack's workplace; dat is de eerste habitat die je voor Fraxure kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 73,
@@ -1591,10 +1591,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Lumberjack's workplace (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Crazy log handicrafts (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Lumberjack's workplace (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Crazy log handicrafts (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare)",
     "habitat": "Lumberjack's workplace / Crazy log handicrafts | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Lumberjack's workplace / Crazy log handicrafts.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Chop",
@@ -1602,8 +1602,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Fraxure",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Lumberjack's workplace. Zo werk je gericht aan Haxorus."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Lumberjack's workplace; dat is de eerste habitat die je voor Haxorus kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 74,
@@ -1613,18 +1613,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded flower bed (Tijd: Morning, Day, Evening, Night | Weer: Rain) ; Rain Dance site (Tijd: Morning, Day, Evening, Night | Weer: Rain)",
+    "location": "Withered Wastelands",
+    "area": "Tree-shaded flower bed (Tijd: Morning, Day, Evening, Night | Weer: Rain | Zeldzaamheid: Common) ; Rain Dance site (Tijd: Morning, Day, Evening, Night | Weer: Rain)",
     "habitat": "Tree-shaded flower bed / Rain Dance site | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded flower bed / Rain Dance site.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Sliggoo",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded flower bed. Zo werk je gericht aan Goomy."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded flower bed; dat is de eerste habitat die je voor Goomy kunt proberen. Let op: Morning, Day, Evening, Night, Rain."
   },
   {
     "number": 75,
@@ -1634,18 +1634,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated tall grass (Tijd: Morning, Day, Evening, Night | Weer: Rain)",
+    "location": "Withered Wastelands",
+    "area": "Hydrated tall grass (Tijd: Morning, Day, Evening, Night | Weer: Rain | Zeldzaamheid: Common)",
     "habitat": "Hydrated tall grass | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "Goomy",
     "evolvesInto": "Goodra",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated tall grass. Zo werk je gericht aan Sliggoo."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated tall grass; dat is de eerste habitat die je voor Sliggoo kunt proberen. Let op: Morning, Day, Evening, Night, Rain."
   },
   {
     "number": 76,
@@ -1655,10 +1655,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Very-berry space (Tijd: Morning, Day, Evening, Night | Weer: Rain)",
+    "location": "Withered Wastelands",
+    "area": "Very-berry space (Tijd: Morning, Day, Evening, Night | Weer: Rain | Zeldzaamheid: Rare)",
     "habitat": "Very-berry space | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Very-berry space.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -1666,8 +1666,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Sliggoo",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Very-berry space. Zo werk je gericht aan Goodra."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Very-berry space; dat is de eerste habitat die je voor Goodra kunt proberen. Let op: Morning, Day, Evening, Night, Rain."
   },
   {
     "number": 77,
@@ -1679,9 +1679,9 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Hydrated tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Hydrated tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Hydrated tall grass | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Fly",
@@ -1690,7 +1690,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Hydrated tall grass. Zo werk je gericht aan Cramorant."
+    "tip": "Begin met Hydrated tall grass; dat is de eerste habitat die je voor Cramorant kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 78,
@@ -1700,18 +1700,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Picnic Set (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Picnic Set (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Picnic Set | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Picnic Set.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pikachu",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Picnic Set. Zo werk je gericht aan Pichu."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Picnic Set; dat is de eerste habitat die je voor Pichu kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 79,
@@ -1722,17 +1722,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Picnic Set (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Picnic Set (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Picnic Set | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Picnic Set.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate"
     ],
     "evolvesFrom": "Pichu",
     "evolvesInto": "Raichu",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Picnic Set. Zo werk je gericht aan Pikachu."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Picnic Set; dat is de eerste habitat die je voor Pikachu kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 80,
@@ -1742,10 +1742,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Nature's market (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Nature's market (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Nature's market | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Nature's market.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate",
@@ -1753,8 +1753,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pikachu",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Nature's market. Zo werk je gericht aan Raichu."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Nature's market; dat is de eerste habitat die je voor Raichu kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 81,
@@ -1765,18 +1765,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded Yellow tall grass (Tijd: Night | Weer: Sun, Cloud, Rain) ; Park bench (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Tree-shaded Yellow tall grass (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Park bench (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded Yellow tall grass / Park bench | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded Yellow tall grass / Park bench.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Golbat",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded Yellow tall grass. Zo werk je gericht aan Zubat."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded Yellow tall grass; dat is de eerste habitat die je voor Zubat kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 82,
@@ -1787,18 +1787,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded Yellow tall grass (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Tree-shaded Yellow tall grass (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Tree-shaded Yellow tall grass | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded Yellow tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "Zubat",
     "evolvesInto": "Crobat",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded Yellow tall grass. Zo werk je gericht aan Golbat."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded Yellow tall grass; dat is de eerste habitat die je voor Golbat kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 83,
@@ -1809,10 +1809,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated yellow tall grass (Tijd: Night | Weer: Sun, Cloud, Rain) ; Trash disposal site (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Elevated yellow tall grass (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Trash disposal site (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Elevated yellow tall grass / Trash disposal site | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Elevated yellow tall grass / Trash disposal site.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search",
@@ -1820,8 +1820,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Golbat",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated yellow tall grass. Zo werk je gericht aan Crobat."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated yellow tall grass; dat is de eerste habitat die je voor Crobat kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 84,
@@ -1831,18 +1831,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Resting spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Working the register (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Resting spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Working the register (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Resting spot / Working the register | Ideale omgeving: Cool",
-    "obtainMethod": "Maak een geschikt habitat: Resting spot / Working the register.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Persian",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Resting spot. Zo werk je gericht aan Meowth."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Resting spot; dat is de eerste habitat die je voor Meowth kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 85,
@@ -1852,10 +1852,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Evil organization HQ (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Evil organization HQ (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Evil organization HQ | Ideale omgeving: Cool",
-    "obtainMethod": "Maak een geschikt habitat: Evil organization HQ.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade",
@@ -1863,8 +1863,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Meowth",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Evil organization HQ. Zo werk je gericht aan Persian."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Evil organization HQ; dat is de eerste habitat die je voor Persian kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 86,
@@ -1874,18 +1874,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hot-spring shower (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Hot-spring shower (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Hot-spring shower | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hot-spring shower.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Golduck",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hot-spring shower. Zo werk je gericht aan Psyduck."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hot-spring shower; dat is de eerste habitat die je voor Psyduck kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 87,
@@ -1895,18 +1895,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hot-spring shower (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Hot-spring shower (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Hot-spring shower | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hot-spring shower.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "Psyduck",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hot-spring shower. Zo werk je gericht aan Golduck."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hot-spring shower; dat is de eerste habitat die je voor Golduck kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 88,
@@ -1916,10 +1916,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Perpetual mess (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Resort meal prep (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Perpetual mess (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Resort meal prep (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Perpetual mess / Resort meal prep | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Perpetual mess / Resort meal prep.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn",
@@ -1927,8 +1927,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Arcanine",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Perpetual mess. Zo werk je gericht aan Growlithe."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Perpetual mess; dat is de eerste habitat die je voor Growlithe kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 89,
@@ -1938,10 +1938,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Mini museum (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Magma fishing spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Mini museum (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Magma fishing spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Mini museum / Magma fishing spot | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Mini museum / Magma fishing spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn",
@@ -1949,8 +1949,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Growlithe",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mini museum. Zo werk je gericht aan Arcanine."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Mini museum; dat is de eerste habitat die je voor Arcanine kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 90,
@@ -1983,18 +1983,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Marsh fishing spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Marsh fishing spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Marsh fishing spot | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Marsh fishing spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Litter"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Muk",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Marsh fishing spot. Zo werk je gericht aan Grimer."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Marsh fishing spot; dat is de eerste habitat die je voor Grimer kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 92,
@@ -2004,18 +2004,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Marsh fishing spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Marsh fishing spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Marsh fishing spot | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Marsh fishing spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Litter"
     ],
     "evolvesFrom": "Grimer",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Marsh fishing spot. Zo werk je gericht aan Muk."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Marsh fishing spot; dat is de eerste habitat die je voor Muk kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 93,
@@ -2026,10 +2026,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Spooky study (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Spooky study (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Spooky study | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Spooky study.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather",
@@ -2037,8 +2037,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Haunter",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Spooky study. Zo werk je gericht aan Gastly."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Spooky study; dat is de eerste habitat die je voor Gastly kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 94,
@@ -2049,10 +2049,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Surprise in store (Tijd: Night | Weer: Sun, Cloud, Rain) ; Spooky study (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Surprise in store (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Spooky study (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Surprise in store / Spooky study | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Surprise in store / Spooky study.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather",
@@ -2060,8 +2060,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gastly",
     "evolvesInto": "Gengar",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Surprise in store. Zo werk je gericht aan Haunter."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Surprise in store; dat is de eerste habitat die je voor Haunter kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 95,
@@ -2072,10 +2072,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Surprise in store (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Surprise in store (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Surprise in store | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Surprise in store.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather",
@@ -2083,8 +2083,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Haunter",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Surprise in store. Zo werk je gericht aan Gengar."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Surprise in store; dat is de eerste habitat die je voor Gengar kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 96,
@@ -2094,10 +2094,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Park bench (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Playing pirate (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Park bench (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Playing pirate (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Park bench / Playing pirate | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Park bench / Playing pirate.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate",
@@ -2105,8 +2105,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Electrode",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Park bench. Zo werk je gericht aan Voltorb."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Park bench; dat is de eerste habitat die je voor Voltorb kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 97,
@@ -2116,10 +2116,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Park bench (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Playing pirate (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Park bench (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Playing pirate (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Park bench / Playing pirate | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Park bench / Playing pirate.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate",
@@ -2127,8 +2127,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Voltorb",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Park bench. Zo werk je gericht aan Electrode."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Park bench; dat is de eerste habitat die je voor Electrode kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 98,
@@ -2139,10 +2139,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tropical vibes (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Shaded beach (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Tropical vibes (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Shaded beach (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Tropical vibes / Shaded beach / Red tall grass | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Tropical vibes / Shaded beach / Red tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -2150,8 +2150,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Exeggutor",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tropical vibes. Zo werk je gericht aan Exeggcute."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tropical vibes; dat is de eerste habitat die je voor Exeggcute kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 99,
@@ -2162,10 +2162,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tropical vibes (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Shaded beach (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Tropical vibes (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Shaded beach (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Tropical vibes / Shaded beach | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Tropical vibes / Shaded beach.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -2173,8 +2173,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Exeggcute",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tropical vibes. Zo werk je gericht aan Exeggutor."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tropical vibes; dat is de eerste habitat die je voor Exeggutor kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 100,
@@ -2184,18 +2184,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Alarm clock sleep zone (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Working the register (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Alarm clock sleep zone (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Working the register (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Alarm clock sleep zone / Working the register | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Alarm clock sleep zone / Working the register.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Chansey",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Alarm clock sleep zone. Zo werk je gericht aan Happiny."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Alarm clock sleep zone; dat is de eerste habitat die je voor Happiny kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 101,
@@ -2205,18 +2205,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Full recovery (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Full recovery (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Full recovery | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Full recovery.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
     ],
     "evolvesFrom": "Happiny",
     "evolvesInto": "Blissey",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Full recovery. Zo werk je gericht aan Chansey."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Full recovery; dat is de eerste habitat die je voor Chansey kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 102,
@@ -2226,10 +2226,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Cuteness overload (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Cuteness overload (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Cuteness overload | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Cuteness overload.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade",
@@ -2237,8 +2237,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Chansey",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Cuteness overload. Zo werk je gericht aan Blissey."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Cuteness overload; dat is de eerste habitat die je voor Blissey kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 103,
@@ -2248,18 +2248,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Vending machine set (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Vending machine set (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Vending machine set | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Vending machine set.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Electabuzz",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Vending machine set. Zo werk je gericht aan Elekid."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Vending machine set; dat is de eerste habitat die je voor Elekid kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 104,
@@ -2269,18 +2269,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Trash can central (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Light-up stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Trash can central (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Light-up stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Trash can central / Light-up stage | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Trash can central / Light-up stage.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate"
     ],
     "evolvesFrom": "Elekid",
     "evolvesInto": "Electivire",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash can central. Zo werk je gericht aan Electabuzz."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Trash can central; dat is de eerste habitat die je voor Electabuzz kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 105,
@@ -2290,10 +2290,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Light-up stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Vending machine set (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Light-up stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Vending machine set (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Light-up stage / Vending machine set | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Light-up stage / Vending machine set.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate",
@@ -2301,8 +2301,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Electabuzz",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Light-up stage. Zo werk je gericht aan Electivire."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Light-up stage; dat is de eerste habitat die je voor Electivire kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 106,
@@ -2313,10 +2313,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tropical seaside (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Tropical seaside (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tropical seaside | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Tropical seaside.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
@@ -2324,7 +2324,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tropical seaside. Zo werk je gericht aan Lapras."
+    "tip": "Begin met Tropical seaside; dat is de eerste habitat die je voor Lapras kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 107,
@@ -2335,17 +2335,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Bed with a plush (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Tree-shaded snoozing Snorlax (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Bed with a plush (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Tree-shaded snoozing Snorlax (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Bed with a plush / Tree-shaded snoozing Snorlax | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Bed with a plush / Tree-shaded snoozing Snorlax.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Bulldoze"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Snorlax",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Bed with a plush. Zo werk je gericht aan Munchlax."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Bed with a plush; dat is de eerste habitat die je voor Munchlax kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 108,
@@ -2366,7 +2366,7 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Munchlax",
     "evolvesInto": "",
-    "evolutionMethod": "",
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
     "tip": ""
   },
   {
@@ -2378,18 +2378,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Yellow tall grass | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Yellow tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Litter"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Ariados",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Yellow tall grass. Zo werk je gericht aan Spinarak."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Yellow tall grass; dat is de eerste habitat die je voor Spinarak kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 110,
@@ -2400,18 +2400,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Yellow tall grass | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Yellow tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Litter"
     ],
     "evolvesFrom": "Spinarak",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Yellow tall grass. Zo werk je gericht aan Ariados."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Yellow tall grass; dat is de eerste habitat die je voor Ariados kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 111,
@@ -2421,10 +2421,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Overgrowth vending machine (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Knitting station (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Overgrowth vending machine (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Knitting station (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Overgrowth vending machine / Knitting station | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Overgrowth vending machine / Knitting station.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate",
@@ -2432,8 +2432,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Flaaffy",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Overgrowth vending machine. Zo werk je gericht aan Mareep."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Overgrowth vending machine; dat is de eerste habitat die je voor Mareep kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 112,
@@ -2443,10 +2443,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Night festival venue (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Knitting station (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Night festival venue (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Knitting station (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Night festival venue / Knitting station | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Night festival venue / Knitting station.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate",
@@ -2454,8 +2454,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Mareep",
     "evolvesInto": "Ampharos",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Night festival venue. Zo werk je gericht aan Flaaffy."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Night festival venue; dat is de eerste habitat die je voor Flaaffy kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 113,
@@ -2465,10 +2465,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Plain life (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Plain life (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Plain life | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Plain life.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate",
@@ -2476,8 +2476,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Flaaffy",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Plain life. Zo werk je gericht aan Ampharos."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Plain life; dat is de eerste habitat die je voor Ampharos kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 114,
@@ -2488,10 +2488,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Perpetual mess (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Hydrated yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Perpetual mess (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Hydrated yellow tall grass / Perpetual mess | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated yellow tall grass / Perpetual mess.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -2499,8 +2499,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Marill",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated yellow tall grass. Zo werk je gericht aan Azurill."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated yellow tall grass; dat is de eerste habitat die je voor Azurill kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 115,
@@ -2511,10 +2511,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Dock (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Hydrated yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Dock (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Hydrated yellow tall grass / Dock | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated yellow tall grass / Dock.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -2522,8 +2522,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Azurill",
     "evolvesInto": "Azumarill",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated yellow tall grass. Zo werk je gericht aan Marill."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated yellow tall grass; dat is de eerste habitat die je voor Marill kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 116,
@@ -2534,10 +2534,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Dock (Tijd: Morning, Day, Evening, Night | Weer: Rain)",
+    "location": "Bleak Beach",
+    "area": "Dock (Tijd: Morning, Day, Evening, Night | Weer: Rain | Zeldzaamheid: Rare)",
     "habitat": "Dock | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Dock.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -2545,8 +2545,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Marill",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Dock. Zo werk je gericht aan Azumarill."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Dock; dat is de eerste habitat die je voor Azumarill kunt proberen. Let op: Morning, Day, Evening, Night, Rain."
   },
   {
     "number": 117,
@@ -2558,17 +2558,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Bleak Beach",
-    "area": "Marshy tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Marshy tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Marshy tall grass | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Marshy tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Litter"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Clodsire",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Marshy tall grass. Zo werk je gericht aan Paldean Wooper."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Marshy tall grass; dat is de eerste habitat die je voor Paldean Wooper kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 118,
@@ -2579,10 +2579,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Marshy tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Marsh fishing spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Marshy tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Marsh fishing spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Marshy tall grass / Marsh fishing spot | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Marshy tall grass / Marsh fishing spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Litter",
@@ -2590,8 +2590,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Paldean Wooper",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Marshy tall grass. Zo werk je gericht aan Clodsire."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Marshy tall grass; dat is de eerste habitat die je voor Clodsire kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 119,
@@ -2601,10 +2601,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tiny Atelier (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Tiny Atelier (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tiny Atelier | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Tiny Atelier.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Paint"
@@ -2612,7 +2612,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tiny Atelier. Zo werk je gericht aan Smeargle."
+    "tip": "Begin met Tiny Atelier; dat is de eerste habitat die je voor Smeargle kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 120,
@@ -2622,18 +2622,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Chirp-chirp meal (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Resort meal prep (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Chirp-chirp meal (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Resort meal prep (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Chirp-chirp meal / Resort meal prep | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Chirp-chirp meal / Resort meal prep.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Combusken",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chirp-chirp meal. Zo werk je gericht aan Torchic."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Chirp-chirp meal; dat is de eerste habitat die je voor Torchic kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 121,
@@ -2644,10 +2644,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Resort meal prep (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Furnace Spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Resort meal prep (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Furnace Spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Resort meal prep / Furnace Spot | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Resort meal prep / Furnace Spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn",
@@ -2655,8 +2655,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Torchic",
     "evolvesInto": "Blaziken",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Resort meal prep. Zo werk je gericht aan Combusken."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Resort meal prep; dat is de eerste habitat die je voor Combusken kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 122,
@@ -2667,10 +2667,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Chirp-chirp meal (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Furnace Spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Chirp-chirp meal (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Furnace Spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Chirp-chirp meal / Furnace Spot | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Chirp-chirp meal / Furnace Spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn",
@@ -2678,8 +2678,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Combusken",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chirp-chirp meal. Zo werk je gericht aan Blaziken."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Chirp-chirp meal; dat is de eerste habitat die je voor Blaziken kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 123,
@@ -2690,10 +2690,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated yellow tall grass (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain) ; Windy Flower Bed (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Elevated yellow tall grass (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Windy Flower Bed (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Elevated yellow tall grass / Windy Flower Bed | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Elevated yellow tall grass / Windy Flower Bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -2701,8 +2701,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pelipper",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated yellow tall grass. Zo werk je gericht aan Wingull."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated yellow tall grass; dat is de eerste habitat die je voor Wingull kunt proberen. Let op: Morning, Day, Evening, Sun, Cloud, Rain."
   },
   {
     "number": 124,
@@ -2713,10 +2713,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated yellow tall grass (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain) ; Windy Flower Bed (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Elevated yellow tall grass (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Windy Flower Bed (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Elevated yellow tall grass / Windy Flower Bed | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Elevated yellow tall grass / Windy Flower Bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -2724,8 +2724,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Wingull",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated yellow tall grass. Zo werk je gericht aan Pelipper."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated yellow tall grass; dat is de eerste habitat die je voor Pelipper kunt proberen. Let op: Morning, Day, Evening, Sun, Cloud, Rain."
   },
   {
     "number": 125,
@@ -2735,10 +2735,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded Yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; All packed up (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Tree-shaded Yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; All packed up (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded Yellow tall grass / All packed up | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded Yellow tall grass / All packed up.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build",
@@ -2746,8 +2746,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Hariyama",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded Yellow tall grass. Zo werk je gericht aan Makuhita."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded Yellow tall grass; dat is de eerste habitat die je voor Makuhita kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 126,
@@ -2757,10 +2757,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded Yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; All packed up (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Tree-shaded Yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; All packed up (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Tree-shaded Yellow tall grass / All packed up | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded Yellow tall grass / All packed up.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build",
@@ -2768,8 +2768,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Makuhita",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded Yellow tall grass. Zo werk je gericht aan Hariyama."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded Yellow tall grass; dat is de eerste habitat die je voor Hariyama kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 127,
@@ -2779,10 +2779,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Welcoming resort (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Welcoming resort (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Welcoming resort | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Welcoming resort.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Chop"
@@ -2790,7 +2790,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Welcoming resort. Zo werk je gericht aan Absol."
+    "tip": "Begin met Welcoming resort; dat is de eerste habitat die je voor Absol kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 128,
@@ -2800,18 +2800,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Hydrated yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Hydrated yellow tall grass | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated yellow tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Prinplup",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated yellow tall grass. Zo werk je gericht aan Piplup."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated yellow tall grass; dat is de eerste habitat die je voor Piplup kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 129,
@@ -2821,10 +2821,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Waterwheel Spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Hydrated yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Waterwheel Spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Hydrated yellow tall grass / Waterwheel Spot | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated yellow tall grass / Waterwheel Spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -2832,8 +2832,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Piplup",
     "evolvesInto": "Empoleon",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated yellow tall grass. Zo werk je gericht aan Prinplup."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated yellow tall grass; dat is de eerste habitat die je voor Prinplup kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 130,
@@ -2844,10 +2844,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tableside delivery cart (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Waterwheel Spot (Tijd: Morning, Day, Evening, Night | Weer: Rain)",
+    "location": "Bleak Beach",
+    "area": "Tableside delivery cart (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Waterwheel Spot (Tijd: Morning, Day, Evening, Night | Weer: Rain | Zeldzaamheid: Very Rare)",
     "habitat": "Tableside delivery cart / Waterwheel Spot | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Tableside delivery cart / Waterwheel Spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -2855,8 +2855,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Prinplup",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tableside delivery cart. Zo werk je gericht aan Empoleon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tableside delivery cart; dat is de eerste habitat die je voor Empoleon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 131,
@@ -2866,10 +2866,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Working the register (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Working the register (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Working the register | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Working the register.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
@@ -2877,7 +2877,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Working the register. Zo werk je gericht aan Audino."
+    "tip": "Begin met Working the register; dat is de eerste habitat die je voor Audino kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 132,
@@ -2887,18 +2887,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Trash collection site (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Trash collection site (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Trash collection site | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Trash collection site.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Recycle"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Garbodor",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash collection site. Zo werk je gericht aan Trubbish."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Trash collection site; dat is de eerste habitat die je voor Trubbish kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 133,
@@ -2908,10 +2908,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Trash collection site (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Trash collection site (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Trash collection site | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Trash collection site.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Recycle",
@@ -2919,8 +2919,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Trubbish",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash collection site. Zo werk je gericht aan Garbodor."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Trash collection site; dat is de eerste habitat die je voor Garbodor kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 134,
@@ -2930,18 +2930,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Breezy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Breezy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Breezy flower bed | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Breezy flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Zoroark",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Breezy flower bed. Zo werk je gericht aan Zorua."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Breezy flower bed; dat is de eerste habitat die je voor Zorua kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 135,
@@ -2951,10 +2951,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Breezy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Surprise in store (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Breezy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Surprise in store (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Breezy flower bed / Surprise in store | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Breezy flower bed / Surprise in store.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade",
@@ -2962,8 +2962,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Zorua",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Breezy flower bed. Zo werk je gericht aan Zoroark."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Breezy flower bed; dat is de eerste habitat die je voor Zoroark kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 136,
@@ -2973,18 +2973,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Changing area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Private makeup stand (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Changing area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Private makeup stand (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Changing area / Private makeup stand | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Changing area / Private makeup stand.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Cinccino",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Changing area. Zo werk je gericht aan Minccino."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Changing area; dat is de eerste habitat die je voor Minccino kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 137,
@@ -2994,10 +2994,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Private makeup stand (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Private makeup stand (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Private makeup stand | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Private makeup stand.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather",
@@ -3005,8 +3005,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Minccino",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Private makeup stand. Zo werk je gericht aan Cinccino."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Private makeup stand; dat is de eerste habitat die je voor Cinccino kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 138,
@@ -3016,18 +3016,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Vending machine break area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Yellow tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Vending machine break area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Yellow tall grass / Vending machine break area | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Yellow tall grass / Vending machine break area.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Chop"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Charjabug",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Yellow tall grass. Zo werk je gericht aan Grubbin."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Yellow tall grass; dat is de eerste habitat die je voor Grubbin kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 139,
@@ -3038,10 +3038,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Vending machine break area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Vending machine break area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Vending machine break area | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Vending machine break area.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate",
@@ -3049,8 +3049,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Grubbin",
     "evolvesInto": "Vikavolt",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Vending machine break area. Zo werk je gericht aan Charjabug."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Vending machine break area; dat is de eerste habitat die je voor Charjabug kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 140,
@@ -3061,10 +3061,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Tree-shaded flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Tree-shaded flower bed | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate",
@@ -3072,8 +3072,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Charjabug",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded flower bed. Zo werk je gericht aan Vikavolt."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded flower bed; dat is de eerste habitat die je voor Vikavolt kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 141,
@@ -3084,10 +3084,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Pikachu space (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Pikachu space (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Pikachu space | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Pikachu space.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
@@ -3095,7 +3095,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pikachu space. Zo werk je gericht aan Mimikyu."
+    "tip": "Begin met Pikachu space; dat is de eerste habitat die je voor Mimikyu kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 142,
@@ -3105,18 +3105,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Breezy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Tantalizing restaurant (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Breezy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Tantalizing restaurant (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Breezy flower bed / Tantalizing restaurant | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Breezy flower bed / Tantalizing restaurant.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pawmo",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Breezy flower bed. Zo werk je gericht aan Pawmi."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Breezy flower bed; dat is de eerste habitat die je voor Pawmi kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 143,
@@ -3127,10 +3127,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tantalizing restaurant (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Café space (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Tantalizing restaurant (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Café space (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tantalizing restaurant / Café space | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Tantalizing restaurant / Café space.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate",
@@ -3138,8 +3138,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pawmi",
     "evolvesInto": "Pawmot",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tantalizing restaurant. Zo werk je gericht aan Pawmo."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tantalizing restaurant; dat is de eerste habitat die je voor Pawmo kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 144,
@@ -3150,10 +3150,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Café space (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Bleak Beach",
+    "area": "Café space (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Café space | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Café space.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate",
@@ -3161,8 +3161,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pawmo",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Café space. Zo werk je gericht aan Pawmot."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Café space; dat is de eerste habitat die je voor Pawmot kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 145,
@@ -3184,7 +3184,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Beach Set. Zo werk je gericht aan Tatsugiri."
+    "tip": "begin in Bleak Beach en bouw eerst Beach Set. Dat is de duidelijkste plek om voor Tatsugiri te werken."
   },
   {
     "number": 146,
@@ -3194,18 +3194,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated graceful flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Hydrated graceful flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Hydrated graceful flower bed | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated graceful flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Arbok",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated graceful flower bed. Zo werk je gericht aan Ekans."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated graceful flower bed; dat is de eerste habitat die je voor Ekans kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 147,
@@ -3215,18 +3215,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated graceful flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Hydrated graceful flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Hydrated graceful flower bed | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated graceful flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "Ekans",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated graceful flower bed. Zo werk je gericht aan Arbok."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated graceful flower bed; dat is de eerste habitat die je voor Arbok kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 148,
@@ -3236,18 +3236,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Graceful flower bed (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Graceful flower bed (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Graceful flower bed | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Graceful flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Clefairy",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Graceful flower bed. Zo werk je gericht aan Cleffa."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Graceful flower bed; dat is de eerste habitat die je voor Cleffa kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 149,
@@ -3257,18 +3257,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Graceful flower bed (Tijd: Night | Weer: Sun, Cloud, Rain) ; Bronze landmark (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Graceful flower bed (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Bronze landmark (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Graceful flower bed / Bronze landmark | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Graceful flower bed / Bronze landmark.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype"
     ],
     "evolvesFrom": "Cleffa",
     "evolvesInto": "Clefable",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Graceful flower bed. Zo werk je gericht aan Clefairy."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Graceful flower bed; dat is de eerste habitat die je voor Clefairy kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 150,
@@ -3278,10 +3278,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Graceful flower bed (Tijd: Night | Weer: Sun, Cloud, Rain) ; Bronze landmark (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Graceful flower bed (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Bronze landmark (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Graceful flower bed / Bronze landmark | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Graceful flower bed / Bronze landmark.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype",
@@ -3289,8 +3289,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Clefairy",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Graceful flower bed. Zo werk je gericht aan Clefable."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Graceful flower bed; dat is de eerste habitat die je voor Clefable kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 151,
@@ -3301,18 +3301,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Flower garden stump stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Flower garden stump stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Flower garden stump stage | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Flower garden stump stage.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Jigglypuff",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Flower garden stump stage. Zo werk je gericht aan Igglybuff."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Flower garden stump stage; dat is de eerste habitat die je voor Igglybuff kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 152,
@@ -3323,18 +3323,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Flower garden stump stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Recital stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Flower garden stump stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Recital stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Flower garden stump stage / Recital stage | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Flower garden stump stage / Recital stage.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype"
     ],
     "evolvesFrom": "Igglybuff",
     "evolvesInto": "Wigglytuff",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Flower garden stump stage. Zo werk je gericht aan Jigglypuff."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Flower garden stump stage; dat is de eerste habitat die je voor Jigglypuff kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 153,
@@ -3345,10 +3345,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Recital stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Recital stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Recital stage | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Recital stage.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype",
@@ -3356,8 +3356,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Jigglypuff",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Recital stage. Zo werk je gericht aan Wigglytuff."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Recital stage; dat is de eerste habitat die je voor Wigglytuff kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 154,
@@ -3367,18 +3367,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Container snacking (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Tree-shaded red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Container snacking (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded red tall grass / Container snacking | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded red tall grass / Container snacking.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dugtrio",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded red tall grass. Zo werk je gericht aan Diglett."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded red tall grass; dat is de eerste habitat die je voor Diglett kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 155,
@@ -3388,10 +3388,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; House party (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Tree-shaded red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; House party (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded red tall grass / House party | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded red tall grass / House party.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype",
@@ -3399,8 +3399,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Diglett",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded red tall grass. Zo werk je gericht aan Dugtrio."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded red tall grass; dat is de eerste habitat die je voor Dugtrio kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 156,
@@ -3411,9 +3411,9 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Boulder-shaded Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Boulder-shaded Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Boulder-shaded Tall Grass | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Boulder-shaded Tall Grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build",
@@ -3421,8 +3421,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Machoke",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Boulder-shaded Tall Grass. Zo werk je gericht aan Machop."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Boulder-shaded Tall Grass; dat is de eerste habitat die je voor Machop kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 157,
@@ -3432,10 +3432,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Grassy training field (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Box to the rhythm (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Grassy training field (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Box to the rhythm (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Grassy training field / Box to the rhythm | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Grassy training field / Box to the rhythm.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build",
@@ -3443,8 +3443,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Machop",
     "evolvesInto": "Machamp",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grassy training field. Zo werk je gericht aan Machoke."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Grassy training field; dat is de eerste habitat die je voor Machoke kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 158,
@@ -3454,10 +3454,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Grassy training field (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Clink-clang iron construction (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Grassy training field (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Clink-clang iron construction (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Grassy training field / Clink-clang iron construction | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Grassy training field / Clink-clang iron construction.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build",
@@ -3465,8 +3465,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Machoke",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grassy training field. Zo werk je gericht aan Machamp."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Grassy training field; dat is de eerste habitat die je voor Machamp kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 159,
@@ -3478,17 +3478,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Tall Grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tall Grass | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Tall Grass.",
-    "requirements": "",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Tall Grass: 4x Tall Grass",
     "specialties": [
       "Crush"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Graveler",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Tall Grass. Zo werk je gericht aan Geodude."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tall Grass; dat is de eerste habitat die je voor Geodude kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 160,
@@ -3499,18 +3499,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Mossy boulder (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Mossy boulder (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Mossy boulder | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Mossy boulder.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush"
     ],
     "evolvesFrom": "Geodude",
     "evolvesInto": "Golem",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mossy boulder. Zo werk je gericht aan Graveler."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Mossy boulder; dat is de eerste habitat die je voor Graveler kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 161,
@@ -3521,10 +3521,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Mossy boulder (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Mossy boulder (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Mossy boulder | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Mossy boulder.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush",
@@ -3532,8 +3532,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Graveler",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mossy boulder. Zo werk je gericht aan Golem."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Mossy boulder; dat is de eerste habitat die je voor Golem kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 162,
@@ -3543,18 +3543,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Pretty flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Withered Wastelands",
+    "area": "Pretty flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Pretty flower bed | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Pretty flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Magmar",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pretty flower bed. Zo werk je gericht aan Magby."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Pretty flower bed; dat is de eerste habitat die je voor Magby kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 163,
@@ -3564,18 +3564,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Digging and burning (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Digging and burning (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Digging and burning | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Digging and burning.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "Magby",
     "evolvesInto": "Magmortar",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Digging and burning. Zo werk je gericht aan Magmar."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Digging and burning; dat is de eerste habitat die je voor Magmar kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 164,
@@ -3585,10 +3585,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Mini kitchen (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Mini kitchen (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Mini kitchen | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Mini kitchen.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn",
@@ -3596,8 +3596,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Magmar",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mini kitchen. Zo werk je gericht aan Magmortar."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Mini kitchen; dat is de eerste habitat die je voor Magmortar kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 165,
@@ -3607,18 +3607,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Tree-shaded red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded red tall grass | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded red tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Bulldoze"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Sudowoodo",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded red tall grass. Zo werk je gericht aan Bonsly."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded red tall grass; dat is de eerste habitat die je voor Bonsly kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 166,
@@ -3628,18 +3628,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; House party (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Tree-shaded red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; House party (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded red tall grass / House party | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded red tall grass / House party.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
     ],
     "evolvesFrom": "Bonsly",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded red tall grass. Zo werk je gericht aan Sudowoodo."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded red tall grass; dat is de eerste habitat die je voor Sudowoodo kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 167,
@@ -3650,10 +3650,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated red tall grass (Tijd: Night | Weer: Sun, Cloud, Rain) ; Tree-shaded graceful flower bed (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Elevated red tall grass (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Tree-shaded graceful flower bed (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Elevated red tall grass / Tree-shaded graceful flower bed | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Elevated red tall grass / Tree-shaded graceful flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade",
@@ -3661,8 +3661,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Honchkrow",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated red tall grass. Zo werk je gericht aan Murkrow."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated red tall grass; dat is de eerste habitat die je voor Murkrow kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 168,
@@ -3673,10 +3673,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Chirping recital (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Chirping recital (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Chirping recital | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Chirping recital.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade",
@@ -3684,8 +3684,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Murkrow",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chirping recital. Zo werk je gericht aan Honchkrow."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Chirping recital; dat is de eerste habitat die je voor Honchkrow kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 169,
@@ -3696,10 +3696,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Mossy rest spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Mossy rest spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Mossy rest spot | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Mossy rest spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush",
@@ -3707,8 +3707,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pupitar",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mossy rest spot. Zo werk je gericht aan Larvitar."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Mossy rest spot; dat is de eerste habitat die je voor Larvitar kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 170,
@@ -3719,10 +3719,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Tree-shaded pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded pink tall grass | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded pink tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush",
@@ -3730,8 +3730,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Larvitar",
     "evolvesInto": "Tyranitar",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded pink tall grass. Zo werk je gericht aan Pupitar."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded pink tall grass; dat is de eerste habitat die je voor Pupitar kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 171,
@@ -3742,10 +3742,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Toil in the soil (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Mossy rest spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Toil in the soil (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Mossy rest spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare)",
     "habitat": "Toil in the soil / Mossy rest spot | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Toil in the soil / Mossy rest spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush",
@@ -3753,8 +3753,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pupitar",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Toil in the soil. Zo werk je gericht aan Tyranitar."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Toil in the soil; dat is de eerste habitat die je voor Tyranitar kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 172,
@@ -3765,18 +3765,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Uplifting duckweed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Hot-spring Fishing Spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Hydrated red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Uplifting duckweed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Hot-spring Fishing Spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Hydrated red tall grass / Uplifting duckweed / Hot-spring Fishing Spot | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated red tall grass / Uplifting duckweed / Hot-spring Fishing Spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lombre",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated red tall grass. Zo werk je gericht aan Lotad."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated red tall grass; dat is de eerste habitat die je voor Lotad kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 173,
@@ -3787,18 +3787,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Hot-spring Fishing Spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Hydrated red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Hot-spring Fishing Spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Hydrated red tall grass / Hot-spring Fishing Spot | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated red tall grass / Hot-spring Fishing Spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "Lotad",
     "evolvesInto": "Ludicolo",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated red tall grass. Zo werk je gericht aan Lombre."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated red tall grass; dat is de eerste habitat die je voor Lombre kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 174,
@@ -3809,10 +3809,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Uplifting duckweed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Uplifting duckweed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Uplifting duckweed | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Uplifting duckweed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -3820,8 +3820,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Lombre",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Uplifting duckweed. Zo werk je gericht aan Ludicolo."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Uplifting duckweed; dat is de eerste habitat die je voor Ludicolo kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 175,
@@ -3833,9 +3833,9 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Working the register (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Working the register (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Working the register | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Working the register.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade",
@@ -3844,7 +3844,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Working the register. Zo werk je gericht aan Mawile."
+    "tip": "Begin met Working the register; dat is de eerste habitat die je voor Mawile kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 176,
@@ -3854,10 +3854,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Mossy hot spring (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Mossy hot spring (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Mossy hot spring | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Mossy hot spring.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
@@ -3865,7 +3865,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mossy hot spring. Zo werk je gericht aan Torkoal."
+    "tip": "Begin met Mossy hot spring; dat is de eerste habitat die je voor Torkoal kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 177,
@@ -3875,18 +3875,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Music and magazines (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Music and magazines (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Red tall grass / Music and magazines | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Red tall grass / Music and magazines.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kricketune",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Red tall grass. Zo werk je gericht aan Kricketot."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Red tall grass; dat is de eerste habitat die je voor Kricketot kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 178,
@@ -3896,18 +3896,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Music and magazines (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Music and magazines (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Music and magazines | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Music and magazines.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype"
     ],
     "evolvesFrom": "Kricketot",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Music and magazines. Zo werk je gericht aan Kricketune."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Music and magazines; dat is de eerste habitat die je voor Kricketune kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 179,
@@ -3918,10 +3918,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated red tall grass (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain) ; Elevated red tall grass (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain) ; Chirping recital (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Elevated red tall grass (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Elevated red tall grass (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Chirping recital (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Elevated red tall grass / Elevated red tall grass / Chirping recital | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Elevated red tall grass / Elevated red tall grass / Chirping recital.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype",
@@ -3930,7 +3930,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated red tall grass. Zo werk je gericht aan Chatot."
+    "tip": "Begin met Elevated red tall grass; dat is de eerste habitat die je voor Chatot kunt proberen. Let op: Morning, Day, Evening, Sun, Cloud, Rain."
   },
   {
     "number": 180,
@@ -3940,18 +3940,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Box to the rhythm (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Box to the rhythm (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Red tall grass / Box to the rhythm | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Red tall grass / Box to the rhythm.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lucario",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Red tall grass. Zo werk je gericht aan Riolu."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Red tall grass; dat is de eerste habitat die je voor Riolu kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 181,
@@ -3962,18 +3962,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Box to the rhythm (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Box to the rhythm (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Box to the rhythm | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Box to the rhythm.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build"
     ],
     "evolvesFrom": "Riolu",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Box to the rhythm. Zo werk je gericht aan Lucario."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Box to the rhythm; dat is de eerste habitat die je voor Lucario kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 182,
@@ -3984,10 +3984,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Music and magazines (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Music and magazines (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Music and magazines | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Music and magazines.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "DJ"
@@ -3995,7 +3995,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Music and magazines. Zo werk je gericht aan Stereo Rotom."
+    "tip": "Begin met Music and magazines; dat is de eerste habitat die je voor Stereo Rotom kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 183,
@@ -4006,18 +4006,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded graceful flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Tree-shaded graceful flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded graceful flower bed | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded graceful flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Volcarona",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded graceful flower bed. Zo werk je gericht aan Larvesta."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded graceful flower bed; dat is de eerste habitat die je voor Larvesta kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 184,
@@ -4028,10 +4028,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded graceful flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Piping-hot lava (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Tree-shaded graceful flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Piping-hot lava (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Tree-shaded graceful flower bed / Piping-hot lava | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded graceful flower bed / Piping-hot lava.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn",
@@ -4039,8 +4039,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Larvesta",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded graceful flower bed. Zo werk je gericht aan Volcarona."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded graceful flower bed; dat is de eerste habitat die je voor Volcarona kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 185,
@@ -4052,17 +4052,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Fresh Veggie Field (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Fresh Veggie Field (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Fresh Veggie Field | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Fresh Veggie Field.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dartrix",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Fresh Veggie Field. Zo werk je gericht aan Rowlet."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Fresh Veggie Field; dat is de eerste habitat die je voor Rowlet kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 186,
@@ -4073,10 +4073,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Pointy tree-shaded rocky tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Pointy tree-shaded rocky tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Pointy tree-shaded rocky tall grass | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Pointy tree-shaded rocky tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -4084,8 +4084,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Rowlet",
     "evolvesInto": "Decidueye",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pointy tree-shaded rocky tall grass. Zo werk je gericht aan Dartrix."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Pointy tree-shaded rocky tall grass; dat is de eerste habitat die je voor Dartrix kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 187,
@@ -4096,10 +4096,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Pointy tree-shaded rocky tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Modern living (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Pointy tree-shaded rocky tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Modern living (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Pointy tree-shaded rocky tall grass / Modern living | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Pointy tree-shaded rocky tall grass / Modern living.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -4107,8 +4107,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dartrix",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pointy tree-shaded rocky tall grass. Zo werk je gericht aan Decidueye."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Pointy tree-shaded rocky tall grass; dat is de eerste habitat die je voor Decidueye kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 188,
@@ -4118,18 +4118,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Red tall grass | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Red tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Raboot",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Red tall grass. Zo werk je gericht aan Scorbunny."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Red tall grass; dat is de eerste habitat die je voor Scorbunny kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 189,
@@ -4139,18 +4139,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Open-air bath (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Refreshing locker room (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Open-air bath (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Refreshing locker room (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Open-air bath / Refreshing locker room | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Open-air bath / Refreshing locker room.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "Scorbunny",
     "evolvesInto": "Cinderace",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Open-air bath. Zo werk je gericht aan Raboot."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Open-air bath; dat is de eerste habitat die je voor Raboot kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 190,
@@ -4160,10 +4160,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Refreshing locker room (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Red tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Refreshing locker room (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Red tall grass / Refreshing locker room | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Red tall grass / Refreshing locker room.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn",
@@ -4171,8 +4171,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Raboot",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Red tall grass. Zo werk je gericht aan Cinderace."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Red tall grass; dat is de eerste habitat die je voor Cinderace kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 191,
@@ -4183,9 +4183,9 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Tree-shaded  tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Tree-shaded  tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded  tall grass | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded  tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search",
@@ -4193,8 +4193,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Greedent",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Tree-shaded  tall grass. Zo werk je gericht aan Skwovet."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded  tall grass; dat is de eerste habitat die je voor Skwovet kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 192,
@@ -4204,18 +4204,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Chef's kitchen (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Chef's kitchen (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Chef's kitchen | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Chef's kitchen.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Party"
     ],
     "evolvesFrom": "Skwovet",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chef's kitchen. Zo werk je gericht aan Greedent."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Chef's kitchen; dat is de eerste habitat die je voor Greedent kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 193,
@@ -4225,10 +4225,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Railroad crossing (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Railroad crossing (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Railroad crossing | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Railroad crossing.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn",
@@ -4236,8 +4236,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Carkol",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Railroad crossing. Zo werk je gericht aan Rolycoly."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Railroad crossing; dat is de eerste habitat die je voor Rolycoly kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 194,
@@ -4248,10 +4248,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Railroad crossing (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Railroad crossing (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Railroad crossing | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Railroad crossing.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn",
@@ -4259,8 +4259,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Rolycoly",
     "evolvesInto": "Coalossal",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Railroad crossing. Zo werk je gericht aan Carkol."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Railroad crossing; dat is de eerste habitat die je voor Carkol kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 195,
@@ -4271,10 +4271,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Railroad crossing (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Heavy iron (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Railroad crossing (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Heavy iron (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Railroad crossing / Heavy iron | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Railroad crossing / Heavy iron.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn",
@@ -4282,8 +4282,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Carkol",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Railroad crossing. Zo werk je gericht aan Coalossal."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Railroad crossing; dat is de eerste habitat die je voor Coalossal kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 196,
@@ -4294,18 +4294,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Lazy-photo album scrolling (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Lazy-photo album scrolling (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Lazy-photo album scrolling | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Lazy-photo album scrolling.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Toxtricity",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Lazy-photo album scrolling. Zo werk je gericht aan Toxel."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Lazy-photo album scrolling; dat is de eerste habitat die je voor Toxel kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 197,
@@ -4327,8 +4327,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Toxel",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Amped rock stage. Zo werk je gericht aan Toxtricity."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "begin in Rocky Ridges en bouw eerst Amped rock stage. Dat is de duidelijkste plek om voor Toxtricity te werken."
   },
   {
     "number": 198,
@@ -4338,18 +4338,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Graceful flower bed (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain) ; Best bread bakery (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Graceful flower bed (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Best bread bakery (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Graceful flower bed / Best bread bakery | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Graceful flower bed / Best bread bakery.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dachsbun",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Graceful flower bed. Zo werk je gericht aan Fidough."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Graceful flower bed; dat is de eerste habitat die je voor Fidough kunt proberen. Let op: Morning, Day, Evening, Sun, Cloud, Rain."
   },
   {
     "number": 199,
@@ -4359,10 +4359,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Graceful flower bed (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain) ; Best bread bakery (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Graceful flower bed (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Best bread bakery (Tijd: Morning, Day, Evening | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Graceful flower bed / Best bread bakery | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Graceful flower bed / Best bread bakery.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search",
@@ -4370,8 +4370,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Fidough",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Graceful flower bed. Zo werk je gericht aan Dachsbun."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Graceful flower bed; dat is de eerste habitat die je voor Dachsbun kunt proberen. Let op: Morning, Day, Evening, Sun, Cloud, Rain."
   },
   {
     "number": 200,
@@ -4381,18 +4381,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Piping-hot lava (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Piping-hot lava (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Piping-hot lava | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Piping-hot lava.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Armarouge / Ceruledge",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Piping-hot lava. Zo werk je gericht aan Charcadet."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Piping-hot lava; dat is de eerste habitat die je voor Charcadet kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 201,
@@ -4403,18 +4403,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Auspicious knight's shrine (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Auspicious knight's shrine (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Auspicious knight's shrine | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Auspicious knight's shrine.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "Charcadet",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Auspicious knight's shrine. Zo werk je gericht aan Armarouge."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Auspicious knight's shrine; dat is de eerste habitat die je voor Armarouge kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 202,
@@ -4425,18 +4425,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Malicious knight's shrine (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Malicious knight's shrine (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Malicious knight's shrine | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Malicious knight's shrine.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "Charcadet",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Malicious knight's shrine. Zo werk je gericht aan Ceruledge."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Malicious knight's shrine; dat is de eerste habitat die je voor Ceruledge kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 203,
@@ -4447,18 +4447,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Creepy white rocks (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Container snacking (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Creepy white rocks (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Container snacking (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Creepy white rocks / Container snacking | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Creepy white rocks / Container snacking.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Litter"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Glimmora",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Creepy white rocks. Zo werk je gericht aan Glimmet."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Creepy white rocks; dat is de eerste habitat die je voor Glimmet kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 204,
@@ -4469,18 +4469,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Creepy white rocks (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Container snacking (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Creepy white rocks (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Container snacking (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Creepy white rocks / Container snacking | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Creepy white rocks / Container snacking.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Litter"
     ],
     "evolvesFrom": "Glimmet",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Creepy white rocks. Zo werk je gericht aan Glimmora."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Creepy white rocks; dat is de eerste habitat die je voor Glimmora kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 205,
@@ -4490,18 +4490,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Mini museum (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Mini museum (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Mini museum | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Mini museum.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Collect"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gholdengo",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mini museum. Zo werk je gericht aan Gimmighoul."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Mini museum; dat is de eerste habitat die je voor Gimmighoul kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 206,
@@ -4512,18 +4512,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Absolute luxury (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Absolute luxury (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Absolute luxury | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Absolute luxury.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Collect"
     ],
     "evolvesFrom": "Gimmighoul",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Absolute luxury. Zo werk je gericht aan Gholdengo."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Absolute luxury; dat is de eerste habitat die je voor Gholdengo kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 207,
@@ -4533,18 +4533,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Fluffy flower bed | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Fluffy flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Ninetales",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fluffy flower bed. Zo werk je gericht aan Vulpix."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Fluffy flower bed; dat is de eerste habitat die je voor Vulpix kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 208,
@@ -4554,18 +4554,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Nine flames (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Nine flames (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Fluffy flower bed / Nine flames | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Fluffy flower bed / Nine flames.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "Vulpix",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fluffy flower bed. Zo werk je gericht aan Ninetales."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Fluffy flower bed; dat is de eerste habitat die je voor Ninetales kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 209,
@@ -4575,18 +4575,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Squeaky clean (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Squeaky clean (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Squeaky clean | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Squeaky clean.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Poliwhirl",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Squeaky clean. Zo werk je gericht aan Poliwag."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Squeaky clean; dat is de eerste habitat die je voor Poliwag kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 210,
@@ -4596,18 +4596,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Hydrated fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Hydrated fluffy flower bed | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated fluffy flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "Poliwag",
     "evolvesInto": "Poliwrath / Politoed",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated fluffy flower bed. Zo werk je gericht aan Poliwhirl."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated fluffy flower bed; dat is de eerste habitat die je voor Poliwhirl kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 211,
@@ -4618,10 +4618,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Sewer hole inspection (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Dojo training (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Sewer hole inspection (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Dojo training (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Sewer hole inspection / Dojo training | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Sewer hole inspection / Dojo training.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -4629,8 +4629,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Poliwhirl",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Sewer hole inspection. Zo werk je gericht aan Poliwrath."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Sewer hole inspection; dat is de eerste habitat die je voor Poliwrath kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 212,
@@ -4640,10 +4640,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated graceful flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Flower garden stump stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Harmonious hot spring (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Hydrated graceful flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Flower garden stump stage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Harmonious hot spring (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Hydrated graceful flower bed / Flower garden stump stage / Harmonious hot spring | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated graceful flower bed / Flower garden stump stage / Harmonious hot spring.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -4651,8 +4651,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Poliwhirl",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated graceful flower bed. Zo werk je gericht aan Politoed."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated graceful flower bed; dat is de eerste habitat die je voor Politoed kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 213,
@@ -4662,18 +4662,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Surging psychic power (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Fortune-teller's table (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Surging psychic power (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Fortune-teller's table (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Surging psychic power / Fortune-teller's table | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Surging psychic power / Fortune-teller's table.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Teleport"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kadabra",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Surging psychic power. Zo werk je gericht aan Abra."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Surging psychic power; dat is de eerste habitat die je voor Abra kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 214,
@@ -4683,18 +4683,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Fortune-teller's table (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Fortune-teller's table (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Fortune-teller's table | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Fortune-teller's table.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Teleport"
     ],
     "evolvesFrom": "Abra",
     "evolvesInto": "Alakazam",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fortune-teller's table. Zo werk je gericht aan Kadabra."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Fortune-teller's table; dat is de eerste habitat die je voor Kadabra kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 215,
@@ -4704,10 +4704,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Surging psychic power (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Experiment Space (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Surging psychic power (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Experiment Space (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Surging psychic power / Experiment Space | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Surging psychic power / Experiment Space.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Teleport",
@@ -4715,8 +4715,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Kadabra",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Surging psychic power. Zo werk je gericht aan Alakazam."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Surging psychic power; dat is de eerste habitat die je voor Alakazam kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 216,
@@ -4737,7 +4737,7 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Mr. Mime",
-    "evolutionMethod": "",
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
     "tip": ""
   },
   {
@@ -4760,7 +4760,7 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Mime Jr.",
     "evolvesInto": "",
-    "evolutionMethod": "",
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
     "tip": ""
   },
   {
@@ -4771,18 +4771,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Researcher's desk (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Researcher's desk (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Researcher's desk | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Researcher's desk.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Recycle"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Porygon2",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Researcher's desk. Zo werk je gericht aan Porygon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Researcher's desk; dat is de eerste habitat die je voor Porygon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 219,
@@ -4792,18 +4792,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Work desk (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Work desk (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Work desk | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Work desk.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Recycle"
     ],
     "evolvesFrom": "Porygon",
     "evolvesInto": "Porygon-Z",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Work desk. Zo werk je gericht aan Porygon2."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Work desk; dat is de eerste habitat die je voor Porygon2 kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 220,
@@ -4813,18 +4813,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Game Corner battle zone (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Game Corner battle zone (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Game Corner battle zone | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Game Corner battle zone.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Rarify"
     ],
     "evolvesFrom": "Porygon2",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Game Corner battle zone. Zo werk je gericht aan Porygon-Z."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Game Corner battle zone; dat is de eerste habitat die je voor Porygon-Z kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 221,
@@ -4834,18 +4834,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Simple bathroom (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Hydrated fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Simple bathroom (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Hydrated fluffy flower bed / Simple bathroom | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated fluffy flower bed / Simple bathroom.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dragonair",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated fluffy flower bed. Zo werk je gericht aan Dratini."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated fluffy flower bed; dat is de eerste habitat die je voor Dratini kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 222,
@@ -4855,18 +4855,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Simple bathroom (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Hydrated fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Simple bathroom (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Hydrated fluffy flower bed / Simple bathroom | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated fluffy flower bed / Simple bathroom.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "Dratini",
     "evolvesInto": "Dragonite",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated fluffy flower bed. Zo werk je gericht aan Dragonair."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated fluffy flower bed; dat is de eerste habitat die je voor Dragonair kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 223,
@@ -4877,10 +4877,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Waterside dinghy (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Waterside dinghy (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Waterside dinghy | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Waterside dinghy.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -4888,8 +4888,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dragonair",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Waterside dinghy. Zo werk je gericht aan Dragonite."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Waterside dinghy; dat is de eerste habitat die je voor Dragonite kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 224,
@@ -4899,18 +4899,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Concrete pipe secret base (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Concrete pipe secret base (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Concrete pipe secret base | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Concrete pipe secret base.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Quilava",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Concrete pipe secret base. Zo werk je gericht aan Cyndaquil."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Concrete pipe secret base; dat is de eerste habitat die je voor Cyndaquil kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 225,
@@ -4920,18 +4920,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Concrete pipe secret base (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Fireplace nap spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Concrete pipe secret base (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Fireplace nap spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Concrete pipe secret base / Fireplace nap spot | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Concrete pipe secret base / Fireplace nap spot.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "Cyndaquil",
     "evolvesInto": "Typhlosion",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Concrete pipe secret base. Zo werk je gericht aan Quilava."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Concrete pipe secret base; dat is de eerste habitat die je voor Quilava kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 226,
@@ -4941,10 +4941,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Fireplace nap spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Top pop (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Fireplace nap spot (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Top pop (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Fireplace nap spot / Top pop | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Fireplace nap spot / Top pop.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn",
@@ -4952,8 +4952,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Quilava",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fireplace nap spot. Zo werk je gericht aan Typhlosion."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Fireplace nap spot; dat is de eerste habitat die je voor Typhlosion kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 227,
@@ -4963,18 +4963,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Fluffy flower bed (Tijd: Night | Weer: Sun, Cloud, Rain) ; Office storeroom (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Fluffy flower bed (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Office storeroom (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Fluffy flower bed / Office storeroom | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Fluffy flower bed / Office storeroom.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Mismagius",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fluffy flower bed. Zo werk je gericht aan Misdreavus."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Fluffy flower bed; dat is de eerste habitat die je voor Misdreavus kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 228,
@@ -4984,10 +4984,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Fluffy flower bed (Tijd: Night | Weer: Sun, Cloud, Rain) ; Home theater (Tijd: Night | Weer: Sun, Cloud, Rain) ; Office storeroom (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Fluffy flower bed (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Home theater (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Office storeroom (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Fluffy flower bed / Home theater / Office storeroom | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Fluffy flower bed / Home theater / Office storeroom.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather",
@@ -4995,8 +4995,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Misdreavus",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fluffy flower bed. Zo werk je gericht aan Mismagius."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Fluffy flower bed; dat is de eerste habitat die je voor Mismagius kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 229,
@@ -5007,18 +5007,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Tree-shaded fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded fluffy flower bed | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded fluffy flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Farigiraf",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded fluffy flower bed. Zo werk je gericht aan Girafarig."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded fluffy flower bed; dat is de eerste habitat die je voor Girafarig kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 230,
@@ -5029,10 +5029,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Tree-shaded fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Tree-shaded fluffy flower bed | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded fluffy flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather",
@@ -5040,8 +5040,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Girafarig",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded fluffy flower bed. Zo werk je gericht aan Farigiraf."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded fluffy flower bed; dat is de eerste habitat die je voor Farigiraf kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 231,
@@ -5052,18 +5052,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Study Area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Study Area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Study Area | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Study Area.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Teleport"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kirlia",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Study Area. Zo werk je gericht aan Ralts."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Study Area; dat is de eerste habitat die je voor Ralts kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 232,
@@ -5074,18 +5074,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Study Area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Moisturizing makeup stand (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Study Area (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Moisturizing makeup stand (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Study Area / Moisturizing makeup stand | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Study Area / Moisturizing makeup stand.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Teleport"
     ],
     "evolvesFrom": "Ralts",
     "evolvesInto": "Gardevoir / Gallade",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Study Area. Zo werk je gericht aan Kirlia."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Study Area; dat is de eerste habitat die je voor Kirlia kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 233,
@@ -5096,10 +5096,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Moisturizing makeup stand (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Mini library (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Moisturizing makeup stand (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Mini library (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Moisturizing makeup stand / Mini library | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Moisturizing makeup stand / Mini library.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Teleport",
@@ -5107,8 +5107,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Kirlia",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Moisturizing makeup stand. Zo werk je gericht aan Gardevoir."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Moisturizing makeup stand; dat is de eerste habitat die je voor Gardevoir kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 234,
@@ -5119,10 +5119,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Dojo training (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Dojo training (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Dojo training | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Dojo training.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Teleport",
@@ -5130,8 +5130,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Kirlia",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Dojo training. Zo werk je gericht aan Gallade."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Dojo training; dat is de eerste habitat die je voor Gallade kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 235,
@@ -5141,10 +5141,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Picturesque photo cutout board (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Picturesque photo cutout board (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Picturesque photo cutout board | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Picturesque photo cutout board.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate"
@@ -5152,7 +5152,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Picturesque photo cutout board. Zo werk je gericht aan Plusle."
+    "tip": "Begin met Picturesque photo cutout board; dat is de eerste habitat die je voor Plusle kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 236,
@@ -5162,10 +5162,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Picturesque photo cutout board (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Picturesque photo cutout board (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Picturesque photo cutout board | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Picturesque photo cutout board.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate"
@@ -5173,7 +5173,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Picturesque photo cutout board. Zo werk je gericht aan Minun."
+    "tip": "Begin met Picturesque photo cutout board; dat is de eerste habitat die je voor Minun kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 237,
@@ -5183,10 +5183,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Pink tall grass | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Pink tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Bulldoze",
@@ -5194,8 +5194,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Vibrava",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pink tall grass. Zo werk je gericht aan Trapinch."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Pink tall grass; dat is de eerste habitat die je voor Trapinch kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 238,
@@ -5206,10 +5206,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Pink tall grass | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Pink tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Bulldoze",
@@ -5217,8 +5217,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Trapinch",
     "evolvesInto": "Flygon",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pink tall grass. Zo werk je gericht aan Vibrava."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Pink tall grass; dat is de eerste habitat die je voor Vibrava kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 239,
@@ -5229,10 +5229,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Pink tall grass | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Pink tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Bulldoze",
@@ -5240,8 +5240,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Vibrava",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pink tall grass. Zo werk je gericht aan Flygon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Pink tall grass; dat is de eerste habitat die je voor Flygon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 240,
@@ -5252,18 +5252,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Pink tall grass | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Pink tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Litter"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Altaria",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pink tall grass. Zo werk je gericht aan Swablu."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Pink tall grass; dat is de eerste habitat die je voor Swablu kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 241,
@@ -5274,10 +5274,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Birdsong garden (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Birdsong garden (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Birdsong garden | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Birdsong garden.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Litter",
@@ -5285,8 +5285,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Swablu",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Birdsong garden. Zo werk je gericht aan Altaria."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Birdsong garden; dat is de eerste habitat die je voor Altaria kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 242,
@@ -5296,18 +5296,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Pink tall grass (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Pink tall grass (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Pink tall grass | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Pink tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dusclops",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pink tall grass. Zo werk je gericht aan Duskull."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Pink tall grass; dat is de eerste habitat die je voor Duskull kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 243,
@@ -5317,18 +5317,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Trash site TV (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Trash site TV (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Trash site TV | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Trash site TV.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather"
     ],
     "evolvesFrom": "Duskull",
     "evolvesInto": "Dusknoir",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash site TV. Zo werk je gericht aan Dusclops."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Trash site TV; dat is de eerste habitat die je voor Dusclops kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 244,
@@ -5338,10 +5338,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Trash site TV (Tijd: Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Trash site TV (Tijd: Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Trash site TV | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Trash site TV.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather",
@@ -5349,8 +5349,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dusclops",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash site TV. Zo werk je gericht aan Dusknoir."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Trash site TV; dat is de eerste habitat die je voor Dusknoir kunt proberen. Let op: Night, Sun, Cloud, Rain."
   },
   {
     "number": 245,
@@ -5361,18 +5361,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Cycling rest stop (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Cycling rest stop (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Cycling rest stop | Ideale omgeving: Cool",
-    "obtainMethod": "Maak een geschikt habitat: Cycling rest stop.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Recycle"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Metang",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Cycling rest stop. Zo werk je gericht aan Beldum."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Cycling rest stop; dat is de eerste habitat die je voor Beldum kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 246,
@@ -5383,18 +5383,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Professor's apprentice program (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Professor's apprentice program (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Professor's apprentice program | Ideale omgeving: Cool",
-    "obtainMethod": "Maak een geschikt habitat: Professor's apprentice program.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Recycle"
     ],
     "evolvesFrom": "Beldum",
     "evolvesInto": "Metagross",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Professor's apprentice program. Zo werk je gericht aan Metang."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Professor's apprentice program; dat is de eerste habitat die je voor Metang kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 247,
@@ -5405,10 +5405,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Gamer's paradise (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Gamer's paradise (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Gamer's paradise | Ideale omgeving: Cool",
-    "obtainMethod": "Maak een geschikt habitat: Gamer's paradise.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Recycle",
@@ -5416,8 +5416,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Metang",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Gamer's paradise. Zo werk je gericht aan Metagross."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Gamer's paradise; dat is de eerste habitat die je voor Metagross kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 248,
@@ -5427,18 +5427,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Playland (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Playland (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Playland | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Playland.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Servine",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Playland. Zo werk je gericht aan Snivy."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Playland; dat is de eerste habitat die je voor Snivy kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 249,
@@ -5448,10 +5448,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Tree-shaded fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Tree-shaded fluffy flower bed | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded fluffy flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -5459,8 +5459,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Snivy",
     "evolvesInto": "Serperior",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded fluffy flower bed. Zo werk je gericht aan Servine."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded fluffy flower bed; dat is de eerste habitat die je voor Servine kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 250,
@@ -5470,10 +5470,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Public reading material (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Tree-shaded fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Public reading material (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Tree-shaded fluffy flower bed / Public reading material | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded fluffy flower bed / Public reading material.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -5481,8 +5481,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Servine",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded fluffy flower bed. Zo werk je gericht aan Serperior."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded fluffy flower bed; dat is de eerste habitat die je voor Serperior kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 251,
@@ -5492,18 +5492,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Hydrated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Hydrated pink tall grass | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated pink tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Frogadier",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated pink tall grass. Zo werk je gericht aan Froakie."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated pink tall grass; dat is de eerste habitat die je voor Froakie kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 252,
@@ -5513,18 +5513,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Prank button (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Hydrated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Prank button (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Hydrated pink tall grass / Prank button | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated pink tall grass / Prank button.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "Froakie",
     "evolvesInto": "Greninja",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated pink tall grass. Zo werk je gericht aan Frogadier."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated pink tall grass; dat is de eerste habitat die je voor Frogadier kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 253,
@@ -5535,10 +5535,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Hydrated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Prank button (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Hydrated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Prank button (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Hydrated pink tall grass / Prank button | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Hydrated pink tall grass / Prank button.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water",
@@ -5546,8 +5546,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Frogadier",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated pink tall grass. Zo werk je gericht aan Greninja."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Hydrated pink tall grass; dat is de eerste habitat die je voor Greninja kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 254,
@@ -5558,10 +5558,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tire Park (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Tire Park (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tire Park | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Tire Park.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
@@ -5569,7 +5569,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tire Park. Zo werk je gericht aan Dedenne."
+    "tip": "Begin met Tire Park; dat is de eerste habitat die je voor Dedenne kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 255,
@@ -5580,18 +5580,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Rhythmic Living room (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Rhythmic Living room (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Rhythmic Living room | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Rhythmic Living room.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Noivern",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Rhythmic Living room. Zo werk je gericht aan Noibat."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Rhythmic Living room; dat is de eerste habitat die je voor Noibat kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 256,
@@ -5602,10 +5602,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Rhythmic Living room (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Rhythmic Living room (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Rhythmic Living room | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Rhythmic Living room.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search",
@@ -5613,8 +5613,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Noibat",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Rhythmic Living room. Zo werk je gericht aan Noivern."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Rhythmic Living room; dat is de eerste habitat die je voor Noivern kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 257,
@@ -5624,18 +5624,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Fluffy flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Fluffy flower bed | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Fluffy flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Chop"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Corvisquire",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fluffy flower bed. Zo werk je gericht aan Rookidee."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Fluffy flower bed; dat is de eerste habitat die je voor Rookidee kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 258,
@@ -5645,18 +5645,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Elevated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Elevated pink tall grass | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Elevated pink tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Chop"
     ],
     "evolvesFrom": "Rookidee",
     "evolvesInto": "Corviknight",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated pink tall grass. Zo werk je gericht aan Corvisquire."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated pink tall grass; dat is de eerste habitat die je voor Corvisquire kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 259,
@@ -5667,10 +5667,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Sewer hole inspection (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Elevated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Very Rare) ; Sewer hole inspection (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
     "habitat": "Elevated pink tall grass / Sewer hole inspection | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Elevated pink tall grass / Sewer hole inspection.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Chop",
@@ -5678,8 +5678,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Corvisquire",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated pink tall grass. Zo werk je gericht aan Corviknight."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated pink tall grass; dat is de eerste habitat die je voor Corviknight kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 260,
@@ -5690,10 +5690,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Tree-shaded pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded pink tall grass | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded pink tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather",
@@ -5701,8 +5701,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Drakloak",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded pink tall grass. Zo werk je gericht aan Dreepy."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded pink tall grass; dat is de eerste habitat die je voor Dreepy kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 261,
@@ -5713,10 +5713,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Office storeroom (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Tree-shaded pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare) ; Office storeroom (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded pink tall grass / Office storeroom | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded pink tall grass / Office storeroom.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather",
@@ -5724,8 +5724,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dreepy",
     "evolvesInto": "Dragapult",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded pink tall grass. Zo werk je gericht aan Drakloak."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded pink tall grass; dat is de eerste habitat die je voor Drakloak kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 262,
@@ -5736,10 +5736,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Office storeroom (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Office storeroom (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Office storeroom | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Office storeroom.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather",
@@ -5747,8 +5747,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Drakloak",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Office storeroom. Zo werk je gericht aan Dragapult."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Office storeroom; dat is de eerste habitat die je voor Dragapult kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 263,
@@ -5758,18 +5758,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tree-shaded pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Interrogation desk (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Tree-shaded pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Interrogation desk (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tree-shaded pink tall grass / Interrogation desk | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Tree-shaded pink tall grass / Interrogation desk.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Floragato",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded pink tall grass. Zo werk je gericht aan Sprigatito."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tree-shaded pink tall grass; dat is de eerste habitat die je voor Sprigatito kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 264,
@@ -5779,18 +5779,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Interrogation desk (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Interrogation desk (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Interrogation desk | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Interrogation desk.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow"
     ],
     "evolvesFrom": "Sprigatito",
     "evolvesInto": "Meowscarada",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Interrogation desk. Zo werk je gericht aan Floragato."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Interrogation desk; dat is de eerste habitat die je voor Floragato kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 265,
@@ -5801,10 +5801,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Heart-pounding surprise box (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Heart-pounding surprise box (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Heart-pounding surprise box | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Heart-pounding surprise box.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow",
@@ -5812,8 +5812,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Floragato",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Heart-pounding surprise box. Zo werk je gericht aan Meowscarada."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Heart-pounding surprise box; dat is de eerste habitat die je voor Meowscarada kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 266,
@@ -5824,18 +5824,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Elevated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Elevated pink tall grass | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Elevated pink tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kilowattrel",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated pink tall grass. Zo werk je gericht aan Wattrel."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated pink tall grass; dat is de eerste habitat die je voor Wattrel kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 267,
@@ -5846,10 +5846,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Elevated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Elevated pink tall grass (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Elevated pink tall grass | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Elevated pink tall grass.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate",
@@ -5857,8 +5857,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Wattrel",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated pink tall grass. Zo werk je gericht aan Kilowattrel."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elevated pink tall grass; dat is de eerste habitat die je voor Kilowattrel kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 268,
@@ -5869,18 +5869,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Palette Town / Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands",
-    "area": "Large luggage carrier (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Oversized dumping ground (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain) ; Sewer hole inspection (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Palette Town",
+    "area": "Large luggage carrier (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Oversized dumping ground (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common) ; Sewer hole inspection (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
     "habitat": "Large luggage carrier / Oversized dumping ground / Sewer hole inspection | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Large luggage carrier / Oversized dumping ground / Sewer hole inspection.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Tinkatuff",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Large luggage carrier. Zo werk je gericht aan Tinkatink."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Large luggage carrier; dat is de eerste habitat die je voor Tinkatink kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 269,
@@ -5891,18 +5891,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Large luggage carrier (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Palette Town",
+    "area": "Large luggage carrier (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Rare)",
     "habitat": "Large luggage carrier | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Large luggage carrier.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Build"
     ],
     "evolvesFrom": "Tinkatink",
     "evolvesInto": "Tinkaton",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Large luggage carrier. Zo werk je gericht aan Tinkatuff."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Large luggage carrier; dat is de eerste habitat die je voor Tinkatuff kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 270,
@@ -5913,18 +5913,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Oversized dumping ground (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Sparkling Skylands",
+    "area": "Oversized dumping ground (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Oversized dumping ground | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Oversized dumping ground.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Engineer"
     ],
     "evolvesFrom": "Tinkatuff",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Oversized dumping ground. Zo werk je gericht aan Tinkaton."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Oversized dumping ground; dat is de eerste habitat die je voor Tinkaton kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 271,
@@ -5935,10 +5935,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Wing Fossil Display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Wing Fossil Display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Wing Fossil Display | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Wing Fossil Display.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Fly"
@@ -5946,7 +5946,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Wing Fossil Display. Zo werk je gericht aan Aerodactyl."
+    "tip": "Begin met Wing Fossil Display; dat is de eerste habitat die je voor Aerodactyl kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 272,
@@ -5956,18 +5956,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Skull Fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Skull Fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Skull Fossil display | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Skull Fossil display.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Rampardos",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Skull Fossil display. Zo werk je gericht aan Cranidos."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Skull Fossil display; dat is de eerste habitat die je voor Cranidos kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 273,
@@ -5977,10 +5977,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Headbutt Fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Headbutt Fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Headbutt Fossil display | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Headbutt Fossil display.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush",
@@ -5988,8 +5988,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Cranidos",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Headbutt Fossil display. Zo werk je gericht aan Rampardos."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Headbutt Fossil display; dat is de eerste habitat die je voor Rampardos kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 274,
@@ -6000,18 +6000,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Armor Fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Armor Fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Armor Fossil display | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Armor Fossil display.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Bastiodon",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Armor Fossil display. Zo werk je gericht aan Shieldon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Armor Fossil display; dat is de eerste habitat die je voor Shieldon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 275,
@@ -6022,10 +6022,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Shield Fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Shield Fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Shield Fossil display | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Shield Fossil display.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush",
@@ -6033,8 +6033,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Shieldon",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Shield Fossil display. Zo werk je gericht aan Bastiodon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Shield Fossil display; dat is de eerste habitat die je voor Bastiodon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 276,
@@ -6045,18 +6045,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Jaw Fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Jaw Fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Jaw Fossil display | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Jaw Fossil display.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Tyrantrum",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Jaw Fossil display. Zo werk je gericht aan Tyrunt."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Jaw Fossil display; dat is de eerste habitat die je voor Tyrunt kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 277,
@@ -6067,10 +6067,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Despot fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Despot fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Despot fossil display | Ideale omgeving: Dry",
-    "obtainMethod": "Maak een geschikt habitat: Despot fossil display.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush",
@@ -6078,8 +6078,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tyrunt",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Despot fossil display. Zo werk je gericht aan Tyrantrum."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Despot fossil display; dat is de eerste habitat die je voor Tyrantrum kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 278,
@@ -6090,18 +6090,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Sail Fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Sail Fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Sail Fossil display | Ideale omgeving: Cool",
-    "obtainMethod": "Maak een geschikt habitat: Sail Fossil display.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Aurorus",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Sail Fossil display. Zo werk je gericht aan Amaura."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Sail Fossil display; dat is de eerste habitat die je voor Amaura kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 279,
@@ -6112,10 +6112,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Tundra fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Rocky Ridges",
+    "area": "Tundra fossil display (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Tundra fossil display | Ideale omgeving: Cool",
-    "obtainMethod": "Maak een geschikt habitat: Tundra fossil display.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Crush",
@@ -6123,8 +6123,8 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Amaura",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tundra fossil display. Zo werk je gericht aan Aurorus."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Tundra fossil display; dat is de eerste habitat die je voor Aurorus kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 280,
@@ -6134,18 +6134,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town",
-    "area": "Pretty flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "location": "Palette Town",
+    "area": "Pretty flower bed (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Pretty flower bed | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Pretty flower bed.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Vaporeon / Jolteon / Flareon / Espeon / Umbreon / Leafeon / Glaceon / Sylveon",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pretty flower bed. Zo werk je gericht aan Eevee."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Pretty flower bed; dat is de eerste habitat die je voor Eevee kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 281,
@@ -6156,17 +6156,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Boundless blue beverage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Boundless blue beverage (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Boundless blue beverage | Ideale omgeving: Humid",
-    "obtainMethod": "Maak een geschikt habitat: Boundless blue beverage.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Water"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Boundless blue beverage. Zo werk je gericht aan Vaporeon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Boundless blue beverage; dat is de eerste habitat die je voor Vaporeon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 282,
@@ -6177,17 +6177,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Electrifying potatoes (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Electrifying potatoes (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Electrifying potatoes | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Electrifying potatoes.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Generate"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Electrifying potatoes. Zo werk je gericht aan Jolteon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Electrifying potatoes; dat is de eerste habitat die je voor Jolteon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 283,
@@ -6198,17 +6198,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Burning-hot spice (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Burning-hot spice (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Burning-hot spice | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Burning-hot spice.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Burn"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Burning-hot spice. Zo werk je gericht aan Flareon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Burning-hot spice; dat is de eerste habitat die je voor Flareon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 284,
@@ -6219,17 +6219,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Elegant daytime treats (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Elegant daytime treats (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Elegant daytime treats | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Elegant daytime treats.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Gather"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Elegant daytime treats. Zo werk je gericht aan Espeon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Elegant daytime treats; dat is de eerste habitat die je voor Espeon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 285,
@@ -6240,17 +6240,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Dark-chocolate cookies (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Dark-chocolate cookies (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Dark-chocolate cookies | Ideale omgeving: Dark",
-    "obtainMethod": "Maak een geschikt habitat: Dark-chocolate cookies.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Search"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Dark-chocolate cookies. Zo werk je gericht aan Umbreon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Dark-chocolate cookies; dat is de eerste habitat die je voor Umbreon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 286,
@@ -6261,17 +6261,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Leafy greens sandwich (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Leafy greens sandwich (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Leafy greens sandwich | Ideale omgeving: Bright",
-    "obtainMethod": "Maak een geschikt habitat: Leafy greens sandwich.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Grow"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Leafy greens sandwich. Zo werk je gericht aan Leafeon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Leafy greens sandwich; dat is de eerste habitat die je voor Leafeon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 287,
@@ -6282,17 +6282,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Chilly shaved ice (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Chilly shaved ice (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Chilly shaved ice | Ideale omgeving: Cool",
-    "obtainMethod": "Maak een geschikt habitat: Chilly shaved ice.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Trade"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Chilly shaved ice. Zo werk je gericht aan Glaceon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Chilly shaved ice; dat is de eerste habitat die je voor Glaceon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 288,
@@ -6303,17 +6303,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town",
-    "area": "Lovely ribbon cake (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
+    "area": "Lovely ribbon cake (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain | Zeldzaamheid: Common)",
     "habitat": "Lovely ribbon cake | Ideale omgeving: Warm",
-    "obtainMethod": "Maak een geschikt habitat: Lovely ribbon cake.",
+    "obtainMethod": "Maak één van de genoemde habitats en voldoe aan de tijd- en weersvoorwaarden.",
     "requirements": "",
     "specialties": [
       "Hype"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Lovely ribbon cake. Zo werk je gericht aan Sylveon."
+    "evolutionMethod": "Pokémon evolueren niet in Pokopia; bevriend elke soort afzonderlijk.",
+    "tip": "Begin met Lovely ribbon cake; dat is de eerste habitat die je voor Sylveon kunt proberen. Let op: Morning, Day, Evening, Night, Sun, Cloud, Rain."
   },
   {
     "number": 289,
@@ -6323,16 +6323,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "",
+    "location": "Dream Island",
     "area": "",
     "habitat": "Ideale omgeving: Humid",
-    "obtainMethod": "",
+    "obtainMethod": "Deze Pokémon is gekoppeld aan Dream Island.",
     "requirements": "",
-    "specialties": [],
+    "specialties": [
+      "???"
+    ],
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": ""
+    "tip": "Richt je eerst op Dream Island en controleer daar de Pokédex-aanwijzingen voor Kyogre."
   },
   {
     "number": 290,
@@ -6342,10 +6344,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "",
+    "location": "Dream Island",
     "area": "",
     "habitat": "Ideale omgeving: Bright",
-    "obtainMethod": "",
+    "obtainMethod": "Deze Pokémon is gekoppeld aan Dream Island.",
     "requirements": "",
     "specialties": [
       "Generate"
@@ -6353,7 +6355,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": ""
+    "tip": "Richt je eerst op Dream Island en controleer daar de Pokédex-aanwijzingen voor Raikou."
   },
   {
     "number": 291,
@@ -6363,10 +6365,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "",
+    "location": "Dream Island",
     "area": "",
     "habitat": "Ideale omgeving: Warm",
-    "obtainMethod": "",
+    "obtainMethod": "Deze Pokémon is gekoppeld aan Dream Island.",
     "requirements": "",
     "specialties": [
       "Burn"
@@ -6374,7 +6376,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": ""
+    "tip": "Richt je eerst op Dream Island en controleer daar de Pokédex-aanwijzingen voor Entei."
   },
   {
     "number": 292,
@@ -6384,10 +6386,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "",
+    "location": "Dream Island",
     "area": "",
     "habitat": "Ideale omgeving: Humid",
-    "obtainMethod": "",
+    "obtainMethod": "Deze Pokémon is gekoppeld aan Dream Island.",
     "requirements": "",
     "specialties": [
       "Water"
@@ -6395,7 +6397,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": ""
+    "tip": "Richt je eerst op Dream Island en controleer daar de Pokédex-aanwijzingen voor Suicune."
   },
   {
     "number": 293,
@@ -6406,10 +6408,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "",
+    "location": "Dream Island",
     "area": "",
     "habitat": "Ideale omgeving: Warm",
-    "obtainMethod": "",
+    "obtainMethod": "Deze Pokémon is gekoppeld aan Dream Island.",
     "requirements": "",
     "specialties": [
       "Burn"
@@ -6417,7 +6419,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": ""
+    "tip": "Richt je eerst op Dream Island en controleer daar de Pokédex-aanwijzingen voor Volcanion."
   },
   {
     "number": 294,
@@ -6428,10 +6430,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "",
+    "location": "Dream Island",
     "area": "",
     "habitat": "Ideale omgeving: Cool",
-    "obtainMethod": "",
+    "obtainMethod": "Deze Pokémon is gekoppeld aan Dream Island.",
     "requirements": "",
     "specialties": [
       "Fly"
@@ -6439,7 +6441,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": ""
+    "tip": "Richt je eerst op Dream Island en controleer daar de Pokédex-aanwijzingen voor Articuno."
   },
   {
     "number": 295,
@@ -6450,10 +6452,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "",
+    "location": "Dream Island",
     "area": "",
     "habitat": "Ideale omgeving: Bright",
-    "obtainMethod": "",
+    "obtainMethod": "Deze Pokémon is gekoppeld aan Dream Island.",
     "requirements": "",
     "specialties": [
       "Fly"
@@ -6461,7 +6463,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": ""
+    "tip": "Richt je eerst op Dream Island en controleer daar de Pokédex-aanwijzingen voor Zapdos."
   },
   {
     "number": 296,
@@ -6472,10 +6474,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "",
+    "location": "Dream Island",
     "area": "",
     "habitat": "Ideale omgeving: Warm",
-    "obtainMethod": "",
+    "obtainMethod": "Deze Pokémon is gekoppeld aan Dream Island.",
     "requirements": "",
     "specialties": [
       "Fly"
@@ -6483,7 +6485,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": ""
+    "tip": "Richt je eerst op Dream Island en controleer daar de Pokédex-aanwijzingen voor Moltres."
   },
   {
     "number": 297,
@@ -6494,16 +6496,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "",
+    "location": "Dream Island",
     "area": "",
     "habitat": "Ideale omgeving: Humid",
-    "obtainMethod": "",
+    "obtainMethod": "Deze Pokémon is gekoppeld aan Dream Island.",
     "requirements": "",
-    "specialties": [],
+    "specialties": [
+      "???"
+    ],
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": ""
+    "tip": "Richt je eerst op Dream Island en controleer daar de Pokédex-aanwijzingen voor Lugia."
   },
   {
     "number": 298,
@@ -6514,16 +6518,18 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "",
+    "location": "Dream Island",
     "area": "",
     "habitat": "Ideale omgeving: Warm",
-    "obtainMethod": "",
+    "obtainMethod": "Deze Pokémon is gekoppeld aan Dream Island.",
     "requirements": "",
-    "specialties": [],
+    "specialties": [
+      "???"
+    ],
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": ""
+    "tip": "Richt je eerst op Dream Island en controleer daar de Pokédex-aanwijzingen voor Ho-Oh."
   },
   {
     "number": 299,
@@ -6533,10 +6539,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "",
+    "location": "Dream Island",
     "area": "",
     "habitat": "Ideale omgeving: Dark",
-    "obtainMethod": "",
+    "obtainMethod": "Deze Pokémon is gekoppeld aan Dream Island.",
     "requirements": "",
     "specialties": [
       "Teleport"
@@ -6544,7 +6550,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": ""
+    "tip": "Richt je eerst op Dream Island en controleer daar de Pokédex-aanwijzingen voor Mewtwo."
   },
   {
     "number": 300,
@@ -6554,17 +6560,17 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands",
-    "area": "Ondergrondse shrine / Mysterious Mural",
+    "location": "Mysterious Mural",
+    "area": "",
     "habitat": "Ideale omgeving: Warm",
-    "obtainMethod": "Verzamel alle Mysterious Slates en plaats ze bij de ondergrondse shrine in Withered Wastelands.",
-    "requirements": "Alle Mysterious Slates.",
+    "obtainMethod": "Verzamel alle 27 Mysterious Slates en plaats ze op de Mysterious Mural om Mew te krijgen.",
+    "requirements": "Alle 27 Mysterious Slates verzamelen.",
     "specialties": [
       "Teleport"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: behandel Mew niet als een gewone habitat-spawn. Verzamel eerst alle Mysterious Slates en ga daarna naar de ondergrondse shrine in Withered Wastelands."
+    "tip": "Werk gericht aan de 27 Mysterious Slates; zodra de Mysterious Mural compleet is, kun je Mew krijgen."
   }
 ];

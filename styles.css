@@ -1,1 +1,67 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  margin-top: 8px;
+  color: #666;
+}
+
+#app {
+  width: min(1100px, 92%);
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+#app section {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+#app section h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+#app section p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  #app {
+    width: 94%;
+    margin-top: 20px;
+  }
+
+  #app section {
+    padding: 16px;
+  }
+}

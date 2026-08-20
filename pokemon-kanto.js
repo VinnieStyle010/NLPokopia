@@ -1,6 +1,6 @@
 // NLPokopia - Hoofd-Pokédex #001 t/m #300
-// Gegenereerd als één vervangend databestand.
-// requirements/evolutionMethod blijven leeg waar die nog niet individueel zijn geverifieerd.
+// Correctieronde 1: Pokopia-volgorde, types, habitats, tijden/weerscondities en specialties.
+// Speciale Pokémon zonder gewone habitat blijven leeg waar verkrijgmethode nog niet individueel is geverifieerd.
 
 const pokemonKanto = [
   {
@@ -89,7 +89,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Charmeleon",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tall Grass. Dat is de duidelijkste plek om voor Charmander te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tall Grass. Zo werk je gericht aan Charmander."
   },
   {
     "number": 5,
@@ -110,7 +110,7 @@ const pokemonKanto = [
     "evolvesFrom": "Charmander",
     "evolvesInto": "Charizard",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Campsite. Dat is de duidelijkste plek om voor Charmeleon te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Campsite. Zo werk je gericht aan Charmeleon."
   },
   {
     "number": 6,
@@ -133,7 +133,7 @@ const pokemonKanto = [
     "evolvesFrom": "Charmeleon",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tall Grass. Dat is de duidelijkste plek om voor Charizard te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tall Grass. Zo werk je gericht aan Charizard."
   },
   {
     "number": 7,
@@ -154,7 +154,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Wartortle",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tall Grass. Dat is de duidelijkste plek om voor Squirtle te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tall Grass. Zo werk je gericht aan Squirtle."
   },
   {
     "number": 8,
@@ -175,7 +175,7 @@ const pokemonKanto = [
     "evolvesFrom": "Squirtle",
     "evolvesInto": "Blastoise",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated tall grass. Dat is de duidelijkste plek om voor Wartortle te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated tall grass. Zo werk je gericht aan Wartortle."
   },
   {
     "number": 9,
@@ -197,7 +197,7 @@ const pokemonKanto = [
     "evolvesFrom": "Wartortle",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated tall grass. Dat is de duidelijkste plek om voor Blastoise te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated tall grass. Zo werk je gericht aan Blastoise."
   },
   {
     "number": 10,
@@ -220,7 +220,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Pidgeotto",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated tall grass. Dat is de duidelijkste plek om voor Pidgey te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated tall grass. Zo werk je gericht aan Pidgey."
   },
   {
     "number": 11,
@@ -243,7 +243,7 @@ const pokemonKanto = [
     "evolvesFrom": "Pidgey",
     "evolvesInto": "Pidgeot",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated tall grass. Dat is de duidelijkste plek om voor Pidgeotto te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated tall grass. Zo werk je gericht aan Pidgeotto."
   },
   {
     "number": 12,
@@ -266,7 +266,7 @@ const pokemonKanto = [
     "evolvesFrom": "Pidgeotto",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Luxury chirp-chirp meal. Dat is de duidelijkste plek om voor Pidgeot te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Luxury chirp-chirp meal. Zo werk je gericht aan Pidgeot."
   },
   {
     "number": 13,
@@ -288,7 +288,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Gloom",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tall Grass. Dat is de duidelijkste plek om voor Oddish te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tall Grass. Zo werk je gericht aan Oddish."
   },
   {
     "number": 14,
@@ -310,7 +310,7 @@ const pokemonKanto = [
     "evolvesFrom": "Oddish",
     "evolvesInto": "Vileplume / Bellossom",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Tropical vibes. Dat is de duidelijkste plek om voor Gloom te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tropical vibes. Zo werk je gericht aan Gloom."
   },
   {
     "number": 15,
@@ -333,7 +333,7 @@ const pokemonKanto = [
     "evolvesFrom": "Gloom",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chansey Resting area. Dat is de duidelijkste plek om voor Vileplume te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chansey Resting area. Zo werk je gericht aan Vileplume."
   },
   {
     "number": 16,
@@ -355,7 +355,7 @@ const pokemonKanto = [
     "evolvesFrom": "Gloom",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chansey Resting area. Dat is de duidelijkste plek om voor Bellossom te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chansey Resting area. Zo werk je gericht aan Bellossom."
   },
   {
     "number": 17,
@@ -377,7 +377,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Parasect",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated flower bed. Dat is de duidelijkste plek om voor Paras te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated flower bed. Zo werk je gericht aan Paras."
   },
   {
     "number": 18,
@@ -399,7 +399,7 @@ const pokemonKanto = [
     "evolvesFrom": "Paras",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated flower bed. Dat is de duidelijkste plek om voor Parasect te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated flower bed. Zo werk je gericht aan Parasect."
   },
   {
     "number": 19,
@@ -421,7 +421,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Venomoth",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Illuminated tall grass. Dat is de duidelijkste plek om voor Venonat te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Illuminated tall grass. Zo werk je gericht aan Venonat."
   },
   {
     "number": 20,
@@ -443,7 +443,7 @@ const pokemonKanto = [
     "evolvesFrom": "Venonat",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Illuminated tall grass. Dat is de duidelijkste plek om voor Venomoth te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Illuminated tall grass. Zo werk je gericht aan Venomoth."
   },
   {
     "number": 21,
@@ -466,7 +466,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Weepinbell",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded  tall grass. Dat is de duidelijkste plek om voor Bellsprout te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded  tall grass. Zo werk je gericht aan Bellsprout."
   },
   {
     "number": 22,
@@ -489,7 +489,7 @@ const pokemonKanto = [
     "evolvesFrom": "Bellsprout",
     "evolvesInto": "Victreebel",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Flowery table. Dat is de duidelijkste plek om voor Weepinbell te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Flowery table. Zo werk je gericht aan Weepinbell."
   },
   {
     "number": 23,
@@ -512,7 +512,7 @@ const pokemonKanto = [
     "evolvesFrom": "Weepinbell",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Flowery table. Dat is de duidelijkste plek om voor Victreebel te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Flowery table. Zo werk je gericht aan Victreebel."
   },
   {
     "number": 24,
@@ -535,7 +535,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Slowbro / Slowking",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Seaside Tall Grass. Dat is de duidelijkste plek om voor Slowpoke te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Seaside Tall Grass. Zo werk je gericht aan Slowpoke."
   },
   {
     "number": 25,
@@ -558,7 +558,7 @@ const pokemonKanto = [
     "evolvesFrom": "Slowpoke",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Seaside Tall Grass. Dat is de duidelijkste plek om voor Slowbro te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Seaside Tall Grass. Zo werk je gericht aan Slowbro."
   },
   {
     "number": 26,
@@ -581,7 +581,7 @@ const pokemonKanto = [
     "evolvesFrom": "Slowpoke",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Seaside Tall Grass. Dat is de duidelijkste plek om voor Slowking te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Seaside Tall Grass. Zo werk je gericht aan Slowking."
   },
   {
     "number": 27,
@@ -603,7 +603,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Magneton",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Factory Storage. Dat is de duidelijkste plek om voor Magnemite te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Factory Storage. Zo werk je gericht aan Magnemite."
   },
   {
     "number": 28,
@@ -625,7 +625,7 @@ const pokemonKanto = [
     "evolvesFrom": "Magnemite",
     "evolvesInto": "Magnezone",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Trash can central. Dat is de duidelijkste plek om voor Magneton te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash can central. Zo werk je gericht aan Magneton."
   },
   {
     "number": 29,
@@ -648,7 +648,7 @@ const pokemonKanto = [
     "evolvesFrom": "Magneton",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Trash can central. Dat is de duidelijkste plek om voor Magnezone te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash can central. Zo werk je gericht aan Magnezone."
   },
   {
     "number": 30,
@@ -671,7 +671,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Steelix",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Smooth tall grass. Dat is de duidelijkste plek om voor Onix te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Smooth tall grass. Zo werk je gericht aan Onix."
   },
   {
     "number": 31,
@@ -694,7 +694,7 @@ const pokemonKanto = [
     "evolvesFrom": "Onix",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Clink-clang iron construction. Dat is de duidelijkste plek om voor Steelix te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Clink-clang iron construction. Zo werk je gericht aan Steelix."
   },
   {
     "number": 32,
@@ -715,7 +715,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Marowak",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grave with flowers. Dat is de duidelijkste plek om voor Cubone te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grave with flowers. Zo werk je gericht aan Cubone."
   },
   {
     "number": 33,
@@ -736,7 +736,7 @@ const pokemonKanto = [
     "evolvesFrom": "Cubone",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grave with flowers. Dat is de duidelijkste plek om voor Marowak te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grave with flowers. Zo werk je gericht aan Marowak."
   },
   {
     "number": 34,
@@ -757,7 +757,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Hitmonlee / Hitmonchan / Hitmontop",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Training waterfall. Dat is de duidelijkste plek om voor Tyrogue te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Training waterfall. Zo werk je gericht aan Tyrogue."
   },
   {
     "number": 35,
@@ -778,7 +778,7 @@ const pokemonKanto = [
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Urgent Care. Dat is de duidelijkste plek om voor Hitmonlee te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Urgent Care. Zo werk je gericht aan Hitmonlee."
   },
   {
     "number": 36,
@@ -799,7 +799,7 @@ const pokemonKanto = [
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Exercise resting spot. Dat is de duidelijkste plek om voor Hitmonchan te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Exercise resting spot. Zo werk je gericht aan Hitmonchan."
   },
   {
     "number": 37,
@@ -820,7 +820,7 @@ const pokemonKanto = [
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Gym first aid. Dat is de duidelijkste plek om voor Hitmontop te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Gym first aid. Zo werk je gericht aan Hitmontop."
   },
   {
     "number": 38,
@@ -841,7 +841,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Weezing",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Trash collection site. Dat is de duidelijkste plek om voor Koffing te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Trash collection site. Zo werk je gericht aan Koffing."
   },
   {
     "number": 39,
@@ -862,7 +862,7 @@ const pokemonKanto = [
     "evolvesFrom": "Koffing",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Good old-fashioned antiques. Dat is de duidelijkste plek om voor Weezing te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Good old-fashioned antiques. Zo werk je gericht aan Weezing."
   },
   {
     "number": 40,
@@ -884,7 +884,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Tangrowth",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Nothin' but Poke Balls. Dat is de duidelijkste plek om voor Tangela te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Nothin' but Poke Balls. Zo werk je gericht aan Tangela."
   },
   {
     "number": 41,
@@ -894,7 +894,7 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Withered Wastelands",
+    "location": "",
     "area": "Bench with greenery (Tijd: Morning, Day, Evening, Night | Weer: Sun, Cloud, Rain)",
     "habitat": "Bench with greenery | Ideale omgeving: Humid",
     "obtainMethod": "Maak een geschikt habitat: Bench with greenery.",
@@ -906,7 +906,7 @@ const pokemonKanto = [
     "evolvesFrom": "Tangela",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Bench with greenery. Dat is de duidelijkste plek om voor Tangrowth te werken."
+    "tip": "Mijn tip: bouw eerst Bench with greenery. Zo werk je gericht aan Tangrowth."
   },
   {
     "number": 42,
@@ -928,7 +928,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Scizor",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded  tall grass. Dat is de duidelijkste plek om voor Scyther te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded  tall grass. Zo werk je gericht aan Scyther."
   },
   {
     "number": 43,
@@ -950,7 +950,7 @@ const pokemonKanto = [
     "evolvesFrom": "Scyther",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Tree-shaded  tall grass. Dat is de duidelijkste plek om voor Scizor te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Tree-shaded  tall grass. Zo werk je gericht aan Scizor."
   },
   {
     "number": 44,
@@ -972,7 +972,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded  tall grass. Dat is de duidelijkste plek om voor Pinsir te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded  tall grass. Zo werk je gericht aan Pinsir."
   },
   {
     "number": 45,
@@ -987,13 +987,11 @@ const pokemonKanto = [
     "habitat": "Ocean fishing spot | Ideale omgeving: Humid",
     "obtainMethod": "Maak een geschikt habitat: Ocean fishing spot.",
     "requirements": "",
-    "specialties": [
-      "???"
-    ],
+    "specialties": [],
     "evolvesFrom": "",
     "evolvesInto": "Gyarados",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Ocean fishing spot. Dat is de duidelijkste plek om voor Magikarp te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Ocean fishing spot. Zo werk je gericht aan Magikarp."
   },
   {
     "number": 46,
@@ -1015,7 +1013,7 @@ const pokemonKanto = [
     "evolvesFrom": "Magikarp",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Illuminated waterfall. Dat is de duidelijkste plek om voor Gyarados te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Illuminated waterfall. Zo werk je gericht aan Gyarados."
   },
   {
     "number": 47,
@@ -1025,10 +1023,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Dream Island",
+    "location": "",
     "area": "",
-    "habitat": " | Ideale omgeving: Bright",
-    "obtainMethod": "Zoek of speel verder in Dream Island.",
+    "habitat": "Ideale omgeving: Bright",
+    "obtainMethod": "",
     "requirements": "",
     "specialties": [
       "Transform"
@@ -1036,7 +1034,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: richt je eerst op Dream Island; daar hoort Ditto in Pokopia bij."
+    "tip": ""
   },
   {
     "number": 48,
@@ -1059,7 +1057,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Noctowl",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated tall grass. Dat is de duidelijkste plek om voor Hoothoot te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated tall grass. Zo werk je gericht aan Hoothoot."
   },
   {
     "number": 49,
@@ -1082,7 +1080,7 @@ const pokemonKanto = [
     "evolvesFrom": "Hoothoot",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated tall grass. Dat is de duidelijkste plek om voor Noctowl te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated tall grass. Zo werk je gericht aan Noctowl."
   },
   {
     "number": 50,
@@ -1105,7 +1103,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded  tall grass. Dat is de duidelijkste plek om voor Heracross te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded  tall grass. Zo werk je gericht aan Heracross."
   },
   {
     "number": 51,
@@ -1126,7 +1124,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated flower bed. Dat is de duidelijkste plek om voor Volbeat te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated flower bed. Zo werk je gericht aan Volbeat."
   },
   {
     "number": 52,
@@ -1147,7 +1145,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated flower bed. Dat is de duidelijkste plek om voor Illumise te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated flower bed. Zo werk je gericht aan Illumise."
   },
   {
     "number": 53,
@@ -1168,7 +1166,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Swalot",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tantalizing dining set. Dat is de duidelijkste plek om voor Gulpin te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tantalizing dining set. Zo werk je gericht aan Gulpin."
   },
   {
     "number": 54,
@@ -1189,7 +1187,7 @@ const pokemonKanto = [
     "evolvesFrom": "Gulpin",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Dinner table surprise. Dat is de duidelijkste plek om voor Swalot te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Dinner table surprise. Zo werk je gericht aan Swalot."
   },
   {
     "number": 55,
@@ -1210,7 +1208,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Cacturne",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Sunny Day site. Dat is de duidelijkste plek om voor Cacnea te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Sunny Day site. Zo werk je gericht aan Cacnea."
   },
   {
     "number": 56,
@@ -1233,7 +1231,7 @@ const pokemonKanto = [
     "evolvesFrom": "Cacnea",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded flower bed. Dat is de duidelijkste plek om voor Cacturne te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded flower bed. Zo werk je gericht aan Cacturne."
   },
   {
     "number": 57,
@@ -1255,7 +1253,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Vespiquen",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pretty flower bed. Dat is de duidelijkste plek om voor Combee te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pretty flower bed. Zo werk je gericht aan Combee."
   },
   {
     "number": 58,
@@ -1278,7 +1276,7 @@ const pokemonKanto = [
     "evolvesFrom": "Combee",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Field of Flowers. Dat is de duidelijkste plek om voor Vespiquen te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Field of Flowers. Zo werk je gericht aan Vespiquen."
   },
   {
     "number": 59,
@@ -1299,7 +1297,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Gastrodon",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Road Sign. Dat is de duidelijkste plek om voor Shellos te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Road Sign. Zo werk je gericht aan Shellos."
   },
   {
     "number": 60,
@@ -1322,7 +1320,7 @@ const pokemonKanto = [
     "evolvesFrom": "Shellos",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Ocean fishing spot. Dat is de duidelijkste plek om voor Gastrodon te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Ocean fishing spot. Zo werk je gericht aan Gastrodon."
   },
   {
     "number": 61,
@@ -1344,7 +1342,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Drifblim",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Riding warm updrafts. Dat is de duidelijkste plek om voor Drifloon te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Riding warm updrafts. Zo werk je gericht aan Drifloon."
   },
   {
     "number": 62,
@@ -1367,7 +1365,7 @@ const pokemonKanto = [
     "evolvesFrom": "Drifloon",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Plush central. Dat is de duidelijkste plek om voor Drifblim te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Plush central. Zo werk je gericht aan Drifblim."
   },
   {
     "number": 63,
@@ -1388,7 +1386,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Excadrill",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fresh Veggie Field. Dat is de duidelijkste plek om voor Drilbur te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fresh Veggie Field. Zo werk je gericht aan Drilbur."
   },
   {
     "number": 64,
@@ -1411,7 +1409,7 @@ const pokemonKanto = [
     "evolvesFrom": "Drilbur",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fresh Veggie Field. Dat is de duidelijkste plek om voor Excadrill te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fresh Veggie Field. Zo werk je gericht aan Excadrill."
   },
   {
     "number": 65,
@@ -1432,7 +1430,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Gurdurr",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Boulder-shaded Tall Grass. Dat is de duidelijkste plek om voor Timburr te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Boulder-shaded Tall Grass. Zo werk je gericht aan Timburr."
   },
   {
     "number": 66,
@@ -1453,7 +1451,7 @@ const pokemonKanto = [
     "evolvesFrom": "Timburr",
     "evolvesInto": "Conkeldurr",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Boulder-shaded Tall Grass. Dat is de duidelijkste plek om voor Gurdurr te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Boulder-shaded Tall Grass. Zo werk je gericht aan Gurdurr."
   },
   {
     "number": 67,
@@ -1475,7 +1473,7 @@ const pokemonKanto = [
     "evolvesFrom": "Gurdurr",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Construction-site generator. Dat is de duidelijkste plek om voor Conkeldurr te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Construction-site generator. Zo werk je gericht aan Conkeldurr."
   },
   {
     "number": 68,
@@ -1497,7 +1495,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Lampent",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grave offering. Dat is de duidelijkste plek om voor Litwick te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grave offering. Zo werk je gericht aan Litwick."
   },
   {
     "number": 69,
@@ -1519,7 +1517,7 @@ const pokemonKanto = [
     "evolvesFrom": "Litwick",
     "evolvesInto": "Chandelure",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grave offering. Dat is de duidelijkste plek om voor Lampent te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grave offering. Zo werk je gericht aan Lampent."
   },
   {
     "number": 70,
@@ -1541,7 +1539,7 @@ const pokemonKanto = [
     "evolvesFrom": "Lampent",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Creepy grave offering. Dat is de duidelijkste plek om voor Chandelure te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Creepy grave offering. Zo werk je gericht aan Chandelure."
   },
   {
     "number": 71,
@@ -1562,7 +1560,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Fraxure",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Lumberjack's workplace. Dat is de duidelijkste plek om voor Axew te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Lumberjack's workplace. Zo werk je gericht aan Axew."
   },
   {
     "number": 72,
@@ -1583,7 +1581,7 @@ const pokemonKanto = [
     "evolvesFrom": "Axew",
     "evolvesInto": "Haxorus",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Lumberjack's workplace. Dat is de duidelijkste plek om voor Fraxure te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Lumberjack's workplace. Zo werk je gericht aan Fraxure."
   },
   {
     "number": 73,
@@ -1605,7 +1603,7 @@ const pokemonKanto = [
     "evolvesFrom": "Fraxure",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Lumberjack's workplace. Dat is de duidelijkste plek om voor Haxorus te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Lumberjack's workplace. Zo werk je gericht aan Haxorus."
   },
   {
     "number": 74,
@@ -1626,7 +1624,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Sliggoo",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded flower bed. Dat is de duidelijkste plek om voor Goomy te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded flower bed. Zo werk je gericht aan Goomy."
   },
   {
     "number": 75,
@@ -1647,7 +1645,7 @@ const pokemonKanto = [
     "evolvesFrom": "Goomy",
     "evolvesInto": "Goodra",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated tall grass. Dat is de duidelijkste plek om voor Sliggoo te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated tall grass. Zo werk je gericht aan Sliggoo."
   },
   {
     "number": 76,
@@ -1669,7 +1667,7 @@ const pokemonKanto = [
     "evolvesFrom": "Sliggoo",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Very-berry space. Dat is de duidelijkste plek om voor Goodra te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Very-berry space. Zo werk je gericht aan Goodra."
   },
   {
     "number": 77,
@@ -1692,7 +1690,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Hydrated tall grass. Dat is de duidelijkste plek om voor Cramorant te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Hydrated tall grass. Zo werk je gericht aan Cramorant."
   },
   {
     "number": 78,
@@ -1713,7 +1711,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Pikachu",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Picnic Set. Dat is de duidelijkste plek om voor Pichu te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Picnic Set. Zo werk je gericht aan Pichu."
   },
   {
     "number": 79,
@@ -1734,7 +1732,7 @@ const pokemonKanto = [
     "evolvesFrom": "Pichu",
     "evolvesInto": "Raichu",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Picnic Set. Dat is de duidelijkste plek om voor Pikachu te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Picnic Set. Zo werk je gericht aan Pikachu."
   },
   {
     "number": 80,
@@ -1756,7 +1754,7 @@ const pokemonKanto = [
     "evolvesFrom": "Pikachu",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Nature's market. Dat is de duidelijkste plek om voor Raichu te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Nature's market. Zo werk je gericht aan Raichu."
   },
   {
     "number": 81,
@@ -1778,7 +1776,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Golbat",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Tree-shaded Yellow tall grass. Dat is de duidelijkste plek om voor Zubat te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded Yellow tall grass. Zo werk je gericht aan Zubat."
   },
   {
     "number": 82,
@@ -1800,7 +1798,7 @@ const pokemonKanto = [
     "evolvesFrom": "Zubat",
     "evolvesInto": "Crobat",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Tree-shaded Yellow tall grass. Dat is de duidelijkste plek om voor Golbat te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded Yellow tall grass. Zo werk je gericht aan Golbat."
   },
   {
     "number": 83,
@@ -1823,7 +1821,7 @@ const pokemonKanto = [
     "evolvesFrom": "Golbat",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Elevated yellow tall grass. Dat is de duidelijkste plek om voor Crobat te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated yellow tall grass. Zo werk je gericht aan Crobat."
   },
   {
     "number": 84,
@@ -1844,7 +1842,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Persian",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Resting spot. Dat is de duidelijkste plek om voor Meowth te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Resting spot. Zo werk je gericht aan Meowth."
   },
   {
     "number": 85,
@@ -1866,7 +1864,7 @@ const pokemonKanto = [
     "evolvesFrom": "Meowth",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Evil organization HQ. Dat is de duidelijkste plek om voor Persian te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Evil organization HQ. Zo werk je gericht aan Persian."
   },
   {
     "number": 86,
@@ -1887,7 +1885,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Golduck",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Hot-spring shower. Dat is de duidelijkste plek om voor Psyduck te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hot-spring shower. Zo werk je gericht aan Psyduck."
   },
   {
     "number": 87,
@@ -1908,7 +1906,7 @@ const pokemonKanto = [
     "evolvesFrom": "Psyduck",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Hot-spring shower. Dat is de duidelijkste plek om voor Golduck te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hot-spring shower. Zo werk je gericht aan Golduck."
   },
   {
     "number": 88,
@@ -1930,7 +1928,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Arcanine",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Perpetual mess. Dat is de duidelijkste plek om voor Growlithe te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Perpetual mess. Zo werk je gericht aan Growlithe."
   },
   {
     "number": 89,
@@ -1952,7 +1950,7 @@ const pokemonKanto = [
     "evolvesFrom": "Growlithe",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Mini museum. Dat is de duidelijkste plek om voor Arcanine te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mini museum. Zo werk je gericht aan Arcanine."
   },
   {
     "number": 90,
@@ -1996,7 +1994,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Muk",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Marsh fishing spot. Dat is de duidelijkste plek om voor Grimer te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Marsh fishing spot. Zo werk je gericht aan Grimer."
   },
   {
     "number": 92,
@@ -2017,7 +2015,7 @@ const pokemonKanto = [
     "evolvesFrom": "Grimer",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Marsh fishing spot. Dat is de duidelijkste plek om voor Muk te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Marsh fishing spot. Zo werk je gericht aan Muk."
   },
   {
     "number": 93,
@@ -2040,7 +2038,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Haunter",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Spooky study. Dat is de duidelijkste plek om voor Gastly te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Spooky study. Zo werk je gericht aan Gastly."
   },
   {
     "number": 94,
@@ -2063,7 +2061,7 @@ const pokemonKanto = [
     "evolvesFrom": "Gastly",
     "evolvesInto": "Gengar",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Surprise in store. Dat is de duidelijkste plek om voor Haunter te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Surprise in store. Zo werk je gericht aan Haunter."
   },
   {
     "number": 95,
@@ -2086,7 +2084,7 @@ const pokemonKanto = [
     "evolvesFrom": "Haunter",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Surprise in store. Dat is de duidelijkste plek om voor Gengar te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Surprise in store. Zo werk je gericht aan Gengar."
   },
   {
     "number": 96,
@@ -2108,7 +2106,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Electrode",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Park bench. Dat is de duidelijkste plek om voor Voltorb te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Park bench. Zo werk je gericht aan Voltorb."
   },
   {
     "number": 97,
@@ -2130,7 +2128,7 @@ const pokemonKanto = [
     "evolvesFrom": "Voltorb",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Park bench. Dat is de duidelijkste plek om voor Electrode te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Park bench. Zo werk je gericht aan Electrode."
   },
   {
     "number": 98,
@@ -2153,7 +2151,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Exeggutor",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Tropical vibes. Dat is de duidelijkste plek om voor Exeggcute te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tropical vibes. Zo werk je gericht aan Exeggcute."
   },
   {
     "number": 99,
@@ -2176,7 +2174,7 @@ const pokemonKanto = [
     "evolvesFrom": "Exeggcute",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Tropical vibes. Dat is de duidelijkste plek om voor Exeggutor te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tropical vibes. Zo werk je gericht aan Exeggutor."
   },
   {
     "number": 100,
@@ -2197,7 +2195,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Chansey",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Alarm clock sleep zone. Dat is de duidelijkste plek om voor Happiny te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Alarm clock sleep zone. Zo werk je gericht aan Happiny."
   },
   {
     "number": 101,
@@ -2218,7 +2216,7 @@ const pokemonKanto = [
     "evolvesFrom": "Happiny",
     "evolvesInto": "Blissey",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Full recovery. Dat is de duidelijkste plek om voor Chansey te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Full recovery. Zo werk je gericht aan Chansey."
   },
   {
     "number": 102,
@@ -2240,7 +2238,7 @@ const pokemonKanto = [
     "evolvesFrom": "Chansey",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Cuteness overload. Dat is de duidelijkste plek om voor Blissey te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Cuteness overload. Zo werk je gericht aan Blissey."
   },
   {
     "number": 103,
@@ -2261,7 +2259,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Electabuzz",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Vending machine set. Dat is de duidelijkste plek om voor Elekid te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Vending machine set. Zo werk je gericht aan Elekid."
   },
   {
     "number": 104,
@@ -2282,7 +2280,7 @@ const pokemonKanto = [
     "evolvesFrom": "Elekid",
     "evolvesInto": "Electivire",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Trash can central. Dat is de duidelijkste plek om voor Electabuzz te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash can central. Zo werk je gericht aan Electabuzz."
   },
   {
     "number": 105,
@@ -2304,7 +2302,7 @@ const pokemonKanto = [
     "evolvesFrom": "Electabuzz",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Light-up stage. Dat is de duidelijkste plek om voor Electivire te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Light-up stage. Zo werk je gericht aan Electivire."
   },
   {
     "number": 106,
@@ -2326,7 +2324,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Tropical seaside. Dat is de duidelijkste plek om voor Lapras te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tropical seaside. Zo werk je gericht aan Lapras."
   },
   {
     "number": 107,
@@ -2347,7 +2345,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Snorlax",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Bed with a plush. Dat is de duidelijkste plek om voor Munchlax te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Bed with a plush. Zo werk je gericht aan Munchlax."
   },
   {
     "number": 108,
@@ -2391,7 +2389,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Ariados",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Yellow tall grass. Dat is de duidelijkste plek om voor Spinarak te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Yellow tall grass. Zo werk je gericht aan Spinarak."
   },
   {
     "number": 110,
@@ -2413,7 +2411,7 @@ const pokemonKanto = [
     "evolvesFrom": "Spinarak",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Yellow tall grass. Dat is de duidelijkste plek om voor Ariados te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Yellow tall grass. Zo werk je gericht aan Ariados."
   },
   {
     "number": 111,
@@ -2435,7 +2433,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Flaaffy",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Overgrowth vending machine. Dat is de duidelijkste plek om voor Mareep te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Overgrowth vending machine. Zo werk je gericht aan Mareep."
   },
   {
     "number": 112,
@@ -2457,7 +2455,7 @@ const pokemonKanto = [
     "evolvesFrom": "Mareep",
     "evolvesInto": "Ampharos",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Night festival venue. Dat is de duidelijkste plek om voor Flaaffy te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Night festival venue. Zo werk je gericht aan Flaaffy."
   },
   {
     "number": 113,
@@ -2479,7 +2477,7 @@ const pokemonKanto = [
     "evolvesFrom": "Flaaffy",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Plain life. Dat is de duidelijkste plek om voor Ampharos te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Plain life. Zo werk je gericht aan Ampharos."
   },
   {
     "number": 114,
@@ -2502,7 +2500,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Marill",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Hydrated yellow tall grass. Dat is de duidelijkste plek om voor Azurill te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated yellow tall grass. Zo werk je gericht aan Azurill."
   },
   {
     "number": 115,
@@ -2525,7 +2523,7 @@ const pokemonKanto = [
     "evolvesFrom": "Azurill",
     "evolvesInto": "Azumarill",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Hydrated yellow tall grass. Dat is de duidelijkste plek om voor Marill te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated yellow tall grass. Zo werk je gericht aan Marill."
   },
   {
     "number": 116,
@@ -2548,7 +2546,7 @@ const pokemonKanto = [
     "evolvesFrom": "Marill",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Dock. Dat is de duidelijkste plek om voor Azumarill te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Dock. Zo werk je gericht aan Azumarill."
   },
   {
     "number": 117,
@@ -2570,7 +2568,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Clodsire",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Marshy tall grass. Dat is de duidelijkste plek om voor Paldean Wooper te werken."
+    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Marshy tall grass. Zo werk je gericht aan Paldean Wooper."
   },
   {
     "number": 118,
@@ -2593,7 +2591,7 @@ const pokemonKanto = [
     "evolvesFrom": "Paldean Wooper",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Marshy tall grass. Dat is de duidelijkste plek om voor Clodsire te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Marshy tall grass. Zo werk je gericht aan Clodsire."
   },
   {
     "number": 119,
@@ -2614,7 +2612,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Tiny Atelier. Dat is de duidelijkste plek om voor Smeargle te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tiny Atelier. Zo werk je gericht aan Smeargle."
   },
   {
     "number": 120,
@@ -2635,7 +2633,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Combusken",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Chirp-chirp meal. Dat is de duidelijkste plek om voor Torchic te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chirp-chirp meal. Zo werk je gericht aan Torchic."
   },
   {
     "number": 121,
@@ -2658,7 +2656,7 @@ const pokemonKanto = [
     "evolvesFrom": "Torchic",
     "evolvesInto": "Blaziken",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Resort meal prep. Dat is de duidelijkste plek om voor Combusken te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Resort meal prep. Zo werk je gericht aan Combusken."
   },
   {
     "number": 122,
@@ -2681,7 +2679,7 @@ const pokemonKanto = [
     "evolvesFrom": "Combusken",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Chirp-chirp meal. Dat is de duidelijkste plek om voor Blaziken te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chirp-chirp meal. Zo werk je gericht aan Blaziken."
   },
   {
     "number": 123,
@@ -2704,7 +2702,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Pelipper",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Elevated yellow tall grass. Dat is de duidelijkste plek om voor Wingull te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated yellow tall grass. Zo werk je gericht aan Wingull."
   },
   {
     "number": 124,
@@ -2727,7 +2725,7 @@ const pokemonKanto = [
     "evolvesFrom": "Wingull",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Elevated yellow tall grass. Dat is de duidelijkste plek om voor Pelipper te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated yellow tall grass. Zo werk je gericht aan Pelipper."
   },
   {
     "number": 125,
@@ -2749,7 +2747,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Hariyama",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Tree-shaded Yellow tall grass. Dat is de duidelijkste plek om voor Makuhita te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded Yellow tall grass. Zo werk je gericht aan Makuhita."
   },
   {
     "number": 126,
@@ -2771,7 +2769,7 @@ const pokemonKanto = [
     "evolvesFrom": "Makuhita",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Tree-shaded Yellow tall grass. Dat is de duidelijkste plek om voor Hariyama te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded Yellow tall grass. Zo werk je gericht aan Hariyama."
   },
   {
     "number": 127,
@@ -2792,7 +2790,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Welcoming resort. Dat is de duidelijkste plek om voor Absol te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Welcoming resort. Zo werk je gericht aan Absol."
   },
   {
     "number": 128,
@@ -2813,7 +2811,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Prinplup",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Hydrated yellow tall grass. Dat is de duidelijkste plek om voor Piplup te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated yellow tall grass. Zo werk je gericht aan Piplup."
   },
   {
     "number": 129,
@@ -2835,7 +2833,7 @@ const pokemonKanto = [
     "evolvesFrom": "Piplup",
     "evolvesInto": "Empoleon",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Hydrated yellow tall grass. Dat is de duidelijkste plek om voor Prinplup te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated yellow tall grass. Zo werk je gericht aan Prinplup."
   },
   {
     "number": 130,
@@ -2858,7 +2856,7 @@ const pokemonKanto = [
     "evolvesFrom": "Prinplup",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Tableside delivery cart. Dat is de duidelijkste plek om voor Empoleon te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tableside delivery cart. Zo werk je gericht aan Empoleon."
   },
   {
     "number": 131,
@@ -2879,7 +2877,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Working the register. Dat is de duidelijkste plek om voor Audino te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Working the register. Zo werk je gericht aan Audino."
   },
   {
     "number": 132,
@@ -2900,7 +2898,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Garbodor",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Trash collection site. Dat is de duidelijkste plek om voor Trubbish te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash collection site. Zo werk je gericht aan Trubbish."
   },
   {
     "number": 133,
@@ -2922,7 +2920,7 @@ const pokemonKanto = [
     "evolvesFrom": "Trubbish",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Trash collection site. Dat is de duidelijkste plek om voor Garbodor te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash collection site. Zo werk je gericht aan Garbodor."
   },
   {
     "number": 134,
@@ -2943,7 +2941,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Zoroark",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Breezy flower bed. Dat is de duidelijkste plek om voor Zorua te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Breezy flower bed. Zo werk je gericht aan Zorua."
   },
   {
     "number": 135,
@@ -2965,7 +2963,7 @@ const pokemonKanto = [
     "evolvesFrom": "Zorua",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Breezy flower bed. Dat is de duidelijkste plek om voor Zoroark te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Breezy flower bed. Zo werk je gericht aan Zoroark."
   },
   {
     "number": 136,
@@ -2986,7 +2984,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Cinccino",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Changing area. Dat is de duidelijkste plek om voor Minccino te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Changing area. Zo werk je gericht aan Minccino."
   },
   {
     "number": 137,
@@ -3008,7 +3006,7 @@ const pokemonKanto = [
     "evolvesFrom": "Minccino",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Private makeup stand. Dat is de duidelijkste plek om voor Cinccino te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Private makeup stand. Zo werk je gericht aan Cinccino."
   },
   {
     "number": 138,
@@ -3029,7 +3027,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Charjabug",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Yellow tall grass. Dat is de duidelijkste plek om voor Grubbin te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Yellow tall grass. Zo werk je gericht aan Grubbin."
   },
   {
     "number": 139,
@@ -3052,7 +3050,7 @@ const pokemonKanto = [
     "evolvesFrom": "Grubbin",
     "evolvesInto": "Vikavolt",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Vending machine break area. Dat is de duidelijkste plek om voor Charjabug te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Vending machine break area. Zo werk je gericht aan Charjabug."
   },
   {
     "number": 140,
@@ -3075,7 +3073,7 @@ const pokemonKanto = [
     "evolvesFrom": "Charjabug",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded flower bed. Dat is de duidelijkste plek om voor Vikavolt te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded flower bed. Zo werk je gericht aan Vikavolt."
   },
   {
     "number": 141,
@@ -3097,7 +3095,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Pikachu space. Dat is de duidelijkste plek om voor Mimikyu te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pikachu space. Zo werk je gericht aan Mimikyu."
   },
   {
     "number": 142,
@@ -3118,7 +3116,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Pawmo",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Breezy flower bed. Dat is de duidelijkste plek om voor Pawmi te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Breezy flower bed. Zo werk je gericht aan Pawmi."
   },
   {
     "number": 143,
@@ -3141,7 +3139,7 @@ const pokemonKanto = [
     "evolvesFrom": "Pawmi",
     "evolvesInto": "Pawmot",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Tantalizing restaurant. Dat is de duidelijkste plek om voor Pawmo te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tantalizing restaurant. Zo werk je gericht aan Pawmo."
   },
   {
     "number": 144,
@@ -3164,7 +3162,7 @@ const pokemonKanto = [
     "evolvesFrom": "Pawmo",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Café space. Dat is de duidelijkste plek om voor Pawmot te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Café space. Zo werk je gericht aan Pawmot."
   },
   {
     "number": 145,
@@ -3186,7 +3184,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Bleak Beach en bouw eerst Beach Set. Dat is de duidelijkste plek om voor Tatsugiri te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Beach Set. Zo werk je gericht aan Tatsugiri."
   },
   {
     "number": 146,
@@ -3207,7 +3205,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Arbok",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Hydrated graceful flower bed. Dat is de duidelijkste plek om voor Ekans te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated graceful flower bed. Zo werk je gericht aan Ekans."
   },
   {
     "number": 147,
@@ -3228,7 +3226,7 @@ const pokemonKanto = [
     "evolvesFrom": "Ekans",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Hydrated graceful flower bed. Dat is de duidelijkste plek om voor Arbok te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated graceful flower bed. Zo werk je gericht aan Arbok."
   },
   {
     "number": 148,
@@ -3249,7 +3247,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Clefairy",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Graceful flower bed. Dat is de duidelijkste plek om voor Cleffa te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Graceful flower bed. Zo werk je gericht aan Cleffa."
   },
   {
     "number": 149,
@@ -3270,7 +3268,7 @@ const pokemonKanto = [
     "evolvesFrom": "Cleffa",
     "evolvesInto": "Clefable",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Graceful flower bed. Dat is de duidelijkste plek om voor Clefairy te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Graceful flower bed. Zo werk je gericht aan Clefairy."
   },
   {
     "number": 150,
@@ -3292,7 +3290,7 @@ const pokemonKanto = [
     "evolvesFrom": "Clefairy",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Graceful flower bed. Dat is de duidelijkste plek om voor Clefable te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Graceful flower bed. Zo werk je gericht aan Clefable."
   },
   {
     "number": 151,
@@ -3314,7 +3312,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Jigglypuff",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Flower garden stump stage. Dat is de duidelijkste plek om voor Igglybuff te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Flower garden stump stage. Zo werk je gericht aan Igglybuff."
   },
   {
     "number": 152,
@@ -3336,7 +3334,7 @@ const pokemonKanto = [
     "evolvesFrom": "Igglybuff",
     "evolvesInto": "Wigglytuff",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Flower garden stump stage. Dat is de duidelijkste plek om voor Jigglypuff te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Flower garden stump stage. Zo werk je gericht aan Jigglypuff."
   },
   {
     "number": 153,
@@ -3359,7 +3357,7 @@ const pokemonKanto = [
     "evolvesFrom": "Jigglypuff",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Recital stage. Dat is de duidelijkste plek om voor Wigglytuff te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Recital stage. Zo werk je gericht aan Wigglytuff."
   },
   {
     "number": 154,
@@ -3380,7 +3378,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Dugtrio",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Tree-shaded red tall grass. Dat is de duidelijkste plek om voor Diglett te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded red tall grass. Zo werk je gericht aan Diglett."
   },
   {
     "number": 155,
@@ -3402,7 +3400,7 @@ const pokemonKanto = [
     "evolvesFrom": "Diglett",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Tree-shaded red tall grass. Dat is de duidelijkste plek om voor Dugtrio te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded red tall grass. Zo werk je gericht aan Dugtrio."
   },
   {
     "number": 156,
@@ -3424,7 +3422,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Machoke",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Boulder-shaded Tall Grass. Dat is de duidelijkste plek om voor Machop te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Boulder-shaded Tall Grass. Zo werk je gericht aan Machop."
   },
   {
     "number": 157,
@@ -3446,7 +3444,7 @@ const pokemonKanto = [
     "evolvesFrom": "Machop",
     "evolvesInto": "Machamp",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Grassy training field. Dat is de duidelijkste plek om voor Machoke te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grassy training field. Zo werk je gericht aan Machoke."
   },
   {
     "number": 158,
@@ -3468,7 +3466,7 @@ const pokemonKanto = [
     "evolvesFrom": "Machoke",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Grassy training field. Dat is de duidelijkste plek om voor Machamp te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Grassy training field. Zo werk je gericht aan Machamp."
   },
   {
     "number": 159,
@@ -3490,7 +3488,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Graveler",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Tall Grass. Dat is de duidelijkste plek om voor Geodude te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Tall Grass. Zo werk je gericht aan Geodude."
   },
   {
     "number": 160,
@@ -3512,7 +3510,7 @@ const pokemonKanto = [
     "evolvesFrom": "Geodude",
     "evolvesInto": "Golem",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Mossy boulder. Dat is de duidelijkste plek om voor Graveler te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mossy boulder. Zo werk je gericht aan Graveler."
   },
   {
     "number": 161,
@@ -3535,7 +3533,7 @@ const pokemonKanto = [
     "evolvesFrom": "Graveler",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Mossy boulder. Dat is de duidelijkste plek om voor Golem te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mossy boulder. Zo werk je gericht aan Golem."
   },
   {
     "number": 162,
@@ -3556,7 +3554,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Magmar",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pretty flower bed. Dat is de duidelijkste plek om voor Magby te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pretty flower bed. Zo werk je gericht aan Magby."
   },
   {
     "number": 163,
@@ -3577,7 +3575,7 @@ const pokemonKanto = [
     "evolvesFrom": "Magby",
     "evolvesInto": "Magmortar",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Digging and burning. Dat is de duidelijkste plek om voor Magmar te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Digging and burning. Zo werk je gericht aan Magmar."
   },
   {
     "number": 164,
@@ -3599,7 +3597,7 @@ const pokemonKanto = [
     "evolvesFrom": "Magmar",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Mini kitchen. Dat is de duidelijkste plek om voor Magmortar te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mini kitchen. Zo werk je gericht aan Magmortar."
   },
   {
     "number": 165,
@@ -3620,7 +3618,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Sudowoodo",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Tree-shaded red tall grass. Dat is de duidelijkste plek om voor Bonsly te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded red tall grass. Zo werk je gericht aan Bonsly."
   },
   {
     "number": 166,
@@ -3641,7 +3639,7 @@ const pokemonKanto = [
     "evolvesFrom": "Bonsly",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Tree-shaded red tall grass. Dat is de duidelijkste plek om voor Sudowoodo te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded red tall grass. Zo werk je gericht aan Sudowoodo."
   },
   {
     "number": 167,
@@ -3664,7 +3662,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Honchkrow",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Elevated red tall grass. Dat is de duidelijkste plek om voor Murkrow te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated red tall grass. Zo werk je gericht aan Murkrow."
   },
   {
     "number": 168,
@@ -3687,7 +3685,7 @@ const pokemonKanto = [
     "evolvesFrom": "Murkrow",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Chirping recital. Dat is de duidelijkste plek om voor Honchkrow te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chirping recital. Zo werk je gericht aan Honchkrow."
   },
   {
     "number": 169,
@@ -3710,7 +3708,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Pupitar",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Mossy rest spot. Dat is de duidelijkste plek om voor Larvitar te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mossy rest spot. Zo werk je gericht aan Larvitar."
   },
   {
     "number": 170,
@@ -3733,7 +3731,7 @@ const pokemonKanto = [
     "evolvesFrom": "Larvitar",
     "evolvesInto": "Tyranitar",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Tree-shaded pink tall grass. Dat is de duidelijkste plek om voor Pupitar te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded pink tall grass. Zo werk je gericht aan Pupitar."
   },
   {
     "number": 171,
@@ -3756,7 +3754,7 @@ const pokemonKanto = [
     "evolvesFrom": "Pupitar",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Toil in the soil. Dat is de duidelijkste plek om voor Tyranitar te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Toil in the soil. Zo werk je gericht aan Tyranitar."
   },
   {
     "number": 172,
@@ -3778,7 +3776,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Lombre",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Hydrated red tall grass. Dat is de duidelijkste plek om voor Lotad te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated red tall grass. Zo werk je gericht aan Lotad."
   },
   {
     "number": 173,
@@ -3800,7 +3798,7 @@ const pokemonKanto = [
     "evolvesFrom": "Lotad",
     "evolvesInto": "Ludicolo",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Hydrated red tall grass. Dat is de duidelijkste plek om voor Lombre te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated red tall grass. Zo werk je gericht aan Lombre."
   },
   {
     "number": 174,
@@ -3823,7 +3821,7 @@ const pokemonKanto = [
     "evolvesFrom": "Lombre",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Uplifting duckweed. Dat is de duidelijkste plek om voor Ludicolo te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Uplifting duckweed. Zo werk je gericht aan Ludicolo."
   },
   {
     "number": 175,
@@ -3846,7 +3844,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Working the register. Dat is de duidelijkste plek om voor Mawile te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Working the register. Zo werk je gericht aan Mawile."
   },
   {
     "number": 176,
@@ -3867,7 +3865,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Mossy hot spring. Dat is de duidelijkste plek om voor Torkoal te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mossy hot spring. Zo werk je gericht aan Torkoal."
   },
   {
     "number": 177,
@@ -3888,7 +3886,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Kricketune",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Red tall grass. Dat is de duidelijkste plek om voor Kricketot te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Red tall grass. Zo werk je gericht aan Kricketot."
   },
   {
     "number": 178,
@@ -3909,7 +3907,7 @@ const pokemonKanto = [
     "evolvesFrom": "Kricketot",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Music and magazines. Dat is de duidelijkste plek om voor Kricketune te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Music and magazines. Zo werk je gericht aan Kricketune."
   },
   {
     "number": 179,
@@ -3932,7 +3930,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Elevated red tall grass. Dat is de duidelijkste plek om voor Chatot te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated red tall grass. Zo werk je gericht aan Chatot."
   },
   {
     "number": 180,
@@ -3953,7 +3951,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Lucario",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Red tall grass. Dat is de duidelijkste plek om voor Riolu te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Red tall grass. Zo werk je gericht aan Riolu."
   },
   {
     "number": 181,
@@ -3975,7 +3973,7 @@ const pokemonKanto = [
     "evolvesFrom": "Riolu",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Box to the rhythm. Dat is de duidelijkste plek om voor Lucario te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Box to the rhythm. Zo werk je gericht aan Lucario."
   },
   {
     "number": 182,
@@ -3997,7 +3995,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Music and magazines. Dat is de duidelijkste plek om voor Stereo Rotom te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Music and magazines. Zo werk je gericht aan Stereo Rotom."
   },
   {
     "number": 183,
@@ -4019,7 +4017,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Volcarona",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Tree-shaded graceful flower bed. Dat is de duidelijkste plek om voor Larvesta te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded graceful flower bed. Zo werk je gericht aan Larvesta."
   },
   {
     "number": 184,
@@ -4042,7 +4040,7 @@ const pokemonKanto = [
     "evolvesFrom": "Larvesta",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Tree-shaded graceful flower bed. Dat is de duidelijkste plek om voor Volcarona te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded graceful flower bed. Zo werk je gericht aan Volcarona."
   },
   {
     "number": 185,
@@ -4064,7 +4062,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Dartrix",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Fresh Veggie Field. Dat is de duidelijkste plek om voor Rowlet te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Fresh Veggie Field. Zo werk je gericht aan Rowlet."
   },
   {
     "number": 186,
@@ -4087,7 +4085,7 @@ const pokemonKanto = [
     "evolvesFrom": "Rowlet",
     "evolvesInto": "Decidueye",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Pointy tree-shaded rocky tall grass. Dat is de duidelijkste plek om voor Dartrix te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pointy tree-shaded rocky tall grass. Zo werk je gericht aan Dartrix."
   },
   {
     "number": 187,
@@ -4110,7 +4108,7 @@ const pokemonKanto = [
     "evolvesFrom": "Dartrix",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Pointy tree-shaded rocky tall grass. Dat is de duidelijkste plek om voor Decidueye te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pointy tree-shaded rocky tall grass. Zo werk je gericht aan Decidueye."
   },
   {
     "number": 188,
@@ -4131,7 +4129,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Raboot",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Red tall grass. Dat is de duidelijkste plek om voor Scorbunny te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Red tall grass. Zo werk je gericht aan Scorbunny."
   },
   {
     "number": 189,
@@ -4152,7 +4150,7 @@ const pokemonKanto = [
     "evolvesFrom": "Scorbunny",
     "evolvesInto": "Cinderace",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Open-air bath. Dat is de duidelijkste plek om voor Raboot te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Open-air bath. Zo werk je gericht aan Raboot."
   },
   {
     "number": 190,
@@ -4174,7 +4172,7 @@ const pokemonKanto = [
     "evolvesFrom": "Raboot",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Red tall grass. Dat is de duidelijkste plek om voor Cinderace te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Red tall grass. Zo werk je gericht aan Cinderace."
   },
   {
     "number": 191,
@@ -4196,7 +4194,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Greedent",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Tree-shaded  tall grass. Dat is de duidelijkste plek om voor Skwovet te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Tree-shaded  tall grass. Zo werk je gericht aan Skwovet."
   },
   {
     "number": 192,
@@ -4217,7 +4215,7 @@ const pokemonKanto = [
     "evolvesFrom": "Skwovet",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Chef's kitchen. Dat is de duidelijkste plek om voor Greedent te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Chef's kitchen. Zo werk je gericht aan Greedent."
   },
   {
     "number": 193,
@@ -4239,7 +4237,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Carkol",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Railroad crossing. Dat is de duidelijkste plek om voor Rolycoly te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Railroad crossing. Zo werk je gericht aan Rolycoly."
   },
   {
     "number": 194,
@@ -4262,7 +4260,7 @@ const pokemonKanto = [
     "evolvesFrom": "Rolycoly",
     "evolvesInto": "Coalossal",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Railroad crossing. Dat is de duidelijkste plek om voor Carkol te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Railroad crossing. Zo werk je gericht aan Carkol."
   },
   {
     "number": 195,
@@ -4285,7 +4283,7 @@ const pokemonKanto = [
     "evolvesFrom": "Carkol",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Railroad crossing. Dat is de duidelijkste plek om voor Coalossal te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Railroad crossing. Zo werk je gericht aan Coalossal."
   },
   {
     "number": 196,
@@ -4307,7 +4305,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Toxtricity",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Lazy-photo album scrolling. Dat is de duidelijkste plek om voor Toxel te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Lazy-photo album scrolling. Zo werk je gericht aan Toxel."
   },
   {
     "number": 197,
@@ -4330,7 +4328,7 @@ const pokemonKanto = [
     "evolvesFrom": "Toxel",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Amped rock stage. Dat is de duidelijkste plek om voor Toxtricity te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Amped rock stage. Zo werk je gericht aan Toxtricity."
   },
   {
     "number": 198,
@@ -4351,7 +4349,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Dachsbun",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Graceful flower bed. Dat is de duidelijkste plek om voor Fidough te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Graceful flower bed. Zo werk je gericht aan Fidough."
   },
   {
     "number": 199,
@@ -4373,7 +4371,7 @@ const pokemonKanto = [
     "evolvesFrom": "Fidough",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Graceful flower bed. Dat is de duidelijkste plek om voor Dachsbun te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Graceful flower bed. Zo werk je gericht aan Dachsbun."
   },
   {
     "number": 200,
@@ -4394,7 +4392,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Armarouge / Ceruledge",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Piping-hot lava. Dat is de duidelijkste plek om voor Charcadet te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Piping-hot lava. Zo werk je gericht aan Charcadet."
   },
   {
     "number": 201,
@@ -4416,7 +4414,7 @@ const pokemonKanto = [
     "evolvesFrom": "Charcadet",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Auspicious knight's shrine. Dat is de duidelijkste plek om voor Armarouge te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Auspicious knight's shrine. Zo werk je gericht aan Armarouge."
   },
   {
     "number": 202,
@@ -4438,7 +4436,7 @@ const pokemonKanto = [
     "evolvesFrom": "Charcadet",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Malicious knight's shrine. Dat is de duidelijkste plek om voor Ceruledge te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Malicious knight's shrine. Zo werk je gericht aan Ceruledge."
   },
   {
     "number": 203,
@@ -4460,7 +4458,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Glimmora",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Creepy white rocks. Dat is de duidelijkste plek om voor Glimmet te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Creepy white rocks. Zo werk je gericht aan Glimmet."
   },
   {
     "number": 204,
@@ -4482,7 +4480,7 @@ const pokemonKanto = [
     "evolvesFrom": "Glimmet",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Creepy white rocks. Dat is de duidelijkste plek om voor Glimmora te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Creepy white rocks. Zo werk je gericht aan Glimmora."
   },
   {
     "number": 205,
@@ -4503,7 +4501,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Gholdengo",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Mini museum. Dat is de duidelijkste plek om voor Gimmighoul te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Mini museum. Zo werk je gericht aan Gimmighoul."
   },
   {
     "number": 206,
@@ -4525,7 +4523,7 @@ const pokemonKanto = [
     "evolvesFrom": "Gimmighoul",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Absolute luxury. Dat is de duidelijkste plek om voor Gholdengo te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Absolute luxury. Zo werk je gericht aan Gholdengo."
   },
   {
     "number": 207,
@@ -4546,7 +4544,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Ninetales",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Fluffy flower bed. Dat is de duidelijkste plek om voor Vulpix te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fluffy flower bed. Zo werk je gericht aan Vulpix."
   },
   {
     "number": 208,
@@ -4567,7 +4565,7 @@ const pokemonKanto = [
     "evolvesFrom": "Vulpix",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Fluffy flower bed. Dat is de duidelijkste plek om voor Ninetales te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fluffy flower bed. Zo werk je gericht aan Ninetales."
   },
   {
     "number": 209,
@@ -4588,7 +4586,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Poliwhirl",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Squeaky clean. Dat is de duidelijkste plek om voor Poliwag te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Squeaky clean. Zo werk je gericht aan Poliwag."
   },
   {
     "number": 210,
@@ -4609,7 +4607,7 @@ const pokemonKanto = [
     "evolvesFrom": "Poliwag",
     "evolvesInto": "Poliwrath / Politoed",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Hydrated fluffy flower bed. Dat is de duidelijkste plek om voor Poliwhirl te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated fluffy flower bed. Zo werk je gericht aan Poliwhirl."
   },
   {
     "number": 211,
@@ -4632,7 +4630,7 @@ const pokemonKanto = [
     "evolvesFrom": "Poliwhirl",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Sewer hole inspection. Dat is de duidelijkste plek om voor Poliwrath te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Sewer hole inspection. Zo werk je gericht aan Poliwrath."
   },
   {
     "number": 212,
@@ -4654,7 +4652,7 @@ const pokemonKanto = [
     "evolvesFrom": "Poliwhirl",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Hydrated graceful flower bed. Dat is de duidelijkste plek om voor Politoed te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated graceful flower bed. Zo werk je gericht aan Politoed."
   },
   {
     "number": 213,
@@ -4675,7 +4673,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Kadabra",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Surging psychic power. Dat is de duidelijkste plek om voor Abra te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Surging psychic power. Zo werk je gericht aan Abra."
   },
   {
     "number": 214,
@@ -4696,7 +4694,7 @@ const pokemonKanto = [
     "evolvesFrom": "Abra",
     "evolvesInto": "Alakazam",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Fortune-teller's table. Dat is de duidelijkste plek om voor Kadabra te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fortune-teller's table. Zo werk je gericht aan Kadabra."
   },
   {
     "number": 215,
@@ -4718,7 +4716,7 @@ const pokemonKanto = [
     "evolvesFrom": "Kadabra",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Surging psychic power. Dat is de duidelijkste plek om voor Alakazam te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Surging psychic power. Zo werk je gericht aan Alakazam."
   },
   {
     "number": 216,
@@ -4784,7 +4782,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Porygon2",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Researcher's desk. Dat is de duidelijkste plek om voor Porygon te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Researcher's desk. Zo werk je gericht aan Porygon."
   },
   {
     "number": 219,
@@ -4805,7 +4803,7 @@ const pokemonKanto = [
     "evolvesFrom": "Porygon",
     "evolvesInto": "Porygon-Z",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Work desk. Dat is de duidelijkste plek om voor Porygon2 te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Work desk. Zo werk je gericht aan Porygon2."
   },
   {
     "number": 220,
@@ -4826,7 +4824,7 @@ const pokemonKanto = [
     "evolvesFrom": "Porygon2",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Game Corner battle zone. Dat is de duidelijkste plek om voor Porygon-Z te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Game Corner battle zone. Zo werk je gericht aan Porygon-Z."
   },
   {
     "number": 221,
@@ -4847,7 +4845,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Dragonair",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Hydrated fluffy flower bed. Dat is de duidelijkste plek om voor Dratini te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated fluffy flower bed. Zo werk je gericht aan Dratini."
   },
   {
     "number": 222,
@@ -4868,7 +4866,7 @@ const pokemonKanto = [
     "evolvesFrom": "Dratini",
     "evolvesInto": "Dragonite",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Hydrated fluffy flower bed. Dat is de duidelijkste plek om voor Dragonair te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated fluffy flower bed. Zo werk je gericht aan Dragonair."
   },
   {
     "number": 223,
@@ -4891,7 +4889,7 @@ const pokemonKanto = [
     "evolvesFrom": "Dragonair",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Waterside dinghy. Dat is de duidelijkste plek om voor Dragonite te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Waterside dinghy. Zo werk je gericht aan Dragonite."
   },
   {
     "number": 224,
@@ -4912,7 +4910,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Quilava",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Concrete pipe secret base. Dat is de duidelijkste plek om voor Cyndaquil te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Concrete pipe secret base. Zo werk je gericht aan Cyndaquil."
   },
   {
     "number": 225,
@@ -4933,7 +4931,7 @@ const pokemonKanto = [
     "evolvesFrom": "Cyndaquil",
     "evolvesInto": "Typhlosion",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Concrete pipe secret base. Dat is de duidelijkste plek om voor Quilava te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Concrete pipe secret base. Zo werk je gericht aan Quilava."
   },
   {
     "number": 226,
@@ -4955,7 +4953,7 @@ const pokemonKanto = [
     "evolvesFrom": "Quilava",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Fireplace nap spot. Dat is de duidelijkste plek om voor Typhlosion te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fireplace nap spot. Zo werk je gericht aan Typhlosion."
   },
   {
     "number": 227,
@@ -4976,7 +4974,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Mismagius",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Fluffy flower bed. Dat is de duidelijkste plek om voor Misdreavus te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fluffy flower bed. Zo werk je gericht aan Misdreavus."
   },
   {
     "number": 228,
@@ -4998,7 +4996,7 @@ const pokemonKanto = [
     "evolvesFrom": "Misdreavus",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Fluffy flower bed. Dat is de duidelijkste plek om voor Mismagius te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fluffy flower bed. Zo werk je gericht aan Mismagius."
   },
   {
     "number": 229,
@@ -5020,7 +5018,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Farigiraf",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Tree-shaded fluffy flower bed. Dat is de duidelijkste plek om voor Girafarig te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded fluffy flower bed. Zo werk je gericht aan Girafarig."
   },
   {
     "number": 230,
@@ -5043,7 +5041,7 @@ const pokemonKanto = [
     "evolvesFrom": "Girafarig",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Tree-shaded fluffy flower bed. Dat is de duidelijkste plek om voor Farigiraf te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded fluffy flower bed. Zo werk je gericht aan Farigiraf."
   },
   {
     "number": 231,
@@ -5065,7 +5063,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Kirlia",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Study Area. Dat is de duidelijkste plek om voor Ralts te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Study Area. Zo werk je gericht aan Ralts."
   },
   {
     "number": 232,
@@ -5087,7 +5085,7 @@ const pokemonKanto = [
     "evolvesFrom": "Ralts",
     "evolvesInto": "Gardevoir / Gallade",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Study Area. Dat is de duidelijkste plek om voor Kirlia te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Study Area. Zo werk je gericht aan Kirlia."
   },
   {
     "number": 233,
@@ -5110,7 +5108,7 @@ const pokemonKanto = [
     "evolvesFrom": "Kirlia",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Moisturizing makeup stand. Dat is de duidelijkste plek om voor Gardevoir te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Moisturizing makeup stand. Zo werk je gericht aan Gardevoir."
   },
   {
     "number": 234,
@@ -5133,7 +5131,7 @@ const pokemonKanto = [
     "evolvesFrom": "Kirlia",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Dojo training. Dat is de duidelijkste plek om voor Gallade te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Dojo training. Zo werk je gericht aan Gallade."
   },
   {
     "number": 235,
@@ -5154,7 +5152,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Picturesque photo cutout board. Dat is de duidelijkste plek om voor Plusle te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Picturesque photo cutout board. Zo werk je gericht aan Plusle."
   },
   {
     "number": 236,
@@ -5175,7 +5173,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Picturesque photo cutout board. Dat is de duidelijkste plek om voor Minun te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Picturesque photo cutout board. Zo werk je gericht aan Minun."
   },
   {
     "number": 237,
@@ -5197,7 +5195,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Vibrava",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Pink tall grass. Dat is de duidelijkste plek om voor Trapinch te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pink tall grass. Zo werk je gericht aan Trapinch."
   },
   {
     "number": 238,
@@ -5220,7 +5218,7 @@ const pokemonKanto = [
     "evolvesFrom": "Trapinch",
     "evolvesInto": "Flygon",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Pink tall grass. Dat is de duidelijkste plek om voor Vibrava te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pink tall grass. Zo werk je gericht aan Vibrava."
   },
   {
     "number": 239,
@@ -5243,7 +5241,7 @@ const pokemonKanto = [
     "evolvesFrom": "Vibrava",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Pink tall grass. Dat is de duidelijkste plek om voor Flygon te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pink tall grass. Zo werk je gericht aan Flygon."
   },
   {
     "number": 240,
@@ -5265,7 +5263,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Altaria",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Pink tall grass. Dat is de duidelijkste plek om voor Swablu te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pink tall grass. Zo werk je gericht aan Swablu."
   },
   {
     "number": 241,
@@ -5288,7 +5286,7 @@ const pokemonKanto = [
     "evolvesFrom": "Swablu",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Birdsong garden. Dat is de duidelijkste plek om voor Altaria te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Birdsong garden. Zo werk je gericht aan Altaria."
   },
   {
     "number": 242,
@@ -5309,7 +5307,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Dusclops",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Pink tall grass. Dat is de duidelijkste plek om voor Duskull te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pink tall grass. Zo werk je gericht aan Duskull."
   },
   {
     "number": 243,
@@ -5330,7 +5328,7 @@ const pokemonKanto = [
     "evolvesFrom": "Duskull",
     "evolvesInto": "Dusknoir",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Trash site TV. Dat is de duidelijkste plek om voor Dusclops te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash site TV. Zo werk je gericht aan Dusclops."
   },
   {
     "number": 244,
@@ -5352,7 +5350,7 @@ const pokemonKanto = [
     "evolvesFrom": "Dusclops",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Trash site TV. Dat is de duidelijkste plek om voor Dusknoir te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Trash site TV. Zo werk je gericht aan Dusknoir."
   },
   {
     "number": 245,
@@ -5374,7 +5372,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Metang",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Cycling rest stop. Dat is de duidelijkste plek om voor Beldum te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Cycling rest stop. Zo werk je gericht aan Beldum."
   },
   {
     "number": 246,
@@ -5396,7 +5394,7 @@ const pokemonKanto = [
     "evolvesFrom": "Beldum",
     "evolvesInto": "Metagross",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Professor's apprentice program. Dat is de duidelijkste plek om voor Metang te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Professor's apprentice program. Zo werk je gericht aan Metang."
   },
   {
     "number": 247,
@@ -5419,7 +5417,7 @@ const pokemonKanto = [
     "evolvesFrom": "Metang",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Gamer's paradise. Dat is de duidelijkste plek om voor Metagross te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Gamer's paradise. Zo werk je gericht aan Metagross."
   },
   {
     "number": 248,
@@ -5440,7 +5438,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Servine",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Playland. Dat is de duidelijkste plek om voor Snivy te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Playland. Zo werk je gericht aan Snivy."
   },
   {
     "number": 249,
@@ -5462,7 +5460,7 @@ const pokemonKanto = [
     "evolvesFrom": "Snivy",
     "evolvesInto": "Serperior",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Tree-shaded fluffy flower bed. Dat is de duidelijkste plek om voor Servine te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded fluffy flower bed. Zo werk je gericht aan Servine."
   },
   {
     "number": 250,
@@ -5484,7 +5482,7 @@ const pokemonKanto = [
     "evolvesFrom": "Servine",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Tree-shaded fluffy flower bed. Dat is de duidelijkste plek om voor Serperior te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded fluffy flower bed. Zo werk je gericht aan Serperior."
   },
   {
     "number": 251,
@@ -5505,7 +5503,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Frogadier",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Hydrated pink tall grass. Dat is de duidelijkste plek om voor Froakie te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated pink tall grass. Zo werk je gericht aan Froakie."
   },
   {
     "number": 252,
@@ -5526,7 +5524,7 @@ const pokemonKanto = [
     "evolvesFrom": "Froakie",
     "evolvesInto": "Greninja",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Hydrated pink tall grass. Dat is de duidelijkste plek om voor Frogadier te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated pink tall grass. Zo werk je gericht aan Frogadier."
   },
   {
     "number": 253,
@@ -5549,7 +5547,7 @@ const pokemonKanto = [
     "evolvesFrom": "Frogadier",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Hydrated pink tall grass. Dat is de duidelijkste plek om voor Greninja te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Hydrated pink tall grass. Zo werk je gericht aan Greninja."
   },
   {
     "number": 254,
@@ -5571,7 +5569,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Tire Park. Dat is de duidelijkste plek om voor Dedenne te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tire Park. Zo werk je gericht aan Dedenne."
   },
   {
     "number": 255,
@@ -5593,7 +5591,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Noivern",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Rhythmic Living room. Dat is de duidelijkste plek om voor Noibat te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Rhythmic Living room. Zo werk je gericht aan Noibat."
   },
   {
     "number": 256,
@@ -5616,7 +5614,7 @@ const pokemonKanto = [
     "evolvesFrom": "Noibat",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Rhythmic Living room. Dat is de duidelijkste plek om voor Noivern te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Rhythmic Living room. Zo werk je gericht aan Noivern."
   },
   {
     "number": 257,
@@ -5637,7 +5635,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Corvisquire",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Fluffy flower bed. Dat is de duidelijkste plek om voor Rookidee te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Fluffy flower bed. Zo werk je gericht aan Rookidee."
   },
   {
     "number": 258,
@@ -5658,7 +5656,7 @@ const pokemonKanto = [
     "evolvesFrom": "Rookidee",
     "evolvesInto": "Corviknight",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Elevated pink tall grass. Dat is de duidelijkste plek om voor Corvisquire te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated pink tall grass. Zo werk je gericht aan Corvisquire."
   },
   {
     "number": 259,
@@ -5681,7 +5679,7 @@ const pokemonKanto = [
     "evolvesFrom": "Corvisquire",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Elevated pink tall grass. Dat is de duidelijkste plek om voor Corviknight te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated pink tall grass. Zo werk je gericht aan Corviknight."
   },
   {
     "number": 260,
@@ -5704,7 +5702,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Drakloak",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Tree-shaded pink tall grass. Dat is de duidelijkste plek om voor Dreepy te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded pink tall grass. Zo werk je gericht aan Dreepy."
   },
   {
     "number": 261,
@@ -5727,7 +5725,7 @@ const pokemonKanto = [
     "evolvesFrom": "Dreepy",
     "evolvesInto": "Dragapult",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Tree-shaded pink tall grass. Dat is de duidelijkste plek om voor Drakloak te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded pink tall grass. Zo werk je gericht aan Drakloak."
   },
   {
     "number": 262,
@@ -5750,7 +5748,7 @@ const pokemonKanto = [
     "evolvesFrom": "Drakloak",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Office storeroom. Dat is de duidelijkste plek om voor Dragapult te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Office storeroom. Zo werk je gericht aan Dragapult."
   },
   {
     "number": 263,
@@ -5771,7 +5769,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Floragato",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Tree-shaded pink tall grass. Dat is de duidelijkste plek om voor Sprigatito te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tree-shaded pink tall grass. Zo werk je gericht aan Sprigatito."
   },
   {
     "number": 264,
@@ -5792,7 +5790,7 @@ const pokemonKanto = [
     "evolvesFrom": "Sprigatito",
     "evolvesInto": "Meowscarada",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Interrogation desk. Dat is de duidelijkste plek om voor Floragato te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Interrogation desk. Zo werk je gericht aan Floragato."
   },
   {
     "number": 265,
@@ -5815,7 +5813,7 @@ const pokemonKanto = [
     "evolvesFrom": "Floragato",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Heart-pounding surprise box. Dat is de duidelijkste plek om voor Meowscarada te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Heart-pounding surprise box. Zo werk je gericht aan Meowscarada."
   },
   {
     "number": 266,
@@ -5837,7 +5835,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Kilowattrel",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Elevated pink tall grass. Dat is de duidelijkste plek om voor Wattrel te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated pink tall grass. Zo werk je gericht aan Wattrel."
   },
   {
     "number": 267,
@@ -5860,7 +5858,7 @@ const pokemonKanto = [
     "evolvesFrom": "Wattrel",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Elevated pink tall grass. Dat is de duidelijkste plek om voor Kilowattrel te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Elevated pink tall grass. Zo werk je gericht aan Kilowattrel."
   },
   {
     "number": 268,
@@ -5882,7 +5880,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Tinkatuff",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Large luggage carrier. Dat is de duidelijkste plek om voor Tinkatink te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Large luggage carrier. Zo werk je gericht aan Tinkatink."
   },
   {
     "number": 269,
@@ -5904,7 +5902,7 @@ const pokemonKanto = [
     "evolvesFrom": "Tinkatink",
     "evolvesInto": "Tinkaton",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Large luggage carrier. Dat is de duidelijkste plek om voor Tinkatuff te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Large luggage carrier. Zo werk je gericht aan Tinkatuff."
   },
   {
     "number": 270,
@@ -5926,7 +5924,7 @@ const pokemonKanto = [
     "evolvesFrom": "Tinkatuff",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Sparkling Skylands en bouw eerst Oversized dumping ground. Dat is de duidelijkste plek om voor Tinkaton te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Oversized dumping ground. Zo werk je gericht aan Tinkaton."
   },
   {
     "number": 271,
@@ -5948,7 +5946,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Wing Fossil Display. Dat is de duidelijkste plek om voor Aerodactyl te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Wing Fossil Display. Zo werk je gericht aan Aerodactyl."
   },
   {
     "number": 272,
@@ -5969,7 +5967,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Rampardos",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Skull Fossil display. Dat is de duidelijkste plek om voor Cranidos te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Skull Fossil display. Zo werk je gericht aan Cranidos."
   },
   {
     "number": 273,
@@ -5991,7 +5989,7 @@ const pokemonKanto = [
     "evolvesFrom": "Cranidos",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Headbutt Fossil display. Dat is de duidelijkste plek om voor Rampardos te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Headbutt Fossil display. Zo werk je gericht aan Rampardos."
   },
   {
     "number": 274,
@@ -6013,7 +6011,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Bastiodon",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Armor Fossil display. Dat is de duidelijkste plek om voor Shieldon te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Armor Fossil display. Zo werk je gericht aan Shieldon."
   },
   {
     "number": 275,
@@ -6036,7 +6034,7 @@ const pokemonKanto = [
     "evolvesFrom": "Shieldon",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Shield Fossil display. Dat is de duidelijkste plek om voor Bastiodon te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Shield Fossil display. Zo werk je gericht aan Bastiodon."
   },
   {
     "number": 276,
@@ -6058,7 +6056,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Tyrantrum",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Jaw Fossil display. Dat is de duidelijkste plek om voor Tyrunt te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Jaw Fossil display. Zo werk je gericht aan Tyrunt."
   },
   {
     "number": 277,
@@ -6081,7 +6079,7 @@ const pokemonKanto = [
     "evolvesFrom": "Tyrunt",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Despot fossil display. Dat is de duidelijkste plek om voor Tyrantrum te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Despot fossil display. Zo werk je gericht aan Tyrantrum."
   },
   {
     "number": 278,
@@ -6103,7 +6101,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Aurorus",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Sail Fossil display. Dat is de duidelijkste plek om voor Amaura te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Sail Fossil display. Zo werk je gericht aan Amaura."
   },
   {
     "number": 279,
@@ -6126,7 +6124,7 @@ const pokemonKanto = [
     "evolvesFrom": "Amaura",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Rocky Ridges en bouw eerst Tundra fossil display. Dat is de duidelijkste plek om voor Aurorus te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Tundra fossil display. Zo werk je gericht aan Aurorus."
   },
   {
     "number": 280,
@@ -6147,7 +6145,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "Vaporeon / Jolteon / Flareon / Espeon / Umbreon / Leafeon / Glaceon / Sylveon",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Pretty flower bed. Dat is de duidelijkste plek om voor Eevee te werken."
+    "tip": "Mijn tip: begin in Withered Wastelands en bouw eerst Pretty flower bed. Zo werk je gericht aan Eevee."
   },
   {
     "number": 281,
@@ -6168,7 +6166,7 @@ const pokemonKanto = [
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Boundless blue beverage. Dat is de duidelijkste plek om voor Vaporeon te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Boundless blue beverage. Zo werk je gericht aan Vaporeon."
   },
   {
     "number": 282,
@@ -6189,7 +6187,7 @@ const pokemonKanto = [
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Electrifying potatoes. Dat is de duidelijkste plek om voor Jolteon te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Electrifying potatoes. Zo werk je gericht aan Jolteon."
   },
   {
     "number": 283,
@@ -6210,7 +6208,7 @@ const pokemonKanto = [
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Burning-hot spice. Dat is de duidelijkste plek om voor Flareon te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Burning-hot spice. Zo werk je gericht aan Flareon."
   },
   {
     "number": 284,
@@ -6231,7 +6229,7 @@ const pokemonKanto = [
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Elegant daytime treats. Dat is de duidelijkste plek om voor Espeon te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Elegant daytime treats. Zo werk je gericht aan Espeon."
   },
   {
     "number": 285,
@@ -6252,7 +6250,7 @@ const pokemonKanto = [
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Dark-chocolate cookies. Dat is de duidelijkste plek om voor Umbreon te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Dark-chocolate cookies. Zo werk je gericht aan Umbreon."
   },
   {
     "number": 286,
@@ -6273,7 +6271,7 @@ const pokemonKanto = [
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Leafy greens sandwich. Dat is de duidelijkste plek om voor Leafeon te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Leafy greens sandwich. Zo werk je gericht aan Leafeon."
   },
   {
     "number": 287,
@@ -6294,7 +6292,7 @@ const pokemonKanto = [
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Chilly shaved ice. Dat is de duidelijkste plek om voor Glaceon te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Chilly shaved ice. Zo werk je gericht aan Glaceon."
   },
   {
     "number": 288,
@@ -6315,7 +6313,7 @@ const pokemonKanto = [
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: begin in Palette Town en bouw eerst Lovely ribbon cake. Dat is de duidelijkste plek om voor Sylveon te werken."
+    "tip": "Mijn tip: begin in Palette Town en bouw eerst Lovely ribbon cake. Zo werk je gericht aan Sylveon."
   },
   {
     "number": 289,
@@ -6325,18 +6323,16 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Dream Island",
+    "location": "",
     "area": "",
-    "habitat": " | Ideale omgeving: Humid",
-    "obtainMethod": "Zoek of speel verder in Dream Island.",
+    "habitat": "Ideale omgeving: Humid",
+    "obtainMethod": "",
     "requirements": "",
-    "specialties": [
-      "???"
-    ],
+    "specialties": [],
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: richt je eerst op Dream Island; daar hoort Kyogre in Pokopia bij."
+    "tip": ""
   },
   {
     "number": 290,
@@ -6346,10 +6342,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Dream Island",
+    "location": "",
     "area": "",
-    "habitat": " | Ideale omgeving: Bright",
-    "obtainMethod": "Zoek of speel verder in Dream Island.",
+    "habitat": "Ideale omgeving: Bright",
+    "obtainMethod": "",
     "requirements": "",
     "specialties": [
       "Generate"
@@ -6357,7 +6353,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: richt je eerst op Dream Island; daar hoort Raikou in Pokopia bij."
+    "tip": ""
   },
   {
     "number": 291,
@@ -6367,10 +6363,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Dream Island",
+    "location": "",
     "area": "",
-    "habitat": " | Ideale omgeving: Warm",
-    "obtainMethod": "Zoek of speel verder in Dream Island.",
+    "habitat": "Ideale omgeving: Warm",
+    "obtainMethod": "",
     "requirements": "",
     "specialties": [
       "Burn"
@@ -6378,7 +6374,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: richt je eerst op Dream Island; daar hoort Entei in Pokopia bij."
+    "tip": ""
   },
   {
     "number": 292,
@@ -6388,10 +6384,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Dream Island",
+    "location": "",
     "area": "",
-    "habitat": " | Ideale omgeving: Humid",
-    "obtainMethod": "Zoek of speel verder in Dream Island.",
+    "habitat": "Ideale omgeving: Humid",
+    "obtainMethod": "",
     "requirements": "",
     "specialties": [
       "Water"
@@ -6399,7 +6395,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: richt je eerst op Dream Island; daar hoort Suicune in Pokopia bij."
+    "tip": ""
   },
   {
     "number": 293,
@@ -6410,10 +6406,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Dream Island",
+    "location": "",
     "area": "",
-    "habitat": " | Ideale omgeving: Warm",
-    "obtainMethod": "Zoek of speel verder in Dream Island.",
+    "habitat": "Ideale omgeving: Warm",
+    "obtainMethod": "",
     "requirements": "",
     "specialties": [
       "Burn"
@@ -6421,7 +6417,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: richt je eerst op Dream Island; daar hoort Volcanion in Pokopia bij."
+    "tip": ""
   },
   {
     "number": 294,
@@ -6432,10 +6428,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Dream Island",
+    "location": "",
     "area": "",
-    "habitat": " | Ideale omgeving: Cool",
-    "obtainMethod": "Zoek of speel verder in Dream Island.",
+    "habitat": "Ideale omgeving: Cool",
+    "obtainMethod": "",
     "requirements": "",
     "specialties": [
       "Fly"
@@ -6443,7 +6439,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: richt je eerst op Dream Island; daar hoort Articuno in Pokopia bij."
+    "tip": ""
   },
   {
     "number": 295,
@@ -6454,10 +6450,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Dream Island",
+    "location": "",
     "area": "",
-    "habitat": " | Ideale omgeving: Bright",
-    "obtainMethod": "Zoek of speel verder in Dream Island.",
+    "habitat": "Ideale omgeving: Bright",
+    "obtainMethod": "",
     "requirements": "",
     "specialties": [
       "Fly"
@@ -6465,7 +6461,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: richt je eerst op Dream Island; daar hoort Zapdos in Pokopia bij."
+    "tip": ""
   },
   {
     "number": 296,
@@ -6476,10 +6472,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Dream Island",
+    "location": "",
     "area": "",
-    "habitat": " | Ideale omgeving: Warm",
-    "obtainMethod": "Zoek of speel verder in Dream Island.",
+    "habitat": "Ideale omgeving: Warm",
+    "obtainMethod": "",
     "requirements": "",
     "specialties": [
       "Fly"
@@ -6487,7 +6483,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: richt je eerst op Dream Island; daar hoort Moltres in Pokopia bij."
+    "tip": ""
   },
   {
     "number": 297,
@@ -6498,18 +6494,16 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Dream Island",
+    "location": "",
     "area": "",
-    "habitat": " | Ideale omgeving: Humid",
-    "obtainMethod": "Zoek of speel verder in Dream Island.",
+    "habitat": "Ideale omgeving: Humid",
+    "obtainMethod": "",
     "requirements": "",
-    "specialties": [
-      "???"
-    ],
+    "specialties": [],
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: richt je eerst op Dream Island; daar hoort Lugia in Pokopia bij."
+    "tip": ""
   },
   {
     "number": 298,
@@ -6520,18 +6514,16 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Dream Island",
+    "location": "",
     "area": "",
-    "habitat": " | Ideale omgeving: Warm",
-    "obtainMethod": "Zoek of speel verder in Dream Island.",
+    "habitat": "Ideale omgeving: Warm",
+    "obtainMethod": "",
     "requirements": "",
-    "specialties": [
-      "???"
-    ],
+    "specialties": [],
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: richt je eerst op Dream Island; daar hoort Ho-Oh in Pokopia bij."
+    "tip": ""
   },
   {
     "number": 299,
@@ -6541,10 +6533,10 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Dream Island",
+    "location": "",
     "area": "",
-    "habitat": " | Ideale omgeving: Dark",
-    "obtainMethod": "Zoek of speel verder in Dream Island.",
+    "habitat": "Ideale omgeving: Dark",
+    "obtainMethod": "",
     "requirements": "",
     "specialties": [
       "Teleport"
@@ -6552,7 +6544,7 @@ const pokemonKanto = [
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: richt je eerst op Dream Island; daar hoort Mewtwo in Pokopia bij."
+    "tip": ""
   },
   {
     "number": 300,
@@ -6562,17 +6554,17 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Dream Island",
-    "area": "",
-    "habitat": " | Ideale omgeving: Warm",
-    "obtainMethod": "Zoek of speel verder in Dream Island.",
-    "requirements": "",
+    "location": "Withered Wastelands",
+    "area": "Ondergrondse shrine / Mysterious Mural",
+    "habitat": "Ideale omgeving: Warm",
+    "obtainMethod": "Verzamel alle Mysterious Slates en plaats ze bij de ondergrondse shrine in Withered Wastelands.",
+    "requirements": "Alle Mysterious Slates.",
     "specialties": [
       "Teleport"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
     "evolutionMethod": "",
-    "tip": "Mijn tip: richt je eerst op Dream Island; daar hoort Mew in Pokopia bij."
+    "tip": "Mijn tip: behandel Mew niet als een gewone habitat-spawn. Verzamel eerst alle Mysterious Slates en ga daarna naar de ondergrondse shrine in Withered Wastelands."
   }
 ];

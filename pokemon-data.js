@@ -1,15 +1,25 @@
 const pokemonData = [
-  {
-    number: 1,
-    name: "Bulbasaur",
-    type: ["Grass", "Poison"],
-    game: "",
-    location: "",
-    habitat: "",
-    requirements: "",
-    dlc: false,
-    tip: ""
-  },
+{
+  number: 1,
+  name: "Bulbasaur",
+  type: ["Grass", "Poison"],
+
+  game: "",
+  dlc: false,
+
+  location: "",
+  area: "",
+  habitat: "",
+
+  obtainMethod: "",
+  requirements: "",
+
+  evolvesFrom: "",
+  evolvesInto: "Ivysaur",
+  evolutionMethod: "",
+
+  tip: ""
+},
   {
     number: 2,
     name: "Ivysaur",

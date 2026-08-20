@@ -127,4 +127,21 @@ code dit stukje:
         flex: 1;
         min-width: 140px;
     }
+}.dlc-info {
+    width: min(1100px, 92%);
+    margin: 20px auto 0;
+    padding: 18px 20px;
+    background: #eaf8ff;
+    border: 1px solid #b8e3f5;
+    border-radius: 14px;
+}
+
+.dlc-info h2 {
+    margin: 0 0 6px;
+    font-size: 21px;
+}
+
+.dlc-info p {
+    margin: 0;
+    line-height: 1.5;
 }

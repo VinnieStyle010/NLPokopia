@@ -112,7 +112,7 @@ ${infoRow("Evolutiemethode", pokemon.evolutionMethod)}
     }
 </p>
 
-            ${infoRow("NLPokopia-tip", pokemon.tip)}
+            ${infoRow("Persoonlijke Tip", pokemon.tip)}
 
             <div class="video-links">
                 <h3>Zoek video's</h3>

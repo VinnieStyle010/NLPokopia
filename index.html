@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>NLPokopia</title>
 
@@ -15,42 +20,96 @@
         <h1>NLPokopia</h1>
         <p>Jouw Nederlandse gids voor Pokémon Pokopia</p>
     </header>
-<section class="dlc-info">
-    <h2>Bubbly Basin DLC</h2>
-    <p>
-        Bubbly Basin is sinds 5 augustus 2026 beschikbaar en heeft een eigen
-        Pokédex met 50 nieuwe Pokémon en 36 habitats.
-    </p>
-</section>
-    
+
+
+    <!-- BUBBLY BASIN INFORMATIE -->
+
+    <section class="dlc-info">
+        <h2>🫧 Bubbly Basin DLC</h2>
+
+        <p>
+            Bubbly Basin is sinds 5 augustus 2026 beschikbaar en heeft
+            een eigen Pokédex met 50 Pokémon en 36 habitats.
+        </p>
+
+        <p>
+            De Bubbly Basin-content hoort bij de Pokémon Pokopia
+            Expansion Pass en wordt op NLPokopia apart van de
+            Hoofd-Pokédex weergegeven.
+        </p>
+    </section>
+
+
+    <!-- ZOEKBALK -->
+
     <section class="search-bar">
+
         <input
             type="text"
             id="searchInput"
-            placeholder="Zoek op naam of nummer, bijvoorbeeld Bulbasaur of 001"
+            placeholder="Zoek op naam of nummer, bijvoorbeeld Bulbasaur, 001, Shellder of DLC 001"
         >
-    </section>
-<section class="filters">
-    <select id="gameFilter">
-    <option value="all">Alles</option>
-    <option value="base">Base Game</option>
-    <option value="dlc">DLC</option>
-    <option value="unknown">Nog onbekend</option>
-</select>
 
-<select id="typeFilter">
-    <option value="all">Alle types</option>
-</select>
-</section>
+    </section>
+
+
+    <!-- FILTERS -->
+
+    <section class="filters">
+
+        <select id="gameFilter">
+
+            <option value="all">
+                Alle Pokémon
+            </option>
+
+            <option value="base">
+                Hoofd-Pokédex
+            </option>
+
+            <option value="dlc">
+                Bubbly Basin DLC
+            </option>
+
+            <option value="unknown">
+                Nog onbekend
+            </option>
+
+        </select>
+
+
+        <select id="typeFilter">
+
+            <option value="all">
+                Alle types
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <!-- HIER WORDEN ALLE POKÉMON AUTOMATISCH GELADEN -->
+
     <main id="app">
-        <!-- Hier komen automatisch de Pokémon -->
+
+        <!-- Pokémon-kaarten worden door app.js toegevoegd -->
+
     </main>
 
-<script src="pokemon-kanto.js"></script>
-<script src="pokemon-extra.js"></script>
-<script src="pokemon-dlc.js"></script>
-<script src="pokemon-data.js"></script>
-<script src="app.js"></script>
+
+    <!-- JAVASCRIPT BESTANDEN -->
+
+    <script src="pokemon-kanto.js"></script>
+
+    <script src="pokemon-extra.js"></script>
+
+    <script src="pokemon-dlc.js"></script>
+
+    <script src="pokemon-data.js"></script>
+
+    <script src="app.js"></script>
 
 </body>
+
 </html>

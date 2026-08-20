@@ -29,3 +29,18 @@ const pokemonData = [
 ]
 .map(normalizePokemon)
 .sort((a, b) => a.number - b.number);
+function checkDuplicatePokemonNumbers() {
+    const seenNumbers = new Set();
+
+    pokemonData.forEach((pokemon) => {
+        if (seenNumbers.has(pokemon.number)) {
+            console.warn(
+                `Dubbel Pokémon-nummer gevonden: #${pokemon.number} ${pokemon.name}`
+            );
+        }
+
+        seenNumbers.add(pokemon.number);
+    });
+}
+
+checkDuplicatePokemonNumbers();

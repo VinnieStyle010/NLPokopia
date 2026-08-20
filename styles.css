@@ -65,3 +65,21 @@ header p {
     padding: 16px;
   }
 }
+code dit stukje:
+.search-bar {
+    width: min(1100px, 92%);
+    margin: 25px auto 0;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: #555;
+}

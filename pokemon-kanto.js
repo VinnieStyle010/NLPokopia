@@ -775,5 +775,165 @@ const pokemonKanto = [
   dlc: false,
   evolvesFrom: "Pikachu",
   evolvesInto: ""
+},
+{
+  number: 81,
+  name: "Zubat",
+  type: ["Poison", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Golbat"
+},
+{
+  number: 82,
+  name: "Golbat",
+  type: ["Poison", "Flying"],
+  dlc: false,
+  evolvesFrom: "Zubat",
+  evolvesInto: "Crobat"
+},
+{
+  number: 83,
+  name: "Crobat",
+  type: ["Poison", "Flying"],
+  dlc: false,
+  evolvesFrom: "Golbat",
+  evolvesInto: ""
+},
+{
+  number: 84,
+  name: "Meowth",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Persian"
+},
+{
+  number: 85,
+  name: "Persian",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "Meowth",
+  evolvesInto: ""
+},
+{
+  number: 86,
+  name: "Psyduck",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Golduck"
+},
+{
+  number: 87,
+  name: "Golduck",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "Psyduck",
+  evolvesInto: ""
+},
+{
+  number: 88,
+  name: "Growlithe",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Arcanine"
+},
+{
+  number: 89,
+  name: "Arcanine",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "Growlithe",
+  evolvesInto: ""
+},
+{
+  number: 90,
+  name: "Farfetch'd",
+  type: ["Normal", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 91,
+  name: "Grimer",
+  type: ["Poison"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Muk"
+},
+{
+  number: 92,
+  name: "Muk",
+  type: ["Poison"],
+  dlc: false,
+  evolvesFrom: "Grimer",
+  evolvesInto: ""
+},
+{
+  number: 93,
+  name: "Gastly",
+  type: ["Ghost", "Poison"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Haunter"
+},
+{
+  number: 94,
+  name: "Haunter",
+  type: ["Ghost", "Poison"],
+  dlc: false,
+  evolvesFrom: "Gastly",
+  evolvesInto: "Gengar"
+},
+{
+  number: 95,
+  name: "Gengar",
+  type: ["Ghost", "Poison"],
+  dlc: false,
+  evolvesFrom: "Haunter",
+  evolvesInto: ""
+},
+{
+  number: 96,
+  name: "Voltorb",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Electrode"
+},
+{
+  number: 97,
+  name: "Electrode",
+  type: ["Electric"],
+  dlc: false,
+  evolvesFrom: "Voltorb",
+  evolvesInto: ""
+},
+{
+  number: 98,
+  name: "Exeggcute",
+  type: ["Grass", "Psychic"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Exeggutor"
+},
+{
+  number: 99,
+  name: "Exeggutor",
+  type: ["Grass", "Psychic"],
+  dlc: false,
+  evolvesFrom: "Exeggcute",
+  evolvesInto: ""
+},
+{
+  number: 100,
+  name: "Happiny",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Chansey"
 }
-];
+];  

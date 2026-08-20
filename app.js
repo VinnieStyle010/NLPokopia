@@ -1,6 +1,7 @@
 const app = document.getElementById("app");
 const searchInput = document.getElementById("searchInput");
-
+const gameFilter = document.getElementById("gameFilter");
+const typeFilter = document.getElementById("typeFilter");
 function createSearchUrl(platform, pokemonName) {
     const query = encodeURIComponent(`${pokemonName} Pokemon Pokopia`);
 

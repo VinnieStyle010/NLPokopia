@@ -48,23 +48,31 @@ const pokemonKanto = [
   evolutionMethod: "",
 
   tip: "Ivysaur is zeldzamer dan Bulbasaur. Bouw daarom eerst een Field of Flowers met 8 Wildflowers en geef hem een lichte, groene omgeving. Zijn Grow-vaardigheid blijft erg handig voor gebieden met veel planten."
+{
+  number: 3,
+  name: "Venusaur",
+  type: ["Grass", "Poison"],
+  game: "Pokémon Pokopia",
+  dlc: false,
+
+  location: "Withered Wastelands / Bleak Beach / Rocky Ridges / Sparkling Skylands / Palette Town / Cloud Island",
+
+  area: "Ochtend / Dag / Avond / Nacht - zon, bewolking of regen",
+
+  habitat: "Field of Flowers / Garden Terrace",
+
+  obtainMethod: "Maak een Field of Flowers of Garden Terrace om Venusaur te laten verschijnen.",
+
+  requirements: "Field of Flowers: 8x Wildflowers. Garden Terrace: 4x Wildflowers + 1x Garden chair + 1x Garden light + 1x Garden table.",
+
+  specialties: ["Grow", "Litter"],
+
+  evolvesFrom: "Ivysaur",
+  evolvesInto: "",
+  evolutionMethod: "",
+
+  tip: "Venusaur is zeldzaam, dus bouw liever meteen een volledige Field of Flowers of Garden Terrace. Zijn Grow-vaardigheid helpt met planten en via Litter kan hij nuttige materialen bij zijn huis achterlaten."
 },
-  {
-    number: 3,
-    name: "Venusaur",
-    type: ["Grass", "Poison"],
-    game: "",
-    dlc: null,
-    location: "",
-    area: "",
-    habitat: "",
-    obtainMethod: "",
-    requirements: "",
-    evolvesFrom: "Ivysaur",
-    evolvesInto: "",
-    evolutionMethod: "",
-    tip: ""
-  },
   {
     number: 4,
     name: "Charmander",

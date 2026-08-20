@@ -1735,5 +1735,165 @@ const pokemonKanto = [
   dlc: false,
   evolvesFrom: "",
   evolvesInto: "Armarouge / Ceruledge"
+},
+{
+  number: 201,
+  name: "Armarouge",
+  type: ["Fire", "Psychic"],
+  dlc: false,
+  evolvesFrom: "Charcadet",
+  evolvesInto: ""
+},
+{
+  number: 202,
+  name: "Ceruledge",
+  type: ["Fire", "Ghost"],
+  dlc: false,
+  evolvesFrom: "Charcadet",
+  evolvesInto: ""
+},
+{
+  number: 203,
+  name: "Glimmet",
+  type: ["Rock", "Poison"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Glimmora"
+},
+{
+  number: 204,
+  name: "Glimmora",
+  type: ["Rock", "Poison"],
+  dlc: false,
+  evolvesFrom: "Glimmet",
+  evolvesInto: ""
+},
+{
+  number: 205,
+  name: "Gimmighoul",
+  type: ["Ghost"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Gholdengo"
+},
+{
+  number: 206,
+  name: "Gholdengo",
+  type: ["Steel", "Ghost"],
+  dlc: false,
+  evolvesFrom: "Gimmighoul",
+  evolvesInto: ""
+},
+{
+  number: 207,
+  name: "Vulpix",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Ninetales"
+},
+{
+  number: 208,
+  name: "Ninetales",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "Vulpix",
+  evolvesInto: ""
+},
+{
+  number: 209,
+  name: "Poliwag",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Poliwhirl"
+},
+{
+  number: 210,
+  name: "Poliwhirl",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "Poliwag",
+  evolvesInto: "Poliwrath / Politoed"
+},
+{
+  number: 211,
+  name: "Poliwrath",
+  type: ["Water", "Fighting"],
+  dlc: false,
+  evolvesFrom: "Poliwhirl",
+  evolvesInto: ""
+},
+{
+  number: 212,
+  name: "Politoed",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "Poliwhirl",
+  evolvesInto: ""
+},
+{
+  number: 213,
+  name: "Abra",
+  type: ["Psychic"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Kadabra"
+},
+{
+  number: 214,
+  name: "Kadabra",
+  type: ["Psychic"],
+  dlc: false,
+  evolvesFrom: "Abra",
+  evolvesInto: "Alakazam"
+},
+{
+  number: 215,
+  name: "Alakazam",
+  type: ["Psychic"],
+  dlc: false,
+  evolvesFrom: "Kadabra",
+  evolvesInto: ""
+},
+{
+  number: 216,
+  name: "Mime Jr.",
+  type: ["Psychic", "Fairy"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Mr. Mime"
+},
+{
+  number: 217,
+  name: "Mr. Mime",
+  type: ["Psychic", "Fairy"],
+  dlc: false,
+  evolvesFrom: "Mime Jr.",
+  evolvesInto: ""
+},
+{
+  number: 218,
+  name: "Porygon",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Porygon2"
+},
+{
+  number: 219,
+  name: "Porygon2",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "Porygon",
+  evolvesInto: "Porygon-Z"
+},
+{
+  number: 220,
+  name: "Porygon-Z",
+  type: ["Normal"],
+  dlc: false,
+  evolvesFrom: "Porygon2",
+  evolvesInto: ""
 }
 ];

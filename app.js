@@ -87,11 +87,16 @@ ${infoRow("Evolueert van", pokemon.evolvesFrom)}
 ${infoRow("Evolueert naar", pokemon.evolvesInto)}
 ${infoRow("Evolutiemethode", pokemon.evolutionMethod)}
 
-            ${
-                pokemon.dlc
-                    ? `<p><strong>DLC:</strong> Ja</p>`
-                    : ""
-            }
+<p>
+    <strong>Status:</strong>
+    ${
+        pokemon.dlc === true
+            ? "DLC"
+            : pokemon.dlc === false
+            ? "Base Game"
+            : "Nog onbekend"
+    }
+</p>
 
             ${infoRow("NLPokopia-tip", pokemon.tip)}
 

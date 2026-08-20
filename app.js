@@ -16,8 +16,15 @@ function createSearchUrl(platform, pokemonName) {
     return urls[platform];
 }
 
-function getPokemonImage(number) {
-    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${number}.png`;
+function getPokemonImage(name) {
+    const imageName = name
+        .toLowerCase()
+        .replace(/♀/g, "-f")
+        .replace(/♂/g, "-m")
+        .replace(/['’.]/g, "")
+        .replace(/\s+/g, "-");
+
+    return `https://img.pokemondb.net/artwork/large/${imageName}.jpg`;
 }
 
 function infoRow(label, value) {

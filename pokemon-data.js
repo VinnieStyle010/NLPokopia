@@ -23,51 +23,104 @@ function normalizePokemon(pokemon) {
     };
 }
 
+
 const pokemonData = [
     ...pokemonKanto,
     ...pokemonExtra,
     ...pokemonDLC
 ]
 .map(normalizePokemon)
-.sort((a, b) => a.number - b.number);
+.sort((a, b) => {
+
+    // Hoofd-Pokédex eerst, DLC daarna
+    if (a.dlc !== b.dlc) {
+        return a.dlc ? 1 : -1;
+    }
+
+    return a.number - b.number;
+});
+
+
 function checkDuplicatePokemonNumbers() {
     const seenNumbers = new Set();
 
     pokemonData.forEach((pokemon) => {
-        if (seenNumbers.has(pokemon.number)) {
+
+        const section =
+            pokemon.dlc === true
+                ? "dlc"
+                : "base";
+
+        const key =
+            `${section}-${pokemon.number}`;
+
+        if (seenNumbers.has(key)) {
             console.warn(
-                `Dubbel Pokémon-nummer gevonden: #${pokemon.number} ${pokemon.name}`
+                `Dubbel Pokémon-nummer gevonden: ${section.toUpperCase()} #${String(pokemon.number).padStart(3, "0")} ${pokemon.name}`
             );
         }
 
-        seenNumbers.add(pokemon.number);
+        seenNumbers.add(key);
     });
 }
 
-checkDuplicatePokemonNumbers();
-function checkPokemonDexComplete() {
-    const numbers = pokemonData.map((pokemon) => pokemon.number);
+
+function checkMainDexComplete() {
+    const mainNumbers = pokemonData
+        .filter((pokemon) => pokemon.dlc === false)
+        .map((pokemon) => pokemon.number);
 
     const missingNumbers = [];
 
     for (let number = 1; number <= 300; number++) {
-        if (!numbers.includes(number)) {
+        if (!mainNumbers.includes(number)) {
             missingNumbers.push(number);
         }
     }
 
     if (missingNumbers.length === 0) {
-        console.log("✅ Pokopia Pokédex compleet: #001 t/m #300 aanwezig.");
+        console.log(
+            "✅ Hoofd-Pokédex compleet: #001 t/m #300 aanwezig."
+        );
     } else {
         console.warn(
-            "⚠️ Ontbrekende Pokopia-nummers:",
-            missingNumbers.map((number) =>
-                `#${String(number).padStart(3, "0")}`
-            )
+            "⚠️ Ontbrekende Hoofd-Pokédex nummers:",
+            missingNumbers
         );
     }
-
-    console.log(`Totaal aantal Pokémon-entries: ${pokemonData.length}`);
 }
 
-checkPokemonDexComplete();
+
+function checkDlcDexComplete() {
+    const dlcNumbers = pokemonData
+        .filter((pokemon) => pokemon.dlc === true)
+        .map((pokemon) => pokemon.number);
+
+    const missingNumbers = [];
+
+    for (let number = 1; number <= 50; number++) {
+        if (!dlcNumbers.includes(number)) {
+            missingNumbers.push(number);
+        }
+    }
+
+    if (missingNumbers.length === 0) {
+        console.log(
+            "✅ Bubbly Basin Pokédex compleet: DLC #001 t/m #050 aanwezig."
+        );
+    } else {
+        console.warn(
+            "⚠️ Ontbrekende Bubbly Basin nummers:",
+            missingNumbers
+        );
+    }
+}
+
+
+checkDuplicatePokemonNumbers();
+checkMainDexComplete();
+checkDlcDexComplete();
+
+console.log(
+    `✅ Totaal geladen Pokémon: ${pokemonData.length}`
+);

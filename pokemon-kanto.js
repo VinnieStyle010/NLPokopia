@@ -2055,5 +2055,165 @@ const pokemonKanto = [
   dlc: false,
   evolvesFrom: "",
   evolvesInto: "Altaria"
+},
+{
+  number: 241,
+  name: "Altaria",
+  type: ["Dragon", "Flying"],
+  dlc: false,
+  evolvesFrom: "Swablu",
+  evolvesInto: ""
+},
+{
+  number: 242,
+  name: "Duskull",
+  type: ["Ghost"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Dusclops"
+},
+{
+  number: 243,
+  name: "Dusclops",
+  type: ["Ghost"],
+  dlc: false,
+  evolvesFrom: "Duskull",
+  evolvesInto: "Dusknoir"
+},
+{
+  number: 244,
+  name: "Dusknoir",
+  type: ["Ghost"],
+  dlc: false,
+  evolvesFrom: "Dusclops",
+  evolvesInto: ""
+},
+{
+  number: 245,
+  name: "Beldum",
+  type: ["Steel", "Psychic"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Metang"
+},
+{
+  number: 246,
+  name: "Metang",
+  type: ["Steel", "Psychic"],
+  dlc: false,
+  evolvesFrom: "Beldum",
+  evolvesInto: "Metagross"
+},
+{
+  number: 247,
+  name: "Metagross",
+  type: ["Steel", "Psychic"],
+  dlc: false,
+  evolvesFrom: "Metang",
+  evolvesInto: ""
+},
+{
+  number: 248,
+  name: "Snivy",
+  type: ["Grass"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Servine"
+},
+{
+  number: 249,
+  name: "Servine",
+  type: ["Grass"],
+  dlc: false,
+  evolvesFrom: "Snivy",
+  evolvesInto: "Serperior"
+},
+{
+  number: 250,
+  name: "Serperior",
+  type: ["Grass"],
+  dlc: false,
+  evolvesFrom: "Servine",
+  evolvesInto: ""
+},
+{
+  number: 251,
+  name: "Froakie",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Frogadier"
+},
+{
+  number: 252,
+  name: "Frogadier",
+  type: ["Water"],
+  dlc: false,
+  evolvesFrom: "Froakie",
+  evolvesInto: "Greninja"
+},
+{
+  number: 253,
+  name: "Greninja",
+  type: ["Water", "Dark"],
+  dlc: false,
+  evolvesFrom: "Frogadier",
+  evolvesInto: ""
+},
+{
+  number: 254,
+  name: "Dedenne",
+  type: ["Electric", "Fairy"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 255,
+  name: "Noibat",
+  type: ["Flying", "Dragon"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Noivern"
+},
+{
+  number: 256,
+  name: "Noivern",
+  type: ["Flying", "Dragon"],
+  dlc: false,
+  evolvesFrom: "Noibat",
+  evolvesInto: ""
+},
+{
+  number: 257,
+  name: "Rookidee",
+  type: ["Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Corvisquire"
+},
+{
+  number: 258,
+  name: "Corvisquire",
+  type: ["Flying"],
+  dlc: false,
+  evolvesFrom: "Rookidee",
+  evolvesInto: "Corviknight"
+},
+{
+  number: 259,
+  name: "Corviknight",
+  type: ["Flying", "Steel"],
+  dlc: false,
+  evolvesFrom: "Corvisquire",
+  evolvesInto: ""
+},
+{
+  number: 260,
+  name: "Dreepy",
+  type: ["Dragon", "Ghost"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Drakloak"
 }
 ];

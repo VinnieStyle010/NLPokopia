@@ -1415,5 +1415,165 @@ const pokemonKanto = [
   dlc: false,
   evolvesFrom: "Geodude",
   evolvesInto: "Golem"
+},
+{
+  number: 161,
+  name: "Golem",
+  type: ["Rock", "Ground"],
+  dlc: false,
+  evolvesFrom: "Graveler",
+  evolvesInto: ""
+},
+{
+  number: 162,
+  name: "Magby",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Magmar"
+},
+{
+  number: 163,
+  name: "Magmar",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "Magby",
+  evolvesInto: "Magmortar"
+},
+{
+  number: 164,
+  name: "Magmortar",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "Magmar",
+  evolvesInto: ""
+},
+{
+  number: 165,
+  name: "Bonsly",
+  type: ["Rock"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Sudowoodo"
+},
+{
+  number: 166,
+  name: "Sudowoodo",
+  type: ["Rock"],
+  dlc: false,
+  evolvesFrom: "Bonsly",
+  evolvesInto: ""
+},
+{
+  number: 167,
+  name: "Murkrow",
+  type: ["Dark", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Honchkrow"
+},
+{
+  number: 168,
+  name: "Honchkrow",
+  type: ["Dark", "Flying"],
+  dlc: false,
+  evolvesFrom: "Murkrow",
+  evolvesInto: ""
+},
+{
+  number: 169,
+  name: "Larvitar",
+  type: ["Rock", "Ground"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Pupitar"
+},
+{
+  number: 170,
+  name: "Pupitar",
+  type: ["Rock", "Ground"],
+  dlc: false,
+  evolvesFrom: "Larvitar",
+  evolvesInto: "Tyranitar"
+},
+{
+  number: 171,
+  name: "Tyranitar",
+  type: ["Rock", "Dark"],
+  dlc: false,
+  evolvesFrom: "Pupitar",
+  evolvesInto: ""
+},
+{
+  number: 172,
+  name: "Lotad",
+  type: ["Water", "Grass"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Lombre"
+},
+{
+  number: 173,
+  name: "Lombre",
+  type: ["Water", "Grass"],
+  dlc: false,
+  evolvesFrom: "Lotad",
+  evolvesInto: "Ludicolo"
+},
+{
+  number: 174,
+  name: "Ludicolo",
+  type: ["Water", "Grass"],
+  dlc: false,
+  evolvesFrom: "Lombre",
+  evolvesInto: ""
+},
+{
+  number: 175,
+  name: "Mawile",
+  type: ["Steel", "Fairy"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 176,
+  name: "Torkoal",
+  type: ["Fire"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 177,
+  name: "Kricketot",
+  type: ["Bug"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Kricketune"
+},
+{
+  number: 178,
+  name: "Kricketune",
+  type: ["Bug"],
+  dlc: false,
+  evolvesFrom: "Kricketot",
+  evolvesInto: ""
+},
+{
+  number: 179,
+  name: "Chatot",
+  type: ["Normal", "Flying"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: ""
+},
+{
+  number: 180,
+  name: "Riolu",
+  type: ["Fighting"],
+  dlc: false,
+  evolvesFrom: "",
+  evolvesInto: "Lucario"
 }
 ];

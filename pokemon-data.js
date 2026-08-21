@@ -6,6 +6,7 @@ function normalizePokemon(pokemon) {
 
         game: pokemon.game ?? "",
         dlc: pokemon.dlc ?? null,
+        event: pokemon.event ?? false,
 
         location: pokemon.location ?? "",
         area: pokemon.area ?? "",

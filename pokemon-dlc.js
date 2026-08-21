@@ -1,15 +1,18 @@
 // NLPokopia - Bubbly Basin DLC Pokédex #001 t/m #050
-// Nederlands eerst; Engelse spelterm direct tussen haakjes.
-// Exacte habitat-benodigdheden staan direct op iedere Pokémonkaart.
-// Persoonlijke tips zijn volledig Nederlands.
-// Evolutiemethode wordt niet gebruikt.
+// Strakke NL + EN versie voor kinderen én volwassenen.
+// - Type: Nederlands (Engels)
+// - Locatie, habitats en materialen: Nederlands (Engels)
+// - Exacte benodigdheden direct op iedere Pokémonkaart
+// - Persoonlijke tips natuurlijk Nederlands met herkenbare Engelse speltermen
+// - Geen verwijzing naar Habitat Dex
+// - Geen evolutiemethode
 
 const pokemonDLC = [
   {
     "number": 1,
     "name": "Shellder",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -24,15 +27,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Cloyster",
-    "evolutionMethod": "",
-    "tip": "Begin met Basin-hoog gras & koraal (Basin-hoog gras (Basin Tall Grass) & Coral). Dat is de simpelste gerichte habitat om Shellder naar Bubbly Basin te lokken."
+    "tip": "Begin met Basin-hoog gras & koraal (Basin Tall Grass & Coral). Dat is de simpelste gerichte habitat om Shellder naar Bubbly Basin te lokken."
   },
   {
     "number": 2,
     "name": "Cloyster",
     "type": [
-      "Water",
-      "Ice"
+      "Water (Water)",
+      "IJs (Ice)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -47,14 +49,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Shellder",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Begin met Wuivend bloemenbed & zeewier (Wuivend bloemenbed (Swaying Flower Bed) & Seaweed). Dat is de simpelste gerichte habitat om Cloyster naar Bubbly Basin te lokken."
+    "tip": "Begin met Wuivend bloemenbed & zeewier (Swaying Flower Bed & Seaweed). Dat is de simpelste gerichte habitat om Cloyster naar Bubbly Basin te lokken."
   },
   {
     "number": 3,
     "name": "Horsea",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -68,14 +69,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Seadra",
-    "evolutionMethod": "",
     "tip": "Begin met Koraalverzameling (Coral Congregation). Dat is de simpelste gerichte habitat om Horsea naar Bubbly Basin te lokken."
   },
   {
     "number": 4,
     "name": "Seadra",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -90,15 +90,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Horsea",
     "evolvesInto": "Kingdra",
-    "evolutionMethod": "",
     "tip": "Begin met Koraalverzameling (Coral Congregation). Dat is de simpelste gerichte habitat om Seadra naar Bubbly Basin te lokken."
   },
   {
     "number": 5,
     "name": "Kingdra",
     "type": [
-      "Water",
-      "Dragon"
+      "Water (Water)",
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -113,14 +112,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Seadra",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Maritieme make-uptafel (Marine Makeup Stand). Dat is de simpelste gerichte habitat om Kingdra naar Bubbly Basin te lokken."
   },
   {
     "number": 6,
     "name": "Staryu",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -134,15 +132,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Starmie",
-    "evolutionMethod": "",
     "tip": "Begin met Wuivend bloemenbed (Swaying Flower Bed). Dat is de simpelste gerichte habitat om Staryu naar Bubbly Basin te lokken."
   },
   {
     "number": 7,
     "name": "Starmie",
     "type": [
-      "Water",
-      "Psychic"
+      "Water (Water)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -157,14 +154,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Staryu",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Zeemeermin-gym (Mermaid's Gym). Dat is de simpelste gerichte habitat om Starmie naar Bubbly Basin te lokken."
   },
   {
     "number": 8,
     "name": "Totodile",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -178,14 +174,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Croconaw",
-    "evolutionMethod": "",
     "tip": "Begin met Basin-hoog gras (Basin Tall Grass). Dat is de simpelste gerichte habitat om Totodile naar Bubbly Basin te lokken."
   },
   {
     "number": 9,
     "name": "Croconaw",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -200,14 +195,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Totodile",
     "evolvesInto": "Feraligatr",
-    "evolutionMethod": "",
     "tip": "Begin met Graafplek bij schoorsteenrotsen (Chimney Rocks Dig Site). Dat is de simpelste gerichte habitat om Croconaw naar Bubbly Basin te lokken."
   },
   {
     "number": 10,
     "name": "Feraligatr",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -222,15 +216,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Croconaw",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Bijtbare bokszak (Biteable Punching Bag). Dat is de simpelste gerichte habitat om Feraligatr naar Bubbly Basin te lokken."
   },
   {
     "number": 11,
     "name": "Chinchou",
     "type": [
-      "Water",
-      "Electric"
+      "Water (Water)",
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -244,15 +237,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lanturn",
-    "evolutionMethod": "",
     "tip": "Begin met Zachte ontspanningsplek (Fluffy Relaxation). Dat is de simpelste gerichte habitat om Chinchou naar Bubbly Basin te lokken."
   },
   {
     "number": 12,
     "name": "Lanturn",
     "type": [
-      "Water",
-      "Electric"
+      "Water (Water)",
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -267,15 +259,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Chinchou",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Nostalgiezone (Nostalgia Zone). Dat is de simpelste gerichte habitat om Lanturn naar Bubbly Basin te lokken."
   },
   {
     "number": 13,
     "name": "Corsola",
     "type": [
-      "Water",
-      "Rock"
+      "Water (Water)",
+      "Steen (Rock)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -289,14 +280,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Begin met Basin-hoog gras & koraal (Basin-hoog gras (Basin Tall Grass) & Coral). Dat is de simpelste gerichte habitat om Corsola naar Bubbly Basin te lokken."
+    "tip": "Begin met Basin-hoog gras & koraal (Basin Tall Grass & Coral). Dat is de simpelste gerichte habitat om Corsola naar Bubbly Basin te lokken."
   },
   {
     "number": 14,
     "name": "Mudkip",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -310,15 +300,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Marshtomp",
-    "evolutionMethod": "",
     "tip": "Begin met Basin-hoog gras (Basin Tall Grass). Dat is de simpelste gerichte habitat om Mudkip naar Bubbly Basin te lokken."
   },
   {
     "number": 15,
     "name": "Marshtomp",
     "type": [
-      "Water",
-      "Ground"
+      "Water (Water)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -333,15 +322,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Mudkip",
     "evolvesInto": "Swampert",
-    "evolutionMethod": "",
     "tip": "Begin met Modderige speelplek (Muddy Playtime). Dat is de simpelste gerichte habitat om Marshtomp naar Bubbly Basin te lokken."
   },
   {
     "number": 16,
     "name": "Swampert",
     "type": [
-      "Water",
-      "Ground"
+      "Water (Water)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -356,15 +344,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Marshtomp",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Modderspa (Muddy Spa). Dat is de simpelste gerichte habitat om Swampert naar Bubbly Basin te lokken."
   },
   {
     "number": 17,
     "name": "Carvanha",
     "type": [
-      "Water",
-      "Dark"
+      "Water (Water)",
+      "Duister (Dark)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -378,15 +365,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Sharpedo",
-    "evolutionMethod": "",
     "tip": "Begin met Zeewier & netten (Seaweed & Netting). Dat is de simpelste gerichte habitat om Carvanha naar Bubbly Basin te lokken."
   },
   {
     "number": 18,
     "name": "Sharpedo",
     "type": [
-      "Water",
-      "Dark"
+      "Water (Water)",
+      "Duister (Dark)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -401,15 +387,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Carvanha",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Graafplek bij schoorsteenrotsen (Chimney Rocks Dig Site). Dat is de simpelste gerichte habitat om Sharpedo naar Bubbly Basin te lokken."
   },
   {
     "number": 19,
     "name": "Barboach",
     "type": [
-      "Water",
-      "Ground"
+      "Water (Water)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -423,15 +408,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Whiscash",
-    "evolutionMethod": "",
     "tip": "Begin met Rustplek in de oceaan (Ocean Rest Spot). Dat is de simpelste gerichte habitat om Barboach naar Bubbly Basin te lokken."
   },
   {
     "number": 20,
     "name": "Whiscash",
     "type": [
-      "Water",
-      "Ground"
+      "Water (Water)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -446,14 +430,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Barboach",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Prachtige slaapruimte (Gorgeous Sleeping Area). Dat is de simpelste gerichte habitat om Whiscash naar Bubbly Basin te lokken."
   },
   {
     "number": 21,
     "name": "Corphish",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -467,15 +450,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Crawdaunt",
-    "evolutionMethod": "",
-    "tip": "Begin met Zanderig Basin-hoog gras (Sandy Basin-hoog gras (Basin Tall Grass)). Dat is de simpelste gerichte habitat om Corphish naar Bubbly Basin te lokken."
+    "tip": "Begin met Zanderig Basin-hoog gras (Sandy Basin Tall Grass). Dat is de simpelste gerichte habitat om Corphish naar Bubbly Basin te lokken."
   },
   {
     "number": 22,
     "name": "Crawdaunt",
     "type": [
-      "Water",
-      "Dark"
+      "Water (Water)",
+      "Duister (Dark)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -490,14 +472,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Corphish",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Zanderige graafplek (Sandy Digging Spot). Dat is de simpelste gerichte habitat om Crawdaunt naar Bubbly Basin te lokken."
   },
   {
     "number": 23,
     "name": "Luvdisc",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -511,14 +492,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Schatkist & fonkelende juwelen (Treasure Chest & Sparkling Jewels). Dat is de simpelste gerichte habitat om Luvdisc naar Bubbly Basin te lokken."
   },
   {
     "number": 24,
     "name": "Buizel",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -533,14 +513,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Floatzel",
-    "evolutionMethod": "",
     "tip": "Begin met Smoothieplek (Smoothie-Making Spot). Dat is de simpelste gerichte habitat om Buizel naar Bubbly Basin te lokken."
   },
   {
     "number": 25,
     "name": "Floatzel",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -555,14 +534,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Buizel",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Maritieme winkel (Marine Shop). Dat is de simpelste gerichte habitat om Floatzel naar Bubbly Basin te lokken."
   },
   {
     "number": 26,
     "name": "Finneon",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -576,14 +554,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lumineon",
-    "evolutionMethod": "",
     "tip": "Begin met Bemoste maritieme rustplek (Marine Mossy Rest Spot). Dat is de simpelste gerichte habitat om Finneon naar Bubbly Basin te lokken."
   },
   {
     "number": 27,
     "name": "Lumineon",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -598,15 +575,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Finneon",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Begin met Wuivend bloemenbed & zeewier (Wuivend bloemenbed (Swaying Flower Bed) & Seaweed). Dat is de simpelste gerichte habitat om Lumineon naar Bubbly Basin te lokken."
+    "tip": "Begin met Wuivend bloemenbed & zeewier (Swaying Flower Bed & Seaweed). Dat is de simpelste gerichte habitat om Lumineon naar Bubbly Basin te lokken."
   },
   {
     "number": 28,
     "name": "Frillish",
     "type": [
-      "Water",
-      "Ghost"
+      "Water (Water)",
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -621,15 +597,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Jellicent",
-    "evolutionMethod": "",
     "tip": "Begin met Oceaanschatten (Ocean Treasures). Dat is de simpelste gerichte habitat om Frillish naar Bubbly Basin te lokken."
   },
   {
     "number": 29,
     "name": "Jellicent",
     "type": [
-      "Water",
-      "Ghost"
+      "Water (Water)",
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -644,14 +619,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Frillish",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Maritiem theemoment (Maritime Teatime). Dat is de simpelste gerichte habitat om Jellicent naar Bubbly Basin te lokken."
   },
   {
     "number": 30,
     "name": "Alomomola",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -666,15 +640,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Oceaanschatten (Ocean Treasures). Dat is de simpelste gerichte habitat om Alomomola naar Bubbly Basin te lokken."
   },
   {
     "number": 31,
     "name": "Stunfisk",
     "type": [
-      "Ground",
-      "Electric"
+      "Grond (Ground)",
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -689,15 +662,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Wuivend bloemenbed (Swaying Flower Bed). Dat is de simpelste gerichte habitat om Stunfisk naar Bubbly Basin te lokken."
   },
   {
     "number": 32,
     "name": "Inkay",
     "type": [
-      "Dark",
-      "Psychic"
+      "Duister (Dark)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -712,15 +684,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Malamar",
-    "evolutionMethod": "",
     "tip": "Begin met Modderige speelplek (Muddy Playtime). Dat is de simpelste gerichte habitat om Inkay naar Bubbly Basin te lokken."
   },
   {
     "number": 33,
     "name": "Malamar",
     "type": [
-      "Dark",
-      "Psychic"
+      "Duister (Dark)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -735,14 +706,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Inkay",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Onderstebovenplek (Topsy-Turvy). Dat is de simpelste gerichte habitat om Malamar naar Bubbly Basin te lokken."
   },
   {
     "number": 34,
     "name": "Popplio",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -757,14 +727,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Brionne",
-    "evolutionMethod": "",
     "tip": "Praat eerst met Popplio bij de start van de DLC. Daarna kun je met Bubbelpodium (Bubbly Stage) gericht extra Popplio aantrekken."
   },
   {
     "number": 35,
     "name": "Brionne",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -779,15 +748,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Popplio",
     "evolvesInto": "Primarina",
-    "evolutionMethod": "",
     "tip": "Begin met Bubbelpodium (Bubbly Stage). Dat is de simpelste gerichte habitat om Brionne naar Bubbly Basin te lokken."
   },
   {
     "number": 36,
     "name": "Primarina",
     "type": [
-      "Water",
-      "Fairy"
+      "Water (Water)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -802,15 +770,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Brionne",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Elegant concert (Elegant Concert). Dat is de simpelste gerichte habitat om Primarina naar Bubbly Basin te lokken."
   },
   {
     "number": 37,
     "name": "Mareanie",
     "type": [
-      "Poison",
-      "Water"
+      "Gif (Poison)",
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -824,15 +791,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Toxapex",
-    "evolutionMethod": "",
-    "tip": "Begin met Wuivend bloemenbed & koraal (Wuivend bloemenbed (Swaying Flower Bed) & Coral). Dat is de simpelste gerichte habitat om Mareanie naar Bubbly Basin te lokken."
+    "tip": "Begin met Wuivend bloemenbed & koraal (Swaying Flower Bed & Coral). Dat is de simpelste gerichte habitat om Mareanie naar Bubbly Basin te lokken."
   },
   {
     "number": 38,
     "name": "Toxapex",
     "type": [
-      "Poison",
-      "Water"
+      "Gif (Poison)",
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -847,15 +813,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Mareanie",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Schatkist & fonkelende juwelen (Treasure Chest & Sparkling Jewels). Dat is de simpelste gerichte habitat om Toxapex naar Bubbly Basin te lokken."
   },
   {
     "number": 39,
     "name": "Wimpod",
     "type": [
-      "Bug",
-      "Water"
+      "Insect (Bug)",
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -869,15 +834,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Golisopod",
-    "evolutionMethod": "",
     "tip": "Begin met Afgedankte schat (Discarded Treasure). Dat is de simpelste gerichte habitat om Wimpod naar Bubbly Basin te lokken."
   },
   {
     "number": 40,
     "name": "Golisopod",
     "type": [
-      "Bug",
-      "Water"
+      "Insect (Bug)",
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -892,15 +856,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Wimpod",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Afgedankte schat (Discarded Treasure). Dat is de simpelste gerichte habitat om Golisopod naar Bubbly Basin te lokken."
   },
   {
     "number": 41,
     "name": "Bruxish",
     "type": [
-      "Water",
-      "Psychic"
+      "Water (Water)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -915,15 +878,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Bemoste rustplek bij gesmolten rots (Molten Mossy Rest Spot). Dat is de simpelste gerichte habitat om Bruxish naar Bubbly Basin te lokken."
   },
   {
     "number": 42,
     "name": "Dhelmise",
     "type": [
-      "Ghost",
-      "Grass"
+      "Geest (Ghost)",
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -938,14 +900,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Zeeman spelen (Playing Sailor). Dat is de simpelste gerichte habitat om Dhelmise naar Bubbly Basin te lokken."
   },
   {
     "number": 43,
     "name": "Chewtle",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -959,15 +920,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Drednaw",
-    "evolutionMethod": "",
     "tip": "Begin met Smoothieplek (Smoothie-Making Spot). Dat is de simpelste gerichte habitat om Chewtle naar Bubbly Basin te lokken."
   },
   {
     "number": 44,
     "name": "Drednaw",
     "type": [
-      "Water",
-      "Rock"
+      "Water (Water)",
+      "Steen (Rock)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -982,14 +942,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Chewtle",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Kanosteiger (Canoe Dock). Dat is de simpelste gerichte habitat om Drednaw naar Bubbly Basin te lokken."
   },
   {
     "number": 45,
     "name": "Pincurchin",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -1003,14 +962,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Griezelige schoorsteenrotsen (Creepy Chimney Rocks). Dat is de simpelste gerichte habitat om Pincurchin naar Bubbly Basin te lokken."
   },
   {
     "number": 46,
     "name": "Wiglett",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -1024,14 +982,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Wugtrio",
-    "evolutionMethod": "",
     "tip": "Begin met Zanderige spreekplek (Sandy Speech). Dat is de simpelste gerichte habitat om Wiglett naar Bubbly Basin te lokken."
   },
   {
     "number": 47,
     "name": "Wugtrio",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -1046,15 +1003,14 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "Wiglett",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Gloeiend podium voor drie (Glowing Stage For Three). Dat is de simpelste gerichte habitat om Wugtrio naar Bubbly Basin te lokken."
   },
   {
     "number": 48,
     "name": "Veluza",
     "type": [
-      "Water",
-      "Psychic"
+      "Water (Water)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -1069,14 +1025,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Begin met Bemoste maritieme rustplek (Marine Mossy Rest Spot). Dat is de simpelste gerichte habitat om Veluza naar Bubbly Basin te lokken."
   },
   {
     "number": 49,
     "name": "Phione",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -1090,14 +1045,13 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Ga pas gericht voor Phione zodra je de Starmie Doll hebt; dit is geen gewone habitat-spawn."
+    "tip": "Ga pas gericht voor Phione zodra je de Starmie-pop (Starmie Doll) hebt; dit is geen gewone habitatverschijning (habitat spawn)."
   },
   {
     "number": 50,
     "name": "Manaphy",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
@@ -1112,7 +1066,6 @@ const pokemonDLC = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
-    "tip": "Richt je op de hoofdverhaallijn van Bubbly Basin. Manaphy wordt via progressie vrijgespeeld en niet via een normaal habitat."
+    "tip": "Richt je op de hoofdverhaallijn van Bubbly Basin (Bubbly Basin story). Manaphy wordt via voortgang (progression) vrijgespeeld en niet via een normaal leefgebied (habitat)."
   }
 ];

@@ -1,7 +1,12 @@
 // NLPokopia - Hoofd-Pokédex #001 t/m #300
-// Nederlands als hoofdtaal; Engelse speltermen staan tussen haakjes.
-// Persoonlijke tips blijven gewoon Nederlands.
-// Evolutiemethode wordt niet op de website getoond.
+// DEFINITIEVE DATASET
+// - exacte habitat-benodigdheden staan direct op iedere Pokémonkaart
+// - Nederlands eerst; Engelse speltermen tussen haakjes
+// - tijd en weer volledig NL (EN)
+// - geen verwijzing naar de Habitat Dex voor materialen
+// - geen "Mijn tip:" prefix
+// - evolutiemethode niet gebruikt
+// Bron voor habitats/materialen/tijd/weer/specialties: Nintendo Life complete Pokopia Pokédex (13 augustus 2026).
 
 const pokemonKanto = [
   {
@@ -14,16 +19,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hoog gras (Tall Grass) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Bankje met groen (Bench with greenery) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hoog gras (Tall Grass) / Bankje met groen (Bench with greenery) | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hoog gras (Tall Grass) / Bankje met groen (Bench with greenery).",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoog gras (Tall Grass) / Bankje met groen (Bench with Greenery)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras (Tall Grass): Hoog gras (Tall Grass) ×4 OF Bankje met groen (Bench with Greenery): Haag, willekeurig (Hedge (any)) ×2; Zitplaats, willekeurig (Seat (any)) ×1",
     "specialties": [
       "Groeien (Grow)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Ivysaur",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Bulbasaur wacht."
   },
   {
@@ -36,16 +41,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Bloemenveld (Field of Flowers) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Bankje met groen (Bench with greenery) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Bloemenveld (Field of Flowers) / Bankje met groen (Bench with greenery) | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Bloemenveld (Field of Flowers) / Bankje met groen (Bench with greenery).",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bankje met groen (Bench with Greenery) / Bloemenveld (Field of Flowers)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bankje met groen (Bench with Greenery): Haag, willekeurig (Hedge (any)) ×2; Zitplaats, willekeurig (Seat (any)) ×1 OF Bloemenveld (Field of Flowers): Wilde bloemen (Wildflowers) ×8",
     "specialties": [
       "Groeien (Grow)"
     ],
     "evolvesFrom": "Bulbasaur",
     "evolvesInto": "Venusaur",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Field of Flowers. Controleer daarna tijd en weer voordat je voor Ivysaur wacht."
   },
   {
@@ -58,17 +63,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Bloemenveld (Field of Flowers) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Tuin-terras (Garden Terrace) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Bloemenveld (Field of Flowers) / Tuin-terras (Garden Terrace) | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Bloemenveld (Field of Flowers) / Tuin-terras (Garden Terrace).",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Tuint terras (Garden Terrace) / Bloemenveld (Field of Flowers)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Tuint terras (Garden Terrace): Wilde bloemen (Wildflowers) ×4; Tuinstoel (Garden Chair) ×1; Tuintafel (Garden Table) ×1; Tuinlamp (Garden Light) ×1 OF Bloemenveld (Field of Flowers): Wilde bloemen (Wildflowers) ×8",
     "specialties": [
       "Groeien (Grow)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Ivysaur",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Field of Flowers. Controleer daarna tijd en weer voordat je voor Venusaur wacht."
   },
   {
@@ -80,16 +85,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hoog gras (Tall Grass) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hoog gras (Tall Grass) | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hoog gras (Tall Grass).",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Zonnig (Sunny), bewolkt (Cloudy)",
+    "habitat": "Hoog gras (Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras (Tall Grass): Hoog gras (Tall Grass) ×4",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Charmeleon",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Charmander wacht."
   },
   {
@@ -101,16 +106,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Campsite (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Campsite | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Campsite.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Zonnig (Sunny), bewolkt (Cloudy)",
+    "habitat": "Kampeerplek (Campsite)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Kampeerplek (Campsite): Kampvuur (Campfire) ×1; Stro-tafel (Straw Table) ×1; Stro-kruk (Straw Stool) ×1",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "Charmander",
     "evolvesInto": "Charizard",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Campsite. Controleer daarna tijd en weer voordat je voor Charmeleon wacht."
   },
   {
@@ -123,17 +128,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hoog gras (Tall Grass) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud) ; Berry-feast Campsite (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud)",
-    "habitat": "Hoog gras (Tall Grass) / Berry-feast Campsite | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hoog gras (Tall Grass) / Berry-feast Campsite.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Zonnig (Sunny), bewolkt (Cloudy)",
+    "habitat": "Bessenfeest-kampeerplek (Berry-fest Campsite) / Hoog gras (Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bessenfeest-kampeerplek (Berry-fest Campsite): Castform-weeramulet (zon) (Castform Weather Charm (Sun)) ×2; Bunfire (Bunfire) ×1; Bessenmand (Berry Basket) ×1; Hoge locatie (High-up Location) ×1 OF Hoog gras (Tall Grass): Hoog gras (Tall Grass) ×4",
     "specialties": [
       "Branden (Burn)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "Charmeleon",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Charizard wacht."
   },
   {
@@ -145,16 +150,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hoog gras (Tall Grass) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Hydrated tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hoog gras (Tall Grass) / Hydrated tall grass | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hoog gras (Tall Grass) / Hydrated tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoog gras (Tall Grass) / Bevochtigd hoog gras (Hydrated Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras (Tall Grass): Hoog gras (Tall Grass) ×4 OF Bevochtigd hoog gras (Hydrated Tall Grass): Hoog gras (Tall Grass) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Wartortle",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Squirtle wacht."
   },
   {
@@ -166,16 +171,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated tall grass | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bevochtigd hoog gras (Hydrated Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bevochtigd hoog gras (Hydrated Tall Grass): Hoog gras (Tall Grass) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "Squirtle",
     "evolvesInto": "Blastoise",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Hydrated tall grass. Controleer daarna tijd en weer voordat je voor Wartortle wacht."
   },
   {
@@ -187,17 +192,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Floating in the shade (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated tall grass / Floating in the shade | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated tall grass / Floating in the shade.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Drijven in de schaduw (Floating in the Shade) / Bevochtigd hoog gras (Hydrated Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Drijven in de schaduw (Floating in the Shade): Opblaasboot (Inflatable Boat) ×1; Strandparasol (Beach Parasol) ×1; Water (Water) ×2 OF Bevochtigd hoog gras (Hydrated Tall Grass): Hoog gras (Tall Grass) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Wartortle",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Hydrated tall grass. Controleer daarna tijd en weer voordat je voor Blastoise wacht."
   },
   {
@@ -210,17 +215,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Elevated tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain)) ; Pretty flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated tall grass / Pretty flower bed | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated tall grass / Pretty flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Ochtend (Morning), overdag (Daytime), avond (Evening) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Mooi bloemenbed (Pretty Flower Bed) / Verhoogd hoog gras (Elevated Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Mooi bloemenbed (Pretty Flower Bed): Wilde bloemen (Wildflowers) ×4 OF Verhoogd hoog gras (Elevated Tall Grass): Hoog gras (Tall Grass) ×4; Hoge locatie (High-up Location) ×1",
     "specialties": [
       "Vliegen (Fly)",
       "Zoeken (Search)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pidgeotto",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Elevated tall grass. Controleer daarna tijd en weer voordat je voor Pidgey wacht."
   },
   {
@@ -233,17 +238,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Elevated tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain)) ; Pretty flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated tall grass / Pretty flower bed | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated tall grass / Pretty flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Ochtend (Morning), overdag (Daytime), avond (Evening) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verhoogd hoog gras (Elevated Tall Grass) / Mooi bloemenbed (Pretty Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verhoogd hoog gras (Elevated Tall Grass): Hoog gras (Tall Grass) ×4; Hoge locatie (High-up Location) ×1 OF Mooi bloemenbed (Pretty Flower Bed): Wilde bloemen (Wildflowers) ×4",
     "specialties": [
       "Vliegen (Fly)",
       "Zoeken (Search)"
     ],
     "evolvesFrom": "Pidgey",
     "evolvesInto": "Pidgeot",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Elevated tall grass. Controleer daarna tijd en weer voordat je voor Pidgeotto wacht."
   },
   {
@@ -256,17 +261,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Luxury chirp-chirp meal (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Luxury chirp-chirp meal | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Luxury chirp-chirp meal.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Ochtend (Morning), overdag (Daytime), avond (Evening) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Luxe vogelmaaltijd (Luxury Chirp-chirp Meal)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Luxe vogelmaaltijd (Luxury Chirp-chirp Meal): Houten vogelhuisje (Wooden Birdhouse) ×1; Bessenmand (Berry Basket) ×1",
     "specialties": [
       "Vliegen (Fly)",
-      "Hakken (Chop)"
+      "Zoeken (Search)"
     ],
     "evolvesFrom": "Pidgeotto",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Luxury chirp-chirp meal. Controleer daarna tijd en weer voordat je voor Pidgeot wacht."
   },
   {
@@ -279,16 +284,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hoog gras (Tall Grass) (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hoog gras (Tall Grass) | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hoog gras (Tall Grass).",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoog gras (Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras (Tall Grass): Hoog gras (Tall Grass) ×4",
     "specialties": [
       "Groeien (Grow)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gloom",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Oddish wacht."
   },
   {
@@ -301,16 +306,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tropical vibes (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tropical vibes | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tropical vibes.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Tropische sfeer (Tropical Vibes)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Tropische sfeer (Tropical Vibes): Grote palmboom (Large Palm Tree) ×1; Kustbloemen (Seashore Flowers) ×4",
     "specialties": [
       "Groeien (Grow)"
     ],
     "evolvesFrom": "Oddish",
     "evolvesInto": "Vileplume / Bellossom",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tropical vibes. Controleer daarna tijd en weer voordat je voor Gloom wacht."
   },
   {
@@ -323,17 +328,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Chansey Resting area (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Chansey Resting area | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Chansey Resting area.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Chansey-rustplek (Chansey Resting Area)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Chansey-rustplek (Chansey Resting Area): Haag, willekeurig (Hedge (any)) ×6; Brede zitplaats (Seat (wide)) ×1; Chansey-plant (Chansey Plant) ×1",
     "specialties": [
       "Groeien (Grow)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Gloom",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Chansey Resting area. Controleer daarna tijd en weer voordat je voor Vileplume wacht."
   },
   {
@@ -345,17 +350,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Chansey Resting area (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Chansey Resting area | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Chansey Resting area.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Chansey-rustplek (Chansey Resting Area)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Chansey-rustplek (Chansey Resting Area): Haag, willekeurig (Hedge (any)) ×6; Brede zitplaats (Seat (wide)) ×1; Chansey-plant (Chansey Plant) ×1",
     "specialties": [
       "Groeien (Grow)",
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "Gloom",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Chansey Resting area. Controleer daarna tijd en weer voordat je voor Bellossom wacht."
   },
   {
@@ -368,16 +373,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Elevated flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Flower garden (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated flower bed / Flower garden | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated flower bed / Flower garden.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verhoogd bloemenbed (Elevated Flower Bed) / Bloementuin (Flower Garden)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verhoogd bloemenbed (Elevated Flower Bed): Wilde bloemen (Wildflowers) ×4; Hoge locatie (High-up Location) ×1 OF Bloementuin (Flower Garden): Haag, willekeurig (Hedge (any)) ×4; Wilde bloemen (Wildflowers) ×4",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Parasect",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Elevated flower bed. Controleer daarna tijd en weer voordat je voor Paras wacht."
   },
   {
@@ -390,16 +395,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Elevated flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Flower garden (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated flower bed / Flower garden | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated flower bed / Flower garden.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bloementuin (Flower Garden) / Verhoogd bloemenbed (Elevated Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bloementuin (Flower Garden): Haag, willekeurig (Hedge (any)) ×4; Wilde bloemen (Wildflowers) ×4 OF Verhoogd bloemenbed (Elevated Flower Bed): Wilde bloemen (Wildflowers) ×4; Hoge locatie (High-up Location) ×1",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "Paras",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Elevated flower bed. Controleer daarna tijd en weer voordat je voor Parasect wacht."
   },
   {
@@ -412,16 +417,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Illuminated tall grass (Tijd: Night | Weer: Sun, Cloud, Regen (Rain)) ; Illuminated bench (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Illuminated tall grass / Illuminated bench | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Illuminated tall grass / Illuminated bench.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verlicht hoog gras (Illuminated Tall Grass) / Verlicht bankje (Illuminated Bench)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verlicht hoog gras (Illuminated Tall Grass): Tall Grass (any) (Tall Grass (any)) ×4; Verlichting, willekeurig (Lighting (any)) ×1 OF Verlicht bankje (Illuminated Bench): Brede zitplaats (Seat (wide)) ×1; Straatlantaarn, willekeurig (Streetlight (any)) ×1",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Venomoth",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Illuminated tall grass. Controleer daarna tijd en weer voordat je voor Venonat wacht."
   },
   {
@@ -434,16 +439,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Illuminated tall grass (Tijd: Night | Weer: Sun, Cloud, Regen (Rain)) ; Illuminated bench (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Illuminated tall grass / Illuminated bench | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Illuminated tall grass / Illuminated bench.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verlicht bankje (Illuminated Bench) / Verlicht hoog gras (Illuminated Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verlicht bankje (Illuminated Bench): Brede zitplaats (Seat (wide)) ×1; Straatlantaarn, willekeurig (Streetlight (any)) ×1 OF Verlicht hoog gras (Illuminated Tall Grass): Tall Grass (any) (Tall Grass (any)) ×4; Verlichting, willekeurig (Lighting (any)) ×1",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "Venonat",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Illuminated tall grass. Controleer daarna tijd en weer voordat je voor Venomoth wacht."
   },
   {
@@ -456,17 +461,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded  tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded  tall grass | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded  tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoog gras in boomschaduw (Tree-shaded Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras in boomschaduw (Tree-shaded Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Hoog gras (Tall Grass) ×4",
     "specialties": [
       "Groeien (Grow)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Weepinbell",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Bellsprout wacht."
   },
   {
@@ -479,17 +484,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Flowery table (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Irresistible scent and glow (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Flowery table / Irresistible scent and glow | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Flowery table / Irresistible scent and glow.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Onweerstaanbare geur en gloed (Irresistable Scent and Glow) / Bloementafel (Flowery Table)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Onweerstaanbare geur en gloed (Irresistable Scent and Glow): Bekerplantpot (Pitcher-plant pot) ×1; Eten op bord (Plated Food) ×1; Paddenstoellamp (Mushroom Lamp) ×1 OF Bloementafel (Flowery Table): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Kleine vaas (Small Vase) ×1",
     "specialties": [
       "Groeien (Grow)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Bellsprout",
     "evolvesInto": "Victreebel",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Flowery table. Controleer daarna tijd en weer voordat je voor Weepinbell wacht."
   },
   {
@@ -502,17 +507,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Flowery table (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Irresistible scent and glow (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Flowery table / Irresistible scent and glow | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Flowery table / Irresistible scent and glow.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Onweerstaanbare geur en gloed (Irresistable Scent and Glow) / Bloementafel (Flowery Table)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Onweerstaanbare geur en gloed (Irresistable Scent and Glow): Bekerplantpot (Pitcher-plant pot) ×1; Eten op bord (Plated Food) ×1; Paddenstoellamp (Mushroom Lamp) ×1 OF Bloementafel (Flowery Table): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Kleine vaas (Small Vase) ×1",
     "specialties": [
       "Groeien (Grow)",
       "Hakken (Chop)"
     ],
     "evolvesFrom": "Weepinbell",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Flowery table. Controleer daarna tijd en weer voordat je voor Victreebel wacht."
   },
   {
@@ -525,17 +530,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Seaside Hoog gras (Tall Grass) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Seaside Hoog gras (Tall Grass) | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Seaside Hoog gras (Tall Grass).",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoog gras aan zee (Seaside Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras aan zee (Seaside Tall Grass): Hoog gras (Tall Grass) ×4; Oceaanwater (Ocean Water) ×2",
     "specialties": [
       "Water geven (Water)",
-      "Yawn"
+      "Geeuwen (Yawn)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Slowbro / Slowking",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Seaside Tall Grass. Controleer daarna tijd en weer voordat je voor Slowpoke wacht."
   },
   {
@@ -548,17 +553,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Seaside Hoog gras (Tall Grass) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Bed with a plush (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Seaside Hoog gras (Tall Grass) / Bed with a plush | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Seaside Hoog gras (Tall Grass) / Bed with a plush.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Visvijver (Fishing Pond) / Bed met knuffel (Bed With a Plush) / Hoog gras aan zee (Seaside Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Visvijver (Fishing Pond): Hengel (Fishing Rod) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Water (Water) ×1 OF Bed met knuffel (Bed With a Plush): Bed, willekeurig (Bed (any)) ×1; Pop, willekeurig (Doll (any)) ×1 OF Hoog gras aan zee (Seaside Tall Grass): Hoog gras (Tall Grass) ×4; Oceaanwater (Ocean Water) ×2",
     "specialties": [
       "Water geven (Water)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Slowpoke",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Seaside Tall Grass. Controleer daarna tijd en weer voordat je voor Slowbro wacht."
   },
   {
@@ -571,17 +576,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Seaside Hoog gras (Tall Grass) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Bed with a plush (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Seaside Hoog gras (Tall Grass) / Bed with a plush / Fishing pond | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Seaside Hoog gras (Tall Grass) / Bed with a plush / Fishing pond.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Visvijver (Fishing Pond) / Bed met knuffel (Bed With a Plush) / Hoog gras aan zee (Seaside Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Visvijver (Fishing Pond): Hengel (Fishing Rod) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Water (Water) ×1 OF Bed met knuffel (Bed With a Plush): Bed, willekeurig (Bed (any)) ×1; Pop, willekeurig (Doll (any)) ×1 OF Hoog gras aan zee (Seaside Tall Grass): Hoog gras (Tall Grass) ×4; Oceaanwater (Ocean Water) ×2",
     "specialties": [
       "Water geven (Water)",
       "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "Slowpoke",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Seaside Tall Grass. Controleer daarna tijd en weer voordat je voor Slowking wacht."
   },
   {
@@ -594,16 +599,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Factory Storage (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Factory Storage | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Factory Storage.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Fabrieksopslag (Factory Storage)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Fabrieksopslag (Factory Storage): Straatlantaarn, willekeurig (Streetlight (any)) ×1; Besturingseenheid (Control Unit) ×1; Metalen vat (Metal Drum) ×1; Verwarde kabels (Jumbled Cords) ×1",
     "specialties": [
       "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Magneton",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Factory Storage. Controleer daarna tijd en weer voordat je voor Magnemite wacht."
   },
   {
@@ -616,16 +621,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Trash can central (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Mini Game Corner (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Trash can central / Mini Game Corner | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Trash can central / Mini Game Corner.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Mini-speelhoek (Mini Game Corner) / Afvalbakcentrale (Trash Can Central)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Mini-speelhoek (Mini Game Corner): Arcadekast (Arcade Machine) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Boksspel (Punching Game) ×1 OF Afvalbakcentrale (Trash Can Central): Afvalbak (Garbage Bin) ×4",
     "specialties": [
       "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "Magnemite",
     "evolvesInto": "Magnezone",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Trash can central. Controleer daarna tijd en weer voordat je voor Magneton wacht."
   },
   {
@@ -638,17 +643,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Trash can central (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Mini Game Corner (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Trash can central / Mini Game Corner | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Trash can central / Mini Game Corner.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Mini-speelhoek (Mini Game Corner) / Afvalbakcentrale (Trash Can Central)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Mini-speelhoek (Mini Game Corner): Arcadekast (Arcade Machine) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Boksspel (Punching Game) ×1 OF Afvalbakcentrale (Trash Can Central): Afvalbak (Garbage Bin) ×4",
     "specialties": [
       "Energie opwekken (Generate)",
       "Recyclen (Recycle)"
     ],
     "evolvesFrom": "Magneton",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Trash can central. Controleer daarna tijd en weer voordat je voor Magnezone wacht."
   },
   {
@@ -661,17 +666,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Smooth tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Smooth tall grass | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Smooth tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Glad hoog gras (Smooth Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Glad hoog gras (Smooth Tall Grass): Droog hoog gras (Dry Tall Grass) ×4; Gladde rots (Smooth Rock) ×1",
     "specialties": [
       "Verpletteren (Crush)",
       "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Steelix",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Smooth tall grass. Controleer daarna tijd en weer voordat je voor Onix wacht."
   },
   {
@@ -684,17 +689,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Clink-clang iron construction (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Clink-clang iron construction | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Clink-clang iron construction.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Rinkelende ijzerconstructie (Clink-clang Iron Construction)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Rinkelende ijzerconstructie (Clink-clang Iron Construction): IJzeren balk of kolom (Iron beam or column) ×3; Kruiwagen (Wheelbarrow) ×1; Zandzakken (Sandbags) ×1; Graafgereedschap (Excavation Tools) ×1",
     "specialties": [
       "Verpletteren (Crush)",
       "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "Onix",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Clink-clang iron construction. Controleer daarna tijd en weer voordat je voor Steelix wacht."
   },
   {
@@ -706,16 +711,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Grave with flowers (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Grave with flowers | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Grave with flowers.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Graf met bloemen (Grave with Flowers)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Graf met bloemen (Grave with Flowers): Wilde bloemen (Wildflowers) ×1; Grafsteen (Gravestone) ×1",
     "specialties": [
       "Bouwen (Build)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Marowak",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Grave with flowers. Controleer daarna tijd en weer voordat je voor Cubone wacht."
   },
   {
@@ -727,16 +732,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Grave with flowers (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Grave with flowers | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Grave with flowers.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Graf met bloemen (Grave with Flowers)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Graf met bloemen (Grave with Flowers): Wilde bloemen (Wildflowers) ×1; Grafsteen (Gravestone) ×2",
     "specialties": [
       "Bouwen (Build)"
     ],
     "evolvesFrom": "Cubone",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Grave with flowers. Controleer daarna tijd en weer voordat je voor Marowak wacht."
   },
   {
@@ -748,16 +753,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Training waterfall (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Training waterfall | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Training waterfall.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Trainingswaterval (Training Waterfall)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Trainingswaterval (Training Waterfall): Zitplaats, willekeurig (Seat (any)) ×1; Water (Water) ×2; Waterval (Waterfall) ×1",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Hitmonlee / Hitmonchan / Hitmontop",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Training waterfall. Controleer daarna tijd en weer voordat je voor Tyrogue wacht."
   },
   {
@@ -769,16 +774,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Urgent Care (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Urgent Care | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Urgent Care.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Eerstehulpplek (Urgent Care)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Eerstehulpplek (Urgent Care): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; EHBO-set (First Aid Kit) ×1",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Urgent Care. Controleer daarna tijd en weer voordat je voor Hitmonlee wacht."
   },
   {
@@ -790,16 +795,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Exercise resting spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Exercise resting spot | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Exercise resting spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Rustplek na training (Exercise Resting Spot)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Rustplek na training (Exercise Resting Spot): Bokszak (Punching Bag) ×1; Zitplaats, willekeurig (Seat (any)) ×1",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Exercise resting spot. Controleer daarna tijd en weer voordat je voor Hitmonchan wacht."
   },
   {
@@ -811,16 +816,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Gym first aid (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Gym first aid | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Gym first aid.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "EHBO bij de gym (Gym First Aid)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "EHBO bij de gym (Gym First Aid): Tafel, willekeurig (Table (any)) ×1; Bokszak (Punching Bag) ×1; EHBO-set (First Aid Kit) ×1",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Gym first aid. Controleer daarna tijd en weer voordat je voor Hitmontop wacht."
   },
   {
@@ -832,16 +837,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Trash collection site (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Trash collection site | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Trash collection site.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Afvalverzamelplek (Trash Collection Site)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Afvalverzamelplek (Trash Collection Site): Afvalbak, willekeurig (Waste Bin (any)) ×1; Bord, willekeurig (Sign (any)) ×1; Vuilniszakken (Garbage Bags) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Recyclen (Recycle)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Weezing",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Trash collection site. Controleer daarna tijd en weer voordat je voor Koffing wacht."
   },
   {
@@ -853,16 +858,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Good old-fashioned antiques (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Trash collection site (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Good old-fashioned antiques / Trash collection site | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Good old-fashioned antiques / Trash collection site.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Ouderwetse antiekhoek (Good Old-fashioned Antiques) / Afvalverzamelplek (Trash Collection Site)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Ouderwetse antiekhoek (Good Old-fashioned Antiques): Antieke kast (Antique Closet) ×1; Antiek bed (Antique Bed) ×1; Antieke ladekast (Antique Dresser) ×1; Antieke stoel (Antique Chair) ×1; alleen Palette Town (Palette Town Only) OF Afvalverzamelplek (Trash Collection Site): Afvalbak, willekeurig (Waste Bin (any)) ×1; Bord, willekeurig (Sign (any)) ×1; Vuilniszakken (Garbage Bags) ×1",
     "specialties": [
-      "Recyvle"
+      "Recyclen (Recycle)"
     ],
     "evolvesFrom": "Koffing",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Good old-fashioned antiques. Controleer daarna tijd en weer voordat je voor Weezing wacht."
   },
   {
@@ -874,17 +879,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Nothin' but Poke Balls (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Nothin' but Poke Balls | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Nothin' but Poke Balls.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Alleen maar Poké Balls (Nothin' but Poké Balls)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Alleen maar Poké Balls (Nothin' but Poké Balls): Poké Ball-bank (Poké Ball Sofa) ×1; Poké Ball-bed (Poké Ball Bed) ×1; Poké Ball-tafel (Poké Ball Table) ×1; Poké Ball-lamp (Poké Ball Light) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Groeien (Grow)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Tangrowth",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Nothin' but Poke Balls. Controleer daarna tijd en weer voordat je voor Tangela wacht."
   },
   {
@@ -896,17 +901,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands)",
-    "area": "Bankje met groen (Bench with greenery) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Bankje met groen (Bench with greenery) | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Bankje met groen (Bench with greenery).",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bankje met groen (Bench with Greenery)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bankje met groen (Bench with Greenery): Haag, willekeurig (Hedge (any)) ×2; Zitplaats, willekeurig (Seat (any)) ×1; alleen Cloud Island (Cloud Island Only)",
     "specialties": [
       "Groeien (Grow)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Tangela",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Bench with greenery. Controleer daarna tijd en weer voordat je voor Tangrowth wacht."
   },
   {
@@ -919,16 +924,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded  tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded  tall grass | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded  tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoog gras in boomschaduw (Tree-shaded Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras in boomschaduw (Tree-shaded Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Hoog gras (Tall Grass) ×4",
     "specialties": [
       "Hakken (Chop)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Scizor",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Scyther wacht."
   },
   {
@@ -941,16 +946,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Tree-shaded  tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded  tall grass | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded  tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoog gras in boomschaduw (Tree-shaded Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras in boomschaduw (Tree-shaded Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Hoog gras (Tall Grass) ×4; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Hakken (Chop)"
     ],
     "evolvesFrom": "Scyther",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Scizor wacht."
   },
   {
@@ -962,17 +967,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded  tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded  tall grass | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded  tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoog gras in boomschaduw (Tree-shaded Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras in boomschaduw (Tree-shaded Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Hoog gras (Tall Grass) ×4",
     "specialties": [
       "Hakken (Chop)",
       "Bouwen (Build)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Pinsir wacht."
   },
   {
@@ -984,16 +989,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Ocean fishing spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Ocean fishing spot | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Ocean fishing spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Visplek aan de oceaan (Ocean Fishing Spot)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Visplek aan de oceaan (Ocean Fishing Spot): Hengel (Fishing Rod) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Oceaanwater (Ocean Water) ×1",
     "specialties": [
-      "Nog onbekend (???)"
+      "Niet van toepassing (N/A)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gyarados",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Ocean fishing spot. Controleer daarna tijd en weer voordat je voor Magikarp wacht."
   },
   {
@@ -1006,16 +1011,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Illuminated waterfall (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Illuminated waterfall | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Illuminated waterfall.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verlichte waterval (Illuminated Waterfall)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verlichte waterval (Illuminated Waterfall): Stapstenen (Stepping Stones) ×3; Fakkel (Torch) ×2; Water (Water) ×3; Waterval (Waterfall) ×1",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "Magikarp",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Illuminated waterfall. Controleer daarna tijd en weer voordat je voor Gyarados wacht."
   },
   {
@@ -1027,16 +1032,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Droomeiland (Dream Island)",
-    "area": "Nog niet bevestigd",
-    "habitat": "Geen normaal habitat bevestigd | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Nog niet bevestigd",
-    "requirements": "Nog niet bevestigd",
+    "area": "Tijd (Time): Niet van toepassing (N/A) | Weer (Weather): Niet van toepassing (N/A)",
+    "habitat": "Geen normaal leefgebied (N/A)",
+    "obtainMethod": "Ditto is de speler zelf; er is geen normaal leefgebied nodig.",
+    "requirements": "Geen habitatmaterialen nodig (No habitat materials required).",
     "specialties": [
-      "Transform"
+      "Transformeren (Transform)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin je zoektocht naar Ditto in Dream Island en controleer eerst of er een speciale ontgrendelvoorwaarde geldt."
   },
   {
@@ -1049,17 +1054,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Elevated tall grass (Tijd: Night | Weer: Sun, Cloud, Regen (Rain)) ; Pretty flower bed (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated tall grass / Pretty flower bed / Gently lit bed | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated tall grass / Pretty flower bed / Gently lit bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Mooi bloemenbed (Pretty Flower Bed) / Verhoogd hoog gras (Elevated Tall Grass) / Zacht verlicht bed (Gently Lit Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Mooi bloemenbed (Pretty Flower Bed): Wilde bloemen (Wildflowers) ×4 OF Verhoogd hoog gras (Elevated Tall Grass): Hoog gras (Tall Grass) ×4; Hoge locatie (High-up Location) ×1 OF Zacht verlicht bed (Gently Lit Bed): Bed, willekeurig (Bed (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Smalle kaars (Slender Candle) ×1",
     "specialties": [
       "Ruilen (Trade)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Noctowl",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Elevated tall grass. Controleer daarna tijd en weer voordat je voor Hoothoot wacht."
   },
   {
@@ -1072,17 +1077,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Elevated tall grass (Tijd: Night | Weer: Sun, Cloud, Regen (Rain)) ; Gently lit bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated tall grass / Gently lit bed | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated tall grass / Gently lit bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Zacht verlicht bed (Gently Lit Bed) / Verhoogd hoog gras (Elevated Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Zacht verlicht bed (Gently Lit Bed): Bed, willekeurig (Bed (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Smalle kaars (Slender Candle) ×1 OF Verhoogd hoog gras (Elevated Tall Grass): Hoog gras (Tall Grass) ×4; Hoge locatie (High-up Location) ×1",
     "specialties": [
       "Ruilen (Trade)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "Hoothoot",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Elevated tall grass. Controleer daarna tijd en weer voordat je voor Noctowl wacht."
   },
   {
@@ -1095,17 +1100,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded  tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded  tall grass | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded  tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoog gras in boomschaduw (Tree-shaded Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras in boomschaduw (Tree-shaded Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Hoog gras (Tall Grass) ×4",
     "specialties": [
       "Hakken (Chop)",
       "Bouwen (Build)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Heracross wacht."
   },
   {
@@ -1117,16 +1122,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated flower bed | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bevochtigd bloemenbed (Hydrated Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bevochtigd bloemenbed (Hydrated Flower Bed): Wilde bloemen (Wildflowers) ×4; Water (Water) ×2",
     "specialties": [
-      "Enthousiasmeren (Hype)"
+      "Licht geven (Volbeat)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Hydrated flower bed. Controleer daarna tijd en weer voordat je voor Volbeat wacht."
   },
   {
@@ -1138,16 +1143,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated flower bed | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bevochtigd bloemenbed (Hydrated Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bevochtigd bloemenbed (Hydrated Flower Bed): Wilde bloemen (Wildflowers) ×4; Water (Water) ×2",
     "specialties": [
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Hydrated flower bed. Controleer daarna tijd en weer voordat je voor Illumise wacht."
   },
   {
@@ -1159,16 +1164,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands)",
-    "area": "Tantalizing dining set (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tantalizing dining set | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tantalizing dining set.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verleidelijke eethoek (Tantalizing Dining Set)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verleidelijke eethoek (Tantalizing Dining Set): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Eten op bord (Plated Food) ×1",
     "specialties": [
-      "Storage"
+      "Opslaan (Storage)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Swalot",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tantalizing dining set. Controleer daarna tijd en weer voordat je voor Gulpin wacht."
   },
   {
@@ -1180,16 +1185,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Dinner table surprise (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Dinner table surprise | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Dinner table surprise.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verrassing aan de eettafel (Dinner Table Surprise)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verrassing aan de eettafel (Dinner Table Surprise): Brede zitplaats (Seat (wide)) ×2; Grote tafel (Table (large)) ×1; Feestschaal (Party Platter) ×4",
     "specialties": [
-      "Storage"
+      "Opslaan (Storage)"
     ],
     "evolvesFrom": "Gulpin",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Dinner table surprise. Controleer daarna tijd en weer voordat je voor Swalot wacht."
   },
   {
@@ -1201,17 +1206,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Zonnig (Sunny) Day site (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun)",
-    "habitat": "Zonnig (Sunny) Day site | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Zonnig (Sunny) Day site.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Zonnig (Sunny)",
+    "habitat": "Zonnige plek (Sunny Day Site)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Zonnige plek (Sunny Day Site): Castform Weather Charm (sun) (Castform Weather Charm (sun)) ×2; Eten op bord (Plated Food) ×1",
     "specialties": [
       "Groeien (Grow)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Cacturne",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
-    "tip": "begin in Withered Wastelands en maak eerst Sunny Day site. Controleer daarna tijd en weer voordat je voor Cacnea wacht."
+    "evolutionMethod": "",
+    "tip": "begin in Withered Wastelands en maak eerst Sunny overdag site. Controleer daarna tijd en weer voordat je voor Cacnea wacht."
   },
   {
     "number": 56,
@@ -1223,17 +1228,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded flower bed (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded flower bed | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bloemenbed in boomschaduw (Tree-shaded Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bloemenbed in boomschaduw (Tree-shaded Flower Bed): Bessenboom, willekeurig (Berry Tree (any)) ×1; Wilde bloemen (Wildflowers) ×4",
     "specialties": [
       "Groeien (Grow)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Cacnea",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded flower bed. Controleer daarna tijd en weer voordat je voor Cacturne wacht."
   },
   {
@@ -1246,16 +1251,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Pretty flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Pretty flower bed | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Pretty flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Mooi bloemenbed (Pretty Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Mooi bloemenbed (Pretty Flower Bed): Wilde bloemen (Wildflowers) ×4",
     "specialties": [
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Vespiquen",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Pretty flower bed. Controleer daarna tijd en weer voordat je voor Combee wacht."
   },
   {
@@ -1268,17 +1273,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Bloemenveld (Field of Flowers) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Bloemenveld (Field of Flowers) | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Bloemenveld (Field of Flowers).",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bloemenveld (Field of Flowers)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bloemenveld (Field of Flowers): Wilde bloemen (Wildflowers) ×8",
     "specialties": [
-      "Gather Honey",
+      "Honing verzamelen (Gather Honey)",
       "Zoeken (Search)"
     ],
     "evolvesFrom": "Combee",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Field of Flowers. Controleer daarna tijd en weer voordat je voor Vespiquen wacht."
   },
   {
@@ -1290,16 +1295,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Road Sign (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Road Sign | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Road Sign.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Wegwijzer (Road Sign)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Wegwijzer (Road Sign): Pijl-bord (Arrow Sign) ×1; Houten pad (Wooden Path) ×3",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gastrodon",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Road Sign. Controleer daarna tijd en weer voordat je voor Shellos wacht."
   },
   {
@@ -1312,17 +1317,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Ocean fishing spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Ocean fishing spot | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Ocean fishing spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Visplek aan de oceaan (Ocean Fishing Spot)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Visplek aan de oceaan (Ocean Fishing Spot): Hengel (Fishing Rod) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Oceaanwater (Ocean Water) ×1",
     "specialties": [
       "Water geven (Water)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Shellos",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Ocean fishing spot. Controleer daarna tijd en weer voordat je voor Gastrodon wacht."
   },
   {
@@ -1335,16 +1340,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Riding warm updrafts (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Bed with a plush (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Riding warm updrafts / Bed with a plush / Plush central | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Riding warm updrafts / Bed with a plush / Plush central.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Meeliften op warme luchtstromen (Riding Warm Updrafts) / Knuffelcentrum (Plush Central) / Bed with a Plush (Bed with a Plush)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Meeliften op warme luchtstromen (Riding Warm Updrafts): Kampvuur (Campfire) ×3 OF Knuffelcentrum (Plush Central): Arcanine-pop (Arcanine Doll) ×1; Pikachu-pop (Pikachu Doll) ×1; Dragonite-pop (Dragonite Doll) ×1; Eevee-pop (Eevee Doll) ×1 OF Bed with a Plush (Bed with a Plush): Bed, willekeurig (Bed (any)) ×1; Pop, willekeurig (Doll (any)) ×1",
     "specialties": [
       "Droomeiland (Dream Island)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Drifblim",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Riding warm updrafts. Controleer daarna tijd en weer voordat je voor Drifloon wacht."
   },
   {
@@ -1357,17 +1362,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Plush central (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Plush central | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Plush central.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Knuffelcentrum (Plush Central)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Knuffelcentrum (Plush Central): Arcanine-pop (Arcanine Doll) ×1; Pikachu-pop (Pikachu Doll) ×1; Dragonite-pop (Dragonite Doll) ×1; Eevee-pop (Eevee Doll) ×1",
     "specialties": [
       "Vliegen (Fly)",
       "Verzamelen (Gather)"
     ],
     "evolvesFrom": "Drifloon",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Plush central. Controleer daarna tijd en weer voordat je voor Drifblim wacht."
   },
   {
@@ -1379,16 +1384,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Fresh Veggie Field (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Fresh Veggie Field | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Fresh Veggie Field.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Vers groenteveld (Fresh Veggie Field)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Vers groenteveld (Fresh Veggie Field): Groenteveld, willekeurig (Vegetable field (any)) ×8",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Excadrill",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Fresh Veggie Field. Controleer daarna tijd en weer voordat je voor Drilbur wacht."
   },
   {
@@ -1401,17 +1406,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Fresh Veggie Field (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Fresh Veggie Field | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Fresh Veggie Field.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Vers groenteveld (Fresh Veggie Field)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Vers groenteveld (Fresh Veggie Field): Groenteveld, willekeurig (Vegetable field (any)) ×8",
     "specialties": [
       "Zoeken (Search)",
       "Hakken (Chop)"
     ],
     "evolvesFrom": "Drilbur",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Fresh Veggie Field. Controleer daarna tijd en weer voordat je voor Excadrill wacht."
   },
   {
@@ -1423,16 +1428,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Boulder-shaded Hoog gras (Tall Grass) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Boulder-shaded Hoog gras (Tall Grass) | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Boulder-shaded Hoog gras (Tall Grass).",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoog gras in rotsschaduw (Boulder-shaded Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras in rotsschaduw (Boulder-shaded Tall Grass): Hoog gras (Tall Grass) ×4; Grote rots (Large Boulder) ×1",
     "specialties": [
       "Bouwen (Build)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gurdurr",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Boulder-shaded Tall Grass. Controleer daarna tijd en weer voordat je voor Timburr wacht."
   },
   {
@@ -1444,16 +1449,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Boulder-shaded Hoog gras (Tall Grass) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Large luggage carrier (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Boulder-shaded Hoog gras (Tall Grass) / Large luggage carrier | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Boulder-shaded Hoog gras (Tall Grass) / Large luggage carrier.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Grote bagagekar (Large Luggage Carrier) / Hoog gras in rotsschaduw (Boulder-shaded Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Grote bagagekar (Large Luggage Carrier): Kar (Cart) ×1; Houten krat (Wooden Crate) ×2 OF Hoog gras in rotsschaduw (Boulder-shaded Tall Grass): Hoog gras (Tall Grass) ×4; Grote rots (Large Boulder) ×1",
     "specialties": [
       "Bouwen (Build)"
     ],
     "evolvesFrom": "Timburr",
     "evolvesInto": "Conkeldurr",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Boulder-shaded Tall Grass. Controleer daarna tijd en weer voordat je voor Gurdurr wacht."
   },
   {
@@ -1465,17 +1470,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Construction-site generator (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Construction-site generator | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Construction-site generator.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Generator op de bouwplaats (Construction Site Generator)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Generator op de bouwplaats (Construction Site Generator): Oven (Furnace) ×1; IJzeren steiger (Iron Scaffold) ×2; IJzeren buizen (Iron Pipes) ×1",
     "specialties": [
       "Bouwen (Build)",
       "Verpletteren (Crush)"
     ],
     "evolvesFrom": "Gurdurr",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Construction-site generator. Controleer daarna tijd en weer voordat je voor Conkeldurr wacht."
   },
   {
@@ -1488,16 +1493,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Grave offering (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Creepy grave offering (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Grave offering / Creepy grave offering | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Grave offering / Creepy grave offering.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Griezelig grafoffer (Creepy Grave Offering) / Grafoffer (Grave Offering)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Griezelig grafoffer (Creepy Grave Offering): Griezelkaars (Eerie Candle) ×2; Grafsteen (Gravestone) ×1; Eten op bord (Plated Food) ×1 OF Grafoffer (Grave Offering): Smalle kaars (Slender Candle) ×2; Grafsteen (Gravestone) ×1; Eten op bord (Plated Food) ×1",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lampent",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Grave offering. Controleer daarna tijd en weer voordat je voor Litwick wacht."
   },
   {
@@ -1510,16 +1515,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Grave offering (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Creepy grave offering (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Grave offering / Creepy grave offering | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Grave offering / Creepy grave offering.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Griezelig grafoffer (Creepy Grave Offering) / Grafoffer (Grave Offering)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Griezelig grafoffer (Creepy Grave Offering): Griezelkaars (Eerie Candle) ×2; Grafsteen (Gravestone) ×1; Eten op bord (Plated Food) ×1 OF Grafoffer (Grave Offering): Smalle kaars (Slender Candle) ×2; Grafsteen (Gravestone) ×1; Eten op bord (Plated Food) ×1",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "Litwick",
     "evolvesInto": "Chandelure",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Grave offering. Controleer daarna tijd en weer voordat je voor Lampent wacht."
   },
   {
@@ -1532,16 +1537,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Creepy grave offering (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Creepy grave offering | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Creepy grave offering.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Griezelig grafoffer (Creepy Grave Offering)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Griezelig grafoffer (Creepy Grave Offering): Griezelkaars (Eerie Candle) ×2; Grafsteen (Gravestone) ×1; Eten op bord (Plated Food) ×1",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "Lampent",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Creepy grave offering. Controleer daarna tijd en weer voordat je voor Chandelure wacht."
   },
   {
@@ -1553,16 +1558,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Lumberjack's workplace (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Crazy log handicrafts (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Lumberjack's workplace / Crazy log handicrafts | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Lumberjack's workplace / Crazy log handicrafts.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Werkplek van de houthakker (Lumberjack's Workplace) / Gezellige houtwerkplek (Cozy Log Handicrafts)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Werkplek van de houthakker (Lumberjack's Workplace): Houten stoel (Log Chair) ×1; Kar (Cart) ×1; Boomstronk, willekeurig (Tree Stump (any)) ×1; Houten tafel (Log Table) ×1 OF Gezellige houtwerkplek (Cozy Log Handicrafts): Houten stoel (Log Chair) ×1; Houten tafel (Log Table) ×1; Houten bed (Log Bed) ×1",
     "specialties": [
       "Hakken (Chop)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Fraxure",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Lumberjack's workplace. Controleer daarna tijd en weer voordat je voor Axew wacht."
   },
   {
@@ -1574,16 +1579,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Lumberjack's workplace (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Crazy log handicrafts (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Lumberjack's workplace / Crazy log handicrafts | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Lumberjack's workplace / Crazy log handicrafts.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Werkplek van de houthakker (Lumberjack's Workplace) / Gezellige houtwerkplek (Cozy Log Handicrafts)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Werkplek van de houthakker (Lumberjack's Workplace): Houten stoel (Log Chair) ×1; Kar (Cart) ×1; Boomstronk, willekeurig (Tree Stump (any)) ×1; Houten tafel (Log Table) ×1 OF Gezellige houtwerkplek (Cozy Log Handicrafts): Houten stoel (Log Chair) ×1; Houten tafel (Log Table) ×1; Houten bed (Log Bed) ×1",
     "specialties": [
       "Hakken (Chop)"
     ],
     "evolvesFrom": "Axew",
     "evolvesInto": "Haxorus",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Lumberjack's workplace. Controleer daarna tijd en weer voordat je voor Fraxure wacht."
   },
   {
@@ -1595,17 +1600,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Lumberjack's workplace (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Crazy log handicrafts (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Lumberjack's workplace / Crazy log handicrafts | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Lumberjack's workplace / Crazy log handicrafts.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Niet gespecificeerd (Not specified) | Weer (Weather): Niet gespecificeerd (Not specified)",
+    "habitat": "Werkplek van de houthakker (Lumberjack's Workplace) / Gezellige houtwerkplek (Cozy Log Handicrafts)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Werkplek van de houthakker (Lumberjack's Workplace): Houten stoel (Log Chair) ×1; Kar (Cart) ×1; Boomstronk, willekeurig (Tree Stump (any)) ×1; Houten tafel (Log Table) ×1 OF Gezellige houtwerkplek (Cozy Log Handicrafts): Houten stoel (Log Chair) ×1; Houten tafel (Log Table) ×1; Houten bed (Log Bed) ×1",
     "specialties": [
       "Hakken (Chop)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Fraxure",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Lumberjack's workplace. Controleer daarna tijd en weer voordat je voor Haxorus wacht."
   },
   {
@@ -1617,16 +1622,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Regen (Rain)) ; Regen (Rain) Dance site (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Regen (Rain))",
-    "habitat": "Tree-shaded flower bed / Regen (Rain) Dance site | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded flower bed / Regen (Rain) Dance site.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Regen (Rain)",
+    "habitat": "Regendansplek (Rain Dance Site) / Bloemenbed in boomschaduw (Tree-shaded Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Regendansplek (Rain Dance Site): Castform-weeramulet (regen) (Castform Weather Charm (rain)) ×2; Eten op bord (Plated Food) ×1 OF Bloemenbed in boomschaduw (Tree-shaded Flower Bed): Bessenboom, willekeurig (Berry Tree (any)) ×1; Wilde bloemen (Wildflowers) ×4",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Sliggoo",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded flower bed. Controleer daarna tijd en weer voordat je voor Goomy wacht."
   },
   {
@@ -1638,16 +1643,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Regen (Rain))",
-    "habitat": "Hydrated tall grass | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Regen (Rain)",
+    "habitat": "Bevochtigd hoog gras (Hydrated Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bevochtigd hoog gras (Hydrated Tall Grass): Hoog gras (Tall Grass) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "Goomy",
     "evolvesInto": "Goodra",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Hydrated tall grass. Controleer daarna tijd en weer voordat je voor Sliggoo wacht."
   },
   {
@@ -1659,17 +1664,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Very-berry space (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Regen (Rain))",
-    "habitat": "Very-berry space | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Very-berry space.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Regen (Rain)",
+    "habitat": "Bessenplek (Very-berry Space)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bessenplek (Very-berry Space): Bessenstoel (Berry Chair) ×1; Bessenbed (Berry Bed) ×1; Bessentafel (Berry Table) ×1; Bessentafellamp (Berry Table Lamp) ×1",
     "specialties": [
-      "Water geven (Water)",
-      "Ruilen (Trade)"
+      "Water geven (Water)"
     ],
     "evolvesFrom": "Sliggoo",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Very-berry space. Controleer daarna tijd en weer voordat je voor Goodra wacht."
   },
   {
@@ -1682,17 +1686,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Hydrated tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated tall grass | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bevochtigd hoog gras (Hydrated Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bevochtigd hoog gras (Hydrated Tall Grass): Hoog gras (Tall Grass) ×4; Water (Water) ×2; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Vliegen (Fly)",
       "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Hydrated tall grass. Controleer daarna tijd en weer voordat je voor Cramorant wacht."
   },
   {
@@ -1704,16 +1708,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Picnic Set (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Picnic Set | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Picnic Set.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Picknickplek (Picnic Set)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Picknickplek (Picnic Set): Zitplaats, willekeurig (Seat (any)) ×2; Tafel, willekeurig (Table (any)) ×1; Picknickmand (Picnic Basket) ×1",
     "specialties": [
       "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pikachu",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Picnic Set. Controleer daarna tijd en weer voordat je voor Pichu wacht."
   },
   {
@@ -1725,16 +1729,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Picnic Set (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Picnic Set | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Picnic Set.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Picknickplek (Picnic Set)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Picknickplek (Picnic Set): Zitplaats, willekeurig (Seat (any)) ×2; Tafel, willekeurig (Table (any)) ×1; Picknickmand (Picnic Basket) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "Pichu",
     "evolvesInto": "Raichu",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Picnic Set. Controleer daarna tijd en weer voordat je voor Pikachu wacht."
   },
   {
@@ -1746,17 +1750,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Nature's market (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Nature's market | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Nature's market.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Natuurmarkt (Nature's Market)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Natuurmarkt (Nature's Market): Grote boom, willekeurig (Large Tree (any)) ×1; Grote rots (Large Boulder) ×1; Tafel, willekeurig (Table (any)) ×2; Kassa (Cash Register) ×1",
     "specialties": [
       "Energie opwekken (Generate)",
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "Pikachu",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Nature's market. Controleer daarna tijd en weer voordat je voor Raichu wacht."
   },
   {
@@ -1769,16 +1773,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded Yellow tall grass (Tijd: Night | Weer: Sun, Cloud, Regen (Rain)) ; Park bench (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded Yellow tall grass / Park bench | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded Yellow tall grass / Park bench.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Geel hoog gras in boomschaduw (Tree-Shaded Yellow Tall Grass) / Parkbank (Park Bench)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Geel hoog gras in boomschaduw (Tree-Shaded Yellow Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Geel hoog gras (Yellow Tall Grass) ×4 OF Parkbank (Park Bench): Brede zitplaats (Seat (wide)) ×1; Afvalbak (Garbage Bin) ×1",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Golbat",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tree-shaded Yellow tall grass. Controleer daarna tijd en weer voordat je voor Zubat wacht."
   },
   {
@@ -1791,16 +1795,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded Yellow tall grass (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded Yellow tall grass | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded Yellow tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Geel hoog gras in boomschaduw (Tree-Shaded Yellow Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Geel hoog gras in boomschaduw (Tree-Shaded Yellow Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Geel hoog gras (Yellow Tall Grass) ×4",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "Zubat",
     "evolvesInto": "Crobat",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tree-shaded Yellow tall grass. Controleer daarna tijd en weer voordat je voor Golbat wacht."
   },
   {
@@ -1813,17 +1817,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Elevated yellow tall grass (Tijd: Night | Weer: Sun, Cloud, Regen (Rain)) ; Trash disposal site (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated yellow tall grass / Trash disposal site | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated yellow tall grass / Trash disposal site.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Afvalstortplek (Trash Disposal Site) / Verhoogd geel hoog gras (Elevated Yellow Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Afvalstortplek (Trash Disposal Site): Nutsmast (Utility Pole) ×1; Vuilniszakken (Garbage Bags) ×1 OF Verhoogd geel hoog gras (Elevated Yellow Tall Grass): Geel hoog gras (Yellow Tall Grass) ×4; Hoge locatie (High-up Location) ×1",
     "specialties": [
       "Zoeken (Search)",
       "Hakken (Chop)"
     ],
     "evolvesFrom": "Golbat",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Elevated yellow tall grass. Controleer daarna tijd en weer voordat je voor Crobat wacht."
   },
   {
@@ -1835,16 +1839,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Resting spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Working the register (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Resting spot / Working the register | Ideale omgeving: Koel (Cool)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Resting spot / Working the register.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Werken achter de kassa (Working the Register) / Rustplek (Resting Spot)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Werken achter de kassa (Working the Register): Tafel, willekeurig (Table (any)) ×2; Kassa (Cash Register) ×1 OF Rustplek (Resting Spot): Kartonnen dozen (Cardboard Boxes) ×1; Strobed (Straw Bed) ×1",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Persian",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Resting spot. Controleer daarna tijd en weer voordat je voor Meowth wacht."
   },
   {
@@ -1856,17 +1860,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Evil organization HQ (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Evil organization HQ | Ideale omgeving: Koel (Cool)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Evil organization HQ.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoofdkwartier van de boevenorganisatie (Evil Organization HQ)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoofdkwartier van de boevenorganisatie (Evil Organization HQ): Potplant, willekeurig (Potted Plant (any)) ×2; Team Rocket-wanddecoratie (Team Rocket Wall Hanging) ×1; Luxe bank (Luxury Sofa) ×1",
     "specialties": [
       "Ruilen (Trade)",
       "Zoeken (Search)"
     ],
     "evolvesFrom": "Meowth",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Evil organization HQ. Controleer daarna tijd en weer voordat je voor Persian wacht."
   },
   {
@@ -1878,16 +1882,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hot-spring shower (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hot-spring shower | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hot-spring shower.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Warmwaterbrondouche (Hot-spring Shower)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Warmwaterbrondouche (Hot-spring Shower): Douche (Shower) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Warmwaterbronwater (Hot-spring Water) ×2",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Golduck",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Hot-spring shower. Controleer daarna tijd en weer voordat je voor Psyduck wacht."
   },
   {
@@ -1899,16 +1903,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hot-spring shower (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hot-spring shower | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hot-spring shower.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Warmwaterbrondouche (Hot-spring Shower)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Warmwaterbrondouche (Hot-spring Shower): Douche (Shower) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Warmwaterbronwater (Hot-spring Water) ×2",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "Psyduck",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Hot-spring shower. Controleer daarna tijd en weer voordat je voor Golduck wacht."
   },
   {
@@ -1920,17 +1924,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Perpetual mess (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Resort meal prep (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Perpetual mess / Resort meal prep | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Perpetual mess / Resort meal prep.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Maaltijdbereiding in het resort (Resort Meal Prep) / Eeuwige rommel (Perpetual Mess)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Maaltijdbereiding in het resort (Resort Meal Prep): Grote palmboom (Large Palm Tree) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Eten op bord (Plated Food) ×1; Kampvuur (Campfire) ×1 OF Eeuwige rommel (Perpetual Mess): Kartonnen dozen (Cardboard Boxes) ×1; Speelgoed, willekeurig (Toy (any)) ×1",
     "specialties": [
       "Branden (Burn)",
       "Zoeken (Search)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Arcanine",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Perpetual mess. Controleer daarna tijd en weer voordat je voor Growlithe wacht."
   },
   {
@@ -1942,17 +1946,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Mini museum (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Magma fishing spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Mini museum / Magma fishing spot | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Mini museum / Magma fishing spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Visplek bij magma (Magma Fishing Spot) / Minimuseum (Mini Museum)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Visplek bij magma (Magma Fishing Spot): Hengel (Fishing Rod) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Lava (Lava) ×1 OF Minimuseum (Mini Museum): Paal, willekeurig (Post (any)) ×3; Sokkel / tentoonstellingsstandaard (Pedestal / Exhibition Stand) ×1; Groot verloren relikwie (Lost Relic (large)) ×1",
     "specialties": [
       "Branden (Burn)",
       "Zoeken (Search)"
     ],
     "evolvesFrom": "Growlithe",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mini museum. Controleer daarna tijd en weer voordat je voor Arcanine wacht."
   },
   {
@@ -1965,17 +1969,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Nog niet bevestigd",
-    "area": "Nog niet bevestigd",
-    "habitat": "Nog niet bevestigd",
-    "obtainMethod": "Nog niet bevestigd",
-    "requirements": "Nog niet bevestigd",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Alles ingepakt (All Packed Up)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Alles ingepakt (All Packed Up): Kar (Cart) ×1; Kartonnen dozen (Cardboard Boxes) ×2",
     "specialties": [
       "Hakken (Chop)",
       "Bouwen (Build)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "controleer eerst de habitat- en locatievoorwaarden voor Farfetch'd voordat je materialen uitgeeft."
   },
   {
@@ -1987,16 +1991,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Marsh fishing spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Marsh fishing spot | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Marsh fishing spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Visplek in het moeras (Marsh Fishing Spot)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Visplek in het moeras (Marsh Fishing Spot): Hengel (Fishing Rod) ×1; Seat (Seat) ×1; Modderig water (Muddy Water) ×1",
     "specialties": [
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Muk",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Marsh fishing spot. Controleer daarna tijd en weer voordat je voor Grimer wacht."
   },
   {
@@ -2008,16 +2012,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Marsh fishing spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Marsh fishing spot | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Marsh fishing spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Visplek in het moeras (Marsh Fishing Spot)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Visplek in het moeras (Marsh Fishing Spot): Hengel (Fishing Rod) ×1; Seat (Seat) ×1; Modderig water (Muddy Water) ×1",
     "specialties": [
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Grimer",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Marsh fishing spot. Controleer daarna tijd en weer voordat je voor Muk wacht."
   },
   {
@@ -2030,17 +2034,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Spooky study (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Spooky study | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Spooky study.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Spookachtige studeerkamer (Spooky Study)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Spookachtige studeerkamer (Spooky Study): Boekenkast (Bookcase) ×1; Chique bank (Chic Sofa) ×1; Eenvoudige tafel (Plain Table) ×1; Smalle kaars (Slender Candle) ×1",
     "specialties": [
       "Verzamelen (Gather)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Haunter",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Spooky study. Controleer daarna tijd en weer voordat je voor Gastly wacht."
   },
   {
@@ -2053,17 +2057,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Surprise in store (Tijd: Night | Weer: Sun, Cloud, Regen (Rain)) ; Spooky study (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Surprise in store / Spooky study | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Surprise in store / Spooky study.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verrassing in de winkel (Surprise in Store) / Spookachtige studeerkamer (Spooky Study)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verrassing in de winkel (Surprise in Store): Ballonnen (Balloons) ×2; Boo-in-the-Box (Boo-in-the-Box) ×1 OF Spookachtige studeerkamer (Spooky Study): Boekenkast (Bookcase) ×1; Chique bank (Chic Sofa) ×1; Eenvoudige tafel (Plain Table) ×1; Smalle kaars (Slender Candle) ×1",
     "specialties": [
       "Verzamelen (Gather)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Gastly",
     "evolvesInto": "Gengar",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Surprise in store. Controleer daarna tijd en weer voordat je voor Haunter wacht."
   },
   {
@@ -2076,17 +2080,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Surprise in store (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Surprise in store | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Surprise in store.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verrassing in de winkel (Surprise in Store)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verrassing in de winkel (Surprise in Store): Ballonnen (Balloons) ×2; Boo-in-the-Box (Boo-in-the-Box) ×1",
     "specialties": [
       "Verzamelen (Gather)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Haunter",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Surprise in store. Controleer daarna tijd en weer voordat je voor Gengar wacht."
   },
   {
@@ -2098,17 +2102,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Park bench (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Playing pirate (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Park bench / Playing pirate | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Park bench / Playing pirate.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Piraat spelen (Playing Pirate) / Parkbank (Park Bench)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Piraat spelen (Playing Pirate): Vat (Barrel) ×1; Kanon (Cannon) ×2; Scheepsroer (Ship's Wheel) ×1 OF Parkbank (Park Bench): Brede zitplaats (Seat (wide)) ×1; Afvalbak (Garbage Bin) ×1",
     "specialties": [
       "Energie opwekken (Generate)",
-      "Explode"
+      "Exploderen (Explode)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Electrode",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Park bench. Controleer daarna tijd en weer voordat je voor Voltorb wacht."
   },
   {
@@ -2120,17 +2124,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Park bench (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Playing pirate (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Park bench / Playing pirate | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Park bench / Playing pirate.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Piraat spelen (Playing Pirate) / Parkbank (Park Bench)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Piraat spelen (Playing Pirate): Vat (Barrel) ×1; Kanon (Cannon) ×2; Scheepsroer (Ship's Wheel) ×1 OF Parkbank (Park Bench): Brede zitplaats (Seat (wide)) ×1; Afvalbak (Garbage Bin) ×1",
     "specialties": [
       "Energie opwekken (Generate)",
-      "Explode"
+      "Exploderen (Explode)"
     ],
     "evolvesFrom": "Voltorb",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Park bench. Controleer daarna tijd en weer voordat je voor Electrode wacht."
   },
   {
@@ -2143,17 +2147,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tropical vibes (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Shaded beach (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Red tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tropical vibes / Shaded beach / Red tall grass | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tropical vibes / Shaded beach / Red tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Strand in de schaduw (Shaded Beach) / Tropische sfeer (Tropical Vibes)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Strand in de schaduw (Shaded Beach): Grote palmboom (Large Palm Tree) ×1; Strandstoel (Beach Chair) ×1 OF Tropische sfeer (Tropical Vibes): Grote palmboom (Large Palm Tree) ×1; Kustbloemen (Seashore Flowers) ×4",
     "specialties": [
       "Groeien (Grow)",
       "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Exeggutor",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tropical vibes. Controleer daarna tijd en weer voordat je voor Exeggcute wacht."
   },
   {
@@ -2166,17 +2170,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tropical vibes (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Shaded beach (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tropical vibes / Shaded beach | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tropical vibes / Shaded beach.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Strand in de schaduw (Shaded Beach) / Tropische sfeer (Tropical Vibes)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Strand in de schaduw (Shaded Beach): Grote palmboom (Large Palm Tree) ×1; Strandstoel (Beach Chair) ×1 OF Tropische sfeer (Tropical Vibes): Grote palmboom (Large Palm Tree) ×1; Kustbloemen (Seashore Flowers) ×4",
     "specialties": [
       "Groeien (Grow)",
       "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "Exeggcute",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tropical vibes. Controleer daarna tijd en weer voordat je voor Exeggutor wacht."
   },
   {
@@ -2188,16 +2192,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Alarm clock sleep zone (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Working the register (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Alarm clock sleep zone / Working the register | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Alarm clock sleep zone / Working the register.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Werken achter de kassa (Working the Register) / Slaapzone met wekker (Alarm Clock Sleep Zone)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Werken achter de kassa (Working the Register): Tafel, willekeurig (Table (any)) ×2; Kassa (Cash Register) ×1 OF Slaapzone met wekker (Alarm Clock Sleep Zone): Bed, willekeurig (Bed (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Wekker (Alarm Clock) ×1",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Chansey",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Alarm clock sleep zone. Controleer daarna tijd en weer voordat je voor Happiny wacht."
   },
   {
@@ -2209,16 +2213,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Full recovery (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Full recovery | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Full recovery.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Volledig herstel (Full Recovery)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Volledig herstel (Full Recovery): Bed, willekeurig (Bed (any)) ×1; Eenvoudige kist (Plain Chest) ×1; EHBO-set (First Aid Kit) ×1",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Happiny",
     "evolvesInto": "Blissey",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Full recovery. Controleer daarna tijd en weer voordat je voor Chansey wacht."
   },
   {
@@ -2230,17 +2234,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Cuteness overload (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Cuteness overload | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Cuteness overload.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Overdosis schattigheid (Cuteness Overload)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Overdosis schattigheid (Cuteness Overload): Schattige bank (Cute Sofa) ×1; Schattig bed (Cute Bed) ×1; Schattige tafel (Cute Table) ×1; Schattige lamp (Cute Lamp) ×1; Schattige ladekast (Cute Dresser) ×1",
     "specialties": [
       "Ruilen (Trade)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Chansey",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Cuteness overload. Controleer daarna tijd en weer voordat je voor Blissey wacht."
   },
   {
@@ -2252,16 +2256,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Vending machine set (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Vending machine set | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Vending machine set.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Automatenplek (Vending Machine Set)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Automatenplek (Vending Machine Set): Afvalbak, willekeurig (Waste Bin (any)) ×1; Automaat (Vending Machine) ×1",
     "specialties": [
       "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Electabuzz",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Vending machine set. Controleer daarna tijd en weer voordat je voor Elekid wacht."
   },
   {
@@ -2273,16 +2277,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Trash can central (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Light-up stage (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Trash can central / Light-up stage | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Trash can central / Light-up stage.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verlicht podium (Light-Up Stage) / Afvalbakcentrale (Trash Can Central)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verlicht podium (Light-Up Stage): Spotlight (Spotlight) ×2; Klein podium (Small Stage) ×1 OF Afvalbakcentrale (Trash Can Central): Afvalbak (Garbage Bin) ×4",
     "specialties": [
       "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "Elekid",
     "evolvesInto": "Electivire",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Trash can central. Controleer daarna tijd en weer voordat je voor Electabuzz wacht."
   },
   {
@@ -2294,17 +2298,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Light-up stage (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Vending machine set (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Light-up stage / Vending machine set | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Light-up stage / Vending machine set.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verlicht podium (Light-Up Stage) / Automatenplek (Vending Machine Set)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verlicht podium (Light-Up Stage): Spotlight (Spotlight) ×2; Klein podium (Small Stage) ×1 OF Automatenplek (Vending Machine Set): Afvalbak, willekeurig (Waste Bin (any)) ×1; Automaat (Vending Machine) ×1",
     "specialties": [
       "Energie opwekken (Generate)",
       "Verpletteren (Crush)"
     ],
     "evolvesFrom": "Electabuzz",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Light-up stage. Controleer daarna tijd en weer voordat je voor Electivire wacht."
   },
   {
@@ -2317,16 +2321,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tropical seaside (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tropical seaside | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tropical seaside.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Tropische kust (Tropical Seaside)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Tropische kust (Tropical Seaside): Grote palmboom (Large Palm Tree) ×1; Haag, willekeurig (Hedge (any)) ×4; Oceaanwater (Ocean Water) ×2",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tropical seaside. Controleer daarna tijd en weer voordat je voor Lapras wacht."
   },
   {
@@ -2338,16 +2342,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Bed with a plush (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Tree-shaded snoozing Snorlax (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Bed with a plush / Tree-shaded snoozing Snorlax | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Bed with a plush / Tree-shaded snoozing Snorlax.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Slapende Snorlax in boomschaduw (Tree-shaded Snoozing Snorlax) / Bed met knuffel (Bed With a Plush)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Slapende Snorlax in boomschaduw (Tree-shaded Snoozing Snorlax): Grote boom, willekeurig (Large Tree (any)) ×1; Dutbed (Naptime Bed) ×1; alleen Palette Town (Palette Town Only) OF Bed met knuffel (Bed With a Plush): Bed, willekeurig (Bed (any)) ×1; Pop, willekeurig (Doll (any)) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Snorlax",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Bed with a plush. Controleer daarna tijd en weer voordat je voor Munchlax wacht."
   },
   {
@@ -2359,16 +2363,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Gourmet's altar (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Gourmet's altar | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Gourmet's altar.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Ouderwetse antiekhoek (Good Old-fashioned Antiques) / Slapende Snorlax in boomschaduw (Tree-shaded Snoozing Snorlax)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Ouderwetse antiekhoek (Good Old-fashioned Antiques): Antieke kast (Antique Closet) ×1; Antiek bed (Antique Bed) ×1; Antieke ladekast (Antique Dresser) ×1; Antieke stoel (Antique Chair) ×1; alleen Palette Town (Palette Town Only) OF Slapende Snorlax in boomschaduw (Tree-shaded Snoozing Snorlax): Grote boom, willekeurig (Large Tree (any)) ×1; Dutbed (Naptime Bed) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
-      "Eat"
+      "Ruilen (Trade)",
+      "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "Munchlax",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Gourmet's altar. Controleer daarna tijd en weer voordat je voor Snorlax wacht."
   },
   {
@@ -2381,16 +2386,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Yellow tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Yellow tall grass | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Yellow tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Geel hoog gras (Yellow Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Geel hoog gras (Yellow Tall Grass): Geel hoog gras (Yellow Tall Grass) ×4",
     "specialties": [
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Ariados",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Yellow tall grass. Controleer daarna tijd en weer voordat je voor Spinarak wacht."
   },
   {
@@ -2403,16 +2408,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Yellow tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Yellow tall grass | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Yellow tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Geel hoog gras (Yellow Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Geel hoog gras (Yellow Tall Grass): Geel hoog gras (Yellow Tall Grass) ×4",
     "specialties": [
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Spinarak",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Yellow tall grass. Controleer daarna tijd en weer voordat je voor Ariados wacht."
   },
   {
@@ -2424,17 +2429,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Overgrowth vending machine (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Knitting station (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Overgrowth vending machine / Knitting station | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Overgrowth vending machine / Knitting station.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Breitafel (Knitting Table) / Overwoekerde automaat (Overgrowth Vending Machine)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Breitafel (Knitting Table): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Breispullen (Knitting Supplies) ×1 OF Overwoekerde automaat (Overgrowth Vending Machine): Geel hoog gras (Yellow Tall Grass) ×4; Automaat (Vending Machine) ×1",
     "specialties": [
       "Energie opwekken (Generate)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Flaaffy",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Overgrowth vending machine. Controleer daarna tijd en weer voordat je voor Mareep wacht."
   },
   {
@@ -2446,18 +2451,18 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Night festival venue (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Knitting station (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Night festival venue / Knitting station | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Night festival venue / Knitting station.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Nachtfestivalplek (Night Festival Venue) / Breitafel (Knitting Table)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Nachtfestivalplek (Night Festival Venue): Ballonnen (Balloons) ×2; Raichu-bord (Raichu Sign) ×1 OF Breitafel (Knitting Table): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Breispullen (Knitting Supplies) ×1",
     "specialties": [
       "Energie opwekken (Generate)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Mareep",
     "evolvesInto": "Ampharos",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
-    "tip": "begin in Bleak Beach en maak eerst Night festival venue. Controleer daarna tijd en weer voordat je voor Flaaffy wacht."
+    "evolutionMethod": "",
+    "tip": "begin in Bleak Beach en maak eerst nacht festival venue. Controleer daarna tijd en weer voordat je voor Flaaffy wacht."
   },
   {
     "number": 113,
@@ -2468,17 +2473,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Plain life (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Plain life | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Plain life.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Eenvoudig leven (Plain Life)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Eenvoudig leven (Plain Life): Eenvoudig bed (Plain Bed) ×1; Eenvoudige bank (Plain Sofa) ×1; Eenvoudige tafel (Plain Table) ×1; Eenvoudige lamp (Plain Lamp) ×1",
     "specialties": [
       "Energie opwekken (Generate)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Flaaffy",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Plain life. Controleer daarna tijd en weer voordat je voor Ampharos wacht."
   },
   {
@@ -2491,17 +2496,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated yellow tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Perpetual mess (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated yellow tall grass / Perpetual mess | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated yellow tall grass / Perpetual mess.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bevochtigd geel hoog gras (Hydrated Yellow Tall Grass) / Eeuwige rommel (Perpetual Mess)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bevochtigd geel hoog gras (Hydrated Yellow Tall Grass): Geel hoog gras (Yellow Tall Grass) ×4; Water (Water) ×2 OF Eeuwige rommel (Perpetual Mess): Kartonnen dozen (Cardboard Boxes) ×1; Speelgoed, willekeurig (Toy (any)) ×1",
     "specialties": [
       "Water geven (Water)",
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Marill",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Hydrated yellow tall grass. Controleer daarna tijd en weer voordat je voor Azurill wacht."
   },
   {
@@ -2514,17 +2519,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated yellow tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Dock (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated yellow tall grass / Dock | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated yellow tall grass / Dock.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Steiger (Dock) / Bevochtigd geel hoog gras (Hydrated Yellow Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Steiger (Dock): Loopplank (Walkway) ×4; Straatlantaarn, willekeurig (Streetlight (any)) ×1; Oceaanwater (Ocean Water) ×2 OF Bevochtigd geel hoog gras (Hydrated Yellow Tall Grass): Geel hoog gras (Yellow Tall Grass) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)",
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "Azurill",
     "evolvesInto": "Azumarill",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Hydrated yellow tall grass. Controleer daarna tijd en weer voordat je voor Marill wacht."
   },
   {
@@ -2537,17 +2542,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Dock (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Regen (Rain))",
-    "habitat": "Dock | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Dock.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Steiger (Dock)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Steiger (Dock): Loopplank (Walkway) ×4; Straatlantaarn, willekeurig (Streetlight (any)) ×1; Oceaanwater (Ocean Water) ×2",
     "specialties": [
       "Water geven (Water)",
       "Bouwen (Build)"
     ],
     "evolvesFrom": "Marill",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Dock. Controleer daarna tijd en weer voordat je voor Azumarill wacht."
   },
   {
@@ -2560,16 +2565,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach)",
-    "area": "Marshy tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Marshy tall grass | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Marshy tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Moerassig hoog gras (Marshy Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Moerassig hoog gras (Marshy Tall Grass): Geel hoog gras (Yellow Tall Grass) ×4; Modderig water (Muddy Water) ×2",
     "specialties": [
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Clodsire",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Marshy tall grass. Controleer daarna tijd en weer voordat je voor Paldean Wooper wacht."
   },
   {
@@ -2582,17 +2587,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Marshy tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Marsh fishing spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Marshy tall grass / Marsh fishing spot | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Marshy tall grass / Marsh fishing spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Moerassige visplek (Marshy Fishing Spot) / Moerassig hoog gras (Marshy Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Moerassige visplek (Marshy Fishing Spot): Hengel (Fishing Rod) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Modderig water (Muddy Water) ×1 OF Moerassig hoog gras (Marshy Tall Grass): Geel hoog gras (Yellow Tall Grass) ×4; Modderig water (Muddy Water) ×2",
     "specialties": [
       "Opruimen (Litter)",
       "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "Paldean Wooper",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Marshy tall grass. Controleer daarna tijd en weer voordat je voor Clodsire wacht."
   },
   {
@@ -2604,16 +2609,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tiny Atelier (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tiny Atelier | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tiny Atelier.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Klein atelier (Tiny Atelier)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Klein atelier (Tiny Atelier): Canvas (Canvas) ×1; Zitplaats, willekeurig (Seat (any)) ×1",
     "specialties": [
-      "Paint"
+      "Schilderen (Paint)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tiny Atelier. Controleer daarna tijd en weer voordat je voor Smeargle wacht."
   },
   {
@@ -2625,16 +2630,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Chirp-chirp meal (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Resort meal prep (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Chirp-chirp meal / Resort meal prep | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Chirp-chirp meal / Resort meal prep.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Vogelmaaltijd (Chirp-chirp Meal) / Maaltijdbereiding in het resort (Resort Meal Prep)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Vogelmaaltijd (Chirp-chirp Meal): Houten vogelhuisje (Wooden Birdhouse) ×1; Tafel, willekeurig (Table (any)) ×1; Eten op bord (Plated Food) ×1 OF Maaltijdbereiding in het resort (Resort Meal Prep): Grote palmboom (Large Palm Tree) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Eten op bord (Plated Food) ×1; Kampvuur (Campfire) ×1",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Combusken",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Chirp-chirp meal. Controleer daarna tijd en weer voordat je voor Torchic wacht."
   },
   {
@@ -2647,17 +2652,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Resort meal prep (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Furnace Spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Resort meal prep / Furnace Spot | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Resort meal prep / Furnace Spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Ovenplek (Furnace Spot) / Maaltijdbereiding in het resort (Resort Meal Prep)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Ovenplek (Furnace Spot): Metalen vat (Metal Drum) ×1; Oven (Furnace) ×1 OF Maaltijdbereiding in het resort (Resort Meal Prep): Grote palmboom (Large Palm Tree) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Eten op bord (Plated Food) ×1; Kampvuur (Campfire) ×1",
     "specialties": [
       "Branden (Burn)",
       "Bouwen (Build)"
     ],
     "evolvesFrom": "Torchic",
     "evolvesInto": "Blaziken",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Resort meal prep. Controleer daarna tijd en weer voordat je voor Combusken wacht."
   },
   {
@@ -2670,17 +2675,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Chirp-chirp meal (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Furnace Spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Chirp-chirp meal / Furnace Spot | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Chirp-chirp meal / Furnace Spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Ovenplek (Furnace Spot) / Vogelmaaltijd (Chirp-chirp Meal)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Ovenplek (Furnace Spot): Metalen vat (Metal Drum) ×1; Oven (Furnace) ×1 OF Vogelmaaltijd (Chirp-chirp Meal): Houten vogelhuisje (Wooden Birdhouse) ×1; Tafel, willekeurig (Table (any)) ×1; Eten op bord (Plated Food) ×1",
     "specialties": [
       "Branden (Burn)",
       "Bouwen (Build)"
     ],
     "evolvesFrom": "Combusken",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Chirp-chirp meal. Controleer daarna tijd en weer voordat je voor Blaziken wacht."
   },
   {
@@ -2693,17 +2698,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Elevated yellow tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain)) ; Windy Flower Bed (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated yellow tall grass / Windy Flower Bed | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated yellow tall grass / Windy Flower Bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Ochtend (Morning), overdag (Daytime), avond (Evening) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verhoogd geel hoog gras (Elevated Yellow Tall Grass) / Winderig bloemenbed (Windy Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verhoogd geel hoog gras (Elevated Yellow Tall Grass): Geel hoog gras (Yellow Tall Grass) ×4; Hoge locatie (High-up Location) ×1 OF Winderig bloemenbed (Windy Flower Bed): Windmolen (Windmill) ×1; Kustbloemen (Seashore Flowers) ×4",
     "specialties": [
       "Water geven (Water)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pelipper",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Elevated yellow tall grass. Controleer daarna tijd en weer voordat je voor Wingull wacht."
   },
   {
@@ -2716,17 +2721,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Elevated yellow tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain)) ; Windy Flower Bed (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated yellow tall grass / Windy Flower Bed | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated yellow tall grass / Windy Flower Bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Ochtend (Morning), overdag (Daytime), avond (Evening) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Winderig bloemenbed (Windy Flower Bed) / Verhoogd geel hoog gras (Elevated Yellow Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Winderig bloemenbed (Windy Flower Bed): Windmolen (Windmill) ×1; Kustbloemen (Seashore Flowers) ×4 OF Verhoogd geel hoog gras (Elevated Yellow Tall Grass): Geel hoog gras (Yellow Tall Grass) ×4; Hoge locatie (High-up Location) ×1",
     "specialties": [
       "Water geven (Water)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "Wingull",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Elevated yellow tall grass. Controleer daarna tijd en weer voordat je voor Pelipper wacht."
   },
   {
@@ -2738,17 +2743,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded Yellow tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; All packed up (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded Yellow tall grass / All packed up | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded Yellow tall grass / All packed up.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Geel hoog gras in boomschaduw (Tree-Shaded Yellow Tall Grass) / Alles ingepakt (All Packed Up)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Geel hoog gras in boomschaduw (Tree-Shaded Yellow Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Geel hoog gras (Yellow Tall Grass) ×4 OF Alles ingepakt (All Packed Up): Kar (Cart) ×1; Kartonnen dozen (Cardboard Boxes) ×2",
     "specialties": [
       "Bouwen (Build)",
       "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Hariyama",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tree-shaded Yellow tall grass. Controleer daarna tijd en weer voordat je voor Makuhita wacht."
   },
   {
@@ -2760,17 +2765,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded Yellow tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; All packed up (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded Yellow tall grass / All packed up | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded Yellow tall grass / All packed up.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Geel hoog gras in boomschaduw (Tree-Shaded Yellow Tall Grass) / Alles ingepakt (All Packed Up)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Geel hoog gras in boomschaduw (Tree-Shaded Yellow Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Geel hoog gras (Yellow Tall Grass) ×4 OF Alles ingepakt (All Packed Up): Kar (Cart) ×1; Kartonnen dozen (Cardboard Boxes) ×2",
     "specialties": [
       "Bouwen (Build)",
       "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "Makuhita",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tree-shaded Yellow tall grass. Controleer daarna tijd en weer voordat je voor Hariyama wacht."
   },
   {
@@ -2782,16 +2787,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Welcoming resort (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Welcoming resort | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Welcoming resort.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Gastvrij resort (Welcoming Resort)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Gastvrij resort (Welcoming Resort): Resortbank (Resort Sofa) ×1; Resorttafel (Resort Table) ×1; Resorthangmat (Resort Hammock) ×1; Resortlamp (Resort Light) ×1",
     "specialties": [
       "Hakken (Chop)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Welcoming resort. Controleer daarna tijd en weer voordat je voor Absol wacht."
   },
   {
@@ -2803,16 +2808,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated yellow tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated yellow tall grass | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated yellow tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bevochtigd geel hoog gras (Hydrated Yellow Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bevochtigd geel hoog gras (Hydrated Yellow Tall Grass): Geel hoog gras (Yellow Tall Grass) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Prinplup",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Hydrated yellow tall grass. Controleer daarna tijd en weer voordat je voor Piplup wacht."
   },
   {
@@ -2824,17 +2829,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated yellow tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Waterwheel Spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated yellow tall grass / Waterwheel Spot | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated yellow tall grass / Waterwheel Spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Watermolenplek (Waterwheel Spot) / Bevochtigd geel hoog gras (Hydrated Yellow Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Watermolenplek (Waterwheel Spot): Watermolen (Waterwheel) ×1; Water (Water) ×2; Waterval (Waterfall) ×1 OF Bevochtigd geel hoog gras (Hydrated Yellow Tall Grass): Geel hoog gras (Yellow Tall Grass) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Piplup",
     "evolvesInto": "Empoleon",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Hydrated yellow tall grass. Controleer daarna tijd en weer voordat je voor Prinplup wacht."
   },
   {
@@ -2847,17 +2852,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tableside delivery cart (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Waterwheel Spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Regen (Rain))",
-    "habitat": "Tableside delivery cart / Waterwheel Spot | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tableside delivery cart / Waterwheel Spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Regen (Rain)",
+    "habitat": "Serveerkar aan tafel (Tableside Delivery Cart) / Watermolenplek (Waterwheel Spot)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Serveerkar aan tafel (Tableside Delivery Cart): Chique stoel (Chic Chair) ×2; Chique tafel (Chic Table) ×1; Kleine vaas (Small Vase) ×1; Duwwagen (Push Cart) ×1; Eten op bord (Plated Food) ×1 OF Watermolenplek (Waterwheel Spot): Watermolen (Waterwheel) ×1; Water (Water) ×2; Waterval (Waterfall) ×1",
     "specialties": [
       "Water geven (Water)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Prinplup",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tableside delivery cart. Controleer daarna tijd en weer voordat je voor Empoleon wacht."
   },
   {
@@ -2869,16 +2874,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Working the register (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Working the register | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Working the register.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Werken achter de kassa (Working the Register)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Werken achter de kassa (Working the Register): Tafel, willekeurig (Table (any)) ×2; Kassa (Cash Register) ×1",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Working the register. Controleer daarna tijd en weer voordat je voor Audino wacht."
   },
   {
@@ -2890,16 +2895,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Trash collection site (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Trash collection site | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Trash collection site.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Afvalverzamelplek (Trash Collection Site)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Afvalverzamelplek (Trash Collection Site): Afvalbak, willekeurig (Waste Bin (any)) ×1; Bord, willekeurig (Sign (any)) ×1; Vuilniszakken (Garbage Bags) ×1",
     "specialties": [
       "Recyclen (Recycle)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Garbodor",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Trash collection site. Controleer daarna tijd en weer voordat je voor Trubbish wacht."
   },
   {
@@ -2911,17 +2916,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Trash collection site (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Trash collection site | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Trash collection site.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Afvalverzamelplek (Trash Collection Site)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Afvalverzamelplek (Trash Collection Site): Afvalbak, willekeurig (Waste Bin (any)) ×1; Bord, willekeurig (Sign (any)) ×1; Vuilniszakken (Garbage Bags) ×1",
     "specialties": [
       "Recyclen (Recycle)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Trubbish",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Trash collection site. Controleer daarna tijd en weer voordat je voor Garbodor wacht."
   },
   {
@@ -2933,16 +2938,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Breezy flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Breezy flower bed | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Breezy flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Luchtig bloemenbed (Breezy Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Luchtig bloemenbed (Breezy Flower Bed): Kustbloemen (Seashore Flowers) ×4",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Zoroark",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Breezy flower bed. Controleer daarna tijd en weer voordat je voor Zorua wacht."
   },
   {
@@ -2954,17 +2959,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Breezy flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Surprise in store (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Breezy flower bed / Surprise in store | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Breezy flower bed / Surprise in store.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verrassing in de winkel (Surprise in Store) / Luchtig bloemenbed (Breezy Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verrassing in de winkel (Surprise in Store): Ballonnen (Balloons) ×2; Boo-in-the-Box (Boo-in-the-Box) ×1 OF Luchtig bloemenbed (Breezy Flower Bed): Kustbloemen (Seashore Flowers) ×4",
     "specialties": [
       "Ruilen (Trade)",
       "Hakken (Chop)"
     ],
     "evolvesFrom": "Zorua",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Breezy flower bed. Controleer daarna tijd en weer voordat je voor Zoroark wacht."
   },
   {
@@ -2976,16 +2981,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Changing area (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Private makeup stand (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Changing area / Private makeup stand | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Changing area / Private makeup stand.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Kleedruimte (Changing Area) / Privé make-uptafel (Private Makeup Stand)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Kleedruimte (Changing Area): Kast, willekeurig (Closet (any)) ×1; Grote spiegel (Mirror (large)) ×1 OF Privé make-uptafel (Private Makeup Stand): Scheidingswand, willekeurig (Partition (any)) ×2; Kast, willekeurig (Closet (any)) ×1; Ladekast, willekeurig (Dresser (any)) ×1",
     "specialties": [
       "Verzamelen (Gather)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Cinccino",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Changing area. Controleer daarna tijd en weer voordat je voor Minccino wacht."
   },
   {
@@ -2997,17 +3002,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Private makeup stand (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Private makeup stand | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Private makeup stand.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Privé make-uptafel (Private Makeup Stand)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Privé make-uptafel (Private Makeup Stand): Scheidingswand, willekeurig (Partition (any)) ×2; Kast, willekeurig (Closet (any)) ×1; Ladekast, willekeurig (Dresser (any)) ×1",
     "specialties": [
       "Verzamelen (Gather)",
       "Recyclen (Recycle)"
     ],
     "evolvesFrom": "Minccino",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Private makeup stand. Controleer daarna tijd en weer voordat je voor Cinccino wacht."
   },
   {
@@ -3019,16 +3024,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Yellow tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Vending machine break area (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Yellow tall grass / Vending machine break area | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Yellow tall grass / Vending machine break area.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Geel hoog gras (Yellow Tall Grass) / Pauzeplek bij automaat (Vending Machine Break Area)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Geel hoog gras (Yellow Tall Grass): Geel hoog gras (Yellow Tall Grass) ×4 OF Pauzeplek bij automaat (Vending Machine Break Area): Automaat (Vending Machine) ×1; Brede zitplaats (Seat (wide)) ×1",
     "specialties": [
       "Hakken (Chop)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Charjabug",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Yellow tall grass. Controleer daarna tijd en weer voordat je voor Grubbin wacht."
   },
   {
@@ -3041,17 +3046,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Vending machine break area (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Vending machine break area | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Vending machine break area.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Pauzeplek bij automaat (Vending Machine Break Area)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Pauzeplek bij automaat (Vending Machine Break Area): Automaat (Vending Machine) ×1; Brede zitplaats (Seat (wide)) ×1",
     "specialties": [
       "Energie opwekken (Generate)",
       "Hakken (Chop)"
     ],
     "evolvesFrom": "Grubbin",
     "evolvesInto": "Vikavolt",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Vending machine break area. Controleer daarna tijd en weer voordat je voor Charjabug wacht."
   },
   {
@@ -3064,17 +3069,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded flower bed | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bloemenbed in boomschaduw (Tree-shaded Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bloemenbed in boomschaduw (Tree-shaded Flower Bed): Bessenboom, willekeurig (Berry Tree (any)) ×1; Wilde bloemen (Wildflowers) ×4; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Energie opwekken (Generate)",
       "Hakken (Chop)"
     ],
     "evolvesFrom": "Charjabug",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded flower bed. Controleer daarna tijd en weer voordat je voor Vikavolt wacht."
   },
   {
@@ -3087,16 +3092,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Pikachu space (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Pikachu space | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Pikachu space.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Pikachu-plek (Pikachu Space)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Pikachu-plek (Pikachu Space): Pikachu-bank (Pikachu Sofa) ×1; Pikachu-pop (Pikachu Doll) ×1",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Pikachu space. Controleer daarna tijd en weer voordat je voor Mimikyu wacht."
   },
   {
@@ -3108,16 +3113,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Breezy flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Tantalizing restaurant (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Breezy flower bed / Tantalizing restaurant | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Breezy flower bed / Tantalizing restaurant.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Luchtig bloemenbed (Breezy Flower Bed) / Verleidelijk restaurant (Tantalizing Restaurant)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Luchtig bloemenbed (Breezy Flower Bed): Kustbloemen (Seashore Flowers) ×4 OF Verleidelijk restaurant (Tantalizing Restaurant): Zitplaats, willekeurig (Seat (any)) ×1; Menubord (Menu Board) ×1; Tafel, willekeurig (Table (any)) ×1; Eten op bord (Plated Food) ×1",
     "specialties": [
       "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pawmo",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Breezy flower bed. Controleer daarna tijd en weer voordat je voor Pawmi wacht."
   },
   {
@@ -3130,17 +3135,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tantalizing restaurant (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Café space (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tantalizing restaurant / Café space | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tantalizing restaurant / Café space.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verleidelijk restaurant (Tantalizing Restaurant) / Caféplek (Cafe Space)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verleidelijk restaurant (Tantalizing Restaurant): Zitplaats, willekeurig (Seat (any)) ×1; Menubord (Menu Board) ×1; Tafel, willekeurig (Table (any)) ×1; Eten op bord (Plated Food) ×1 OF Caféplek (Cafe Space): Zitplaats, willekeurig (Seat (any)) ×1; Potplant, willekeurig (Potted Plant (any)) ×1; Balie (Counter) ×2; Mok (Mug) ×1; Menubord (Menu Board) ×1",
     "specialties": [
       "Energie opwekken (Generate)",
       "Verpletteren (Crush)"
     ],
     "evolvesFrom": "Pawmi",
     "evolvesInto": "Pawmot",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tantalizing restaurant. Controleer daarna tijd en weer voordat je voor Pawmo wacht."
   },
   {
@@ -3153,17 +3158,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Café space (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Café space | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Café space.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Caféplek (Cafe Space)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Caféplek (Cafe Space): Zitplaats, willekeurig (Seat (any)) ×1; Potplant, willekeurig (Potted Plant (any)) ×1; Balie (Counter) ×2; Mok (Mug) ×1; Menubord (Menu Board) ×1",
     "specialties": [
       "Energie opwekken (Generate)",
       "Verpletteren (Crush)"
     ],
     "evolvesFrom": "Pawmo",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Café space. Controleer daarna tijd en weer voordat je voor Pawmot wacht."
   },
   {
@@ -3176,16 +3181,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Somber strand (Bleak Beach) / Verdorde woestenij (Withered Wastelands) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Beach Set (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Beach Set | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Beach Set.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Strandset (Beach Set)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Strandset (Beach Set): Strandstoel (Beach Chair) ×1; Strandparasol (Beach Parasol) ×1; Bijzettafel (Side Table) ×1",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Beach Set. Controleer daarna tijd en weer voordat je voor Tatsugiri wacht."
   },
   {
@@ -3197,16 +3202,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated graceful flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated graceful flower bed | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated graceful flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bevochtigd sierlijk bloemenbed (Hydrated Graceful Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bevochtigd sierlijk bloemenbed (Hydrated Graceful Flower Bed): Bergbloemen (Mountain Flowers) ×4; Water (Water) ×2",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Arbok",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Hydrated graceful flower bed. Controleer daarna tijd en weer voordat je voor Ekans wacht."
   },
   {
@@ -3218,16 +3223,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated graceful flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated graceful flower bed | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated graceful flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bevochtigd sierlijk bloemenbed (Hydrated Graceful Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bevochtigd sierlijk bloemenbed (Hydrated Graceful Flower Bed): Bergbloemen (Mountain Flowers) ×4; Water (Water) ×2",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "Ekans",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Hydrated graceful flower bed. Controleer daarna tijd en weer voordat je voor Arbok wacht."
   },
   {
@@ -3239,16 +3244,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Graceful flower bed (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Graceful flower bed | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Graceful flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Sierlijk bloemenbed (Graceful Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Sierlijk bloemenbed (Graceful Flower Bed): Bergbloemen (Mountain Flowers) ×4",
     "specialties": [
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Clefairy",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Cleffa wacht."
   },
   {
@@ -3260,16 +3265,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Graceful flower bed (Tijd: Night | Weer: Sun, Cloud, Regen (Rain)) ; Bronze landmark (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Graceful flower bed / Bronze landmark | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Graceful flower bed / Bronze landmark.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bronzen monument (Bronze Landmark) / Sierlijk bloemenbed (Graceful Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bronzen monument (Bronze Landmark): Haag, willekeurig (Hedge (any)) ×4; Maanlichtdans-standbeeld (Moonlight Dance Statue) ×1; Sign (Sign) ×1 OF Sierlijk bloemenbed (Graceful Flower Bed): Bergbloemen (Mountain Flowers) ×4",
     "specialties": [
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "Cleffa",
     "evolvesInto": "Clefable",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Clefairy wacht."
   },
   {
@@ -3281,17 +3286,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Graceful flower bed (Tijd: Night | Weer: Sun, Cloud, Regen (Rain)) ; Bronze landmark (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Graceful flower bed / Bronze landmark | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Graceful flower bed / Bronze landmark.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bronzen monument (Bronze Landmark) / Sierlijk bloemenbed (Graceful Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bronzen monument (Bronze Landmark): Haag, willekeurig (Hedge (any)) ×4; Maanlichtdans-standbeeld (Moonlight Dance Statue) ×1; Sign (Sign) ×1 OF Sierlijk bloemenbed (Graceful Flower Bed): Bergbloemen (Mountain Flowers) ×4",
     "specialties": [
       "Enthousiasmeren (Hype)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Clefairy",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Clefable wacht."
   },
   {
@@ -3304,16 +3309,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Flower garden stump stage (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Flower garden stump stage | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Flower garden stump stage.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Boomstronkpodium in bloementuin (Flower Garden Stump Stage)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Boomstronkpodium in bloementuin (Flower Garden Stump Stage): Bergbloemen (Mountain Flowers) ×4; Boomstronk, willekeurig (Tree Stump (any)) ×1; Paddenstoellamp (Mushroom Lamp) ×2",
     "specialties": [
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Jigglypuff",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Flower garden stump stage. Controleer daarna tijd en weer voordat je voor Igglybuff wacht."
   },
   {
@@ -3326,16 +3331,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Flower garden stump stage (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Recital stage (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Flower garden stump stage / Recital stage | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Flower garden stump stage / Recital stage.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Recitalpodium (Recital Stage) / Boomstronkpodium in bloementuin (Flower Garden Stump Stage)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Recitalpodium (Recital Stage): Luidspreker (Speaker) ×2; Klein podium (Small Stage) ×1; Staande microfoon (Standing Mic) ×1 OF Boomstronkpodium in bloementuin (Flower Garden Stump Stage): Bergbloemen (Mountain Flowers) ×4; Boomstronk, willekeurig (Tree Stump (any)) ×1; Paddenstoellamp (Mushroom Lamp) ×2",
     "specialties": [
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "Igglybuff",
     "evolvesInto": "Wigglytuff",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Flower garden stump stage. Controleer daarna tijd en weer voordat je voor Jigglypuff wacht."
   },
   {
@@ -3348,17 +3353,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Recital stage (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Recital stage | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Recital stage.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Recitalpodium (Recital Stage)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Recitalpodium (Recital Stage): Luidspreker (Speaker) ×2; Klein podium (Small Stage) ×1; Staande microfoon (Standing Mic) ×1",
     "specialties": [
       "Enthousiasmeren (Hype)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Jigglypuff",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Recital stage. Controleer daarna tijd en weer voordat je voor Wigglytuff wacht."
   },
   {
@@ -3370,16 +3375,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded red tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Container snacking (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded red tall grass / Container snacking | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded red tall grass / Container snacking.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Snackplek bij containers (Container Snacking) / Rood hoog gras in boomschaduw (Tree-shaded Red Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Snackplek bij containers (Container Snacking): Vat (Barrel) ×1; Houten krat (Wooden Crate) ×1; Lantaarn (Lantern) ×1; Eten op bord (Plated Food) ×1 OF Rood hoog gras in boomschaduw (Tree-shaded Red Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Rood hoog gras (Red Tall Grass) ×4",
     "specialties": [
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dugtrio",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tree-shaded red tall grass. Controleer daarna tijd en weer voordat je voor Diglett wacht."
   },
   {
@@ -3391,17 +3396,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded red tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; House party (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded red tall grass / House party | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded red tall grass / House party.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Huisfeest (House Party) / Rood hoog gras in boomschaduw (Tree-shaded Red Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Huisfeest (House Party): Eetbalie (Food Counter) ×1; Papieren feestbekers (Paper Party Cups) ×1; Eten op bord (Plated Food) ×1 OF Rood hoog gras in boomschaduw (Tree-shaded Red Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Rood hoog gras (Red Tall Grass) ×4",
     "specialties": [
       "Enthousiasmeren (Hype)",
       "Verpletteren (Crush)"
     ],
     "evolvesFrom": "Diglett",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tree-shaded red tall grass. Controleer daarna tijd en weer voordat je voor Dugtrio wacht."
   },
   {
@@ -3413,17 +3418,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Boulder-shaded Hoog gras (Tall Grass) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Boulder-shaded Hoog gras (Tall Grass) | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Boulder-shaded Hoog gras (Tall Grass).",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoog gras in rotsschaduw (Boulder-shaded Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras in rotsschaduw (Boulder-shaded Tall Grass): Hoog gras (Tall Grass) ×4; Grote rots (Large Boulder) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Bouwen (Build)",
       "Verzamelen (Gather)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Machoke",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Boulder-shaded Tall Grass. Controleer daarna tijd en weer voordat je voor Machop wacht."
   },
   {
@@ -3435,17 +3440,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Grassy training field (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Box to the rhythm (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Grassy training field / Box to the rhythm | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Grassy training field / Box to the rhythm.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Trainingsveld met gras (Grassy Training Field) / Boksen op het ritme (Box to the Rhythm)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Trainingsveld met gras (Grassy Training Field): Zandzakken (Sandbags) ×2; Rood hoog gras (Red Tall Grass) ×4 OF Boksen op het ritme (Box to the Rhythm): Bokszak (Punching Bag) ×1; Tafel, willekeurig (Table (any)) ×1; Cd-speler (CD Player) ×1",
     "specialties": [
       "Bouwen (Build)",
       "Verzamelen (Gather)"
     ],
     "evolvesFrom": "Machop",
     "evolvesInto": "Machamp",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Grassy training field. Controleer daarna tijd en weer voordat je voor Machoke wacht."
   },
   {
@@ -3457,17 +3462,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Grassy training field (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Clink-clang iron construction (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Grassy training field / Clink-clang iron construction | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Grassy training field / Clink-clang iron construction.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Rinkelende ijzerconstructie (Clink-clang Iron Construction) / Trainingsveld met gras (Grassy Training Field)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Rinkelende ijzerconstructie (Clink-clang Iron Construction): IJzeren balk of kolom (Iron beam or column) ×3; Kruiwagen (Wheelbarrow) ×1; Zandzakken (Sandbags) ×1; Graafgereedschap (Excavation Tools) ×1 OF Trainingsveld met gras (Grassy Training Field): Zandzakken (Sandbags) ×2; Rood hoog gras (Red Tall Grass) ×4",
     "specialties": [
       "Bouwen (Build)",
       "Verzamelen (Gather)"
     ],
     "evolvesFrom": "Machoke",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Grassy training field. Controleer daarna tijd en weer voordat je voor Machamp wacht."
   },
   {
@@ -3480,16 +3485,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Hoog gras (Tall Grass) (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hoog gras (Tall Grass) | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hoog gras (Tall Grass).",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoog gras (Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras (Tall Grass): Hoog gras (Tall Grass) ×4; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Verpletteren (Crush)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Graveler",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Geodude wacht."
   },
   {
@@ -3502,16 +3507,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Mossy boulder (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Mossy boulder | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Mossy boulder.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bemoste rots (Mossy Boulder)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bemoste rots (Mossy Boulder): Mos (Moss) ×4; Bemoste rots (Mossy Boulder) ×1",
     "specialties": [
       "Verpletteren (Crush)"
     ],
     "evolvesFrom": "Geodude",
     "evolvesInto": "Golem",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mossy boulder. Controleer daarna tijd en weer voordat je voor Graveler wacht."
   },
   {
@@ -3524,17 +3529,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Mossy boulder (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Mossy boulder | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Mossy boulder.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bemoste rots (Mossy Boulder)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bemoste rots (Mossy Boulder): Mos (Moss) ×4; Bemoste rots (Mossy Boulder) ×1",
     "specialties": [
       "Verpletteren (Crush)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Graveler",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mossy boulder. Controleer daarna tijd en weer voordat je voor Golem wacht."
   },
   {
@@ -3546,16 +3551,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Pretty flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Pretty flower bed | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Pretty flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Mooi bloemenbed (Pretty Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Mooi bloemenbed (Pretty Flower Bed): Wilde bloemen (Wildflowers) ×4; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Magmar",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Pretty flower bed. Controleer daarna tijd en weer voordat je voor Magby wacht."
   },
   {
@@ -3567,16 +3572,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Digging and burning (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Digging and burning | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Digging and burning.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Graven en stoken (Digging and Burning)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Graven en stoken (Digging and Burning): Kruiwagen (Wheelbarrow) ×1; Smeltoven (Smelting Furnace) ×1; Graafgereedschap (Excavation Tools) ×1",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "Magby",
     "evolvesInto": "Magmortar",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Digging and burning. Controleer daarna tijd en weer voordat je voor Magmar wacht."
   },
   {
@@ -3588,17 +3593,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Mini kitchen (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Mini kitchen | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Mini kitchen.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Minikeuken (Mini Kitchen)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Minikeuken (Mini Kitchen): Keukentafel (Kitchen Table) ×1; Kookfornuis (Cooking Stove) ×1; Koekenpan (Frying Pan) ×1; Moderne gootsteen (Modern Sink) ×1",
     "specialties": [
       "Branden (Burn)",
       "Verpletteren (Crush)"
     ],
     "evolvesFrom": "Magmar",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mini kitchen. Controleer daarna tijd en weer voordat je voor Magmortar wacht."
   },
   {
@@ -3610,16 +3615,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded red tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded red tall grass | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded red tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Rood hoog gras in boomschaduw (Tree-shaded Red Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Rood hoog gras in boomschaduw (Tree-shaded Red Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Rood hoog gras (Red Tall Grass) ×4",
     "specialties": [
       "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Sudowoodo",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tree-shaded red tall grass. Controleer daarna tijd en weer voordat je voor Bonsly wacht."
   },
   {
@@ -3631,16 +3636,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded red tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; House party (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded red tall grass / House party | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded red tall grass / House party.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Huisfeest (House Party) / Rood hoog gras in boomschaduw (Tree-shaded Red Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Huisfeest (House Party): Eetbalie (Food Counter) ×1; Papieren feestbekers (Paper Party Cups) ×1; Eten op bord (Plated Food) ×1 OF Rood hoog gras in boomschaduw (Tree-shaded Red Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Rood hoog gras (Red Tall Grass) ×4",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Bonsly",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tree-shaded red tall grass. Controleer daarna tijd en weer voordat je voor Sudowoodo wacht."
   },
   {
@@ -3653,17 +3658,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Elevated red tall grass (Tijd: Night | Weer: Sun, Cloud, Regen (Rain)) ; Tree-shaded graceful flower bed (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated red tall grass / Tree-shaded graceful flower bed | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated red tall grass / Tree-shaded graceful flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Sierlijk bloemenbed in boomschaduw (Tree-shaded Graceful Flower Bed) / Verhoogd rood hoog gras (Elevated Red Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Sierlijk bloemenbed in boomschaduw (Tree-shaded Graceful Flower Bed): Bergbloemen (Mountain Flowers) ×4; Puntboom (Pointy Tree) ×1 OF Verhoogd rood hoog gras (Elevated Red Tall Grass): Rood hoog gras (Red Tall Grass) ×4; Hoge locatie (High-up Location) ×1",
     "specialties": [
       "Ruilen (Trade)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Honchkrow",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Elevated red tall grass. Controleer daarna tijd en weer voordat je voor Murkrow wacht."
   },
   {
@@ -3676,17 +3681,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Chirping recital (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Chirping recital | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Chirping recital.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verhoogd rood hoog gras (Elevated Red Tall Grass) / Vogelrecital (Chirping Recital)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verhoogd rood hoog gras (Elevated Red Tall Grass): Rood hoog gras (Red Tall Grass) ×4; Hoge locatie (High-up Location) ×1 OF Vogelrecital (Chirping Recital): Zitstok (Perch) ×1; Staande microfoon (Standing Mic) ×1",
     "specialties": [
       "Ruilen (Trade)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "Murkrow",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Chirping recital. Controleer daarna tijd en weer voordat je voor Honchkrow wacht."
   },
   {
@@ -3699,17 +3704,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Mossy rest spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Mossy rest spot | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Mossy rest spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bemoste rustplek (Mossy Rest Spot)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bemoste rustplek (Mossy Rest Spot): Mos (Moss) ×4",
     "specialties": [
       "Verpletteren (Crush)",
       "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pupitar",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mossy rest spot. Controleer daarna tijd en weer voordat je voor Larvitar wacht."
   },
   {
@@ -3722,17 +3727,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Tree-shaded pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded pink tall grass | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded pink tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Roze hoog gras in boomschaduw (Tree-shaded Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Roze hoog gras in boomschaduw (Tree-shaded Pink Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Roze hoog gras (Pink Tall Grass) ×4",
     "specialties": [
       "Verpletteren (Crush)",
       "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "Larvitar",
     "evolvesInto": "Tyranitar",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded pink tall grass. Controleer daarna tijd en weer voordat je voor Pupitar wacht."
   },
   {
@@ -3745,17 +3750,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Toil in the soil (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Mossy rest spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Toil in the soil / Mossy rest spot | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Toil in the soil / Mossy rest spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Werken in de aarde (Toil in the Soil) / Bemoste rustplek (Mossy Rest Spot)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Werken in de aarde (Toil in the Soil): Groenteveld, willekeurig (Vegetable Field (any)) ×4; Kruiwagen (Wheelbarrow) ×1 OF Bemoste rustplek (Mossy Rest Spot): Mos (Moss) ×4",
     "specialties": [
       "Verpletteren (Crush)",
       "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "Pupitar",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Toil in the soil. Controleer daarna tijd en weer voordat je voor Tyranitar wacht."
   },
   {
@@ -3768,16 +3773,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated red tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Uplifting duckweed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Hot-spring Fishing Spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated red tall grass / Uplifting duckweed / Hot-spring Fishing Spot | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated red tall grass / Uplifting duckweed / Hot-spring Fishing Spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Visplek bij warmwaterbron (Hot-spring Fishing Spot) / Opbeurend kroos (Uplifting Duckweed) / Bevochtigd rood hoog gras (Hydrated Red Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Visplek bij warmwaterbron (Hot-spring Fishing Spot): Hengel (Fishing Rod) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Warmwaterbronwater (Hot-spring Water) ×1 OF Opbeurend kroos (Uplifting Duckweed): Kroos (Duckweed) ×4; Water (Water) ×2 OF Bevochtigd rood hoog gras (Hydrated Red Tall Grass): Rood hoog gras (Red Tall Grass) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lombre",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Hydrated red tall grass. Controleer daarna tijd en weer voordat je voor Lotad wacht."
   },
   {
@@ -3790,16 +3795,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated red tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Hot-spring Fishing Spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated red tall grass / Hot-spring Fishing Spot | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated red tall grass / Hot-spring Fishing Spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Visplek bij warmwaterbron (Hot-spring Fishing Spot) / Bevochtigd rood hoog gras (Hydrated Red Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Visplek bij warmwaterbron (Hot-spring Fishing Spot): Hengel (Fishing Rod) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Warmwaterbronwater (Hot-spring Water) ×1 OF Bevochtigd rood hoog gras (Hydrated Red Tall Grass): Rood hoog gras (Red Tall Grass) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "Lotad",
     "evolvesInto": "Ludicolo",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Hydrated red tall grass. Controleer daarna tijd en weer voordat je voor Lombre wacht."
   },
   {
@@ -3812,17 +3817,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Uplifting duckweed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Uplifting duckweed | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Uplifting duckweed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Opbeurend kroos (Uplifting Duckweed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Opbeurend kroos (Uplifting Duckweed): Kroos (Duckweed) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)",
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "Lombre",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Uplifting duckweed. Controleer daarna tijd en weer voordat je voor Ludicolo wacht."
   },
   {
@@ -3835,17 +3840,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Working the register (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Working the register | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Working the register.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Werken achter de kassa (Working the Register)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Werken achter de kassa (Working the Register): Tafel, willekeurig (Table (any)) ×2; Kassa (Cash Register) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Ruilen (Trade)",
       "Bouwen (Build)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Working the register. Controleer daarna tijd en weer voordat je voor Mawile wacht."
   },
   {
@@ -3857,16 +3862,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Mossy hot spring (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Mossy hot spring | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Mossy hot spring.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bemoste warmwaterbron (Mossy Hot Spring)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bemoste warmwaterbron (Mossy Hot Spring): Mos (Moss) ×4; Warmwaterbronwater (Hot-spring Water) ×2",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mossy hot spring. Controleer daarna tijd en weer voordat je voor Torkoal wacht."
   },
   {
@@ -3878,16 +3883,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Red tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Music and magazines (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Red tall grass / Music and magazines | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Red tall grass / Music and magazines.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Muziek en tijdschriften (Music and Magazines) / Rood hoog gras (Red Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Muziek en tijdschriften (Music and Magazines): Cd-speler (CD Player) ×1; Cd-rek (CD Rack) ×1; Tijdschriftenrek (Magazine Rack) ×1 OF Rood hoog gras (Red Tall Grass): Rood hoog gras (Red Tall Grass) ×4",
     "specialties": [
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kricketune",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Red tall grass. Controleer daarna tijd en weer voordat je voor Kricketot wacht."
   },
   {
@@ -3899,16 +3904,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Music and magazines (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Music and magazines | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Music and magazines.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Muziek en tijdschriften (Music and Magazines) / Rood hoog gras (Red Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Muziek en tijdschriften (Music and Magazines): Cd-speler (CD Player) ×1; Cd-rek (CD Rack) ×1; Tijdschriftenrek (Magazine Rack) ×1 OF Rood hoog gras (Red Tall Grass): Rood hoog gras (Red Tall Grass) ×4",
     "specialties": [
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "Kricketot",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Music and magazines. Controleer daarna tijd en weer voordat je voor Kricketune wacht."
   },
   {
@@ -3921,17 +3926,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Elevated red tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain)) ; Elevated red tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain)) ; Chirping recital (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated red tall grass / Chirping recital | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated red tall grass / Chirping recital.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Niet gespecificeerd (Not specified) | Weer (Weather): Niet gespecificeerd (Not specified)",
+    "habitat": "Verhoogd rood hoog gras (Elevated Red Tall Grass) / Vogelrecital (Chirping Recital)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verhoogd rood hoog gras (Elevated Red Tall Grass): Rood hoog gras (Red Tall Grass) ×4; Hoge locatie (High-up Location) ×1 OF Vogelrecital (Chirping Recital): Zitstok (Perch) ×1; Staande microfoon (Standing Mic) ×1",
     "specialties": [
       "Enthousiasmeren (Hype)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Elevated red tall grass. Controleer daarna tijd en weer voordat je voor Chatot wacht."
   },
   {
@@ -3943,16 +3948,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Red tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Box to the rhythm (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Red tall grass / Box to the rhythm | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Red tall grass / Box to the rhythm.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Boksen op het ritme (Box to the Rhythm) / Rood hoog gras (Red Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Boksen op het ritme (Box to the Rhythm): Bokszak (Punching Bag) ×1; Tafel, willekeurig (Table (any)) ×1; Cd-speler (CD Player) ×1 OF Rood hoog gras (Red Tall Grass): Rood hoog gras (Red Tall Grass) ×4",
     "specialties": [
       "Bouwen (Build)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lucario",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Red tall grass. Controleer daarna tijd en weer voordat je voor Riolu wacht."
   },
   {
@@ -3965,16 +3970,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Box to the rhythm (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Box to the rhythm | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Box to the rhythm.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Boksen op het ritme (Box to the Rhythm)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Boksen op het ritme (Box to the Rhythm): Bokszak (Punching Bag) ×1; Tafel, willekeurig (Table (any)) ×1; Cd-speler (CD Player) ×1",
     "specialties": [
       "Bouwen (Build)"
     ],
     "evolvesFrom": "Riolu",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Box to the rhythm. Controleer daarna tijd en weer voordat je voor Lucario wacht."
   },
   {
@@ -3987,16 +3992,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Music and magazines (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Music and magazines | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Music and magazines.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Muziek en tijdschriften (Music and Magazines)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Muziek en tijdschriften (Music and Magazines): Cd-speler (CD Player) ×1; Cd-rek (CD Rack) ×1; Tijdschriftenrek (Magazine Rack) ×1",
     "specialties": [
-      "DJ"
+      "Muziek draaien (DJ)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Music and magazines. Controleer daarna tijd en weer voordat je voor Stereo Rotom wacht."
   },
   {
@@ -4009,16 +4014,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded graceful flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded graceful flower bed | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded graceful flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Sierlijk bloemenbed in boomschaduw (Tree-shaded Graceful Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Sierlijk bloemenbed in boomschaduw (Tree-shaded Graceful Flower Bed): Bergbloemen (Mountain Flowers) ×4; Puntboom (Pointy Tree) ×1",
     "specialties": [
-      "Branden (Burn)"
+      "Branden (Burn)",
+      "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Volcarona",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tree-shaded graceful flower bed. Controleer daarna tijd en weer voordat je voor Larvesta wacht."
   },
   {
@@ -4031,17 +4037,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tree-shaded graceful flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Piping-hot lava (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded graceful flower bed / Piping-hot lava | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded graceful flower bed / Piping-hot lava.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Gloeiend hete lava (Piping-hot Lava) / Sierlijk bloemenbed in boomschaduw (Tree-shaded Graceful Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Gloeiend hete lava (Piping-hot Lava): Gesmolten rots (Molten Rock) ×1; Lava (Lava) ×2 OF Sierlijk bloemenbed in boomschaduw (Tree-shaded Graceful Flower Bed): Bergbloemen (Mountain Flowers) ×4; Puntboom (Pointy Tree) ×1",
     "specialties": [
       "Branden (Burn)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Larvesta",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tree-shaded graceful flower bed. Controleer daarna tijd en weer voordat je voor Volcarona wacht."
   },
   {
@@ -4054,16 +4060,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Fresh Veggie Field (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Fresh Veggie Field | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Fresh Veggie Field.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Vers groenteveld (Fresh Veggie Field)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Vers groenteveld (Fresh Veggie Field): Groenteveld, willekeurig (Vegetable Field (any)) ×8; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Groeien (Grow)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dartrix",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Fresh Veggie Field. Controleer daarna tijd en weer voordat je voor Rowlet wacht."
   },
   {
@@ -4076,17 +4082,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Pointy tree-shaded rocky tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Pointy tree-shaded rocky tall grass | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Pointy tree-shaded rocky tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Rotsachtig hoog gras in de schaduw van een puntboom (Pointy Tree-shaded Rocky Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Rotsachtig hoog gras in de schaduw van een puntboom (Pointy Tree-shaded Rocky Tall Grass): Puntboom (Pointy Tree) ×1; Rood hoog gras (Red Tall Grass) ×4; Grote rots (Large Boulder) ×1",
     "specialties": [
       "Groeien (Grow)",
       "Hakken (Chop)"
     ],
     "evolvesFrom": "Rowlet",
     "evolvesInto": "Decidueye",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Pointy tree-shaded rocky tall grass. Controleer daarna tijd en weer voordat je voor Dartrix wacht."
   },
   {
@@ -4099,17 +4105,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Pointy tree-shaded rocky tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Modern living (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Pointy tree-shaded rocky tall grass / Modern living | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Pointy tree-shaded rocky tall grass / Modern living.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Modern wonen (Modern Living) / Rotsachtig hoog gras in de schaduw van een puntboom (Pointy Tree-shaded Rocky Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Modern wonen (Modern Living): Industrieel bed (Industrial Bed) ×1; Industrieel bureau (Industrial Desk) ×1; Industriële stoel (Industrial Chair) ×1 OF Rotsachtig hoog gras in de schaduw van een puntboom (Pointy Tree-shaded Rocky Tall Grass): Puntboom (Pointy Tree) ×1; Rood hoog gras (Red Tall Grass) ×4; Grote rots (Large Boulder) ×1",
     "specialties": [
       "Groeien (Grow)",
       "Hakken (Chop)"
     ],
     "evolvesFrom": "Dartrix",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Pointy tree-shaded rocky tall grass. Controleer daarna tijd en weer voordat je voor Decidueye wacht."
   },
   {
@@ -4121,16 +4127,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Red tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Red tall grass | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Red tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Rood hoog gras (Red Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Rood hoog gras (Red Tall Grass): Rood hoog gras (Red Tall Grass) ×4",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Raboot",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Red tall grass. Controleer daarna tijd en weer voordat je voor Scorbunny wacht."
   },
   {
@@ -4142,16 +4148,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Open-air bath (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Refreshing locker room (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Open-air bath / Refreshing locker room | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Open-air bath / Refreshing locker room.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verfrissende kleedkamer (Refreshing Locker Room) / Openluchtbad (Open-air Bath)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verfrissende kleedkamer (Refreshing Locker Room): Kantoorkluis (Office Locker) ×2; Potplant, willekeurig (Potted Plant (any)) ×1; Brede zitplaats (Seat (wide)) ×1; Boksspel (Punching Game) ×1 OF Openluchtbad (Open-air Bath): Warmwaterbronuitloop (Hot-spring Spout) ×1; Warmwaterbronwater (Hot-spring Water) ×2",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "Scorbunny",
     "evolvesInto": "Cinderace",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Open-air bath. Controleer daarna tijd en weer voordat je voor Raboot wacht."
   },
   {
@@ -4163,17 +4169,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Red tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Refreshing locker room (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Red tall grass / Refreshing locker room | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Red tall grass / Refreshing locker room.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verfrissende kleedkamer (Refreshing Locker Room) / Rood hoog gras (Red Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verfrissende kleedkamer (Refreshing Locker Room): Kantoorkluis (Office Locker) ×2; Potplant, willekeurig (Potted Plant (any)) ×1; Brede zitplaats (Seat (wide)) ×1; Boksspel (Punching Game) ×1 OF Rood hoog gras (Red Tall Grass): Rood hoog gras (Red Tall Grass) ×4",
     "specialties": [
       "Branden (Burn)",
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "Raboot",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Red tall grass. Controleer daarna tijd en weer voordat je voor Cinderace wacht."
   },
   {
@@ -4185,17 +4191,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Tree-shaded  tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded  tall grass | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded  tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hoog gras in boomschaduw (Tree-shaded Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hoog gras in boomschaduw (Tree-shaded Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Hoog gras (Tall Grass) ×4; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Zoeken (Search)",
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Greedent",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Skwovet wacht."
   },
   {
@@ -4207,16 +4213,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Chef's kitchen (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Chef's kitchen | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Chef's kitchen.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Keuken van de chef (Chef's Kitchen)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Keuken van de chef (Chef's Kitchen): Kookfornuis (Cooking Stove) ×1; Moderne gootsteen (Modern Sink) ×1; Eenvoudige tafel (Plain Table) ×1; Stijlvolle kookpot (Stylish Cooking Pot) ×1; Snijplank (Cutting Board) ×1; Eten op bord (Plated Food) ×1",
     "specialties": [
-      "Party"
+      "Feest organiseren (Party)"
     ],
     "evolvesFrom": "Skwovet",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Chef's kitchen. Controleer daarna tijd en weer voordat je voor Greedent wacht."
   },
   {
@@ -4228,17 +4234,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Railroad crossing (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Railroad crossing | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Railroad crossing.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Spoorwegovergang (Railroad Crossing)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Spoorwegovergang (Railroad Crossing): Spoor (Railway Track) ×1; Overwegboom (Crossing Gate) ×1",
     "specialties": [
       "Branden (Burn)",
       "Verzamelen (Gather)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Carkol",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Railroad crossing. Controleer daarna tijd en weer voordat je voor Rolycoly wacht."
   },
   {
@@ -4251,17 +4257,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Railroad crossing (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Railroad crossing | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Railroad crossing.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Spoorwegovergang (Railroad Crossing)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Spoorwegovergang (Railroad Crossing): Spoor (Railway Track) ×1; Overwegboom (Crossing Gate) ×1",
     "specialties": [
       "Branden (Burn)",
       "Verzamelen (Gather)"
     ],
     "evolvesFrom": "Rolycoly",
     "evolvesInto": "Coalossal",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Railroad crossing. Controleer daarna tijd en weer voordat je voor Carkol wacht."
   },
   {
@@ -4274,17 +4280,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Railroad crossing (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Heavy iron (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Railroad crossing / Heavy iron | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Railroad crossing / Heavy iron.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Spoorwegovergang (Railroad Crossing) / Zwaar ijzer (Heavy Iron)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Spoorwegovergang (Railroad Crossing): Spoor (Railway Track) ×1; Overwegboom (Crossing Gate) ×1 OF Zwaar ijzer (Heavy Iron): IJzeren bed (Iron Bed) ×1; IJzeren tafel (Iron Table) ×1; IJzeren stoel (Iron Chair) ×1; Lantaarn (Lantern) ×1",
     "specialties": [
       "Branden (Burn)",
       "Verzamelen (Gather)"
     ],
     "evolvesFrom": "Carkol",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Railroad crossing. Controleer daarna tijd en weer voordat je voor Coalossal wacht."
   },
   {
@@ -4297,16 +4303,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Lazy-photo album scrolling (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Lazy-photo album scrolling | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Lazy-photo album scrolling.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Lui door fotoalbums bladeren (Lazy Photo-album Scrolling)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Lui door fotoalbums bladeren (Lazy Photo-album Scrolling): Tablet (Tablet) ×1; Papieren feestbekers (Paper Party Cups) ×1",
     "specialties": [
       "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Toxtricity",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Lazy-photo album scrolling. Controleer daarna tijd en weer voordat je voor Toxel wacht."
   },
   {
@@ -4319,17 +4325,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Amped rock stage (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Amped rock stage | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Amped rock stage.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Amped / Low Key-rockpodium (Amped / Low Key Rock Stage)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Amped / Low Key-rockpodium (Amped / Low Key Rock Stage): Luidspreker (Speaker) ×2; Klein podium (Small Stage) ×1; Staande microfoon (Standing Mic) ×1; Cool Electric Guitar OR Cool Bass Guitar (Cool Electric Guitar OR Cool Bass Guitar) ×1",
     "specialties": [
       "Energie opwekken (Generate)",
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "Toxel",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Amped rock stage. Controleer daarna tijd en weer voordat je voor Toxtricity wacht."
   },
   {
@@ -4341,16 +4347,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Graceful flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain)) ; Best bread bakery (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Graceful flower bed / Best bread bakery | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Graceful flower bed / Best bread bakery.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Ochtend (Morning), overdag (Daytime), avond (Evening) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Beste broodbakkerij (Best Bread Bakery) / Sierlijk bloemenbed (Graceful Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Beste broodbakkerij (Best Bread Bakery): Broodoven (Bread Oven) ×1; Balie (Counter) ×2; Eten op bord (Plated Food) ×1 OF Sierlijk bloemenbed (Graceful Flower Bed): Bergbloemen (Mountain Flowers) ×4",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dachsbun",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Fidough wacht."
   },
   {
@@ -4362,17 +4368,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Graceful flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain)) ; Best bread bakery (Tijd: Ochtend (Morning), Day, Avond (Evening) | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Graceful flower bed / Best bread bakery | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Graceful flower bed / Best bread bakery.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Ochtend (Morning), overdag (Daytime), avond (Evening) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Rotsachtig hoog gras in de schaduw van een puntboom (Pointy Tree-shaded Rocky Tall Grass) / Sierlijk bloemenbed (Graceful Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Rotsachtig hoog gras in de schaduw van een puntboom (Pointy Tree-shaded Rocky Tall Grass): Puntboom (Pointy Tree) ×1; Rood hoog gras (Red Tall Grass) ×4; Grote rots (Large Boulder) ×1 OF Sierlijk bloemenbed (Graceful Flower Bed): Bergbloemen (Mountain Flowers) ×4",
     "specialties": [
       "Zoeken (Search)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Fidough",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Dachsbun wacht."
   },
   {
@@ -4384,16 +4390,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Piping-hot lava (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Piping-hot lava | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Piping-hot lava.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Beste broodbakkerij (Best Bread Bakery)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Beste broodbakkerij (Best Bread Bakery): Broodoven (Bread Oven) ×1; Balie (Counter) ×2; Eten op bord (Plated Food) ×1",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Armarouge / Ceruledge",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Piping-hot lava. Controleer daarna tijd en weer voordat je voor Charcadet wacht."
   },
   {
@@ -4406,16 +4412,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Auspicious knight's shrine (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Auspicious knight's shrine | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Auspicious knight's shrine.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Heiligdom van de gunstige ridder (Auspicious Knight's Shrine)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Heiligdom van de gunstige ridder (Auspicious Knight's Shrine): Sokkel / tentoonstellingsstandaard (Pedestal / Exhibition Stand) ×1; Gunstig pantser (Auspicious Armor) ×1; Stapstenen (Stepping Stones) ×2; Vuurplaats (Firepit) ×2",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "Charcadet",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Auspicious knight's shrine. Controleer daarna tijd en weer voordat je voor Armarouge wacht."
   },
   {
@@ -4428,16 +4434,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Malicious knight's shrine (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Malicious knight's shrine | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Malicious knight's shrine.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Heiligdom van de kwaadaardige ridder (Malicious Knight's Shrine)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Heiligdom van de kwaadaardige ridder (Malicious Knight's Shrine): Sokkel / tentoonstellingsstandaard (Pedestal / Exhibition Stand) ×1; Kwaadaardig pantser (Malicious Armor) ×1; Stapstenen (Stepping Stones) ×2; Vuurplaats (Firepit) ×2",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "Charcadet",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Malicious knight's shrine. Controleer daarna tijd en weer voordat je voor Ceruledge wacht."
   },
   {
@@ -4450,16 +4456,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Creepy white rocks (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Container snacking (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Creepy white rocks / Container snacking | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Creepy white rocks / Container snacking.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Griezelige witte rotsen (Creepy White Rocks) / Snackplek bij containers (Container Snacking)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Griezelige witte rotsen (Creepy White Rocks): Stalagmieten (Stalagmites) ×1; Mos (Moss) ×4; Houten krat (Wooden Crate) ×1; Lantaarn (Lantern) ×1 OF Snackplek bij containers (Container Snacking): Vat (Barrel) ×1; Houten krat (Wooden Crate) ×1; Lantaarn (Lantern) ×1; Eten op bord (Plated Food) ×1",
     "specialties": [
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Glimmora",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Creepy white rocks. Controleer daarna tijd en weer voordat je voor Glimmet wacht."
   },
   {
@@ -4472,16 +4478,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Creepy white rocks (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Container snacking (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Creepy white rocks / Container snacking | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Creepy white rocks / Container snacking.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Snackplek bij containers (Container Snacking) / Griezelige witte rotsen (Creepy White Rocks)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Snackplek bij containers (Container Snacking): Vat (Barrel) ×1; Houten krat (Wooden Crate) ×1; Lantaarn (Lantern) ×1; Eten op bord (Plated Food) ×1 OF Griezelige witte rotsen (Creepy White Rocks): Stalagmieten (Stalagmites) ×1; Mos (Moss) ×4; Houten krat (Wooden Crate) ×1; Lantaarn (Lantern) ×1",
     "specialties": [
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Glimmet",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Creepy white rocks. Controleer daarna tijd en weer voordat je voor Glimmora wacht."
   },
   {
@@ -4493,16 +4499,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Mini museum (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Mini museum | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Mini museum.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Minimuseum (Mini Museum)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Minimuseum (Mini Museum): Paal, willekeurig (Post (any)) ×3; Sokkel / tentoonstellingsstandaard (Pedestal / Exhibition Stand) ×1; Groot verloren relikwie (Lost Relic (large)) ×1",
     "specialties": [
-      "Collect"
+      "Verzamelen (Collect)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gholdengo",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mini museum. Controleer daarna tijd en weer voordat je voor Gimmighoul wacht."
   },
   {
@@ -4515,16 +4521,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Absolute luxury (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Absolute luxury | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Absolute luxury.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Absolute luxe (Absolute Luxury)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Absolute luxe (Absolute Luxury): Luxe bed (Luxury Bed) ×1; Luxe bank (Luxury Sofa) ×1; Luxe lamp (Luxury Lamp) ×1; Luxe tafel (Luxury Table) ×1",
     "specialties": [
-      "Collect"
+      "Verzamelen (Collect)"
     ],
     "evolvesFrom": "Gimmighoul",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Absolute luxury. Controleer daarna tijd en weer voordat je voor Gholdengo wacht."
   },
   {
@@ -4536,16 +4542,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Fluffy flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Fluffy flower bed | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Fluffy flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Zacht bloemenbed (Fluffy Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Zacht bloemenbed (Fluffy Flower Bed): Skyland-bloemen (Skyland Flowers) ×4",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Ninetales",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Vulpix wacht."
   },
   {
@@ -4557,16 +4563,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Fluffy flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Nine flames (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Fluffy flower bed / Nine flames | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Fluffy flower bed / Nine flames.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Negen vlammen (Nine Flames) / Zacht bloemenbed (Fluffy Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Negen vlammen (Nine Flames): Vuurplaats (Firepit) ×9 OF Zacht bloemenbed (Fluffy Flower Bed): Skyland-bloemen (Skyland Flowers) ×4",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "Vulpix",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Ninetales wacht."
   },
   {
@@ -4578,16 +4584,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Squeaky clean (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Squeaky clean | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Squeaky clean.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Brandschoon (Squeaky Clean)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Brandschoon (Squeaky Clean): Badkuip (Bathtub) ×1; Schoonmaakspullen (Cleaning Supplies) ×1",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Poliwhirl",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Squeaky clean. Controleer daarna tijd en weer voordat je voor Poliwag wacht."
   },
   {
@@ -4599,16 +4605,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Hydrated fluffy flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated fluffy flower bed | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated fluffy flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bevochtigd zacht bloemenbed (Hydrated Fluffy Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bevochtigd zacht bloemenbed (Hydrated Fluffy Flower Bed): Skyland-bloemen (Skyland Flowers) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "Poliwag",
     "evolvesInto": "Poliwrath / Politoed",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Hydrated fluffy flower bed. Controleer daarna tijd en weer voordat je voor Poliwhirl wacht."
   },
   {
@@ -4621,17 +4627,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Sewer hole inspection (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Dojo training (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Sewer hole inspection / Dojo training | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Sewer hole inspection / Dojo training.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Dojotraining (Dojo Training) / Rioolputinspectie (Sewer-hole Inspection)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Dojotraining (Dojo Training): Hangrol (Hanging Scroll) ×2; Krachtrots (Strength Rock) ×2 OF Rioolputinspectie (Sewer-hole Inspection): IJzeren buizen (Iron Pipes) ×1; Riooldeksel (Sewer-hole Cover) ×1; Graafgereedschap (Excavation Tools) ×1; Verkeerskegel (Traffic Cone) ×1",
     "specialties": [
       "Water geven (Water)",
       "Bouwen (Build)"
     ],
     "evolvesFrom": "Poliwhirl",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Sewer hole inspection. Controleer daarna tijd en weer voordat je voor Poliwrath wacht."
   },
   {
@@ -4643,17 +4649,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Hydrated graceful flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Flower garden stump stage (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Harmonious hot spring (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated graceful flower bed / Flower garden stump stage / Harmonious hot spring | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated graceful flower bed / Flower garden stump stage / Harmonious hot spring.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Harmonieuze warmwaterbron (Harmonious Hot Spring) / Boomstronkpodium in bloementuin (Flower Garden Stump Stage) / Bevochtigd sierlijk bloemenbed (Hydrated Graceful Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Harmonieuze warmwaterbron (Harmonious Hot Spring): Warmwaterbronplek (Hot-spring Spot) ×1; Waterbekken (Water basin) ×12; Warmwaterbronwater (Hot-spring Water) ×2 OF Boomstronkpodium in bloementuin (Flower Garden Stump Stage): Bergbloemen (Mountain Flowers) ×4; Boomstronk, willekeurig (Tree Stump (any)) ×1; Paddenstoellamp (Mushroom Lamp) ×2 OF Bevochtigd sierlijk bloemenbed (Hydrated Graceful Flower Bed): Bergbloemen (Mountain Flowers) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)",
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "Poliwhirl",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Hydrated graceful flower bed. Controleer daarna tijd en weer voordat je voor Politoed wacht."
   },
   {
@@ -4665,16 +4671,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Surging psychic power (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Fortune-teller's table (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Surging psychic power / Fortune-teller's table | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Surging psychic power / Fortune-teller's table.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Tafel van de waarzegger (Fortune-teller's Table) / Opwellende psychische kracht (Surging Psychic Power)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Tafel van de waarzegger (Fortune-teller's Table): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Kristallen bol (Crystal Ball) ×1 OF Opwellende psychische kracht (Surging Psychic Power): Eenvoudig kussen (Simple Cushion) ×1; Kristallen bol (Crystal Ball) ×1",
     "specialties": [
       "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kadabra",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Surging psychic power. Controleer daarna tijd en weer voordat je voor Abra wacht."
   },
   {
@@ -4686,16 +4692,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Fortune-teller's table (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Fortune-teller's table | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Fortune-teller's table.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Tafel van de waarzegger (Fortune-teller's Table)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Tafel van de waarzegger (Fortune-teller's Table): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Kristallen bol (Crystal Ball) ×1",
     "specialties": [
       "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "Abra",
     "evolvesInto": "Alakazam",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fortune-teller's table. Controleer daarna tijd en weer voordat je voor Kadabra wacht."
   },
   {
@@ -4707,17 +4713,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Surging psychic power (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Experiment Space (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Surging psychic power / Experiment Space | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Surging psychic power / Experiment Space.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Experimenteerruimte (Experiment Space) / Opwellende psychische kracht (Surging Psychic Power)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Experimenteerruimte (Experiment Space): Wetenschappelijk experiment (Science Experiment) ×1; Microscoop (Microscope) ×1; Papieren (Papers) ×1 OF Opwellende psychische kracht (Surging Psychic Power): Eenvoudig kussen (Simple Cushion) ×1; Kristallen bol (Crystal Ball) ×1",
     "specialties": [
       "Teleporteren (Teleport)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Kadabra",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Surging psychic power. Controleer daarna tijd en weer voordat je voor Alakazam wacht."
   },
   {
@@ -4730,16 +4736,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Nog niet bevestigd",
-    "area": "Nog niet bevestigd",
-    "habitat": "Nog niet bevestigd",
-    "obtainMethod": "Nog niet bevestigd",
-    "requirements": "Nog niet bevestigd",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Brandschone wasplek (Spotless Washing Station) / Openbaar leesmateriaal (Public Reading Material)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Brandschone wasplek (Spotless Washing Station): Handdoekenrek (Towel Rack) ×1; Wandspiegel (Wall Mirror) ×1; Wastafel (Sink) ×1 OF Openbaar leesmateriaal (Public Reading Material): Tijdschriftenrek (Magazine Rack) ×1; Krant (Newspaper) ×1",
     "specialties": [
-      "Verzamelen (Gather)"
+      "Verzamelen (Gather)",
+      "Bouwen (Build)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Mr. Mime",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "controleer eerst de habitat- en locatievoorwaarden voor Mime Jr. voordat je materialen uitgeeft."
   },
   {
@@ -4752,17 +4759,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Nog niet bevestigd",
-    "area": "Nog niet bevestigd",
-    "habitat": "Nog niet bevestigd",
-    "obtainMethod": "Nog niet bevestigd",
-    "requirements": "Nog niet bevestigd",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Brandschone wasplek (Spotless Washing Station)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Brandschone wasplek (Spotless Washing Station): Handdoekenrek (Towel Rack) ×1; Wandspiegel (Wall Mirror) ×1; Wastafel (Sink) ×1",
     "specialties": [
       "Verzamelen (Gather)",
       "Bouwen (Build)"
     ],
     "evolvesFrom": "Mime Jr.",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "controleer eerst de habitat- en locatievoorwaarden voor Mr. Mime voordat je materialen uitgeeft."
   },
   {
@@ -4774,16 +4781,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Researcher's desk (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Researcher's desk | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Researcher's desk.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bureau van de onderzoeker (Researcher's Desk)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bureau van de onderzoeker (Researcher's Desk): Tafel, willekeurig (Table (any)) ×2; Computer (Computer) ×1; Wetenschappelijk experiment (Science Experiment) ×1",
     "specialties": [
       "Recyclen (Recycle)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Porygon2",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Researcher's desk. Controleer daarna tijd en weer voordat je voor Porygon wacht."
   },
   {
@@ -4795,16 +4802,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Work desk (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Work desk | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Work desk.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Werkbureau (Work Desk)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Werkbureau (Work Desk): Kantoorbureau (Office Desk) ×1; Mok (Mug) ×1; Laptop (Laptop) ×1; Kantoorstoel (Office Chair) ×1",
     "specialties": [
       "Recyclen (Recycle)"
     ],
     "evolvesFrom": "Porygon",
     "evolvesInto": "Porygon-Z",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Work desk. Controleer daarna tijd en weer voordat je voor Porygon2 wacht."
   },
   {
@@ -4816,16 +4823,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Game Corner battle zone (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Game Corner battle zone | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Game Corner battle zone.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Gevechtszone in de speelhoek (Game Corner Battle Zone)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Gevechtszone in de speelhoek (Game Corner Battle Zone): Arcadekast (Arcade Machine) ×2; Zitplaats, willekeurig (Seat (any)) ×2",
     "specialties": [
-      "Rarify"
+      "Zeldzaam maken (Rarify)"
     ],
     "evolvesFrom": "Porygon2",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Game Corner battle zone. Controleer daarna tijd en weer voordat je voor Porygon-Z wacht."
   },
   {
@@ -4837,16 +4844,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Hydrated fluffy flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Simple bathroom (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated fluffy flower bed / Simple bathroom | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated fluffy flower bed / Simple bathroom.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bevochtigd zacht bloemenbed (Hydrated Fluffy Flower Bed) / Eenvoudige badkamer (Simple Bathroom)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bevochtigd zacht bloemenbed (Hydrated Fluffy Flower Bed): Skyland-bloemen (Skyland Flowers) ×4; Water (Water) ×2 OF Eenvoudige badkamer (Simple Bathroom): Douche (Shower) ×1; Badkuip (Bathtub) ×1",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dragonair",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Hydrated fluffy flower bed. Controleer daarna tijd en weer voordat je voor Dratini wacht."
   },
   {
@@ -4858,16 +4865,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Hydrated fluffy flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Simple bathroom (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated fluffy flower bed / Simple bathroom | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated fluffy flower bed / Simple bathroom.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Eenvoudige badkamer (Simple Bathroom) / Bevochtigd zacht bloemenbed (Hydrated Fluffy Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Eenvoudige badkamer (Simple Bathroom): Douche (Shower) ×1; Badkuip (Bathtub) ×1 OF Bevochtigd zacht bloemenbed (Hydrated Fluffy Flower Bed): Skyland-bloemen (Skyland Flowers) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "Dratini",
     "evolvesInto": "Dragonite",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Hydrated fluffy flower bed. Controleer daarna tijd en weer voordat je voor Dragonair wacht."
   },
   {
@@ -4880,17 +4887,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Waterside dinghy (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Waterside dinghy | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Waterside dinghy.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bootje aan het water (Waterside Dinghy)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bootje aan het water (Waterside Dinghy): Kano (Canoe) ×1; Kroos (Duckweed) ×2; Water (Water) ×2; Hoge locatie (High-up Location) ×1",
     "specialties": [
       "Water geven (Water)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "Dragonair",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Waterside dinghy. Controleer daarna tijd en weer voordat je voor Dragonite wacht."
   },
   {
@@ -4902,16 +4909,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Concrete pipe secret base (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Concrete pipe secret base | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Concrete pipe secret base.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Geheime basis in betonbuizen (Concrete Pipe Secret Base) / Dutplek bij de open haard (Fireplace Nap Spot)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Geheime basis in betonbuizen (Concrete Pipe Secret Base): Betonbuis (Concrete Pipe) ×2; Tall Grass (any) (Tall Grass (any)) ×4 OF Dutplek bij de open haard (Fireplace Nap Spot): Stenen open haard (Stone Fireplace) ×1; Brede zitplaats (Seat (wide)) ×1",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Quilava",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Concrete pipe secret base. Controleer daarna tijd en weer voordat je voor Cyndaquil wacht."
   },
   {
@@ -4923,16 +4930,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Concrete pipe secret base (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Fireplace nap spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Concrete pipe secret base / Fireplace nap spot | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Concrete pipe secret base / Fireplace nap spot.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Dutplek bij de open haard (Fireplace Nap Spot) / Geheime basis in betonbuizen (Concrete Pipe Secret Base)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Dutplek bij de open haard (Fireplace Nap Spot): Stenen open haard (Stone Fireplace) ×1; Brede zitplaats (Seat (wide)) ×1 OF Geheime basis in betonbuizen (Concrete Pipe Secret Base): Betonbuis (Concrete Pipe) ×2; Tall Grass (any) (Tall Grass (any)) ×4",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "Cyndaquil",
     "evolvesInto": "Typhlosion",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Concrete pipe secret base. Controleer daarna tijd en weer voordat je voor Quilava wacht."
   },
   {
@@ -4944,17 +4951,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Fireplace nap spot (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Top pop (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Fireplace nap spot / Top pop | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Fireplace nap spot / Top pop.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Popstijl (Top Pop) / Dutplek bij de open haard (Fireplace Nap Spot)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Popstijl (Top Pop): Popart-bed (Pop Art Bed) ×1; Popart-bank (Pop Art Sofa) ×1; Popart-tafel (Pop Art Table) ×1 OF Dutplek bij de open haard (Fireplace Nap Spot): Stenen open haard (Stone Fireplace) ×1; Brede zitplaats (Seat (wide)) ×1",
     "specialties": [
       "Branden (Burn)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Quilava",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fireplace nap spot. Controleer daarna tijd en weer voordat je voor Typhlosion wacht."
   },
   {
@@ -4966,16 +4973,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Fluffy flower bed (Tijd: Night | Weer: Sun, Cloud, Regen (Rain)) ; Office storeroom (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Fluffy flower bed / Office storeroom | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Fluffy flower bed / Office storeroom.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Zacht bloemenbed (Fluffy Flower Bed) / Kantooropslag (Office Storeroom)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Zacht bloemenbed (Fluffy Flower Bed): Skyland-bloemen (Skyland Flowers) ×4 OF Kantooropslag (Office Storeroom): Kantoorplank (Office Shelf) ×1; Opstapje (Step Stool) ×1; Kartonnen dozen (Cardboard Boxes) ×1",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Mismagius",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Misdreavus wacht."
   },
   {
@@ -4987,17 +4994,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Fluffy flower bed (Tijd: Night | Weer: Sun, Cloud, Regen (Rain)) ; Home theater (Tijd: Night | Weer: Sun, Cloud, Regen (Rain)) ; Office storeroom (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Fluffy flower bed / Home theater / Office storeroom | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Fluffy flower bed / Home theater / Office storeroom.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Thuisbioscoop (Home Theatre) / Kantooropslag (Office Storeroom) / Zacht bloemenbed (Fluffy Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Thuisbioscoop (Home Theatre): Televisie (Television) ×1; Standaard, willekeurig (Stand (any)) ×1; Luidsprekers (Speakers) ×2 OF Kantooropslag (Office Storeroom): Kantoorplank (Office Shelf) ×1; Opstapje (Step Stool) ×1; Kartonnen dozen (Cardboard Boxes) ×1 OF Zacht bloemenbed (Fluffy Flower Bed): Skyland-bloemen (Skyland Flowers) ×4",
     "specialties": [
       "Verzamelen (Gather)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Misdreavus",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Mismagius wacht."
   },
   {
@@ -5010,16 +5017,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Tree-shaded fluffy flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded fluffy flower bed | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded fluffy flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Zacht bloemenbed in boomschaduw (Tree-shaded Fluffy Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Zacht bloemenbed in boomschaduw (Tree-shaded Fluffy Flower Bed): Grote boom, willekeurig (Large Tree (any)) ×1; Skyland-bloemen (Skyland Flowers) ×4",
     "specialties": [
       "Verzamelen (Gather)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Farigiraf",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Girafarig wacht."
   },
   {
@@ -5032,17 +5039,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Tree-shaded fluffy flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded fluffy flower bed | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded fluffy flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Zacht bloemenbed in boomschaduw (Tree-shaded Fluffy Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Zacht bloemenbed in boomschaduw (Tree-shaded Fluffy Flower Bed): Grote boom, willekeurig (Large Tree (any)) ×1; Skyland-bloemen (Skyland Flowers) ×4",
     "specialties": [
       "Verzamelen (Gather)",
       "Zoeken (Search)"
     ],
     "evolvesFrom": "Girafarig",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Farigiraf wacht."
   },
   {
@@ -5055,16 +5062,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Study Area (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Study Area | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Study Area.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Studeerplek (Study Area)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Studeerplek (Study Area): Boekenkast (Bookcase) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Pennenhouder (Pencil Holder) ×1",
     "specialties": [
       "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kirlia",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Study Area. Controleer daarna tijd en weer voordat je voor Ralts wacht."
   },
   {
@@ -5077,16 +5084,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Study Area (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Moisturizing makeup stand (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Study Area / Moisturizing makeup stand | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Study Area / Moisturizing makeup stand.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Hydraterende make-uptafel (Moisturizing Makeup Stand) / Studeerplek (Study Area)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Hydraterende make-uptafel (Moisturizing Makeup Stand): Ladekast, willekeurig (Dresser (any)) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Luchtbevochtiger (Humidifier) ×1 OF Studeerplek (Study Area): Boekenkast (Bookcase) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Pennenhouder (Pencil Holder) ×1",
     "specialties": [
       "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "Ralts",
     "evolvesInto": "Gardevoir / Gallade",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Study Area. Controleer daarna tijd en weer voordat je voor Kirlia wacht."
   },
   {
@@ -5099,17 +5106,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Moisturizing makeup stand (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Mini library (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Moisturizing makeup stand / Mini library | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Moisturizing makeup stand / Mini library.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Minibibliotheek (Mini Library) / Hydraterende make-uptafel (Moisturizing Makeup Stand)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Minibibliotheek (Mini Library): Boekenkast (Bookcase) ×2; Opstapje (Step Stool) ×1; Tafel, willekeurig (Table (any)) ×1; Verlichting, willekeurig (Lighting (any)) ×1 OF Hydraterende make-uptafel (Moisturizing Makeup Stand): Ladekast, willekeurig (Dresser (any)) ×1; Zitplaats, willekeurig (Seat (any)) ×1; Luchtbevochtiger (Humidifier) ×1",
     "specialties": [
       "Teleporteren (Teleport)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Kirlia",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Moisturizing makeup stand. Controleer daarna tijd en weer voordat je voor Gardevoir wacht."
   },
   {
@@ -5122,17 +5129,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Dojo training (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Dojo training | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Dojo training.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Dojotraining (Dojo Training)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Dojotraining (Dojo Training): Hangrol (Hanging Scroll) ×2; Krachtrots (Strength Rock) ×2",
     "specialties": [
       "Teleporteren (Teleport)",
       "Bouwen (Build)"
     ],
     "evolvesFrom": "Kirlia",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Dojo training. Controleer daarna tijd en weer voordat je voor Gallade wacht."
   },
   {
@@ -5144,16 +5151,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Picturesque photo cutout board (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Picturesque photo cutout board | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Picturesque photo cutout board.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Fotogeniek fotobord (Picturesque Photo Cutout Board)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Fotogeniek fotobord (Picturesque Photo Cutout Board): Fotobord (Photo Cutout Board) ×1; Spotlight (Spotlight) ×2; Hoge locatie (High-up Location) ×1",
     "specialties": [
       "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Picturesque photo cutout board. Controleer daarna tijd en weer voordat je voor Plusle wacht."
   },
   {
@@ -5165,16 +5172,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Picturesque photo cutout board (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Picturesque photo cutout board | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Picturesque photo cutout board.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Fotogeniek fotobord (Picturesque Photo Cutout Board)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Fotogeniek fotobord (Picturesque Photo Cutout Board): Fotobord (Photo Cutout Board) ×1; Spotlight (Spotlight) ×2; Hoge locatie (High-up Location) ×1",
     "specialties": [
       "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Picturesque photo cutout board. Controleer daarna tijd en weer voordat je voor Minun wacht."
   },
   {
@@ -5186,17 +5193,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Pink tall grass | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Pink tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Roze hoog gras (Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Roze hoog gras (Pink Tall Grass): Roze hoog gras (Pink Tall Grass) ×4",
     "specialties": [
       "Bulldozeren (Bulldoze)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Vibrava",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Trapinch wacht."
   },
   {
@@ -5209,17 +5216,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Pink tall grass | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Pink tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Roze hoog gras (Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Roze hoog gras (Pink Tall Grass): Roze hoog gras (Pink Tall Grass) ×4",
     "specialties": [
       "Bulldozeren (Bulldoze)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "Trapinch",
     "evolvesInto": "Flygon",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Vibrava wacht."
   },
   {
@@ -5232,17 +5239,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Pink tall grass | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Pink tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Roze hoog gras (Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Roze hoog gras (Pink Tall Grass): Roze hoog gras (Pink Tall Grass) ×4",
     "specialties": [
       "Bulldozeren (Bulldoze)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "Vibrava",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Flygon wacht."
   },
   {
@@ -5255,16 +5262,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Pink tall grass | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Pink tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Roze hoog gras (Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Roze hoog gras (Pink Tall Grass): Roze hoog gras (Pink Tall Grass) ×4",
     "specialties": [
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Altaria",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Swablu wacht."
   },
   {
@@ -5277,17 +5284,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Birdsong garden (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Birdsong garden | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Birdsong garden.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Vogelliedtuin (Birdsong Garden)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Vogelliedtuin (Birdsong Garden): Stijlvolle haag (Stylish Hedge) ×1; Houten vogelhuisje (Wooden Birdhouse) ×1",
     "specialties": [
       "Opruimen (Litter)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "Swablu",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Birdsong garden. Controleer daarna tijd en weer voordat je voor Altaria wacht."
   },
   {
@@ -5299,16 +5306,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Pink tall grass (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Pink tall grass | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Pink tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Roze hoog gras (Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Roze hoog gras (Pink Tall Grass): Roze hoog gras (Pink Tall Grass) ×4",
     "specialties": [
       "Verzamelen (Gather)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dusclops",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Duskull wacht."
   },
   {
@@ -5320,16 +5327,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Trash site TV (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Trash site TV | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Trash site TV.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Tv bij de afvalplek (Trash Site TV)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Tv bij de afvalplek (Trash Site TV): Vuilniszakken (Garbage Bags) ×2; Televisie (Television) ×1",
     "specialties": [
       "Verzamelen (Gather)"
     ],
     "evolvesFrom": "Duskull",
     "evolvesInto": "Dusknoir",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Trash site TV. Controleer daarna tijd en weer voordat je voor Dusclops wacht."
   },
   {
@@ -5341,17 +5348,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Trash site TV (Tijd: Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Trash site TV | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Trash site TV.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Tv bij de afvalplek (Trash Site TV)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Tv bij de afvalplek (Trash Site TV): Vuilniszakken (Garbage Bags) ×2; Televisie (Television) ×1",
     "specialties": [
       "Verzamelen (Gather)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Dusclops",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Trash site TV. Controleer daarna tijd en weer voordat je voor Dusknoir wacht."
   },
   {
@@ -5364,16 +5371,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Cycling rest stop (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Cycling rest stop | Ideale omgeving: Koel (Cool)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Cycling rest stop.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Fiets-rustplek (Cycling Rest Stop)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Fiets-rustplek (Cycling Rest Stop): Fiets (Bike) ×1; Automaat (Vending Machine) ×1",
     "specialties": [
       "Recyclen (Recycle)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Metang",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Cycling rest stop. Controleer daarna tijd en weer voordat je voor Beldum wacht."
   },
   {
@@ -5386,16 +5393,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Professor's apprentice program (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Professor's apprentice program | Ideale omgeving: Koel (Cool)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Professor's apprentice program.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Assistentenprogramma van de professor (Professor's Apprentice Program)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Assistentenprogramma van de professor (Professor's Apprentice Program): Whiteboard (Whiteboard) ×1; Tafel, willekeurig (Table (any)) ×1; Verwarde kabels (Jumbled Cords) ×1; Laptop (Laptop) ×1",
     "specialties": [
       "Recyclen (Recycle)"
     ],
     "evolvesFrom": "Beldum",
     "evolvesInto": "Metagross",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Professor's apprentice program. Controleer daarna tijd en weer voordat je voor Metang wacht."
   },
   {
@@ -5408,17 +5415,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Gamer's paradise (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Gamer's paradise | Ideale omgeving: Koel (Cool)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Gamer's paradise.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Gamersparadijs (Gamer's Paradise)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Gamersparadijs (Gamer's Paradise): Gamingbed (Gaming Bed) ×1; Tafel, willekeurig (Table (any)) ×1; Gaming-pc (Gaming PC) ×1; Gamingkoelkast (Gaming Fridge) ×1; Gamingstoel (Gaming Chair) ×1",
     "specialties": [
       "Recyclen (Recycle)",
       "Verpletteren (Crush)"
     ],
     "evolvesFrom": "Metang",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Gamer's paradise. Controleer daarna tijd en weer voordat je voor Metagross wacht."
   },
   {
@@ -5430,16 +5437,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Playland (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Playland | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Playland.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Speelpark (Playland)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Speelpark (Playland): Glijbaan (Slide) ×1; Speelgoed, willekeurig (Toy (any)) ×1",
     "specialties": [
-      "Groeien (Grow)"
+      "Groeien (Grow)",
+      "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Servine",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Playland. Controleer daarna tijd en weer voordat je voor Snivy wacht."
   },
   {
@@ -5451,17 +5459,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Tree-shaded fluffy flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded fluffy flower bed | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded fluffy flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Zacht bloemenbed in boomschaduw (Tree-shaded Fluffy Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Zacht bloemenbed in boomschaduw (Tree-shaded Fluffy Flower Bed): Grote boom, willekeurig (Large Tree (any)) ×1; Skyland-bloemen (Skyland Flowers) ×4",
     "specialties": [
       "Groeien (Grow)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Snivy",
     "evolvesInto": "Serperior",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Servine wacht."
   },
   {
@@ -5473,17 +5481,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Tree-shaded fluffy flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Public reading material (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded fluffy flower bed / Public reading material | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded fluffy flower bed / Public reading material.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Openbaar leesmateriaal (Public Reading Material) / Zacht bloemenbed in boomschaduw (Tree-shaded Fluffy Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Openbaar leesmateriaal (Public Reading Material): Tijdschriftenrek (Magazine Rack) ×1; Krant (Newspaper) ×1 OF Zacht bloemenbed in boomschaduw (Tree-shaded Fluffy Flower Bed): Grote boom, willekeurig (Large Tree (any)) ×1; Skyland-bloemen (Skyland Flowers) ×4",
     "specialties": [
       "Groeien (Grow)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Servine",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Serperior wacht."
   },
   {
@@ -5495,16 +5503,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Hydrated pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated pink tall grass | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated pink tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bevochtigd roze hoog gras (Hydrated Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bevochtigd roze hoog gras (Hydrated Pink Tall Grass): Roze hoog gras (Pink Tall Grass) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Frogadier",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Hydrated pink tall grass. Controleer daarna tijd en weer voordat je voor Froakie wacht."
   },
   {
@@ -5516,16 +5524,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Hydrated pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Prank button (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated pink tall grass / Prank button | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated pink tall grass / Prank button.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Grappenknop (Prank Button) / Bevochtigd roze hoog gras (Hydrated Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Grappenknop (Prank Button): Vloerschakelaar (Floor Switch) ×1; Boo-in-the-Box (Boo-in-the-Box) ×1 OF Bevochtigd roze hoog gras (Hydrated Pink Tall Grass): Roze hoog gras (Pink Tall Grass) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "Froakie",
     "evolvesInto": "Greninja",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Hydrated pink tall grass. Controleer daarna tijd en weer voordat je voor Frogadier wacht."
   },
   {
@@ -5538,17 +5546,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Hydrated pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Prank button (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Hydrated pink tall grass / Prank button | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Hydrated pink tall grass / Prank button.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Grappenknop (Prank Button) / Bevochtigd roze hoog gras (Hydrated Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Grappenknop (Prank Button): Vloerschakelaar (Floor Switch) ×1; Boo-in-the-Box (Boo-in-the-Box) ×1 OF Bevochtigd roze hoog gras (Hydrated Pink Tall Grass): Roze hoog gras (Pink Tall Grass) ×4; Water (Water) ×2",
     "specialties": [
       "Water geven (Water)",
       "Hakken (Chop)"
     ],
     "evolvesFrom": "Frogadier",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Hydrated pink tall grass. Controleer daarna tijd en weer voordat je voor Greninja wacht."
   },
   {
@@ -5561,16 +5569,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Tire Park (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tire Park | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tire Park.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Bandenpark (Tire Park)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Bandenpark (Tire Park): Glijbaan (Slide) ×1; Banden (Tires) ×1; Bandenspeelgoed (Tire Toy) ×2",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tire Park. Controleer daarna tijd en weer voordat je voor Dedenne wacht."
   },
   {
@@ -5583,16 +5591,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Rhythmic Living room (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Rhythmic Living room | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Rhythmic Living room.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Ritmische woonkamer (Rhythmic Living Room)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Ritmische woonkamer (Rhythmic Living Room): Luidspreker (Speaker) ×2; Muziekmat, willekeurig (Music Mat (any)) ×4; Televisie (Television) ×1",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Noivern",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Rhythmic Living room. Controleer daarna tijd en weer voordat je voor Noibat wacht."
   },
   {
@@ -5605,17 +5613,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Rhythmic Living room (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Rhythmic Living room | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Rhythmic Living room.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Ritmische woonkamer (Rhythmic Living Room)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Ritmische woonkamer (Rhythmic Living Room): Luidspreker (Speaker) ×2; Muziekmat, willekeurig (Music Mat (any)) ×4; Televisie (Television) ×1",
     "specialties": [
       "Zoeken (Search)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "Noibat",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Rhythmic Living room. Controleer daarna tijd en weer voordat je voor Noivern wacht."
   },
   {
@@ -5627,16 +5635,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Fluffy flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Fluffy flower bed | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Fluffy flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Zacht bloemenbed (Fluffy Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Zacht bloemenbed (Fluffy Flower Bed): Skyland-bloemen (Skyland Flowers) ×4",
     "specialties": [
       "Hakken (Chop)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Corvisquire",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Rookidee wacht."
   },
   {
@@ -5648,16 +5656,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Elevated pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated pink tall grass | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated pink tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verhoogd roze hoog gras (Elevated Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verhoogd roze hoog gras (Elevated Pink Tall Grass): Roze hoog gras (Pink Tall Grass) ×4; Hoge locatie (High-up Location) ×1",
     "specialties": [
       "Hakken (Chop)"
     ],
     "evolvesFrom": "Rookidee",
     "evolvesInto": "Corviknight",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Elevated pink tall grass. Controleer daarna tijd en weer voordat je voor Corvisquire wacht."
   },
   {
@@ -5670,17 +5678,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Elevated pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Sewer hole inspection (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated pink tall grass / Sewer hole inspection | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated pink tall grass / Sewer hole inspection.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Rioolputinspectie (Sewer-hole Inspection) / Verhoogd roze hoog gras (Elevated Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Rioolputinspectie (Sewer-hole Inspection): IJzeren buizen (Iron Pipes) ×1; Riooldeksel (Sewer-hole Cover) ×1; Graafgereedschap (Excavation Tools) ×1; Verkeerskegel (Traffic Cone) ×1 OF Verhoogd roze hoog gras (Elevated Pink Tall Grass): Roze hoog gras (Pink Tall Grass) ×4; Hoge locatie (High-up Location) ×1",
     "specialties": [
       "Hakken (Chop)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "Corvisquire",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Elevated pink tall grass. Controleer daarna tijd en weer voordat je voor Corviknight wacht."
   },
   {
@@ -5693,17 +5701,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Tree-shaded pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded pink tall grass | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded pink tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Roze hoog gras in boomschaduw (Tree-shaded Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Roze hoog gras in boomschaduw (Tree-shaded Pink Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Roze hoog gras (Pink Tall Grass) ×4",
     "specialties": [
       "Verzamelen (Gather)",
       "Zoeken (Search)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Drakloak",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded pink tall grass. Controleer daarna tijd en weer voordat je voor Dreepy wacht."
   },
   {
@@ -5716,17 +5724,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Tree-shaded pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Office storeroom (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded pink tall grass / Office storeroom | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded pink tall grass / Office storeroom.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Kantooropslag (Office Storeroom) / Roze hoog gras in boomschaduw (Tree-shaded Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Kantooropslag (Office Storeroom): Kantoorplank (Office Shelf) ×1; Opstapje (Step Stool) ×1; Kartonnen dozen (Cardboard Boxes) ×1 OF Roze hoog gras in boomschaduw (Tree-shaded Pink Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Roze hoog gras (Pink Tall Grass) ×4",
     "specialties": [
       "Verzamelen (Gather)",
       "Zoeken (Search)"
     ],
     "evolvesFrom": "Dreepy",
     "evolvesInto": "Dragapult",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded pink tall grass. Controleer daarna tijd en weer voordat je voor Drakloak wacht."
   },
   {
@@ -5739,17 +5747,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Office storeroom (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Office storeroom | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Office storeroom.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Kantooropslag (Office Storeroom)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Kantooropslag (Office Storeroom): Kantoorplank (Office Shelf) ×1; Opstapje (Step Stool) ×1; Kartonnen dozen (Cardboard Boxes) ×1",
     "specialties": [
       "Verzamelen (Gather)",
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Drakloak",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Office storeroom. Controleer daarna tijd en weer voordat je voor Dragapult wacht."
   },
   {
@@ -5761,16 +5769,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Tree-shaded pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Interrogation desk (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tree-shaded pink tall grass / Interrogation desk | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tree-shaded pink tall grass / Interrogation desk.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Roze hoog gras in boomschaduw (Tree-shaded Pink Tall Grass) / Verhoorbureau (Interrogation Desk)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Roze hoog gras in boomschaduw (Tree-shaded Pink Tall Grass): Grote boom, willekeurig (Large Tree (any)) ×1; Roze hoog gras (Pink Tall Grass) ×4 OF Verhoorbureau (Interrogation Desk): Arcanine-pop (Arcanine Doll) ×1; Klapstoel (Folding Chair) ×2; Industrieel bureau (Industrial Desk) ×1; Bureaulamp (Desk Light) ×1",
     "specialties": [
       "Groeien (Grow)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Floragato",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded pink tall grass. Controleer daarna tijd en weer voordat je voor Sprigatito wacht."
   },
   {
@@ -5782,16 +5790,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Interrogation desk (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Interrogation desk | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Interrogation desk.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verhoorbureau (Interrogation Desk)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verhoorbureau (Interrogation Desk): Arcanine-pop (Arcanine Doll) ×1; Klapstoel (Folding Chair) ×2; Industrieel bureau (Industrial Desk) ×1; Bureaulamp (Desk Light) ×1",
     "specialties": [
       "Groeien (Grow)"
     ],
     "evolvesFrom": "Sprigatito",
     "evolvesInto": "Meowscarada",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Interrogation desk. Controleer daarna tijd en weer voordat je voor Floragato wacht."
   },
   {
@@ -5804,17 +5812,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Heart-pounding surprise box (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Heart-pounding surprise box | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Heart-pounding surprise box.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Spannende verrassingsdoos (Heart-pounding Surprise Box)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Spannende verrassingsdoos (Heart-pounding Surprise Box): Boo-in-the-Box (Boo-in-the-Box) ×1; Spotlight (Spotlight) ×2; Grote trommel (Big Drum) ×1",
     "specialties": [
       "Groeien (Grow)",
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "Floragato",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Heart-pounding surprise box. Controleer daarna tijd en weer voordat je voor Meowscarada wacht."
   },
   {
@@ -5827,16 +5835,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Elevated pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated pink tall grass | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated pink tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verhoogd roze hoog gras (Elevated Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verhoogd roze hoog gras (Elevated Pink Tall Grass): Roze hoog gras (Pink Tall Grass) ×4; Hoge locatie (High-up Location) ×1",
     "specialties": [
       "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kilowattrel",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Elevated pink tall grass. Controleer daarna tijd en weer voordat je voor Wattrel wacht."
   },
   {
@@ -5849,17 +5857,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Elevated pink tall grass (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elevated pink tall grass | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elevated pink tall grass.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Verhoogd roze hoog gras (Elevated Pink Tall Grass)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Verhoogd roze hoog gras (Elevated Pink Tall Grass): Roze hoog gras (Pink Tall Grass) ×4; Hoge locatie (High-up Location) ×1",
     "specialties": [
       "Energie opwekken (Generate)",
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "Wattrel",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Elevated pink tall grass. Controleer daarna tijd en weer voordat je voor Kilowattrel wacht."
   },
   {
@@ -5872,16 +5880,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands)",
-    "area": "Large luggage carrier (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Oversized dumping ground (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain)) ; Sewer hole inspection (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Large luggage carrier / Oversized dumping ground / Sewer hole inspection | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Large luggage carrier / Oversized dumping ground / Sewer hole inspection.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Grote bagagekar (Large Luggage Carrier) / Extra grote stortplaats (Oversized Dumping Ground)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Grote bagagekar (Large Luggage Carrier): Kar (Cart) ×1; Houten krat (Wooden Crate) ×2; alleen Palette Town (Palette Town Only) OF Extra grote stortplaats (Oversized Dumping Ground): IJzeren balk of kolom (Iron Beam or Column) ×3; Banden (Tires) ×1; Magnetron (Microwave Oven) ×1; Afvalbak, willekeurig (Waste Bin (any)) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Bouwen (Build)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Tinkatuff",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Large luggage carrier. Controleer daarna tijd en weer voordat je voor Tinkatink wacht."
   },
   {
@@ -5894,16 +5902,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands)",
-    "area": "Large luggage carrier (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Large luggage carrier | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Large luggage carrier.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Rioolputinspectie (Sewer-hole Inspection) / Grote bagagekar (Large Luggage Carrier)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Rioolputinspectie (Sewer-hole Inspection): IJzeren buizen (Iron Pipes) ×1; Riooldeksel (Sewer-hole Cover) ×1; Graafgereedschap (Excavation Tools) ×1; Verkeerskegel (Traffic Cone) ×1 OF Grote bagagekar (Large Luggage Carrier): Kar (Cart) ×1; Houten krat (Wooden Crate) ×2",
     "specialties": [
       "Bouwen (Build)"
     ],
     "evolvesFrom": "Tinkatink",
     "evolvesInto": "Tinkaton",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Large luggage carrier. Controleer daarna tijd en weer voordat je voor Tinkatuff wacht."
   },
   {
@@ -5916,16 +5924,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Fonkelende hemellanden (Sparkling Skylands) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Palette Town (Palette Town)",
-    "area": "Oversized dumping ground (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Oversized dumping ground | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Oversized dumping ground.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nog onbekend (??) | Weer (Weather): Nog onbekend (??)",
+    "habitat": "Extra grote stortplaats (Oversized Dumping Ground)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Extra grote stortplaats (Oversized Dumping Ground): IJzeren balk of kolom (Iron Beam or Column) ×3; Banden (Tires) ×1; Magnetron (Microwave Oven) ×1; Afvalbak, willekeurig (Waste Bin (any)) ×1",
     "specialties": [
-      "Engineer"
+      "Techniek bouwen (Engineer)"
     ],
     "evolvesFrom": "Tinkatuff",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Oversized dumping ground. Controleer daarna tijd en weer voordat je voor Tinkaton wacht."
   },
   {
@@ -5938,16 +5946,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Wing Fossil Display (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Wing Fossil Display | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Wing Fossil Display.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Vleugelfossiel-display (Wing Fossil Display)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Vleugelfossiel-display (Wing Fossil Display): Sokkel / tentoonstellingsstandaard (Pedestal / Exhibition Stand) ×2; Wing Fossil (Head (Wing Fossil (Head) ×1; Body (Body) ×1; Right Wing (Right Wing) ×1; Left Wing (Left Wing) ×1; Tail) (Tail)) ×1",
     "specialties": [
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Wing Fossil Display. Controleer daarna tijd en weer voordat je voor Aerodactyl wacht."
   },
   {
@@ -5959,16 +5967,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Skull Fossil display (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Skull Fossil display | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Skull Fossil display.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Schedelfossiel-display (Skull Fossil Display)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Schedelfossiel-display (Skull Fossil Display): Sokkel / tentoonstellingsstandaard (Pedestal / Exhibition Stand) ×1; Schedelfossiel (Skull Fossil) ×1",
     "specialties": [
       "Verpletteren (Crush)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Rampardos",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Skull Fossil display. Controleer daarna tijd en weer voordat je voor Cranidos wacht."
   },
   {
@@ -5980,17 +5988,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Headbutt Fossil display (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Headbutt Fossil display | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Headbutt Fossil display.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Kopstootfossiel-display (Headbut Fossil Display)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Kopstootfossiel-display (Headbut Fossil Display): Sokkel / tentoonstellingsstandaard (Pedestal / Exhibition Stand) ×2; Headbut Fossil (Head (Headbut Fossil (Head) ×1; Body (Body) ×1; Tail) (Tail)) ×1",
     "specialties": [
       "Verpletteren (Crush)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Cranidos",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Headbutt Fossil display. Controleer daarna tijd en weer voordat je voor Rampardos wacht."
   },
   {
@@ -6003,16 +6011,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Armor Fossil display (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Armor Fossil display | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Armor Fossil display.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Pantserfossiel-display (Armor Fossil Display)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Pantserfossiel-display (Armor Fossil Display): Sokkel / tentoonstellingsstandaard (Pedestal / Exhibition Stand) ×1; Armor Fossil (Armor Fossil) ×1",
     "specialties": [
       "Verpletteren (Crush)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Bastiodon",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Armor Fossil display. Controleer daarna tijd en weer voordat je voor Shieldon wacht."
   },
   {
@@ -6025,17 +6033,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Shield Fossil display (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Shield Fossil display | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Shield Fossil display.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Schildfossiel-display (Shield Fossil Display)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Schildfossiel-display (Shield Fossil Display): Sokkel / tentoonstellingsstandaard (Pedestal / Exhibition Stand) ×2; Shield Fossil (Head (Shield Fossil (Head) ×1; Body (Body) ×1; Tail) (Tail)) ×1",
     "specialties": [
       "Verpletteren (Crush)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Shieldon",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Shield Fossil display. Controleer daarna tijd en weer voordat je voor Bastiodon wacht."
   },
   {
@@ -6048,16 +6056,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Jaw Fossil display (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Jaw Fossil display | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Jaw Fossil display.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Kaakfossiel-display (Jaw Fossil Display)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Kaakfossiel-display (Jaw Fossil Display): Sokkel / tentoonstellingsstandaard (Pedestal / Exhibition Stand) ×1; Kaakfossiel (Jaw Fossil) ×1",
     "specialties": [
       "Verpletteren (Crush)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Tyrantrum",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Jaw Fossil display. Controleer daarna tijd en weer voordat je voor Tyrunt wacht."
   },
   {
@@ -6070,17 +6078,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Despot fossil display (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Despot fossil display | Ideale omgeving: Dry",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Despot fossil display.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Despotenfossiel-display (Despot Fossil Display)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Despotenfossiel-display (Despot Fossil Display): Sokkel / tentoonstellingsstandaard (Pedestal / Exhibition Stand) ×1; Despot Fossil (Head (Despot Fossil (Head) ×1; Body (Body) ×1; Legs (Legs) ×1; Tail) (Tail)) ×1",
     "specialties": [
       "Verpletteren (Crush)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Tyrunt",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Despot fossil display. Controleer daarna tijd en weer voordat je voor Tyrantrum wacht."
   },
   {
@@ -6093,16 +6101,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Sail Fossil display (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Sail Fossil display | Ideale omgeving: Koel (Cool)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Sail Fossil display.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Zeilfossiel-display (Sail Fossil Display)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Zeilfossiel-display (Sail Fossil Display): Sokkel / tentoonstellingsstandaard (Pedestal / Exhibition Stand) ×1; Zeilfossiel (Sail Fossil) ×1",
     "specialties": [
       "Verpletteren (Crush)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Aurorus",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Sail Fossil display. Controleer daarna tijd en weer voordat je voor Amaura wacht."
   },
   {
@@ -6115,17 +6123,17 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Fonkelende hemellanden (Sparkling Skylands) / Palette Town (Palette Town)",
-    "area": "Tundra fossil display (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Tundra fossil display | Ideale omgeving: Koel (Cool)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Tundra fossil display.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Toendrafossiel-display (Tundra Fossil Display)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Toendrafossiel-display (Tundra Fossil Display): Sokkel / tentoonstellingsstandaard (Pedestal / Exhibition Stand) ×2; Tundra Fossil (Head (Tundra Fossil (Head) ×1; Body (Body) ×1; Tail) (Tail)) ×1",
     "specialties": [
       "Verpletteren (Crush)",
       "Opruimen (Litter)"
     ],
     "evolvesFrom": "Amaura",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tundra fossil display. Controleer daarna tijd en weer voordat je voor Aurorus wacht."
   },
   {
@@ -6137,16 +6145,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town) / Verdorde woestenij (Withered Wastelands) / Somber strand (Bleak Beach) / Rotsachtige bergkammen (Rocky Ridges) / Fonkelende hemellanden (Sparkling Skylands)",
-    "area": "Pretty flower bed (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Pretty flower bed | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Pretty flower bed.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Mooi bloemenbed (Pretty Flower Bed)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Mooi bloemenbed (Pretty Flower Bed): Wilde bloemen (Wildflowers) ×4; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Vaporeon / Jolteon / Flareon / Espeon / Umbreon / Leafeon / Glaceon / Sylveon",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Pretty flower bed. Controleer daarna tijd en weer voordat je voor Eevee wacht."
   },
   {
@@ -6158,16 +6166,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Boundless blue beverage (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Boundless blue beverage | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Boundless blue beverage.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Grenzeloos blauwe drank (Boundless Blue Beverage)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Grenzeloos blauwe drank (Boundless Blue Beverage): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Soda-float (Soda Float) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Boundless blue beverage. Controleer daarna tijd en weer voordat je voor Vaporeon wacht."
   },
   {
@@ -6179,16 +6187,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Electrifying potatoes (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Electrifying potatoes | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Electrifying potatoes.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Elektriserende aardappels (Electrifying Potatoes)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Elektriserende aardappels (Electrifying Potatoes): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Gebakken aardappels (Fried Potatoes) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Electrifying potatoes. Controleer daarna tijd en weer voordat je voor Jolteon wacht."
   },
   {
@@ -6200,16 +6208,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Burning-hot spice (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Burning-hot spice | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Burning-hot spice.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Brandend hete kruiden (Burning-hot Spice)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Brandend hete kruiden (Burning-hot Spice): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Pizza (Pizza) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Burning-hot spice. Controleer daarna tijd en weer voordat je voor Flareon wacht."
   },
   {
@@ -6221,16 +6229,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Elegant daytime treats (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Elegant daytime treats | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Elegant daytime treats.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Ochtend (Morning), overdag (Daytime), avond (Evening) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Elegante lekkernijen overdag (Elegant Daytime Treats)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Elegante lekkernijen overdag (Elegant Daytime Treats): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Middagtheeset (Afternoon Tea Set) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Verzamelen (Gather)"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Elegant daytime treats. Controleer daarna tijd en weer voordat je voor Espeon wacht."
   },
   {
@@ -6242,16 +6250,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Donker (Dark)-chocolate cookies (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Donker (Dark)-chocolate cookies | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Donker (Dark)-chocolate cookies.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Nacht (Nighttime) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Pure-chocoladekoekjes (Dark-chocolate Cookies)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Pure-chocoladekoekjes (Dark-chocolate Cookies): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Chocoladekoekjes (Chocolate Cookies) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Zoeken (Search)"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Dark-chocolate cookies. Controleer daarna tijd en weer voordat je voor Umbreon wacht."
   },
   {
@@ -6263,16 +6271,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Leafy greens sandwich (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Leafy greens sandwich | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Leafy greens sandwich.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Sandwich met bladgroenten (Leafy Greens Sandwich)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Sandwich met bladgroenten (Leafy Greens Sandwich): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Sandwiches (Sandwiches) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Groeien (Grow)"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Leafy greens sandwich. Controleer daarna tijd en weer voordat je voor Leafeon wacht."
   },
   {
@@ -6284,16 +6292,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Chilly shaved ice (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Chilly shaved ice | Ideale omgeving: Koel (Cool)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Chilly shaved ice.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Koud schaafijs (Chilly Shaved Ice)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Koud schaafijs (Chilly Shaved Ice): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Schaafijs (Shaved Ice) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Ruilen (Trade)"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Chilly shaved ice. Controleer daarna tijd en weer voordat je voor Glaceon wacht."
   },
   {
@@ -6305,16 +6313,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Lovely ribbon cake (Tijd: Ochtend (Morning), Day, Avond (Evening), Night | Weer: Sun, Cloud, Regen (Rain))",
-    "habitat": "Lovely ribbon cake | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw één van deze geschikte habitats: Lovely ribbon cake.",
-    "requirements": "Benodigd: bouw één van de vermelde habitats. Controleer de Habitat Dex voor de exacte materialen per habitat.",
+    "area": "Tijd (Time): Hele dag (All day) | Weer (Weather): Alle weersomstandigheden (All weather)",
+    "habitat": "Lieve linttaart (Lovely Ribbon Cake)",
+    "obtainMethod": "Bouw één van de hierboven vermelde leefgebieden (habitats) en voldoe aan de tijd- en weersvoorwaarden.",
+    "requirements": "Lieve linttaart (Lovely Ribbon Cake): Zitplaats, willekeurig (Seat (any)) ×1; Tafel, willekeurig (Table (any)) ×1; Linttaart (Ribbon Cake) ×1; alleen Palette Town (Palette Town Only)",
     "specialties": [
       "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Lovely ribbon cake. Controleer daarna tijd en weer voordat je voor Sylveon wacht."
   },
   {
@@ -6326,16 +6334,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands)",
-    "area": "Verhaalontmoeting; geen normaal habitat/tijd/weertype nodig.",
-    "habitat": "Geen normaal habitat | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Volg de Verdorde woestenij (Withered Wastelands)-verhaallijn. Nadat de regen is opgeroepen, verschijnt Kyogre in het zuiden bij de oceaan.",
-    "requirements": "Volg de hoofdverhaallijn in Verdorde woestenij (Withered Wastelands) en roep de regen op.",
+    "area": "Tijd (Time): Niet van toepassing (N/A) | Weer (Weather): Niet van toepassing (N/A)",
+    "habitat": "Geen normaal leefgebied (N/A)",
+    "obtainMethod": "Volg de verhaallijn in de Verdorde woestenij (Withered Wastelands) om Kyogre te ontmoeten.",
+    "requirements": "Geen normaal habitatrecept; volg de verhaallijn (story progression).",
     "specialties": [
-      "Nog onbekend (???)"
+      "Niet van toepassing (N/A)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "behandel Kyogre als een verhaalontmoeting, niet als een gewone habitat-spawn."
   },
   {
@@ -6347,16 +6355,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Droomeiland (Dream Island)",
-    "area": "Speciale Droomeiland (Dream Island)-ontmoeting; normale tijd/weervoorwaarden zijn niet van toepassing.",
-    "habitat": "Geen normaal habitat | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Gebruik de Pikachu-pop (Pikachu Doll) op Droomeiland (Dream Island) om Raikou te vinden.",
-    "requirements": "Pikachu-pop (Pikachu Doll).",
+    "area": "Tijd (Time): Niet van toepassing (N/A) | Weer (Weather): Niet van toepassing (N/A)",
+    "habitat": "Geen normaal leefgebied (N/A)",
+    "obtainMethod": "Speciale verkrijgmethode (Special method): te vinden met de Pikachu-pop (found via Pikachu Doll).",
+    "requirements": "Speciale methode (Special method): te vinden met de Pikachu-pop (found via Pikachu Doll)",
     "specialties": [
       "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "zorg dat je de Pikachu Doll bij je hebt voordat je specifiek voor Raikou naar Dream Island gaat."
   },
   {
@@ -6368,16 +6376,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Droomeiland (Dream Island)",
-    "area": "Speciale Droomeiland (Dream Island)-ontmoeting; normale tijd/weervoorwaarden zijn niet van toepassing.",
-    "habitat": "Geen normaal habitat | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Gebruik de Arcanine-pop (Arcanine Doll) op Droomeiland (Dream Island) om Entei te vinden.",
-    "requirements": "Arcanine-pop (Arcanine Doll).",
+    "area": "Tijd (Time): Niet van toepassing (N/A) | Weer (Weather): Niet van toepassing (N/A)",
+    "habitat": "Geen normaal leefgebied (N/A)",
+    "obtainMethod": "Speciale verkrijgmethode (Special method): found via Arcanine Doll.",
+    "requirements": "Speciale methode (Special method): found via Arcanine Doll",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "neem de Arcanine Doll mee als Entei je doel is; zonder die speciale methode is dit geen normale habitat-spawn."
   },
   {
@@ -6389,16 +6397,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Droomeiland (Dream Island)",
-    "area": "Speciale Droomeiland (Dream Island)-ontmoeting; normale tijd/weervoorwaarden zijn niet van toepassing.",
-    "habitat": "Geen normaal habitat | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Gebruik de Eevee-pop (Eevee Doll) op Droomeiland (Dream Island) om Suicune te vinden.",
-    "requirements": "Eevee-pop (Eevee Doll).",
+    "area": "Tijd (Time): Niet van toepassing (N/A) | Weer (Weather): Niet van toepassing (N/A)",
+    "habitat": "Geen normaal leefgebied (N/A)",
+    "obtainMethod": "Speciale verkrijgmethode (Special method): te vinden met de Eevee-pop (found via Eevee Doll).",
+    "requirements": "Speciale methode (Special method): te vinden met de Eevee-pop (found via Eevee Doll)",
     "specialties": [
       "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "ga pas gericht voor Suicune zodra je de Eevee Doll hebt."
   },
   {
@@ -6411,16 +6419,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Rotsachtige bergkammen (Rocky Ridges)",
-    "area": "Speciale ontmoeting; normale habitatvoorwaarden zijn niet van toepassing.",
-    "habitat": "Geen normaal habitat | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Organiseer de vereiste Party in Rotsachtige bergkammen (Rocky Ridges) om Volcanion te laten verschijnen.",
-    "requirements": "Voltooi de benodigde Party-voorwaarde in Rotsachtige bergkammen (Rocky Ridges).",
+    "area": "Tijd (Time): Niet van toepassing (N/A) | Weer (Weather): Niet van toepassing (N/A)",
+    "habitat": "Geen normaal leefgebied (N/A)",
+    "obtainMethod": "Speciale verkrijgmethode (Special method): organiseer een feest bij Rocky Ridges (Throw Party at Rocky Ridges).",
+    "requirements": "Speciale methode (Special method): organiseer een feest bij Rocky Ridges (Throw Party at Rocky Ridges)",
     "specialties": [
       "Branden (Burn)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "zoek Volcanion niet via gewone habitats; richt je op de speciale Party-voorwaarde in Rocky Ridges."
   },
   {
@@ -6433,16 +6441,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Speciale Legendary-ontmoeting; normale tijd/weervoorwaarden zijn niet van toepassing.",
-    "habitat": "Bevroren kamers (Freezing Chambers) | Ideale omgeving: Koel (Cool)",
-    "obtainMethod": "Bouw de Bevroren kamers (Freezing Chambers) om Articuno te kunnen ontmoeten.",
-    "requirements": "Bevroren kamers (Freezing Chambers)-kit uit Palette Town (Palette Town).",
+    "area": "Tijd (Time): Niet van toepassing (N/A) | Weer (Weather): Niet van toepassing (N/A)",
+    "habitat": "Geen normaal leefgebied (N/A)",
+    "obtainMethod": "Speciale verkrijgmethode (Special method): bouw de Bevroren kamers (must build Frozen Chambers).",
+    "requirements": "Speciale methode (Special method): bouw de Bevroren kamers (must build Frozen Chambers)",
     "specialties": [
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "haal eerst de Freezing Chambers-kit; Articuno is geen normale habitat-spawn."
   },
   {
@@ -6455,16 +6463,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Speciale Legendary-ontmoeting; normale tijd/weervoorwaarden zijn niet van toepassing.",
-    "habitat": "Verlaten elektriciteitscentrale (Abandoned Power Plant) | Ideale omgeving: Licht (Bright)",
-    "obtainMethod": "Bouw de Verlaten elektriciteitscentrale (Abandoned Power Plant) om Zapdos te kunnen ontmoeten.",
-    "requirements": "Verlaten elektriciteitscentrale (Abandoned Power Plant)-kit uit Palette Town (Palette Town).",
+    "area": "Tijd (Time): Niet van toepassing (N/A) | Weer (Weather): Niet van toepassing (N/A)",
+    "habitat": "Geen normaal leefgebied (N/A)",
+    "obtainMethod": "Speciale verkrijgmethode (Special method): bouw de Verlaten elektriciteitscentrale (must build Abandoned Power Plant).",
+    "requirements": "Speciale methode (Special method): bouw de Verlaten elektriciteitscentrale (must build Abandoned Power Plant)",
     "specialties": [
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "bouw eerst de Abandoned Power Plant voordat je tijd steekt in het zoeken naar Zapdos."
   },
   {
@@ -6477,42 +6485,20 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Palette Town (Palette Town)",
-    "area": "Speciale Legendary-ontmoeting; normale tijd/weervoorwaarden zijn niet van toepassing.",
-    "habitat": "Vlammenaltaar (Altar of Flame) | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Bouw de Vlammenaltaar (Altar of Flame) om Moltres te kunnen ontmoeten.",
-    "requirements": "Vlammenaltaar (Altar of Flame)-kit uit Palette Town (Palette Town).",
+    "area": "Tijd (Time): Niet van toepassing (N/A) | Weer (Weather): Niet van toepassing (N/A)",
+    "habitat": "Geen normaal leefgebied (N/A)",
+    "obtainMethod": "Speciale verkrijgmethode (Special method): bouw het Vlammenaltaar (must build Altar of Flame).",
+    "requirements": "Speciale methode (Special method): bouw het Vlammenaltaar (must build Altar of Flame)",
     "specialties": [
       "Vliegen (Fly)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "Moltres vraagt om de Altar of Flame; behandel hem dus niet als een gewone habitat-Pokémon."
   },
   {
     "number": 297,
-    "name": "Lugia",
-    "type": [
-      "Psychic",
-      "Flying"
-    ],
-    "game": "Pokémon Pokopia",
-    "dlc": false,
-    "location": "Speciale Legendary-ontmoeting",
-    "area": "Normale tijd/weervoorwaarden zijn niet van toepassing.",
-    "habitat": "Geen normaal habitat | Ideale omgeving: Vochtig (Humid)",
-    "obtainMethod": "Gebruik de Getijdenbel (Tidal Bell) om Lugia te ontmoeten.",
-    "requirements": "Getijdenbel (Tidal Bell).",
-    "specialties": [
-      "Nog onbekend (???)"
-    ],
-    "evolvesFrom": "",
-    "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
-    "tip": "bewaar de Tidal Bell voor Lugia; #297 is Lugia in de Pokopia-Pokédex."
-  },
-  {
-    "number": 298,
     "name": "Ho-Oh",
     "type": [
       "Fire",
@@ -6520,18 +6506,40 @@ const pokemonKanto = [
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
-    "location": "Speciale Legendary-ontmoeting",
-    "area": "Normale tijd/weervoorwaarden zijn niet van toepassing.",
-    "habitat": "Geen normaal habitat | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Gebruik de Heldere bel (Clear Bell) om Ho-Oh te ontmoeten.",
-    "requirements": "Heldere bel (Clear Bell).",
+    "location": "Speciale legendarische ontmoeting (Special legendary encounter)",
+    "area": "Tijd (Time): Niet van toepassing (N/A) | Weer (Weather): Niet van toepassing (N/A)",
+    "habitat": "Geen normaal leefgebied (N/A)",
+    "obtainMethod": "Speciale verkrijgmethode (Special method): gebruik de Heldere bel (use Clear Bell).",
+    "requirements": "Speciale methode (Special method): gebruik de Heldere bel (use Clear Bell)",
     "specialties": [
-      "Nog onbekend (???)"
+      "Niet van toepassing (N/A)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
-    "tip": "gebruik de Clear Bell voor Ho-Oh; #298 is Ho-Oh in de Pokopia-Pokédex."
+    "evolutionMethod": "",
+    "tip": "Gebruik de Heldere bel (Clear Bell) om Ho-Oh te ontmoeten."
+  },
+  {
+    "number": 298,
+    "name": "Lugia",
+    "type": [
+      "Psychic",
+      "Flying"
+    ],
+    "game": "Pokémon Pokopia",
+    "dlc": false,
+    "location": "Speciale legendarische ontmoeting (Special legendary encounter)",
+    "area": "Tijd (Time): Niet van toepassing (N/A) | Weer (Weather): Niet van toepassing (N/A)",
+    "habitat": "Geen normaal leefgebied (N/A)",
+    "obtainMethod": "Speciale verkrijgmethode (Special method): gebruik de Getijdenbel (use Tidal Bell).",
+    "requirements": "Speciale methode (Special method): gebruik de Getijdenbel (use Tidal Bell)",
+    "specialties": [
+      "Niet van toepassing (N/A)"
+    ],
+    "evolvesFrom": "",
+    "evolvesInto": "",
+    "evolutionMethod": "",
+    "tip": "Gebruik de Getijdenbel (Tidal Bell) om Lugia te ontmoeten."
   },
   {
     "number": 299,
@@ -6542,16 +6550,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Droomeiland (Dream Island)",
-    "area": "Speciale Droomeiland (Dream Island)-ontmoeting; normale tijd/weervoorwaarden zijn niet van toepassing.",
-    "habitat": "Geen normaal habitat | Ideale omgeving: Donker (Dark)",
-    "obtainMethod": "Gebruik de Dragonite-pop (Dragonite Doll) op Droomeiland (Dream Island) om Mewtwo te vinden.",
-    "requirements": "Dragonite-pop (Dragonite Doll).",
+    "area": "Tijd (Time): Niet van toepassing (N/A) | Weer (Weather): Niet van toepassing (N/A)",
+    "habitat": "Geen normaal leefgebied (N/A)",
+    "obtainMethod": "Speciale verkrijgmethode (Special method): found via Dragonite Doll.",
+    "requirements": "Speciale methode (Special method): found via Dragonite Doll",
     "specialties": [
       "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "neem de Dragonite Doll mee als je specifiek voor Mewtwo naar Dream Island gaat."
   },
   {
@@ -6563,16 +6571,16 @@ const pokemonKanto = [
     "game": "Pokémon Pokopia",
     "dlc": false,
     "location": "Verdorde woestenij (Withered Wastelands)",
-    "area": "Mysterieuze-platenpuzzel (Mysterious Slate Puzzle); normale habitatvoorwaarden zijn niet van toepassing.",
-    "habitat": "Geen normaal habitat | Ideale omgeving: Warm (Warm)",
-    "obtainMethod": "Los de Mysterieuze-platenpuzzel (Mysterious Slate Puzzle) op om Mew te ontmoeten.",
-    "requirements": "Verzamel de Mysterieuze platen (Mysterious Slates) en voltooi de bijbehorende puzzel.",
+    "area": "Tijd (Time): Niet van toepassing (N/A) | Weer (Weather): Niet van toepassing (N/A)",
+    "habitat": "Geen normaal leefgebied (N/A)",
+    "obtainMethod": "Speciale verkrijgmethode (Special method): voltooi de Mysterieuze-platenpuzzel (Mysterious Slate Puzzle).",
+    "requirements": "Speciale methode (Special method): voltooi de Mysterieuze-platenpuzzel (Mysterious Slate Puzzle)",
     "specialties": [
       "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "Niet apart bevestigd voor Pokopia.",
+    "evolutionMethod": "",
     "tip": "zoek eerst alle Mysterious Slates. Mew is een puzzelbeloning en geen gewone habitat-spawn."
   }
 ];

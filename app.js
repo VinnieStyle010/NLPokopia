@@ -99,7 +99,6 @@ ${infoRow(
 
 ${infoRow("Evolueert van", pokemon.evolvesFrom)}
 ${infoRow("Evolueert naar", pokemon.evolvesInto)}
-${infoRow("Evolutiemethode", pokemon.evolutionMethod)}
 
 <p>
     <strong>Status:</strong>

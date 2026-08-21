@@ -1,20 +1,19 @@
 // NLPokopia - Hoofd-Pokédex #001 t/m #300
-// DEFINITIEVE DATASET
-// - exacte habitat-benodigdheden staan direct op iedere Pokémonkaart
-// - Nederlands eerst; Engelse speltermen tussen haakjes
-// - tijd en weer volledig NL (EN)
-// - geen verwijzing naar de Habitat Dex voor materialen
-// - geen "Mijn tip:" prefix
-// - evolutiemethode niet gebruikt
-// Bron voor habitats/materialen/tijd/weer/specialties: Nintendo Life complete Pokopia Pokédex (13 augustus 2026).
+// Definitieve strakke NL + EN versie voor kinderen én volwassenen.
+// - Type: Nederlands (Engels)
+// - Locatie, habitats en materialen: Nederlands (Engels)
+// - Exacte benodigdheden direct op iedere Pokémonkaart
+// - Persoonlijke tips in natuurlijk Nederlands met herkenbare Engelse speltermen
+// - Geen verwijzing naar Habitat Dex
+// - Geen evolutiemethode
 
 const pokemonKanto = [
   {
     "number": 1,
     "name": "Bulbasaur",
     "type": [
-      "Grass",
-      "Poison"
+      "Gras (Grass)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -28,14 +27,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Ivysaur",
-    "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Bulbasaur wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Bulbasaur wacht."
   },
   {
     "number": 2,
     "name": "Ivysaur",
     "type": [
-      "Grass",
-      "Poison"
+      "Gras (Grass)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -49,14 +48,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Bulbasaur",
     "evolvesInto": "Venusaur",
-    "tip": "begin in Withered Wastelands en maak eerst Field of Flowers. Controleer daarna tijd en weer voordat je voor Ivysaur wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Bloemenveld (Field of Flowers). Controleer daarna tijd en weer voordat je voor Ivysaur wacht."
   },
   {
     "number": 3,
     "name": "Venusaur",
     "type": [
-      "Grass",
-      "Poison"
+      "Gras (Grass)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -71,13 +70,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Ivysaur",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Field of Flowers. Controleer daarna tijd en weer voordat je voor Venusaur wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Bloemenveld (Field of Flowers). Controleer daarna tijd en weer voordat je voor Venusaur wacht."
   },
   {
     "number": 4,
     "name": "Charmander",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -91,13 +90,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Charmeleon",
-    "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Charmander wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Charmander wacht."
   },
   {
     "number": 5,
     "name": "Charmeleon",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -111,14 +110,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Charmander",
     "evolvesInto": "Charizard",
-    "tip": "begin in Withered Wastelands en maak eerst Campsite. Controleer daarna tijd en weer voordat je voor Charmeleon wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Kampeerplek (Campsite). Controleer daarna tijd en weer voordat je voor Charmeleon wacht."
   },
   {
     "number": 6,
     "name": "Charizard",
     "type": [
-      "Fire",
-      "Flying"
+      "Vuur (Fire)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -133,13 +132,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Charmeleon",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Charizard wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Charizard wacht."
   },
   {
     "number": 7,
     "name": "Squirtle",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -153,13 +152,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Wartortle",
-    "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Squirtle wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Squirtle wacht."
   },
   {
     "number": 8,
     "name": "Wartortle",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -173,13 +172,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Squirtle",
     "evolvesInto": "Blastoise",
-    "tip": "begin in Withered Wastelands en maak eerst Hydrated tall grass. Controleer daarna tijd en weer voordat je voor Wartortle wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Bevochtigd hoog gras (Hydrated Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Wartortle wacht."
   },
   {
     "number": 9,
     "name": "Blastoise",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -194,14 +193,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Wartortle",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Hydrated tall grass. Controleer daarna tijd en weer voordat je voor Blastoise wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Bevochtigd hoog gras (Hydrated Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Blastoise wacht."
   },
   {
     "number": 10,
     "name": "Pidgey",
     "type": [
-      "Normal",
-      "Flying"
+      "Normaal (Normal)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -216,14 +215,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pidgeotto",
-    "tip": "begin in Withered Wastelands en maak eerst Elevated tall grass. Controleer daarna tijd en weer voordat je voor Pidgey wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Verhoogd hoog gras (Elevated Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Pidgey wacht."
   },
   {
     "number": 11,
     "name": "Pidgeotto",
     "type": [
-      "Normal",
-      "Flying"
+      "Normaal (Normal)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -238,14 +237,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pidgey",
     "evolvesInto": "Pidgeot",
-    "tip": "begin in Withered Wastelands en maak eerst Elevated tall grass. Controleer daarna tijd en weer voordat je voor Pidgeotto wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Verhoogd hoog gras (Elevated Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Pidgeotto wacht."
   },
   {
     "number": 12,
     "name": "Pidgeot",
     "type": [
-      "Normal",
-      "Flying"
+      "Normaal (Normal)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -260,14 +259,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pidgeotto",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Luxury chirp-chirp meal. Controleer daarna tijd en weer voordat je voor Pidgeot wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Luxe vogelmaaltijd (Luxury Chirp-chirp Meal). Controleer daarna tijd en weer voordat je voor Pidgeot wacht."
   },
   {
     "number": 13,
     "name": "Oddish",
     "type": [
-      "Grass",
-      "Poison"
+      "Gras (Grass)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -281,14 +280,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gloom",
-    "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Oddish wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Oddish wacht."
   },
   {
     "number": 14,
     "name": "Gloom",
     "type": [
-      "Grass",
-      "Poison"
+      "Gras (Grass)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -302,14 +301,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Oddish",
     "evolvesInto": "Vileplume / Bellossom",
-    "tip": "begin in Bleak Beach en maak eerst Tropical vibes. Controleer daarna tijd en weer voordat je voor Gloom wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Tropische sfeer (Tropical Vibes). Controleer daarna tijd en weer voordat je voor Gloom wacht."
   },
   {
     "number": 15,
     "name": "Vileplume",
     "type": [
-      "Grass",
-      "Poison"
+      "Gras (Grass)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -324,13 +323,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gloom",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Chansey Resting area. Controleer daarna tijd en weer voordat je voor Vileplume wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Chansey-rustplek (Chansey Resting Area). Controleer daarna tijd en weer voordat je voor Vileplume wacht."
   },
   {
     "number": 16,
     "name": "Bellossom",
     "type": [
-      "Grass"
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -345,14 +344,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gloom",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Chansey Resting area. Controleer daarna tijd en weer voordat je voor Bellossom wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Chansey-rustplek (Chansey Resting Area). Controleer daarna tijd en weer voordat je voor Bellossom wacht."
   },
   {
     "number": 17,
     "name": "Paras",
     "type": [
-      "Bug",
-      "Grass"
+      "Insect (Bug)",
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -366,14 +365,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Parasect",
-    "tip": "begin in Withered Wastelands en maak eerst Elevated flower bed. Controleer daarna tijd en weer voordat je voor Paras wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Verhoogd bloemenbed (Elevated Flower Bed). Controleer daarna tijd en weer voordat je voor Paras wacht."
   },
   {
     "number": 18,
     "name": "Parasect",
     "type": [
-      "Bug",
-      "Grass"
+      "Insect (Bug)",
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -387,14 +386,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Paras",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Elevated flower bed. Controleer daarna tijd en weer voordat je voor Parasect wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Verhoogd bloemenbed (Elevated Flower Bed). Controleer daarna tijd en weer voordat je voor Parasect wacht."
   },
   {
     "number": 19,
     "name": "Venonat",
     "type": [
-      "Bug",
-      "Poison"
+      "Insect (Bug)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -408,14 +407,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Venomoth",
-    "tip": "begin in Withered Wastelands en maak eerst Illuminated tall grass. Controleer daarna tijd en weer voordat je voor Venonat wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Verlicht hoog gras (Illuminated Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Venonat wacht."
   },
   {
     "number": 20,
     "name": "Venomoth",
     "type": [
-      "Bug",
-      "Poison"
+      "Insect (Bug)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -429,14 +428,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Venonat",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Illuminated tall grass. Controleer daarna tijd en weer voordat je voor Venomoth wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Verlicht hoog gras (Illuminated Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Venomoth wacht."
   },
   {
     "number": 21,
     "name": "Bellsprout",
     "type": [
-      "Grass",
-      "Poison"
+      "Gras (Grass)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -451,14 +450,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Weepinbell",
-    "tip": "begin in Withered Wastelands en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Bellsprout wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Tree-shaded  Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Bellsprout wacht."
   },
   {
     "number": 22,
     "name": "Weepinbell",
     "type": [
-      "Grass",
-      "Poison"
+      "Gras (Grass)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -473,14 +472,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Bellsprout",
     "evolvesInto": "Victreebel",
-    "tip": "begin in Withered Wastelands en maak eerst Flowery table. Controleer daarna tijd en weer voordat je voor Weepinbell wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Bloementafel (Flowery Table). Controleer daarna tijd en weer voordat je voor Weepinbell wacht."
   },
   {
     "number": 23,
     "name": "Victreebel",
     "type": [
-      "Grass",
-      "Poison"
+      "Gras (Grass)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -495,14 +494,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Weepinbell",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Flowery table. Controleer daarna tijd en weer voordat je voor Victreebel wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Bloementafel (Flowery Table). Controleer daarna tijd en weer voordat je voor Victreebel wacht."
   },
   {
     "number": 24,
     "name": "Slowpoke",
     "type": [
-      "Water",
-      "Psychic"
+      "Water (Water)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -517,14 +516,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Slowbro / Slowking",
-    "tip": "begin in Withered Wastelands en maak eerst Seaside Tall Grass. Controleer daarna tijd en weer voordat je voor Slowpoke wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Hoog gras aan zee (Seaside Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Slowpoke wacht."
   },
   {
     "number": 25,
     "name": "Slowbro",
     "type": [
-      "Water",
-      "Psychic"
+      "Water (Water)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -539,14 +538,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Slowpoke",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Seaside Tall Grass. Controleer daarna tijd en weer voordat je voor Slowbro wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Hoog gras aan zee (Seaside Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Slowbro wacht."
   },
   {
     "number": 26,
     "name": "Slowking",
     "type": [
-      "Water",
-      "Psychic"
+      "Water (Water)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -561,14 +560,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Slowpoke",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Seaside Tall Grass. Controleer daarna tijd en weer voordat je voor Slowking wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Hoog gras aan zee (Seaside Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Slowking wacht."
   },
   {
     "number": 27,
     "name": "Magnemite",
     "type": [
-      "Electric",
-      "Steel"
+      "Elektrisch (Electric)",
+      "Staal (Steel)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -582,14 +581,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Magneton",
-    "tip": "begin in Withered Wastelands en maak eerst Factory Storage. Controleer daarna tijd en weer voordat je voor Magnemite wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Fabrieksopslag (Factory Storage). Controleer daarna tijd en weer voordat je voor Magnemite wacht."
   },
   {
     "number": 28,
     "name": "Magneton",
     "type": [
-      "Electric",
-      "Steel"
+      "Elektrisch (Electric)",
+      "Staal (Steel)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -603,14 +602,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Magnemite",
     "evolvesInto": "Magnezone",
-    "tip": "begin in Bleak Beach en maak eerst Trash can central. Controleer daarna tijd en weer voordat je voor Magneton wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Afvalbakcentrale (Trash Can Central). Controleer daarna tijd en weer voordat je voor Magneton wacht."
   },
   {
     "number": 29,
     "name": "Magnezone",
     "type": [
-      "Electric",
-      "Steel"
+      "Elektrisch (Electric)",
+      "Staal (Steel)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -625,14 +624,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Magneton",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Trash can central. Controleer daarna tijd en weer voordat je voor Magnezone wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Afvalbakcentrale (Trash Can Central). Controleer daarna tijd en weer voordat je voor Magnezone wacht."
   },
   {
     "number": 30,
     "name": "Onix",
     "type": [
-      "Rock",
-      "Ground"
+      "Steen (Rock)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -647,14 +646,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Steelix",
-    "tip": "begin in Withered Wastelands en maak eerst Smooth tall grass. Controleer daarna tijd en weer voordat je voor Onix wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Glad hoog gras (Smooth Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Onix wacht."
   },
   {
     "number": 31,
     "name": "Steelix",
     "type": [
-      "Steel",
-      "Ground"
+      "Staal (Steel)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -669,13 +668,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Onix",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Clink-clang iron construction. Controleer daarna tijd en weer voordat je voor Steelix wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Rinkelende ijzerconstructie (Clink-clang Iron Construction). Controleer daarna tijd en weer voordat je voor Steelix wacht."
   },
   {
     "number": 32,
     "name": "Cubone",
     "type": [
-      "Ground"
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -689,13 +688,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Marowak",
-    "tip": "begin in Withered Wastelands en maak eerst Grave with flowers. Controleer daarna tijd en weer voordat je voor Cubone wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Graf met bloemen (Grave with Flowers). Controleer daarna tijd en weer voordat je voor Cubone wacht."
   },
   {
     "number": 33,
     "name": "Marowak",
     "type": [
-      "Ground"
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -709,13 +708,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Cubone",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Grave with flowers. Controleer daarna tijd en weer voordat je voor Marowak wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Graf met bloemen (Grave with Flowers). Controleer daarna tijd en weer voordat je voor Marowak wacht."
   },
   {
     "number": 34,
     "name": "Tyrogue",
     "type": [
-      "Fighting"
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -729,13 +728,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Hitmonlee / Hitmonchan / Hitmontop",
-    "tip": "begin in Withered Wastelands en maak eerst Training waterfall. Controleer daarna tijd en weer voordat je voor Tyrogue wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Trainingswaterval (Training Waterfall). Controleer daarna tijd en weer voordat je voor Tyrogue wacht."
   },
   {
     "number": 35,
     "name": "Hitmonlee",
     "type": [
-      "Fighting"
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -749,13 +748,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Urgent Care. Controleer daarna tijd en weer voordat je voor Hitmonlee wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Eerstehulpplek (Urgent Care). Controleer daarna tijd en weer voordat je voor Hitmonlee wacht."
   },
   {
     "number": 36,
     "name": "Hitmonchan",
     "type": [
-      "Fighting"
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -769,13 +768,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Exercise resting spot. Controleer daarna tijd en weer voordat je voor Hitmonchan wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Rustplek na training (Exercise Resting Spot). Controleer daarna tijd en weer voordat je voor Hitmonchan wacht."
   },
   {
     "number": 37,
     "name": "Hitmontop",
     "type": [
-      "Fighting"
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -789,13 +788,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Gym first aid. Controleer daarna tijd en weer voordat je voor Hitmontop wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst EHBO bij de gym (Gym First Aid). Controleer daarna tijd en weer voordat je voor Hitmontop wacht."
   },
   {
     "number": 38,
     "name": "Koffing",
     "type": [
-      "Poison"
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -809,13 +808,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Weezing",
-    "tip": "begin in Palette Town en maak eerst Trash collection site. Controleer daarna tijd en weer voordat je voor Koffing wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Afvalverzamelplek (Trash Collection Site). Controleer daarna tijd en weer voordat je voor Koffing wacht."
   },
   {
     "number": 39,
     "name": "Weezing",
     "type": [
-      "Poison"
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -829,13 +828,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Koffing",
     "evolvesInto": "",
-    "tip": "begin in Palette Town en maak eerst Good old-fashioned antiques. Controleer daarna tijd en weer voordat je voor Weezing wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Ouderwetse antiekhoek (Good Old-fashioned Antiques). Controleer daarna tijd en weer voordat je voor Weezing wacht."
   },
   {
     "number": 40,
     "name": "Tangela",
     "type": [
-      "Grass"
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -850,13 +849,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Tangrowth",
-    "tip": "begin in Palette Town en maak eerst Nothin' but Poke Balls. Controleer daarna tijd en weer voordat je voor Tangela wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Alleen maar Poké Balls (Alleen maar Poké Balls (Nothin' but Poké Balls)). Controleer daarna tijd en weer voordat je voor Tangela wacht."
   },
   {
     "number": 41,
     "name": "Tangrowth",
     "type": [
-      "Grass"
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -871,14 +870,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tangela",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Bench with greenery. Controleer daarna tijd en weer voordat je voor Tangrowth wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Bankje met groen (Bench with Greenery). Controleer daarna tijd en weer voordat je voor Tangrowth wacht."
   },
   {
     "number": 42,
     "name": "Scyther",
     "type": [
-      "Bug",
-      "Flying"
+      "Insect (Bug)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -892,14 +891,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Scizor",
-    "tip": "begin in Withered Wastelands en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Scyther wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Tree-shaded  Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Scyther wacht."
   },
   {
     "number": 43,
     "name": "Scizor",
     "type": [
-      "Bug",
-      "Steel"
+      "Insect (Bug)",
+      "Staal (Steel)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -913,13 +912,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Scyther",
     "evolvesInto": "",
-    "tip": "begin in Palette Town en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Scizor wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Tree-shaded  Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Scizor wacht."
   },
   {
     "number": 44,
     "name": "Pinsir",
     "type": [
-      "Bug"
+      "Insect (Bug)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -934,13 +933,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Pinsir wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Tree-shaded  Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Pinsir wacht."
   },
   {
     "number": 45,
     "name": "Magikarp",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -954,14 +953,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gyarados",
-    "tip": "begin in Withered Wastelands en maak eerst Ocean fishing spot. Controleer daarna tijd en weer voordat je voor Magikarp wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Ocean fishing spot. Controleer daarna tijd en weer voordat je voor Magikarp wacht."
   },
   {
     "number": 46,
     "name": "Gyarados",
     "type": [
-      "Water",
-      "Flying"
+      "Water (Water)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -975,13 +974,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Magikarp",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Illuminated waterfall. Controleer daarna tijd en weer voordat je voor Gyarados wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Illuminated waterfall. Controleer daarna tijd en weer voordat je voor Gyarados wacht."
   },
   {
     "number": 47,
     "name": "Ditto",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -995,14 +994,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin je zoektocht naar Ditto in Dream Island en controleer eerst of er een speciale ontgrendelvoorwaarde geldt."
+    "tip": "Begin je zoektocht naar Ditto in Droomeiland (Dream Island) en controleer eerst of er een speciale ontgrendelvoorwaarde geldt."
   },
   {
     "number": 48,
     "name": "Hoothoot",
     "type": [
-      "Normal",
-      "Flying"
+      "Normaal (Normal)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1017,14 +1016,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Noctowl",
-    "tip": "begin in Withered Wastelands en maak eerst Elevated tall grass. Controleer daarna tijd en weer voordat je voor Hoothoot wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Verhoogd hoog gras (Elevated Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Hoothoot wacht."
   },
   {
     "number": 49,
     "name": "Noctowl",
     "type": [
-      "Normal",
-      "Flying"
+      "Normaal (Normal)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1039,14 +1038,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Hoothoot",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Elevated tall grass. Controleer daarna tijd en weer voordat je voor Noctowl wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Verhoogd hoog gras (Elevated Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Noctowl wacht."
   },
   {
     "number": 50,
     "name": "Heracross",
     "type": [
-      "Bug",
-      "Fighting"
+      "Insect (Bug)",
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1061,13 +1060,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Heracross wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Tree-shaded  Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Heracross wacht."
   },
   {
     "number": 51,
     "name": "Volbeat",
     "type": [
-      "Bug"
+      "Insect (Bug)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1081,13 +1080,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Hydrated flower bed. Controleer daarna tijd en weer voordat je voor Volbeat wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Hydrated flower bed. Controleer daarna tijd en weer voordat je voor Volbeat wacht."
   },
   {
     "number": 52,
     "name": "Illumise",
     "type": [
-      "Bug"
+      "Insect (Bug)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1101,13 +1100,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Hydrated flower bed. Controleer daarna tijd en weer voordat je voor Illumise wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Hydrated flower bed. Controleer daarna tijd en weer voordat je voor Illumise wacht."
   },
   {
     "number": 53,
     "name": "Gulpin",
     "type": [
-      "Poison"
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1121,13 +1120,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Swalot",
-    "tip": "begin in Withered Wastelands en maak eerst Tantalizing dining set. Controleer daarna tijd en weer voordat je voor Gulpin wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Tantalizing dining set. Controleer daarna tijd en weer voordat je voor Gulpin wacht."
   },
   {
     "number": 54,
     "name": "Swalot",
     "type": [
-      "Poison"
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1141,13 +1140,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gulpin",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Dinner table surprise. Controleer daarna tijd en weer voordat je voor Swalot wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Dinner table surprise. Controleer daarna tijd en weer voordat je voor Swalot wacht."
   },
   {
     "number": 55,
     "name": "Cacnea",
     "type": [
-      "Grass"
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1161,14 +1160,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Cacturne",
-    "tip": "begin in Withered Wastelands en maak eerst Sunny overdag site. Controleer daarna tijd en weer voordat je voor Cacnea wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Sunny overdag site. Controleer daarna tijd en weer voordat je voor Cacnea wacht."
   },
   {
     "number": 56,
     "name": "Cacturne",
     "type": [
-      "Grass",
-      "Dark"
+      "Gras (Grass)",
+      "Duister (Dark)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1183,14 +1182,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Cacnea",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Tree-shaded flower bed. Controleer daarna tijd en weer voordat je voor Cacturne wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Tree-shaded flower bed. Controleer daarna tijd en weer voordat je voor Cacturne wacht."
   },
   {
     "number": 57,
     "name": "Combee",
     "type": [
-      "Bug",
-      "Flying"
+      "Insect (Bug)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1204,14 +1203,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Vespiquen",
-    "tip": "begin in Withered Wastelands en maak eerst Pretty flower bed. Controleer daarna tijd en weer voordat je voor Combee wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Mooi bloemenbed (Pretty Flower Bed). Controleer daarna tijd en weer voordat je voor Combee wacht."
   },
   {
     "number": 58,
     "name": "Vespiquen",
     "type": [
-      "Bug",
-      "Flying"
+      "Insect (Bug)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1226,13 +1225,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Combee",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Field of Flowers. Controleer daarna tijd en weer voordat je voor Vespiquen wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Bloemenveld (Field of Flowers). Controleer daarna tijd en weer voordat je voor Vespiquen wacht."
   },
   {
     "number": 59,
     "name": "Shellos",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1246,14 +1245,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gastrodon",
-    "tip": "begin in Withered Wastelands en maak eerst Road Sign. Controleer daarna tijd en weer voordat je voor Shellos wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Wegwijzer (Road Sign). Controleer daarna tijd en weer voordat je voor Shellos wacht."
   },
   {
     "number": 60,
     "name": "Gastrodon",
     "type": [
-      "Water",
-      "Ground"
+      "Water (Water)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1268,14 +1267,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Shellos",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Ocean fishing spot. Controleer daarna tijd en weer voordat je voor Gastrodon wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Ocean fishing spot. Controleer daarna tijd en weer voordat je voor Gastrodon wacht."
   },
   {
     "number": 61,
     "name": "Drifloon",
     "type": [
-      "Ghost",
-      "Flying"
+      "Geest (Ghost)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1289,14 +1288,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Drifblim",
-    "tip": "begin in Withered Wastelands en maak eerst Riding warm updrafts. Controleer daarna tijd en weer voordat je voor Drifloon wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Riding warm updrafts. Controleer daarna tijd en weer voordat je voor Drifloon wacht."
   },
   {
     "number": 62,
     "name": "Drifblim",
     "type": [
-      "Ghost",
-      "Flying"
+      "Geest (Ghost)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1311,13 +1310,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Drifloon",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Plush central. Controleer daarna tijd en weer voordat je voor Drifblim wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Plush central. Controleer daarna tijd en weer voordat je voor Drifblim wacht."
   },
   {
     "number": 63,
     "name": "Drilbur",
     "type": [
-      "Ground"
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1331,14 +1330,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Excadrill",
-    "tip": "begin in Withered Wastelands en maak eerst Fresh Veggie Field. Controleer daarna tijd en weer voordat je voor Drilbur wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Vers groenteveld (Fresh Veggie Field). Controleer daarna tijd en weer voordat je voor Drilbur wacht."
   },
   {
     "number": 64,
     "name": "Excadrill",
     "type": [
-      "Ground",
-      "Steel"
+      "Grond (Ground)",
+      "Staal (Steel)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1353,13 +1352,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Drilbur",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Fresh Veggie Field. Controleer daarna tijd en weer voordat je voor Excadrill wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Vers groenteveld (Fresh Veggie Field). Controleer daarna tijd en weer voordat je voor Excadrill wacht."
   },
   {
     "number": 65,
     "name": "Timburr",
     "type": [
-      "Fighting"
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1373,13 +1372,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gurdurr",
-    "tip": "begin in Withered Wastelands en maak eerst Boulder-shaded Tall Grass. Controleer daarna tijd en weer voordat je voor Timburr wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Hoog gras in rotsschaduw (Boulder-shaded Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Timburr wacht."
   },
   {
     "number": 66,
     "name": "Gurdurr",
     "type": [
-      "Fighting"
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1393,13 +1392,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Timburr",
     "evolvesInto": "Conkeldurr",
-    "tip": "begin in Withered Wastelands en maak eerst Boulder-shaded Tall Grass. Controleer daarna tijd en weer voordat je voor Gurdurr wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Hoog gras in rotsschaduw (Boulder-shaded Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Gurdurr wacht."
   },
   {
     "number": 67,
     "name": "Conkeldurr",
     "type": [
-      "Fighting"
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1414,14 +1413,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gurdurr",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Construction-site generator. Controleer daarna tijd en weer voordat je voor Conkeldurr wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Construction-site generator. Controleer daarna tijd en weer voordat je voor Conkeldurr wacht."
   },
   {
     "number": 68,
     "name": "Litwick",
     "type": [
-      "Ghost",
-      "Fire"
+      "Geest (Ghost)",
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1435,14 +1434,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lampent",
-    "tip": "begin in Withered Wastelands en maak eerst Grave offering. Controleer daarna tijd en weer voordat je voor Litwick wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Grave offering. Controleer daarna tijd en weer voordat je voor Litwick wacht."
   },
   {
     "number": 69,
     "name": "Lampent",
     "type": [
-      "Ghost",
-      "Fire"
+      "Geest (Ghost)",
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1456,14 +1455,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Litwick",
     "evolvesInto": "Chandelure",
-    "tip": "begin in Withered Wastelands en maak eerst Grave offering. Controleer daarna tijd en weer voordat je voor Lampent wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Grave offering. Controleer daarna tijd en weer voordat je voor Lampent wacht."
   },
   {
     "number": 70,
     "name": "Chandelure",
     "type": [
-      "Ghost",
-      "Fire"
+      "Geest (Ghost)",
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1477,13 +1476,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Lampent",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Creepy grave offering. Controleer daarna tijd en weer voordat je voor Chandelure wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Creepy grave offering. Controleer daarna tijd en weer voordat je voor Chandelure wacht."
   },
   {
     "number": 71,
     "name": "Axew",
     "type": [
-      "Dragon"
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1497,13 +1496,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Fraxure",
-    "tip": "begin in Withered Wastelands en maak eerst Lumberjack's workplace. Controleer daarna tijd en weer voordat je voor Axew wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Lumberjack's workplace. Controleer daarna tijd en weer voordat je voor Axew wacht."
   },
   {
     "number": 72,
     "name": "Fraxure",
     "type": [
-      "Dragon"
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1517,13 +1516,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Axew",
     "evolvesInto": "Haxorus",
-    "tip": "begin in Withered Wastelands en maak eerst Lumberjack's workplace. Controleer daarna tijd en weer voordat je voor Fraxure wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Lumberjack's workplace. Controleer daarna tijd en weer voordat je voor Fraxure wacht."
   },
   {
     "number": 73,
     "name": "Haxorus",
     "type": [
-      "Dragon"
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1538,13 +1537,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Fraxure",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Lumberjack's workplace. Controleer daarna tijd en weer voordat je voor Haxorus wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Lumberjack's workplace. Controleer daarna tijd en weer voordat je voor Haxorus wacht."
   },
   {
     "number": 74,
     "name": "Goomy",
     "type": [
-      "Dragon"
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1558,13 +1557,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Sliggoo",
-    "tip": "begin in Withered Wastelands en maak eerst Tree-shaded flower bed. Controleer daarna tijd en weer voordat je voor Goomy wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Tree-shaded flower bed. Controleer daarna tijd en weer voordat je voor Goomy wacht."
   },
   {
     "number": 75,
     "name": "Sliggoo",
     "type": [
-      "Dragon"
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1578,13 +1577,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Goomy",
     "evolvesInto": "Goodra",
-    "tip": "begin in Withered Wastelands en maak eerst Hydrated tall grass. Controleer daarna tijd en weer voordat je voor Sliggoo wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Bevochtigd hoog gras (Hydrated Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Sliggoo wacht."
   },
   {
     "number": 76,
     "name": "Goodra",
     "type": [
-      "Dragon"
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1598,14 +1597,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Sliggoo",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Very-berry space. Controleer daarna tijd en weer voordat je voor Goodra wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Very-berry space. Controleer daarna tijd en weer voordat je voor Goodra wacht."
   },
   {
     "number": 77,
     "name": "Cramorant",
     "type": [
-      "Flying",
-      "Water"
+      "Vliegend (Flying)",
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1620,13 +1619,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Palette Town en maak eerst Hydrated tall grass. Controleer daarna tijd en weer voordat je voor Cramorant wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Bevochtigd hoog gras (Hydrated Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Cramorant wacht."
   },
   {
     "number": 78,
     "name": "Pichu",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1640,13 +1639,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pikachu",
-    "tip": "begin in Withered Wastelands en maak eerst Picnic Set. Controleer daarna tijd en weer voordat je voor Pichu wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Picknickplek (Picnic Set). Controleer daarna tijd en weer voordat je voor Pichu wacht."
   },
   {
     "number": 79,
     "name": "Pikachu",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1660,13 +1659,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pichu",
     "evolvesInto": "Raichu",
-    "tip": "begin in Palette Town en maak eerst Picnic Set. Controleer daarna tijd en weer voordat je voor Pikachu wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Picknickplek (Picnic Set). Controleer daarna tijd en weer voordat je voor Pikachu wacht."
   },
   {
     "number": 80,
     "name": "Raichu",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1681,14 +1680,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pikachu",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Nature's market. Controleer daarna tijd en weer voordat je voor Raichu wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Nature's market. Controleer daarna tijd en weer voordat je voor Raichu wacht."
   },
   {
     "number": 81,
     "name": "Zubat",
     "type": [
-      "Poison",
-      "Flying"
+      "Gif (Poison)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1702,14 +1701,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Golbat",
-    "tip": "begin in Bleak Beach en maak eerst Tree-shaded Yellow tall grass. Controleer daarna tijd en weer voordat je voor Zubat wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Tree-shaded Yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Zubat wacht."
   },
   {
     "number": 82,
     "name": "Golbat",
     "type": [
-      "Poison",
-      "Flying"
+      "Gif (Poison)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1723,14 +1722,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Zubat",
     "evolvesInto": "Crobat",
-    "tip": "begin in Bleak Beach en maak eerst Tree-shaded Yellow tall grass. Controleer daarna tijd en weer voordat je voor Golbat wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Tree-shaded Yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Golbat wacht."
   },
   {
     "number": 83,
     "name": "Crobat",
     "type": [
-      "Poison",
-      "Flying"
+      "Gif (Poison)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1745,13 +1744,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Golbat",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Elevated yellow tall grass. Controleer daarna tijd en weer voordat je voor Crobat wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Elevated yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Crobat wacht."
   },
   {
     "number": 84,
     "name": "Meowth",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1765,13 +1764,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Persian",
-    "tip": "begin in Bleak Beach en maak eerst Resting spot. Controleer daarna tijd en weer voordat je voor Meowth wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Resting spot. Controleer daarna tijd en weer voordat je voor Meowth wacht."
   },
   {
     "number": 85,
     "name": "Persian",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1786,13 +1785,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Meowth",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Evil organization HQ. Controleer daarna tijd en weer voordat je voor Persian wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Evil organization HQ. Controleer daarna tijd en weer voordat je voor Persian wacht."
   },
   {
     "number": 86,
     "name": "Psyduck",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1806,13 +1805,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Golduck",
-    "tip": "begin in Bleak Beach en maak eerst Hot-spring shower. Controleer daarna tijd en weer voordat je voor Psyduck wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Hot-spring shower. Controleer daarna tijd en weer voordat je voor Psyduck wacht."
   },
   {
     "number": 87,
     "name": "Golduck",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1826,13 +1825,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Psyduck",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Hot-spring shower. Controleer daarna tijd en weer voordat je voor Golduck wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Hot-spring shower. Controleer daarna tijd en weer voordat je voor Golduck wacht."
   },
   {
     "number": 88,
     "name": "Growlithe",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1847,13 +1846,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Arcanine",
-    "tip": "begin in Bleak Beach en maak eerst Perpetual mess. Controleer daarna tijd en weer voordat je voor Growlithe wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Perpetual mess. Controleer daarna tijd en weer voordat je voor Growlithe wacht."
   },
   {
     "number": 89,
     "name": "Arcanine",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1868,14 +1867,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Growlithe",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Mini museum. Controleer daarna tijd en weer voordat je voor Arcanine wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Mini museum. Controleer daarna tijd en weer voordat je voor Arcanine wacht."
   },
   {
     "number": 90,
     "name": "Farfetch'd",
     "type": [
-      "Normal",
-      "Flying"
+      "Normaal (Normal)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1890,13 +1889,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "controleer eerst de habitat- en locatievoorwaarden voor Farfetch'd voordat je materialen uitgeeft."
+    "tip": "Controleer eerst de habitat- en locatievoorwaarden voor Farfetch'd voordat je materialen uitgeeft."
   },
   {
     "number": 91,
     "name": "Grimer",
     "type": [
-      "Poison"
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1910,13 +1909,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Muk",
-    "tip": "begin in Bleak Beach en maak eerst Marsh fishing spot. Controleer daarna tijd en weer voordat je voor Grimer wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Marsh fishing spot. Controleer daarna tijd en weer voordat je voor Grimer wacht."
   },
   {
     "number": 92,
     "name": "Muk",
     "type": [
-      "Poison"
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1930,14 +1929,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Grimer",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Marsh fishing spot. Controleer daarna tijd en weer voordat je voor Muk wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Marsh fishing spot. Controleer daarna tijd en weer voordat je voor Muk wacht."
   },
   {
     "number": 93,
     "name": "Gastly",
     "type": [
-      "Ghost",
-      "Poison"
+      "Geest (Ghost)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1952,14 +1951,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Haunter",
-    "tip": "begin in Bleak Beach en maak eerst Spooky study. Controleer daarna tijd en weer voordat je voor Gastly wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Spooky study. Controleer daarna tijd en weer voordat je voor Gastly wacht."
   },
   {
     "number": 94,
     "name": "Haunter",
     "type": [
-      "Ghost",
-      "Poison"
+      "Geest (Ghost)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1974,14 +1973,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gastly",
     "evolvesInto": "Gengar",
-    "tip": "begin in Bleak Beach en maak eerst Surprise in store. Controleer daarna tijd en weer voordat je voor Haunter wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Surprise in store. Controleer daarna tijd en weer voordat je voor Haunter wacht."
   },
   {
     "number": 95,
     "name": "Gengar",
     "type": [
-      "Ghost",
-      "Poison"
+      "Geest (Ghost)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -1996,13 +1995,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Haunter",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Surprise in store. Controleer daarna tijd en weer voordat je voor Gengar wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Surprise in store. Controleer daarna tijd en weer voordat je voor Gengar wacht."
   },
   {
     "number": 96,
     "name": "Voltorb",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2017,13 +2016,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Electrode",
-    "tip": "begin in Bleak Beach en maak eerst Park bench. Controleer daarna tijd en weer voordat je voor Voltorb wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Park bench. Controleer daarna tijd en weer voordat je voor Voltorb wacht."
   },
   {
     "number": 97,
     "name": "Electrode",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2038,14 +2037,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Voltorb",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Park bench. Controleer daarna tijd en weer voordat je voor Electrode wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Park bench. Controleer daarna tijd en weer voordat je voor Electrode wacht."
   },
   {
     "number": 98,
     "name": "Exeggcute",
     "type": [
-      "Grass",
-      "Psychic"
+      "Gras (Grass)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2060,14 +2059,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Exeggutor",
-    "tip": "begin in Bleak Beach en maak eerst Tropical vibes. Controleer daarna tijd en weer voordat je voor Exeggcute wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Tropische sfeer (Tropical Vibes). Controleer daarna tijd en weer voordat je voor Exeggcute wacht."
   },
   {
     "number": 99,
     "name": "Exeggutor",
     "type": [
-      "Grass",
-      "Psychic"
+      "Gras (Grass)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2082,13 +2081,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Exeggcute",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Tropical vibes. Controleer daarna tijd en weer voordat je voor Exeggutor wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Tropische sfeer (Tropical Vibes). Controleer daarna tijd en weer voordat je voor Exeggutor wacht."
   },
   {
     "number": 100,
     "name": "Happiny",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2102,13 +2101,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Chansey",
-    "tip": "begin in Bleak Beach en maak eerst Alarm clock sleep zone. Controleer daarna tijd en weer voordat je voor Happiny wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Alarm clock sleep zone. Controleer daarna tijd en weer voordat je voor Happiny wacht."
   },
   {
     "number": 101,
     "name": "Chansey",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2122,13 +2121,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Happiny",
     "evolvesInto": "Blissey",
-    "tip": "begin in Bleak Beach en maak eerst Full recovery. Controleer daarna tijd en weer voordat je voor Chansey wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Full recovery. Controleer daarna tijd en weer voordat je voor Chansey wacht."
   },
   {
     "number": 102,
     "name": "Blissey",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2143,13 +2142,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Chansey",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Cuteness overload. Controleer daarna tijd en weer voordat je voor Blissey wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Cuteness overload. Controleer daarna tijd en weer voordat je voor Blissey wacht."
   },
   {
     "number": 103,
     "name": "Elekid",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2163,13 +2162,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Electabuzz",
-    "tip": "begin in Bleak Beach en maak eerst Vending machine set. Controleer daarna tijd en weer voordat je voor Elekid wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Vending machine set. Controleer daarna tijd en weer voordat je voor Elekid wacht."
   },
   {
     "number": 104,
     "name": "Electabuzz",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2183,13 +2182,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Elekid",
     "evolvesInto": "Electivire",
-    "tip": "begin in Bleak Beach en maak eerst Trash can central. Controleer daarna tijd en weer voordat je voor Electabuzz wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Afvalbakcentrale (Trash Can Central). Controleer daarna tijd en weer voordat je voor Electabuzz wacht."
   },
   {
     "number": 105,
     "name": "Electivire",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2204,14 +2203,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Electabuzz",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Light-up stage. Controleer daarna tijd en weer voordat je voor Electivire wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Light-up stage. Controleer daarna tijd en weer voordat je voor Electivire wacht."
   },
   {
     "number": 106,
     "name": "Lapras",
     "type": [
-      "Water",
-      "Ice"
+      "Water (Water)",
+      "IJs (Ice)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2225,13 +2224,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Tropical seaside. Controleer daarna tijd en weer voordat je voor Lapras wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Tropical seaside. Controleer daarna tijd en weer voordat je voor Lapras wacht."
   },
   {
     "number": 107,
     "name": "Munchlax",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2245,13 +2244,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Snorlax",
-    "tip": "begin in Palette Town en maak eerst Bed with a plush. Controleer daarna tijd en weer voordat je voor Munchlax wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Bed with a plush. Controleer daarna tijd en weer voordat je voor Munchlax wacht."
   },
   {
     "number": 108,
     "name": "Snorlax",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2266,14 +2265,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Munchlax",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Gourmet's altar. Controleer daarna tijd en weer voordat je voor Snorlax wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Gourmet's altar. Controleer daarna tijd en weer voordat je voor Snorlax wacht."
   },
   {
     "number": 109,
     "name": "Spinarak",
     "type": [
-      "Bug",
-      "Poison"
+      "Insect (Bug)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2287,14 +2286,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Ariados",
-    "tip": "begin in Bleak Beach en maak eerst Yellow tall grass. Controleer daarna tijd en weer voordat je voor Spinarak wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Spinarak wacht."
   },
   {
     "number": 110,
     "name": "Ariados",
     "type": [
-      "Bug",
-      "Poison"
+      "Insect (Bug)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2308,13 +2307,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Spinarak",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Yellow tall grass. Controleer daarna tijd en weer voordat je voor Ariados wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Ariados wacht."
   },
   {
     "number": 111,
     "name": "Mareep",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2329,13 +2328,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Flaaffy",
-    "tip": "begin in Bleak Beach en maak eerst Overgrowth vending machine. Controleer daarna tijd en weer voordat je voor Mareep wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Overgrowth vending machine. Controleer daarna tijd en weer voordat je voor Mareep wacht."
   },
   {
     "number": 112,
     "name": "Flaaffy",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2350,13 +2349,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Mareep",
     "evolvesInto": "Ampharos",
-    "tip": "begin in Bleak Beach en maak eerst nacht festival venue. Controleer daarna tijd en weer voordat je voor Flaaffy wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst nacht festival venue. Controleer daarna tijd en weer voordat je voor Flaaffy wacht."
   },
   {
     "number": 113,
     "name": "Ampharos",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2371,14 +2370,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Flaaffy",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Plain life. Controleer daarna tijd en weer voordat je voor Ampharos wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Plain life. Controleer daarna tijd en weer voordat je voor Ampharos wacht."
   },
   {
     "number": 114,
     "name": "Azurill",
     "type": [
-      "Normal",
-      "Fairy"
+      "Normaal (Normal)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2393,14 +2392,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Marill",
-    "tip": "begin in Bleak Beach en maak eerst Hydrated yellow tall grass. Controleer daarna tijd en weer voordat je voor Azurill wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Hydrated yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Azurill wacht."
   },
   {
     "number": 115,
     "name": "Marill",
     "type": [
-      "Water",
-      "Fairy"
+      "Water (Water)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2415,14 +2414,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Azurill",
     "evolvesInto": "Azumarill",
-    "tip": "begin in Bleak Beach en maak eerst Hydrated yellow tall grass. Controleer daarna tijd en weer voordat je voor Marill wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Hydrated yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Marill wacht."
   },
   {
     "number": 116,
     "name": "Azumarill",
     "type": [
-      "Water",
-      "Fairy"
+      "Water (Water)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2437,14 +2436,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Marill",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Dock. Controleer daarna tijd en weer voordat je voor Azumarill wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Steiger (Dock). Controleer daarna tijd en weer voordat je voor Azumarill wacht."
   },
   {
     "number": 117,
     "name": "Paldean Wooper",
     "type": [
-      "Poison",
-      "Ground"
+      "Gif (Poison)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2458,14 +2457,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Clodsire",
-    "tip": "begin in Bleak Beach en maak eerst Marshy tall grass. Controleer daarna tijd en weer voordat je voor Paldean Wooper wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Marshy Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Paldean Wooper wacht."
   },
   {
     "number": 118,
     "name": "Clodsire",
     "type": [
-      "Poison",
-      "Ground"
+      "Gif (Poison)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2480,13 +2479,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Paldean Wooper",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Marshy tall grass. Controleer daarna tijd en weer voordat je voor Clodsire wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Marshy Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Clodsire wacht."
   },
   {
     "number": 119,
     "name": "Smeargle",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2500,13 +2499,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Tiny Atelier. Controleer daarna tijd en weer voordat je voor Smeargle wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Klein atelier (Tiny Atelier). Controleer daarna tijd en weer voordat je voor Smeargle wacht."
   },
   {
     "number": 120,
     "name": "Torchic",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2520,14 +2519,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Combusken",
-    "tip": "begin in Bleak Beach en maak eerst Chirp-chirp meal. Controleer daarna tijd en weer voordat je voor Torchic wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Chirp-chirp meal. Controleer daarna tijd en weer voordat je voor Torchic wacht."
   },
   {
     "number": 121,
     "name": "Combusken",
     "type": [
-      "Fire",
-      "Fighting"
+      "Vuur (Fire)",
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2542,14 +2541,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Torchic",
     "evolvesInto": "Blaziken",
-    "tip": "begin in Bleak Beach en maak eerst Resort meal prep. Controleer daarna tijd en weer voordat je voor Combusken wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Resort meal prep. Controleer daarna tijd en weer voordat je voor Combusken wacht."
   },
   {
     "number": 122,
     "name": "Blaziken",
     "type": [
-      "Fire",
-      "Fighting"
+      "Vuur (Fire)",
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2564,14 +2563,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Combusken",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Chirp-chirp meal. Controleer daarna tijd en weer voordat je voor Blaziken wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Chirp-chirp meal. Controleer daarna tijd en weer voordat je voor Blaziken wacht."
   },
   {
     "number": 123,
     "name": "Wingull",
     "type": [
-      "Water",
-      "Flying"
+      "Water (Water)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2586,14 +2585,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pelipper",
-    "tip": "begin in Bleak Beach en maak eerst Elevated yellow tall grass. Controleer daarna tijd en weer voordat je voor Wingull wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Elevated yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Wingull wacht."
   },
   {
     "number": 124,
     "name": "Pelipper",
     "type": [
-      "Water",
-      "Flying"
+      "Water (Water)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2608,13 +2607,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Wingull",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Elevated yellow tall grass. Controleer daarna tijd en weer voordat je voor Pelipper wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Elevated yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Pelipper wacht."
   },
   {
     "number": 125,
     "name": "Makuhita",
     "type": [
-      "Fighting"
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2629,13 +2628,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Hariyama",
-    "tip": "begin in Bleak Beach en maak eerst Tree-shaded Yellow tall grass. Controleer daarna tijd en weer voordat je voor Makuhita wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Tree-shaded Yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Makuhita wacht."
   },
   {
     "number": 126,
     "name": "Hariyama",
     "type": [
-      "Fighting"
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2650,13 +2649,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Makuhita",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Tree-shaded Yellow tall grass. Controleer daarna tijd en weer voordat je voor Hariyama wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Tree-shaded Yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Hariyama wacht."
   },
   {
     "number": 127,
     "name": "Absol",
     "type": [
-      "Dark"
+      "Duister (Dark)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2670,13 +2669,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Welcoming resort. Controleer daarna tijd en weer voordat je voor Absol wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Welcoming resort. Controleer daarna tijd en weer voordat je voor Absol wacht."
   },
   {
     "number": 128,
     "name": "Piplup",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2690,13 +2689,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Prinplup",
-    "tip": "begin in Bleak Beach en maak eerst Hydrated yellow tall grass. Controleer daarna tijd en weer voordat je voor Piplup wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Hydrated yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Piplup wacht."
   },
   {
     "number": 129,
     "name": "Prinplup",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2711,14 +2710,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Piplup",
     "evolvesInto": "Empoleon",
-    "tip": "begin in Bleak Beach en maak eerst Hydrated yellow tall grass. Controleer daarna tijd en weer voordat je voor Prinplup wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Hydrated yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Prinplup wacht."
   },
   {
     "number": 130,
     "name": "Empoleon",
     "type": [
-      "Water",
-      "Steel"
+      "Water (Water)",
+      "Staal (Steel)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2733,13 +2732,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Prinplup",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Tableside delivery cart. Controleer daarna tijd en weer voordat je voor Empoleon wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Tableside delivery cart. Controleer daarna tijd en weer voordat je voor Empoleon wacht."
   },
   {
     "number": 131,
     "name": "Audino",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2753,13 +2752,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Working the register. Controleer daarna tijd en weer voordat je voor Audino wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Working the register. Controleer daarna tijd en weer voordat je voor Audino wacht."
   },
   {
     "number": 132,
     "name": "Trubbish",
     "type": [
-      "Poison"
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2773,13 +2772,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Garbodor",
-    "tip": "begin in Bleak Beach en maak eerst Trash collection site. Controleer daarna tijd en weer voordat je voor Trubbish wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Afvalverzamelplek (Trash Collection Site). Controleer daarna tijd en weer voordat je voor Trubbish wacht."
   },
   {
     "number": 133,
     "name": "Garbodor",
     "type": [
-      "Poison"
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2794,13 +2793,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Trubbish",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Trash collection site. Controleer daarna tijd en weer voordat je voor Garbodor wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Afvalverzamelplek (Trash Collection Site). Controleer daarna tijd en weer voordat je voor Garbodor wacht."
   },
   {
     "number": 134,
     "name": "Zorua",
     "type": [
-      "Dark"
+      "Duister (Dark)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2814,13 +2813,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Zoroark",
-    "tip": "begin in Bleak Beach en maak eerst Breezy flower bed. Controleer daarna tijd en weer voordat je voor Zorua wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Breezy flower bed. Controleer daarna tijd en weer voordat je voor Zorua wacht."
   },
   {
     "number": 135,
     "name": "Zoroark",
     "type": [
-      "Dark"
+      "Duister (Dark)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2835,13 +2834,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Zorua",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Breezy flower bed. Controleer daarna tijd en weer voordat je voor Zoroark wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Breezy flower bed. Controleer daarna tijd en weer voordat je voor Zoroark wacht."
   },
   {
     "number": 136,
     "name": "Minccino",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2855,13 +2854,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Cinccino",
-    "tip": "begin in Bleak Beach en maak eerst Changing area. Controleer daarna tijd en weer voordat je voor Minccino wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Changing area. Controleer daarna tijd en weer voordat je voor Minccino wacht."
   },
   {
     "number": 137,
     "name": "Cinccino",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2876,13 +2875,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Minccino",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Private makeup stand. Controleer daarna tijd en weer voordat je voor Cinccino wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Private makeup stand. Controleer daarna tijd en weer voordat je voor Cinccino wacht."
   },
   {
     "number": 138,
     "name": "Grubbin",
     "type": [
-      "Bug"
+      "Insect (Bug)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2896,14 +2895,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Charjabug",
-    "tip": "begin in Bleak Beach en maak eerst Yellow tall grass. Controleer daarna tijd en weer voordat je voor Grubbin wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Yellow Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Grubbin wacht."
   },
   {
     "number": 139,
     "name": "Charjabug",
     "type": [
-      "Bug",
-      "Electric"
+      "Insect (Bug)",
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2918,14 +2917,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Grubbin",
     "evolvesInto": "Vikavolt",
-    "tip": "begin in Bleak Beach en maak eerst Vending machine break area. Controleer daarna tijd en weer voordat je voor Charjabug wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Vending machine break area. Controleer daarna tijd en weer voordat je voor Charjabug wacht."
   },
   {
     "number": 140,
     "name": "Vikavolt",
     "type": [
-      "Bug",
-      "Electric"
+      "Insect (Bug)",
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2940,14 +2939,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Charjabug",
     "evolvesInto": "",
-    "tip": "begin in Withered Wastelands en maak eerst Tree-shaded flower bed. Controleer daarna tijd en weer voordat je voor Vikavolt wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Tree-shaded flower bed. Controleer daarna tijd en weer voordat je voor Vikavolt wacht."
   },
   {
     "number": 141,
     "name": "Mimikyu",
     "type": [
-      "Ghost",
-      "Fairy"
+      "Geest (Ghost)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2961,13 +2960,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Pikachu space. Controleer daarna tijd en weer voordat je voor Mimikyu wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Pikachu space. Controleer daarna tijd en weer voordat je voor Mimikyu wacht."
   },
   {
     "number": 142,
     "name": "Pawmi",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -2981,14 +2980,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pawmo",
-    "tip": "begin in Bleak Beach en maak eerst Breezy flower bed. Controleer daarna tijd en weer voordat je voor Pawmi wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Breezy flower bed. Controleer daarna tijd en weer voordat je voor Pawmi wacht."
   },
   {
     "number": 143,
     "name": "Pawmo",
     "type": [
-      "Electric",
-      "Fighting"
+      "Elektrisch (Electric)",
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3003,14 +3002,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pawmi",
     "evolvesInto": "Pawmot",
-    "tip": "begin in Bleak Beach en maak eerst Tantalizing restaurant. Controleer daarna tijd en weer voordat je voor Pawmo wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Tantalizing restaurant. Controleer daarna tijd en weer voordat je voor Pawmo wacht."
   },
   {
     "number": 144,
     "name": "Pawmot",
     "type": [
-      "Electric",
-      "Fighting"
+      "Elektrisch (Electric)",
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3025,14 +3024,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pawmo",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Café space. Controleer daarna tijd en weer voordat je voor Pawmot wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Café space. Controleer daarna tijd en weer voordat je voor Pawmot wacht."
   },
   {
     "number": 145,
     "name": "Tatsugiri",
     "type": [
-      "Dragon",
-      "Water"
+      "Draak (Dragon)",
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3046,13 +3045,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Bleak Beach en maak eerst Beach Set. Controleer daarna tijd en weer voordat je voor Tatsugiri wacht."
+    "tip": "Begin in Somber strand (Bleak Beach) en maak eerst Strandset (Beach Set). Controleer daarna tijd en weer voordat je voor Tatsugiri wacht."
   },
   {
     "number": 146,
     "name": "Ekans",
     "type": [
-      "Poison"
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3066,13 +3065,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Arbok",
-    "tip": "begin in Rocky Ridges en maak eerst Hydrated graceful flower bed. Controleer daarna tijd en weer voordat je voor Ekans wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Hydrated Sierlijk bloemenbed (Graceful Flower Bed). Controleer daarna tijd en weer voordat je voor Ekans wacht."
   },
   {
     "number": 147,
     "name": "Arbok",
     "type": [
-      "Poison"
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3086,13 +3085,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Ekans",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Hydrated graceful flower bed. Controleer daarna tijd en weer voordat je voor Arbok wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Hydrated Sierlijk bloemenbed (Graceful Flower Bed). Controleer daarna tijd en weer voordat je voor Arbok wacht."
   },
   {
     "number": 148,
     "name": "Cleffa",
     "type": [
-      "Fairy"
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3106,13 +3105,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Clefairy",
-    "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Cleffa wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Sierlijk bloemenbed (Graceful Flower Bed). Controleer daarna tijd en weer voordat je voor Cleffa wacht."
   },
   {
     "number": 149,
     "name": "Clefairy",
     "type": [
-      "Fairy"
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3126,13 +3125,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Cleffa",
     "evolvesInto": "Clefable",
-    "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Clefairy wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Sierlijk bloemenbed (Graceful Flower Bed). Controleer daarna tijd en weer voordat je voor Clefairy wacht."
   },
   {
     "number": 150,
     "name": "Clefable",
     "type": [
-      "Fairy"
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3147,14 +3146,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Clefairy",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Clefable wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Sierlijk bloemenbed (Graceful Flower Bed). Controleer daarna tijd en weer voordat je voor Clefable wacht."
   },
   {
     "number": 151,
     "name": "Igglybuff",
     "type": [
-      "Normal",
-      "Fairy"
+      "Normaal (Normal)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3168,14 +3167,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Jigglypuff",
-    "tip": "begin in Rocky Ridges en maak eerst Flower garden stump stage. Controleer daarna tijd en weer voordat je voor Igglybuff wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Bloementuin (Flower Garden) stump stage. Controleer daarna tijd en weer voordat je voor Igglybuff wacht."
   },
   {
     "number": 152,
     "name": "Jigglypuff",
     "type": [
-      "Normal",
-      "Fairy"
+      "Normaal (Normal)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3189,14 +3188,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Igglybuff",
     "evolvesInto": "Wigglytuff",
-    "tip": "begin in Rocky Ridges en maak eerst Flower garden stump stage. Controleer daarna tijd en weer voordat je voor Jigglypuff wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Bloementuin (Flower Garden) stump stage. Controleer daarna tijd en weer voordat je voor Jigglypuff wacht."
   },
   {
     "number": 153,
     "name": "Wigglytuff",
     "type": [
-      "Normal",
-      "Fairy"
+      "Normaal (Normal)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3211,13 +3210,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Jigglypuff",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Recital stage. Controleer daarna tijd en weer voordat je voor Wigglytuff wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Recital stage. Controleer daarna tijd en weer voordat je voor Wigglytuff wacht."
   },
   {
     "number": 154,
     "name": "Diglett",
     "type": [
-      "Ground"
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3231,13 +3230,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dugtrio",
-    "tip": "begin in Rocky Ridges en maak eerst Tree-shaded red tall grass. Controleer daarna tijd en weer voordat je voor Diglett wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Tree-shaded red Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Diglett wacht."
   },
   {
     "number": 155,
     "name": "Dugtrio",
     "type": [
-      "Ground"
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3252,13 +3251,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Diglett",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Tree-shaded red tall grass. Controleer daarna tijd en weer voordat je voor Dugtrio wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Tree-shaded red Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Dugtrio wacht."
   },
   {
     "number": 156,
     "name": "Machop",
     "type": [
-      "Fighting"
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3273,13 +3272,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Machoke",
-    "tip": "begin in Palette Town en maak eerst Boulder-shaded Tall Grass. Controleer daarna tijd en weer voordat je voor Machop wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Hoog gras in rotsschaduw (Boulder-shaded Hoog gras (Tall Grass)). Controleer daarna tijd en weer voordat je voor Machop wacht."
   },
   {
     "number": 157,
     "name": "Machoke",
     "type": [
-      "Fighting"
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3294,13 +3293,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Machop",
     "evolvesInto": "Machamp",
-    "tip": "begin in Rocky Ridges en maak eerst Grassy training field. Controleer daarna tijd en weer voordat je voor Machoke wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Grassy training field. Controleer daarna tijd en weer voordat je voor Machoke wacht."
   },
   {
     "number": 158,
     "name": "Machamp",
     "type": [
-      "Fighting"
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3315,14 +3314,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Machoke",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Grassy training field. Controleer daarna tijd en weer voordat je voor Machamp wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Grassy training field. Controleer daarna tijd en weer voordat je voor Machamp wacht."
   },
   {
     "number": 159,
     "name": "Geodude",
     "type": [
-      "Rock",
-      "Ground"
+      "Steen (Rock)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3336,14 +3335,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Graveler",
-    "tip": "begin in Palette Town en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Geodude wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Geodude wacht."
   },
   {
     "number": 160,
     "name": "Graveler",
     "type": [
-      "Rock",
-      "Ground"
+      "Steen (Rock)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3357,14 +3356,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Geodude",
     "evolvesInto": "Golem",
-    "tip": "begin in Rocky Ridges en maak eerst Mossy boulder. Controleer daarna tijd en weer voordat je voor Graveler wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Mossy boulder. Controleer daarna tijd en weer voordat je voor Graveler wacht."
   },
   {
     "number": 161,
     "name": "Golem",
     "type": [
-      "Rock",
-      "Ground"
+      "Steen (Rock)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3379,13 +3378,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Graveler",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Mossy boulder. Controleer daarna tijd en weer voordat je voor Golem wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Mossy boulder. Controleer daarna tijd en weer voordat je voor Golem wacht."
   },
   {
     "number": 162,
     "name": "Magby",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3399,13 +3398,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Magmar",
-    "tip": "begin in Withered Wastelands en maak eerst Pretty flower bed. Controleer daarna tijd en weer voordat je voor Magby wacht."
+    "tip": "Begin in Verdorde woestenij (Withered Wastelands) en maak eerst Mooi bloemenbed (Pretty Flower Bed). Controleer daarna tijd en weer voordat je voor Magby wacht."
   },
   {
     "number": 163,
     "name": "Magmar",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3419,13 +3418,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Magby",
     "evolvesInto": "Magmortar",
-    "tip": "begin in Rocky Ridges en maak eerst Digging and burning. Controleer daarna tijd en weer voordat je voor Magmar wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Digging and burning. Controleer daarna tijd en weer voordat je voor Magmar wacht."
   },
   {
     "number": 164,
     "name": "Magmortar",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3440,13 +3439,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Magmar",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Mini kitchen. Controleer daarna tijd en weer voordat je voor Magmortar wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Mini kitchen. Controleer daarna tijd en weer voordat je voor Magmortar wacht."
   },
   {
     "number": 165,
     "name": "Bonsly",
     "type": [
-      "Rock"
+      "Steen (Rock)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3460,13 +3459,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Sudowoodo",
-    "tip": "begin in Rocky Ridges en maak eerst Tree-shaded red tall grass. Controleer daarna tijd en weer voordat je voor Bonsly wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Tree-shaded red Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Bonsly wacht."
   },
   {
     "number": 166,
     "name": "Sudowoodo",
     "type": [
-      "Rock"
+      "Steen (Rock)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3480,14 +3479,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Bonsly",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Tree-shaded red tall grass. Controleer daarna tijd en weer voordat je voor Sudowoodo wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Tree-shaded red Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Sudowoodo wacht."
   },
   {
     "number": 167,
     "name": "Murkrow",
     "type": [
-      "Dark",
-      "Flying"
+      "Duister (Dark)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3502,14 +3501,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Honchkrow",
-    "tip": "begin in Rocky Ridges en maak eerst Elevated red tall grass. Controleer daarna tijd en weer voordat je voor Murkrow wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Elevated red Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Murkrow wacht."
   },
   {
     "number": 168,
     "name": "Honchkrow",
     "type": [
-      "Dark",
-      "Flying"
+      "Duister (Dark)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3524,14 +3523,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Murkrow",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Chirping recital. Controleer daarna tijd en weer voordat je voor Honchkrow wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Chirping recital. Controleer daarna tijd en weer voordat je voor Honchkrow wacht."
   },
   {
     "number": 169,
     "name": "Larvitar",
     "type": [
-      "Rock",
-      "Ground"
+      "Steen (Rock)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3546,14 +3545,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pupitar",
-    "tip": "begin in Rocky Ridges en maak eerst Mossy rest spot. Controleer daarna tijd en weer voordat je voor Larvitar wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Mossy rest spot. Controleer daarna tijd en weer voordat je voor Larvitar wacht."
   },
   {
     "number": 170,
     "name": "Pupitar",
     "type": [
-      "Rock",
-      "Ground"
+      "Steen (Rock)",
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3568,14 +3567,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Larvitar",
     "evolvesInto": "Tyranitar",
-    "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded pink tall grass. Controleer daarna tijd en weer voordat je voor Pupitar wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Tree-shaded pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Pupitar wacht."
   },
   {
     "number": 171,
     "name": "Tyranitar",
     "type": [
-      "Rock",
-      "Dark"
+      "Steen (Rock)",
+      "Duister (Dark)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3590,14 +3589,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pupitar",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Toil in the soil. Controleer daarna tijd en weer voordat je voor Tyranitar wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Toil in the soil. Controleer daarna tijd en weer voordat je voor Tyranitar wacht."
   },
   {
     "number": 172,
     "name": "Lotad",
     "type": [
-      "Water",
-      "Grass"
+      "Water (Water)",
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3611,14 +3610,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lombre",
-    "tip": "begin in Rocky Ridges en maak eerst Hydrated red tall grass. Controleer daarna tijd en weer voordat je voor Lotad wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Hydrated red Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Lotad wacht."
   },
   {
     "number": 173,
     "name": "Lombre",
     "type": [
-      "Water",
-      "Grass"
+      "Water (Water)",
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3632,14 +3631,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Lotad",
     "evolvesInto": "Ludicolo",
-    "tip": "begin in Rocky Ridges en maak eerst Hydrated red tall grass. Controleer daarna tijd en weer voordat je voor Lombre wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Hydrated red Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Lombre wacht."
   },
   {
     "number": 174,
     "name": "Ludicolo",
     "type": [
-      "Water",
-      "Grass"
+      "Water (Water)",
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3654,14 +3653,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Lombre",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Uplifting duckweed. Controleer daarna tijd en weer voordat je voor Ludicolo wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Uplifting duckweed. Controleer daarna tijd en weer voordat je voor Ludicolo wacht."
   },
   {
     "number": 175,
     "name": "Mawile",
     "type": [
-      "Steel",
-      "Fairy"
+      "Staal (Steel)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3676,13 +3675,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Palette Town en maak eerst Working the register. Controleer daarna tijd en weer voordat je voor Mawile wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Working the register. Controleer daarna tijd en weer voordat je voor Mawile wacht."
   },
   {
     "number": 176,
     "name": "Torkoal",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3696,13 +3695,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Mossy hot spring. Controleer daarna tijd en weer voordat je voor Torkoal wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Mossy hot spring. Controleer daarna tijd en weer voordat je voor Torkoal wacht."
   },
   {
     "number": 177,
     "name": "Kricketot",
     "type": [
-      "Bug"
+      "Insect (Bug)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3716,13 +3715,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kricketune",
-    "tip": "begin in Rocky Ridges en maak eerst Red tall grass. Controleer daarna tijd en weer voordat je voor Kricketot wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Red Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Kricketot wacht."
   },
   {
     "number": 178,
     "name": "Kricketune",
     "type": [
-      "Bug"
+      "Insect (Bug)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3736,14 +3735,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Kricketot",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Music and magazines. Controleer daarna tijd en weer voordat je voor Kricketune wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Music and magazines. Controleer daarna tijd en weer voordat je voor Kricketune wacht."
   },
   {
     "number": 179,
     "name": "Chatot",
     "type": [
-      "Normal",
-      "Flying"
+      "Normaal (Normal)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3758,13 +3757,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Elevated red tall grass. Controleer daarna tijd en weer voordat je voor Chatot wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Elevated red Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Chatot wacht."
   },
   {
     "number": 180,
     "name": "Riolu",
     "type": [
-      "Fighting"
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3778,14 +3777,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lucario",
-    "tip": "begin in Rocky Ridges en maak eerst Red tall grass. Controleer daarna tijd en weer voordat je voor Riolu wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Red Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Riolu wacht."
   },
   {
     "number": 181,
     "name": "Lucario",
     "type": [
-      "Fighting",
-      "Steel"
+      "Vecht (Fighting)",
+      "Staal (Steel)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3799,14 +3798,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Riolu",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Box to the rhythm. Controleer daarna tijd en weer voordat je voor Lucario wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Box to the rhythm. Controleer daarna tijd en weer voordat je voor Lucario wacht."
   },
   {
     "number": 182,
     "name": "Stereo Rotom",
     "type": [
-      "Electric",
-      "Normal"
+      "Elektrisch (Electric)",
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3820,14 +3819,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Music and magazines. Controleer daarna tijd en weer voordat je voor Stereo Rotom wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Music and magazines. Controleer daarna tijd en weer voordat je voor Stereo Rotom wacht."
   },
   {
     "number": 183,
     "name": "Larvesta",
     "type": [
-      "Bug",
-      "Fire"
+      "Insect (Bug)",
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3842,14 +3841,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Volcarona",
-    "tip": "begin in Rocky Ridges en maak eerst Tree-shaded graceful flower bed. Controleer daarna tijd en weer voordat je voor Larvesta wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Tree-shaded Sierlijk bloemenbed (Graceful Flower Bed). Controleer daarna tijd en weer voordat je voor Larvesta wacht."
   },
   {
     "number": 184,
     "name": "Volcarona",
     "type": [
-      "Bug",
-      "Fire"
+      "Insect (Bug)",
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3864,14 +3863,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Larvesta",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Tree-shaded graceful flower bed. Controleer daarna tijd en weer voordat je voor Volcarona wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Tree-shaded Sierlijk bloemenbed (Graceful Flower Bed). Controleer daarna tijd en weer voordat je voor Volcarona wacht."
   },
   {
     "number": 185,
     "name": "Rowlet",
     "type": [
-      "Grass",
-      "Flying"
+      "Gras (Grass)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3885,14 +3884,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dartrix",
-    "tip": "begin in Palette Town en maak eerst Fresh Veggie Field. Controleer daarna tijd en weer voordat je voor Rowlet wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Vers groenteveld (Fresh Veggie Field). Controleer daarna tijd en weer voordat je voor Rowlet wacht."
   },
   {
     "number": 186,
     "name": "Dartrix",
     "type": [
-      "Grass",
-      "Flying"
+      "Gras (Grass)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3907,14 +3906,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Rowlet",
     "evolvesInto": "Decidueye",
-    "tip": "begin in Rocky Ridges en maak eerst Pointy tree-shaded rocky tall grass. Controleer daarna tijd en weer voordat je voor Dartrix wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Pointy tree-shaded rocky Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Dartrix wacht."
   },
   {
     "number": 187,
     "name": "Decidueye",
     "type": [
-      "Grass",
-      "Ghost"
+      "Gras (Grass)",
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3929,13 +3928,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dartrix",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Pointy tree-shaded rocky tall grass. Controleer daarna tijd en weer voordat je voor Decidueye wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Pointy tree-shaded rocky Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Decidueye wacht."
   },
   {
     "number": 188,
     "name": "Scorbunny",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3949,13 +3948,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Raboot",
-    "tip": "begin in Rocky Ridges en maak eerst Red tall grass. Controleer daarna tijd en weer voordat je voor Scorbunny wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Red Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Scorbunny wacht."
   },
   {
     "number": 189,
     "name": "Raboot",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3969,13 +3968,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Scorbunny",
     "evolvesInto": "Cinderace",
-    "tip": "begin in Rocky Ridges en maak eerst Open-air bath. Controleer daarna tijd en weer voordat je voor Raboot wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Open-air bath. Controleer daarna tijd en weer voordat je voor Raboot wacht."
   },
   {
     "number": 190,
     "name": "Cinderace",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -3990,13 +3989,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Raboot",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Red tall grass. Controleer daarna tijd en weer voordat je voor Cinderace wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Red Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Cinderace wacht."
   },
   {
     "number": 191,
     "name": "Skwovet",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4011,13 +4010,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Greedent",
-    "tip": "begin in Palette Town en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Skwovet wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Tree-shaded  Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Skwovet wacht."
   },
   {
     "number": 192,
     "name": "Greedent",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4031,13 +4030,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Skwovet",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Chef's kitchen. Controleer daarna tijd en weer voordat je voor Greedent wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Chef's kitchen. Controleer daarna tijd en weer voordat je voor Greedent wacht."
   },
   {
     "number": 193,
     "name": "Rolycoly",
     "type": [
-      "Rock"
+      "Steen (Rock)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4052,14 +4051,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Carkol",
-    "tip": "begin in Rocky Ridges en maak eerst Railroad crossing. Controleer daarna tijd en weer voordat je voor Rolycoly wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Railroad crossing. Controleer daarna tijd en weer voordat je voor Rolycoly wacht."
   },
   {
     "number": 194,
     "name": "Carkol",
     "type": [
-      "Rock",
-      "Fire"
+      "Steen (Rock)",
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4074,14 +4073,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Rolycoly",
     "evolvesInto": "Coalossal",
-    "tip": "begin in Rocky Ridges en maak eerst Railroad crossing. Controleer daarna tijd en weer voordat je voor Carkol wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Railroad crossing. Controleer daarna tijd en weer voordat je voor Carkol wacht."
   },
   {
     "number": 195,
     "name": "Coalossal",
     "type": [
-      "Rock",
-      "Fire"
+      "Steen (Rock)",
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4096,14 +4095,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Carkol",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Railroad crossing. Controleer daarna tijd en weer voordat je voor Coalossal wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Railroad crossing. Controleer daarna tijd en weer voordat je voor Coalossal wacht."
   },
   {
     "number": 196,
     "name": "Toxel",
     "type": [
-      "Electric",
-      "Poison"
+      "Elektrisch (Electric)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4117,14 +4116,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Toxtricity",
-    "tip": "begin in Rocky Ridges en maak eerst Lazy-photo album scrolling. Controleer daarna tijd en weer voordat je voor Toxel wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Lazy-photo album scrolling. Controleer daarna tijd en weer voordat je voor Toxel wacht."
   },
   {
     "number": 197,
     "name": "Toxtricity",
     "type": [
-      "Electric",
-      "Poison"
+      "Elektrisch (Electric)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4139,13 +4138,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Toxel",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Amped rock stage. Controleer daarna tijd en weer voordat je voor Toxtricity wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Amped rock stage. Controleer daarna tijd en weer voordat je voor Toxtricity wacht."
   },
   {
     "number": 198,
     "name": "Fidough",
     "type": [
-      "Fairy"
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4159,13 +4158,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dachsbun",
-    "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Fidough wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Sierlijk bloemenbed (Graceful Flower Bed). Controleer daarna tijd en weer voordat je voor Fidough wacht."
   },
   {
     "number": 199,
     "name": "Dachsbun",
     "type": [
-      "Fairy"
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4180,13 +4179,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Fidough",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Dachsbun wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Sierlijk bloemenbed (Graceful Flower Bed). Controleer daarna tijd en weer voordat je voor Dachsbun wacht."
   },
   {
     "number": 200,
     "name": "Charcadet",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4200,14 +4199,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Armarouge / Ceruledge",
-    "tip": "begin in Rocky Ridges en maak eerst Piping-hot lava. Controleer daarna tijd en weer voordat je voor Charcadet wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Piping-hot lava. Controleer daarna tijd en weer voordat je voor Charcadet wacht."
   },
   {
     "number": 201,
     "name": "Armarouge",
     "type": [
-      "Fire",
-      "Psychic"
+      "Vuur (Fire)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4221,14 +4220,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Charcadet",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Auspicious knight's shrine. Controleer daarna tijd en weer voordat je voor Armarouge wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Auspicious knight's shrine. Controleer daarna tijd en weer voordat je voor Armarouge wacht."
   },
   {
     "number": 202,
     "name": "Ceruledge",
     "type": [
-      "Fire",
-      "Ghost"
+      "Vuur (Fire)",
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4242,14 +4241,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Charcadet",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Malicious knight's shrine. Controleer daarna tijd en weer voordat je voor Ceruledge wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Malicious knight's shrine. Controleer daarna tijd en weer voordat je voor Ceruledge wacht."
   },
   {
     "number": 203,
     "name": "Glimmet",
     "type": [
-      "Rock",
-      "Poison"
+      "Steen (Rock)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4263,14 +4262,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Glimmora",
-    "tip": "begin in Rocky Ridges en maak eerst Creepy white rocks. Controleer daarna tijd en weer voordat je voor Glimmet wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Creepy white rocks. Controleer daarna tijd en weer voordat je voor Glimmet wacht."
   },
   {
     "number": 204,
     "name": "Glimmora",
     "type": [
-      "Rock",
-      "Poison"
+      "Steen (Rock)",
+      "Gif (Poison)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4284,13 +4283,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Glimmet",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Creepy white rocks. Controleer daarna tijd en weer voordat je voor Glimmora wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Creepy white rocks. Controleer daarna tijd en weer voordat je voor Glimmora wacht."
   },
   {
     "number": 205,
     "name": "Gimmighoul",
     "type": [
-      "Ghost"
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4304,14 +4303,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gholdengo",
-    "tip": "begin in Rocky Ridges en maak eerst Mini museum. Controleer daarna tijd en weer voordat je voor Gimmighoul wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Mini museum. Controleer daarna tijd en weer voordat je voor Gimmighoul wacht."
   },
   {
     "number": 206,
     "name": "Gholdengo",
     "type": [
-      "Steel",
-      "Ghost"
+      "Staal (Steel)",
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4325,13 +4324,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gimmighoul",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Absolute luxury. Controleer daarna tijd en weer voordat je voor Gholdengo wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Absolute luxury. Controleer daarna tijd en weer voordat je voor Gholdengo wacht."
   },
   {
     "number": 207,
     "name": "Vulpix",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4345,13 +4344,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Ninetales",
-    "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Vulpix wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Vulpix wacht."
   },
   {
     "number": 208,
     "name": "Ninetales",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4365,13 +4364,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Vulpix",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Ninetales wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Ninetales wacht."
   },
   {
     "number": 209,
     "name": "Poliwag",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4385,13 +4384,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Poliwhirl",
-    "tip": "begin in Sparkling Skylands en maak eerst Squeaky clean. Controleer daarna tijd en weer voordat je voor Poliwag wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Squeaky clean. Controleer daarna tijd en weer voordat je voor Poliwag wacht."
   },
   {
     "number": 210,
     "name": "Poliwhirl",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4405,14 +4404,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Poliwag",
     "evolvesInto": "Poliwrath / Politoed",
-    "tip": "begin in Sparkling Skylands en maak eerst Hydrated fluffy flower bed. Controleer daarna tijd en weer voordat je voor Poliwhirl wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Hydrated fluffy flower bed. Controleer daarna tijd en weer voordat je voor Poliwhirl wacht."
   },
   {
     "number": 211,
     "name": "Poliwrath",
     "type": [
-      "Water",
-      "Fighting"
+      "Water (Water)",
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4427,13 +4426,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Poliwhirl",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Sewer hole inspection. Controleer daarna tijd en weer voordat je voor Poliwrath wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Sewer hole inspection. Controleer daarna tijd en weer voordat je voor Poliwrath wacht."
   },
   {
     "number": 212,
     "name": "Politoed",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4448,13 +4447,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Poliwhirl",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Hydrated graceful flower bed. Controleer daarna tijd en weer voordat je voor Politoed wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Hydrated Sierlijk bloemenbed (Graceful Flower Bed). Controleer daarna tijd en weer voordat je voor Politoed wacht."
   },
   {
     "number": 213,
     "name": "Abra",
     "type": [
-      "Psychic"
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4468,13 +4467,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kadabra",
-    "tip": "begin in Sparkling Skylands en maak eerst Surging psychic power. Controleer daarna tijd en weer voordat je voor Abra wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Surging psychic power. Controleer daarna tijd en weer voordat je voor Abra wacht."
   },
   {
     "number": 214,
     "name": "Kadabra",
     "type": [
-      "Psychic"
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4488,13 +4487,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Abra",
     "evolvesInto": "Alakazam",
-    "tip": "begin in Sparkling Skylands en maak eerst Fortune-teller's table. Controleer daarna tijd en weer voordat je voor Kadabra wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Fortune-teller's table. Controleer daarna tijd en weer voordat je voor Kadabra wacht."
   },
   {
     "number": 215,
     "name": "Alakazam",
     "type": [
-      "Psychic"
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4509,14 +4508,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Kadabra",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Surging psychic power. Controleer daarna tijd en weer voordat je voor Alakazam wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Surging psychic power. Controleer daarna tijd en weer voordat je voor Alakazam wacht."
   },
   {
     "number": 216,
     "name": "Mime Jr.",
     "type": [
-      "Psychic",
-      "Fairy"
+      "Psychisch (Psychic)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4531,14 +4530,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Mr. Mime",
-    "tip": "controleer eerst de habitat- en locatievoorwaarden voor Mime Jr. voordat je materialen uitgeeft."
+    "tip": "Controleer eerst de habitat- en locatievoorwaarden voor Mime Jr. voordat je materialen uitgeeft."
   },
   {
     "number": 217,
     "name": "Mr. Mime",
     "type": [
-      "Psychic",
-      "Fairy"
+      "Psychisch (Psychic)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4553,13 +4552,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Mime Jr.",
     "evolvesInto": "",
-    "tip": "controleer eerst de habitat- en locatievoorwaarden voor Mr. Mime voordat je materialen uitgeeft."
+    "tip": "Controleer eerst de habitat- en locatievoorwaarden voor Mr. Mime voordat je materialen uitgeeft."
   },
   {
     "number": 218,
     "name": "Porygon",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4573,13 +4572,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Porygon2",
-    "tip": "begin in Sparkling Skylands en maak eerst Researcher's desk. Controleer daarna tijd en weer voordat je voor Porygon wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Researcher's desk. Controleer daarna tijd en weer voordat je voor Porygon wacht."
   },
   {
     "number": 219,
     "name": "Porygon2",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4593,13 +4592,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Porygon",
     "evolvesInto": "Porygon-Z",
-    "tip": "begin in Sparkling Skylands en maak eerst Work desk. Controleer daarna tijd en weer voordat je voor Porygon2 wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Work desk. Controleer daarna tijd en weer voordat je voor Porygon2 wacht."
   },
   {
     "number": 220,
     "name": "Porygon-Z",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4613,13 +4612,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Porygon2",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Game Corner battle zone. Controleer daarna tijd en weer voordat je voor Porygon-Z wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Game Corner battle zone. Controleer daarna tijd en weer voordat je voor Porygon-Z wacht."
   },
   {
     "number": 221,
     "name": "Dratini",
     "type": [
-      "Dragon"
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4633,13 +4632,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dragonair",
-    "tip": "begin in Sparkling Skylands en maak eerst Hydrated fluffy flower bed. Controleer daarna tijd en weer voordat je voor Dratini wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Hydrated fluffy flower bed. Controleer daarna tijd en weer voordat je voor Dratini wacht."
   },
   {
     "number": 222,
     "name": "Dragonair",
     "type": [
-      "Dragon"
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4653,14 +4652,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dratini",
     "evolvesInto": "Dragonite",
-    "tip": "begin in Sparkling Skylands en maak eerst Hydrated fluffy flower bed. Controleer daarna tijd en weer voordat je voor Dragonair wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Hydrated fluffy flower bed. Controleer daarna tijd en weer voordat je voor Dragonair wacht."
   },
   {
     "number": 223,
     "name": "Dragonite",
     "type": [
-      "Dragon",
-      "Flying"
+      "Draak (Dragon)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4675,13 +4674,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dragonair",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Waterside dinghy. Controleer daarna tijd en weer voordat je voor Dragonite wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Waterside dinghy. Controleer daarna tijd en weer voordat je voor Dragonite wacht."
   },
   {
     "number": 224,
     "name": "Cyndaquil",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4695,13 +4694,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Quilava",
-    "tip": "begin in Sparkling Skylands en maak eerst Concrete pipe secret base. Controleer daarna tijd en weer voordat je voor Cyndaquil wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Concrete pipe secret base. Controleer daarna tijd en weer voordat je voor Cyndaquil wacht."
   },
   {
     "number": 225,
     "name": "Quilava",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4715,13 +4714,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Cyndaquil",
     "evolvesInto": "Typhlosion",
-    "tip": "begin in Sparkling Skylands en maak eerst Concrete pipe secret base. Controleer daarna tijd en weer voordat je voor Quilava wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Concrete pipe secret base. Controleer daarna tijd en weer voordat je voor Quilava wacht."
   },
   {
     "number": 226,
     "name": "Typhlosion",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4736,13 +4735,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Quilava",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Fireplace nap spot. Controleer daarna tijd en weer voordat je voor Typhlosion wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Fireplace nap spot. Controleer daarna tijd en weer voordat je voor Typhlosion wacht."
   },
   {
     "number": 227,
     "name": "Misdreavus",
     "type": [
-      "Ghost"
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4756,13 +4755,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Mismagius",
-    "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Misdreavus wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Misdreavus wacht."
   },
   {
     "number": 228,
     "name": "Mismagius",
     "type": [
-      "Ghost"
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4777,14 +4776,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Misdreavus",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Mismagius wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Mismagius wacht."
   },
   {
     "number": 229,
     "name": "Girafarig",
     "type": [
-      "Normal",
-      "Psychic"
+      "Normaal (Normal)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4798,14 +4797,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Farigiraf",
-    "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Girafarig wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Girafarig wacht."
   },
   {
     "number": 230,
     "name": "Farigiraf",
     "type": [
-      "Normal",
-      "Psychic"
+      "Normaal (Normal)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4820,14 +4819,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Girafarig",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Farigiraf wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Farigiraf wacht."
   },
   {
     "number": 231,
     "name": "Ralts",
     "type": [
-      "Psychic",
-      "Fairy"
+      "Psychisch (Psychic)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4841,14 +4840,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kirlia",
-    "tip": "begin in Sparkling Skylands en maak eerst Study Area. Controleer daarna tijd en weer voordat je voor Ralts wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Studeerplek (Study Area). Controleer daarna tijd en weer voordat je voor Ralts wacht."
   },
   {
     "number": 232,
     "name": "Kirlia",
     "type": [
-      "Psychic",
-      "Fairy"
+      "Psychisch (Psychic)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4862,14 +4861,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Ralts",
     "evolvesInto": "Gardevoir / Gallade",
-    "tip": "begin in Sparkling Skylands en maak eerst Study Area. Controleer daarna tijd en weer voordat je voor Kirlia wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Studeerplek (Study Area). Controleer daarna tijd en weer voordat je voor Kirlia wacht."
   },
   {
     "number": 233,
     "name": "Gardevoir",
     "type": [
-      "Psychic",
-      "Fairy"
+      "Psychisch (Psychic)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4884,14 +4883,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Kirlia",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Moisturizing makeup stand. Controleer daarna tijd en weer voordat je voor Gardevoir wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Moisturizing makeup stand. Controleer daarna tijd en weer voordat je voor Gardevoir wacht."
   },
   {
     "number": 234,
     "name": "Gallade",
     "type": [
-      "Psychic",
-      "Fighting"
+      "Psychisch (Psychic)",
+      "Vecht (Fighting)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4906,13 +4905,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Kirlia",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Dojo training. Controleer daarna tijd en weer voordat je voor Gallade wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Dojo training. Controleer daarna tijd en weer voordat je voor Gallade wacht."
   },
   {
     "number": 235,
     "name": "Plusle",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4926,13 +4925,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Picturesque photo cutout board. Controleer daarna tijd en weer voordat je voor Plusle wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Picturesque photo cutout board. Controleer daarna tijd en weer voordat je voor Plusle wacht."
   },
   {
     "number": 236,
     "name": "Minun",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4946,13 +4945,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Picturesque photo cutout board. Controleer daarna tijd en weer voordat je voor Minun wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Picturesque photo cutout board. Controleer daarna tijd en weer voordat je voor Minun wacht."
   },
   {
     "number": 237,
     "name": "Trapinch",
     "type": [
-      "Ground"
+      "Grond (Ground)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4967,14 +4966,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Vibrava",
-    "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Trapinch wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Trapinch wacht."
   },
   {
     "number": 238,
     "name": "Vibrava",
     "type": [
-      "Ground",
-      "Dragon"
+      "Grond (Ground)",
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -4989,14 +4988,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Trapinch",
     "evolvesInto": "Flygon",
-    "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Vibrava wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Vibrava wacht."
   },
   {
     "number": 239,
     "name": "Flygon",
     "type": [
-      "Ground",
-      "Dragon"
+      "Grond (Ground)",
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5011,14 +5010,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Vibrava",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Flygon wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Flygon wacht."
   },
   {
     "number": 240,
     "name": "Swablu",
     "type": [
-      "Normal",
-      "Flying"
+      "Normaal (Normal)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5032,14 +5031,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Altaria",
-    "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Swablu wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Swablu wacht."
   },
   {
     "number": 241,
     "name": "Altaria",
     "type": [
-      "Dragon",
-      "Flying"
+      "Draak (Dragon)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5054,13 +5053,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Swablu",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Birdsong garden. Controleer daarna tijd en weer voordat je voor Altaria wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Birdsong garden. Controleer daarna tijd en weer voordat je voor Altaria wacht."
   },
   {
     "number": 242,
     "name": "Duskull",
     "type": [
-      "Ghost"
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5074,13 +5073,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dusclops",
-    "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Duskull wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Duskull wacht."
   },
   {
     "number": 243,
     "name": "Dusclops",
     "type": [
-      "Ghost"
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5094,13 +5093,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Duskull",
     "evolvesInto": "Dusknoir",
-    "tip": "begin in Sparkling Skylands en maak eerst Trash site TV. Controleer daarna tijd en weer voordat je voor Dusclops wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Trash site TV. Controleer daarna tijd en weer voordat je voor Dusclops wacht."
   },
   {
     "number": 244,
     "name": "Dusknoir",
     "type": [
-      "Ghost"
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5115,14 +5114,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dusclops",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Trash site TV. Controleer daarna tijd en weer voordat je voor Dusknoir wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Trash site TV. Controleer daarna tijd en weer voordat je voor Dusknoir wacht."
   },
   {
     "number": 245,
     "name": "Beldum",
     "type": [
-      "Steel",
-      "Psychic"
+      "Staal (Steel)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5136,14 +5135,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Metang",
-    "tip": "begin in Sparkling Skylands en maak eerst Cycling rest stop. Controleer daarna tijd en weer voordat je voor Beldum wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Cycling rest stop. Controleer daarna tijd en weer voordat je voor Beldum wacht."
   },
   {
     "number": 246,
     "name": "Metang",
     "type": [
-      "Steel",
-      "Psychic"
+      "Staal (Steel)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5157,14 +5156,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Beldum",
     "evolvesInto": "Metagross",
-    "tip": "begin in Sparkling Skylands en maak eerst Professor's apprentice program. Controleer daarna tijd en weer voordat je voor Metang wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Professor's apprentice program. Controleer daarna tijd en weer voordat je voor Metang wacht."
   },
   {
     "number": 247,
     "name": "Metagross",
     "type": [
-      "Steel",
-      "Psychic"
+      "Staal (Steel)",
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5179,13 +5178,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Metang",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Gamer's paradise. Controleer daarna tijd en weer voordat je voor Metagross wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Gamer's paradise. Controleer daarna tijd en weer voordat je voor Metagross wacht."
   },
   {
     "number": 248,
     "name": "Snivy",
     "type": [
-      "Grass"
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5200,13 +5199,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Servine",
-    "tip": "begin in Sparkling Skylands en maak eerst Playland. Controleer daarna tijd en weer voordat je voor Snivy wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Speelpark (Playland). Controleer daarna tijd en weer voordat je voor Snivy wacht."
   },
   {
     "number": 249,
     "name": "Servine",
     "type": [
-      "Grass"
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5221,13 +5220,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Snivy",
     "evolvesInto": "Serperior",
-    "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Servine wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Servine wacht."
   },
   {
     "number": 250,
     "name": "Serperior",
     "type": [
-      "Grass"
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5242,13 +5241,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Servine",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Serperior wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Serperior wacht."
   },
   {
     "number": 251,
     "name": "Froakie",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5262,13 +5261,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Frogadier",
-    "tip": "begin in Sparkling Skylands en maak eerst Hydrated pink tall grass. Controleer daarna tijd en weer voordat je voor Froakie wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Hydrated pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Froakie wacht."
   },
   {
     "number": 252,
     "name": "Frogadier",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5282,14 +5281,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Froakie",
     "evolvesInto": "Greninja",
-    "tip": "begin in Sparkling Skylands en maak eerst Hydrated pink tall grass. Controleer daarna tijd en weer voordat je voor Frogadier wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Hydrated pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Frogadier wacht."
   },
   {
     "number": 253,
     "name": "Greninja",
     "type": [
-      "Water",
-      "Dark"
+      "Water (Water)",
+      "Duister (Dark)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5304,14 +5303,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Frogadier",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Hydrated pink tall grass. Controleer daarna tijd en weer voordat je voor Greninja wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Hydrated pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Greninja wacht."
   },
   {
     "number": 254,
     "name": "Dedenne",
     "type": [
-      "Electric",
-      "Fairy"
+      "Elektrisch (Electric)",
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5325,14 +5324,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Tire Park. Controleer daarna tijd en weer voordat je voor Dedenne wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Bandenpark (Tire Park). Controleer daarna tijd en weer voordat je voor Dedenne wacht."
   },
   {
     "number": 255,
     "name": "Noibat",
     "type": [
-      "Flying",
-      "Dragon"
+      "Vliegend (Flying)",
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5346,14 +5345,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Noivern",
-    "tip": "begin in Sparkling Skylands en maak eerst Rhythmic Living room. Controleer daarna tijd en weer voordat je voor Noibat wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Rhythmic Living room. Controleer daarna tijd en weer voordat je voor Noibat wacht."
   },
   {
     "number": 256,
     "name": "Noivern",
     "type": [
-      "Flying",
-      "Dragon"
+      "Vliegend (Flying)",
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5368,13 +5367,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Noibat",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Rhythmic Living room. Controleer daarna tijd en weer voordat je voor Noivern wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Rhythmic Living room. Controleer daarna tijd en weer voordat je voor Noivern wacht."
   },
   {
     "number": 257,
     "name": "Rookidee",
     "type": [
-      "Flying"
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5388,13 +5387,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Corvisquire",
-    "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Rookidee wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Rookidee wacht."
   },
   {
     "number": 258,
     "name": "Corvisquire",
     "type": [
-      "Flying"
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5408,14 +5407,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Rookidee",
     "evolvesInto": "Corviknight",
-    "tip": "begin in Sparkling Skylands en maak eerst Elevated pink tall grass. Controleer daarna tijd en weer voordat je voor Corvisquire wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Elevated pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Corvisquire wacht."
   },
   {
     "number": 259,
     "name": "Corviknight",
     "type": [
-      "Flying",
-      "Steel"
+      "Vliegend (Flying)",
+      "Staal (Steel)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5430,14 +5429,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Corvisquire",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Elevated pink tall grass. Controleer daarna tijd en weer voordat je voor Corviknight wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Elevated pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Corviknight wacht."
   },
   {
     "number": 260,
     "name": "Dreepy",
     "type": [
-      "Dragon",
-      "Ghost"
+      "Draak (Dragon)",
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5452,14 +5451,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Drakloak",
-    "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded pink tall grass. Controleer daarna tijd en weer voordat je voor Dreepy wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Tree-shaded pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Dreepy wacht."
   },
   {
     "number": 261,
     "name": "Drakloak",
     "type": [
-      "Dragon",
-      "Ghost"
+      "Draak (Dragon)",
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5474,14 +5473,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dreepy",
     "evolvesInto": "Dragapult",
-    "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded pink tall grass. Controleer daarna tijd en weer voordat je voor Drakloak wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Tree-shaded pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Drakloak wacht."
   },
   {
     "number": 262,
     "name": "Dragapult",
     "type": [
-      "Dragon",
-      "Ghost"
+      "Draak (Dragon)",
+      "Geest (Ghost)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5496,13 +5495,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Drakloak",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Office storeroom. Controleer daarna tijd en weer voordat je voor Dragapult wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Office storeroom. Controleer daarna tijd en weer voordat je voor Dragapult wacht."
   },
   {
     "number": 263,
     "name": "Sprigatito",
     "type": [
-      "Grass"
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5516,13 +5515,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Floragato",
-    "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded pink tall grass. Controleer daarna tijd en weer voordat je voor Sprigatito wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Tree-shaded pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Sprigatito wacht."
   },
   {
     "number": 264,
     "name": "Floragato",
     "type": [
-      "Grass"
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5536,14 +5535,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Sprigatito",
     "evolvesInto": "Meowscarada",
-    "tip": "begin in Sparkling Skylands en maak eerst Interrogation desk. Controleer daarna tijd en weer voordat je voor Floragato wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Interrogation desk. Controleer daarna tijd en weer voordat je voor Floragato wacht."
   },
   {
     "number": 265,
     "name": "Meowscarada",
     "type": [
-      "Grass",
-      "Dark"
+      "Gras (Grass)",
+      "Duister (Dark)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5558,14 +5557,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Floragato",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Heart-pounding surprise box. Controleer daarna tijd en weer voordat je voor Meowscarada wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Heart-pounding surprise box. Controleer daarna tijd en weer voordat je voor Meowscarada wacht."
   },
   {
     "number": 266,
     "name": "Wattrel",
     "type": [
-      "Electric",
-      "Flying"
+      "Elektrisch (Electric)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5579,14 +5578,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kilowattrel",
-    "tip": "begin in Sparkling Skylands en maak eerst Elevated pink tall grass. Controleer daarna tijd en weer voordat je voor Wattrel wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Elevated pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Wattrel wacht."
   },
   {
     "number": 267,
     "name": "Kilowattrel",
     "type": [
-      "Electric",
-      "Flying"
+      "Elektrisch (Electric)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5601,14 +5600,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Wattrel",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Elevated pink tall grass. Controleer daarna tijd en weer voordat je voor Kilowattrel wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Elevated pink Hoog gras (Tall Grass). Controleer daarna tijd en weer voordat je voor Kilowattrel wacht."
   },
   {
     "number": 268,
     "name": "Tinkatink",
     "type": [
-      "Fairy",
-      "Steel"
+      "Fee (Fairy)",
+      "Staal (Steel)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5622,14 +5621,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Tinkatuff",
-    "tip": "begin in Palette Town en maak eerst Large luggage carrier. Controleer daarna tijd en weer voordat je voor Tinkatink wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Large luggage carrier. Controleer daarna tijd en weer voordat je voor Tinkatink wacht."
   },
   {
     "number": 269,
     "name": "Tinkatuff",
     "type": [
-      "Fairy",
-      "Steel"
+      "Fee (Fairy)",
+      "Staal (Steel)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5643,14 +5642,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tinkatink",
     "evolvesInto": "Tinkaton",
-    "tip": "begin in Palette Town en maak eerst Large luggage carrier. Controleer daarna tijd en weer voordat je voor Tinkatuff wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Large luggage carrier. Controleer daarna tijd en weer voordat je voor Tinkatuff wacht."
   },
   {
     "number": 270,
     "name": "Tinkaton",
     "type": [
-      "Fairy",
-      "Steel"
+      "Fee (Fairy)",
+      "Staal (Steel)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5664,14 +5663,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tinkatuff",
     "evolvesInto": "",
-    "tip": "begin in Sparkling Skylands en maak eerst Oversized dumping ground. Controleer daarna tijd en weer voordat je voor Tinkaton wacht."
+    "tip": "Begin in Fonkelende hemellanden (Sparkling Skylands) en maak eerst Oversized dumping ground. Controleer daarna tijd en weer voordat je voor Tinkaton wacht."
   },
   {
     "number": 271,
     "name": "Aerodactyl",
     "type": [
-      "Rock",
-      "Flying"
+      "Steen (Rock)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5685,13 +5684,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Wing Fossil Display. Controleer daarna tijd en weer voordat je voor Aerodactyl wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Vleugelfossiel-display (Wing Fossil Display). Controleer daarna tijd en weer voordat je voor Aerodactyl wacht."
   },
   {
     "number": 272,
     "name": "Cranidos",
     "type": [
-      "Rock"
+      "Steen (Rock)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5705,13 +5704,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Rampardos",
-    "tip": "begin in Rocky Ridges en maak eerst Skull Fossil display. Controleer daarna tijd en weer voordat je voor Cranidos wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Skull Fossil display. Controleer daarna tijd en weer voordat je voor Cranidos wacht."
   },
   {
     "number": 273,
     "name": "Rampardos",
     "type": [
-      "Rock"
+      "Steen (Rock)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5726,14 +5725,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Cranidos",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Headbutt Fossil display. Controleer daarna tijd en weer voordat je voor Rampardos wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Headbutt Fossil display. Controleer daarna tijd en weer voordat je voor Rampardos wacht."
   },
   {
     "number": 274,
     "name": "Shieldon",
     "type": [
-      "Rock",
-      "Steel"
+      "Steen (Rock)",
+      "Staal (Steel)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5747,14 +5746,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Bastiodon",
-    "tip": "begin in Rocky Ridges en maak eerst Armor Fossil display. Controleer daarna tijd en weer voordat je voor Shieldon wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Armor Fossil display. Controleer daarna tijd en weer voordat je voor Shieldon wacht."
   },
   {
     "number": 275,
     "name": "Bastiodon",
     "type": [
-      "Rock",
-      "Steel"
+      "Steen (Rock)",
+      "Staal (Steel)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5769,14 +5768,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Shieldon",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Shield Fossil display. Controleer daarna tijd en weer voordat je voor Bastiodon wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Shield Fossil display. Controleer daarna tijd en weer voordat je voor Bastiodon wacht."
   },
   {
     "number": 276,
     "name": "Tyrunt",
     "type": [
-      "Rock",
-      "Dragon"
+      "Steen (Rock)",
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5790,14 +5789,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Tyrantrum",
-    "tip": "begin in Rocky Ridges en maak eerst Jaw Fossil display. Controleer daarna tijd en weer voordat je voor Tyrunt wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Jaw Fossil display. Controleer daarna tijd en weer voordat je voor Tyrunt wacht."
   },
   {
     "number": 277,
     "name": "Tyrantrum",
     "type": [
-      "Rock",
-      "Dragon"
+      "Steen (Rock)",
+      "Draak (Dragon)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5812,14 +5811,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tyrunt",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Despot fossil display. Controleer daarna tijd en weer voordat je voor Tyrantrum wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Despot fossil display. Controleer daarna tijd en weer voordat je voor Tyrantrum wacht."
   },
   {
     "number": 278,
     "name": "Amaura",
     "type": [
-      "Rock",
-      "Ice"
+      "Steen (Rock)",
+      "IJs (Ice)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5833,14 +5832,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Aurorus",
-    "tip": "begin in Rocky Ridges en maak eerst Sail Fossil display. Controleer daarna tijd en weer voordat je voor Amaura wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Sail Fossil display. Controleer daarna tijd en weer voordat je voor Amaura wacht."
   },
   {
     "number": 279,
     "name": "Aurorus",
     "type": [
-      "Rock",
-      "Ice"
+      "Steen (Rock)",
+      "IJs (Ice)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5855,13 +5854,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Amaura",
     "evolvesInto": "",
-    "tip": "begin in Rocky Ridges en maak eerst Tundra fossil display. Controleer daarna tijd en weer voordat je voor Aurorus wacht."
+    "tip": "Begin in Rotsachtige bergkammen (Rocky Ridges) en maak eerst Tundra fossil display. Controleer daarna tijd en weer voordat je voor Aurorus wacht."
   },
   {
     "number": 280,
     "name": "Eevee",
     "type": [
-      "Normal"
+      "Normaal (Normal)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5875,13 +5874,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Vaporeon / Jolteon / Flareon / Espeon / Umbreon / Leafeon / Glaceon / Sylveon",
-    "tip": "begin in Palette Town en maak eerst Pretty flower bed. Controleer daarna tijd en weer voordat je voor Eevee wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Mooi bloemenbed (Pretty Flower Bed). Controleer daarna tijd en weer voordat je voor Eevee wacht."
   },
   {
     "number": 281,
     "name": "Vaporeon",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5895,13 +5894,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "tip": "begin in Palette Town en maak eerst Boundless blue beverage. Controleer daarna tijd en weer voordat je voor Vaporeon wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Boundless blue beverage. Controleer daarna tijd en weer voordat je voor Vaporeon wacht."
   },
   {
     "number": 282,
     "name": "Jolteon",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5915,13 +5914,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "tip": "begin in Palette Town en maak eerst Electrifying potatoes. Controleer daarna tijd en weer voordat je voor Jolteon wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Electrifying potatoes. Controleer daarna tijd en weer voordat je voor Jolteon wacht."
   },
   {
     "number": 283,
     "name": "Flareon",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5935,13 +5934,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "tip": "begin in Palette Town en maak eerst Burning-hot spice. Controleer daarna tijd en weer voordat je voor Flareon wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Burning-hot spice. Controleer daarna tijd en weer voordat je voor Flareon wacht."
   },
   {
     "number": 284,
     "name": "Espeon",
     "type": [
-      "Psychic"
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5955,13 +5954,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "tip": "begin in Palette Town en maak eerst Elegant daytime treats. Controleer daarna tijd en weer voordat je voor Espeon wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Elegant daytime treats. Controleer daarna tijd en weer voordat je voor Espeon wacht."
   },
   {
     "number": 285,
     "name": "Umbreon",
     "type": [
-      "Dark"
+      "Duister (Dark)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5975,13 +5974,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "tip": "begin in Palette Town en maak eerst Dark-chocolate cookies. Controleer daarna tijd en weer voordat je voor Umbreon wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Dark-chocolate cookies. Controleer daarna tijd en weer voordat je voor Umbreon wacht."
   },
   {
     "number": 286,
     "name": "Leafeon",
     "type": [
-      "Grass"
+      "Gras (Grass)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -5995,13 +5994,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "tip": "begin in Palette Town en maak eerst Leafy greens sandwich. Controleer daarna tijd en weer voordat je voor Leafeon wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Leafy greens sandwich. Controleer daarna tijd en weer voordat je voor Leafeon wacht."
   },
   {
     "number": 287,
     "name": "Glaceon",
     "type": [
-      "Ice"
+      "IJs (Ice)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6015,13 +6014,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "tip": "begin in Palette Town en maak eerst Chilly shaved ice. Controleer daarna tijd en weer voordat je voor Glaceon wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Chilly shaved ice. Controleer daarna tijd en weer voordat je voor Glaceon wacht."
   },
   {
     "number": 288,
     "name": "Sylveon",
     "type": [
-      "Fairy"
+      "Fee (Fairy)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6035,13 +6034,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "tip": "begin in Palette Town en maak eerst Lovely ribbon cake. Controleer daarna tijd en weer voordat je voor Sylveon wacht."
+    "tip": "Begin in Palette Town (Palette Town) en maak eerst Lovely ribbon cake. Controleer daarna tijd en weer voordat je voor Sylveon wacht."
   },
   {
     "number": 289,
     "name": "Kyogre",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6055,13 +6054,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "behandel Kyogre als een verhaalontmoeting, niet als een gewone habitat-spawn."
+    "tip": "Behandel Kyogre als een verhaalontmoeting, niet als een gewone habitat-spawn."
   },
   {
     "number": 290,
     "name": "Raikou",
     "type": [
-      "Electric"
+      "Elektrisch (Electric)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6075,13 +6074,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "zorg dat je de Pikachu Doll bij je hebt voordat je specifiek voor Raikou naar Dream Island gaat."
+    "tip": "Zorg dat je de Pikachu Doll bij je hebt voordat je specifiek voor Raikou naar Droomeiland (Dream Island) gaat."
   },
   {
     "number": 291,
     "name": "Entei",
     "type": [
-      "Fire"
+      "Vuur (Fire)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6095,13 +6094,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "neem de Arcanine Doll mee als Entei je doel is; zonder die speciale methode is dit geen normale habitat-spawn."
+    "tip": "Neem de Arcanine Doll mee als Entei je doel is; zonder die speciale methode is dit geen normale habitat-spawn."
   },
   {
     "number": 292,
     "name": "Suicune",
     "type": [
-      "Water"
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6115,14 +6114,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "ga pas gericht voor Suicune zodra je de Eevee Doll hebt."
+    "tip": "Ga pas gericht voor Suicune zodra je de Eevee Doll hebt."
   },
   {
     "number": 293,
     "name": "Volcanion",
     "type": [
-      "Fire",
-      "Water"
+      "Vuur (Fire)",
+      "Water (Water)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6136,14 +6135,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "zoek Volcanion niet via gewone habitats; richt je op de speciale Party-voorwaarde in Rocky Ridges."
+    "tip": "Zoek Volcanion niet via gewone habitats; richt je op de speciale Party-voorwaarde in Rotsachtige bergkammen (Rocky Ridges)."
   },
   {
     "number": 294,
     "name": "Articuno",
     "type": [
-      "Ice",
-      "Flying"
+      "IJs (Ice)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6157,14 +6156,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "haal eerst de Freezing Chambers-kit; Articuno is geen normale habitat-spawn."
+    "tip": "Haal eerst de Freezing Chambers-kit; Articuno is geen normale habitat-spawn."
   },
   {
     "number": 295,
     "name": "Zapdos",
     "type": [
-      "Electric",
-      "Flying"
+      "Elektrisch (Electric)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6178,14 +6177,14 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "bouw eerst de Abandoned Power Plant voordat je tijd steekt in het zoeken naar Zapdos."
+    "tip": "Bouw eerst de Abandoned Power Plant voordat je tijd steekt in het zoeken naar Zapdos."
   },
   {
     "number": 296,
     "name": "Moltres",
     "type": [
-      "Fire",
-      "Flying"
+      "Vuur (Fire)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6205,8 +6204,8 @@ const pokemonKanto = [
     "number": 297,
     "name": "Ho-Oh",
     "type": [
-      "Fire",
-      "Flying"
+      "Vuur (Fire)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6226,8 +6225,8 @@ const pokemonKanto = [
     "number": 298,
     "name": "Lugia",
     "type": [
-      "Psychic",
-      "Flying"
+      "Psychisch (Psychic)",
+      "Vliegend (Flying)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6247,7 +6246,7 @@ const pokemonKanto = [
     "number": 299,
     "name": "Mewtwo",
     "type": [
-      "Psychic"
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6261,13 +6260,13 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "neem de Dragonite Doll mee als je specifiek voor Mewtwo naar Dream Island gaat."
+    "tip": "Neem de Dragonite Doll mee als je specifiek voor Mewtwo naar Droomeiland (Dream Island) gaat."
   },
   {
     "number": 300,
     "name": "Mew",
     "type": [
-      "Psychic"
+      "Psychisch (Psychic)"
     ],
     "game": "Pokémon Pokopia",
     "dlc": false,
@@ -6281,6 +6280,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "tip": "zoek eerst alle Mysterious Slates. Mew is een puzzelbeloning en geen gewone habitat-spawn."
+    "tip": "Zoek eerst alle Mysterieuze platen (Mysterious Slates). Mew is een puzzelbeloning en geen gewone habitat-spawn."
   }
 ];

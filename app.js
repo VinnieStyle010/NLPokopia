@@ -80,25 +80,25 @@ function renderPokemon(list) {
                 ${pokemon.name}
             </h2>
 
-           ${infoRow("Type", pokemon.type.join(" / "))}
-${infoRow("Game", pokemon.game)}
+${infoRow("Type", pokemon.type.join(" / "))}
+${infoRow("Spel (Game)", pokemon.game)}
 
-${infoRow("Locatie", pokemon.location)}
-${infoRow("Gebied", pokemon.area)}
+${infoRow("Locatie (Location)", pokemon.location)}
+${infoRow("Gebied (Area)", pokemon.area)}
 ${infoRow("Habitat", pokemon.habitat)}
 
-${infoRow("Hoe te verkrijgen", pokemon.obtainMethod)}
-${infoRow("Benodigdheden", pokemon.requirements)}
+${infoRow("Hoe te verkrijgen (How to obtain)", pokemon.obtainMethod)}
+${infoRow("Benodigdheden (Requirements)", pokemon.requirements)}
 
 ${infoRow(
-    "Pokopia-vaardigheden",
-    pokemon.specialties.length
-        ? pokemon.specialties.join(" / ")
-        : ""
+  "Pokopia-vaardigheden (Specialties)",
+  pokemon.specialties.length
+    ? pokemon.specialties.join(" / ")
+    : ""
 )}
 
-${infoRow("Evolueert van", pokemon.evolvesFrom)}
-${infoRow("Evolueert naar", pokemon.evolvesInto)}
+${infoRow("Evolueert van (Evolves from)", pokemon.evolvesFrom)}
+${infoRow("Evolueert naar (Evolves into)", pokemon.evolvesInto)}
 
 <p>
     <strong>Status:</strong>

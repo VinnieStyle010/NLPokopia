@@ -28,7 +28,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Ivysaur",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Bulbasaur wacht."
   },
   {
@@ -50,7 +49,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Bulbasaur",
     "evolvesInto": "Venusaur",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Field of Flowers. Controleer daarna tijd en weer voordat je voor Ivysaur wacht."
   },
   {
@@ -73,7 +71,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Ivysaur",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Field of Flowers. Controleer daarna tijd en weer voordat je voor Venusaur wacht."
   },
   {
@@ -94,7 +91,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Charmeleon",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Charmander wacht."
   },
   {
@@ -115,7 +111,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Charmander",
     "evolvesInto": "Charizard",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Campsite. Controleer daarna tijd en weer voordat je voor Charmeleon wacht."
   },
   {
@@ -138,7 +133,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Charmeleon",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Charizard wacht."
   },
   {
@@ -159,7 +153,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Wartortle",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Squirtle wacht."
   },
   {
@@ -180,7 +173,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Squirtle",
     "evolvesInto": "Blastoise",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Hydrated tall grass. Controleer daarna tijd en weer voordat je voor Wartortle wacht."
   },
   {
@@ -202,7 +194,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Wartortle",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Hydrated tall grass. Controleer daarna tijd en weer voordat je voor Blastoise wacht."
   },
   {
@@ -225,7 +216,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pidgeotto",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Elevated tall grass. Controleer daarna tijd en weer voordat je voor Pidgey wacht."
   },
   {
@@ -248,7 +238,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pidgey",
     "evolvesInto": "Pidgeot",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Elevated tall grass. Controleer daarna tijd en weer voordat je voor Pidgeotto wacht."
   },
   {
@@ -271,7 +260,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pidgeotto",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Luxury chirp-chirp meal. Controleer daarna tijd en weer voordat je voor Pidgeot wacht."
   },
   {
@@ -293,7 +281,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gloom",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Oddish wacht."
   },
   {
@@ -315,7 +302,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Oddish",
     "evolvesInto": "Vileplume / Bellossom",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tropical vibes. Controleer daarna tijd en weer voordat je voor Gloom wacht."
   },
   {
@@ -338,7 +324,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gloom",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Chansey Resting area. Controleer daarna tijd en weer voordat je voor Vileplume wacht."
   },
   {
@@ -360,7 +345,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gloom",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Chansey Resting area. Controleer daarna tijd en weer voordat je voor Bellossom wacht."
   },
   {
@@ -382,7 +366,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Parasect",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Elevated flower bed. Controleer daarna tijd en weer voordat je voor Paras wacht."
   },
   {
@@ -404,7 +387,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Paras",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Elevated flower bed. Controleer daarna tijd en weer voordat je voor Parasect wacht."
   },
   {
@@ -426,7 +408,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Venomoth",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Illuminated tall grass. Controleer daarna tijd en weer voordat je voor Venonat wacht."
   },
   {
@@ -448,7 +429,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Venonat",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Illuminated tall grass. Controleer daarna tijd en weer voordat je voor Venomoth wacht."
   },
   {
@@ -471,7 +451,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Weepinbell",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Bellsprout wacht."
   },
   {
@@ -494,7 +473,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Bellsprout",
     "evolvesInto": "Victreebel",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Flowery table. Controleer daarna tijd en weer voordat je voor Weepinbell wacht."
   },
   {
@@ -517,7 +495,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Weepinbell",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Flowery table. Controleer daarna tijd en weer voordat je voor Victreebel wacht."
   },
   {
@@ -540,7 +517,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Slowbro / Slowking",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Seaside Tall Grass. Controleer daarna tijd en weer voordat je voor Slowpoke wacht."
   },
   {
@@ -563,7 +539,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Slowpoke",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Seaside Tall Grass. Controleer daarna tijd en weer voordat je voor Slowbro wacht."
   },
   {
@@ -586,7 +561,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Slowpoke",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Seaside Tall Grass. Controleer daarna tijd en weer voordat je voor Slowking wacht."
   },
   {
@@ -608,7 +582,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Magneton",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Factory Storage. Controleer daarna tijd en weer voordat je voor Magnemite wacht."
   },
   {
@@ -630,7 +603,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Magnemite",
     "evolvesInto": "Magnezone",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Trash can central. Controleer daarna tijd en weer voordat je voor Magneton wacht."
   },
   {
@@ -653,7 +625,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Magneton",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Trash can central. Controleer daarna tijd en weer voordat je voor Magnezone wacht."
   },
   {
@@ -676,7 +647,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Steelix",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Smooth tall grass. Controleer daarna tijd en weer voordat je voor Onix wacht."
   },
   {
@@ -699,7 +669,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Onix",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Clink-clang iron construction. Controleer daarna tijd en weer voordat je voor Steelix wacht."
   },
   {
@@ -720,7 +689,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Marowak",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Grave with flowers. Controleer daarna tijd en weer voordat je voor Cubone wacht."
   },
   {
@@ -741,7 +709,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Cubone",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Grave with flowers. Controleer daarna tijd en weer voordat je voor Marowak wacht."
   },
   {
@@ -762,7 +729,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Hitmonlee / Hitmonchan / Hitmontop",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Training waterfall. Controleer daarna tijd en weer voordat je voor Tyrogue wacht."
   },
   {
@@ -783,7 +749,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Urgent Care. Controleer daarna tijd en weer voordat je voor Hitmonlee wacht."
   },
   {
@@ -804,7 +769,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Exercise resting spot. Controleer daarna tijd en weer voordat je voor Hitmonchan wacht."
   },
   {
@@ -825,7 +789,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tyrogue",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Gym first aid. Controleer daarna tijd en weer voordat je voor Hitmontop wacht."
   },
   {
@@ -846,7 +809,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Weezing",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Trash collection site. Controleer daarna tijd en weer voordat je voor Koffing wacht."
   },
   {
@@ -867,7 +829,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Koffing",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Good old-fashioned antiques. Controleer daarna tijd en weer voordat je voor Weezing wacht."
   },
   {
@@ -889,7 +850,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Tangrowth",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Nothin' but Poke Balls. Controleer daarna tijd en weer voordat je voor Tangela wacht."
   },
   {
@@ -911,7 +871,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tangela",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Bench with greenery. Controleer daarna tijd en weer voordat je voor Tangrowth wacht."
   },
   {
@@ -933,7 +892,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Scizor",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Scyther wacht."
   },
   {
@@ -955,7 +913,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Scyther",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Scizor wacht."
   },
   {
@@ -977,7 +934,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Pinsir wacht."
   },
   {
@@ -998,7 +954,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gyarados",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Ocean fishing spot. Controleer daarna tijd en weer voordat je voor Magikarp wacht."
   },
   {
@@ -1020,7 +975,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Magikarp",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Illuminated waterfall. Controleer daarna tijd en weer voordat je voor Gyarados wacht."
   },
   {
@@ -1041,7 +995,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin je zoektocht naar Ditto in Dream Island en controleer eerst of er een speciale ontgrendelvoorwaarde geldt."
   },
   {
@@ -1064,7 +1017,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Noctowl",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Elevated tall grass. Controleer daarna tijd en weer voordat je voor Hoothoot wacht."
   },
   {
@@ -1087,7 +1039,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Hoothoot",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Elevated tall grass. Controleer daarna tijd en weer voordat je voor Noctowl wacht."
   },
   {
@@ -1110,7 +1061,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Heracross wacht."
   },
   {
@@ -1131,7 +1081,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Hydrated flower bed. Controleer daarna tijd en weer voordat je voor Volbeat wacht."
   },
   {
@@ -1152,7 +1101,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Hydrated flower bed. Controleer daarna tijd en weer voordat je voor Illumise wacht."
   },
   {
@@ -1173,7 +1121,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Swalot",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tantalizing dining set. Controleer daarna tijd en weer voordat je voor Gulpin wacht."
   },
   {
@@ -1194,7 +1141,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gulpin",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Dinner table surprise. Controleer daarna tijd en weer voordat je voor Swalot wacht."
   },
   {
@@ -1215,7 +1161,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Cacturne",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Sunny overdag site. Controleer daarna tijd en weer voordat je voor Cacnea wacht."
   },
   {
@@ -1238,7 +1183,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Cacnea",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded flower bed. Controleer daarna tijd en weer voordat je voor Cacturne wacht."
   },
   {
@@ -1260,7 +1204,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Vespiquen",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Pretty flower bed. Controleer daarna tijd en weer voordat je voor Combee wacht."
   },
   {
@@ -1283,7 +1226,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Combee",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Field of Flowers. Controleer daarna tijd en weer voordat je voor Vespiquen wacht."
   },
   {
@@ -1304,7 +1246,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gastrodon",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Road Sign. Controleer daarna tijd en weer voordat je voor Shellos wacht."
   },
   {
@@ -1327,7 +1268,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Shellos",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Ocean fishing spot. Controleer daarna tijd en weer voordat je voor Gastrodon wacht."
   },
   {
@@ -1349,7 +1289,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Drifblim",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Riding warm updrafts. Controleer daarna tijd en weer voordat je voor Drifloon wacht."
   },
   {
@@ -1372,7 +1311,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Drifloon",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Plush central. Controleer daarna tijd en weer voordat je voor Drifblim wacht."
   },
   {
@@ -1393,7 +1331,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Excadrill",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Fresh Veggie Field. Controleer daarna tijd en weer voordat je voor Drilbur wacht."
   },
   {
@@ -1416,7 +1353,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Drilbur",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Fresh Veggie Field. Controleer daarna tijd en weer voordat je voor Excadrill wacht."
   },
   {
@@ -1437,7 +1373,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gurdurr",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Boulder-shaded Tall Grass. Controleer daarna tijd en weer voordat je voor Timburr wacht."
   },
   {
@@ -1458,7 +1393,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Timburr",
     "evolvesInto": "Conkeldurr",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Boulder-shaded Tall Grass. Controleer daarna tijd en weer voordat je voor Gurdurr wacht."
   },
   {
@@ -1480,7 +1414,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gurdurr",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Construction-site generator. Controleer daarna tijd en weer voordat je voor Conkeldurr wacht."
   },
   {
@@ -1502,7 +1435,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lampent",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Grave offering. Controleer daarna tijd en weer voordat je voor Litwick wacht."
   },
   {
@@ -1524,7 +1456,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Litwick",
     "evolvesInto": "Chandelure",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Grave offering. Controleer daarna tijd en weer voordat je voor Lampent wacht."
   },
   {
@@ -1546,7 +1477,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Lampent",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Creepy grave offering. Controleer daarna tijd en weer voordat je voor Chandelure wacht."
   },
   {
@@ -1567,7 +1497,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Fraxure",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Lumberjack's workplace. Controleer daarna tijd en weer voordat je voor Axew wacht."
   },
   {
@@ -1588,7 +1517,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Axew",
     "evolvesInto": "Haxorus",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Lumberjack's workplace. Controleer daarna tijd en weer voordat je voor Fraxure wacht."
   },
   {
@@ -1610,7 +1538,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Fraxure",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Lumberjack's workplace. Controleer daarna tijd en weer voordat je voor Haxorus wacht."
   },
   {
@@ -1631,7 +1558,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Sliggoo",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded flower bed. Controleer daarna tijd en weer voordat je voor Goomy wacht."
   },
   {
@@ -1652,7 +1578,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Goomy",
     "evolvesInto": "Goodra",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Hydrated tall grass. Controleer daarna tijd en weer voordat je voor Sliggoo wacht."
   },
   {
@@ -1673,7 +1598,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Sliggoo",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Very-berry space. Controleer daarna tijd en weer voordat je voor Goodra wacht."
   },
   {
@@ -1696,7 +1620,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Hydrated tall grass. Controleer daarna tijd en weer voordat je voor Cramorant wacht."
   },
   {
@@ -1717,7 +1640,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pikachu",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Picnic Set. Controleer daarna tijd en weer voordat je voor Pichu wacht."
   },
   {
@@ -1738,7 +1660,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pichu",
     "evolvesInto": "Raichu",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Picnic Set. Controleer daarna tijd en weer voordat je voor Pikachu wacht."
   },
   {
@@ -1760,7 +1681,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pikachu",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Nature's market. Controleer daarna tijd en weer voordat je voor Raichu wacht."
   },
   {
@@ -1782,7 +1702,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Golbat",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tree-shaded Yellow tall grass. Controleer daarna tijd en weer voordat je voor Zubat wacht."
   },
   {
@@ -1804,7 +1723,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Zubat",
     "evolvesInto": "Crobat",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tree-shaded Yellow tall grass. Controleer daarna tijd en weer voordat je voor Golbat wacht."
   },
   {
@@ -1827,7 +1745,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Golbat",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Elevated yellow tall grass. Controleer daarna tijd en weer voordat je voor Crobat wacht."
   },
   {
@@ -1848,7 +1765,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Persian",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Resting spot. Controleer daarna tijd en weer voordat je voor Meowth wacht."
   },
   {
@@ -1870,7 +1786,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Meowth",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Evil organization HQ. Controleer daarna tijd en weer voordat je voor Persian wacht."
   },
   {
@@ -1891,7 +1806,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Golduck",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Hot-spring shower. Controleer daarna tijd en weer voordat je voor Psyduck wacht."
   },
   {
@@ -1912,7 +1826,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Psyduck",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Hot-spring shower. Controleer daarna tijd en weer voordat je voor Golduck wacht."
   },
   {
@@ -1934,7 +1847,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Arcanine",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Perpetual mess. Controleer daarna tijd en weer voordat je voor Growlithe wacht."
   },
   {
@@ -1956,7 +1868,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Growlithe",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mini museum. Controleer daarna tijd en weer voordat je voor Arcanine wacht."
   },
   {
@@ -1979,7 +1890,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "controleer eerst de habitat- en locatievoorwaarden voor Farfetch'd voordat je materialen uitgeeft."
   },
   {
@@ -2000,7 +1910,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Muk",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Marsh fishing spot. Controleer daarna tijd en weer voordat je voor Grimer wacht."
   },
   {
@@ -2021,7 +1930,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Grimer",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Marsh fishing spot. Controleer daarna tijd en weer voordat je voor Muk wacht."
   },
   {
@@ -2044,7 +1952,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Haunter",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Spooky study. Controleer daarna tijd en weer voordat je voor Gastly wacht."
   },
   {
@@ -2067,7 +1974,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gastly",
     "evolvesInto": "Gengar",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Surprise in store. Controleer daarna tijd en weer voordat je voor Haunter wacht."
   },
   {
@@ -2090,7 +1996,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Haunter",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Surprise in store. Controleer daarna tijd en weer voordat je voor Gengar wacht."
   },
   {
@@ -2112,7 +2017,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Electrode",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Park bench. Controleer daarna tijd en weer voordat je voor Voltorb wacht."
   },
   {
@@ -2134,7 +2038,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Voltorb",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Park bench. Controleer daarna tijd en weer voordat je voor Electrode wacht."
   },
   {
@@ -2157,7 +2060,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Exeggutor",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tropical vibes. Controleer daarna tijd en weer voordat je voor Exeggcute wacht."
   },
   {
@@ -2180,7 +2082,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Exeggcute",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tropical vibes. Controleer daarna tijd en weer voordat je voor Exeggutor wacht."
   },
   {
@@ -2201,7 +2102,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Chansey",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Alarm clock sleep zone. Controleer daarna tijd en weer voordat je voor Happiny wacht."
   },
   {
@@ -2222,7 +2122,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Happiny",
     "evolvesInto": "Blissey",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Full recovery. Controleer daarna tijd en weer voordat je voor Chansey wacht."
   },
   {
@@ -2244,7 +2143,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Chansey",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Cuteness overload. Controleer daarna tijd en weer voordat je voor Blissey wacht."
   },
   {
@@ -2265,7 +2163,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Electabuzz",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Vending machine set. Controleer daarna tijd en weer voordat je voor Elekid wacht."
   },
   {
@@ -2286,7 +2183,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Elekid",
     "evolvesInto": "Electivire",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Trash can central. Controleer daarna tijd en weer voordat je voor Electabuzz wacht."
   },
   {
@@ -2308,7 +2204,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Electabuzz",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Light-up stage. Controleer daarna tijd en weer voordat je voor Electivire wacht."
   },
   {
@@ -2330,7 +2225,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tropical seaside. Controleer daarna tijd en weer voordat je voor Lapras wacht."
   },
   {
@@ -2351,7 +2245,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Snorlax",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Bed with a plush. Controleer daarna tijd en weer voordat je voor Munchlax wacht."
   },
   {
@@ -2373,7 +2266,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Munchlax",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Gourmet's altar. Controleer daarna tijd en weer voordat je voor Snorlax wacht."
   },
   {
@@ -2395,7 +2287,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Ariados",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Yellow tall grass. Controleer daarna tijd en weer voordat je voor Spinarak wacht."
   },
   {
@@ -2417,7 +2308,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Spinarak",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Yellow tall grass. Controleer daarna tijd en weer voordat je voor Ariados wacht."
   },
   {
@@ -2439,7 +2329,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Flaaffy",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Overgrowth vending machine. Controleer daarna tijd en weer voordat je voor Mareep wacht."
   },
   {
@@ -2461,7 +2350,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Mareep",
     "evolvesInto": "Ampharos",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst nacht festival venue. Controleer daarna tijd en weer voordat je voor Flaaffy wacht."
   },
   {
@@ -2483,7 +2371,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Flaaffy",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Plain life. Controleer daarna tijd en weer voordat je voor Ampharos wacht."
   },
   {
@@ -2506,7 +2393,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Marill",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Hydrated yellow tall grass. Controleer daarna tijd en weer voordat je voor Azurill wacht."
   },
   {
@@ -2529,7 +2415,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Azurill",
     "evolvesInto": "Azumarill",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Hydrated yellow tall grass. Controleer daarna tijd en weer voordat je voor Marill wacht."
   },
   {
@@ -2552,7 +2437,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Marill",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Dock. Controleer daarna tijd en weer voordat je voor Azumarill wacht."
   },
   {
@@ -2574,7 +2458,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Clodsire",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Marshy tall grass. Controleer daarna tijd en weer voordat je voor Paldean Wooper wacht."
   },
   {
@@ -2597,7 +2480,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Paldean Wooper",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Marshy tall grass. Controleer daarna tijd en weer voordat je voor Clodsire wacht."
   },
   {
@@ -2618,7 +2500,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tiny Atelier. Controleer daarna tijd en weer voordat je voor Smeargle wacht."
   },
   {
@@ -2639,7 +2520,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Combusken",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Chirp-chirp meal. Controleer daarna tijd en weer voordat je voor Torchic wacht."
   },
   {
@@ -2662,7 +2542,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Torchic",
     "evolvesInto": "Blaziken",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Resort meal prep. Controleer daarna tijd en weer voordat je voor Combusken wacht."
   },
   {
@@ -2685,7 +2564,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Combusken",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Chirp-chirp meal. Controleer daarna tijd en weer voordat je voor Blaziken wacht."
   },
   {
@@ -2708,7 +2586,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pelipper",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Elevated yellow tall grass. Controleer daarna tijd en weer voordat je voor Wingull wacht."
   },
   {
@@ -2731,7 +2608,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Wingull",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Elevated yellow tall grass. Controleer daarna tijd en weer voordat je voor Pelipper wacht."
   },
   {
@@ -2753,7 +2629,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Hariyama",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tree-shaded Yellow tall grass. Controleer daarna tijd en weer voordat je voor Makuhita wacht."
   },
   {
@@ -2775,7 +2650,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Makuhita",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tree-shaded Yellow tall grass. Controleer daarna tijd en weer voordat je voor Hariyama wacht."
   },
   {
@@ -2796,7 +2670,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Welcoming resort. Controleer daarna tijd en weer voordat je voor Absol wacht."
   },
   {
@@ -2817,7 +2690,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Prinplup",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Hydrated yellow tall grass. Controleer daarna tijd en weer voordat je voor Piplup wacht."
   },
   {
@@ -2839,7 +2711,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Piplup",
     "evolvesInto": "Empoleon",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Hydrated yellow tall grass. Controleer daarna tijd en weer voordat je voor Prinplup wacht."
   },
   {
@@ -2862,7 +2733,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Prinplup",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tableside delivery cart. Controleer daarna tijd en weer voordat je voor Empoleon wacht."
   },
   {
@@ -2883,7 +2753,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Working the register. Controleer daarna tijd en weer voordat je voor Audino wacht."
   },
   {
@@ -2904,7 +2773,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Garbodor",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Trash collection site. Controleer daarna tijd en weer voordat je voor Trubbish wacht."
   },
   {
@@ -2926,7 +2794,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Trubbish",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Trash collection site. Controleer daarna tijd en weer voordat je voor Garbodor wacht."
   },
   {
@@ -2947,7 +2814,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Zoroark",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Breezy flower bed. Controleer daarna tijd en weer voordat je voor Zorua wacht."
   },
   {
@@ -2969,7 +2835,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Zorua",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Breezy flower bed. Controleer daarna tijd en weer voordat je voor Zoroark wacht."
   },
   {
@@ -2990,7 +2855,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Cinccino",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Changing area. Controleer daarna tijd en weer voordat je voor Minccino wacht."
   },
   {
@@ -3012,7 +2876,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Minccino",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Private makeup stand. Controleer daarna tijd en weer voordat je voor Cinccino wacht."
   },
   {
@@ -3033,7 +2896,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Charjabug",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Yellow tall grass. Controleer daarna tijd en weer voordat je voor Grubbin wacht."
   },
   {
@@ -3056,7 +2918,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Grubbin",
     "evolvesInto": "Vikavolt",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Vending machine break area. Controleer daarna tijd en weer voordat je voor Charjabug wacht."
   },
   {
@@ -3079,7 +2940,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Charjabug",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Tree-shaded flower bed. Controleer daarna tijd en weer voordat je voor Vikavolt wacht."
   },
   {
@@ -3101,7 +2961,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Pikachu space. Controleer daarna tijd en weer voordat je voor Mimikyu wacht."
   },
   {
@@ -3122,7 +2981,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pawmo",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Breezy flower bed. Controleer daarna tijd en weer voordat je voor Pawmi wacht."
   },
   {
@@ -3145,7 +3003,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pawmi",
     "evolvesInto": "Pawmot",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Tantalizing restaurant. Controleer daarna tijd en weer voordat je voor Pawmo wacht."
   },
   {
@@ -3168,7 +3025,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pawmo",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Café space. Controleer daarna tijd en weer voordat je voor Pawmot wacht."
   },
   {
@@ -3190,7 +3046,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Bleak Beach en maak eerst Beach Set. Controleer daarna tijd en weer voordat je voor Tatsugiri wacht."
   },
   {
@@ -3211,7 +3066,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Arbok",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Hydrated graceful flower bed. Controleer daarna tijd en weer voordat je voor Ekans wacht."
   },
   {
@@ -3232,7 +3086,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Ekans",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Hydrated graceful flower bed. Controleer daarna tijd en weer voordat je voor Arbok wacht."
   },
   {
@@ -3253,7 +3106,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Clefairy",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Cleffa wacht."
   },
   {
@@ -3274,7 +3126,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Cleffa",
     "evolvesInto": "Clefable",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Clefairy wacht."
   },
   {
@@ -3296,7 +3147,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Clefairy",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Clefable wacht."
   },
   {
@@ -3318,7 +3168,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Jigglypuff",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Flower garden stump stage. Controleer daarna tijd en weer voordat je voor Igglybuff wacht."
   },
   {
@@ -3340,7 +3189,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Igglybuff",
     "evolvesInto": "Wigglytuff",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Flower garden stump stage. Controleer daarna tijd en weer voordat je voor Jigglypuff wacht."
   },
   {
@@ -3363,7 +3211,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Jigglypuff",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Recital stage. Controleer daarna tijd en weer voordat je voor Wigglytuff wacht."
   },
   {
@@ -3384,7 +3231,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dugtrio",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tree-shaded red tall grass. Controleer daarna tijd en weer voordat je voor Diglett wacht."
   },
   {
@@ -3406,7 +3252,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Diglett",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tree-shaded red tall grass. Controleer daarna tijd en weer voordat je voor Dugtrio wacht."
   },
   {
@@ -3428,7 +3273,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Machoke",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Boulder-shaded Tall Grass. Controleer daarna tijd en weer voordat je voor Machop wacht."
   },
   {
@@ -3450,7 +3294,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Machop",
     "evolvesInto": "Machamp",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Grassy training field. Controleer daarna tijd en weer voordat je voor Machoke wacht."
   },
   {
@@ -3472,7 +3315,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Machoke",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Grassy training field. Controleer daarna tijd en weer voordat je voor Machamp wacht."
   },
   {
@@ -3494,7 +3336,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Graveler",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Tall Grass. Controleer daarna tijd en weer voordat je voor Geodude wacht."
   },
   {
@@ -3516,7 +3357,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Geodude",
     "evolvesInto": "Golem",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mossy boulder. Controleer daarna tijd en weer voordat je voor Graveler wacht."
   },
   {
@@ -3539,7 +3379,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Graveler",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mossy boulder. Controleer daarna tijd en weer voordat je voor Golem wacht."
   },
   {
@@ -3560,7 +3399,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Magmar",
-    "evolutionMethod": "",
     "tip": "begin in Withered Wastelands en maak eerst Pretty flower bed. Controleer daarna tijd en weer voordat je voor Magby wacht."
   },
   {
@@ -3581,7 +3419,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Magby",
     "evolvesInto": "Magmortar",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Digging and burning. Controleer daarna tijd en weer voordat je voor Magmar wacht."
   },
   {
@@ -3603,7 +3440,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Magmar",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mini kitchen. Controleer daarna tijd en weer voordat je voor Magmortar wacht."
   },
   {
@@ -3624,7 +3460,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Sudowoodo",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tree-shaded red tall grass. Controleer daarna tijd en weer voordat je voor Bonsly wacht."
   },
   {
@@ -3645,7 +3480,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Bonsly",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tree-shaded red tall grass. Controleer daarna tijd en weer voordat je voor Sudowoodo wacht."
   },
   {
@@ -3668,7 +3502,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Honchkrow",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Elevated red tall grass. Controleer daarna tijd en weer voordat je voor Murkrow wacht."
   },
   {
@@ -3691,7 +3524,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Murkrow",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Chirping recital. Controleer daarna tijd en weer voordat je voor Honchkrow wacht."
   },
   {
@@ -3714,7 +3546,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Pupitar",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mossy rest spot. Controleer daarna tijd en weer voordat je voor Larvitar wacht."
   },
   {
@@ -3737,7 +3568,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Larvitar",
     "evolvesInto": "Tyranitar",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded pink tall grass. Controleer daarna tijd en weer voordat je voor Pupitar wacht."
   },
   {
@@ -3760,7 +3590,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Pupitar",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Toil in the soil. Controleer daarna tijd en weer voordat je voor Tyranitar wacht."
   },
   {
@@ -3782,7 +3611,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lombre",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Hydrated red tall grass. Controleer daarna tijd en weer voordat je voor Lotad wacht."
   },
   {
@@ -3804,7 +3632,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Lotad",
     "evolvesInto": "Ludicolo",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Hydrated red tall grass. Controleer daarna tijd en weer voordat je voor Lombre wacht."
   },
   {
@@ -3827,7 +3654,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Lombre",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Uplifting duckweed. Controleer daarna tijd en weer voordat je voor Ludicolo wacht."
   },
   {
@@ -3850,7 +3676,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Working the register. Controleer daarna tijd en weer voordat je voor Mawile wacht."
   },
   {
@@ -3871,7 +3696,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mossy hot spring. Controleer daarna tijd en weer voordat je voor Torkoal wacht."
   },
   {
@@ -3892,7 +3716,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kricketune",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Red tall grass. Controleer daarna tijd en weer voordat je voor Kricketot wacht."
   },
   {
@@ -3913,7 +3736,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Kricketot",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Music and magazines. Controleer daarna tijd en weer voordat je voor Kricketune wacht."
   },
   {
@@ -3936,7 +3758,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Elevated red tall grass. Controleer daarna tijd en weer voordat je voor Chatot wacht."
   },
   {
@@ -3957,7 +3778,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lucario",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Red tall grass. Controleer daarna tijd en weer voordat je voor Riolu wacht."
   },
   {
@@ -3979,7 +3799,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Riolu",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Box to the rhythm. Controleer daarna tijd en weer voordat je voor Lucario wacht."
   },
   {
@@ -4001,7 +3820,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Music and magazines. Controleer daarna tijd en weer voordat je voor Stereo Rotom wacht."
   },
   {
@@ -4024,7 +3842,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Volcarona",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tree-shaded graceful flower bed. Controleer daarna tijd en weer voordat je voor Larvesta wacht."
   },
   {
@@ -4047,7 +3864,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Larvesta",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tree-shaded graceful flower bed. Controleer daarna tijd en weer voordat je voor Volcarona wacht."
   },
   {
@@ -4069,7 +3885,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dartrix",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Fresh Veggie Field. Controleer daarna tijd en weer voordat je voor Rowlet wacht."
   },
   {
@@ -4092,7 +3907,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Rowlet",
     "evolvesInto": "Decidueye",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Pointy tree-shaded rocky tall grass. Controleer daarna tijd en weer voordat je voor Dartrix wacht."
   },
   {
@@ -4115,7 +3929,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dartrix",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Pointy tree-shaded rocky tall grass. Controleer daarna tijd en weer voordat je voor Decidueye wacht."
   },
   {
@@ -4136,7 +3949,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Raboot",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Red tall grass. Controleer daarna tijd en weer voordat je voor Scorbunny wacht."
   },
   {
@@ -4157,7 +3969,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Scorbunny",
     "evolvesInto": "Cinderace",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Open-air bath. Controleer daarna tijd en weer voordat je voor Raboot wacht."
   },
   {
@@ -4179,7 +3990,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Raboot",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Red tall grass. Controleer daarna tijd en weer voordat je voor Cinderace wacht."
   },
   {
@@ -4201,7 +4011,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Greedent",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Tree-shaded  tall grass. Controleer daarna tijd en weer voordat je voor Skwovet wacht."
   },
   {
@@ -4222,7 +4031,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Skwovet",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Chef's kitchen. Controleer daarna tijd en weer voordat je voor Greedent wacht."
   },
   {
@@ -4244,7 +4052,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Carkol",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Railroad crossing. Controleer daarna tijd en weer voordat je voor Rolycoly wacht."
   },
   {
@@ -4267,7 +4074,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Rolycoly",
     "evolvesInto": "Coalossal",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Railroad crossing. Controleer daarna tijd en weer voordat je voor Carkol wacht."
   },
   {
@@ -4290,7 +4096,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Carkol",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Railroad crossing. Controleer daarna tijd en weer voordat je voor Coalossal wacht."
   },
   {
@@ -4312,7 +4117,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Toxtricity",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Lazy-photo album scrolling. Controleer daarna tijd en weer voordat je voor Toxel wacht."
   },
   {
@@ -4335,7 +4139,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Toxel",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Amped rock stage. Controleer daarna tijd en weer voordat je voor Toxtricity wacht."
   },
   {
@@ -4356,7 +4159,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dachsbun",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Fidough wacht."
   },
   {
@@ -4378,7 +4180,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Fidough",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Graceful flower bed. Controleer daarna tijd en weer voordat je voor Dachsbun wacht."
   },
   {
@@ -4399,7 +4200,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Armarouge / Ceruledge",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Piping-hot lava. Controleer daarna tijd en weer voordat je voor Charcadet wacht."
   },
   {
@@ -4421,7 +4221,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Charcadet",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Auspicious knight's shrine. Controleer daarna tijd en weer voordat je voor Armarouge wacht."
   },
   {
@@ -4443,7 +4242,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Charcadet",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Malicious knight's shrine. Controleer daarna tijd en weer voordat je voor Ceruledge wacht."
   },
   {
@@ -4465,7 +4263,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Glimmora",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Creepy white rocks. Controleer daarna tijd en weer voordat je voor Glimmet wacht."
   },
   {
@@ -4487,7 +4284,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Glimmet",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Creepy white rocks. Controleer daarna tijd en weer voordat je voor Glimmora wacht."
   },
   {
@@ -4508,7 +4304,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Gholdengo",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Mini museum. Controleer daarna tijd en weer voordat je voor Gimmighoul wacht."
   },
   {
@@ -4530,7 +4325,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Gimmighoul",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Absolute luxury. Controleer daarna tijd en weer voordat je voor Gholdengo wacht."
   },
   {
@@ -4551,7 +4345,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Ninetales",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Vulpix wacht."
   },
   {
@@ -4572,7 +4365,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Vulpix",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Ninetales wacht."
   },
   {
@@ -4593,7 +4385,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Poliwhirl",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Squeaky clean. Controleer daarna tijd en weer voordat je voor Poliwag wacht."
   },
   {
@@ -4614,7 +4405,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Poliwag",
     "evolvesInto": "Poliwrath / Politoed",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Hydrated fluffy flower bed. Controleer daarna tijd en weer voordat je voor Poliwhirl wacht."
   },
   {
@@ -4637,7 +4427,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Poliwhirl",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Sewer hole inspection. Controleer daarna tijd en weer voordat je voor Poliwrath wacht."
   },
   {
@@ -4659,7 +4448,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Poliwhirl",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Hydrated graceful flower bed. Controleer daarna tijd en weer voordat je voor Politoed wacht."
   },
   {
@@ -4680,7 +4468,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kadabra",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Surging psychic power. Controleer daarna tijd en weer voordat je voor Abra wacht."
   },
   {
@@ -4701,7 +4488,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Abra",
     "evolvesInto": "Alakazam",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fortune-teller's table. Controleer daarna tijd en weer voordat je voor Kadabra wacht."
   },
   {
@@ -4723,7 +4509,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Kadabra",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Surging psychic power. Controleer daarna tijd en weer voordat je voor Alakazam wacht."
   },
   {
@@ -4746,7 +4531,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Mr. Mime",
-    "evolutionMethod": "",
     "tip": "controleer eerst de habitat- en locatievoorwaarden voor Mime Jr. voordat je materialen uitgeeft."
   },
   {
@@ -4769,7 +4553,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Mime Jr.",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "controleer eerst de habitat- en locatievoorwaarden voor Mr. Mime voordat je materialen uitgeeft."
   },
   {
@@ -4790,7 +4573,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Porygon2",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Researcher's desk. Controleer daarna tijd en weer voordat je voor Porygon wacht."
   },
   {
@@ -4811,7 +4593,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Porygon",
     "evolvesInto": "Porygon-Z",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Work desk. Controleer daarna tijd en weer voordat je voor Porygon2 wacht."
   },
   {
@@ -4832,7 +4613,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Porygon2",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Game Corner battle zone. Controleer daarna tijd en weer voordat je voor Porygon-Z wacht."
   },
   {
@@ -4853,7 +4633,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dragonair",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Hydrated fluffy flower bed. Controleer daarna tijd en weer voordat je voor Dratini wacht."
   },
   {
@@ -4874,7 +4653,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dratini",
     "evolvesInto": "Dragonite",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Hydrated fluffy flower bed. Controleer daarna tijd en weer voordat je voor Dragonair wacht."
   },
   {
@@ -4897,7 +4675,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dragonair",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Waterside dinghy. Controleer daarna tijd en weer voordat je voor Dragonite wacht."
   },
   {
@@ -4918,7 +4695,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Quilava",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Concrete pipe secret base. Controleer daarna tijd en weer voordat je voor Cyndaquil wacht."
   },
   {
@@ -4939,7 +4715,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Cyndaquil",
     "evolvesInto": "Typhlosion",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Concrete pipe secret base. Controleer daarna tijd en weer voordat je voor Quilava wacht."
   },
   {
@@ -4961,7 +4736,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Quilava",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fireplace nap spot. Controleer daarna tijd en weer voordat je voor Typhlosion wacht."
   },
   {
@@ -4982,7 +4756,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Mismagius",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Misdreavus wacht."
   },
   {
@@ -5004,7 +4777,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Misdreavus",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Mismagius wacht."
   },
   {
@@ -5026,7 +4798,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Farigiraf",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Girafarig wacht."
   },
   {
@@ -5049,7 +4820,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Girafarig",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Farigiraf wacht."
   },
   {
@@ -5071,7 +4841,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kirlia",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Study Area. Controleer daarna tijd en weer voordat je voor Ralts wacht."
   },
   {
@@ -5093,7 +4862,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Ralts",
     "evolvesInto": "Gardevoir / Gallade",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Study Area. Controleer daarna tijd en weer voordat je voor Kirlia wacht."
   },
   {
@@ -5116,7 +4884,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Kirlia",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Moisturizing makeup stand. Controleer daarna tijd en weer voordat je voor Gardevoir wacht."
   },
   {
@@ -5139,7 +4906,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Kirlia",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Dojo training. Controleer daarna tijd en weer voordat je voor Gallade wacht."
   },
   {
@@ -5160,7 +4926,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Picturesque photo cutout board. Controleer daarna tijd en weer voordat je voor Plusle wacht."
   },
   {
@@ -5181,7 +4946,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Picturesque photo cutout board. Controleer daarna tijd en weer voordat je voor Minun wacht."
   },
   {
@@ -5203,7 +4967,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Vibrava",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Trapinch wacht."
   },
   {
@@ -5226,7 +4989,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Trapinch",
     "evolvesInto": "Flygon",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Vibrava wacht."
   },
   {
@@ -5249,7 +5011,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Vibrava",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Flygon wacht."
   },
   {
@@ -5271,7 +5032,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Altaria",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Swablu wacht."
   },
   {
@@ -5294,7 +5054,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Swablu",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Birdsong garden. Controleer daarna tijd en weer voordat je voor Altaria wacht."
   },
   {
@@ -5315,7 +5074,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Dusclops",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Pink tall grass. Controleer daarna tijd en weer voordat je voor Duskull wacht."
   },
   {
@@ -5336,7 +5094,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Duskull",
     "evolvesInto": "Dusknoir",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Trash site TV. Controleer daarna tijd en weer voordat je voor Dusclops wacht."
   },
   {
@@ -5358,7 +5115,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dusclops",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Trash site TV. Controleer daarna tijd en weer voordat je voor Dusknoir wacht."
   },
   {
@@ -5380,7 +5136,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Metang",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Cycling rest stop. Controleer daarna tijd en weer voordat je voor Beldum wacht."
   },
   {
@@ -5402,7 +5157,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Beldum",
     "evolvesInto": "Metagross",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Professor's apprentice program. Controleer daarna tijd en weer voordat je voor Metang wacht."
   },
   {
@@ -5425,7 +5179,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Metang",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Gamer's paradise. Controleer daarna tijd en weer voordat je voor Metagross wacht."
   },
   {
@@ -5447,7 +5200,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Servine",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Playland. Controleer daarna tijd en weer voordat je voor Snivy wacht."
   },
   {
@@ -5469,7 +5221,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Snivy",
     "evolvesInto": "Serperior",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Servine wacht."
   },
   {
@@ -5491,7 +5242,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Servine",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded fluffy flower bed. Controleer daarna tijd en weer voordat je voor Serperior wacht."
   },
   {
@@ -5512,7 +5262,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Frogadier",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Hydrated pink tall grass. Controleer daarna tijd en weer voordat je voor Froakie wacht."
   },
   {
@@ -5533,7 +5282,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Froakie",
     "evolvesInto": "Greninja",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Hydrated pink tall grass. Controleer daarna tijd en weer voordat je voor Frogadier wacht."
   },
   {
@@ -5556,7 +5304,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Frogadier",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Hydrated pink tall grass. Controleer daarna tijd en weer voordat je voor Greninja wacht."
   },
   {
@@ -5578,7 +5325,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tire Park. Controleer daarna tijd en weer voordat je voor Dedenne wacht."
   },
   {
@@ -5600,7 +5346,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Noivern",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Rhythmic Living room. Controleer daarna tijd en weer voordat je voor Noibat wacht."
   },
   {
@@ -5623,7 +5368,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Noibat",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Rhythmic Living room. Controleer daarna tijd en weer voordat je voor Noivern wacht."
   },
   {
@@ -5644,7 +5388,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Corvisquire",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Fluffy flower bed. Controleer daarna tijd en weer voordat je voor Rookidee wacht."
   },
   {
@@ -5665,7 +5408,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Rookidee",
     "evolvesInto": "Corviknight",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Elevated pink tall grass. Controleer daarna tijd en weer voordat je voor Corvisquire wacht."
   },
   {
@@ -5688,7 +5430,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Corvisquire",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Elevated pink tall grass. Controleer daarna tijd en weer voordat je voor Corviknight wacht."
   },
   {
@@ -5711,7 +5452,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Drakloak",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded pink tall grass. Controleer daarna tijd en weer voordat je voor Dreepy wacht."
   },
   {
@@ -5734,7 +5474,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Dreepy",
     "evolvesInto": "Dragapult",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded pink tall grass. Controleer daarna tijd en weer voordat je voor Drakloak wacht."
   },
   {
@@ -5757,7 +5496,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Drakloak",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Office storeroom. Controleer daarna tijd en weer voordat je voor Dragapult wacht."
   },
   {
@@ -5778,7 +5516,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Floragato",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Tree-shaded pink tall grass. Controleer daarna tijd en weer voordat je voor Sprigatito wacht."
   },
   {
@@ -5799,7 +5536,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Sprigatito",
     "evolvesInto": "Meowscarada",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Interrogation desk. Controleer daarna tijd en weer voordat je voor Floragato wacht."
   },
   {
@@ -5822,7 +5558,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Floragato",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Heart-pounding surprise box. Controleer daarna tijd en weer voordat je voor Meowscarada wacht."
   },
   {
@@ -5844,7 +5579,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Kilowattrel",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Elevated pink tall grass. Controleer daarna tijd en weer voordat je voor Wattrel wacht."
   },
   {
@@ -5867,7 +5601,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Wattrel",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Elevated pink tall grass. Controleer daarna tijd en weer voordat je voor Kilowattrel wacht."
   },
   {
@@ -5889,7 +5622,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Tinkatuff",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Large luggage carrier. Controleer daarna tijd en weer voordat je voor Tinkatink wacht."
   },
   {
@@ -5911,7 +5643,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tinkatink",
     "evolvesInto": "Tinkaton",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Large luggage carrier. Controleer daarna tijd en weer voordat je voor Tinkatuff wacht."
   },
   {
@@ -5933,7 +5664,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tinkatuff",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Sparkling Skylands en maak eerst Oversized dumping ground. Controleer daarna tijd en weer voordat je voor Tinkaton wacht."
   },
   {
@@ -5955,7 +5685,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Wing Fossil Display. Controleer daarna tijd en weer voordat je voor Aerodactyl wacht."
   },
   {
@@ -5976,7 +5705,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Rampardos",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Skull Fossil display. Controleer daarna tijd en weer voordat je voor Cranidos wacht."
   },
   {
@@ -5998,7 +5726,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Cranidos",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Headbutt Fossil display. Controleer daarna tijd en weer voordat je voor Rampardos wacht."
   },
   {
@@ -6020,7 +5747,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Bastiodon",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Armor Fossil display. Controleer daarna tijd en weer voordat je voor Shieldon wacht."
   },
   {
@@ -6043,7 +5769,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Shieldon",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Shield Fossil display. Controleer daarna tijd en weer voordat je voor Bastiodon wacht."
   },
   {
@@ -6065,7 +5790,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Tyrantrum",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Jaw Fossil display. Controleer daarna tijd en weer voordat je voor Tyrunt wacht."
   },
   {
@@ -6088,7 +5812,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Tyrunt",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Despot fossil display. Controleer daarna tijd en weer voordat je voor Tyrantrum wacht."
   },
   {
@@ -6110,7 +5833,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Aurorus",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Sail Fossil display. Controleer daarna tijd en weer voordat je voor Amaura wacht."
   },
   {
@@ -6133,7 +5855,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Amaura",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Rocky Ridges en maak eerst Tundra fossil display. Controleer daarna tijd en weer voordat je voor Aurorus wacht."
   },
   {
@@ -6154,7 +5875,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "Vaporeon / Jolteon / Flareon / Espeon / Umbreon / Leafeon / Glaceon / Sylveon",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Pretty flower bed. Controleer daarna tijd en weer voordat je voor Eevee wacht."
   },
   {
@@ -6175,7 +5895,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Boundless blue beverage. Controleer daarna tijd en weer voordat je voor Vaporeon wacht."
   },
   {
@@ -6196,7 +5915,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Electrifying potatoes. Controleer daarna tijd en weer voordat je voor Jolteon wacht."
   },
   {
@@ -6217,7 +5935,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Burning-hot spice. Controleer daarna tijd en weer voordat je voor Flareon wacht."
   },
   {
@@ -6238,7 +5955,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Elegant daytime treats. Controleer daarna tijd en weer voordat je voor Espeon wacht."
   },
   {
@@ -6259,7 +5975,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Dark-chocolate cookies. Controleer daarna tijd en weer voordat je voor Umbreon wacht."
   },
   {
@@ -6280,7 +5995,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Leafy greens sandwich. Controleer daarna tijd en weer voordat je voor Leafeon wacht."
   },
   {
@@ -6301,7 +6015,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Chilly shaved ice. Controleer daarna tijd en weer voordat je voor Glaceon wacht."
   },
   {
@@ -6322,7 +6035,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "Eevee",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "begin in Palette Town en maak eerst Lovely ribbon cake. Controleer daarna tijd en weer voordat je voor Sylveon wacht."
   },
   {
@@ -6343,7 +6055,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "behandel Kyogre als een verhaalontmoeting, niet als een gewone habitat-spawn."
   },
   {
@@ -6364,7 +6075,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "zorg dat je de Pikachu Doll bij je hebt voordat je specifiek voor Raikou naar Dream Island gaat."
   },
   {
@@ -6385,7 +6095,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "neem de Arcanine Doll mee als Entei je doel is; zonder die speciale methode is dit geen normale habitat-spawn."
   },
   {
@@ -6406,7 +6115,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "ga pas gericht voor Suicune zodra je de Eevee Doll hebt."
   },
   {
@@ -6428,7 +6136,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "zoek Volcanion niet via gewone habitats; richt je op de speciale Party-voorwaarde in Rocky Ridges."
   },
   {
@@ -6450,7 +6157,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "haal eerst de Freezing Chambers-kit; Articuno is geen normale habitat-spawn."
   },
   {
@@ -6472,7 +6178,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "bouw eerst de Abandoned Power Plant voordat je tijd steekt in het zoeken naar Zapdos."
   },
   {
@@ -6494,7 +6199,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Moltres vraagt om de Altar of Flame; behandel hem dus niet als een gewone habitat-Pokémon."
   },
   {
@@ -6516,7 +6220,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Gebruik de Heldere bel (Clear Bell) om Ho-Oh te ontmoeten."
   },
   {
@@ -6538,7 +6241,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "Gebruik de Getijdenbel (Tidal Bell) om Lugia te ontmoeten."
   },
   {
@@ -6559,7 +6261,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "neem de Dragonite Doll mee als je specifiek voor Mewtwo naar Dream Island gaat."
   },
   {
@@ -6580,7 +6281,6 @@ const pokemonKanto = [
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
-    "evolutionMethod": "",
     "tip": "zoek eerst alle Mysterious Slates. Mew is een puzzelbeloning en geen gewone habitat-spawn."
   }
 ];

@@ -1,7 +1,6 @@
 // NLPokopia - Bubbly Basin DLC Pokédex #001 t/m #050
-// 50 Pokémon, eigen DLC-Pokédex.
-// Gebaseerd op de actuele Bubbly Basin Pokédex & Habitat Dex.
-// Geen 'Mijn tip:' in de tiptekst; het label op de website is al 'Persoonlijke tip'.
+// Nederlands als hoofdtaal; Engelse speltermen staan tussen haakjes.
+// Persoonlijke tips blijven gewoon Nederlands.
 
 const pokemonDLC = [
   {
@@ -13,13 +12,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Basin Tall Grass & Coral / Sandy Digging Spot",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Basin Tall Grass & Coral / Sandy Digging Spot.",
-    "requirements": "Basin Tall Grass & Coral: Seabed Tall Grass x4, Small Coral x1, Tall Coral x1 ; Sandy Digging Spot: Sandpile x1, Sand Toys x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Basin-hoog gras & koraal (Basin-hoog gras (Basin Tall Grass) & Coral) / Zanderige graafplek (Sandy Digging Spot)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Basin-hoog gras & koraal (Basin-hoog gras (Basin Tall Grass) & Coral) / Zanderige graafplek (Sandy Digging Spot).",
+    "requirements": "Basin-hoog gras & koraal (Basin-hoog gras (Basin Tall Grass) & Coral): Zeebodem-hoog gras (Seabed Tall Grass) x4, Klein koraal (Small Coral) x1, Hoog koraal (Tall Coral) x1 ; Zanderige graafplek (Sandy Digging Spot): Zandhoop (Sandpile) x1, Zandspeelgoed (Sand Toys) x1",
     "specialties": [
-      "Scrub",
-      "Litter"
+      "Schrobben (Scrub)",
+      "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Cloyster",
@@ -36,13 +35,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Swaying Flower Bed & Seaweed",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Swaying Flower Bed & Seaweed.",
-    "requirements": "Swaying Flower Bed & Seaweed: Chimney Rocks x1, Seabed Flowers x4, Lush Seaweed x2",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Wuivend bloemenbed & zeewier (Wuivend bloemenbed (Swaying Flower Bed) & Seaweed)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Wuivend bloemenbed & zeewier (Wuivend bloemenbed (Swaying Flower Bed) & Seaweed).",
+    "requirements": "Wuivend bloemenbed & zeewier (Wuivend bloemenbed (Swaying Flower Bed) & Seaweed): Schoorsteenrotsen (Chimney Rocks) x1, Zeebodembloemen (Seabed Flowers) x4, Weelderig zeewier (Lush Seaweed) x2",
     "specialties": [
-      "Scrub",
-      "Litter"
+      "Schrobben (Scrub)",
+      "Opruimen (Litter)"
     ],
     "evolvesFrom": "Shellder",
     "evolvesInto": "",
@@ -58,12 +57,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Coral Congregation",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Coral Congregation.",
-    "requirements": "Coral Congregation: Colorful Corals x1, Tall Coral x1, Small Coral x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Koraalverzameling (Coral Congregation)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Koraalverzameling (Coral Congregation).",
+    "requirements": "Koraalverzameling (Coral Congregation): Kleurrijk koraal (Colorful Corals) x1, Hoog koraal (Tall Coral) x1, Klein koraal (Small Coral) x1",
     "specialties": [
-      "Water"
+      "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Seadra",
@@ -79,13 +78,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Coral Congregation",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Coral Congregation.",
-    "requirements": "Coral Congregation: Colorful Corals x1, Tall Coral x1, Small Coral x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Koraalverzameling (Coral Congregation)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Koraalverzameling (Coral Congregation).",
+    "requirements": "Koraalverzameling (Coral Congregation): Kleurrijk koraal (Colorful Corals) x1, Hoog koraal (Tall Coral) x1, Klein koraal (Small Coral) x1",
     "specialties": [
-      "Water",
-      "Litter"
+      "Water geven (Water)",
+      "Opruimen (Litter)"
     ],
     "evolvesFrom": "Horsea",
     "evolvesInto": "Kingdra",
@@ -102,13 +101,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Marine Makeup Stand / Coral Congregation",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Marine Makeup Stand / Coral Congregation.",
-    "requirements": "Marine Makeup Stand: Marine Closet x1, Marine Dresser x1, Marine Chair x1 ; Coral Congregation: Colorful Corals x1, Tall Coral x1, Small Coral x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Maritieme make-uptafel (Marine Makeup Stand) / Koraalverzameling (Coral Congregation)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Maritieme make-uptafel (Marine Makeup Stand) / Koraalverzameling (Coral Congregation).",
+    "requirements": "Maritieme make-uptafel (Marine Makeup Stand): Maritieme kast (Marine Closet) x1, Maritieme ladekast (Marine Dresser) x1, Maritieme stoel (Marine Chair) x1 ; Koraalverzameling (Coral Congregation): Kleurrijk koraal (Colorful Corals) x1, Hoog koraal (Tall Coral) x1, Klein koraal (Small Coral) x1",
     "specialties": [
-      "Water",
-      "Litter"
+      "Water geven (Water)",
+      "Opruimen (Litter)"
     ],
     "evolvesFrom": "Seadra",
     "evolvesInto": "",
@@ -124,12 +123,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: Nighttime | Weer: All weather",
-    "habitat": "Swaying Flower Bed",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Swaying Flower Bed.",
-    "requirements": "Swaying Flower Bed: Seabed Flowers x4",
+    "area": "Tijd: Nacht (Nighttime) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Wuivend bloemenbed (Swaying Flower Bed)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Wuivend bloemenbed (Swaying Flower Bed).",
+    "requirements": "Wuivend bloemenbed (Swaying Flower Bed): Zeebodembloemen (Seabed Flowers) x4",
     "specialties": [
-      "Teleport"
+      "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Starmie",
@@ -146,13 +145,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Mermaid's Gym",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Mermaid's Gym.",
-    "requirements": "Mermaid's Gym: Marine Sofa x1, Pedestal / Exhibition Stand x6, Decorative Great Ball x1, Decorative Heal Ball x1, Decorative Dive Ball x1, Decorative Net Ball x1, Decorative Lure Ball x1, Decorative Quick Ball x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Zeemeermin-gym (Mermaid's Gym)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Zeemeermin-gym (Mermaid's Gym).",
+    "requirements": "Zeemeermin-gym (Mermaid's Gym): Marine Sofa x1, Pedestal / Exhibition Stand x6, Decorative Great Ball x1, Decorative Heal Ball x1, Decorative Dive Ball x1, Decorative Net Ball x1, Decorative Lure Ball x1, Decorative Quick Ball x1",
     "specialties": [
-      "Teleport",
-      "Gather"
+      "Teleporteren (Teleport)",
+      "Verzamelen (Gather)"
     ],
     "evolvesFrom": "Staryu",
     "evolvesInto": "",
@@ -168,12 +167,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Basin Tall Grass / Canoe Dock / Bubbly Bathtub",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Basin Tall Grass / Canoe Dock / Bubbly Bathtub.",
-    "requirements": "Basin Tall Grass: Seabed Tall Grass x4 ; Canoe Dock: Canoe x1, Floating Logs x2, Water x2 ; Bubbly Bathtub: Bathtub x1, Bubble Machine (lit) x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Basin-hoog gras (Basin Tall Grass) / Kanosteiger (Canoe Dock) / Bubbelbad (Bubbly Badkuip (Bathtub))",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Basin-hoog gras (Basin Tall Grass) / Kanosteiger (Canoe Dock) / Bubbelbad (Bubbly Badkuip (Bathtub)).",
+    "requirements": "Basin-hoog gras (Basin Tall Grass): Zeebodem-hoog gras (Seabed Tall Grass) x4 ; Kanosteiger (Canoe Dock): Canoe x1, Drijvende boomstammen (Floating Logs) x2, Water x2 ; Bubbelbad (Bubbly Badkuip (Bathtub)): Badkuip (Bathtub) x1, Bubbelmachine (Bubble Machine) (verlicht (lit)) x1",
     "specialties": [
-      "Chop"
+      "Hakken (Chop)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Croconaw",
@@ -189,13 +188,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Chimney Rocks Dig Site",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Chimney Rocks Dig Site.",
-    "requirements": "Chimney Rocks Dig Site: Chimney Rocks x1, Wheelbarrow x1, Excavation Tools x1, Traffic Cone x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Graafplek bij schoorsteenrotsen (Schoorsteenrotsen (Chimney Rocks) Dig Site)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Graafplek bij schoorsteenrotsen (Schoorsteenrotsen (Chimney Rocks) Dig Site).",
+    "requirements": "Graafplek bij schoorsteenrotsen (Schoorsteenrotsen (Chimney Rocks) Dig Site): Schoorsteenrotsen (Chimney Rocks) x1, Kruiwagen (Wheelbarrow) x1, Graafgereedschap (Excavation Tools) x1, Verkeerskegel (Traffic Cone) x1",
     "specialties": [
-      "Chop",
-      "Crush"
+      "Hakken (Chop)",
+      "Verpletteren (Crush)"
     ],
     "evolvesFrom": "Totodile",
     "evolvesInto": "Feraligatr",
@@ -211,13 +210,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Biteable Punching Bag / Basin Tall Grass",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Biteable Punching Bag / Basin Tall Grass.",
-    "requirements": "Biteable Punching Bag: Sandpile x1, Punching Bag x1, Table (any) x1, Gold Teeth x1 ; Basin Tall Grass: Seabed Tall Grass x4",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Bijtbare bokszak (Biteable Bokszak (Punching Bag)) / Basin-hoog gras (Basin Tall Grass)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Bijtbare bokszak (Biteable Bokszak (Punching Bag)) / Basin-hoog gras (Basin Tall Grass).",
+    "requirements": "Bijtbare bokszak (Biteable Bokszak (Punching Bag)): Zandhoop (Sandpile) x1, Bokszak (Punching Bag) x1, Table (any) x1, Gouden tanden (Gold Teeth) x1 ; Basin-hoog gras (Basin Tall Grass): Zeebodem-hoog gras (Seabed Tall Grass) x4",
     "specialties": [
-      "Chop",
-      "Crush"
+      "Hakken (Chop)",
+      "Verpletteren (Crush)"
     ],
     "evolvesFrom": "Croconaw",
     "evolvesInto": "",
@@ -234,12 +233,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Fluffy Relaxation",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Fluffy Relaxation.",
-    "requirements": "Fluffy Relaxation: Cushion Bed x1, Lighting (any) x1, Doll (any) x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Zachte ontspanningsplek (Fluffy Relaxation)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Zachte ontspanningsplek (Fluffy Relaxation).",
+    "requirements": "Zachte ontspanningsplek (Fluffy Relaxation): Kussenbed (Cushion Bed) x1, Lighting (any) x1, Doll (any) x1",
     "specialties": [
-      "Generate"
+      "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lanturn",
@@ -256,13 +255,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Nostalgia Zone",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Nostalgia Zone.",
-    "requirements": "Nostalgia Zone: Antique Chest x1, Music Box x1, Photo Frame x1, Sea Moss x2, Wooden Crate x1, Lantern (lit) x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Nostalgiezone (Nostalgia Zone)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Nostalgiezone (Nostalgia Zone).",
+    "requirements": "Nostalgiezone (Nostalgia Zone): Antieke kist (Antique Chest) x1, Muziekdoos (Music Box) x1, Fotolijst (Photo Frame) x1, Zeemos (Sea Moss) x2, Houten krat (Wooden Crate) x1, Lantaarn (Lantern) (verlicht (lit)) x1",
     "specialties": [
-      "Generate",
-      "Water"
+      "Energie opwekken (Generate)",
+      "Water geven (Water)"
     ],
     "evolvesFrom": "Chinchou",
     "evolvesInto": "",
@@ -279,12 +278,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Basin Tall Grass & Coral / Coral Congregation",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Basin Tall Grass & Coral / Coral Congregation.",
-    "requirements": "Basin Tall Grass & Coral: Seabed Tall Grass x4, Small Coral x1, Tall Coral x1 ; Coral Congregation: Colorful Corals x1, Tall Coral x1, Small Coral x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Basin-hoog gras & koraal (Basin-hoog gras (Basin Tall Grass) & Coral) / Koraalverzameling (Coral Congregation)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Basin-hoog gras & koraal (Basin-hoog gras (Basin Tall Grass) & Coral) / Koraalverzameling (Coral Congregation).",
+    "requirements": "Basin-hoog gras & koraal (Basin-hoog gras (Basin Tall Grass) & Coral): Zeebodem-hoog gras (Seabed Tall Grass) x4, Klein koraal (Small Coral) x1, Hoog koraal (Tall Coral) x1 ; Koraalverzameling (Coral Congregation): Kleurrijk koraal (Colorful Corals) x1, Hoog koraal (Tall Coral) x1, Klein koraal (Small Coral) x1",
     "specialties": [
-      "Grow"
+      "Groeien (Grow)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
@@ -300,12 +299,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Basin Tall Grass / Fluffy Relaxation",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Basin Tall Grass / Fluffy Relaxation.",
-    "requirements": "Basin Tall Grass: Seabed Tall Grass x4 ; Fluffy Relaxation: Cushion Bed x1, Lighting (any) x1, Doll (any) x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Basin-hoog gras (Basin Tall Grass) / Zachte ontspanningsplek (Fluffy Relaxation)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Basin-hoog gras (Basin Tall Grass) / Zachte ontspanningsplek (Fluffy Relaxation).",
+    "requirements": "Basin-hoog gras (Basin Tall Grass): Zeebodem-hoog gras (Seabed Tall Grass) x4 ; Zachte ontspanningsplek (Fluffy Relaxation): Kussenbed (Cushion Bed) x1, Lighting (any) x1, Doll (any) x1",
     "specialties": [
-      "Water"
+      "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Marshtomp",
@@ -322,13 +321,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Muddy Playtime / Creepy Chimney Rocks",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Muddy Playtime / Creepy Chimney Rocks.",
-    "requirements": "Muddy Playtime: Windup Inkay x1, Towel Rack x1, Floating Logs x1, Muddy Water x2 ; Creepy Chimney Rocks: Chimney Rocks x1, Sea Moss x4, Barrel x1, Lantern (lit) x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Modderige speelplek (Muddy Playtime) / Griezelige schoorsteenrotsen (Creepy Schoorsteenrotsen (Chimney Rocks))",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Modderige speelplek (Muddy Playtime) / Griezelige schoorsteenrotsen (Creepy Schoorsteenrotsen (Chimney Rocks)).",
+    "requirements": "Modderige speelplek (Muddy Playtime): Opwindbare Inkay (Windup Inkay) x1, Handdoekenrek (Towel Rack) x1, Drijvende boomstammen (Floating Logs) x1, Muddy Water x2 ; Griezelige schoorsteenrotsen (Creepy Schoorsteenrotsen (Chimney Rocks)): Schoorsteenrotsen (Chimney Rocks) x1, Zeemos (Sea Moss) x4, Barrel x1, Lantaarn (Lantern) (verlicht (lit)) x1",
     "specialties": [
-      "Water",
-      "Build"
+      "Water geven (Water)",
+      "Bouwen (Build)"
     ],
     "evolvesFrom": "Mudkip",
     "evolvesInto": "Swampert",
@@ -345,13 +344,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Muddy Spa / Basin Tall Grass & Coral",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Muddy Spa / Basin Tall Grass & Coral.",
-    "requirements": "Muddy Spa: Seat (wide) x1, Gyarados Fountain x1, Bathtime Set x1, Muddy Water x2 ; Basin Tall Grass & Coral: Seabed Tall Grass x4, Small Coral x1, Tall Coral x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Modderspa (Muddy Spa) / Basin-hoog gras & koraal (Basin-hoog gras (Basin Tall Grass) & Coral)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Modderspa (Muddy Spa) / Basin-hoog gras & koraal (Basin-hoog gras (Basin Tall Grass) & Coral).",
+    "requirements": "Modderspa (Muddy Spa): Seat (wide) x1, Gyarados-fontein (Gyarados Fountain) x1, Badset (Bathtime Set) x1, Muddy Water x2 ; Basin-hoog gras & koraal (Basin-hoog gras (Basin Tall Grass) & Coral): Zeebodem-hoog gras (Seabed Tall Grass) x4, Klein koraal (Small Coral) x1, Hoog koraal (Tall Coral) x1",
     "specialties": [
-      "Build",
-      "Bulldoze"
+      "Bouwen (Build)",
+      "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "Marshtomp",
     "evolvesInto": "",
@@ -368,12 +367,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Seaweed & Netting",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Seaweed & Netting.",
-    "requirements": "Seaweed & Netting: Netting x4, Lush Seaweed x2",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Zeewier & netten (Seaweed & Netten (Netting))",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Zeewier & netten (Seaweed & Netten (Netting)).",
+    "requirements": "Zeewier & netten (Seaweed & Netten (Netting)): Netten (Netting) x4, Weelderig zeewier (Lush Seaweed) x2",
     "specialties": [
-      "Chop"
+      "Hakken (Chop)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Sharpedo",
@@ -390,13 +389,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Chimney Rocks Dig Site",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Chimney Rocks Dig Site.",
-    "requirements": "Chimney Rocks Dig Site: Chimney Rocks x1, Wheelbarrow x1, Excavation Tools x1, Traffic Cone x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Graafplek bij schoorsteenrotsen (Schoorsteenrotsen (Chimney Rocks) Dig Site)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Graafplek bij schoorsteenrotsen (Schoorsteenrotsen (Chimney Rocks) Dig Site).",
+    "requirements": "Graafplek bij schoorsteenrotsen (Schoorsteenrotsen (Chimney Rocks) Dig Site): Schoorsteenrotsen (Chimney Rocks) x1, Kruiwagen (Wheelbarrow) x1, Graafgereedschap (Excavation Tools) x1, Verkeerskegel (Traffic Cone) x1",
     "specialties": [
-      "Crush",
-      "Scrub"
+      "Verpletteren (Crush)",
+      "Schrobben (Scrub)"
     ],
     "evolvesFrom": "Carvanha",
     "evolvesInto": "",
@@ -413,12 +412,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Ocean Rest Spot / Sandy Speech / Muddy Playtime",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Ocean Rest Spot / Sandy Speech / Muddy Playtime.",
-    "requirements": "Ocean Rest Spot: Small Coral x1, Seashell Seat x1, Lampion x1 ; Sandy Speech: Sandpile x1, Table (any) x1, Tabletop Mic x1 ; Muddy Playtime: Windup Inkay x1, Towel Rack x1, Floating Logs x1, Muddy Water x2",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Rustplek in de oceaan (Ocean Rest Spot) / Zanderige spreekplek (Sandy Speech) / Modderige speelplek (Muddy Playtime)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Rustplek in de oceaan (Ocean Rest Spot) / Zanderige spreekplek (Sandy Speech) / Modderige speelplek (Muddy Playtime).",
+    "requirements": "Rustplek in de oceaan (Ocean Rest Spot): Klein koraal (Small Coral) x1, Seashell Seat x1, Lampion x1 ; Zanderige spreekplek (Sandy Speech): Zandhoop (Sandpile) x1, Table (any) x1, Tafelmicrofoon (Tabletop Mic) x1 ; Modderige speelplek (Muddy Playtime): Opwindbare Inkay (Windup Inkay) x1, Handdoekenrek (Towel Rack) x1, Drijvende boomstammen (Floating Logs) x1, Muddy Water x2",
     "specialties": [
-      "Search"
+      "Zoeken (Search)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Whiscash",
@@ -435,13 +434,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Gorgeous Sleeping Area",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Gorgeous Sleeping Area.",
-    "requirements": "Gorgeous Sleeping Area: Ornate Partition x1, Ornate Bed x1, Ornate Stand x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Prachtige slaapruimte (Gorgeous Sleeping Area)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Prachtige slaapruimte (Gorgeous Sleeping Area).",
+    "requirements": "Prachtige slaapruimte (Gorgeous Sleeping Area): Ornate Partition x1, Ornate Bed x1, Ornate Stand x1",
     "specialties": [
-      "Search",
-      "Bulldoze"
+      "Zoeken (Search)",
+      "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "Barboach",
     "evolvesInto": "",
@@ -457,12 +456,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Sandy Basin Tall Grass / Sandy Digging Spot",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Sandy Basin Tall Grass / Sandy Digging Spot.",
-    "requirements": "Sandy Basin Tall Grass: Sandpile x1, Seabed Tall Grass x4 ; Sandy Digging Spot: Sandpile x1, Sand Toys x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Zanderig Basin-hoog gras (Sandy Basin-hoog gras (Basin Tall Grass)) / Zanderige graafplek (Sandy Digging Spot)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Zanderig Basin-hoog gras (Sandy Basin-hoog gras (Basin Tall Grass)) / Zanderige graafplek (Sandy Digging Spot).",
+    "requirements": "Zanderig Basin-hoog gras (Sandy Basin-hoog gras (Basin Tall Grass)): Zandhoop (Sandpile) x1, Zeebodem-hoog gras (Seabed Tall Grass) x4 ; Zanderige graafplek (Sandy Digging Spot): Zandhoop (Sandpile) x1, Zandspeelgoed (Sand Toys) x1",
     "specialties": [
-      "Build"
+      "Bouwen (Build)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Crawdaunt",
@@ -479,13 +478,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Sandy Digging Spot",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Sandy Digging Spot.",
-    "requirements": "Sandy Digging Spot: Sandpile x1, Sand Toys x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Zanderige graafplek (Sandy Digging Spot)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Zanderige graafplek (Sandy Digging Spot).",
+    "requirements": "Zanderige graafplek (Sandy Digging Spot): Zandhoop (Sandpile) x1, Zandspeelgoed (Sand Toys) x1",
     "specialties": [
-      "Build",
-      "Crush"
+      "Bouwen (Build)",
+      "Verpletteren (Crush)"
     ],
     "evolvesFrom": "Corphish",
     "evolvesInto": "",
@@ -501,12 +500,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Treasure Chest & Sparkling Jewels / Swaying Flower Bed & Coral / Fluffy Relaxation",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Treasure Chest & Sparkling Jewels / Swaying Flower Bed & Coral / Fluffy Relaxation.",
-    "requirements": "Treasure Chest & Sparkling Jewels: Big Treasure Chest x1, Sparkling Jewelry x1, Lantern (lit) x1 ; Swaying Flower Bed & Coral: Colorful Corals x1, Seabed Flowers x4 ; Fluffy Relaxation: Cushion Bed x1, Lighting (any) x1, Doll (any) x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Schatkist & fonkelende juwelen (Treasure Chest & Sparkling Jewels) / Wuivend bloemenbed & koraal (Wuivend bloemenbed (Swaying Flower Bed) & Coral) / Zachte ontspanningsplek (Fluffy Relaxation)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Schatkist & fonkelende juwelen (Treasure Chest & Sparkling Jewels) / Wuivend bloemenbed & koraal (Wuivend bloemenbed (Swaying Flower Bed) & Coral) / Zachte ontspanningsplek (Fluffy Relaxation).",
+    "requirements": "Schatkist & fonkelende juwelen (Treasure Chest & Sparkling Jewels): Big Treasure Chest x1, Fonkelende sieraden (Sparkling Jewelry) x1, Lantaarn (Lantern) (verlicht (lit)) x1 ; Wuivend bloemenbed & koraal (Wuivend bloemenbed (Swaying Flower Bed) & Coral): Kleurrijk koraal (Colorful Corals) x1, Zeebodembloemen (Seabed Flowers) x4 ; Zachte ontspanningsplek (Fluffy Relaxation): Kussenbed (Cushion Bed) x1, Lighting (any) x1, Doll (any) x1",
     "specialties": [
-      "Hype"
+      "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
@@ -522,13 +521,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Smoothie-Making Spot / Basin Tall Grass",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Smoothie-Making Spot / Basin Tall Grass.",
-    "requirements": "Smoothie-Making Spot: Blender x1, Plated Food x1, Table (any) x1 ; Basin Tall Grass: Seabed Tall Grass x4",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Smoothieplek (Smoothie-Making Spot) / Basin-hoog gras (Basin Tall Grass)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Smoothieplek (Smoothie-Making Spot) / Basin-hoog gras (Basin Tall Grass).",
+    "requirements": "Smoothieplek (Smoothie-Making Spot): Blender (Blender) x1, Plated Food x1, Table (any) x1 ; Basin-hoog gras (Basin Tall Grass): Zeebodem-hoog gras (Seabed Tall Grass) x4",
     "specialties": [
-      "Chop",
-      "Trade"
+      "Hakken (Chop)",
+      "Ruilen (Trade)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Floatzel",
@@ -544,13 +543,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Marine Shop",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Marine Shop.",
-    "requirements": "Marine Shop: Cash Register (lit) x1, Table (any) x2, Water x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Maritieme winkel (Marine Shop)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Maritieme winkel (Marine Shop).",
+    "requirements": "Maritieme winkel (Marine Shop): Kassa (Cash Register) (verlicht (lit)) x1, Table (any) x2, Water x1",
     "specialties": [
-      "Trade",
-      "Build"
+      "Ruilen (Trade)",
+      "Bouwen (Build)"
     ],
     "evolvesFrom": "Buizel",
     "evolvesInto": "",
@@ -566,12 +565,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Marine Mossy Rest Spot / Swaying Flower Bed",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Marine Mossy Rest Spot / Swaying Flower Bed.",
-    "requirements": "Marine Mossy Rest Spot: Sea Moss x4 ; Swaying Flower Bed: Seabed Flowers x4",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Bemoste maritieme rustplek (Marine Mossy Rest Spot) / Wuivend bloemenbed (Swaying Flower Bed)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Bemoste maritieme rustplek (Marine Mossy Rest Spot) / Wuivend bloemenbed (Swaying Flower Bed).",
+    "requirements": "Bemoste maritieme rustplek (Marine Mossy Rest Spot): Zeemos (Sea Moss) x4 ; Wuivend bloemenbed (Swaying Flower Bed): Zeebodembloemen (Seabed Flowers) x4",
     "specialties": [
-      "Hype"
+      "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Lumineon",
@@ -587,13 +586,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Swaying Flower Bed & Seaweed / Marine Mossy Rest Spot",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Swaying Flower Bed & Seaweed / Marine Mossy Rest Spot.",
-    "requirements": "Swaying Flower Bed & Seaweed: Chimney Rocks x1, Seabed Flowers x4, Lush Seaweed x2 ; Marine Mossy Rest Spot: Sea Moss x4",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Wuivend bloemenbed & zeewier (Wuivend bloemenbed (Swaying Flower Bed) & Seaweed) / Bemoste maritieme rustplek (Marine Mossy Rest Spot)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Wuivend bloemenbed & zeewier (Wuivend bloemenbed (Swaying Flower Bed) & Seaweed) / Bemoste maritieme rustplek (Marine Mossy Rest Spot).",
+    "requirements": "Wuivend bloemenbed & zeewier (Wuivend bloemenbed (Swaying Flower Bed) & Seaweed): Schoorsteenrotsen (Chimney Rocks) x1, Zeebodembloemen (Seabed Flowers) x4, Weelderig zeewier (Lush Seaweed) x2 ; Bemoste maritieme rustplek (Marine Mossy Rest Spot): Zeemos (Sea Moss) x4",
     "specialties": [
-      "Hype",
-      "Water"
+      "Enthousiasmeren (Hype)",
+      "Water geven (Water)"
     ],
     "evolvesFrom": "Finneon",
     "evolvesInto": "",
@@ -610,13 +609,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Ocean Treasures / Playing Sailor",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Ocean Treasures / Playing Sailor.",
-    "requirements": "Ocean Treasures: Marine Chest x1, Bottled Ship x1, Sparkling Jewelry x1 ; Playing Sailor: Big Treasure Chest x1, Ship's Wheel x1, Wooden Crate x1, Bottled Ship x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Oceaanschatten (Ocean Treasures) / Zeeman spelen (Playing Sailor)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Oceaanschatten (Ocean Treasures) / Zeeman spelen (Playing Sailor).",
+    "requirements": "Oceaanschatten (Ocean Treasures): Maritieme kist (Marine Chest) x1, Schip in fles (Bottled Ship) x1, Fonkelende sieraden (Sparkling Jewelry) x1 ; Zeeman spelen (Playing Sailor): Big Treasure Chest x1, Scheepsroer (Ship's Wheel) x1, Houten krat (Wooden Crate) x1, Schip in fles (Bottled Ship) x1",
     "specialties": [
-      "Search",
-      "Burn"
+      "Zoeken (Search)",
+      "Branden (Burn)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Jellicent",
@@ -633,13 +632,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Maritime Teatime",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Maritime Teatime.",
-    "requirements": "Maritime Teatime: Chic Table x1, Chic Chair x2, Push Cart x1, Tea Set (any) x1, Bottled Ship x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Maritiem theemoment (Maritime Teatime)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Maritiem theemoment (Maritime Teatime).",
+    "requirements": "Maritiem theemoment (Maritime Teatime): Chic Table x1, Chic Chair x2, Push Cart x1, Theeservies (Tea Set) (any) x1, Schip in fles (Bottled Ship) x1",
     "specialties": [
-      "Search",
-      "Burn"
+      "Zoeken (Search)",
+      "Branden (Burn)"
     ],
     "evolvesFrom": "Frillish",
     "evolvesInto": "",
@@ -655,13 +654,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Ocean Treasures",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Ocean Treasures.",
-    "requirements": "Ocean Treasures: Marine Chest x1, Bottled Ship x1, Sparkling Jewelry x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Oceaanschatten (Ocean Treasures)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Oceaanschatten (Ocean Treasures).",
+    "requirements": "Oceaanschatten (Ocean Treasures): Maritieme kist (Marine Chest) x1, Schip in fles (Bottled Ship) x1, Fonkelende sieraden (Sparkling Jewelry) x1",
     "specialties": [
-      "Water",
-      "Scrub"
+      "Water geven (Water)",
+      "Schrobben (Scrub)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
@@ -678,13 +677,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Swaying Flower Bed / Seaweed & Netting",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Swaying Flower Bed / Seaweed & Netting.",
-    "requirements": "Swaying Flower Bed: Seabed Flowers x4 ; Seaweed & Netting: Netting x4, Lush Seaweed x2",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Wuivend bloemenbed (Swaying Flower Bed) / Zeewier & netten (Seaweed & Netten (Netting))",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Wuivend bloemenbed (Swaying Flower Bed) / Zeewier & netten (Seaweed & Netten (Netting)).",
+    "requirements": "Wuivend bloemenbed (Swaying Flower Bed): Zeebodembloemen (Seabed Flowers) x4 ; Zeewier & netten (Seaweed & Netten (Netting)): Netten (Netting) x4, Weelderig zeewier (Lush Seaweed) x2",
     "specialties": [
-      "Generate",
-      "Bulldoze"
+      "Energie opwekken (Generate)",
+      "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
@@ -701,13 +700,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Muddy Playtime",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Muddy Playtime.",
-    "requirements": "Muddy Playtime: Windup Inkay x1, Towel Rack x1, Floating Logs x1, Muddy Water x2",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Modderige speelplek (Muddy Playtime)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Modderige speelplek (Muddy Playtime).",
+    "requirements": "Modderige speelplek (Muddy Playtime): Opwindbare Inkay (Windup Inkay) x1, Handdoekenrek (Towel Rack) x1, Drijvende boomstammen (Floating Logs) x1, Muddy Water x2",
     "specialties": [
-      "Gather",
-      "Teleport"
+      "Verzamelen (Gather)",
+      "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Malamar",
@@ -724,13 +723,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Topsy-Turvy",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Topsy-Turvy.",
-    "requirements": "Topsy-Turvy: Lampion x3",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Onderstebovenplek (Topsy-Turvy)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Onderstebovenplek (Topsy-Turvy).",
+    "requirements": "Onderstebovenplek (Topsy-Turvy): Lampion x3",
     "specialties": [
-      "Gather",
-      "Teleport"
+      "Verzamelen (Gather)",
+      "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "Inkay",
     "evolvesInto": "",
@@ -746,13 +745,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Bubbly Stage / Swaying Flower Bed",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Bubbelpodium (Bubbly Stage) / Wuivend bloemenbed (Swaying Flower Bed)",
     "obtainMethod": "Praat met Popplio wanneer je de Bubbly Basin DLC start; Popplio helpt je de Basin Pokédex te ontgrendelen. Daarna kan Popplio ook via de vermelde habitats verschijnen.",
     "requirements": "Expansion Pass + Dive + Bleak Beach Environment Level 5 om Bubbly Basin te starten.",
     "specialties": [
-      "Hype",
-      "Water"
+      "Enthousiasmeren (Hype)",
+      "Water geven (Water)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Brionne",
@@ -768,13 +767,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Bubbly Stage",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Bubbly Stage.",
-    "requirements": "Bubbly Stage: Small Stage (lit) x1, Bubble Machine (lit) x2",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Bubbelpodium (Bubbly Stage)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Bubbelpodium (Bubbly Stage).",
+    "requirements": "Bubbelpodium (Bubbly Stage): Klein podium (Small Stage) (verlicht (lit)) x1, Bubbelmachine (Bubble Machine) (verlicht (lit)) x2",
     "specialties": [
-      "Hype",
-      "Trade"
+      "Enthousiasmeren (Hype)",
+      "Ruilen (Trade)"
     ],
     "evolvesFrom": "Popplio",
     "evolvesInto": "Primarina",
@@ -791,13 +790,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Elegant Concert",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Elegant Concert.",
-    "requirements": "Elegant Concert: Harp x1, Marine Chair x1, Shell Lamp (lit) x2",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Elegant concert (Elegant Concert)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Elegant concert (Elegant Concert).",
+    "requirements": "Elegant concert (Elegant Concert): Harp x1, Maritieme stoel (Marine Chair) x1, Schelplamp (Shell Lamp) (verlicht (lit)) x2",
     "specialties": [
-      "Hype",
-      "Scrub"
+      "Enthousiasmeren (Hype)",
+      "Schrobben (Scrub)"
     ],
     "evolvesFrom": "Brionne",
     "evolvesInto": "",
@@ -814,12 +813,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Swaying Flower Bed & Coral",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Swaying Flower Bed & Coral.",
-    "requirements": "Swaying Flower Bed & Coral: Colorful Corals x1, Seabed Flowers x4",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Wuivend bloemenbed & koraal (Wuivend bloemenbed (Swaying Flower Bed) & Coral)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Wuivend bloemenbed & koraal (Wuivend bloemenbed (Swaying Flower Bed) & Coral).",
+    "requirements": "Wuivend bloemenbed & koraal (Wuivend bloemenbed (Swaying Flower Bed) & Coral): Kleurrijk koraal (Colorful Corals) x1, Zeebodembloemen (Seabed Flowers) x4",
     "specialties": [
-      "Recycle"
+      "Recyclen (Recycle)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Toxapex",
@@ -836,13 +835,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Treasure Chest & Sparkling Jewels",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Treasure Chest & Sparkling Jewels.",
-    "requirements": "Treasure Chest & Sparkling Jewels: Big Treasure Chest x1, Sparkling Jewelry x1, Lantern (lit) x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Schatkist & fonkelende juwelen (Treasure Chest & Sparkling Jewels)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Schatkist & fonkelende juwelen (Treasure Chest & Sparkling Jewels).",
+    "requirements": "Schatkist & fonkelende juwelen (Treasure Chest & Sparkling Jewels): Big Treasure Chest x1, Fonkelende sieraden (Sparkling Jewelry) x1, Lantaarn (Lantern) (verlicht (lit)) x1",
     "specialties": [
-      "Recycle",
-      "Build"
+      "Recyclen (Recycle)",
+      "Bouwen (Build)"
     ],
     "evolvesFrom": "Mareanie",
     "evolvesInto": "",
@@ -859,12 +858,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Discarded Treasure",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Discarded Treasure.",
-    "requirements": "Discarded Treasure: Big Treasure Chest x1, Waste Bin (any) x1, Garbage Bags x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Afgedankte schat (Discarded Treasure)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Afgedankte schat (Discarded Treasure).",
+    "requirements": "Afgedankte schat (Discarded Treasure): Big Treasure Chest x1, Afvalbak (Waste Bin) (any) x1, Vuilniszakken (Garbage Bags) x1",
     "specialties": [
-      "Recycle"
+      "Recyclen (Recycle)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Golisopod",
@@ -881,13 +880,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Discarded Treasure / Swaying Flower Bed & Coral",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Discarded Treasure / Swaying Flower Bed & Coral.",
-    "requirements": "Discarded Treasure: Big Treasure Chest x1, Waste Bin (any) x1, Garbage Bags x1 ; Swaying Flower Bed & Coral: Colorful Corals x1, Seabed Flowers x4",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Afgedankte schat (Discarded Treasure) / Wuivend bloemenbed & koraal (Wuivend bloemenbed (Swaying Flower Bed) & Coral)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Afgedankte schat (Discarded Treasure) / Wuivend bloemenbed & koraal (Wuivend bloemenbed (Swaying Flower Bed) & Coral).",
+    "requirements": "Afgedankte schat (Discarded Treasure): Big Treasure Chest x1, Afvalbak (Waste Bin) (any) x1, Vuilniszakken (Garbage Bags) x1 ; Wuivend bloemenbed & koraal (Wuivend bloemenbed (Swaying Flower Bed) & Coral): Kleurrijk koraal (Colorful Corals) x1, Zeebodembloemen (Seabed Flowers) x4",
     "specialties": [
-      "Recycle",
-      "Chop"
+      "Recyclen (Recycle)",
+      "Hakken (Chop)"
     ],
     "evolvesFrom": "Wimpod",
     "evolvesInto": "",
@@ -904,13 +903,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Molten Mossy Rest Spot",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Molten Mossy Rest Spot.",
-    "requirements": "Molten Mossy Rest Spot: Molten Rock x1, Sea Moss x4",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Gesmolten bemoste rustplek (Molten Mossy Rest Spot)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Gesmolten bemoste rustplek (Molten Mossy Rest Spot).",
+    "requirements": "Gesmolten bemoste rustplek (Molten Mossy Rest Spot): Gesmolten rots (Molten Rock) x1, Zeemos (Sea Moss) x4",
     "specialties": [
-      "Gather",
-      "Teleport"
+      "Verzamelen (Gather)",
+      "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
@@ -927,13 +926,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Playing Sailor",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Playing Sailor.",
-    "requirements": "Playing Sailor: Big Treasure Chest x1, Ship's Wheel x1, Wooden Crate x1, Bottled Ship x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Zeeman spelen (Playing Sailor)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Zeeman spelen (Playing Sailor).",
+    "requirements": "Zeeman spelen (Playing Sailor): Big Treasure Chest x1, Scheepsroer (Ship's Wheel) x1, Houten krat (Wooden Crate) x1, Schip in fles (Bottled Ship) x1",
     "specialties": [
-      "Grow",
-      "Litter"
+      "Groeien (Grow)",
+      "Opruimen (Litter)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
@@ -949,12 +948,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: Morning, Daytime, Evening | Weer: Not specified",
-    "habitat": "Smoothie-Making Spot",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Smoothie-Making Spot.",
-    "requirements": "Smoothie-Making Spot: Blender x1, Plated Food x1, Table (any) x1",
+    "area": "Tijd: Ochtend, overdag en avond (Morning, Daytime, Evening) | Weer: Niet gespecificeerd (Not specified)",
+    "habitat": "Smoothieplek (Smoothie-Making Spot)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Smoothieplek (Smoothie-Making Spot).",
+    "requirements": "Smoothieplek (Smoothie-Making Spot): Blender (Blender) x1, Plated Food x1, Table (any) x1",
     "specialties": [
-      "Chop"
+      "Hakken (Chop)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Drednaw",
@@ -971,13 +970,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: Morning, Daytime, Evening | Weer: Not specified",
-    "habitat": "Canoe Dock",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Canoe Dock.",
-    "requirements": "Canoe Dock: Canoe x1, Floating Logs x2, Water x2",
+    "area": "Tijd: Ochtend, overdag en avond (Morning, Daytime, Evening) | Weer: Niet gespecificeerd (Not specified)",
+    "habitat": "Kanosteiger (Canoe Dock)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Kanosteiger (Canoe Dock).",
+    "requirements": "Kanosteiger (Canoe Dock): Canoe x1, Drijvende boomstammen (Floating Logs) x2, Water x2",
     "specialties": [
-      "Crush",
-      "Bulldoze"
+      "Verpletteren (Crush)",
+      "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "Chewtle",
     "evolvesInto": "",
@@ -993,12 +992,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Creepy Chimney Rocks",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Creepy Chimney Rocks.",
-    "requirements": "Creepy Chimney Rocks: Chimney Rocks x1, Sea Moss x4, Barrel x1, Lantern (lit) x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Griezelige schoorsteenrotsen (Creepy Schoorsteenrotsen (Chimney Rocks))",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Griezelige schoorsteenrotsen (Creepy Schoorsteenrotsen (Chimney Rocks)).",
+    "requirements": "Griezelige schoorsteenrotsen (Creepy Schoorsteenrotsen (Chimney Rocks)): Schoorsteenrotsen (Chimney Rocks) x1, Zeemos (Sea Moss) x4, Barrel x1, Lantaarn (Lantern) (verlicht (lit)) x1",
     "specialties": [
-      "Generate"
+      "Energie opwekken (Generate)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
@@ -1014,12 +1013,12 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Sandy Speech",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Sandy Speech.",
-    "requirements": "Sandy Speech: Sandpile x1, Table (any) x1, Tabletop Mic x1",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Zanderige spreekplek (Sandy Speech)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Zanderige spreekplek (Sandy Speech).",
+    "requirements": "Zanderige spreekplek (Sandy Speech): Zandhoop (Sandpile) x1, Table (any) x1, Tafelmicrofoon (Tabletop Mic) x1",
     "specialties": [
-      "Bulldoze"
+      "Bulldozeren (Bulldoze)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "Wugtrio",
@@ -1035,13 +1034,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: All day | Weer: All weather",
-    "habitat": "Glowing Stage For Three",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Glowing Stage For Three.",
-    "requirements": "Glowing Stage For Three: Standing Mic x3, Wireless Power-Transmitter Post (lit) x3",
+    "area": "Tijd: Hele dag (All day) | Weer: Alle weersomstandigheden (All weather)",
+    "habitat": "Gloeiend podium voor drie (Glowing Stage For Three)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Gloeiend podium voor drie (Glowing Stage For Three).",
+    "requirements": "Gloeiend podium voor drie (Glowing Stage For Three): Staande microfoon (Standing Mic) x3, Draadloze stroomzenderpaal (Wireless Power-Transmitter Post) (verlicht (lit)) x3",
     "specialties": [
-      "Bulldoze",
-      "Search"
+      "Bulldozeren (Bulldoze)",
+      "Zoeken (Search)"
     ],
     "evolvesFrom": "Wiglett",
     "evolvesInto": "",
@@ -1058,13 +1057,13 @@ const pokemonDLC = [
     "game": "Pokémon Pokopia - Bubbly Basin DLC",
     "dlc": true,
     "location": "Bubbly Basin",
-    "area": "Tijd: Morning, Daytime, Evening | Weer: Not specified",
-    "habitat": "Marine Mossy Rest Spot",
-    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Marine Mossy Rest Spot.",
-    "requirements": "Marine Mossy Rest Spot: Sea Moss x4",
+    "area": "Tijd: Ochtend, overdag en avond (Morning, Daytime, Evening) | Weer: Niet gespecificeerd (Not specified)",
+    "habitat": "Bemoste maritieme rustplek (Marine Mossy Rest Spot)",
+    "obtainMethod": "Bouw één van deze Bubbly Basin-habitats: Bemoste maritieme rustplek (Marine Mossy Rest Spot).",
+    "requirements": "Bemoste maritieme rustplek (Marine Mossy Rest Spot): Zeemos (Sea Moss) x4",
     "specialties": [
-      "Gather",
-      "Teleport"
+      "Verzamelen (Gather)",
+      "Teleporteren (Teleport)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
@@ -1082,10 +1081,10 @@ const pokemonDLC = [
     "location": "Dream Island",
     "area": "Speciale methode; normale tijd- en weersvoorwaarden zijn niet van toepassing.",
     "habitat": "Geen normaal habitat",
-    "obtainMethod": "Vind Phione via de Starmie Doll op Dream Island.",
-    "requirements": "Starmie Doll.",
+    "obtainMethod": "Vind Phione via de Starmie-pop (Starmie Doll) op Dream Island.",
+    "requirements": "Starmie-pop (Starmie Doll).",
     "specialties": [
-      "Trade"
+      "Ruilen (Trade)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",
@@ -1106,8 +1105,8 @@ const pokemonDLC = [
     "obtainMethod": "Speel de Bubbly Basin-verhaallijn verder en voltooi de opdracht rond het bouwen van de Ocean Temple / Beautiful Building voor Popplio.",
     "requirements": "Vorder voldoende in de Bubbly Basin-hoofdopdrachten.",
     "specialties": [
-      "Trade",
-      "Hype"
+      "Ruilen (Trade)",
+      "Enthousiasmeren (Hype)"
     ],
     "evolvesFrom": "",
     "evolvesInto": "",

@@ -103,7 +103,9 @@ ${infoRow("Evolueert naar (Evolves into)", pokemon.evolvesInto)}
 <p>
     <strong>Status:</strong>
     ${
-        pokemon.dlc === true
+        pokemon.event === true
+            ? "Event"
+            : pokemon.dlc === true
             ? "DLC"
             : pokemon.dlc === false
             ? "Base Game"
@@ -159,9 +161,10 @@ function filterPokemon() {
 
 const matchesGame =
     selectedGame === "all" ||
-    (selectedGame === "base" && pokemon.dlc === false) ||
+    (selectedGame === "base" && pokemon.dlc === false && pokemon.event !== true) ||
     (selectedGame === "dlc" && pokemon.dlc === true) ||
-    (selectedGame === "unknown" && pokemon.dlc === null);
+    (selectedGame === "event" && pokemon.event === true) ||
+    (selectedGame === "unknown" && pokemon.dlc === null && pokemon.event !== true);
 
         const matchesType =
             selectedType === "all" ||

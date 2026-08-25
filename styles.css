@@ -8,1166 +8,46 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #1f2937;
-
-    background-color: #eef3f8;
-
-    /*
-       Poké Ball-achtige achtergrond.
-       Meerdere soorten ballen, verspreid over de pagina.
-    */
-    background-image:
-        radial-gradient(circle at 50% 50%,
-            transparent 0 11px,
-            rgba(255,255,255,0.70) 12px 15px,
-            transparent 16px),
-        linear-gradient(
-            to bottom,
-            rgba(220, 38, 38, 0.10) 0 47%,
-            rgba(30, 41, 59, 0.08) 47% 53%,
-            rgba(255,255,255,0.22) 53% 100%
-        ),
-
-        radial-gradient(circle at 50% 50%,
-            transparent 0 8px,
-            rgba(255,255,255,0.60) 9px 12px,
-            transparent 13px),
-        linear-gradient(
-            to bottom,
-            rgba(37, 99, 235, 0.08) 0 47%,
-            rgba(30,41,59,0.07) 47% 53%,
-            rgba(255,255,255,0.18) 53% 100%
-        );
-
-    background-size:
-        150px 150px,
-        150px 150px,
-        210px 210px,
-        210px 210px;
-
-    background-position:
-        20px 30px,
-        20px 30px,
-        100px 120px,
-        100px 120px;
-
-    background-attachment: fixed;
-
     min-height: 100vh;
-}
 
+    font-family: Arial, Helvetica, sans-serif;
 
-/* =========================================
-   HEADER
-========================================= */
-
-header {
-    text-align: center;
-    padding: 34px 20px 28px;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(255,255,255,0.98),
-            rgba(243,247,252,0.97)
-        );
-
-    border-bottom: 1px solid rgba(0,0,0,0.08);
-
-    box-shadow:
-        0 4px 18px rgba(0,0,0,0.06);
-}
-
-header h1 {
-    margin: 0;
-
-    font-size: clamp(32px, 6vw, 48px);
-
-    font-weight: 900;
-
-    letter-spacing: -1px;
-
-    color: #172033;
-}
-
-header h1::before {
-    content: "◉";
-    display: inline-block;
-
-    margin-right: 10px;
-
-    color: #dc2626;
-
-    text-shadow:
-        0 2px 0 #111827;
-}
-
-header p {
-    margin: 8px 0 0;
-
-    color: #64748b;
-
-    font-size: 16px;
-}
-
-
-/* =========================================
-   BUBBLY BASIN INFORMATIE
-========================================= */
-
-.dlc-info {
-    width: min(1100px, 92%);
-
-    margin: 24px auto 0;
-
-    padding: 22px 24px;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(224, 247, 255, 0.97),
-            rgba(240, 253, 250, 0.97)
-        );
-
-    border:
-        1px solid #a5e5f4;
-
-    border-radius: 18px;
-
-    box-shadow:
-        0 6px 18px rgba(15, 118, 143, 0.09);
-}
-
-.dlc-info h2 {
-    margin: 0 0 10px;
-
-    font-size: 23px;
-
-    color: #0f6479;
-}
-
-.dlc-info p {
-    margin: 7px 0;
-
-    line-height: 1.6;
-
-    color: #35515d;
-}
-
-
-/* =========================================
-   ZOEKBALK
-========================================= */
-
-.search-bar {
-    width: min(1100px, 92%);
-
-    margin: 24px auto 0;
-}
-
-.search-bar input {
-    width: 100%;
-
-    padding: 16px 18px;
-
-    font-size: 16px;
-
-    border: 2px solid #dbe2ea;
-
-    border-radius: 16px;
-
-    outline: none;
-
-    background:
-        rgba(255,255,255,0.96);
-
-    box-shadow:
-        0 5px 18px rgba(0,0,0,0.05);
-
-    transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease,
-        transform 0.2s ease;
-}
-
-.search-bar input:focus {
-    border-color: #3b82f6;
-
-    box-shadow:
-        0 0 0 4px rgba(59,130,246,0.12),
-        0 6px 20px rgba(0,0,0,0.06);
-}
-
-
-/* =========================================
-   FILTERS
-========================================= */
-
-.filters {
-    width: min(1100px, 92%);
-
-    margin: 14px auto 0;
-
-    display: flex;
-
-    gap: 10px;
-
-    flex-wrap: wrap;
-}
-
-.filters select {
-    padding: 11px 14px;
-
-    border:
-        1px solid #d4dbe4;
-
-    border-radius: 12px;
-
-    background:
-        rgba(255,255,255,0.96);
-
-    font-size: 15px;
-
-    cursor: pointer;
-
-    box-shadow:
-        0 3px 10px rgba(0,0,0,0.04);
-}
-
-
-/* =========================================
-   OVERZICHT
-========================================= */
-
-#app {
-    width: min(1100px, 92%);
-
-    margin: 28px auto 50px;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
-
-    gap: 20px;
-}
-
-
-/* =========================================
-   POKÉMON KAART
-========================================= */
-
-.pokemon-card {
-    position: relative;
-
-    overflow: hidden;
-
-    text-align: center;
-
-    padding: 22px 18px 20px;
-
-    background:
-        rgba(255,255,255,0.96);
-
-    border:
-        1px solid rgba(0,0,0,0.06);
-
-    border-radius: 20px;
-
-    box-shadow:
-        0 7px 22px rgba(0,0,0,0.08);
-
-    transition:
-        transform 0.22s ease,
-        box-shadow 0.22s ease,
-        border-color 0.22s ease;
-}
-
-.pokemon-card::before {
-    content: "";
-
-    position: absolute;
-
-    width: 95px;
-    height: 95px;
-
-    right: -35px;
-    top: -35px;
-
-    border-radius: 50%;
-
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(239,68,68,0.10) 0 47%,
-            rgba(15,23,42,0.08) 47% 53%,
-            rgba(255,255,255,0.40) 53%
-        );
-
-    border:
-        8px solid rgba(15,23,42,0.04);
-
-    pointer-events: none;
-}
-
-.pokemon-card:hover {
-    transform:
-        translateY(-5px);
-
-    box-shadow:
-        0 14px 30px rgba(0,0,0,0.13);
-
-    border-color:
-        rgba(59,130,246,0.22);
-}
-
-.pokemon-card:active {
-    transform:
-        translateY(-1px)
-        scale(0.99);
-}
-
-
-/* =========================================
-   POKÉMON AFBEELDING
-========================================= */
-
-.pokemon-image {
-    width: 170px;
-
-    height: 170px;
-
-    object-fit: contain;
-
-    display: block;
-
-    margin: 0 auto 12px;
-
-    transition:
-        transform 0.22s ease;
-}
-
-.pokemon-card:hover .pokemon-image {
-    transform:
-        scale(1.05);
-}
-
-
-/* =========================================
-   NAAM
-========================================= */
-
-.pokemon-card h2 {
-    margin: 8px 0 8px;
-
-    font-size: 21px;
-
-    color: #172033;
-}
-
-
-/* =========================================
-   TYPE
-========================================= */
-
-.pokemon-card-types {
-    margin: 6px 0 12px;
-
-    line-height: 1.5;
-
-    font-size: 14px;
-
-    color: #475569;
-}
-
-
-/* =========================================
-   STATUS
-========================================= */
-
-.pokemon-card-status {
-    display: inline-block;
-
-    margin: 3px auto 8px;
-
-    padding: 6px 11px;
-
-    border-radius: 999px;
-
-    background:
-        #eef2ff;
-
-    color:
-        #4338ca;
-
-    font-size: 13px;
-
-    font-weight: 700;
-}
-
-
-/* =========================================
-   BEKIJK INFO
-========================================= */
-
-.pokemon-more-info {
-    margin: 10px 0 0;
-
-    color:
-        #2563eb;
-
-    font-size: 14px;
-
-    font-weight: 700;
-}
-
-
-/* =========================================
-   GEEN RESULTATEN
-========================================= */
-
-.no-results {
-    grid-column: 1 / -1;
-
-    text-align: center;
-
-    padding: 35px;
-
-    background:
-        rgba(255,255,255,0.95);
-
-    border-radius: 18px;
-}
-
-
-/* ======================================================
-   DETAILPAGINA
-====================================================== */
-
-#pokemonDetail {
-    width: min(950px, 92%);
-
-    margin: 30px auto 60px;
-}
-
-
-/* =========================================
-   COMPLETE PAGINA
-========================================= */
-
-.pokemon-detail-page {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 20px;
-}
-
-
-/* =========================================
-   TERUGKNOP
-========================================= */
-
-.back-button {
-    align-self: flex-start;
-
-    display: inline-block;
-
-    padding: 10px 15px;
-
-    text-decoration: none;
-
-    color: #334155;
-
-    background:
-        rgba(255,255,255,0.96);
-
-    border:
-        1px solid #d7dee7;
-
-    border-radius: 12px;
-
-    font-weight: 700;
-
-    box-shadow:
-        0 3px 10px rgba(0,0,0,0.05);
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.back-button:hover {
-    transform:
-        translateX(-3px);
-
-    box-shadow:
-        0 5px 15px rgba(0,0,0,0.08);
-}
-
-
-/* =========================================
-   HERO
-========================================= */
-
-.pokemon-detail-hero {
-    position: relative;
-
-    overflow: hidden;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 34px;
-
-    padding: 30px;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(255,255,255,0.98),
-            rgba(241,245,249,0.98)
-        );
-
-    border-radius: 24px;
-
-    border:
-        1px solid rgba(0,0,0,0.06);
-
-    box-shadow:
-        0 10px 28px rgba(0,0,0,0.10);
-}
-
-
-/* Grote Poké Ball achter Pokémon */
-
-.pokemon-detail-hero::after {
-    content: "";
-
-    position: absolute;
-
-    width: 260px;
-    height: 260px;
-
-    right: -60px;
-    top: -70px;
-
-    border-radius: 50%;
-
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(239,68,68,0.08) 0 46%,
-            rgba(15,23,42,0.07) 46% 54%,
-            rgba(255,255,255,0.35) 54% 100%
-        );
-
-    border:
-        20px solid rgba(15,23,42,0.035);
-
-    z-index: 0;
-}
-
-
-/* =========================================
-   DETAIL AFBEELDING
-========================================= */
-
-.pokemon-detail-image {
-    position: relative;
-
-    z-index: 1;
-
-    width: 260px;
-
-    height: 260px;
-
-    object-fit: contain;
-
-    filter:
-        drop-shadow(
-            0 10px 10px rgba(0,0,0,0.10)
-        );
-}
-
-
-/* =========================================
-   TITEL
-========================================= */
-
-.pokemon-detail-title {
-    position: relative;
-
-    z-index: 1;
-
-    flex: 1;
-}
-
-.pokemon-detail-title h1 {
-    margin:
-        5px 0 10px;
-
-    font-size:
-        clamp(30px, 6vw, 46px);
-
-    line-height: 1.05;
-
-    color:
-        #172033;
-}
-
-.pokemon-status {
-    display: inline-block;
-
-    margin: 0 0 7px;
-
-    padding:
-        6px 11px;
-
-    border-radius:
-        999px;
-
-    background:
-        #e0e7ff;
-
-    color:
-        #3730a3;
-
-    font-size:
-        13px;
-
-    font-weight:
-        800;
-}
-
-.pokemon-types {
-    margin: 0;
-
-    font-size: 17px;
-
-    color:
-        #475569;
-
-    font-weight:
-        700;
-}
-
-
-/* =========================================
-   INFORMATIEBLOKKEN
-========================================= */
-
-.detail-block {
-    padding: 24px;
-
-    background:
-        rgba(255,255,255,0.97);
-
-    border-radius:
-        20px;
-
-    border:
-        1px solid rgba(0,0,0,0.06);
-
-    box-shadow:
-        0 7px 20px rgba(0,0,0,0.07);
-}
-
-.detail-block h2 {
-    margin:
-        0 0 18px;
-
-    font-size:
-        22px;
-
-    color:
-        #172033;
-}
-
-
-/* =========================================
-   DETAIL RIJEN
-========================================= */
-
-.detail-row {
-    display: grid;
-
-    grid-template-columns:
-        minmax(170px, 230px)
-        1fr;
-
-    gap: 20px;
-
-    padding:
-        13px 0;
-
-    border-bottom:
-        1px solid #eef2f6;
-
-    line-height:
-        1.55;
-}
-
-.detail-row:last-child {
-    border-bottom:
-        none;
-}
-
-.detail-row strong {
-    color:
-        #334155;
-}
-
-.detail-row span {
-    color:
-        #526173;
-}
-
-
-/* =========================================
-   PERSOONLIJKE TIP
-========================================= */
-
-.personal-tip {
-    background:
-        linear-gradient(
-            135deg,
-            rgba(255,251,235,0.98),
-            rgba(254,249,195,0.98)
-        );
-
-    border-color:
-        #fde68a;
-}
-
-.personal-tip h2 {
-    color:
-        #92400e;
-}
-
-.personal-tip p {
-    margin: 0;
-
-    line-height:
-        1.65;
-
-    color:
-        #713f12;
-
-    font-weight:
-        500;
-}
-
-
-/* =========================================
-   KLEINE OPMERKING
-========================================= */
-
-.small-note {
-    margin:
-        16px 0 0;
-
-    padding:
-        12px 14px;
-
-    background:
-        #f8fafc;
-
-    border-left:
-        4px solid #94a3b8;
-
-    border-radius:
-        8px;
-
-    font-size:
-        14px;
-
-    line-height:
-        1.5;
-
-    color:
-        #64748b;
-}
-
-
-/* =========================================
-   VIDEO LINKS
-========================================= */
-
-.video-links {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 10px;
-}
-
-.video-links a {
-    display: inline-block;
-
-    padding:
-        10px 14px;
-
-    border-radius:
-        12px;
-
-    text-decoration:
-        none;
-
-    background:
-        #172033;
-
-    color:
-        white;
-
-    font-weight:
-        700;
-
-    font-size:
-        14px;
-
-    transition:
-        transform 0.18s ease,
-        opacity 0.18s ease;
-}
-
-.video-links a:hover {
-    transform:
-        translateY(-2px);
-
-    opacity:
-        0.88;
-}
-
-
-/* ======================================================
-   TABLET
-====================================================== */
-
-@media (max-width: 800px) {
-
-    .pokemon-detail-hero {
-        flex-direction:
-            column;
-
-        text-align:
-            center;
-
-        gap:
-            12px;
-    }
-
-    .pokemon-detail-image {
-        width:
-            220px;
-
-        height:
-            220px;
-    }
-
-    .detail-row {
-        grid-template-columns:
-            1fr;
-
-        gap:
-            5px;
-    }
-}
-
-
-/* ======================================================
-   MOBIEL
-====================================================== */
-
-@media (max-width: 600px) {
-
-    header {
-        padding:
-            25px 15px;
-    }
-
-    header h1 {
-        font-size:
-            32px;
-    }
-
-    .dlc-info {
-        padding:
-            17px;
-    }
-
-    .filters select {
-        flex:
-            1;
-
-        min-width:
-            140px;
-    }
-
-    #app {
-        width:
-            94%;
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
-        gap:
-            12px;
-    }
-
-    .pokemon-card {
-        padding:
-            14px 10px 15px;
-
-        border-radius:
-            16px;
-    }
-
-    .pokemon-image {
-        width:
-            125px;
-
-        height:
-            125px;
-    }
-
-    .pokemon-card h2 {
-        font-size:
-            17px;
-    }
-
-    .pokemon-card-types {
-        font-size:
-            12px;
-    }
-
-    .pokemon-card-status {
-        font-size:
-            11px;
-    }
-
-    .pokemon-more-info {
-        font-size:
-            12px;
-    }
-
-    #pokemonDetail {
-        width:
-            94%;
-    }
-
-    .pokemon-detail-hero {
-        padding:
-            20px 15px;
-    }
-
-    .pokemon-detail-image {
-        width:
-            190px;
-
-        height:
-            190px;
-    }
-
-    .detail-block {
-        padding:
-            18px;
-    }
-
-    .detail-block h2 {
-        font-size:
-            19px;
-    }
-}
-
-
-/* ======================================================
-   HEEL KLEINE SCHERMEN
-====================================================== */
-
-@media (max-width: 390px) {
-
-    #app {
-        grid-template-columns:
-            1fr;
-    }
-
-    .pokemon-image {
-        width:
-            160px;
-
-        height:
-            160px;
-    }
-}
-.pokemon-detail-image {
-    width: 220px !important;
-    height: 220px !important;
-    max-width: 220px !important;
-    max-height: 220px !important;
-    object-fit: contain !important;
-}
-/* =====================================================
-   STAP 1 - NLPokopia achtergrond met losse Pokéballen
-   ===================================================== */
-
-body {
-    position: relative;
-    overflow-x: hidden;
+    color: #1f2937;
 
     background:
         linear-gradient(
             180deg,
             #eaf4ff 0%,
-            #f6fbff 35%,
-            #eef7f2 70%,
+            #f8fbff 34%,
+            #eef7f2 68%,
             #fff8ec 100%
         );
+
+    overflow-x: hidden;
 }
 
-/* decoratieve laag */
-body::before {
-    content: "";
 
-    position: fixed;
-    inset: 0;
-
-    pointer-events: none;
-    z-index: -1;
-
-    opacity: 0.9;
-
-    background-image:
-
-        /* rood/wit */
-        radial-gradient(
-            circle at 8% 12%,
-            #ffffff 0 8px,
-            #222 9px 11px,
-            #ffffff 12px 20px,
-            #d92c3d 21px 38px,
-            transparent 39px
-        ),
-
-        /* blauw */
-        radial-gradient(
-            circle at 88% 18%,
-            #ffffff 0 7px,
-            #222 8px 10px,
-            #ffffff 11px 18px,
-            #2876d8 19px 34px,
-            transparent 35px
-        ),
-
-        /* geel/zwart */
-        radial-gradient(
-            circle at 14% 67%,
-            #ffffff 0 7px,
-            #222 8px 10px,
-            #ffffff 11px 17px,
-            #e4b928 18px 33px,
-            transparent 34px
-        ),
-
-        /* roze */
-        radial-gradient(
-            circle at 79% 73%,
-            #ffffff 0 6px,
-            #222 7px 9px,
-            #ffffff 10px 16px,
-            #e78fb4 17px 30px,
-            transparent 31px
-        ),
-
-        /* donkere bal */
-        radial-gradient(
-            circle at 48% 9%,
-            #9a9a9a 0 6px,
-            #111 7px 10px,
-            #5f6368 11px 16px,
-            #24262b 17px 31px,
-            transparent 32px
-        ),
-
-        /* houten / oude stijl */
-        radial-gradient(
-            circle at 91% 51%,
-            #6e5137 0 6px,
-            #2a211b 7px 10px,
-            #9c7048 11px 17px,
-            #b98b5e 18px 35px,
-            transparent 36px
-        ),
-
-        /* tweede houten variant */
-        radial-gradient(
-            circle at 22% 38%,
-            #7b5b3f 0 5px,
-            #2b2119 6px 9px,
-            #ad7d50 10px 16px,
-            #c49362 17px 31px,
-            transparent 32px
-        ),
-
-        /* paars */
-        radial-gradient(
-            circle at 64% 88%,
-            #ffffff 0 6px,
-            #222 7px 9px,
-            #ffffff 10px 16px,
-            #7c4acb 17px 32px,
-            transparent 33px
-        );
-
-    background-repeat: no-repeat;
-}
-
-/* zachte wolkachtige gloed */
-body::after {
-    content: "";
-
-    position: fixed;
-    inset: 0;
-
-    pointer-events: none;
-    z-index: -2;
-
-    background:
-        radial-gradient(
-            circle at 20% 20%,
-            rgba(255,255,255,0.9),
-            transparent 28%
-        ),
-        radial-gradient(
-            circle at 80% 30%,
-            rgba(255,255,255,0.7),
-            transparent 25%
-        ),
-        radial-gradient(
-            circle at 50% 85%,
-            rgba(255,255,255,0.65),
-            transparent 30%
-        );
-}
 /* =====================================================
-   STAP 2B - LOSSE DECORATIEVE BALLEN
+   DECORATIEVE BALLEN ACHTERGROND
    ===================================================== */
 
 .ball-background {
     position: fixed;
+
     inset: 0;
+
     width: 100%;
     height: 100%;
 
     overflow: hidden;
+
     pointer-events: none;
 
     z-index: 0;
 }
 
-/* Website blijft boven de ballen */
+
+/* Alles van de website blijft boven de ballen */
 
 header,
 .dlc-info,
@@ -1180,7 +60,7 @@ header,
 }
 
 
-/* BASIS VAN ALLE BALLEN */
+/* Basis van alle decoratieve ballen */
 
 .decor-ball {
     position: absolute;
@@ -1190,17 +70,17 @@ header,
 
     border-radius: 50%;
 
-    border: 4px solid rgba(25, 30, 40, 0.75);
+    border: 4px solid rgba(20, 25, 35, 0.78);
 
     box-shadow:
-        0 8px 18px rgba(0,0,0,0.18),
-        inset 0 4px 8px rgba(255,255,255,0.35);
+        0 9px 22px rgba(0,0,0,0.18),
+        inset 0 5px 9px rgba(255,255,255,0.32);
 
-    opacity: 0.65;
+    opacity: 0.72;
 }
 
 
-/* Middenlijn */
+/* horizontale middenband */
 
 .decor-ball::before {
     content: "";
@@ -1211,7 +91,7 @@ header,
     right: 0;
     top: 50%;
 
-    height: 6px;
+    height: 7px;
 
     transform: translateY(-50%);
 
@@ -1219,15 +99,15 @@ header,
 }
 
 
-/* Middenknop */
+/* knop in het midden */
 
 .decor-ball::after {
     content: "";
 
     position: absolute;
 
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
 
     left: 50%;
     top: 50%;
@@ -1236,7 +116,7 @@ header,
 
     border-radius: 50%;
 
-    background: white;
+    background: #ffffff;
 
     border: 5px solid #252a32;
 
@@ -1245,291 +125,185 @@ header,
 
 
 /* =====================================================
-   VERSCHILLENDE SOORTEN
+   BALLEN - VERSCHILLENDE STIJLEN
    ===================================================== */
 
 
-/* Klassieke rood/wit */
+/* rood / klassiek */
 
 .ball-1,
 .ball-8 {
     background:
+        radial-gradient(
+            circle at 30% 22%,
+            rgba(255,255,255,0.35),
+            transparent 18%
+        ),
         linear-gradient(
             to bottom,
-            #e53945 0 48%,
+            #ea3949 0 48%,
             #ffffff 48% 100%
         );
 }
 
 
-/* Blauwe variant */
+/* blauw */
 
 .ball-2,
 .ball-10 {
     background:
+        radial-gradient(
+            circle at 28% 22%,
+            rgba(255,255,255,0.28),
+            transparent 18%
+        ),
         linear-gradient(
             to bottom,
-            #347bd8 0 48%,
+            #357dda 0 48%,
             #ffffff 48% 100%
         );
 }
 
 
-/* Geel/zwarte variant */
+/* geel / donker */
 
 .ball-3 {
     background:
+        radial-gradient(
+            circle at 30% 22%,
+            rgba(255,255,255,0.25),
+            transparent 18%
+        ),
         linear-gradient(
             to bottom,
-            #f2c632 0 48%,
-            #343434 48% 100%
+            #f1c431 0 48%,
+            #363636 48% 100%
         );
 }
 
 
-/* Roze variant */
+/* roze */
 
 .ball-4 {
     background:
+        radial-gradient(
+            circle at 30% 22%,
+            rgba(255,255,255,0.34),
+            transparent 20%
+        ),
         linear-gradient(
             to bottom,
-            #ef91ba 0 48%,
-            #fff4f8 48% 100%
+            #ef91b9 0 48%,
+            #fff6fb 48% 100%
         );
 }
 
 
-/* Paarse variant */
+/* paars */
 
 .ball-5 {
     background:
+        radial-gradient(
+            circle at 30% 22%,
+            rgba(255,255,255,0.3),
+            transparent 18%
+        ),
         linear-gradient(
             to bottom,
-            #7550c9 0 48%,
-            #eee8ff 48% 100%
+            #7751c9 0 48%,
+            #eee9ff 48% 100%
         );
 }
 
 
-/* Donkere variant */
+/* donkere bal */
 
 .ball-6 {
     background:
+        radial-gradient(
+            circle at 30% 22%,
+            rgba(255,255,255,0.20),
+            transparent 18%
+        ),
         linear-gradient(
             to bottom,
             #252933 0 48%,
-            #555d69 48% 100%
+            #5e6672 48% 100%
         );
 }
 
 
-/* =====================================================
-   OUDERWETSE / HOUTEN STIJL
-   ===================================================== */
+/* houten / ouderwetse stijl */
 
 .ball-7,
 .ball-11 {
     background:
         radial-gradient(
-            circle at 30% 25%,
-            rgba(255,255,255,0.30),
-            transparent 22%
+            circle at 30% 22%,
+            rgba(255,255,255,0.24),
+            transparent 20%
         ),
         repeating-linear-gradient(
             25deg,
-            #9b6b42 0px,
-            #9b6b42 8px,
-            #805535 9px,
-            #805535 13px
+            #a16f45 0,
+            #a16f45 8px,
+            #875a39 9px,
+            #875a39 14px
         );
 }
 
 .ball-7::before,
 .ball-11::before {
-    background: #453428;
+    background: #4a382a;
 }
 
 .ball-7::after,
 .ball-11::after {
-    background: #9e8066;
-    border-color: #453428;
+    background: #a98d72;
+    border-color: #4a382a;
 }
 
 
-/* Donker houten variant */
+/* donkere houten variant */
 
 .ball-9,
 .ball-12 {
     background:
         radial-gradient(
-            circle at 30% 25%,
-            rgba(255,255,255,0.22),
-            transparent 20%
+            circle at 30% 22%,
+            rgba(255,255,255,0.20),
+            transparent 18%
         ),
         repeating-linear-gradient(
-            -20deg,
-            #70503b 0px,
-            #70503b 7px,
-            #51392c 8px,
-            #51392c 12px
+            -24deg,
+            #73513b 0,
+            #73513b 8px,
+            #51372b 9px,
+            #51372b 13px
         );
 }
 
 .ball-9::before,
 .ball-12::before {
-    background: #29221d;
+    background: #2b231d;
 }
 
 .ball-9::after,
 .ball-12::after {
-    background: #8b715d;
-    border-color: #29221d;
+    background: #8c715d;
+    border-color: #2b231d;
 }
 
 
 /* =====================================================
-   KRISKRAS POSITIES
+   BALLEN - KRISKRAS POSITIES
    ===================================================== */
 
 .ball-1 {
-    width: 92px;
-    height: 92px;
+    width: 94px;
+    height: 94px;
 
-    top: 12%;
-    left: -25px;
+    top: 9%;
+    left: -28px;
 
-    transform: rotate(-18deg);
-}
-
-.ball-2 {
-    width: 48px;
-    height: 48px;
-
-    top: 29%;
-    right: 6%;
-
-    transform: rotate(22deg);
-}
-
-.ball-3 {
-    width: 62px;
-    height: 62px;
-
-    top: 57%;
-    left: 3%;
-
-    transform: rotate(12deg);
-}
-
-.ball-4 {
-    width: 78px;
-    height: 78px;
-
-    top: 76%;
-    right: -18px;
-
-    transform: rotate(-28deg);
-}
-
-.ball-5 {
-    width: 45px;
-    height: 45px;
-
-    top: 8%;
-    left: 69%;
-
-    transform: rotate(17deg);
-}
-
-.ball-6 {
-    width: 55px;
-    height: 55px;
-
-    top: 43%;
-    left: 7%;
-
-    transform: rotate(-12deg);
-}
-
-
-/* houten */
-
-.ball-7 {
-    width: 88px;
-    height: 88px;
-
-    top: 18%;
-    right: -22px;
-
-    transform: rotate(25deg);
-}
-
-.ball-8 {
-    width: 42px;
-    height: 42px;
-
-    top: 67%;
-    left: 19%;
-
-    transform: rotate(-22deg);
-}
-
-.ball-9 {
-    width: 68px;
-    height: 68px;
-
-    top: 87%;
-    left: 5%;
-
-    transform: rotate(31deg);
-}
-
-.ball-10 {
-    width: 52px;
-    height: 52px;
-
-    top: 39%;
-    right: 2%;
-
-    transform: rotate(-14deg);
-}
-
-.ball-11 {
-    width: 50px;
-    height: 50px;
-
-    top: 5%;
-    left: 27%;
-
-    transform: rotate(-29deg);
-}
-
-.ball-12 {
-    width: 96px;
-    height: 96px;
-
-    top: 60%;
-    right: -32px;
-
-    transform: rotate(18deg);
-}
-
-
-/* =====================================================
-   MOBIEL - IETS RUSTIGER
-   ===================================================== */
-
-@media (max-width: 700px) {
-
-    .decor-ball {
-        opacity: 0.40;
-        transform: scale(0.75);
-    }
-
-    .ball-3,
-    .ball-5,
-    .ball-9,
-    .ball-11 {
-        display: none;
-    }
-}
+    transform: rotate

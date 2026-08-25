@@ -1510,3 +1510,80 @@ a {
 .type-badge-fee {
     background: #EE99AC;
 }
+/* Type-badges gebruiken dezelfde typekleuren */
+.type-gras .type-badge {
+    background: var(--type-color);
+}
+
+.type-vuur .type-badge {
+    background: var(--type-color);
+}
+
+.type-water .type-badge {
+    background: var(--type-color);
+}
+
+.type-elektrisch .type-badge {
+    background: var(--type-color);
+    color: #332b00;
+}
+
+.type-psychisch .type-badge {
+    background: var(--type-color);
+}
+
+.type-ijs .type-badge {
+    background: var(--type-color);
+    color: #163b3b;
+}
+
+.type-draak .type-badge {
+    background: var(--type-color);
+}
+
+.type-duister .type-badge {
+    background: var(--type-color);
+}
+
+.type-fee .type-badge {
+    background: var(--type-color);
+}
+
+.type-normaal .type-badge {
+    background: var(--type-color);
+}
+
+.type-vechten .type-badge {
+    background: var(--type-color);
+}
+
+.type-vliegend .type-badge {
+    background: var(--type-color);
+}
+
+.type-gif .type-badge {
+    background: var(--type-color);
+}
+
+.type-grond .type-badge {
+    background: var(--type-color);
+    color: #40330e;
+}
+
+.type-steen .type-badge {
+    background: var(--type-color);
+}
+
+.type-insect .type-badge {
+    background: var(--type-color);
+}
+
+.type-spook .type-badge,
+.type-geest .type-badge {
+    background: var(--type-color);
+}
+
+.type-staal .type-badge {
+    background: var(--type-color);
+    color: #29293d;
+}

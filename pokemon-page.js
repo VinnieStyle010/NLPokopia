@@ -268,7 +268,12 @@ ${
         rel="noopener noreferrer"
         aria-label="Zoek ${pokemon.name} op YouTube"
     >
-        <span class="video-icon">▶</span>
+        <span class="video-icon">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8Z"/>
+        <path fill="#FFFFFF" d="m9.6 15.6 6.3-3.6-6.3-3.6v7.2Z"/>
+    </svg>
+</span>
         <span>YouTube</span>
     </a>
 
@@ -323,5 +328,18 @@ ${
         </section>
     `;
 }
+.video-icon {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent !important;
+}
 
+.video-icon svg {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
 renderPokemonPage();

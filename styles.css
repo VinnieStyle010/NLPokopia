@@ -1151,3 +1151,385 @@ body::after {
             transparent 30%
         );
 }
+/* =====================================================
+   STAP 2B - LOSSE DECORATIEVE BALLEN
+   ===================================================== */
+
+.ball-background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+/* Website blijft boven de ballen */
+
+header,
+.dlc-info,
+.search-bar,
+.filters,
+#app,
+#pokemonDetail {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* BASIS VAN ALLE BALLEN */
+
+.decor-ball {
+    position: absolute;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    border: 4px solid rgba(25, 30, 40, 0.75);
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,0.18),
+        inset 0 4px 8px rgba(255,255,255,0.35);
+
+    opacity: 0.65;
+}
+
+
+/* Middenlijn */
+
+.decor-ball::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    top: 50%;
+
+    height: 6px;
+
+    transform: translateY(-50%);
+
+    background: #252a32;
+}
+
+
+/* Middenknop */
+
+.decor-ball::after {
+    content: "";
+
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background: white;
+
+    border: 5px solid #252a32;
+
+    z-index: 2;
+}
+
+
+/* =====================================================
+   VERSCHILLENDE SOORTEN
+   ===================================================== */
+
+
+/* Klassieke rood/wit */
+
+.ball-1,
+.ball-8 {
+    background:
+        linear-gradient(
+            to bottom,
+            #e53945 0 48%,
+            #ffffff 48% 100%
+        );
+}
+
+
+/* Blauwe variant */
+
+.ball-2,
+.ball-10 {
+    background:
+        linear-gradient(
+            to bottom,
+            #347bd8 0 48%,
+            #ffffff 48% 100%
+        );
+}
+
+
+/* Geel/zwarte variant */
+
+.ball-3 {
+    background:
+        linear-gradient(
+            to bottom,
+            #f2c632 0 48%,
+            #343434 48% 100%
+        );
+}
+
+
+/* Roze variant */
+
+.ball-4 {
+    background:
+        linear-gradient(
+            to bottom,
+            #ef91ba 0 48%,
+            #fff4f8 48% 100%
+        );
+}
+
+
+/* Paarse variant */
+
+.ball-5 {
+    background:
+        linear-gradient(
+            to bottom,
+            #7550c9 0 48%,
+            #eee8ff 48% 100%
+        );
+}
+
+
+/* Donkere variant */
+
+.ball-6 {
+    background:
+        linear-gradient(
+            to bottom,
+            #252933 0 48%,
+            #555d69 48% 100%
+        );
+}
+
+
+/* =====================================================
+   OUDERWETSE / HOUTEN STIJL
+   ===================================================== */
+
+.ball-7,
+.ball-11 {
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            rgba(255,255,255,0.30),
+            transparent 22%
+        ),
+        repeating-linear-gradient(
+            25deg,
+            #9b6b42 0px,
+            #9b6b42 8px,
+            #805535 9px,
+            #805535 13px
+        );
+}
+
+.ball-7::before,
+.ball-11::before {
+    background: #453428;
+}
+
+.ball-7::after,
+.ball-11::after {
+    background: #9e8066;
+    border-color: #453428;
+}
+
+
+/* Donker houten variant */
+
+.ball-9,
+.ball-12 {
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            rgba(255,255,255,0.22),
+            transparent 20%
+        ),
+        repeating-linear-gradient(
+            -20deg,
+            #70503b 0px,
+            #70503b 7px,
+            #51392c 8px,
+            #51392c 12px
+        );
+}
+
+.ball-9::before,
+.ball-12::before {
+    background: #29221d;
+}
+
+.ball-9::after,
+.ball-12::after {
+    background: #8b715d;
+    border-color: #29221d;
+}
+
+
+/* =====================================================
+   KRISKRAS POSITIES
+   ===================================================== */
+
+.ball-1 {
+    width: 92px;
+    height: 92px;
+
+    top: 12%;
+    left: -25px;
+
+    transform: rotate(-18deg);
+}
+
+.ball-2 {
+    width: 48px;
+    height: 48px;
+
+    top: 29%;
+    right: 6%;
+
+    transform: rotate(22deg);
+}
+
+.ball-3 {
+    width: 62px;
+    height: 62px;
+
+    top: 57%;
+    left: 3%;
+
+    transform: rotate(12deg);
+}
+
+.ball-4 {
+    width: 78px;
+    height: 78px;
+
+    top: 76%;
+    right: -18px;
+
+    transform: rotate(-28deg);
+}
+
+.ball-5 {
+    width: 45px;
+    height: 45px;
+
+    top: 8%;
+    left: 69%;
+
+    transform: rotate(17deg);
+}
+
+.ball-6 {
+    width: 55px;
+    height: 55px;
+
+    top: 43%;
+    left: 7%;
+
+    transform: rotate(-12deg);
+}
+
+
+/* houten */
+
+.ball-7 {
+    width: 88px;
+    height: 88px;
+
+    top: 18%;
+    right: -22px;
+
+    transform: rotate(25deg);
+}
+
+.ball-8 {
+    width: 42px;
+    height: 42px;
+
+    top: 67%;
+    left: 19%;
+
+    transform: rotate(-22deg);
+}
+
+.ball-9 {
+    width: 68px;
+    height: 68px;
+
+    top: 87%;
+    left: 5%;
+
+    transform: rotate(31deg);
+}
+
+.ball-10 {
+    width: 52px;
+    height: 52px;
+
+    top: 39%;
+    right: 2%;
+
+    transform: rotate(-14deg);
+}
+
+.ball-11 {
+    width: 50px;
+    height: 50px;
+
+    top: 5%;
+    left: 27%;
+
+    transform: rotate(-29deg);
+}
+
+.ball-12 {
+    width: 96px;
+    height: 96px;
+
+    top: 60%;
+    right: -32px;
+
+    transform: rotate(18deg);
+}
+
+
+/* =====================================================
+   MOBIEL - IETS RUSTIGER
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .decor-ball {
+        opacity: 0.40;
+        transform: scale(0.75);
+    }
+
+    .ball-3,
+    .ball-5,
+    .ball-9,
+    .ball-11 {
+        display: none;
+    }
+}

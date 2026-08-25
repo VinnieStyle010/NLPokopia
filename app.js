@@ -108,7 +108,7 @@ function renderPokemon(list) {
             >
 
             <h2>
-                #${String(pokemon.number).padStart(3, "0")}
+                #Nr:{String(pokemon.number).padStart(3, "0")}
                 ${pokemon.name}
             </h2>
 

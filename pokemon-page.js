@@ -259,49 +259,64 @@ ${
 
                 <h2>🎥 Zoek video's over ${pokemon.name}</h2>
 
-                <div class="video-links">
+<div class="video-links">
 
-                    <a
-                        href="${createSearchUrl("youtube", pokemon.name)}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        YouTube
-                    </a>
+    <a
+        class="video-button youtube"
+        href="${createSearchUrl("youtube", pokemon.name)}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Zoek ${pokemon.name} op YouTube"
+    >
+        <span class="video-icon">▶</span>
+        <span>YouTube</span>
+    </a>
 
-                    <a
-                        href="${createSearchUrl("tiktok", pokemon.name)}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        TikTok
-                    </a>
+    <a
+        class="video-button tiktok"
+        href="${createSearchUrl("tiktok", pokemon.name)}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Zoek ${pokemon.name} op TikTok"
+    >
+        <span class="video-icon">♪</span>
+        <span>TikTok</span>
+    </a>
 
-                    <a
-                        href="${createSearchUrl("instagram", pokemon.name)}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Instagram
-                    </a>
+    <a
+        class="video-button instagram"
+        href="${createSearchUrl("instagram", pokemon.name)}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Zoek ${pokemon.name} op Instagram"
+    >
+        <span class="video-icon">◎</span>
+        <span>Instagram</span>
+    </a>
 
-                    <a
-                        href="${createSearchUrl("facebook", pokemon.name)}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Facebook
-                    </a>
+    <a
+        class="video-button facebook"
+        href="${createSearchUrl("facebook", pokemon.name)}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Zoek ${pokemon.name} op Facebook"
+    >
+        <span class="video-icon">f</span>
+        <span>Facebook</span>
+    </a>
 
-                    <a
-                        href="${createSearchUrl("twitter", pokemon.name)}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        X
-                    </a>
+    <a
+        class="video-button twitter"
+        href="${createSearchUrl("twitter", pokemon.name)}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Zoek ${pokemon.name} op X"
+    >
+        <span class="video-icon">𝕏</span>
+        <span>X</span>
+    </a>
 
-                </div>
+</div>
 
             </section>
 

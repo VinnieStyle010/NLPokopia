@@ -1037,3 +1037,59 @@ a {
     }
 
 }
+/* Pokémon-familie */
+
+.evolution-family {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.evolution-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 15px;
+    border-radius: 16px;
+}
+
+.evolution-member img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.evolution-member strong {
+    font-size: 18px;
+    text-align: center;
+}
+
+.evolution-arrow {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.evolution-member.current-pokemon {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 600px) {
+    .evolution-family {
+        gap: 10px;
+    }
+
+    .evolution-member img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .evolution-arrow {
+        font-size: 24px;
+    }
+}

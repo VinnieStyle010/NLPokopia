@@ -328,8 +328,14 @@ ${
         rel="noopener noreferrer"
         aria-label="Zoek ${pokemon.name} op Facebook"
     >
-        <span class="video-icon">f</span>
-        <span>Facebook</span>
+<span class="video-icon">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="12" r="11" fill="#1877F2"/>
+    <path fill="#FFFFFF"
+      d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.7V4.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V11H7.3v3h2.8v8h3.4z"/>
+  </svg>
+</span>
+<span>Facebook</span>
     </a>
 
     <a

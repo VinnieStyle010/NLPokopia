@@ -67,6 +67,22 @@ function renderPokemon(list) {
         const card = document.createElement("section");
         card.className = "pokemon-card";
 
+        const section =
+    pokemon.event === true
+        ? "event"
+        : pokemon.dlc === true
+        ? "dlc"
+        : "base";
+
+card.addEventListener("click", (event) => {
+    if (event.target.closest("a")) return;
+
+    window.location.href =
+        `pokemon.html?section=${section}&number=${pokemon.number}`;
+});
+
+card.style.cursor = "pointer";
+
         card.innerHTML = `
             <img
                 class="pokemon-image"

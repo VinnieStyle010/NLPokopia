@@ -1009,3 +1009,145 @@ header p {
     max-height: 220px !important;
     object-fit: contain !important;
 }
+/* =====================================================
+   STAP 1 - NLPokopia achtergrond met losse Pokéballen
+   ===================================================== */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #eaf4ff 0%,
+            #f6fbff 35%,
+            #eef7f2 70%,
+            #fff8ec 100%
+        );
+}
+
+/* decoratieve laag */
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+    z-index: -1;
+
+    opacity: 0.9;
+
+    background-image:
+
+        /* rood/wit */
+        radial-gradient(
+            circle at 8% 12%,
+            #ffffff 0 8px,
+            #222 9px 11px,
+            #ffffff 12px 20px,
+            #d92c3d 21px 38px,
+            transparent 39px
+        ),
+
+        /* blauw */
+        radial-gradient(
+            circle at 88% 18%,
+            #ffffff 0 7px,
+            #222 8px 10px,
+            #ffffff 11px 18px,
+            #2876d8 19px 34px,
+            transparent 35px
+        ),
+
+        /* geel/zwart */
+        radial-gradient(
+            circle at 14% 67%,
+            #ffffff 0 7px,
+            #222 8px 10px,
+            #ffffff 11px 17px,
+            #e4b928 18px 33px,
+            transparent 34px
+        ),
+
+        /* roze */
+        radial-gradient(
+            circle at 79% 73%,
+            #ffffff 0 6px,
+            #222 7px 9px,
+            #ffffff 10px 16px,
+            #e78fb4 17px 30px,
+            transparent 31px
+        ),
+
+        /* donkere bal */
+        radial-gradient(
+            circle at 48% 9%,
+            #9a9a9a 0 6px,
+            #111 7px 10px,
+            #5f6368 11px 16px,
+            #24262b 17px 31px,
+            transparent 32px
+        ),
+
+        /* houten / oude stijl */
+        radial-gradient(
+            circle at 91% 51%,
+            #6e5137 0 6px,
+            #2a211b 7px 10px,
+            #9c7048 11px 17px,
+            #b98b5e 18px 35px,
+            transparent 36px
+        ),
+
+        /* tweede houten variant */
+        radial-gradient(
+            circle at 22% 38%,
+            #7b5b3f 0 5px,
+            #2b2119 6px 9px,
+            #ad7d50 10px 16px,
+            #c49362 17px 31px,
+            transparent 32px
+        ),
+
+        /* paars */
+        radial-gradient(
+            circle at 64% 88%,
+            #ffffff 0 6px,
+            #222 7px 9px,
+            #ffffff 10px 16px,
+            #7c4acb 17px 32px,
+            transparent 33px
+        );
+
+    background-repeat: no-repeat;
+}
+
+/* zachte wolkachtige gloed */
+body::after {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+    z-index: -2;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255,255,255,0.9),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(255,255,255,0.7),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 50% 85%,
+            rgba(255,255,255,0.65),
+            transparent 30%
+        );
+}

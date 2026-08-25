@@ -158,9 +158,17 @@ detailContainer.className = `type-${primaryType}`;
                         ${pokemon.name}
                     </h1>
 
-                    <p class="pokemon-types">
-                        ${pokemon.type.join(" / ")}
-                    </p>
+<div class="pokemon-types">
+    ${pokemon.type
+        .map(type => {
+            const typeClass = type
+                .split(" ")[0]
+                .toLowerCase();
+
+            return `<span class="type-badge type-badge-${typeClass}">${type}</span>`;
+        })
+        .join("")}
+</div>
 
                 </div>
 

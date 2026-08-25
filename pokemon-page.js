@@ -32,7 +32,43 @@ function getStatus(pokemon) {
     if (pokemon.event === true) return "Event Pokémon";
     if (pokemon.dlc === true) return "Bubbly Basin DLC";
     if (pokemon.dlc === false) return "Hoofd-Pokédex";
+
     return "Nog onbekend";
+}
+
+function getPokemonFamily(pokemon) {
+    const family = [];
+    let current = pokemon;
+
+    while (current.evolvesFrom) {
+        const previous = pokemonData.find(
+            (p) =>
+                p.name === current.evolvesFrom &&
+                getSection(p) === getSection(pokemon)
+        );
+
+        if (!previous) break;
+
+        current = previous;
+    }
+
+    while (current) {
+        family.push(current);
+
+        if (!current.evolvesInto) break;
+
+        const next = pokemonData.find(
+            (p) =>
+                p.name === current.evolvesInto &&
+                getSection(p) === getSection(pokemon)
+        );
+
+        if (!next) break;
+
+        current = next;
+    }
+
+    return family;
 }
 
 function createSearchUrl(platform, pokemonName) {
@@ -168,34 +204,44 @@ function renderPokemonPage() {
             </section>
 
 
-            ${
-                pokemon.evolvesFrom || pokemon.evolvesInto
-                    ? `
-                    <section class="detail-block">
+${
+    pokemon.evolvesFrom || pokemon.evolvesInto
+        ? `
+            <section class="detail-block">
+                <h2>◻️ Pokémon-familie</h2>
 
-                        <h2>🔄 Pokémon-familie</h2>
+                <div class="evolution-family">
+                    ${getPokemonFamily(pokemon)
+                        .map((familyPokemon, index, family) => `
+                            <div class="evolution-member ${
+                                familyPokemon.name === pokemon.name
+                                    ? "current-pokemon"
+                                    : ""
+                            }">
+                                <img
+                                    src="${getPokemonImage(familyPokemon.name)}"
+                                    alt="${familyPokemon.name}"
+                                >
+                                <strong>${familyPokemon.name}</strong>
+                            </div>
 
-                        ${infoRow(
-                            "Evolueert van (Evolves from)",
-                            pokemon.evolvesFrom
-                        )}
+                            ${
+                                index < family.length - 1
+                                    ? `<span class="evolution-arrow">→</span>`
+                                    : ""
+                            }
+                        `)
+                        .join("")}
+                </div>
 
-                        ${infoRow(
-                            "Evolueert naar (Evolves into)",
-                            pokemon.evolvesInto
-                        )}
-
-                        <p class="small-note">
-                            Pokémon evolueren niet op de gewone manier
-                            binnen Pokémon Pokopia. Deze informatie laat
-                            vooral zien bij welke Pokémon-familie deze
-                            Pokémon hoort.
-                        </p>
-
-                    </section>
-                    `
-                    : ""
-            }
+                <p class="small-note">
+                    Pokémon evolueren niet op de gewone manier binnen Pokémon Pokopia.
+                    Deze rij laat zien bij welke Pokémon-familie deze Pokémon hoort.
+                </p>
+            </section>
+        `
+        : ""
+}
 
 
             <section class="detail-block personal-tip">

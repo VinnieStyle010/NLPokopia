@@ -1199,3 +1199,25 @@ a {
     transform: translateY(-2px);
     box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
 }
+/* Logo + tekst netjes naast elkaar */
+.video-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.video-icon {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent !important;
+    flex-shrink: 0;
+}
+
+.video-icon svg {
+    width: 28px;
+    height: 28px;
+    display: block;
+}

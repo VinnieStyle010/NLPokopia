@@ -1221,3 +1221,170 @@ a {
     height: 28px;
     display: block;
 }
+/* =========================================
+   NLPokopia - kleuren per Pokémon-type
+   ========================================= */
+
+.type-gras {
+    --type-color: #78C850;
+    --type-light: #E8F5DF;
+    --type-dark: #4E8234;
+}
+
+.type-vuur {
+    --type-color: #F08030;
+    --type-light: #FDE8D8;
+    --type-dark: #C65D18;
+}
+
+.type-water {
+    --type-color: #6890F0;
+    --type-light: #E1E9FC;
+    --type-dark: #386CEB;
+}
+
+.type-elektrisch {
+    --type-color: #F8D030;
+    --type-light: #FFF6CC;
+    --type-dark: #C6A500;
+}
+
+.type-psychisch {
+    --type-color: #F85888;
+    --type-light: #FDE0E9;
+    --type-dark: #D82E63;
+}
+
+.type-ijs {
+    --type-color: #98D8D8;
+    --type-light: #E4F6F6;
+    --type-dark: #5CB8B8;
+}
+
+.type-draak {
+    --type-color: #7038F8;
+    --type-light: #E7DCFE;
+    --type-dark: #4C08EF;
+}
+
+.type-duister {
+    --type-color: #705848;
+    --type-light: #E5DEDA;
+    --type-dark: #49392F;
+}
+
+.type-fee {
+    --type-color: #EE99AC;
+    --type-light: #FBE5EA;
+    --type-dark: #D45A76;
+}
+
+.type-normaal {
+    --type-color: #A8A878;
+    --type-light: #EEEEDE;
+    --type-dark: #79794E;
+}
+
+.type-vechten {
+    --type-color: #C03028;
+    --type-light: #F3D8D6;
+    --type-dark: #8B211B;
+}
+
+.type-vliegend {
+    --type-color: #A890F0;
+    --type-light: #ECE6FC;
+    --type-dark: #7762C7;
+}
+
+.type-gif {
+    --type-color: #A040A0;
+    --type-light: #ECD9EC;
+    --type-dark: #702970;
+}
+
+.type-grond {
+    --type-color: #E0C068;
+    --type-light: #F7EFD8;
+    --type-dark: #B39745;
+}
+
+.type-steen {
+    --type-color: #B8A038;
+    --type-light: #F0E9CA;
+    --type-dark: #88751F;
+}
+
+.type-insect {
+    --type-color: #A8B820;
+    --type-light: #EDF1C8;
+    --type-dark: #7A8715;
+}
+
+.type-spook {
+    --type-color: #705898;
+    --type-light: #E5DFEE;
+    --type-dark: #493963;
+}
+
+.type-staal {
+    --type-color: #B8B8D0;
+    --type-light: #EEEEF4;
+    --type-dark: #8585A3;
+}
+
+
+/* Bovenste Pokémon-blok krijgt automatisch typekleur */
+
+.type-gras .pokemon-detail-hero,
+.type-vuur .pokemon-detail-hero,
+.type-water .pokemon-detail-hero,
+.type-elektrisch .pokemon-detail-hero,
+.type-psychisch .pokemon-detail-hero,
+.type-ijs .pokemon-detail-hero,
+.type-draak .pokemon-detail-hero,
+.type-duister .pokemon-detail-hero,
+.type-fee .pokemon-detail-hero,
+.type-normaal .pokemon-detail-hero,
+.type-vechten .pokemon-detail-hero,
+.type-vliegend .pokemon-detail-hero,
+.type-gif .pokemon-detail-hero,
+.type-grond .pokemon-detail-hero,
+.type-steen .pokemon-detail-hero,
+.type-insect .pokemon-detail-hero,
+.type-spook .pokemon-detail-hero,
+.type-staal .pokemon-detail-hero {
+    background:
+        linear-gradient(
+            135deg,
+            var(--type-light) 0%,
+            #ffffff 72%
+        );
+
+    border-left: 7px solid var(--type-color);
+    border-bottom: 3px solid var(--type-color);
+}
+
+
+/* Titel krijgt subtiel dezelfde kleur */
+
+.type-gras .pokemon-detail-title h1,
+.type-vuur .pokemon-detail-title h1,
+.type-water .pokemon-detail-title h1,
+.type-elektrisch .pokemon-detail-title h1,
+.type-psychisch .pokemon-detail-title h1,
+.type-ijs .pokemon-detail-title h1,
+.type-draak .pokemon-detail-title h1,
+.type-duister .pokemon-detail-title h1,
+.type-fee .pokemon-detail-title h1,
+.type-normaal .pokemon-detail-title h1,
+.type-vechten .pokemon-detail-title h1,
+.type-vliegend .pokemon-detail-title h1,
+.type-gif .pokemon-detail-title h1,
+.type-grond .pokemon-detail-title h1,
+.type-steen .pokemon-detail-title h1,
+.type-insect .pokemon-detail-title h1,
+.type-spook .pokemon-detail-title h1,
+.type-staal .pokemon-detail-title h1 {
+    color: var(--type-dark);
+}

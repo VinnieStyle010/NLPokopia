@@ -92,9 +92,9 @@ body {
         #e53935 0 47%,
         #ffffff 47% 100%
     );
-    left: 4%;
-    top: 12%;
-    transform: rotate(-18deg);
+    left: 3%;
+    top: 38%;
+    transform: rotate(-180deg);
 }
 
 /* Great Ball */
@@ -104,8 +104,8 @@ body {
         #2563eb 0 47%,
         #ffffff 47% 100%
     );
-    right: 7%;
-    top: 17%;
+    right: 5%;
+    top: 18%;
     transform: rotate(16deg) scale(0.82);
 }
 
@@ -117,7 +117,7 @@ body {
         #ffffff 47% 100%
     );
     left: 18%;
-    top: 34%;
+    top: 62%;
     transform: rotate(25deg) scale(0.68);
 }
 
@@ -128,8 +128,8 @@ body {
         #7c3aed 0 47%,
         #ffffff 47% 100%
     );
-    right: 20%;
-    top: 43%;
+    right: 4%;
+    top: 48%;
     transform: rotate(-25deg) scale(0.92);
 }
 
@@ -141,7 +141,7 @@ body {
         #ffffff 47% 100%
     );
     left: 6%;
-    top: 67%;
+    top: 78%;
     transform: rotate(18deg) scale(0.74);
 }
 
@@ -152,7 +152,7 @@ body {
         #06b6d4 0 47%,
         #ffffff 47% 100%
     );
-    right: 5%;
+    right: 8%;
     top: 72%;
     transform: rotate(-12deg) scale(0.72);
 }
@@ -165,7 +165,7 @@ body {
         #111827 47% 100%
     );
     left: 42%;
-    top: 22%;
+    top: 32%;
     transform: rotate(32deg) scale(0.58);
 }
 
@@ -176,8 +176,8 @@ body {
         #111827 0 47%,
         #eab308 47% 100%
     );
-    right: 34%;
-    top: 62%;
+    right: 28%;
+    top: 57%;
     transform: rotate(-35deg) scale(0.65);
 }
 
@@ -188,8 +188,8 @@ body {
         #38bdf8 0 47%,
         #ffffff 47% 100%
     );
-    left: 28%;
-    top: 82%;
+    left: 32%;
+    top: 88%;
     transform: rotate(14deg) scale(0.8);
 }
 
@@ -200,8 +200,8 @@ body {
         #ffffff 0 47%,
         #f8fafc 47% 100%
     );
-    right: 14%;
-    top: 88%;
+    right: 38%;
+    top: 82%;
     transform: rotate(-20deg) scale(0.62);
 }
 
@@ -226,7 +226,7 @@ body {
         #cbd5e1 47% 100%
     );
     right: 10%;
-    top: 54%;
+    top: 90%;
     transform: rotate(-28deg) scale(0.67);
     border-color: #475569;
 }

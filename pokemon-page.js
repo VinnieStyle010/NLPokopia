@@ -112,7 +112,7 @@ function renderPokemonPage() {
                     </p>
 
                     <h1>
-                        Nr. ${String(pokemon.number).padStart(3, "0")}
+                        Nr: ${String(pokemon.number).padStart(3, "0")}
                         ${pokemon.name}
                     </h1>
 

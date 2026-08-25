@@ -306,4 +306,862 @@ header,
     top: 9%;
     left: -28px;
 
-    transform: rotate
+    transform: rotate(-18deg);
+}
+
+.ball-2 {
+    width: 52px;
+    height: 52px;
+
+    top: 27%;
+    right: 6%;
+
+    transform: rotate(24deg);
+}
+
+.ball-3 {
+    width: 64px;
+    height: 64px;
+
+    top: 56%;
+    left: 2%;
+
+    transform: rotate(12deg);
+}
+
+.ball-4 {
+    width: 82px;
+    height: 82px;
+
+    top: 75%;
+    right: -20px;
+
+    transform: rotate(-26deg);
+}
+
+.ball-5 {
+    width: 48px;
+    height: 48px;
+
+    top: 7%;
+    left: 69%;
+
+    transform: rotate(17deg);
+}
+
+.ball-6 {
+    width: 58px;
+    height: 58px;
+
+    top: 42%;
+    left: 7%;
+
+    transform: rotate(-13deg);
+}
+
+.ball-7 {
+    width: 92px;
+    height: 92px;
+
+    top: 18%;
+    right: -26px;
+
+    transform: rotate(26deg);
+}
+
+.ball-8 {
+    width: 44px;
+    height: 44px;
+
+    top: 66%;
+    left: 20%;
+
+    transform: rotate(-20deg);
+}
+
+.ball-9 {
+    width: 70px;
+    height: 70px;
+
+    top: 86%;
+    left: 5%;
+
+    transform: rotate(30deg);
+}
+
+.ball-10 {
+    width: 54px;
+    height: 54px;
+
+    top: 38%;
+    right: 2%;
+
+    transform: rotate(-15deg);
+}
+
+.ball-11 {
+    width: 50px;
+    height: 50px;
+
+    top: 4%;
+    left: 27%;
+
+    transform: rotate(-28deg);
+}
+
+.ball-12 {
+    width: 100px;
+    height: 100px;
+
+    top: 59%;
+    right: -34px;
+
+    transform: rotate(18deg);
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+header {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background:
+        rgba(255,255,255,0.92);
+
+    border-bottom:
+        1px solid rgba(0,0,0,0.07);
+
+    box-shadow:
+        0 4px 16px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    margin: 0;
+
+    font-size:
+        clamp(32px, 5vw, 46px);
+
+    font-weight: 900;
+
+    color: #172033;
+}
+
+header h1::before {
+    content: "◉";
+
+    display: inline-block;
+
+    margin-right: 10px;
+
+    color: #dc2638;
+
+    text-shadow:
+        0 2px 0 #19202d;
+}
+
+header p {
+    margin: 8px 0 0;
+
+    color: #64748b;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   BUBBLY BASIN BLOK
+   ===================================================== */
+
+.dlc-info {
+    width: min(1100px, 92%);
+
+    margin: 24px auto 0;
+
+    padding: 22px 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(224,247,255,0.96),
+            rgba(240,253,250,0.96)
+        );
+
+    border:
+        1px solid #a9e1f0;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 7px 20px rgba(15,118,143,0.08);
+}
+
+.dlc-info h2 {
+    margin: 0 0 9px;
+
+    font-size: 23px;
+
+    color: #0f6479;
+}
+
+.dlc-info p {
+    margin: 7px 0;
+
+    line-height: 1.6;
+
+    color: #35515d;
+}
+
+
+/* =====================================================
+   ZOEKBALK
+   ===================================================== */
+
+.search-bar {
+    width: min(1100px, 92%);
+
+    margin: 24px auto 0;
+}
+
+.search-bar input {
+    width: 100%;
+
+    padding: 15px 17px;
+
+    font-size: 16px;
+
+    border: 2px solid #dbe2ea;
+
+    border-radius: 15px;
+
+    outline: none;
+
+    background: rgba(255,255,255,0.96);
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,0.05);
+}
+
+.search-bar input:focus {
+    border-color: #3b82f6;
+
+    box-shadow:
+        0 0 0 4px rgba(59,130,246,0.11),
+        0 6px 20px rgba(0,0,0,0.06);
+}
+
+
+/* =====================================================
+   FILTERS
+   ===================================================== */
+
+.filters {
+    width: min(1100px, 92%);
+
+    margin: 14px auto 0;
+
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.filters select {
+    padding: 11px 14px;
+
+    border: 1px solid #d4dbe4;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.96);
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.04);
+}
+
+
+/* =====================================================
+   POKÉMON OVERZICHT
+   ===================================================== */
+
+#app {
+    width: min(1100px, 92%);
+
+    margin: 28px auto 50px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =====================================================
+   POKÉMON KAARTEN
+   ===================================================== */
+
+.pokemon-card {
+    position: relative;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    padding: 22px 17px 20px;
+
+    background:
+        rgba(255,255,255,0.94);
+
+    border:
+        1px solid rgba(0,0,0,0.06);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 23px rgba(0,0,0,0.08);
+
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease;
+}
+
+.pokemon-card:hover {
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,0.13);
+}
+
+.pokemon-card:active {
+    transform:
+        translateY(-1px)
+        scale(0.99);
+}
+
+.pokemon-image {
+    width: 165px;
+    height: 165px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: 0 auto 10px;
+
+    transition:
+        transform 0.22s ease;
+}
+
+.pokemon-card:hover .pokemon-image {
+    transform:
+        scale(1.05);
+}
+
+.pokemon-card h2 {
+    margin: 7px 0 8px;
+
+    font-size: 21px;
+
+    color: #172033;
+}
+
+.pokemon-card-types {
+    margin: 6px 0 11px;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+
+    color: #475569;
+}
+
+.pokemon-card-status {
+    display: inline-block;
+
+    margin: 3px auto 8px;
+
+    padding: 6px 11px;
+
+    border-radius: 999px;
+
+    background: #eef2ff;
+
+    color: #4338ca;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.pokemon-more-info {
+    margin: 10px 0 0;
+
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   GEEN RESULTATEN
+   ===================================================== */
+
+.no-results {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 35px;
+
+    background:
+        rgba(255,255,255,0.95);
+
+    border-radius: 18px;
+}
+
+
+/* =====================================================
+   DETAILPAGINA
+   ===================================================== */
+
+#pokemonDetail {
+    width: min(1000px, 92%);
+
+    margin: 32px auto 60px;
+}
+
+.pokemon-detail-page {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* terugknop */
+
+.back-button {
+    align-self: flex-start;
+
+    display: inline-block;
+
+    padding: 11px 16px;
+
+    text-decoration: none;
+
+    color: #334155;
+
+    background:
+        rgba(255,255,255,0.96);
+
+    border:
+        1px solid #d7dee7;
+
+    border-radius: 12px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.07);
+}
+
+
+/* bovenste kaart */
+
+.pokemon-detail-hero {
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 38px;
+
+    padding: 34px 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.98),
+            rgba(244,248,255,0.96)
+        );
+
+    border-radius: 24px;
+
+    border:
+        1px solid rgba(0,0,0,0.06);
+
+    box-shadow:
+        0 10px 28px rgba(0,0,0,0.10);
+}
+
+.pokemon-detail-image {
+    position: relative;
+
+    z-index: 2;
+
+    width: 245px;
+    height: 245px;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 10px 9px rgba(0,0,0,0.14)
+        );
+}
+
+.pokemon-detail-title {
+    position: relative;
+
+    z-index: 2;
+
+    flex: 1;
+}
+
+.pokemon-detail-title h1 {
+    margin: 8px 0 10px;
+
+    font-size:
+        clamp(34px, 5vw, 52px);
+
+    line-height: 1.05;
+
+    color: #172033;
+}
+
+.pokemon-status {
+    display: inline-block;
+
+    margin: 0 0 7px;
+
+    padding: 7px 12px;
+
+    border-radius: 999px;
+
+    background: #e0e7ff;
+
+    color: #3730a3;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+.pokemon-types {
+    margin: 0;
+
+    font-size: 17px;
+
+    color: #475569;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   DETAIL BLOKKEN
+   ===================================================== */
+
+.detail-block {
+    padding: 25px 28px;
+
+    background:
+        rgba(255,255,255,0.96);
+
+    border-radius: 20px;
+
+    border:
+        1px solid rgba(0,0,0,0.06);
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,0.07);
+}
+
+.detail-block h2 {
+    margin: 0 0 18px;
+
+    font-size: 22px;
+
+    color: #172033;
+}
+
+.detail-row {
+    display: grid;
+
+    grid-template-columns:
+        minmax(180px, 230px)
+        1fr;
+
+    gap: 20px;
+
+    padding: 13px 0;
+
+    border-bottom:
+        1px solid #eef2f6;
+
+    line-height: 1.55;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row strong {
+    color: #334155;
+}
+
+.detail-row span {
+    color: #526173;
+}
+
+
+/* =====================================================
+   PERSOONLIJKE TIP
+   ===================================================== */
+
+.personal-tip {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,251,235,0.98),
+            rgba(254,249,195,0.98)
+        );
+
+    border-color: #fde68a;
+}
+
+.personal-tip h2 {
+    color: #92400e;
+}
+
+.personal-tip p {
+    margin: 0;
+
+    line-height: 1.7;
+
+    color: #713f12;
+
+    font-weight: 500;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   KLEINE OPMERKING
+   ===================================================== */
+
+.small-note {
+    margin: 16px 0 0;
+
+    padding: 12px 14px;
+
+    background: #f8fafc;
+
+    border-left: 4px solid #94a3b8;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #64748b;
+}
+
+
+/* =====================================================
+   VIDEO LINKS
+   ===================================================== */
+
+.video-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.video-links a {
+    display: inline-block;
+
+    padding: 10px 14px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    background: #172033;
+
+    color: white;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    transition:
+        transform 0.18s ease,
+        opacity 0.18s ease;
+}
+
+.video-links a:hover {
+    transform:
+        translateY(-2px);
+
+    opacity: 0.88;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .pokemon-detail-hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 12px;
+    }
+
+    .pokemon-detail-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .detail-row {
+        grid-template-columns: 1fr;
+
+        gap: 5px;
+    }
+}
+
+
+/* =====================================================
+   MOBIEL
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .decor-ball {
+        opacity: 0.42;
+    }
+
+    .ball-3,
+    .ball-5,
+    .ball-9,
+    .ball-11 {
+        display: none;
+    }
+
+    header {
+        padding: 24px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .dlc-info {
+        padding: 17px;
+    }
+
+    .filters select {
+        flex: 1;
+
+        min-width: 140px;
+    }
+
+    #app {
+        width: 94%;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+    .pokemon-card {
+        padding: 14px 10px 15px;
+
+        border-radius: 16px;
+    }
+
+    .pokemon-image {
+        width: 125px;
+        height: 125px;
+    }
+
+    .pokemon-card h2 {
+        font-size: 17px;
+    }
+
+    .pokemon-card-types {
+        font-size: 12px;
+    }
+
+    .pokemon-card-status {
+        font-size: 11px;
+    }
+
+    .pokemon-more-info {
+        font-size: 12px;
+    }
+
+    #pokemonDetail {
+        width: 94%;
+    }
+
+    .pokemon-detail-hero {
+        padding: 22px 16px;
+    }
+
+    .pokemon-detail-image {
+        width: 190px;
+        height: 190px;
+    }
+
+    .detail-block {
+        padding: 18px;
+    }
+
+    .detail-block h2 {
+        font-size: 19px;
+    }
+}
+
+
+/* =====================================================
+   HEEL KLEINE SCHERMEN
+   ===================================================== */
+
+@media (max-width: 390px) {
+
+    #app {
+        grid-template-columns: 1fr;
+    }
+
+    .pokemon-image {
+        width: 160px;
+        height: 160px;
+    }
+}

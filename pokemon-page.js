@@ -328,18 +328,5 @@ ${
         </section>
     `;
 }
-.video-icon {
-    width: 28px;
-    height: 28px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent !important;
-}
 
-.video-icon svg {
-    width: 28px;
-    height: 28px;
-    display: block;
-}
 renderPokemonPage();

@@ -2,19 +2,7 @@ const app = document.getElementById("app");
 const searchInput = document.getElementById("searchInput");
 const gameFilter = document.getElementById("gameFilter");
 const typeFilter = document.getElementById("typeFilter");
-function createSearchUrl(platform, pokemonName) {
-    const query = encodeURIComponent(`${pokemonName} Pokemon Pokopia`);
 
-    const urls = {
-        youtube: `https://www.youtube.com/results?search_query=${query}`,
-        tiktok: `https://www.tiktok.com/search?q=${query}`,
-        instagram: `https://www.instagram.com/explore/search/keyword/?q=${query}`,
-        facebook: `https://www.facebook.com/search/top?q=${query}`,
-        twitter: `https://x.com/search?q=${query}`
-    };
-
-    return urls[platform];
-}
 
 function getPokemonImage(name) {
     const imageName = name
@@ -27,15 +15,37 @@ function getPokemonImage(name) {
     return `https://img.pokemondb.net/artwork/large/${imageName}.jpg`;
 }
 
-function infoRow(label, value) {
-    if (!value) return "";
 
-    return `
-        <p>
-            <strong>${label}:</strong> ${value}
-        </p>
-    `;
+function getPokemonSection(pokemon) {
+    if (pokemon.event === true) {
+        return "event";
+    }
+
+    if (pokemon.dlc === true) {
+        return "dlc";
+    }
+
+    return "base";
 }
+
+
+function getPokemonStatus(pokemon) {
+    if (pokemon.event === true) {
+        return "Event Pokémon";
+    }
+
+    if (pokemon.dlc === true) {
+        return "Bubbly Basin DLC";
+    }
+
+    if (pokemon.dlc === false) {
+        return "Hoofd-Pokédex";
+    }
+
+    return "Nog onbekend";
+}
+
+
 function fillTypeFilter() {
     const types = new Set();
 
@@ -49,39 +59,45 @@ function fillTypeFilter() {
 
     sortedTypes.forEach((type) => {
         const option = document.createElement("option");
+
         option.value = type;
         option.textContent = type;
 
         typeFilter.appendChild(option);
     });
 }
+
+
 function renderPokemon(list) {
     app.innerHTML = "";
 
     if (list.length === 0) {
-        app.innerHTML = "<p>Geen Pokémon gevonden.</p>";
+        app.innerHTML = `
+            <p class="no-results">
+                Geen Pokémon gevonden.
+            </p>
+        `;
+
         return;
     }
 
     list.forEach((pokemon) => {
         const card = document.createElement("section");
+
         card.className = "pokemon-card";
 
-        const section =
-    pokemon.event === true
-        ? "event"
-        : pokemon.dlc === true
-        ? "dlc"
-        : "base";
+        const section = getPokemonSection(pokemon);
 
-card.addEventListener("click", (event) => {
-    if (event.target.closest("a")) return;
+        const pokemonUrl =
+            `pokemon.html?section=${section}&number=${pokemon.number}`;
 
-    window.location.href =
-        `pokemon.html?section=${section}&number=${pokemon.number}`;
-});
 
-card.style.cursor = "pointer";
+        card.addEventListener("click", () => {
+            window.location.href = pokemonUrl;
+        });
+
+        card.style.cursor = "pointer";
+
 
         card.innerHTML = `
             <img
@@ -91,120 +107,118 @@ card.style.cursor = "pointer";
                 loading="lazy"
             >
 
-<h2>
-    <a
-        class="pokemon-detail-link"
-        href="pokemon.html?section=${
-            pokemon.event === true
-                ? "event"
-                : pokemon.dlc === true
-                ? "dlc"
-                : "base"
-        }&number=${pokemon.number}"
-    >
-        #${String(pokemon.number).padStart(3, "0")}
-        ${pokemon.name}
-    </a>
-</h2>
+            <h2>
+                #${String(pokemon.number).padStart(3, "0")}
+                ${pokemon.name}
+            </h2>
 
-${infoRow("Type", pokemon.type.join(" / "))}
-${infoRow("Spel (Game)", pokemon.game)}
+            <p class="pokemon-card-types">
+                <strong>Type:</strong>
+                ${pokemon.type.join(" / ")}
+            </p>
 
-${infoRow("Locatie (Location)", pokemon.location)}
-${infoRow("Gebied (Area)", pokemon.area)}
-${infoRow("Habitat", pokemon.habitat)}
+            <p class="pokemon-card-status">
+                ${getPokemonStatus(pokemon)}
+            </p>
 
-${infoRow("Hoe te verkrijgen (How to obtain)", pokemon.obtainMethod)}
-${infoRow("Benodigdheden (Requirements)", pokemon.requirements)}
-
-${infoRow(
-  "Pokopia-vaardigheden (Specialties)",
-  pokemon.specialties.length
-    ? pokemon.specialties.join(" / ")
-    : ""
-)}
-
-${infoRow("Evolueert van (Evolves from)", pokemon.evolvesFrom)}
-${infoRow("Evolueert naar (Evolves into)", pokemon.evolvesInto)}
-
-<p>
-    <strong>Status:</strong>
-    ${
-        pokemon.event === true
-            ? "Event"
-            : pokemon.dlc === true
-            ? "DLC"
-            : pokemon.dlc === false
-            ? "Base Game"
-            : "Nog onbekend"
-    }
-</p>
-
-            ${infoRow("Persoonlijke Tip", pokemon.tip)}
-
-            <div class="video-links">
-                <h3>Zoek video's</h3>
-
-                <a href="${createSearchUrl("youtube", pokemon.name)}" target="_blank" rel="noopener noreferrer">
-                    YouTube
-                </a>
-
-                <a href="${createSearchUrl("tiktok", pokemon.name)}" target="_blank" rel="noopener noreferrer">
-                    TikTok
-                </a>
-
-                <a href="${createSearchUrl("instagram", pokemon.name)}" target="_blank" rel="noopener noreferrer">
-                    Instagram
-                </a>
-
-                <a href="${createSearchUrl("facebook", pokemon.name)}" target="_blank" rel="noopener noreferrer">
-                    Facebook
-                </a>
-
-                <a href="${createSearchUrl("twitter", pokemon.name)}" target="_blank" rel="noopener noreferrer">
-                    X
-                </a>
-            </div>
+            <p class="pokemon-more-info">
+                Bekijk alle informatie →
+            </p>
         `;
+
 
         app.appendChild(card);
     });
 }
 
+
 function filterPokemon() {
-    const search = searchInput.value.trim().toLowerCase();
-    const selectedGame = gameFilter.value;
-    const selectedType = typeFilter.value;
+    const search =
+        searchInput.value.trim().toLowerCase();
+
+    const selectedGame =
+        gameFilter.value;
+
+    const selectedType =
+        typeFilter.value;
+
 
     const filteredPokemon = pokemonData.filter((pokemon) => {
-        const number = String(pokemon.number);
-        const paddedNumber = number.padStart(3, "0");
-        const name = pokemon.name.toLowerCase();
+        const number =
+            String(pokemon.number);
+
+        const paddedNumber =
+            number.padStart(3, "0");
+
+        const name =
+            pokemon.name.toLowerCase();
+
 
         const matchesSearch =
             name.includes(search) ||
             number.includes(search) ||
             paddedNumber.includes(search);
 
-const matchesGame =
-    selectedGame === "all" ||
-    (selectedGame === "base" && pokemon.dlc === false && pokemon.event !== true) ||
-    (selectedGame === "dlc" && pokemon.dlc === true) ||
-    (selectedGame === "event" && pokemon.event === true) ||
-    (selectedGame === "unknown" && pokemon.dlc === null && pokemon.event !== true);
+
+        const matchesGame =
+            selectedGame === "all" ||
+
+            (
+                selectedGame === "base" &&
+                pokemon.dlc === false &&
+                pokemon.event !== true
+            ) ||
+
+            (
+                selectedGame === "dlc" &&
+                pokemon.dlc === true
+            ) ||
+
+            (
+                selectedGame === "event" &&
+                pokemon.event === true
+            ) ||
+
+            (
+                selectedGame === "unknown" &&
+                pokemon.dlc === null &&
+                pokemon.event !== true
+            );
+
 
         const matchesType =
             selectedType === "all" ||
             pokemon.type.includes(selectedType);
 
-        return matchesSearch && matchesGame && matchesType;
+
+        return (
+            matchesSearch &&
+            matchesGame &&
+            matchesType
+        );
     });
+
 
     renderPokemon(filteredPokemon);
 }
-searchInput.addEventListener("input", filterPokemon);
-gameFilter.addEventListener("change", filterPokemon);
-typeFilter.addEventListener("change", filterPokemon);
+
+
+searchInput.addEventListener(
+    "input",
+    filterPokemon
+);
+
+gameFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+typeFilter.addEventListener(
+    "change",
+    filterPokemon
+);
+
+
 fillTypeFilter();
 
 renderPokemon(pokemonData);

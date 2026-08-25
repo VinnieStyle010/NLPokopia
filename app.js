@@ -75,10 +75,21 @@ function renderPokemon(list) {
                 loading="lazy"
             >
 
-            <h2>
-                #${String(pokemon.number).padStart(3, "0")}
-                ${pokemon.name}
-            </h2>
+<h2>
+    <a
+        class="pokemon-detail-link"
+        href="pokemon.html?section=${
+            pokemon.event === true
+                ? "event"
+                : pokemon.dlc === true
+                ? "dlc"
+                : "base"
+        }&number=${pokemon.number}"
+    >
+        #${String(pokemon.number).padStart(3, "0")}
+        ${pokemon.name}
+    </a>
+</h2>
 
 ${infoRow("Type", pokemon.type.join(" / "))}
 ${infoRow("Spel (Game)", pokemon.game)}

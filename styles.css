@@ -1,146 +1,1004 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  color: #222;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+
+    background-color: #eef3f8;
+
+    /*
+       Poké Ball-achtige achtergrond.
+       Meerdere soorten ballen, verspreid over de pagina.
+    */
+    background-image:
+        radial-gradient(circle at 50% 50%,
+            transparent 0 11px,
+            rgba(255,255,255,0.70) 12px 15px,
+            transparent 16px),
+        linear-gradient(
+            to bottom,
+            rgba(220, 38, 38, 0.10) 0 47%,
+            rgba(30, 41, 59, 0.08) 47% 53%,
+            rgba(255,255,255,0.22) 53% 100%
+        ),
+
+        radial-gradient(circle at 50% 50%,
+            transparent 0 8px,
+            rgba(255,255,255,0.60) 9px 12px,
+            transparent 13px),
+        linear-gradient(
+            to bottom,
+            rgba(37, 99, 235, 0.08) 0 47%,
+            rgba(30,41,59,0.07) 47% 53%,
+            rgba(255,255,255,0.18) 53% 100%
+        );
+
+    background-size:
+        150px 150px,
+        150px 150px,
+        210px 210px,
+        210px 210px;
+
+    background-position:
+        20px 30px,
+        20px 30px,
+        100px 120px,
+        100px 120px;
+
+    background-attachment: fixed;
+
+    min-height: 100vh;
 }
 
+
+/* =========================================
+   HEADER
+========================================= */
+
 header {
-  text-align: center;
-  padding: 30px 20px;
-  background: #ffffff;
-  border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 34px 20px 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.98),
+            rgba(243,247,252,0.97)
+        );
+
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+
+    box-shadow:
+        0 4px 18px rgba(0,0,0,0.06);
 }
 
 header h1 {
-  margin: 0;
-  font-size: 36px;
+    margin: 0;
+
+    font-size: clamp(32px, 6vw, 48px);
+
+    font-weight: 900;
+
+    letter-spacing: -1px;
+
+    color: #172033;
+}
+
+header h1::before {
+    content: "◉";
+    display: inline-block;
+
+    margin-right: 10px;
+
+    color: #dc2626;
+
+    text-shadow:
+        0 2px 0 #111827;
 }
 
 header p {
-  margin-top: 8px;
-  color: #666;
+    margin: 8px 0 0;
+
+    color: #64748b;
+
+    font-size: 16px;
 }
 
-#app {
-  width: min(1100px, 92%);
-  margin: 30px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+
+/* =========================================
+   BUBBLY BASIN INFORMATIE
+========================================= */
+
+.dlc-info {
+    width: min(1100px, 92%);
+
+    margin: 24px auto 0;
+
+    padding: 22px 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(224, 247, 255, 0.97),
+            rgba(240, 253, 250, 0.97)
+        );
+
+    border:
+        1px solid #a5e5f4;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 6px 18px rgba(15, 118, 143, 0.09);
 }
 
-#app section {
-  background: white;
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+.dlc-info h2 {
+    margin: 0 0 10px;
+
+    font-size: 23px;
+
+    color: #0f6479;
 }
 
-#app section h2 {
-  margin-top: 0;
-  font-size: 22px;
+.dlc-info p {
+    margin: 7px 0;
+
+    line-height: 1.6;
+
+    color: #35515d;
 }
 
-#app section p {
-  margin: 8px 0;
-  line-height: 1.5;
-}
 
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 28px;
-  }
+/* =========================================
+   ZOEKBALK
+========================================= */
 
-  #app {
-    width: 94%;
-    margin-top: 20px;
-  }
-
-  #app section {
-    padding: 16px;
-  }
-}
 .search-bar {
     width: min(1100px, 92%);
-    margin: 25px auto 0;
+
+    margin: 24px auto 0;
 }
 
 .search-bar input {
     width: 100%;
-    padding: 14px 16px;
+
+    padding: 16px 18px;
+
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 12px;
+
+    border: 2px solid #dbe2ea;
+
+    border-radius: 16px;
+
     outline: none;
+
+    background:
+        rgba(255,255,255,0.96);
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,0.05);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
 }
 
 .search-bar input:focus {
-    border-color: #555;
-}
-.pokemon-card {
-    text-align: center;
+    border-color: #3b82f6;
+
+    box-shadow:
+        0 0 0 4px rgba(59,130,246,0.12),
+        0 6px 20px rgba(0,0,0,0.06);
 }
 
-.pokemon-image {
-    width: 180px;
-    height: 180px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 10px;
-}
 
-.pokemon-card p {
-    text-align: left;
-}
+/* =========================================
+   FILTERS
+========================================= */
 
-@media (max-width: 600px) {
-    .pokemon-image {
-        width: 150px;
-        height: 150px;
-    }
-}
 .filters {
     width: min(1100px, 92%);
-    margin: 15px auto 0;
+
+    margin: 14px auto 0;
+
     display: flex;
+
     gap: 10px;
+
     flex-wrap: wrap;
 }
 
 .filters select {
-    padding: 10px 12px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background: white;
+    padding: 11px 14px;
+
+    border:
+        1px solid #d4dbe4;
+
+    border-radius: 12px;
+
+    background:
+        rgba(255,255,255,0.96);
+
     font-size: 15px;
+
     cursor: pointer;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.04);
 }
+
+
+/* =========================================
+   OVERZICHT
+========================================= */
+
+#app {
+    width: min(1100px, 92%);
+
+    margin: 28px auto 50px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   POKÉMON KAART
+========================================= */
+
+.pokemon-card {
+    position: relative;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    padding: 22px 18px 20px;
+
+    background:
+        rgba(255,255,255,0.96);
+
+    border:
+        1px solid rgba(0,0,0,0.06);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 7px 22px rgba(0,0,0,0.08);
+
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        border-color 0.22s ease;
+}
+
+.pokemon-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 95px;
+    height: 95px;
+
+    right: -35px;
+    top: -35px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(239,68,68,0.10) 0 47%,
+            rgba(15,23,42,0.08) 47% 53%,
+            rgba(255,255,255,0.40) 53%
+        );
+
+    border:
+        8px solid rgba(15,23,42,0.04);
+
+    pointer-events: none;
+}
+
+.pokemon-card:hover {
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(0,0,0,0.13);
+
+    border-color:
+        rgba(59,130,246,0.22);
+}
+
+.pokemon-card:active {
+    transform:
+        translateY(-1px)
+        scale(0.99);
+}
+
+
+/* =========================================
+   POKÉMON AFBEELDING
+========================================= */
+
+.pokemon-image {
+    width: 170px;
+
+    height: 170px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: 0 auto 12px;
+
+    transition:
+        transform 0.22s ease;
+}
+
+.pokemon-card:hover .pokemon-image {
+    transform:
+        scale(1.05);
+}
+
+
+/* =========================================
+   NAAM
+========================================= */
+
+.pokemon-card h2 {
+    margin: 8px 0 8px;
+
+    font-size: 21px;
+
+    color: #172033;
+}
+
+
+/* =========================================
+   TYPE
+========================================= */
+
+.pokemon-card-types {
+    margin: 6px 0 12px;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+
+    color: #475569;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.pokemon-card-status {
+    display: inline-block;
+
+    margin: 3px auto 8px;
+
+    padding: 6px 11px;
+
+    border-radius: 999px;
+
+    background:
+        #eef2ff;
+
+    color:
+        #4338ca;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   BEKIJK INFO
+========================================= */
+
+.pokemon-more-info {
+    margin: 10px 0 0;
+
+    color:
+        #2563eb;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   GEEN RESULTATEN
+========================================= */
+
+.no-results {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 35px;
+
+    background:
+        rgba(255,255,255,0.95);
+
+    border-radius: 18px;
+}
+
+
+/* ======================================================
+   DETAILPAGINA
+====================================================== */
+
+#pokemonDetail {
+    width: min(950px, 92%);
+
+    margin: 30px auto 60px;
+}
+
+
+/* =========================================
+   COMPLETE PAGINA
+========================================= */
+
+.pokemon-detail-page {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   TERUGKNOP
+========================================= */
+
+.back-button {
+    align-self: flex-start;
+
+    display: inline-block;
+
+    padding: 10px 15px;
+
+    text-decoration: none;
+
+    color: #334155;
+
+    background:
+        rgba(255,255,255,0.96);
+
+    border:
+        1px solid #d7dee7;
+
+    border-radius: 12px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.back-button:hover {
+    transform:
+        translateX(-3px);
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.pokemon-detail-hero {
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 34px;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.98),
+            rgba(241,245,249,0.98)
+        );
+
+    border-radius: 24px;
+
+    border:
+        1px solid rgba(0,0,0,0.06);
+
+    box-shadow:
+        0 10px 28px rgba(0,0,0,0.10);
+}
+
+
+/* Grote Poké Ball achter Pokémon */
+
+.pokemon-detail-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    right: -60px;
+    top: -70px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(239,68,68,0.08) 0 46%,
+            rgba(15,23,42,0.07) 46% 54%,
+            rgba(255,255,255,0.35) 54% 100%
+        );
+
+    border:
+        20px solid rgba(15,23,42,0.035);
+
+    z-index: 0;
+}
+
+
+/* =========================================
+   DETAIL AFBEELDING
+========================================= */
+
+.pokemon-detail-image {
+    position: relative;
+
+    z-index: 1;
+
+    width: 260px;
+
+    height: 260px;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 10px 10px rgba(0,0,0,0.10)
+        );
+}
+
+
+/* =========================================
+   TITEL
+========================================= */
+
+.pokemon-detail-title {
+    position: relative;
+
+    z-index: 1;
+
+    flex: 1;
+}
+
+.pokemon-detail-title h1 {
+    margin:
+        5px 0 10px;
+
+    font-size:
+        clamp(30px, 6vw, 46px);
+
+    line-height: 1.05;
+
+    color:
+        #172033;
+}
+
+.pokemon-status {
+    display: inline-block;
+
+    margin: 0 0 7px;
+
+    padding:
+        6px 11px;
+
+    border-radius:
+        999px;
+
+    background:
+        #e0e7ff;
+
+    color:
+        #3730a3;
+
+    font-size:
+        13px;
+
+    font-weight:
+        800;
+}
+
+.pokemon-types {
+    margin: 0;
+
+    font-size: 17px;
+
+    color:
+        #475569;
+
+    font-weight:
+        700;
+}
+
+
+/* =========================================
+   INFORMATIEBLOKKEN
+========================================= */
+
+.detail-block {
+    padding: 24px;
+
+    background:
+        rgba(255,255,255,0.97);
+
+    border-radius:
+        20px;
+
+    border:
+        1px solid rgba(0,0,0,0.06);
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,0.07);
+}
+
+.detail-block h2 {
+    margin:
+        0 0 18px;
+
+    font-size:
+        22px;
+
+    color:
+        #172033;
+}
+
+
+/* =========================================
+   DETAIL RIJEN
+========================================= */
+
+.detail-row {
+    display: grid;
+
+    grid-template-columns:
+        minmax(170px, 230px)
+        1fr;
+
+    gap: 20px;
+
+    padding:
+        13px 0;
+
+    border-bottom:
+        1px solid #eef2f6;
+
+    line-height:
+        1.55;
+}
+
+.detail-row:last-child {
+    border-bottom:
+        none;
+}
+
+.detail-row strong {
+    color:
+        #334155;
+}
+
+.detail-row span {
+    color:
+        #526173;
+}
+
+
+/* =========================================
+   PERSOONLIJKE TIP
+========================================= */
+
+.personal-tip {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,251,235,0.98),
+            rgba(254,249,195,0.98)
+        );
+
+    border-color:
+        #fde68a;
+}
+
+.personal-tip h2 {
+    color:
+        #92400e;
+}
+
+.personal-tip p {
+    margin: 0;
+
+    line-height:
+        1.65;
+
+    color:
+        #713f12;
+
+    font-weight:
+        500;
+}
+
+
+/* =========================================
+   KLEINE OPMERKING
+========================================= */
+
+.small-note {
+    margin:
+        16px 0 0;
+
+    padding:
+        12px 14px;
+
+    background:
+        #f8fafc;
+
+    border-left:
+        4px solid #94a3b8;
+
+    border-radius:
+        8px;
+
+    font-size:
+        14px;
+
+    line-height:
+        1.5;
+
+    color:
+        #64748b;
+}
+
+
+/* =========================================
+   VIDEO LINKS
+========================================= */
+
+.video-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.video-links a {
+    display: inline-block;
+
+    padding:
+        10px 14px;
+
+    border-radius:
+        12px;
+
+    text-decoration:
+        none;
+
+    background:
+        #172033;
+
+    color:
+        white;
+
+    font-weight:
+        700;
+
+    font-size:
+        14px;
+
+    transition:
+        transform 0.18s ease,
+        opacity 0.18s ease;
+}
+
+.video-links a:hover {
+    transform:
+        translateY(-2px);
+
+    opacity:
+        0.88;
+}
+
+
+/* ======================================================
+   TABLET
+====================================================== */
+
+@media (max-width: 800px) {
+
+    .pokemon-detail-hero {
+        flex-direction:
+            column;
+
+        text-align:
+            center;
+
+        gap:
+            12px;
+    }
+
+    .pokemon-detail-image {
+        width:
+            220px;
+
+        height:
+            220px;
+    }
+
+    .detail-row {
+        grid-template-columns:
+            1fr;
+
+        gap:
+            5px;
+    }
+}
+
+
+/* ======================================================
+   MOBIEL
+====================================================== */
 
 @media (max-width: 600px) {
-    .filters select {
-        flex: 1;
-        min-width: 140px;
+
+    header {
+        padding:
+            25px 15px;
     }
-}.dlc-info {
-    width: min(1100px, 92%);
-    margin: 20px auto 0;
-    padding: 18px 20px;
-    background: #eaf8ff;
-    border: 1px solid #b8e3f5;
-    border-radius: 14px;
+
+    header h1 {
+        font-size:
+            32px;
+    }
+
+    .dlc-info {
+        padding:
+            17px;
+    }
+
+    .filters select {
+        flex:
+            1;
+
+        min-width:
+            140px;
+    }
+
+    #app {
+        width:
+            94%;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            12px;
+    }
+
+    .pokemon-card {
+        padding:
+            14px 10px 15px;
+
+        border-radius:
+            16px;
+    }
+
+    .pokemon-image {
+        width:
+            125px;
+
+        height:
+            125px;
+    }
+
+    .pokemon-card h2 {
+        font-size:
+            17px;
+    }
+
+    .pokemon-card-types {
+        font-size:
+            12px;
+    }
+
+    .pokemon-card-status {
+        font-size:
+            11px;
+    }
+
+    .pokemon-more-info {
+        font-size:
+            12px;
+    }
+
+    #pokemonDetail {
+        width:
+            94%;
+    }
+
+    .pokemon-detail-hero {
+        padding:
+            20px 15px;
+    }
+
+    .pokemon-detail-image {
+        width:
+            190px;
+
+        height:
+            190px;
+    }
+
+    .detail-block {
+        padding:
+            18px;
+    }
+
+    .detail-block h2 {
+        font-size:
+            19px;
+    }
 }
 
-.dlc-info h2 {
-    margin: 0 0 6px;
-    font-size: 21px;
-}
 
-.dlc-info p {
-    margin: 0;
-    line-height: 1.5;
+/* ======================================================
+   HEEL KLEINE SCHERMEN
+====================================================== */
+
+@media (max-width: 390px) {
+
+    #app {
+        grid-template-columns:
+            1fr;
+    }
+
+    .pokemon-image {
+        width:
+            160px;
+
+        height:
+            160px;
+    }
 }

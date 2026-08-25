@@ -110,6 +110,7 @@ function renderPokemon(list) {
 <h2>
   Nr: ${String(pokemon.number).padStart(3, "0")} ${pokemon.name}
 </h2>
+
             <p class="pokemon-card-types">
                 <strong>Type:</strong>
                 ${pokemon.type.join(" / ")}

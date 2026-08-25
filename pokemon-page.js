@@ -284,8 +284,14 @@ ${
         rel="noopener noreferrer"
         aria-label="Zoek ${pokemon.name} op TikTok"
     >
-        <span class="video-icon">♪</span>
-        <span>TikTok</span>
+<span class="video-icon">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path fill="#25F4EE" d="M12.5 2h3.2c.3 2.2 1.6 3.8 4.3 4.3v3.2c-1.7-.1-3.2-.6-4.3-1.4v6.5a6.1 6.1 0 1 1-5.3-6v3.3a2.9 2.9 0 1 0 2.1 2.7V2z"/>
+    <path fill="#FE2C55" d="M11.7 2h2.1c.2 2.8 1.8 5 5.4 5.7v2.1c-1.7-.1-3.2-.6-4.3-1.4v6.5a6.1 6.1 0 0 1-6.1 6.1c-1.2 0-2.3-.3-3.2-.9a6.1 6.1 0 0 0 9.3-5.2V8.4c1.1.8 2.6 1.3 4.3 1.4V8.5c-4.5-.7-7.1-3.2-7.5-6.5z"/>
+    <path fill="#000000" d="M12.5 7.9v6.7a2.9 2.9 0 1 1-2.1-2.7V8.6a6.1 6.1 0 1 0 5.3 6V8.1c-1.3-.9-2.4-2.3-3.2-4.1v3.9z"/>
+  </svg>
+</span>
+<span>TikTok</span>>
     </a>
 
     <a

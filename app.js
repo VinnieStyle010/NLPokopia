@@ -107,7 +107,9 @@ function renderPokemon(list) {
                 loading="lazy"
             >
 
-
+<h2>
+Nr: ${pokemon.number} ${pokemon.name}
+</h2>
             <p class="pokemon-card-types">
                 <strong>Type:</strong>
                 ${pokemon.type.join(" / ")}

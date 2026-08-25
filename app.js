@@ -107,9 +107,6 @@ function renderPokemon(list) {
                 loading="lazy"
             >
 
-            <<h2>
-    NR: ${String(pokemon.number).padStart(3, "0")} ${pokemon.name}
-</h2>
 
             <p class="pokemon-card-types">
                 <strong>Type:</strong>

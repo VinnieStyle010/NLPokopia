@@ -1388,3 +1388,125 @@ a {
 .type-staal .pokemon-detail-title h1 {
     color: var(--type-dark);
 }
+/* =========================================
+   NLPokopia - Pokémon type-badges
+   ========================================= */
+
+.pokemon-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.type-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 13px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);
+}
+
+/* Normaal */
+.type-badge-normaal {
+    background: #A8A878;
+}
+
+/* Vuur */
+.type-badge-vuur {
+    background: #F08030;
+}
+
+/* Water */
+.type-badge-water {
+    background: #6890F0;
+}
+
+/* Elektrisch */
+.type-badge-elektrisch {
+    background: #F8D030;
+    color: #332b00;
+}
+
+/* Gras */
+.type-badge-gras {
+    background: #78C850;
+}
+
+/* IJs */
+.type-badge-ijs {
+    background: #98D8D8;
+    color: #163b3b;
+}
+
+/* Vechtend */
+.type-badge-vechten {
+    background: #C03028;
+}
+
+/* Gif */
+.type-badge-gif {
+    background: #A040A0;
+}
+
+/* Grond */
+.type-badge-grond {
+    background: #E0C068;
+    color: #40330e;
+}
+
+/* Vliegend */
+.type-badge-vliegend {
+    background: #A890F0;
+}
+
+/* Psychisch */
+.type-badge-psychisch {
+    background: #F85888;
+}
+
+/* Insect */
+.type-badge-insect {
+    background: #A8B820;
+}
+
+/* Steen */
+.type-badge-steen {
+    background: #B8A038;
+}
+
+/* Spook */
+.type-badge-spook {
+    background: #705898;
+}
+
+.type-badge-geest {
+    background: #705898;
+}
+
+/* Draak */
+.type-badge-draak {
+    background: #7038F8;
+}
+
+/* Duister */
+.type-badge-duister {
+    background: #705848;
+}
+
+/* Staal */
+.type-badge-staal {
+    background: #B8B8D0;
+    color: #29293d;
+}
+
+/* Fee */
+.type-badge-fee {
+    background: #EE99AC;
+}

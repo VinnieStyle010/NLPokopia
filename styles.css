@@ -1002,3 +1002,10 @@ header p {
             160px;
     }
 }
+.pokemon-detail-image {
+    width: 220px !important;
+    height: 220px !important;
+    max-width: 220px !important;
+    max-height: 220px !important;
+    object-fit: contain !important;
+}

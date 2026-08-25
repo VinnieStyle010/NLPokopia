@@ -301,8 +301,24 @@ ${
         rel="noopener noreferrer"
         aria-label="Zoek ${pokemon.name} op Instagram"
     >
-        <span class="video-icon">◎</span>
-        <span>Instagram</span>
+<span class="video-icon">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <defs>
+      <linearGradient id="instagram-gradient" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0%" stop-color="#FFDC80"/>
+        <stop offset="35%" stop-color="#F77737"/>
+        <stop offset="65%" stop-color="#E1306C"/>
+        <stop offset="100%" stop-color="#833AB4"/>
+      </linearGradient>
+    </defs>
+    <rect x="2" y="2" width="20" height="20" rx="5"
+          fill="url(#instagram-gradient)"/>
+    <circle cx="12" cy="12" r="4.5"
+            fill="none" stroke="white" stroke-width="2"/>
+    <circle cx="17.5" cy="6.5" r="1.2" fill="white"/>
+  </svg>
+</span>
+<span>Instagram</span>
     </a>
 
     <a

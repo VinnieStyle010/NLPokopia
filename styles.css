@@ -2658,3 +2658,76 @@ a {
         gap: 9px;
     }
 }
+/* =========================================================
+   NLPokopia ACHTERGROND - POKOPIA SFEER
+   ========================================================= */
+
+body {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.75), transparent 28%),
+        radial-gradient(circle at 80% 15%, rgba(255,255,255,0.55), transparent 24%),
+        linear-gradient(
+            180deg,
+            #8fd3ff 0%,
+            #ccecff 28%,
+            #dff5d8 58%,
+            #b7e38d 76%,
+            #8dcc67 100%
+        );
+
+    background-attachment: fixed;
+}
+
+
+/* Zachte wolken */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+
+    background:
+        radial-gradient(ellipse at 15% 12%, rgba(255,255,255,0.72) 0 8%, transparent 9%),
+        radial-gradient(ellipse at 27% 9%, rgba(255,255,255,0.58) 0 7%, transparent 8%),
+        radial-gradient(ellipse at 76% 14%, rgba(255,255,255,0.68) 0 8%, transparent 9%),
+        radial-gradient(ellipse at 88% 10%, rgba(255,255,255,0.50) 0 6%, transparent 7%);
+
+    opacity: 0.85;
+}
+
+
+/* Groene gloed onderaan alsof er landschap ligt */
+body::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 38vh;
+
+    pointer-events: none;
+    z-index: 0;
+
+    background:
+        radial-gradient(circle at 15% 100%, rgba(67,160,71,0.45), transparent 35%),
+        radial-gradient(circle at 85% 100%, rgba(46,125,50,0.38), transparent 36%),
+        linear-gradient(
+            to top,
+            rgba(76,175,80,0.34),
+            rgba(76,175,80,0.08),
+            transparent
+        );
+}
+
+
+/* Alle echte pagina-inhoud boven de achtergrond houden */
+header,
+#pokemonDetail,
+#app,
+.dlc-info,
+.search-bar,
+.filters {
+    position: relative;
+    z-index: 2;
+}

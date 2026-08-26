@@ -1882,3 +1882,104 @@ a {
     box-shadow:
         0 9px 20px rgba(0, 0, 0, 0.13);
 }
+/* =========================================================
+   NLPokopia - PERSOONLIJKE TIP + TIPGEVER
+   ========================================================= */
+
+.tip-with-trainer {
+    display: grid;
+    grid-template-columns: 95px 1fr;
+    align-items: center;
+    gap: 22px;
+
+    min-height: 135px;
+    padding: 18px 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff4c7 0%,
+            #fff9e8 55%,
+            #ffffff 100%
+        ) !important;
+
+    border: 2px solid #f5b700;
+    border-left: 7px solid #f5b700;
+}
+
+/* Kleine jongen links */
+.tip-trainer {
+    height: 105px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.tip-trainer img {
+    width: 90px;
+    height: 105px;
+
+    object-fit: contain;
+    object-position: center bottom;
+
+    background: transparent;
+}
+
+/* Titel van de tip */
+.tip-content h2 {
+    margin: 0 0 9px;
+
+    font-size: 24px;
+    font-weight: 900;
+
+    color: #854d0e;
+}
+
+/* Persoonlijke tip zelf iets dikker */
+.tip-content p {
+    margin: 0;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    line-height: 1.65;
+
+    color: #713f12;
+}
+
+
+/* =========================
+   MOBIEL
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .tip-with-trainer {
+        grid-template-columns: 65px 1fr;
+
+        gap: 12px;
+
+        min-height: 105px;
+
+        padding: 14px;
+    }
+
+    .tip-trainer {
+        height: 78px;
+    }
+
+    .tip-trainer img {
+        width: 62px;
+        height: 78px;
+    }
+
+    .tip-content h2 {
+        font-size: 20px;
+    }
+
+    .tip-content p {
+        font-size: 15px;
+        line-height: 1.55;
+    }
+}

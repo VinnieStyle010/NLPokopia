@@ -202,34 +202,60 @@ detailContainer.className =
 
             </section>
 
-            <section class="detail-block location-block">
+<section class="detail-block location-block">
 
-    <h2>📍 Waar vind je ${pokemon.name}?</h2>
+    <h2>🗺️ Op zoek naar ${pokemon.name}!</h2>
+
+    <p class="location-intro">
+        Hier zie je precies waar, wanneer en hoe je ${pokemon.name} kunt vinden.
+    </p>
 
     <div class="location-grid">
 
-        <div class="location-card">
-            <span class="location-icon">🎮</span>
-            <strong>Spel (Game)</strong>
-            <span>${pokemon.game || "Nog onbekend"}</span>
-        </div>
-
-        <div class="location-card">
+        <div class="location-card location-search">
             <span class="location-icon">📍</span>
-            <strong>Locatie (Location)</strong>
-            <span>${pokemon.location || "Nog onbekend"}</span>
+
+            <div>
+                <strong>Waar moet je zoeken?</strong>
+                <small>Locatie (Location)</small>
+                <span>${pokemon.location || "Nog onbekend"}</span>
+            </div>
         </div>
 
-        <div class="location-card">
-            <span class="location-icon">🕐</span>
-            <strong>Gebied (Area)</strong>
-            <span>${pokemon.area || "Nog onbekend"}</span>
+        <div class="location-card location-time">
+            <span class="location-icon">☀️</span>
+
+            <div>
+                <strong>Wanneer kun je ${pokemon.name} vinden?</strong>
+                <small>Tijd & weer (Time & Weather)</small>
+                <span>${pokemon.area || "Nog onbekend"}</span>
+            </div>
         </div>
 
-        <div class="location-card">
-            <span class="location-icon">🏡</span>
-            <strong>Habitat</strong>
-            <span>${pokemon.habitat || "Nog onbekend"}</span>
+        <div class="location-card location-habitat">
+            <span class="location-icon">🌱</span>
+
+            <div>
+                <strong>Wat moet je bouwen?</strong>
+                <small>Habitat</small>
+                <span>${pokemon.habitat || "Nog onbekend"}</span>
+            </div>
+        </div>
+
+        <div class="location-card location-skills">
+            <span class="location-icon">⭐</span>
+
+            <div>
+                <strong>Wat kan ${pokemon.name}?</strong>
+                <small>Pokopia-vaardigheden (Specialties)</small>
+                <span>
+                    ${
+                        pokemon.specialties.length
+                            ? pokemon.specialties.join(" / ")
+                            : "Geen vaardigheid bekend"
+                    }
+                </span>
+            </div>
         </div>
 
     </div>

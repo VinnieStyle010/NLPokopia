@@ -291,7 +291,7 @@ detailContainer.className =
                 <strong>Wat heb je nodig?</strong>
                 <small>Benodigdheden (Requirements)</small>
                 <span>
-                    ${pokemon.requirements || "Niets bijzonders nodig"}
+                    ${formatListText(pokemon.requirements)}
                 </span>
             </div>
         </div>

@@ -2343,3 +2343,16 @@ a {
 .obtain-card:nth-child(2) strong {
     color: #c2410c;
 }
+/* =========================================================
+   TIJD EN WEER NETJES ONDER ELKAAR
+   ========================================================= */
+
+.area-info {
+    display: block;
+    line-height: 1.5;
+}
+
+.area-space {
+    display: block;
+    height: 14px;
+}

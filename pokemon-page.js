@@ -236,7 +236,7 @@ detailContainer.className =
             <span class="location-icon">🌱</span>
 
             <div>
-                <strong>Wat moet je bouwen?</strong>
+               <strong>Hoe moet je het bouwen?</strong>
                 <small>Habitat</small>
                 <span>${pokemon.habitat || "Nog onbekend"}</span>
             </div>

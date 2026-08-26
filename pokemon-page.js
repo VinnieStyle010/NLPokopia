@@ -175,10 +175,29 @@ detailContainer.className =
         .join("")}
 </div>
 
-                </div>
+                            </div>
 
             </div>
 
+
+            <section class="detail-block personal-tip tip-with-trainer">
+
+                <div class="tip-trainer">
+                    <img
+                        src="tip-trainer.png"
+                        alt="NLPokopia tipgever"
+                    >
+                </div>
+
+                <div class="tip-content">
+                    <h2>💡 Persoonlijke tip</h2>
+
+                    <p>
+                        ${pokemon.tip || "Nog geen persoonlijke tip beschikbaar."}
+                    </p>
+                </div>
+
+            </section>
 
             <section class="detail-block">
 

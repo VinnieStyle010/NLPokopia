@@ -227,7 +227,7 @@ ${
     pokemon.evolvesFrom || pokemon.evolvesInto
         ? `
             <section class="detail-block">
-                <h2>◻️ Pokémon-familie</h2>
+                <h2>🔗 Pokémon-familie</h2>
 
                 <div class="evolution-family">
                     ${getPokemonFamily(pokemon)

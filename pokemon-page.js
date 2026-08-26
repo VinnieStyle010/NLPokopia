@@ -401,9 +401,22 @@ ${
 
             <section class="detail-block">
 
-                <h2>🎥 Zoek video's over ${pokemon.name}</h2>
+                <<section class="detail-block social-block">
 
-<div class="video-links">
+    <div class="social-heading">
+        <div>
+            <h2>🎥 Video's & Social</h2>
+            <p>
+                Bekijk video's, tips en berichten over ${pokemon.name}.
+            </p>
+        </div>
+
+        <span class="social-pokemon-name">
+            ${pokemon.name}
+        </span>
+    </div>
+
+    <div class="video-links">
 
     <a
         class="video-button youtube"

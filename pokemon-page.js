@@ -337,7 +337,22 @@ ${
                             }
                         `)
                         .join("")}
-                </div>
+              <div class="evolution-dots">
+    ${getPokemonFamily(pokemon)
+        .map((familyPokemon, index) => `
+            <button
+                class="evolution-dot ${
+                    familyPokemon.name === pokemon.name
+                        ? "active"
+                        : ""
+                }"
+                type="button"
+                data-index="${index}"
+                aria-label="Ga naar ${familyPokemon.name}"
+            ></button>
+        `)
+        .join("")}
+</div>
 
                 <p class="small-note">
                     Pokémon evolueren niet op de gewone manier binnen Pokémon Pokopia.
@@ -511,3 +526,55 @@ function formatAreaText(value) {
         .replace(/\s*\|\s*/g, '<div class="area-space"></div>');
 }
 renderPokemonPage();
+function setupEvolutionSwipe() {
+    const slider = document.querySelector(".evolution-family");
+    const cards = document.querySelectorAll(".evolution-member");
+    const dots = document.querySelectorAll(".evolution-dot");
+
+    if (!slider || cards.length === 0 || dots.length === 0) return;
+
+    function setActiveDot(index) {
+        dots.forEach((dot, dotIndex) => {
+            dot.classList.toggle("active", dotIndex === index);
+        });
+    }
+
+    // Tik op een bolletje
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            cards[index].scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "center"
+            });
+
+            setActiveDot(index);
+        });
+    });
+
+    // Bolletje veranderen tijdens swipen
+    slider.addEventListener("scroll", () => {
+        const sliderCenter =
+            slider.scrollLeft + slider.clientWidth / 2;
+
+        let closestIndex = 0;
+        let closestDistance = Infinity;
+
+        cards.forEach((card, index) => {
+            const cardCenter =
+                card.offsetLeft + card.offsetWidth / 2;
+
+            const distance =
+                Math.abs(sliderCenter - cardCenter);
+
+            if (distance < closestDistance) {
+                closestDistance = distance;
+                closestIndex = index;
+            }
+        });
+
+        setActiveDot(closestIndex);
+    });
+}
+
+setupEvolutionSwipe();

@@ -158,9 +158,13 @@ detailContainer.className =
                         ${getStatus(pokemon)}
                     </p>
 
-                 <h1>
+<h1>
     ${pokemon.name}
 </h1>
+
+<p class="pokemon-number">
+    Nr: ${String(pokemon.number).padStart(3, "0")}
+</p>
 
 <div class="pokemon-types">
     ${pokemon.type

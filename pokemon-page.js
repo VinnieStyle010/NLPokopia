@@ -228,7 +228,7 @@ detailContainer.className =
             <div>
                 <strong>Wanneer kun je ${pokemon.name} vinden?</strong>
                 <small>Tijd & weer (Time & Weather)</small>
-               <span>${formatEnglishText(formatListText(pokemon.area))}</span>
+               <span class="area-info">${formatAreaText(pokemon.area)}</span>
             </div>
         </div>
 
@@ -487,5 +487,11 @@ function formatEnglishText(value) {
         /\(([^)]+)\)/g,
         '<span class="english-text">($1)</span>'
     );
+}
+function formatAreaText(value) {
+    if (!value) return "Nog onbekend";
+
+    return formatEnglishText(value)
+        .replace(/\s*\|\s*/g, '<div class="area-space"></div>');
 }
 renderPokemonPage();

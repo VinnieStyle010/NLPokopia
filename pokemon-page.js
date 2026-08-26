@@ -199,7 +199,7 @@ detailContainer.className =
 
             </section>
 
-            <section class="detail-block">
+            <section class="detail-block location-block">
 
                 <h2>📍 Waar vind je ${pokemon.name}?</h2>
 
@@ -211,7 +211,7 @@ detailContainer.className =
             </section>
 
 
-            <section class="detail-block">
+            <section class="detail-block obtain-block">
 
                 <h2>🛠️ Hoe krijg je ${pokemon.name}?</h2>
 
@@ -228,7 +228,7 @@ detailContainer.className =
             </section>
 
 
-            <section class="detail-block">
+            <section class="detail-block skills-block">
 
                 <h2>⭐ Pokopia-vaardigheden</h2>
 
@@ -245,7 +245,7 @@ detailContainer.className =
 ${
     pokemon.evolvesFrom || pokemon.evolvesInto
         ? `
-            <section class="detail-block">
+            <section class="detail-block family-block">
                 <h2>🔗 Pokémon-familie</h2>
 
                 <div class="evolution-family">

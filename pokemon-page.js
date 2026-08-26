@@ -126,11 +126,16 @@ function renderPokemonPage() {
 
     document.title = `${pokemon.name} | NLPokopia`;
 
-    const primaryType = pokemon.type[0]
+const primaryType = pokemon.type[0]
     .split(" ")[0]
     .toLowerCase();
 
-detailContainer.className = `type-${primaryType}`;
+const secondaryType = pokemon.type[1]
+    ? pokemon.type[1].split(" ")[0].toLowerCase()
+    : primaryType;
+
+detailContainer.className =
+    `type-${primaryType} secondary-${secondaryType}`;
 
     detailContainer.innerHTML = `
         <section class="pokemon-detail-page">

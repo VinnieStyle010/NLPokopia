@@ -1984,3 +1984,16 @@ a {
     color: var(--type-dark);
     opacity: 0.8;
 }
+.pokemon-detail-title .pokemon-number {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 0.8 !important;
+
+    margin: -2px 0 14px !important;
+
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+
+    color: var(--type-dark) !important;
+}

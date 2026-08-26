@@ -1968,3 +1968,12 @@ a {
     background: #F08030 !important;
     color: #ffffff !important;
 }
+/* Nummer onder Pokémon-naam in familiekaart */
+.family-number {
+    display: block;
+    margin-top: 3px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--type-dark);
+    opacity: 0.75;
+}

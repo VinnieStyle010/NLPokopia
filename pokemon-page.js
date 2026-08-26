@@ -279,18 +279,25 @@ detailContainer.className =
             </section>
 
 
-            <section class="detail-block skills-block">
+<section class="detail-block game-info-block">
 
-                <h2>⭐ Pokopia-vaardigheden</h2>
+    <h2>🎮 Spelinformatie</h2>
 
-                ${infoRow(
-                    "Pokopia-vaardigheden (Specialties)",
-                    pokemon.specialties.length
-                        ? pokemon.specialties.join(" / ")
-                        : "Geen vaardigheid bekend"
-                )}
+    <div class="game-info-grid">
 
-            </section>
+        <div class="game-info-card">
+            <strong>Spel</strong>
+            <span>${pokemon.game || "Pokémon Pokopia"}</span>
+        </div>
+
+        <div class="game-info-card">
+            <strong>Onderdeel</strong>
+            <span>${getStatus(pokemon)}</span>
+        </div>
+
+    </div>
+
+</section>
 
 
 ${

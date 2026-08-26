@@ -251,17 +251,20 @@ ${
                 <div class="evolution-family">
                     ${getPokemonFamily(pokemon)
                         .map((familyPokemon, index, family) => `
-                            <div class="evolution-member ${
-                                familyPokemon.name === pokemon.name
-                                    ? "current-pokemon"
-                                    : ""
-                            }">
-                                <img
-                                    src="${getPokemonImage(familyPokemon.name)}"
-                                    alt="${familyPokemon.name}"
-                                >
-                                <strong>${familyPokemon.name}</strong>
-                            </div>
+                        <a
+    class="evolution-member ${
+        familyPokemon.name === pokemon.name
+            ? "current-pokemon"
+            : ""
+    }"
+    href="pokemon.html?section=${getSection(familyPokemon)}&number=${familyPokemon.number}"
+>
+    <img
+        src="${getPokemonImage(familyPokemon.name)}"
+        alt="${familyPokemon.name}"
+    >
+    <strong>${familyPokemon.name}</strong>
+</a>
 
                             ${
                                 index < family.length - 1

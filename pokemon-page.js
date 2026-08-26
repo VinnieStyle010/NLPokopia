@@ -282,17 +282,6 @@ ${
 }
 
 
-            <section class="detail-block personal-tip">
-
-                <h2>💡 Persoonlijke tip</h2>
-
-                <p>
-                    ${pokemon.tip || "Nog geen persoonlijke tip beschikbaar."}
-                </p>
-
-            </section>
-
-
             <section class="detail-block">
 
                 <h2>🎥 Zoek video's over ${pokemon.name}</h2>

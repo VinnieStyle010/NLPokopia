@@ -2356,3 +2356,12 @@ a {
     display: block;
     height: 14px;
 }
+.requirement-title {
+    font-weight: 800;
+    color: #334155;
+}
+
+.requirement-title .english-text {
+    font-weight: 700;
+    color: #475569;
+}

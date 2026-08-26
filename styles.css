@@ -2731,3 +2731,176 @@ header,
     position: relative;
     z-index: 2;
 }
+/* =========================================================
+   DECORATIEVE POKÉ BALLS
+   ========================================================= */
+
+.pokeball-background {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Basis Poké Ball */
+.pokeball {
+    position: absolute;
+    display: block;
+    width: 72px;
+    height: 72px;
+    border: 5px solid #202020;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            #ffffff 0 9%,
+            #202020 10% 16%,
+            #ffffff 17% 25%,
+            transparent 26%
+        ),
+        linear-gradient(
+            to bottom,
+            #ef3340 0 44%,
+            #202020 44% 56%,
+            #ffffff 56% 100%
+        );
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.22),
+        inset -5px -6px 8px rgba(0, 0, 0, 0.12);
+
+    opacity: 0.9;
+}
+
+
+/* LINKS */
+
+.ball-1 {
+    width: 92px;
+    height: 92px;
+    left: -30px;
+    top: 12%;
+    transform: rotate(-18deg);
+}
+
+.ball-2 {
+    width: 58px;
+    height: 58px;
+    left: 25px;
+    top: 38%;
+    transform: rotate(14deg);
+}
+
+.ball-3 {
+    width: 110px;
+    height: 110px;
+    left: -48px;
+    top: 63%;
+    transform: rotate(24deg);
+}
+
+.ball-4 {
+    width: 66px;
+    height: 66px;
+    left: 35px;
+    top: 84%;
+    transform: rotate(-25deg);
+}
+
+
+/* RECHTS */
+
+.ball-5 {
+    width: 82px;
+    height: 82px;
+    right: -25px;
+    top: 18%;
+    transform: rotate(20deg);
+}
+
+.ball-6 {
+    width: 60px;
+    height: 60px;
+    right: 28px;
+    top: 42%;
+    transform: rotate(-15deg);
+}
+
+.ball-7 {
+    width: 105px;
+    height: 105px;
+    right: -42px;
+    top: 67%;
+    transform: rotate(-22deg);
+}
+
+.ball-8 {
+    width: 62px;
+    height: 62px;
+    right: 35px;
+    top: 87%;
+    transform: rotate(18deg);
+}
+
+
+/* Op kleinere schermen rustiger maken */
+
+@media (max-width: 900px) {
+
+    .pokeball {
+        opacity: 0.45;
+    }
+
+    .ball-2,
+    .ball-4,
+    .ball-6,
+    .ball-8 {
+        display: none;
+    }
+
+    .ball-1,
+    .ball-3 {
+        left: -55px;
+    }
+
+    .ball-5,
+    .ball-7 {
+        right: -55px;
+    }
+}
+
+
+/* Op telefoons nog kleiner */
+
+@media (max-width: 600px) {
+
+    .pokeball {
+        width: 60px;
+        height: 60px;
+        border-width: 4px;
+        opacity: 0.32;
+    }
+
+    .ball-1 {
+        top: 15%;
+        left: -42px;
+    }
+
+    .ball-3 {
+        top: 52%;
+        left: -42px;
+    }
+
+    .ball-5 {
+        top: 31%;
+        right: -42px;
+    }
+
+    .ball-7 {
+        top: 73%;
+        right: -42px;
+    }
+}

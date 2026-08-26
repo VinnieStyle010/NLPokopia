@@ -1956,3 +1956,15 @@ a {
     color: #111111 !important;
     font-weight: 700;
 }
+/* VECHT (Fighting) - definitieve override */
+.type-badge.type-badge-vecht {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-weight: 900 !important;
+}
+/* VUUR (Fire) */
+.type-badge.type-badge-vuur {
+    background: #F08030 !important;
+    color: #ffffff !important;
+}

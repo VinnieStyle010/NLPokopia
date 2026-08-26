@@ -2365,3 +2365,55 @@ a {
     font-weight: 700;
     color: #475569;
 }
+/* =========================================================
+   MOBIEL - POKÉMON-FAMILIE SWIPE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .evolution-family {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        gap: 14px;
+
+        padding: 6px 4px 14px;
+
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+    }
+
+    .evolution-family::-webkit-scrollbar {
+        display: none;
+    }
+
+    .evolution-member {
+        flex: 0 0 82%;
+        min-width: 82%;
+
+        scroll-snap-align: center;
+
+        margin: 0;
+    }
+
+    .evolution-arrow {
+        flex: 0 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 28px;
+
+        font-size: 24px;
+    }
+}

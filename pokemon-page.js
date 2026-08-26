@@ -336,8 +336,9 @@ ${
                                     : ""
                             }
                         `)
-                        .join("")}
-              <div class="evolution-dots">
+                       .join("")}
+</div>
+<div class="evolution-dots">
     ${getPokemonFamily(pokemon)
         .map((familyPokemon, index) => `
             <button

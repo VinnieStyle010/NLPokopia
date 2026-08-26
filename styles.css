@@ -2297,3 +2297,49 @@ a {
         grid-template-columns: 1fr;
     }
 }
+/* =========================================================
+   ENGELSE VERTALINGEN
+   ========================================================= */
+
+.english-text {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 500;
+    color: #64748b;
+}
+
+
+/* =========================================================
+   ZO KRIJG JE - TWEE VERSCHILLENDE KAARTJES
+   ========================================================= */
+
+/* Eerste kaartje: Wat moet je doen? */
+.obtain-card:first-child {
+    background: linear-gradient(
+        135deg,
+        #eff6ff,
+        #ffffff
+    );
+
+    border-color: #93c5fd;
+}
+
+.obtain-card:first-child strong {
+    color: #1d4ed8;
+}
+
+
+/* Tweede kaartje: Wat heb je nodig? */
+.obtain-card:nth-child(2) {
+    background: linear-gradient(
+        135deg,
+        #fff7ed,
+        #ffffff
+    );
+
+    border-color: #fdba74;
+}
+
+.obtain-card:nth-child(2) strong {
+    color: #c2410c;
+}

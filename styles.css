@@ -2162,3 +2162,59 @@ a {
 .location-skills .location-icon {
     font-size: 30px;
 }
+/* =========================================================
+   SPELINFORMATIE
+   ========================================================= */
+
+.game-info-block {
+    background: linear-gradient(
+        135deg,
+        #eef2ff,
+        #ffffff 78%
+    ) !important;
+
+    border-left-color: #6366f1 !important;
+}
+
+.game-info-block::before {
+    background: #6366f1 !important;
+}
+
+.game-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.game-info-card {
+    padding: 16px;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    border: 1px solid rgba(99, 102, 241, 0.20);
+    border-radius: 14px;
+}
+
+.game-info-card strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #4338ca;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.game-info-card span {
+    color: #334155;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .game-info-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -478,4 +478,12 @@ function formatListText(value) {
         .replace(/\s+\/\s+/g, "<br>")
         .replace(/\s+OF\s+/g, "<br><strong>OF</strong><br>");
 }
+function formatEnglishText(value) {
+    if (!value) return "Nog onbekend";
+
+    return value.replace(
+        /\(([^)]+)\)/g,
+        '<span class="english-text">($1)</span>'
+    );
+}
 renderPokemonPage();

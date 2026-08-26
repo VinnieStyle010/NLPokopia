@@ -2912,3 +2912,71 @@ header,
         right: -42px;
     }
 }
+/* =========================================================
+   NLPokopia - LANDSCHAP ACHTERGROND
+   ========================================================= */
+
+.pokeball-background::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 58vh;
+
+    pointer-events: none;
+    z-index: -1;
+
+    background:
+        /* verre heuvels */
+        radial-gradient(
+            ellipse at 8% 100%,
+            rgba(82, 170, 105, 0.45) 0 34%,
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 32% 105%,
+            rgba(72, 158, 92, 0.40) 0 38%,
+            transparent 39%
+        ),
+        radial-gradient(
+            ellipse at 67% 105%,
+            rgba(69, 155, 91, 0.42) 0 39%,
+            transparent 40%
+        ),
+        radial-gradient(
+            ellipse at 94% 100%,
+            rgba(74, 164, 96, 0.46) 0 35%,
+            transparent 36%
+        );
+}
+
+
+/* Verre bergen */
+.pokeball-background::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 22vh;
+    height: 34vh;
+
+    pointer-events: none;
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            135deg,
+            transparent 0 38%,
+            rgba(88, 151, 132, 0.22) 39% 50%,
+            transparent 51%
+        ),
+        linear-gradient(
+            225deg,
+            transparent 0 40%,
+            rgba(73, 139, 118, 0.18) 41% 51%,
+            transparent 52%
+        );
+
+    opacity: 0.75;
+}

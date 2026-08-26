@@ -2046,3 +2046,119 @@ a {
         grid-template-columns: 1fr;
     }
 }
+/* =========================================================
+   KINDVRIENDELIJKE ZOEKKAARTJES
+   ========================================================= */
+
+.location-intro {
+    margin: -8px 0 20px;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.location-card {
+    min-height: 145px;
+    padding: 18px;
+    align-items: start;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.10);
+}
+
+.location-card > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.location-card strong {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.location-card small {
+    display: block;
+    margin-bottom: 5px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #64748b;
+}
+
+.location-card > div > span {
+    font-size: 15px;
+    line-height: 1.55;
+    color: #334155;
+}
+
+
+/* WAAR ZOEKEN? */
+.location-search {
+    background: linear-gradient(
+        135deg,
+        #fff1f5,
+        #ffffff
+    );
+
+    border-color: #f9a8d4;
+}
+
+.location-search .location-icon {
+    font-size: 30px;
+}
+
+
+/* WANNEER? */
+.location-time {
+    background: linear-gradient(
+        135deg,
+        #fff7d6,
+        #ffffff
+    );
+
+    border-color: #fde68a;
+}
+
+.location-time .location-icon {
+    font-size: 30px;
+}
+
+
+/* HABITAT */
+.location-habitat {
+    background: linear-gradient(
+        135deg,
+        #ecfdf3,
+        #ffffff
+    );
+
+    border-color: #86efac;
+}
+
+.location-habitat .location-icon {
+    font-size: 30px;
+}
+
+
+/* VAARDIGHEDEN */
+.location-skills {
+    background: linear-gradient(
+        135deg,
+        #eff6ff,
+        #ffffff
+    );
+
+    border-color: #93c5fd;
+}
+
+.location-skills .location-icon {
+    font-size: 30px;
+}

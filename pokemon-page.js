@@ -484,11 +484,17 @@ function formatListText(value) {
 function formatRequirements(value) {
     if (!value) return "Niets bijzonders nodig";
 
-    return formatListText(value)
+    return value
         .replace(
-            /([^<]+(?:<span class="english-text">.*?<\/span>)?):<br>/g,
-            '<strong class="requirement-title">$1:</strong><br>'
-        );
+            /\s+OF\s+/g,
+            '<br><br><strong class="or-divider">OF</strong><br><br>'
+        )
+        .replace(/\s+\/\s+/g, "<br>")
+        .replace(
+            /(^|<br><br>|<br>)([^<]+?):\s*/g,
+            '$1<strong class="requirement-title">$2:</strong><br>'
+        )
+        .replace(/;\s*/g, "<br>");
 }
 function formatEnglishText(value) {
     if (!value) return "Nog onbekend";

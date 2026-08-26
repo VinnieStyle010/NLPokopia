@@ -264,6 +264,9 @@ ${
         alt="${familyPokemon.name}"
     >
     <strong>${familyPokemon.name}</strong>
+<span class="family-number">
+    Nr: ${String(familyPokemon.number).padStart(3, "0")}
+</span>
 </a>
 
                             ${

@@ -367,16 +367,32 @@ ${
 
     <h2>🎮 Spelinformatie</h2>
 
+    <p class="game-info-intro">
+        Hier zie je in welk spel en in welk onderdeel je ${pokemon.name} kunt vinden.
+    </p>
+
     <div class="game-info-grid">
 
-        <div class="game-info-card">
-            <strong>Spel</strong>
-            <span>${pokemon.game || "Pokémon Pokopia"}</span>
+        <div class="game-info-card game-card">
+            <span class="game-info-icon">🎮</span>
+
+            <div>
+                <strong>Waar speel je?</strong>
+                <small>Spel (Game)</small>
+                <span>${pokemon.game || "Pokémon Pokopia"}</span>
+            </div>
         </div>
 
-        <div class="game-info-card">
-            <strong>Onderdeel</strong>
-            <span>${getStatus(pokemon)}</span>
+        <div class="game-info-card edition-card">
+            <span class="game-info-icon">
+                ${pokemon.event === true ? "🎉" : pokemon.dlc === true ? "🫧" : "📘"}
+            </span>
+
+            <div>
+                <strong>Waar hoort ${pokemon.name} bij?</strong>
+                <small>Onderdeel (Section)</small>
+                <span>${getStatus(pokemon)}</span>
+            </div>
         </div>
 
     </div>

@@ -218,7 +218,7 @@ detailContainer.className =
             <div>
                 <strong>Waar moet je zoeken?</strong>
                 <small>Locatie (Location)</small>
-                <span>${pokemon.location || "Nog onbekend"}</span>
+                <span>${formatListText(pokemon.location)}</span>
             </div>
         </div>
 

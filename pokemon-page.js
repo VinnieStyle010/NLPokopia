@@ -262,21 +262,43 @@ detailContainer.className =
 
 </section>
 
-            <section class="detail-block obtain-block">
+<section class="detail-block obtain-block">
 
-                <h2>🛠️ Hoe krijg je ${pokemon.name}?</h2>
+    <h2>🎯 Zo krijg je ${pokemon.name}!</h2>
 
-                ${infoRow(
-                    "Hoe te verkrijgen (How to obtain)",
-                    pokemon.obtainMethod
-                )}
+    <p class="obtain-intro">
+        Gevonden? Mooi! Nu gaan we kijken wat je moet doen om ${pokemon.name} te krijgen.
+    </p>
 
-                ${infoRow(
-                    "Benodigdheden (Requirements)",
-                    pokemon.requirements
-                )}
+    <div class="obtain-grid">
 
-            </section>
+        <div class="obtain-card">
+            <span class="obtain-icon">👣</span>
+
+            <div>
+                <strong>Wat moet je doen?</strong>
+                <small>Hoe te verkrijgen (How to obtain)</small>
+                <span>
+                    ${pokemon.obtainMethod || "Nog onbekend"}
+                </span>
+            </div>
+        </div>
+
+        <div class="obtain-card">
+            <span class="obtain-icon">🎒</span>
+
+            <div>
+                <strong>Wat heb je nodig?</strong>
+                <small>Benodigdheden (Requirements)</small>
+                <span>
+                    ${pokemon.requirements || "Niets bijzonders nodig"}
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 
 <section class="detail-block game-info-block">

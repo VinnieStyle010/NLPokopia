@@ -301,27 +301,6 @@ detailContainer.className =
 </section>
 
 
-<section class="detail-block game-info-block">
-
-    <h2>🎮 Spelinformatie</h2>
-
-    <div class="game-info-grid">
-
-        <div class="game-info-card">
-            <strong>Spel</strong>
-            <span>${pokemon.game || "Pokémon Pokopia"}</span>
-        </div>
-
-        <div class="game-info-card">
-            <strong>Onderdeel</strong>
-            <span>${getStatus(pokemon)}</span>
-        </div>
-
-    </div>
-
-</section>
-
-
 ${
     pokemon.evolvesFrom || pokemon.evolvesInto
         ? `
@@ -366,7 +345,25 @@ ${
         `
         : ""
 }
+<section class="detail-block game-info-block">
 
+    <h2>🎮 Spelinformatie</h2>
+
+    <div class="game-info-grid">
+
+        <div class="game-info-card">
+            <strong>Spel</strong>
+            <span>${pokemon.game || "Pokémon Pokopia"}</span>
+        </div>
+
+        <div class="game-info-card">
+            <strong>Onderdeel</strong>
+            <span>${getStatus(pokemon)}</span>
+        </div>
+
+    </div>
+
+</section>
 
             <section class="detail-block">
 

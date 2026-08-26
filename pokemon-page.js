@@ -218,7 +218,7 @@ detailContainer.className =
             <div>
                 <strong>Waar moet je zoeken?</strong>
                 <small>Locatie (Location)</small>
-                <span>${formatListText(pokemon.location)}</span>
+                <span>${formatEnglishText(formatListText(pokemon.location))}</span>
             </div>
         </div>
 
@@ -228,7 +228,7 @@ detailContainer.className =
             <div>
                 <strong>Wanneer kun je ${pokemon.name} vinden?</strong>
                 <small>Tijd & weer (Time & Weather)</small>
-                <span>${pokemon.area || "Nog onbekend"}</span>
+               <span>${formatEnglishText(formatListText(pokemon.area))}</span>
             </div>
         </div>
 
@@ -238,7 +238,7 @@ detailContainer.className =
             <div>
                <strong>Hoe moet je het bouwen?</strong>
                 <small>Habitat</small>
-                <span>${formatListText(pokemon.habitat)}</span>
+                <span>${formatEnglishText(formatListText(pokemon.habitat))}</span>
             </div>
         </div>
 
@@ -250,9 +250,11 @@ detailContainer.className =
                 <small>Pokopia-vaardigheden (Specialties)</small>
                 <span>
                     ${
-                        pokemon.specialties.length
-                            ? pokemon.specialties.join(" / ")
-                            : "Geen vaardigheid bekend"
+                    pokemon.specialties.length
+    ? formatEnglishText(
+        pokemon.specialties.join("<br>")
+      )
+    : "Geen vaardigheid bekend"
                     }
                 </span>
             </div>
@@ -279,7 +281,7 @@ detailContainer.className =
                 <strong>Wat moet je doen?</strong>
                 <small>Hoe te verkrijgen (How to obtain)</small>
                 <span>
-                    ${pokemon.obtainMethod || "Nog onbekend"}
+                    ${formatEnglishText(formatListText(pokemon.obtainMethod))}
                 </span>
             </div>
         </div>
@@ -291,7 +293,7 @@ detailContainer.className =
                 <strong>Wat heb je nodig?</strong>
                 <small>Benodigdheden (Requirements)</small>
                 <span>
-                    ${formatListText(pokemon.requirements)}
+                   ${formatEnglishText(formatListText(pokemon.requirements))}
                 </span>
             </div>
         </div>

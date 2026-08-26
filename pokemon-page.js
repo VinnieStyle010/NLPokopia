@@ -478,7 +478,8 @@ function formatListText(value) {
 
     return value
         .replace(/\s+\/\s+/g, "<br>")
-        .replace(/\s+OF\s+/g, "<br><strong>OF</strong><br>");
+        .replace(/\s+OF\s+/g, '<br><strong class="or-divider">OF</strong><br>')
+        .replace(/;\s*/g, "<br>");
 }
 function formatEnglishText(value) {
     if (!value) return "Nog onbekend";

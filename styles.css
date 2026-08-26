@@ -1944,3 +1944,15 @@ a {
 .type-badge-vechten {
     color: #ffffff !important;
 }
+/* Vuur: oranje met witte letters */
+.type-badge-vuur {
+    color: #ffffff !important;
+}
+
+/* Vecht: lichte badge met zwarte letters */
+.type-badge-vecht,
+.type-badge-vechten {
+    background: #ffffff !important;
+    color: #111111 !important;
+    font-weight: 700;
+}

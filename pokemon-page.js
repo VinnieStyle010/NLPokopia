@@ -401,7 +401,7 @@ ${
 
             <section class="detail-block">
 
-                <<section class="detail-block social-block">
+                <section class="detail-block social-block">
 
     <div class="social-heading">
         <div>

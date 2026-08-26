@@ -2218,3 +2218,82 @@ a {
         grid-template-columns: 1fr;
     }
 }
+/* =========================================================
+   ZO KRIJG JE DEZE POKÉMON
+   ========================================================= */
+
+.obtain-intro {
+    margin: -8px 0 20px;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.obtain-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.obtain-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+
+    min-height: 130px;
+    padding: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #fff7ed,
+        #ffffff
+    );
+
+    border: 1px solid #fdba74;
+    border-radius: 14px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.obtain-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.10);
+}
+
+.obtain-icon {
+    font-size: 30px;
+    line-height: 1;
+}
+
+.obtain-card > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.obtain-card strong {
+    font-size: 17px;
+    font-weight: 800;
+    color: #9a3412;
+}
+
+.obtain-card small {
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.obtain-card > div > span {
+    font-size: 15px;
+    line-height: 1.55;
+    color: #334155;
+}
+
+@media (max-width: 600px) {
+    .obtain-grid {
+        grid-template-columns: 1fr;
+    }
+}

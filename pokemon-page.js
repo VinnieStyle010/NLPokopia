@@ -485,7 +485,10 @@ function formatRequirements(value) {
     if (!value) return "Niets bijzonders nodig";
 
     return formatListText(value)
-        .replace(/:\s+/g, ":<br>");
+        .replace(
+            /([^<]+(?:<span class="english-text">.*?<\/span>)?):<br>/g,
+            '<strong class="requirement-title">$1:</strong><br>'
+        );
 }
 function formatEnglishText(value) {
     if (!value) return "Nog onbekend";

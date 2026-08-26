@@ -474,5 +474,11 @@ ${
         </section>
     `;
 }
+function formatListText(value) {
+    if (!value) return "Nog onbekend";
 
+    return value
+        .replace(/\s+\/\s+/g, "<br>")
+        .replace(/\s+OF\s+/g, "<br><strong>OF</strong><br>");
+}
 renderPokemonPage();

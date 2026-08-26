@@ -204,15 +204,37 @@ detailContainer.className =
 
             <section class="detail-block location-block">
 
-                <h2>📍 Waar vind je ${pokemon.name}?</h2>
+    <h2>📍 Waar vind je ${pokemon.name}?</h2>
 
-                ${infoRow("Spel (Game)", pokemon.game)}
-                ${infoRow("Locatie (Location)", pokemon.location)}
-                ${infoRow("Gebied (Area)", pokemon.area)}
-                ${infoRow("Habitat", pokemon.habitat)}
+    <div class="location-grid">
 
-            </section>
+        <div class="location-card">
+            <span class="location-icon">🎮</span>
+            <strong>Spel (Game)</strong>
+            <span>${pokemon.game || "Nog onbekend"}</span>
+        </div>
 
+        <div class="location-card">
+            <span class="location-icon">📍</span>
+            <strong>Locatie (Location)</strong>
+            <span>${pokemon.location || "Nog onbekend"}</span>
+        </div>
+
+        <div class="location-card">
+            <span class="location-icon">🕐</span>
+            <strong>Gebied (Area)</strong>
+            <span>${pokemon.area || "Nog onbekend"}</span>
+        </div>
+
+        <div class="location-card">
+            <span class="location-icon">🏡</span>
+            <strong>Habitat</strong>
+            <span>${pokemon.habitat || "Nog onbekend"}</span>
+        </div>
+
+    </div>
+
+</section>
 
             <section class="detail-block obtain-block">
 

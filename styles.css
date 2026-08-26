@@ -1580,3 +1580,227 @@ a {
         height: 210px;
     }
 }
+/* =========================================================
+   DETAILBLOKKEN - TYPE 1 + TYPE 2
+   ========================================================= */
+
+/* Alle informatieblokken iets sterker vormgeven */
+.detail-block {
+    position: relative;
+    overflow: hidden;
+    border-left: 6px solid var(--type-color);
+}
+
+/* Subtiele hoofdkleur bovenaan */
+.detail-block::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 4px;
+    background: var(--type-color);
+}
+
+
+/* =========================================
+   TWEEDE TYPE VAN DE POKÉMON
+   ========================================= */
+
+.secondary-gras {
+    --secondary-color: #78C850;
+    --secondary-light: #E8F5DF;
+    --secondary-dark: #4E8234;
+}
+
+.secondary-vuur {
+    --secondary-color: #F08030;
+    --secondary-light: #FDE8D8;
+    --secondary-dark: #C65D18;
+}
+
+.secondary-water {
+    --secondary-color: #6890F0;
+    --secondary-light: #E1E9FC;
+    --secondary-dark: #386CEB;
+}
+
+.secondary-elektrisch {
+    --secondary-color: #F8D030;
+    --secondary-light: #FFF6CC;
+    --secondary-dark: #9A8100;
+}
+
+.secondary-psychisch {
+    --secondary-color: #F85888;
+    --secondary-light: #FDE0E9;
+    --secondary-dark: #D82E63;
+}
+
+.secondary-ijs {
+    --secondary-color: #98D8D8;
+    --secondary-light: #E4F6F6;
+    --secondary-dark: #458F8F;
+}
+
+.secondary-draak {
+    --secondary-color: #7038F8;
+    --secondary-light: #E7DCFE;
+    --secondary-dark: #4C08EF;
+}
+
+.secondary-duister {
+    --secondary-color: #705848;
+    --secondary-light: #E5DEDA;
+    --secondary-dark: #49392F;
+}
+
+.secondary-fee {
+    --secondary-color: #EE99AC;
+    --secondary-light: #FBE5EA;
+    --secondary-dark: #B94B65;
+}
+
+.secondary-normaal {
+    --secondary-color: #A8A878;
+    --secondary-light: #EEEEDE;
+    --secondary-dark: #79794E;
+}
+
+.secondary-vechten {
+    --secondary-color: #C03028;
+    --secondary-light: #F3D8D6;
+    --secondary-dark: #8B211B;
+}
+
+.secondary-vliegend {
+    --secondary-color: #A890F0;
+    --secondary-light: #ECE6FC;
+    --secondary-dark: #7762C7;
+}
+
+.secondary-gif {
+    --secondary-color: #A040A0;
+    --secondary-light: #F1E2F1;
+    --secondary-dark: #702970;
+}
+
+.secondary-grond {
+    --secondary-color: #E0C068;
+    --secondary-light: #F7EFD8;
+    --secondary-dark: #927A32;
+}
+
+.secondary-steen {
+    --secondary-color: #B8A038;
+    --secondary-light: #F0E9CA;
+    --secondary-dark: #88751F;
+}
+
+.secondary-insect {
+    --secondary-color: #A8B820;
+    --secondary-light: #EDF1C8;
+    --secondary-dark: #7A8715;
+}
+
+.secondary-spook,
+.secondary-geest {
+    --secondary-color: #705898;
+    --secondary-light: #E5DFEE;
+    --secondary-dark: #493963;
+}
+
+.secondary-staal {
+    --secondary-color: #B8B8D0;
+    --secondary-light: #EEEEF4;
+    --secondary-dark: #686886;
+}
+
+
+/* =========================================
+   AFWISSELING TYPE 1 EN TYPE 2
+   ========================================= */
+
+/* 1e blok: hoofdkleur */
+.detail-block:nth-of-type(1) {
+    background: linear-gradient(
+        135deg,
+        var(--type-light),
+        #ffffff 75%
+    );
+
+    border-left-color: var(--type-color);
+}
+
+.detail-block:nth-of-type(1)::before {
+    background: var(--type-color);
+}
+
+
+/* 2e blok: tweede type */
+.detail-block:nth-of-type(2) {
+    background: linear-gradient(
+        135deg,
+        var(--secondary-light),
+        #ffffff 75%
+    );
+
+    border-left-color: var(--secondary-color);
+}
+
+.detail-block:nth-of-type(2)::before {
+    background: var(--secondary-color);
+}
+
+
+/* 3e blok: combinatie van beide */
+.detail-block:nth-of-type(3) {
+    background: linear-gradient(
+        135deg,
+        var(--type-light) 0%,
+        #ffffff 50%,
+        var(--secondary-light) 100%
+    );
+
+    border-left-color: var(--type-color);
+}
+
+.detail-block:nth-of-type(3)::before {
+    background: linear-gradient(
+        90deg,
+        var(--type-color),
+        var(--secondary-color)
+    );
+}
+
+
+/* 4e blok: weer hoofdkleur */
+.detail-block:nth-of-type(4) {
+    background: linear-gradient(
+        135deg,
+        var(--type-light),
+        #ffffff 78%
+    );
+
+    border-left-color: var(--type-color);
+}
+
+.detail-block:nth-of-type(4)::before {
+    background: var(--type-color);
+}
+
+
+/* Persoonlijke tip bewust geel houden */
+.detail-block.personal-tip {
+    background: linear-gradient(
+        135deg,
+        #fff7d6,
+        #ffffff 78%
+    );
+
+    border-left-color: #f5b700;
+}
+
+.detail-block.personal-tip::before {
+    background: #f5b700;
+}

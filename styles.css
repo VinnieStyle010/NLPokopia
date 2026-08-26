@@ -1804,3 +1804,81 @@ a {
 .detail-block.personal-tip::before {
     background: #f5b700;
 }
+/* =========================================
+   POKÉMON-FAMILIE - OPLOPENDE TYPEKLEUR
+   ========================================= */
+
+.evolution-member {
+    min-width: 170px;
+    padding: 18px 16px;
+    border-radius: 18px;
+
+    border: 2px solid var(--type-color);
+
+    box-shadow:
+        0 5px 14px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Eerste Pokémon - licht */
+.evolution-member:nth-of-type(1) {
+    background: var(--type-light);
+}
+
+/* Tweede Pokémon - sterker */
+.evolution-member:nth-of-type(2) {
+    background:
+        color-mix(
+            in srgb,
+            var(--type-light) 65%,
+            var(--type-color) 35%
+        );
+}
+
+/* Derde Pokémon - donkerder */
+.evolution-member:nth-of-type(3) {
+    background:
+        color-mix(
+            in srgb,
+            var(--type-light) 30%,
+            var(--type-color) 70%
+        );
+}
+
+/* Pokémon-afbeeldingen */
+.evolution-member img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+/* Namen */
+.evolution-member strong {
+    margin-top: 10px;
+    font-size: 17px;
+    color: var(--type-dark);
+}
+
+/* Pijltjes */
+.evolution-arrow {
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--type-dark);
+}
+
+/* Pokémon die je NU bekijkt */
+.evolution-member.current-pokemon {
+    outline: 3px solid var(--type-dark);
+    outline-offset: 3px;
+}
+
+/* Kleine hover */
+.evolution-member:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 9px 20px rgba(0, 0, 0, 0.13);
+}

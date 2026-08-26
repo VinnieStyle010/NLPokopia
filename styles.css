@@ -2417,3 +2417,77 @@ a {
         font-size: 24px;
     }
 }
+/* =========================================================
+   MOBIEL - POKÉMON-FAMILIE SWIPE + BOLLETJES
+   ========================================================= */
+
+.evolution-dots {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .evolution-family {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        gap: 14px;
+        padding: 10px 9% 18px;
+
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .evolution-family::-webkit-scrollbar {
+        display: none;
+    }
+
+    .evolution-member {
+        flex: 0 0 82%;
+        min-width: 82%;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+        margin: 0;
+    }
+
+    .evolution-arrow {
+        flex: 0 0 28px;
+        min-width: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+
+    .evolution-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 9px;
+        margin: 12px 0 8px;
+    }
+
+    .evolution-dot {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        border: 0;
+        border-radius: 50%;
+        background: #cbd5e1;
+        cursor: pointer;
+        transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .evolution-dot.active {
+        background: #65b741;
+        transform: scale(1.35);
+    }
+}

@@ -3,7 +3,7 @@ const detailContainer = document.getElementById("pokemonDetail");
 function getPokemonImage(name) {
 
     const imageNames = {
-        "Paldean Wooper": "wooper-paldea",
+        "Paldean Wooper": "wooper-paldean",
 
         "Heat Rotom": "rotom-heat",
         "Wash Rotom": "rotom-wash",

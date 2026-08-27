@@ -28,9 +28,21 @@ function splitHabitats(habitatText) {
     if (!habitatText) return [];
 
     return habitatText
-        .split("/")
+        // Alleen splitsen tussen twee volledige habitats.
+        // Dus WEL:
+        // Hoog gras (Tall Grass) / Bloemenveld (Field of Flowers)
+        //
+        // Maar NIET:
+        // Amped / Low Key-rockpodium (Amped / Low Key Rock Stage)
+        .split(/(?<=\))\s*\/\s*(?=[^()]+\()/)
+
         .map((habitat) => habitat.trim())
-        .filter(Boolean);
+
+        // Eventuele losse rommel zoals A) of B) niet tonen
+        .filter((habitat) =>
+            habitat &&
+            !/^[A-Z]\)$/i.test(habitat)
+        );
 }
 
 

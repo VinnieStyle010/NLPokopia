@@ -6,7 +6,7 @@ const typeFilter = document.getElementById("typeFilter");
 
 function getPokemonImage(name) {
     const specialImages = {
-       "Paldean Wooper": "wooper-paldean",
+       "Paldean Wooper": "wooper-paldea",
         "Stereo Rotom": "rotom"
     };
 

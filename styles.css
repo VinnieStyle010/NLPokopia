@@ -2942,77 +2942,7 @@ header,
     position: relative;
     z-index: 2;
 }
-<header class="main-header">
 
-    <nav class="main-nav">
-
-        <a href="index.html" class="nav-brand">
-            <span class="brand-ball"></span>
-
-            <span class="brand-text">
-                <strong>NLPokopia</strong>
-                <small>Jouw Nederlandse gids voor Pokémon Pokopia</small>
-            </span>
-        </a>
-
-        <div class="nav-links">
-
-            <a href="index.html">
-                <span>🏠</span>
-                Home
-            </a>
-
-            <a href="index.html">
-                <span>🔴</span>
-                Pokémon
-            </a>
-
-            <a href="index.html#habitat">
-                <span>🌿</span>
-                Habitat
-            </a>
-
-            <a href="index.html#dlc">
-                <span>💧</span>
-                DLC
-            </a>
-
-            <a href="index.html#tips">
-                <span>💡</span>
-                Tips
-            </a>
-
-            <a href="index.html#favorieten">
-                <span>❤️</span>
-                Favorieten
-            </a>
-
-        </div>
-
-        <div class="nav-search">
-            <input
-                type="search"
-                placeholder="Zoek Pokémon..."
-                aria-label="Zoek Pokémon"
-            >
-            <span>⌕</span>
-        </div>
-
-    </nav>
-
-    <div class="type-dna-bar">
-
-        <div class="type-dna type-dna-left"></div>
-
-        <div class="golden-ball">
-            <span></span>
-        </div>
-
-        <div class="type-dna type-dna-right"></div>
-
-    </div>
-
-</header>
 /* =========================================================
    NLPokopia - HOOFDNAVIGATIE
    Donkere balk + type-DNA + gouden bal

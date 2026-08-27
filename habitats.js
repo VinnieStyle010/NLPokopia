@@ -44,7 +44,56 @@ function splitHabitats(habitatText) {
             !/^[A-Z]\)$/i.test(habitat)
         );
 }
+/* =========================================================
+   BENODIGDHEDEN VAN EEN HABITAT
+   ========================================================= */
 
+function getHabitatRequirements(pokemonList, habitatName) {
+
+    for (const pokemon of pokemonList) {
+
+        if (!pokemon.requirements) continue;
+
+        const habitats = splitHabitats(pokemon.habitat);
+
+        if (!habitats.includes(habitatName)) continue;
+
+        const requirementsText = pokemon.requirements;
+
+        /*
+           Zoek het gedeelte dat bij deze habitat hoort.
+
+           Voorbeeld:
+           Hoog gras (Tall Grass): Hoog gras (Tall Grass) ×4
+        */
+
+        const startText = `${habitatName}:`;
+        const startIndex = requirementsText.indexOf(startText);
+
+        if (startIndex === -1) continue;
+
+        let result =
+            requirementsText.substring(
+                startIndex + startText.length
+            );
+
+        /*
+           Als daarna nog een andere habitat komt met "OF",
+           pakken we alleen het eerste gedeelte.
+        */
+
+        if (result.includes(" OF ")) {
+            result = result.split(" OF ")[0];
+        }
+
+        return result
+            .split(";")
+            .map((item) => item.trim())
+            .filter(Boolean);
+    }
+
+    return [];
+}
 
 /* =========================================================
    HOOFD-POKEDEX DATA

@@ -3449,32 +3449,39 @@ header,
    NLPokopia - DNA BALK COMPACTER
    ========================================================= */
 
+/* =========================================================
+   DNA-AFBEELDING VOLLEDIG TONEN
+   ========================================================= */
+
 .type-dna-bar {
-    height: 64px !important;
+    height: 120px !important;
     margin-top: -10px !important;
-    overflow: visible !important;
+    overflow: hidden !important;
+}
+
+.type-dna-bar::before {
+    background-image: url("type-dna.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+
+    /* HELE afbeelding zichtbaar over de hele balk */
+    background-size: 100% 100% !important;
+
+    background-color: #061127;
+
+    border-radius: 0 0 34px 34px;
 }
 
 /* DNA-afbeelding netjes in de compactere balk */
 .type-dna-bar::before {
-    background-size: cover !important;
+    background-size: contain;
+   background-color: #061127;
     background-position: center center !important;
     border-radius: 0 0 34px 34px;
 }
 
 /* Gouden bal iets groter en boven het DNA */
-.golden-ball {
-    width: 68px !important;
-    height: 68px !important;
-    flex-basis: 68px !important;
 
-    z-index: 10 !important;
-
-    box-shadow:
-        0 0 10px #ffd447,
-        0 0 24px rgba(255, 197, 39, 0.95),
-        0 0 42px rgba(255, 162, 0, 0.55) !important;
-}
 
 /* Mobiel */
 @media (max-width: 700px) {

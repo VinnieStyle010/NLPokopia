@@ -25,15 +25,6 @@ function getPokemonImage(name) {
 
     return `https://img.pokemondb.net/artwork/large/${imageName}.jpg`;
 }
-    const imageName = name
-        .toLowerCase()
-        .replace(/♀/g, "-f")
-        .replace(/♂/g, "-m")
-        .replace(/['’.]/g, "")
-        .replace(/\s+/g, "-");
-
-    return `https://img.pokemondb.net/artwork/large/${imageName}.jpg`;
-}
 
 function infoRow(label, value) {
     if (!value) return "";

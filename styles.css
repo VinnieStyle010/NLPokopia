@@ -4452,3 +4452,91 @@ header,
     z-index: 21;
     pointer-events: auto !important;
 }
+/* =========================================================
+   HOOFD-POKEDEX PAGINA
+   ========================================================= */
+
+.pokedex-page {
+    position: relative;
+    width: min(1400px, 92%);
+    margin: 35px auto 70px;
+    z-index: 5;
+}
+
+/* Terugknop */
+.pokedex-page .back-button {
+    display: inline-block;
+    padding: 14px 22px;
+    margin-bottom: 25px;
+
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+
+    color: #17233b;
+    font-weight: 800;
+    text-decoration: none;
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+}
+
+/* Introkaart */
+.pokedex-intro {
+    max-width: 900px;
+    margin: 0 auto 24px;
+    padding: 30px 35px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.78);
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 28px;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+.pokedex-kicker {
+    display: inline-block;
+    padding: 8px 14px;
+    margin-bottom: 12px;
+
+    background: rgba(238, 240, 255, 0.9);
+    border-radius: 999px;
+
+    color: #5147c7;
+    font-weight: 800;
+}
+
+.pokedex-intro h1 {
+    margin: 4px 0 12px;
+    color: #102957;
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.1;
+}
+
+.pokedex-intro p {
+    margin: 0;
+    color: #475569;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Zoekbalk op deze pagina */
+.pokedex-page .search-bar {
+    width: min(900px, 100%);
+    margin: 20px auto 12px;
+}
+
+.pokedex-page .search-bar input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Typefilter */
+.pokedex-page .filters {
+    width: min(900px, 100%);
+    margin: 0 auto 30px;
+}

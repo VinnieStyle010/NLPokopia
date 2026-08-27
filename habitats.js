@@ -285,7 +285,7 @@ function createHabitatCard(habitat) {
             <div class="habitat-requirements">
 
                 <h4>
-                    🧰 Benodigd (Requirements)
+                    🧰 Benodigdheden (Requirements)
                 </h4>
 
                 <div class="habitat-requirements-list">

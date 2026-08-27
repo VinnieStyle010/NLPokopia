@@ -3513,8 +3513,6 @@ header,
 
     overflow: hidden !important;
 
-    background: #061127 !important;
-
     border-radius: 0 0 34px 34px !important;
 }
 
@@ -3531,4 +3529,18 @@ header,
     margin: 0;
 
     object-fit: contain;
+}
+/* DNA-balk zonder donkere achtergrond eromheen */
+
+.type-dna-bar {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.type-dna-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: transparent;
 }

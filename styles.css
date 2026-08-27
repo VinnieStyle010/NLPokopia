@@ -3199,133 +3199,60 @@ header,
    ECHTE TYPE-DNA STRANGEN
    ========================================================= */
 
-.type-dna {
-    position: absolute;
-    top: 50%;
-    width: 47%;
-    height: 54px;
-    transform: translateY(-50%);
+/* =========================================================
+   TYPE DNA - AFBEELDING
+   ========================================================= */
+
+.type-dna-bar {
+    position: relative;
+    width: min(1500px, 96%);
+    height: 92px;
+    margin: -10px auto 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(3, 12, 32, 0.98),
+            rgba(4, 16, 38, 0.96)
+        );
+
+    border-left: 1px solid rgba(255,255,255,0.15);
+    border-right: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+
+    border-radius: 0 0 34px 34px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.30);
 }
 
-/* linker helft */
-.type-dna-left {
-    left: 1%;
-}
-
-/* rechter helft */
-.type-dna-right {
-    right: 1%;
-}
-
-/* beide DNA-strengen */
-.type-dna::before,
-.type-dna::after {
+/* hele DNA-afbeelding over de balk */
+.type-dna-bar::before {
     content: "";
+
     position: absolute;
+    inset: 0;
 
-    left: -5%;
-    width: 110%;
-    height: 24px;
+    background-image: url("type-dna.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-    background: linear-gradient(
-        90deg,
-        #78C850 0%,
-        #F08030 7%,
-        #6890F0 14%,
-        #F8D030 21%,
-        #F85888 28%,
-        #98D8D8 35%,
-        #7038F8 42%,
-        #705848 49%,
-        #EE99AC 56%,
-        #C03028 63%,
-        #A040A0 70%,
-        #E0C068 76%,
-        #A890F0 82%,
-        #A8B820 87%,
-        #B8A038 91%,
-        #705898 95%,
-        #B8B8D0 98%,
-        #A8A878 100%
-    );
+    z-index: 1;
 
-    border-radius: 50%;
-
-    filter:
-        saturate(1.45)
-        brightness(1.12)
-        drop-shadow(0 0 8px rgba(255,255,255,0.35));
-
-    mask-image:
-        radial-gradient(
-            ellipse 52px 18px at 26px 50%,
-            transparent 46%,
-            #000 49% 67%,
-            transparent 70%
-        );
-
-    -webkit-mask-image:
-        radial-gradient(
-            ellipse 52px 18px at 26px 50%,
-            transparent 46%,
-            #000 49% 67%,
-            transparent 70%
-        );
-
-    mask-size: 52px 36px;
-    -webkit-mask-size: 52px 36px;
-
-    mask-repeat: repeat-x;
-    -webkit-mask-repeat: repeat-x;
+    pointer-events: none;
 }
 
-/* bovenste streng */
-.type-dna::before {
-    top: 6px;
-}
-
-/* onderste streng: precies tegengesteld */
-.type-dna::after {
-    bottom: 6px;
-
-    mask-position: 26px 0;
-    -webkit-mask-position: 26px 0;
-}
-
-/* Richt kleuren naar gouden bal toe */
-.type-dna-left::before,
-.type-dna-left::after {
-    background: linear-gradient(
-        90deg,
-        #78C850,
-        #F08030,
-        #6890F0,
-        #F8D030,
-        #F85888,
-        #98D8D8,
-        #7038F8,
-        #705848,
-        #EE99AC,
-        #f6c453
-    );
-}
-
-.type-dna-right::before,
-.type-dna-right::after {
-    background: linear-gradient(
-        90deg,
-        #f6c453,
-        #C03028,
-        #A040A0,
-        #E0C068,
-        #A890F0,
-        #A8B820,
-        #B8A038,
-        #705898,
-        #B8B8D0,
-        #A8A878
-    );
+/* oude losse linker/rechter DNA uitzetten */
+.type-dna-left,
+.type-dna-right {
+    display: none;
 }
 
 

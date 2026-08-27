@@ -3195,140 +3195,137 @@ header,
 
 /* Beide gekleurde DNA-helften */
 
+/* =========================================================
+   ECHTE TYPE-DNA STRANGEN
+   ========================================================= */
+
 .type-dna {
     position: absolute;
-
     top: 50%;
-
-    width: 48%;
-    height: 36px;
-
+    width: 47%;
+    height: 54px;
     transform: translateY(-50%);
-
-    filter:
-        saturate(1.35)
-        drop-shadow(0 0 8px rgba(255,255,255,0.18));
+    overflow: hidden;
 }
 
-
-/* LINKS */
-
+/* linker helft */
 .type-dna-left {
     left: 1%;
-
-    background:
-        linear-gradient(
-            90deg,
-
-            #5fae45 0%,
-            #5fae45 7%,
-
-            #ef4444 12%,
-
-            #f97316 19%,
-
-            #3b82f6 27%,
-
-            #facc15 35%,
-
-            #a855f7 43%,
-
-            #22d3ee 51%,
-
-            #ec4899 60%,
-
-            #8b5cf6 69%,
-
-            #78716c 78%,
-
-            #94a3b8 88%,
-
-            #f6c453 100%
-        );
-
-    clip-path:
-        polygon(
-            0 35%,
-            8% 5%,
-            16% 65%,
-            24% 15%,
-            32% 75%,
-            40% 25%,
-            48% 80%,
-            56% 20%,
-            64% 70%,
-            72% 15%,
-            80% 65%,
-            88% 20%,
-            100% 42%,
-            100% 62%,
-            88% 45%,
-            80% 85%,
-            72% 40%,
-            64% 90%,
-            56% 45%,
-            48% 95%,
-            40% 50%,
-            32% 90%,
-            24% 45%,
-            16% 90%,
-            8% 45%,
-            0 70%
-        );
 }
 
-
-/* RECHTS */
-
+/* rechter helft */
 .type-dna-right {
     right: 1%;
+}
 
-    background:
-        linear-gradient(
-            90deg,
+/* beide DNA-strengen */
+.type-dna::before,
+.type-dna::after {
+    content: "";
+    position: absolute;
 
-            #f6c453 0%,
-            #ec4899 10%,
-            #3b82f6 20%,
-            #8b5cf6 30%,
-            #795548 40%,
-            #65a30d 50%,
-            #06b6d4 60%,
-            #7c3aed 70%,
-            #64748b 80%,
-            #cbd5e1 90%,
-            #ffffff 100%
+    left: -5%;
+    width: 110%;
+    height: 24px;
+
+    background: linear-gradient(
+        90deg,
+        #78C850 0%,
+        #F08030 7%,
+        #6890F0 14%,
+        #F8D030 21%,
+        #F85888 28%,
+        #98D8D8 35%,
+        #7038F8 42%,
+        #705848 49%,
+        #EE99AC 56%,
+        #C03028 63%,
+        #A040A0 70%,
+        #E0C068 76%,
+        #A890F0 82%,
+        #A8B820 87%,
+        #B8A038 91%,
+        #705898 95%,
+        #B8B8D0 98%,
+        #A8A878 100%
+    );
+
+    border-radius: 50%;
+
+    filter:
+        saturate(1.45)
+        brightness(1.12)
+        drop-shadow(0 0 8px rgba(255,255,255,0.35));
+
+    mask-image:
+        radial-gradient(
+            ellipse 52px 18px at 26px 50%,
+            transparent 46%,
+            #000 49% 67%,
+            transparent 70%
         );
 
-    clip-path:
-        polygon(
-            0 42%,
-            12% 20%,
-            20% 65%,
-            28% 15%,
-            36% 70%,
-            44% 20%,
-            52% 80%,
-            60% 25%,
-            68% 75%,
-            76% 15%,
-            84% 65%,
-            92% 5%,
-            100% 35%,
-            100% 70%,
-            92% 45%,
-            84% 90%,
-            76% 40%,
-            68% 90%,
-            60% 45%,
-            52% 95%,
-            44% 50%,
-            36% 90%,
-            28% 45%,
-            20% 85%,
-            12% 45%,
-            0 62%
+    -webkit-mask-image:
+        radial-gradient(
+            ellipse 52px 18px at 26px 50%,
+            transparent 46%,
+            #000 49% 67%,
+            transparent 70%
         );
+
+    mask-size: 52px 36px;
+    -webkit-mask-size: 52px 36px;
+
+    mask-repeat: repeat-x;
+    -webkit-mask-repeat: repeat-x;
+}
+
+/* bovenste streng */
+.type-dna::before {
+    top: 6px;
+}
+
+/* onderste streng: precies tegengesteld */
+.type-dna::after {
+    bottom: 6px;
+
+    mask-position: 26px 0;
+    -webkit-mask-position: 26px 0;
+}
+
+/* Richt kleuren naar gouden bal toe */
+.type-dna-left::before,
+.type-dna-left::after {
+    background: linear-gradient(
+        90deg,
+        #78C850,
+        #F08030,
+        #6890F0,
+        #F8D030,
+        #F85888,
+        #98D8D8,
+        #7038F8,
+        #705848,
+        #EE99AC,
+        #f6c453
+    );
+}
+
+.type-dna-right::before,
+.type-dna-right::after {
+    background: linear-gradient(
+        90deg,
+        #f6c453,
+        #C03028,
+        #A040A0,
+        #E0C068,
+        #A890F0,
+        #A8B820,
+        #B8A038,
+        #705898,
+        #B8B8D0,
+        #A8A878
+    );
 }
 
 

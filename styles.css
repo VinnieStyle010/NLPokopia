@@ -3499,3 +3499,36 @@ header,
 .golden-ball {
     transform: translateY(5px) !important;
 }
+/* =========================================================
+   DEFINITIEVE DNA-BALK
+   afbeelding nooit vervormen
+   ========================================================= */
+
+.type-dna-bar {
+    width: min(1500px, 96%) !important;
+    height: auto !important;
+
+    margin: -10px auto 0 !important;
+    padding: 0 !important;
+
+    overflow: hidden !important;
+
+    background: #061127 !important;
+
+    border-radius: 0 0 34px 34px !important;
+}
+
+.type-dna-bar::before {
+    content: none !important;
+}
+
+.type-dna-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+
+    object-fit: contain;
+}

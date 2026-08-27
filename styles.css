@@ -3488,3 +3488,7 @@ header,
         flex-basis: 52px !important;
     }
 }
+/* Gouden bal exact centreren in DNA-balk */
+.golden-ball {
+    transform: translateY(5px) !important;
+}

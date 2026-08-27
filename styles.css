@@ -3613,3 +3613,129 @@ header,
 
     mix-blend-mode: screen;
 }
+/* =========================================================
+   DEFINITIEVE NLPokopia DNA-HEADER
+   DNA zweeft transparant boven de wereldachtergrond
+   ========================================================= */
+
+/* Hele header zelf transparant houden */
+.main-header {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+
+
+/* Navigatie blijft donker */
+.main-nav {
+    position: relative;
+    z-index: 20;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(3, 14, 38, 0.98),
+            rgba(6, 24, 58, 0.97),
+            rgba(3, 13, 35, 0.98)
+        ) !important;
+}
+
+
+/* =========================================
+   DNA-GEBIED
+   ========================================= */
+
+.type-dna-bar {
+    position: relative !important;
+
+    width: min(1500px, 96%) !important;
+    height: 250px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+
+    overflow: hidden !important;
+
+    /* oude maskers volledig uitschakelen */
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+}
+
+
+/* Oude CSS-DNA uitschakelen */
+.type-dna-bar::before,
+.type-dna-bar::after {
+    content: none !important;
+}
+
+.type-dna-left,
+.type-dna-right,
+.golden-ball {
+    display: none !important;
+}
+
+
+/* =========================================
+   ECHTE DNA-AFBEELDING
+   ========================================= */
+
+.type-dna-image {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    margin: 0 !important;
+
+    /*
+       BELANGRIJK:
+       hierdoor verdwijnt de donkere achtergrond
+       van type-dna.png visueel en blijven vooral
+       het lichtgevende DNA en de gouden bal over.
+    */
+    mix-blend-mode: screen;
+
+    filter:
+        saturate(1.25)
+        brightness(1.13)
+        contrast(1.05)
+        drop-shadow(0 0 10px rgba(0, 190, 255, 0.30))
+        drop-shadow(0 0 18px rgba(255, 0, 180, 0.22))
+        drop-shadow(0 0 24px rgba(255, 190, 30, 0.20));
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   MOBIEL
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .type-dna-bar {
+        width: 100% !important;
+        height: 155px !important;
+    }
+
+    .type-dna-image {
+        width: 125% !important;
+        max-width: none !important;
+    }
+}

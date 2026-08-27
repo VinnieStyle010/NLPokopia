@@ -4880,3 +4880,7 @@ header,
     }
 
 }
+/* Ruimte tussen benodigdheden en Pokémon */
+.habitat-pokemon-section {
+    margin-top: 28px;
+}

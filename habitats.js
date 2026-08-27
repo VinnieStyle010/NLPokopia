@@ -184,6 +184,51 @@ function getPokemonUrl(pokemon) {
 
 function createHabitatCard(habitat) {
 
+    const pokemonList =
+        currentSection === "dlc"
+            ? getDlcPokemon()
+            : getBasePokemon();
+
+
+    const requirements =
+        getHabitatRequirements(
+            pokemonList,
+            habitat.name
+        );
+
+
+    const requirementsHtml = requirements.length
+        ? requirements
+            .map((item) => {
+
+                return `
+                    <div class="habitat-requirement-item">
+
+                        <span class="requirement-icon">
+                            🧱
+                        </span>
+
+                        <span>
+                            ${item}
+                        </span>
+
+                    </div>
+                `;
+
+            })
+            .join("")
+        : `
+            <div class="habitat-requirement-item">
+                <span class="requirement-icon">ℹ️</span>
+
+                <span>
+                    Geen benodigdheden vermeld
+                    (No requirements listed)
+                </span>
+            </div>
+        `;
+
+
     const pokemonLinks = habitat.pokemon
         .map((pokemon) => {
 
@@ -192,13 +237,15 @@ function createHabitatCard(habitat) {
                     class="habitat-pokemon-link"
                     href="${getPokemonUrl(pokemon)}"
                 >
+
                     <span class="habitat-pokemon-number">
-                        ${formatPokemonNumber(pokemon)}
+                        #${formatPokemonNumber(pokemon)}
                     </span>
 
                     <span>
                         ${pokemon.name}
                     </span>
+
                 </a>
             `;
 
@@ -209,6 +256,9 @@ function createHabitatCard(habitat) {
     return `
         <article class="habitat-overview-card">
 
+
+            <!-- HABITAT -->
+
             <div class="habitat-card-heading">
 
                 <span class="habitat-card-icon">
@@ -216,24 +266,54 @@ function createHabitatCard(habitat) {
                 </span>
 
                 <div>
-                    <h3>${habitat.name}</h3>
+
+                    <h3>
+                        ${habitat.name}
+                    </h3>
 
                     <small>
-                        ${habitat.pokemon.length}
-                        ${habitat.pokemon.length === 1
-                            ? "Pokémon"
-                            : "Pokémon"}
+                        ${habitat.pokemon.length} Pokémon
                     </small>
+
                 </div>
 
             </div>
 
 
-            <div class="habitat-pokemon-list">
+            <!-- BENODIGD -->
 
-                ${pokemonLinks}
+            <div class="habitat-requirements">
+
+                <h4>
+                    🧰 Benodigd (Requirements)
+                </h4>
+
+                <div class="habitat-requirements-list">
+
+                    ${requirementsHtml}
+
+                </div>
 
             </div>
+
+
+            <!-- POKEMON -->
+
+            <div class="habitat-pokemon-section">
+
+                <h4>
+                    🔴 Pokémon die je hier kunt vinden
+                    (Pokémon Found Here)
+                </h4>
+
+                <div class="habitat-pokemon-list">
+
+                    ${pokemonLinks}
+
+                </div>
+
+            </div>
+
 
         </article>
     `;

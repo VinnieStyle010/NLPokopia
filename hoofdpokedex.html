@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="nl">
 
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hoofd-Pokédex | NLPokopia</title>
+
+    <link rel="stylesheet" href="styles.css?v=9">
+</head>
+
+<body>
+
+    <header class="main-header">
+
+        <nav class="main-nav">
+
+            <a href="index.html" class="nav-brand">
+                <span class="brand-ball"></span>
+
+                <span class="brand-text">
+                    <strong>NLPokopia</strong>
+                    <small>Jouw Nederlandse gids voor Pokémon Pokopia</small>
+                </span>
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    <span>🏠</span>
+                    Home
+                </a>
+
+                <a href="hoofdpokedex.html">
+                    <span>🔴</span>
+                    Pokémon
+                </a>
+
+                <a href="habitats.html">
+                    <span>🌿</span>
+                    Habitat
+                </a>
+
+                <a href="bubbly-basin.html">
+                    <span>💧</span>
+                    DLC
+                </a>
+
+                <a href="tips.html">
+                    <span>💡</span>
+                    Tips
+                </a>
+
+                <a href="index.html#favorieten">
+                    <span>❤️</span>
+                    Favorieten
+                </a>
+
+            </div>
+
+            <div class="nav-search">
+                <input
+                    type="search"
+                    placeholder="Zoek Pokémon..."
+                    aria-label="Zoek Pokémon"
+                >
+                <span>⌕</span>
+            </div>
+
+        </nav>
+
+        <div class="type-dna-bar">
+            <img
+                src="type-dna.png"
+                alt=""
+                class="type-dna-image"
+                aria-hidden="true"
+            >
+        </div>
+
+    </header>
+
+
+    <main class="pokedex-page">
+
+        <a
+            href="index.html"
+            class="back-button"
+        >
+            ← Terug naar NLPokopia
+        </a>
+
+
+        <section class="pokedex-intro">
+
+            <span class="pokedex-kicker">
+                📕 Hoofd-Pokédex
+            </span>
+
+            <h1>
+                Pokémon uit het hoofdspel
+            </h1>
+
+            <p>
+                Hier vind je alle Pokémon die bij de Hoofd-Pokédex
+                van Pokémon Pokopia horen.
+            </p>
+
+        </section>
+
+
+        <section class="search-bar">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Zoek op naam of nummer, bijvoorbeeld Bulbasaur of 001"
+            >
+
+        </section>
+
+
+        <section class="filters">
+
+            <select id="typeFilter">
+
+                <option value="all">
+                    Alle types
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <main id="app">
+
+            <!-- Hoofd-Pokédex Pokémon worden hier geladen -->
+
+        </main>
+
+    </main>
+
+
+    <script src="pokemon-kanto.js"></script>
+    <script src="pokemon-extra.js"></script>
+    <script src="pokemon-dlc.js"></script>
+    <script src="pokemon-data.js"></script>
+
+    <script src="hoofdpokedex.js?v=1"></script>
+
+</body>
+
+</html>

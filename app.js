@@ -5,40 +5,14 @@ const typeFilter = document.getElementById("typeFilter");
 
 
 function getPokemonImage(name) {
-
-    const imageNames = {
-        "Paldean Wooper": "wooper-paldea",
-
-        "Heat Rotom": "rotom-heat",
-        "Wash Rotom": "rotom-wash",
-        "Frost Rotom": "rotom-frost",
-        "Fan Rotom": "rotom-fan",
-        "Mow Rotom": "rotom-mow",
-
-        // Pokopia-naam: voorlopig normale Rotom-afbeelding gebruiken
-        "Stereo Rotom": "rotom"
-    };
-
-    const imageName =
-        imageNames[name] ||
-        name
-            .toLowerCase()
-            .replaceAll(" ", "-")
-            .replaceAll("'", "")
-            .replaceAll(".", "");
-
-    return `https://img.pokemondb.net/artwork/large/${imageName}.jpg`;
-}
     const imageName = name
         .toLowerCase()
-        .replace(/♀/g, "-f")
-        .replace(/♂/g, "-m")
-        .replace(/['’.]/g, "")
-        .replace(/\s+/g, "-");
+        .replaceAll(" ", "-")
+        .replaceAll("'", "")
+        .replaceAll(".", "");
 
     return `https://img.pokemondb.net/artwork/large/${imageName}.jpg`;
 }
-
 
 function getPokemonSection(pokemon) {
     if (pokemon.event === true) {

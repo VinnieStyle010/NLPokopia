@@ -4575,3 +4575,308 @@ header,
     box-shadow:
         0 16px 30px rgba(0, 0, 0, 0.20) !important;
 }
+/* =========================================================
+   HABITATS PAGINA
+   ========================================================= */
+
+.habitats-page {
+    position: relative;
+}
+
+
+/* =========================================================
+   HOOFD-POKEDEX / BUBBLY BASIN KNOPPEN
+   ========================================================= */
+
+.habitat-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    width: min(900px, 100%);
+    margin: 24px auto 20px;
+}
+
+.habitat-tab {
+    flex: 1;
+
+    padding: 16px 22px;
+
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.30);
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    color: #102957;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.habitat-tab:hover {
+    transform: translateY(-2px);
+
+    background: rgba(255, 255, 255, 0.42);
+
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+}
+
+.habitat-tab.active {
+    background: rgba(255, 255, 255, 0.58);
+
+    border-color: rgba(255, 255, 255, 0.85);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.16),
+        inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+
+/* =========================================================
+   TITEL BOVEN DE HABITATS
+   ========================================================= */
+
+.habitat-section-title {
+    width: min(900px, 100%);
+
+    margin: 24px auto 28px;
+    padding: 22px 26px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.25);
+
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 22px;
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.13);
+}
+
+#habitatSectionBadge {
+    display: inline-block;
+
+    margin-bottom: 8px;
+    padding: 7px 13px;
+
+    background: rgba(255, 255, 255, 0.55);
+
+    border-radius: 999px;
+
+    color: #253858;
+    font-weight: 800;
+}
+
+.habitat-section-title h2 {
+    margin: 4px 0 8px;
+
+    color: #102957;
+
+    font-size: clamp(24px, 3vw, 34px);
+}
+
+.habitat-section-title p {
+    margin: 0;
+
+    color: #34445f;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   HABITAT GRID
+   ========================================================= */
+
+.habitat-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 22px;
+
+    width: 100%;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   HABITAT KAARTJES
+   ========================================================= */
+
+.habitat-overview-card {
+    padding: 22px;
+
+    background: rgba(255, 255, 255, 0.25);
+
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 22px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    box-shadow:
+        0 10px 24px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.35);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.habitat-overview-card:hover {
+    transform: translateY(-4px);
+
+    background: rgba(255, 255, 255, 0.35);
+
+    box-shadow:
+        0 16px 30px rgba(0, 0, 0, 0.19);
+}
+
+
+/* =========================================================
+   BOVENKANT VAN HABITAT KAART
+   ========================================================= */
+
+.habitat-card-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 17px;
+}
+
+.habitat-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    background: rgba(255, 255, 255, 0.55);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+
+    font-size: 23px;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.10);
+}
+
+.habitat-card-heading h3 {
+    margin: 0 0 3px;
+
+    color: #102957;
+
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.habitat-card-heading small {
+    color: #45556f;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   POKEMON BINNEN EEN HABITAT
+   ========================================================= */
+
+.habitat-pokemon-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.habitat-pokemon-link {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 9px 11px;
+
+    background: rgba(255, 255, 255, 0.42);
+
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    border-radius: 11px;
+
+    color: #17233b;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease;
+}
+
+.habitat-pokemon-link:hover {
+    transform: translateX(3px);
+
+    background: rgba(255, 255, 255, 0.68);
+}
+
+.habitat-pokemon-number {
+    min-width: 36px;
+
+    color: #52637d;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   MOBIEL
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .habitat-tabs {
+        flex-direction: column;
+    }
+
+    .habitat-tab {
+        width: 100%;
+    }
+
+    .habitat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .habitat-overview-card {
+        padding: 18px;
+    }
+
+}

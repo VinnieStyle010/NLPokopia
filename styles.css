@@ -3544,3 +3544,72 @@ header,
     height: auto;
     background: transparent;
 }
+/* =========================================================
+   DNA-BALK MEER LATEN SPRANKELEN
+   ========================================================= */
+
+.type-dna-bar {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    overflow: hidden !important;
+}
+
+/* Afbeelding levendiger maken */
+.type-dna-image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    filter:
+        saturate(1.28)
+        brightness(1.12)
+        contrast(1.05)
+        drop-shadow(0 0 12px rgba(0, 190, 255, 0.25))
+        drop-shadow(0 0 22px rgba(255, 0, 180, 0.18));
+}
+
+/* Zachte overgang naar de wereldachtergrond */
+.type-dna-bar {
+    -webkit-mask-image:
+        linear-gradient(
+            to bottom,
+            transparent 0%,
+            #000 8%,
+            #000 88%,
+            transparent 100%
+        );
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            transparent 0%,
+            #000 8%,
+            #000 88%,
+            transparent 100%
+        );
+}
+
+/* Extra lichtlaag boven DNA */
+.type-dna-bar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 50% 48%,
+            rgba(255, 215, 70, 0.20),
+            transparent 24%
+        ),
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(0, 210, 255, 0.08),
+            rgba(255, 0, 180, 0.08),
+            transparent
+        );
+
+    mix-blend-mode: screen;
+}

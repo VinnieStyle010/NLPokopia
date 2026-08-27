@@ -5,7 +5,12 @@ const typeFilter = document.getElementById("typeFilter");
 
 
 function getPokemonImage(name) {
-    const imageName = name
+    const specialImages = {
+        "Paldean Wooper": "wooper-paldea",
+        "Stereo Rotom": "rotom"
+    };
+
+    const imageName = specialImages[name] || name
         .toLowerCase()
         .replaceAll(" ", "-")
         .replaceAll("'", "")

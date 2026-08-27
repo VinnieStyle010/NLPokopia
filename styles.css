@@ -4029,3 +4029,391 @@ header,
     }
 
 }
+/* =========================================================
+   PROFESSIONELE POKEBALLS
+   ALLEEN VOOR POKEMON-DETAILPAGINA
+   ========================================================= */
+
+.ball-background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+
+/* Basis van alle ballen */
+
+.ball-background .decor-ball {
+    position: absolute;
+
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+
+    border: 3px solid rgba(10, 15, 25, 0.9);
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.32),
+        inset -7px -8px 12px rgba(0, 0, 0, 0.22),
+        inset 6px 6px 10px rgba(255, 255, 255, 0.28);
+
+    opacity: 0.88;
+}
+
+
+/* ZWARTE MIDDENBAND */
+
+.ball-background .decor-ball::before {
+    content: "";
+
+    position: absolute;
+
+    left: -2px;
+    right: -2px;
+    top: 50%;
+
+    height: 10px;
+
+    transform: translateY(-50%);
+
+    background: #151820;
+
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+/* KNOP IN HET MIDDEN */
+
+.ball-background .decor-ball::after {
+    content: "";
+
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #ffffff 0 35%,
+            #dfe5ec 36% 55%,
+            #20242c 56% 72%,
+            #ffffff 73%
+        );
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.45);
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   VERSCHILLENDE SOORTEN BALLEN
+   ========================================================= */
+
+
+/* Poké Ball */
+
+.ball-1,
+.ball-8 {
+    background:
+        linear-gradient(
+            to bottom,
+            #ef3340 0 47%,
+            #f7f7f7 47% 100%
+        );
+}
+
+
+/* Great Ball */
+
+.ball-2,
+.ball-9 {
+    background:
+        linear-gradient(
+            135deg,
+            #e53935 0 16%,
+            transparent 17% 30%
+        ),
+        linear-gradient(
+            to bottom,
+            #1769aa 0 47%,
+            #f5f7fa 47% 100%
+        );
+}
+
+
+/* Ultra Ball */
+
+.ball-3,
+.ball-10 {
+    background:
+        linear-gradient(
+            90deg,
+            transparent 0 22%,
+            #ffd21f 22% 38%,
+            transparent 38% 62%,
+            #ffd21f 62% 78%,
+            transparent 78%
+        ),
+        linear-gradient(
+            to bottom,
+            #20232a 0 47%,
+            #eeeeee 47% 100%
+        );
+}
+
+
+/* Premier Ball */
+
+.ball-4 {
+    background:
+        linear-gradient(
+            to bottom,
+            #fafafa 0 47%,
+            #eeeeee 47% 100%
+        );
+
+    border-color: #b71c1c;
+}
+
+
+/* Luxury Ball */
+
+.ball-5,
+.ball-11 {
+    background:
+        linear-gradient(
+            90deg,
+            #d6a719 0 8%,
+            transparent 8% 92%,
+            #d6a719 92%
+        ),
+        linear-gradient(
+            to bottom,
+            #171717 0 47%,
+            #353535 47% 100%
+        );
+}
+
+
+/* Heal Ball */
+
+.ball-6 {
+    background:
+        linear-gradient(
+            135deg,
+            #8eeaff 0 18%,
+            transparent 19% 81%,
+            #8eeaff 82%
+        ),
+        linear-gradient(
+            to bottom,
+            #f28bc3 0 47%,
+            #f7d6ea 47% 100%
+        );
+}
+
+
+/* Net / Dive stijl */
+
+.ball-7,
+.ball-12 {
+    background:
+        linear-gradient(
+            45deg,
+            rgba(0, 230, 255, 0.75) 0 8%,
+            transparent 8% 28%,
+            rgba(0, 230, 255, 0.65) 28% 36%,
+            transparent 36%
+        ),
+        linear-gradient(
+            to bottom,
+            #102a3d 0 47%,
+            #486f7d 47% 100%
+        );
+}
+
+
+/* =========================================================
+   VERSPREIDING
+   Minder netjes op een rij:
+   dichtbij / ver weg / verschillende groottes
+   ========================================================= */
+
+.ball-1 {
+    left: 2%;
+    top: 13%;
+
+    width: 52px;
+    height: 52px;
+
+    transform: rotate(-12deg);
+}
+
+
+.ball-2 {
+    right: 3%;
+    top: 21%;
+
+    width: 76px;
+    height: 76px;
+
+    transform: rotate(14deg);
+}
+
+
+.ball-3 {
+    left: 6%;
+    top: 35%;
+
+    width: 68px;
+    height: 68px;
+
+    transform: rotate(8deg);
+}
+
+
+.ball-4 {
+    right: 6%;
+    top: 43%;
+
+    width: 48px;
+    height: 48px;
+
+    opacity: 0.72;
+
+    transform: rotate(-9deg);
+}
+
+
+.ball-5 {
+    left: 1%;
+    top: 57%;
+
+    width: 88px;
+    height: 88px;
+
+    transform: rotate(-18deg);
+}
+
+
+.ball-6 {
+    right: 2%;
+    top: 63%;
+
+    width: 61px;
+    height: 61px;
+
+    transform: rotate(11deg);
+}
+
+
+.ball-7 {
+    left: 7%;
+    top: 74%;
+
+    width: 43px;
+    height: 43px;
+
+    opacity: 0.68;
+
+    transform: rotate(19deg);
+}
+
+
+.ball-8 {
+    right: 7%;
+    top: 79%;
+
+    width: 71px;
+    height: 71px;
+
+    transform: rotate(-14deg);
+}
+
+
+.ball-9 {
+    left: 2%;
+    top: 89%;
+
+    width: 57px;
+    height: 57px;
+
+    transform: rotate(10deg);
+}
+
+
+.ball-10 {
+    right: 2%;
+    top: 92%;
+
+    width: 92px;
+    height: 92px;
+
+    transform: rotate(-11deg);
+}
+
+
+/* Twee subtielere ballen */
+
+.ball-11 {
+    left: 11%;
+    top: 48%;
+
+    width: 34px;
+    height: 34px;
+
+    opacity: 0.52;
+
+    filter: blur(0.4px);
+
+    transform: rotate(17deg);
+}
+
+
+.ball-12 {
+    right: 12%;
+    top: 32%;
+
+    width: 39px;
+    height: 39px;
+
+    opacity: 0.58;
+
+    filter: blur(0.3px);
+
+    transform: rotate(-15deg);
+}
+
+
+/* =========================================================
+   MOBIEL
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .ball-background .decor-ball {
+        transform: scale(0.72);
+    }
+
+    .ball-5,
+    .ball-10 {
+        opacity: 0.60;
+    }
+
+}

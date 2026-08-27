@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Special Pokémon | NLPokopia</title>
+
+    <link rel="stylesheet" href="styles.css?v=9">
+</head>
+
+<body>
+
+    <header class="main-header">
+
+        <nav class="main-nav">
+
+            <a href="index.html" class="nav-brand">
+
+                <span class="brand-ball"></span>
+
+                <span class="brand-text">
+                    <strong>NLPokopia</strong>
+                    <small>Jouw Nederlandse gids voor Pokémon Pokopia</small>
+                </span>
+
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    <span>🏠</span>
+                    Home
+                </a>
+
+                <a href="hoofdpokedex.html">
+                    <span>🔴</span>
+                    Pokémon
+                </a>
+
+                <a href="habitats.html">
+                    <span>🌿</span>
+                    Habitat
+                </a>
+
+                <a href="bubbly-basin.html">
+                    <span>💧</span>
+                    DLC
+                </a>
+
+                <a href="tips.html">
+                    <span>💡</span>
+                    Tips
+                </a>
+
+                <a href="index.html#favorieten">
+                    <span>❤️</span>
+                    Favorieten
+                </a>
+
+            </div>
+
+            <div class="nav-search">
+
+                <input
+                    type="search"
+                    placeholder="Zoek Pokémon..."
+                    aria-label="Zoek Pokémon"
+                >
+
+                <span>⌕</span>
+
+            </div>
+
+        </nav>
+
+        <div class="type-dna-bar">
+
+            <img
+                src="type-dna.png"
+                alt=""
+                class="type-dna-image"
+                aria-hidden="true"
+            >
+
+        </div>
+
+    </header>
+
+
+    <main class="pokedex-page special-pokemon-page">
+
+        <a
+            href="index.html"
+            class="back-button"
+        >
+            ← Terug naar NLPokopia
+        </a>
+
+
+        <section class="pokedex-intro">
+
+            <span class="pokedex-kicker">
+                ⭐ Special Pokémon
+            </span>
+
+            <h1>
+                Special Pokémon
+            </h1>
+
+            <p>
+                Ontdek de speciale Pokémon en Event Pokémon
+                (Event Pokémon) die beschikbaar zijn in Pokémon Pokopia.
+            </p>
+
+        </section>
+
+
+        <!-- ZOEKEN -->
+
+        <section class="search-bar">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Zoek een Special Pokémon op naam of nummer..."
+            >
+
+        </section>
+
+
+        <!-- TYPE FILTER -->
+
+        <section class="filters">
+
+            <select id="typeFilter">
+
+                <option value="all">
+                    Alle types (All Types)
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <!-- SPECIAL POKEMON -->
+
+        <main id="app">
+
+            <!-- Special Pokémon worden hier automatisch geladen -->
+
+        </main>
+
+    </main>
+
+
+    <!-- BESTAANDE DATA -->
+
+    <script src="pokemon-kanto.js"></script>
+    <script src="pokemon-extra.js"></script>
+    <script src="pokemon-dlc.js"></script>
+    <script src="pokemon-data.js"></script>
+
+
+    <!-- SPECIAL POKEMON PAGINA -->
+
+    <script src="special-pokemon.js?v=1"></script>
+
+</body>
+
+</html>

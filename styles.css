@@ -3739,3 +3739,293 @@ header,
         max-width: none !important;
     }
 }
+/* =========================================================
+   NLPokopia - HOMEPAGE HERO
+   ========================================================= */
+
+.home-hero {
+    position: relative;
+    width: min(1400px, 92%);
+    margin: 32px auto;
+    padding: 42px;
+
+    border-radius: 34px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.94),
+            rgba(245,250,255,0.88)
+        );
+
+    border: 2px solid rgba(255,255,255,0.8);
+
+    box-shadow:
+        0 18px 50px rgba(0,0,0,0.22),
+        0 0 30px rgba(70,140,255,0.18);
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.home-hero-content {
+    max-width: 850px;
+    margin: 0 auto 34px;
+    text-align: center;
+}
+
+.home-kicker {
+    display: inline-block;
+
+    padding: 8px 16px;
+    margin-bottom: 12px;
+
+    border-radius: 999px;
+
+    background: rgba(75,110,255,0.10);
+
+    color: #4054c7;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.home-hero h1 {
+    margin: 6px 0 14px;
+
+    font-size: clamp(34px, 4vw, 58px);
+    line-height: 1.05;
+
+    color: #10234c;
+
+    text-shadow:
+        0 2px 12px rgba(70,110,255,0.12);
+}
+
+.home-hero-content > p {
+    max-width: 760px;
+    margin: 0 auto;
+
+    color: #53627a;
+
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   GROTE KNOPPEN
+   ========================================================= */
+
+.home-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 26px;
+}
+
+.home-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+    padding: 0 24px;
+
+    border-radius: 16px;
+
+    text-decoration: none;
+    font-weight: 800;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.home-action:hover {
+    transform: translateY(-3px);
+}
+
+.home-action.primary {
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff3c57,
+            #e51f3d
+        );
+
+    box-shadow:
+        0 8px 20px rgba(229,31,61,0.30);
+}
+
+.home-action.secondary {
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #238ee8,
+            #5267e8
+        );
+
+    box-shadow:
+        0 8px 20px rgba(35,142,232,0.28);
+}
+
+
+/* =========================================================
+   SNELKEUZES
+   ========================================================= */
+
+.home-shortcuts {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.shortcut-card {
+    position: relative;
+
+    min-height: 145px;
+    padding: 22px 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.98),
+            rgba(240,246,255,0.92)
+        );
+
+    border: 1px solid rgba(80,120,220,0.18);
+
+    box-shadow:
+        0 8px 24px rgba(20,45,90,0.10);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.shortcut-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(20,45,90,0.18);
+}
+
+.shortcut-card > span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 32px;
+}
+
+.shortcut-card strong {
+    color: #17294e;
+
+    font-size: 18px;
+}
+
+.shortcut-card small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #6b7890;
+
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   KAARTEN IEDER EIGEN ACCENT
+   ========================================================= */
+
+.shortcut-card:nth-child(1) {
+    border-bottom: 4px solid #ef3d4f;
+}
+
+.shortcut-card:nth-child(2) {
+    border-bottom: 4px solid #39a9ff;
+}
+
+.shortcut-card:nth-child(3) {
+    border-bottom: 4px solid #58b957;
+}
+
+.shortcut-card:nth-child(4) {
+    border-bottom: 4px solid #ffc928;
+}
+
+
+/* =========================================================
+   MOBIEL
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .home-hero {
+        width: 94%;
+        padding: 28px 20px;
+    }
+
+    .home-shortcuts {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 560px) {
+
+    .home-hero {
+        margin-top: 20px;
+        padding: 24px 14px;
+        border-radius: 24px;
+    }
+
+    .home-hero h1 {
+        font-size: 34px;
+    }
+
+    .home-hero-content > p {
+        font-size: 16px;
+    }
+
+    .home-actions {
+        flex-direction: column;
+    }
+
+    .home-action {
+        width: 100%;
+    }
+
+    .home-shortcuts {
+        grid-template-columns: 1fr;
+    }
+
+}

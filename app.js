@@ -10,11 +10,13 @@ function getPokemonImage(name) {
         "Stereo Rotom": "rotom"
     };
 
-    const imageName = specialImages[name] || name
-        .toLowerCase()
-        .replaceAll(" ", "-")
-        .replaceAll("'", "")
-        .replaceAll(".", "");
+    const imageName =
+        specialImages[name] ||
+        name
+            .toLowerCase()
+            .replaceAll(" ", "-")
+            .replaceAll("'", "")
+            .replaceAll(".", "");
 
     return `https://img.pokemondb.net/artwork/large/${imageName}.jpg`;
 }

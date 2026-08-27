@@ -30,7 +30,7 @@ function getPokemonDetailUrl(pokemon) {
    ALLEEN BUBBLY BASIN DLC
    ========================================================= */
 
-const bubblyBasinPokemon = pokemonData
+const bubblyBasinPokemon = pokemonDLC
     .filter((pokemon) => pokemon.dlc === true)
     .sort((a, b) => a.number - b.number);
 

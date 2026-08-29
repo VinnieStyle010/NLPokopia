@@ -5121,45 +5121,33 @@ header,
     top: 14px;
     right: 14px;
 
-    width: 46px;
-    height: 46px;
+    width: auto;
+    height: auto;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0;
 
-    border: 2px solid rgba(255, 255, 255, 0.7);
-    border-radius: 50%;
+    border: none;
+    border-radius: 0;
 
-    background: rgba(255, 255, 255, 0.78);
+    background: transparent;
 
-    font-size: 1.55rem;
+    font-size: 2rem;
     line-height: 1;
 
     cursor: pointer;
 
     z-index: 5;
 
-    box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.22);
-
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    box-shadow: none;
 
     transition:
-        transform 0.18s ease,
-        background 0.18s ease,
-        box-shadow 0.18s ease;
+        transform 0.18s ease;
+}
 }
 
-
 .favorite-button:hover {
-    transform: scale(1.12);
-
-    background: rgba(255, 255, 255, 0.95);
-
-    box-shadow:
-        0 6px 16px rgba(0, 0, 0, 0.28);
+    transform: scale(1.18);
+}
 }
 
 
@@ -5169,12 +5157,10 @@ header,
 
 
 .favorite-button.is-favorite {
-    background: rgba(255, 230, 235, 0.95);
-
-    border-color: rgba(255, 90, 120, 0.7);
-
-    box-shadow:
-        0 5px 16px rgba(210, 30, 70, 0.35);
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}     0 5px 16px rgba(210, 30, 70, 0.35);
 }
 
 

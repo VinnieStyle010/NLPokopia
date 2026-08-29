@@ -48,23 +48,11 @@ function splitHabitats(habitatText) {
 /* =========================================================
    AUTOMATISCHE ITEM AFBEELDINGEN
    ========================================================= */
-
 function getRequirementImage(requirementText) {
 
     if (!requirementText) {
         return null;
     }
-
-
-    /*
-     * Verwijder eerst het aantal.
-     *
-     * Voorbeeld:
-     * Haag, willekeurig (Hedge (any)) ×2
-     *
-     * wordt:
-     * Haag, willekeurig (Hedge (any))
-     */
 
     const cleanText =
         requirementText
@@ -72,13 +60,8 @@ function getRequirementImage(requirementText) {
             .trim();
 
 
-    /*
-     * Zoek het begin van de Engelse naam.
-     */
-
     const firstBracket =
         cleanText.indexOf("(");
-
 
     const lastBracket =
         cleanText.lastIndexOf(")");
@@ -93,15 +76,6 @@ function getRequirementImage(requirementText) {
     }
 
 
-    /*
-     * Alles tussen de eerste ( en laatste )
-     * is de Engelse itemnaam.
-     *
-     * Haag, willekeurig (Hedge (any))
-     * wordt:
-     * Hedge (any)
-     */
-
     const englishName =
         cleanText
             .slice(
@@ -111,16 +85,6 @@ function getRequirementImage(requirementText) {
             .trim()
             .toLowerCase();
 
-
-    /*
-     * Engelse naam omzetten naar bestandsnaam.
-     *
-     * Hedge (any)
-     * → hedge-any.png
-     *
-     * Castform Weather Charm (Sun)
-     * → castform-weather-charm-sun.png
-     */
 
     const fileName =
         englishName
@@ -137,6 +101,7 @@ function getRequirementImage(requirementText) {
 
     return `images/items/${fileName}.png`;
 }
+
 /* =========================================================
    BENODIGDHEDEN VAN EEN HABITAT
    ========================================================= */

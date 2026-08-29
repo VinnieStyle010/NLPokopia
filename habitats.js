@@ -46,10 +46,6 @@ function splitHabitats(habitatText) {
 }
 
 /* =========================================================
-   AFBEELDINGEN VAN BENODIGDHEDEN
-   ========================================================= */
-
-/* =========================================================
    AUTOMATISCHE ITEM AFBEELDINGEN
    ========================================================= */
 
@@ -59,34 +55,71 @@ function getRequirementImage(requirementText) {
         return null;
     }
 
+
     /*
-     * Pak Engelse naam tussen haakjes.
+     * Verwijder eerst het aantal.
      *
      * Voorbeeld:
-     * Rood hoog gras (Red Tall Grass) ×4
+     * Haag, willekeurig (Hedge (any)) ×2
+     *
      * wordt:
-     * Red Tall Grass
+     * Haag, willekeurig (Hedge (any))
      */
 
-    const englishMatch =
-        requirementText.match(/\(([^()]*)\)/);
+    const cleanText =
+        requirementText
+            .replace(/\s*[×x]\s*\d+\s*$/i, "")
+            .trim();
 
-    if (!englishMatch) {
+
+    /*
+     * Zoek het begin van de Engelse naam.
+     */
+
+    const firstBracket =
+        cleanText.indexOf("(");
+
+
+    const lastBracket =
+        cleanText.lastIndexOf(")");
+
+
+    if (
+        firstBracket === -1 ||
+        lastBracket === -1 ||
+        lastBracket <= firstBracket
+    ) {
         return null;
     }
 
+
+    /*
+     * Alles tussen de eerste ( en laatste )
+     * is de Engelse itemnaam.
+     *
+     * Haag, willekeurig (Hedge (any))
+     * wordt:
+     * Hedge (any)
+     */
+
     const englishName =
-        englishMatch[1]
+        cleanText
+            .slice(
+                firstBracket + 1,
+                lastBracket
+            )
             .trim()
             .toLowerCase();
 
 
     /*
-     * Maak er automatisch een bestandsnaam van.
+     * Engelse naam omzetten naar bestandsnaam.
      *
-     * Red Tall Grass
-     * wordt:
-     * red-tall-grass.png
+     * Hedge (any)
+     * → hedge-any.png
+     *
+     * Castform Weather Charm (Sun)
+     * → castform-weather-charm-sun.png
      */
 
     const fileName =
@@ -95,6 +128,11 @@ function getRequirementImage(requirementText) {
             .replace(/&/g, "and")
             .replace(/[^a-z0-9]+/g, "-")
             .replace(/^-+|-+$/g, "");
+
+
+    if (!fileName) {
+        return null;
+    }
 
 
     return `images/items/${fileName}.png`;

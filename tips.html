@@ -1,212 +1,593 @@
-const app = document.getElementById("app");
-const searchInput = document.getElementById("searchInput");
-const typeFilter = document.getElementById("typeFilter");
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Tips | NLPokopia</title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+</head>
 
 
-function getPokemonImage(name) {
-    const specialImages = {
-        "Paldean Wooper": "wooper-paldea",
-        "Stereo Rotom": "rotom"
-    };
+<body>
 
-    const imageName =
-        specialImages[name] ||
-        name
-            .toLowerCase()
-            .replaceAll(" ", "-")
-            .replaceAll("'", "")
-            .replaceAll(".", "");
+    <header class="site-header">
 
-    return `https://img.pokemondb.net/artwork/large/${imageName}.jpg`;
-}
+        <div class="site-brand">
+            <a href="index.html">
+                <span class="brand-ball">◉</span>
+                NLPokopia
+            </a>
+        </div>
 
 
-function getPokemonDetailUrl(pokemon) {
-    return `pokemon.html?section=event&number=${pokemon.number}`;
-}
+        <nav class="main-navigation">
 
+            <a href="index.html">
+                Home
+            </a>
 
-/* =========================================================
-   ALLEEN SPECIAL / EVENT POKEMON
-   ========================================================= */
+            <a href="hoofdpokedex.html">
+                Pokémon
+            </a>
 
-const specialPokemon = pokemonData
-    .filter((pokemon) => pokemon.event === true)
-    .sort((a, b) => a.number - b.number);
+            <a href="habitats.html">
+                Habitat
+            </a>
 
-
-/* =========================================================
-   TYPEFILTER VULLEN
-   ========================================================= */
-
-function fillTypeFilter() {
-    const types = new Set();
-
-    specialPokemon.forEach((pokemon) => {
-        pokemon.type.forEach((type) => {
-            types.add(type);
-        });
-    });
-
-    [...types]
-        .sort((a, b) => a.localeCompare(b, "nl"))
-        .forEach((type) => {
-            const option = document.createElement("option");
-
-            option.value = type;
-            option.textContent = type;
-
-            typeFilter.appendChild(option);
-        });
-}
-
-
-/* =========================================================
-   POKEMON KAART
-   ========================================================= */
-
-function createPokemonCard(pokemon) {
-    const number = String(pokemon.number).padStart(3, "0");
-
-    return `
-        <article class="pokemon-card">
+            <a href="bubbly-basin.html">
+                DLC
+            </a>
 
             <a
-                class="pokemon-detail-link"
-                href="${getPokemonDetailUrl(pokemon)}"
+                href="tips.html"
+                class="active"
             >
+                Tips
+            </a>
 
-                <img
-                    class="pokemon-image"
-                    src="${getPokemonImage(pokemon.name)}"
-                    alt="${pokemon.name}"
-                    loading="lazy"
-                >
+            <a href="#">
+                Favorieten
+            </a>
 
-                <h2>
-                    ${pokemon.name}
-                </h2>
+        </nav>
 
+    </header>
+
+
+
+    <section class="dna-banner">
+
+        <img
+            src="type-dna.png"
+            alt="Pokémon types"
+        >
+
+    </section>
+
+
+
+    <main class="tips-page">
+
+
+        <section class="tips-intro">
+
+            <a
+                href="index.html"
+                class="back-button"
+            >
+                ← Terug naar Home
             </a>
 
 
-            <p>
-                <strong>Nr:</strong>
-                ${number}
+            <p class="section-kicker">
+                💡 Tips
             </p>
 
 
-            <div class="pokemon-types">
-
-                ${pokemon.type
-                    .map((type) => {
-
-                        const typeClass = type
-                            .split(" ")[0]
-                            .toLowerCase();
-
-                        return `
-                            <span class="type-badge type-badge-${typeClass}">
-                                ${type}
-                            </span>
-                        `;
-
-                    })
-                    .join("")}
-
-            </div>
+            <h1>
+                Pokopia Tips & Tricks
+            </h1>
 
 
             <p>
-                <strong>
-                    ⭐ Special Pokémon (Event Pokémon)
-                </strong>
+                Handige tips om Pokémon te vinden,
+                habitats te bouwen en slimmer door
+                Pokémon Pokopia te spelen.
             </p>
 
 
-            <a
-                class="pokemon-detail-link"
-                href="${getPokemonDetailUrl(pokemon)}"
-            >
-                Bekijk alle informatie →
-            </a>
+            <p>
+                Bekijk per onderwerp de belangrijkste
+                tips en ontdek sneller wat je nodig hebt.
+            </p>
 
-        </article>
-    `;
-}
+        </section>
 
 
-/* =========================================================
-   FILTEREN + TONEN
-   ========================================================= */
 
-function renderPokemon() {
-    const searchValue = searchInput.value
-        .trim()
-        .toLowerCase();
-
-    const selectedType = typeFilter.value;
-
-    const filtered = specialPokemon.filter((pokemon) => {
-        const number = String(pokemon.number).padStart(3, "0");
-
-        const matchesSearch =
-            !searchValue ||
-            pokemon.name.toLowerCase().includes(searchValue) ||
-            number.includes(searchValue) ||
-            String(pokemon.number).includes(searchValue);
-
-        const matchesType =
-            selectedType === "all" ||
-            pokemon.type.includes(selectedType);
-
-        return matchesSearch && matchesType;
-    });
+        <section class="tips-grid">
 
 
-    if (!filtered.length) {
-        app.innerHTML = `
-            <section class="detail-block">
+            <!-- =========================================
+                 BEGINNEN
+                 ========================================= -->
+
+            <article class="tip-category-card">
+
+                <div class="tip-category-icon">
+                    🌱
+                </div>
+
                 <h2>
-                    Geen Special Pokémon gevonden
-                    (No Special Pokémon Found)
+                    Beginnen
+                    <span>(Getting Started)</span>
                 </h2>
 
-                <p>
-                    Probeer een andere naam, nummer of type.
-                    (Try another name, number or type.)
-                </p>
-            </section>
-        `;
 
-        return;
-    }
+                <div class="tip-list">
 
+                    <div class="tip-item">
 
-    app.innerHTML = filtered
-        .map(createPokemonCard)
-        .join("");
-}
+                        <h3>
+                            Verken eerst je omgeving
+                            (Explore Your Area First)
+                        </h3>
 
+                        <p>
+                            Kijk eerst goed rond voordat je
+                            direct begint met bouwen.
+                            Zo zie je welke ruimte je hebt
+                            en waar je jouw habitats handig
+                            kunt plaatsen.
+                        </p>
 
-/* =========================================================
-   EVENTS
-   ========================================================= */
-
-searchInput.addEventListener(
-    "input",
-    renderPokemon
-);
-
-typeFilter.addEventListener(
-    "change",
-    renderPokemon
-);
+                    </div>
 
 
-/* =========================================================
-   START
-   ========================================================= */
+                    <div class="tip-item">
 
-fillTypeFilter();
-renderPokemon();
+                        <h3>
+                            Verzamel materialen
+                            (Collect Materials)
+                        </h3>
+
+                        <p>
+                            Neem onderweg zoveel mogelijk
+                            bruikbare materialen mee.
+                            Veel voorwerpen heb je later
+                            nodig om habitats en andere
+                            onderdelen te bouwen.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Werk stap voor stap
+                            (Work Step by Step)
+                        </h3>
+
+                        <p>
+                            Probeer niet alles tegelijk te
+                            bouwen. Kies eerst één Pokémon
+                            of habitat en verzamel daarvoor
+                            de benodigde onderdelen.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================================
+                 HABITATS
+                 ========================================= -->
+
+            <article class="tip-category-card">
+
+                <div class="tip-category-icon">
+                    🌿
+                </div>
+
+                <h2>
+                    Habitats bouwen
+                    <span>(Building Habitats)</span>
+                </h2>
+
+
+                <div class="tip-list">
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Controleer de benodigdheden
+                            (Check the Requirements)
+                        </h3>
+
+                        <p>
+                            Iedere habitat heeft zijn eigen
+                            benodigdheden. Bekijk daarom
+                            eerst op de Habitats-pagina
+                            welke voorwerpen je precies
+                            nodig hebt.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Bouw gericht
+                            (Build With a Goal)
+                        </h3>
+
+                        <p>
+                            Wil je een bepaalde Pokémon?
+                            Zoek eerst op welke habitat
+                            daarbij hoort en bouw daarna
+                            alleen wat daarvoor nodig is.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Controleer alle voorwaarden
+                            (Check All Conditions)
+                        </h3>
+
+                        <p>
+                            Alleen de juiste voorwerpen
+                            neerzetten is niet altijd
+                            voldoende. Controleer ook
+                            eventuele locatie-, tijd- en
+                            weervoorwaarden.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================================
+                 POKEMON VINDEN
+                 ========================================= -->
+
+            <article class="tip-category-card">
+
+                <div class="tip-category-icon">
+                    🔎
+                </div>
+
+                <h2>
+                    Pokémon vinden
+                    <span>(Finding Pokémon)</span>
+                </h2>
+
+
+                <div class="tip-list">
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Gebruik de zoekfunctie
+                            (Use the Search Function)
+                        </h3>
+
+                        <p>
+                            Zoek een Pokémon op naam of
+                            nummer. Zo kom je snel bij de
+                            informatie over locatie,
+                            habitat en benodigdheden.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Bekijk meerdere habitats
+                            (Check Multiple Habitats)
+                        </h3>
+
+                        <p>
+                            Sommige Pokémon kunnen op
+                            meerdere manieren verschijnen.
+                            Controleer daarom alle habitats
+                            die op de Pokémon-pagina staan.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Lees de Persoonlijke tip
+                            (Personal Tip)
+                        </h3>
+
+                        <p>
+                            Bij iedere Pokémon proberen we
+                            een korte tip te geven over de
+                            handigste plek of manier om
+                            deze Pokémon te vinden.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================================
+                 TIJD EN WEER
+                 ========================================= -->
+
+            <article class="tip-category-card">
+
+                <div class="tip-category-icon">
+                    ☀️
+                </div>
+
+                <h2>
+                    Tijd & weer
+                    <span>(Time & Weather)</span>
+                </h2>
+
+
+                <div class="tip-list">
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Let op het tijdstip
+                            (Check the Time)
+                        </h3>
+
+                        <p>
+                            Sommige Pokémon verschijnen
+                            alleen op bepaalde momenten.
+                            Controleer bijvoorbeeld of een
+                            Pokémon overdag of 's nachts
+                            beschikbaar is.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Controleer het weer
+                            (Check the Weather)
+                        </h3>
+
+                        <p>
+                            Het weer kan invloed hebben op
+                            wanneer een Pokémon verschijnt.
+                            Bekijk daarom altijd de
+                            informatie bij Tijd (Time) en
+                            Weer (Weather).
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Kom later terug
+                            (Come Back Later)
+                        </h3>
+
+                        <p>
+                            Staat alles goed maar verschijnt
+                            de Pokémon niet? Controleer dan
+                            opnieuw op een ander tijdstip
+                            of bij andere
+                            weersomstandigheden.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================================
+                 BUBBLY BASIN
+                 ========================================= -->
+
+            <article class="tip-category-card">
+
+                <div class="tip-category-icon">
+                    🫧
+                </div>
+
+                <h2>
+                    Bubbly Basin DLC
+                </h2>
+
+
+                <div class="tip-list">
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Gebruik de aparte DLC-pagina
+                            (Use the Separate DLC Page)
+                        </h3>
+
+                        <p>
+                            De Pokémon uit Bubbly Basin
+                            staan apart van de
+                            Hoofd-Pokédex. Gebruik de
+                            Bubbly Basin-pagina om alleen
+                            deze Pokémon te bekijken.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Bekijk DLC-habitats apart
+                            (Check DLC Habitats Separately)
+                        </h3>
+
+                        <p>
+                            Op de Habitats-pagina kun je
+                            wisselen tussen habitats uit
+                            de Hoofd-Pokédex en habitats
+                            uit Bubbly Basin.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Controleer de DLC-status
+                            (Check DLC Status)
+                        </h3>
+
+                        <p>
+                            Een Pokémon met het
+                            Bubbly Basin-label hoort bij
+                            de DLC en niet bij de gewone
+                            Hoofd-Pokédex.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =========================================
+                 SPECIAL POKEMON
+                 ========================================= -->
+
+            <article class="tip-category-card">
+
+                <div class="tip-category-icon">
+                    ⭐
+                </div>
+
+                <h2>
+                    Special Pokémon
+                    <span>(Special Pokémon)</span>
+                </h2>
+
+
+                <div class="tip-list">
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Controleer de Special Pokémon-pagina
+                            (Check the Special Pokémon Page)
+                        </h3>
+
+                        <p>
+                            Speciale Pokémon en
+                            Event Pokémon
+                            (Event Pokémon) worden apart
+                            weergegeven zodat je ze snel
+                            terug kunt vinden.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Let op bijzondere voorwaarden
+                            (Check Special Requirements)
+                        </h3>
+
+                        <p>
+                            Speciale Pokémon kunnen andere
+                            voorwaarden hebben dan gewone
+                            Pokémon. Controleer daarom
+                            altijd de volledige
+                            Pokémon-pagina.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip-item">
+
+                        <h3>
+                            Bekijk evenementen
+                            (Check Events)
+                        </h3>
+
+                        <p>
+                            Event Pokémon kunnen gekoppeld
+                            zijn aan een speciaal evenement.
+                            Controleer daarom goed of een
+                            evenement actief of beschikbaar
+                            is.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer class="site-footer">
+
+        <p>
+            NLPokopia — Nederlandse Pokémon Pokopia
+            informatiegids
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -71,6 +71,8 @@ function createPokemonCard(pokemon) {
     return `
         <article class="pokemon-card">
 
+        ${createFavoriteButton(pokemon, "event")}
+
             <a
                 class="pokemon-detail-link"
                 href="${getPokemonDetailUrl(pokemon)}"

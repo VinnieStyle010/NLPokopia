@@ -126,7 +126,39 @@ function getRequirementImage(requirementText) {
 
     return `images/items/${fileName}.png`;
 }
+function splitRequirementItems(text) {
 
+    if (!text) {
+        return [];
+    }
+
+    const items = [];
+    const quantityRegex = /[×x]\s*\d+/gi;
+
+    let start = 0;
+    let match;
+
+    while ((match = quantityRegex.exec(text)) !== null) {
+
+        let item =
+            text
+                .slice(start, quantityRegex.lastIndex)
+                .trim();
+
+        item =
+            item
+                .replace(/^[,;]\s*/, "")
+                .trim();
+
+        if (item) {
+            items.push(item);
+        }
+
+        start = quantityRegex.lastIndex;
+    }
+
+    return items;
+}
 /* =========================================================
    BENODIGDHEDEN VAN EEN HABITAT
    ========================================================= */
@@ -169,10 +201,7 @@ function getHabitatRequirements(pokemonList, habitatName) {
             result = result.split(" OF ")[0];
         }
 
-        return result
-            .split(";")
-            .map((item) => item.trim())
-            .filter(Boolean);
+return splitRequirementItems(result);
     }
 
     return [];

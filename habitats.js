@@ -418,10 +418,47 @@ function renderHabitats() {
     }
 
 
-    habitatApp.innerHTML =
-        filtered
-            .map(createHabitatCard)
-            .join("");
+habitatApp.innerHTML =
+    filtered
+        .map(createHabitatCard)
+        .join("");
+
+
+document
+    .querySelectorAll(".habitat-favorite-button")
+    .forEach((button) => {
+
+        button.addEventListener("click", (event) => {
+
+            event.preventDefault();
+            event.stopPropagation();
+
+            const habitatName =
+                button.dataset.habitatName;
+
+            const section =
+                button.dataset.habitatSection;
+
+            const active =
+                toggleHabitatFavorite(
+                    habitatName,
+                    section
+                );
+
+            button.classList.toggle(
+                "is-favorite",
+                active
+            );
+
+            button.textContent =
+                active
+                    ? "❤️"
+                    : "🤍";
+
+            renderFloatingFavorites();
+        });
+
+    });
 }
 
 

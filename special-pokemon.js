@@ -188,6 +188,39 @@ function renderPokemon() {
     app.innerHTML = filtered
         .map(createPokemonCard)
         .join("");
+    document
+    .querySelectorAll(".favorite-button")
+    .forEach((button) => {
+
+        button.addEventListener("click", (event) => {
+
+            const number = Number(
+                button.dataset.favoriteNumber
+            );
+
+            const name =
+                button.dataset.favoriteName;
+
+            const pokemon =
+                specialPokemon.find(
+                    (item) =>
+                        item.number === number &&
+                        item.name === name
+                );
+
+            if (!pokemon) {
+                return;
+            }
+
+            handleFavoriteButtonClick(
+                event,
+                pokemon,
+                "event"
+            );
+
+        });
+
+    });
 }
 
 

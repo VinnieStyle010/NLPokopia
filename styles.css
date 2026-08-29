@@ -5732,3 +5732,40 @@ header,
     align-items: center;
     gap: 10px;
 }
+/* =========================================================
+   HABITAT BENODIGDHEDEN - ITEM AFBEELDINGEN
+   ========================================================= */
+
+.requirement-icon {
+    width: 52px;
+    min-width: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.requirement-item-image {
+    width: 48px;
+    height: 48px;
+
+    object-fit: contain;
+    display: block;
+}
+
+.requirement-item-fallback {
+    width: 48px;
+    height: 48px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.7rem;
+}
+
+.habitat-requirement-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

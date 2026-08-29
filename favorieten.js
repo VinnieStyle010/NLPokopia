@@ -314,8 +314,94 @@ function createPokemonCard(pokemon) {
         </article>
     `;
 }
+   function createHabitatFavoriteCard(habitat) {
+
+    const sectionLabel =
+        habitat.section === "dlc"
+            ? "🫧 Bubbly Basin DLC"
+            : "🌿 Hoofdspel";
 
 
+    return `
+        <article class="habitat-overview-card favorite-habitat-card">
+
+            <button
+                type="button"
+                class="habitat-favorite-page-button"
+                data-favorite-id="${habitat.id}"
+                aria-label="Verwijder ${habitat.name} uit favorieten"
+                title="Verwijder uit favorieten"
+            >
+                ❤️
+            </button>
+
+
+            <div class="habitat-card-heading">
+
+                <span class="habitat-card-icon">
+                    ${habitat.section === "dlc" ? "🫧" : "🌿"}
+                </span>
+
+                <div>
+
+                    <h3>
+                        ${habitat.name}
+                    </h3>
+
+                    <small>
+                        ${sectionLabel}
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="habitats.html"
+                class="pokemon-detail-link"
+            >
+                Bekijk habitat →
+            </a>
+
+        </article>
+    `;
+}
+
+
+function activateHabitatFavoriteButtons() {
+
+    document
+        .querySelectorAll(
+            ".habitat-favorite-page-button"
+        )
+        .forEach((button) => {
+
+            button.addEventListener(
+                "click",
+                () => {
+
+                    const favoriteId =
+                        button.dataset.favoriteId;
+
+
+                    const favorites =
+                        getFavorites().filter(
+                            (favorite) =>
+                                favorite.id !== favoriteId
+                        );
+
+
+                    saveFavorites(favorites);
+
+                    renderFavorites();
+
+                    renderFloatingFavorites();
+                }
+            );
+
+        });
+}
 /* =========================================================
    FAVORIETEN KNOPPEN ACTIVEREN
    ========================================================= */
@@ -405,7 +491,15 @@ function renderFavorites() {
         getFavoritePokemon();
 
 
-    const filtered =
+    const habitatList =
+        getFavoriteHabitats();
+
+
+    /* =====================================================
+       POKEMON FILTEREN
+       ===================================================== */
+
+    const filteredPokemon =
         pokemonList.filter((pokemon) => {
 
             const number =
@@ -425,8 +519,7 @@ function renderFavorites() {
 
             const matchesSection =
                 selectedSection === "all" ||
-                pokemon.section ===
-                    selectedSection;
+                pokemon.section === selectedSection;
 
 
             const types =
@@ -445,13 +538,46 @@ function renderFavorites() {
                 matchesSection &&
                 matchesType
             );
-
         });
 
 
-    /* Nog helemaal geen favorieten */
+    /* =====================================================
+       HABITATS FILTEREN
+       ===================================================== */
 
-    if (!pokemonList.length) {
+    const filteredHabitats =
+        habitatList.filter((habitat) => {
+
+            const matchesSearch =
+                !searchValue ||
+                habitat.name
+                    .toLowerCase()
+                    .includes(searchValue);
+
+
+            const matchesSection =
+                selectedSection === "all" ||
+                habitat.section === selectedSection;
+
+
+            const matchesType =
+                selectedType === "all";
+
+
+            return (
+                matchesSearch &&
+                matchesSection &&
+                matchesType
+            );
+        });
+
+
+    /* GEEN FAVORIETEN */
+
+    if (
+        !pokemonList.length &&
+        !habitatList.length
+    ) {
 
         app.innerHTML = `
             <section class="detail-block">
@@ -461,22 +587,9 @@ function renderFavorites() {
                 </h2>
 
                 <p>
-                    Je hebt nog geen Pokémon als
-                    favoriet opgeslagen.
+                    Je hebt nog geen Pokémon of habitats
+                    als favoriet opgeslagen.
                 </p>
-
-                <p>
-                    Ga naar de Hoofd-Pokédex,
-                    Special Pokémon of Bubbly Basin
-                    en klik op 🤍 bij een Pokémon.
-                </p>
-
-                <a
-                    href="hoofdpokedex.html"
-                    class="back-button"
-                >
-                    Bekijk de Hoofd-Pokédex →
-                </a>
 
             </section>
         `;
@@ -485,9 +598,12 @@ function renderFavorites() {
     }
 
 
-    /* Filters leveren niets op */
+    /* FILTER GEEFT GEEN RESULTATEN */
 
-    if (!filtered.length) {
+    if (
+        !filteredPokemon.length &&
+        !filteredHabitats.length
+    ) {
 
         app.innerHTML = `
             <section class="detail-block">
@@ -508,15 +624,66 @@ function renderFavorites() {
     }
 
 
-    /* Kaarten tonen */
-
-    app.innerHTML =
-        filtered
-            .map(createPokemonCard)
-            .join("");
+    let html = "";
 
 
-    activateFavoriteButtons(filtered);
+    /* POKEMON */
+
+    if (filteredPokemon.length) {
+
+        html += `
+            <section class="favorites-category">
+
+                <h2 class="favorites-category-title">
+                    🔴 Pokémon
+                </h2>
+
+                <div class="favorites-category-grid">
+
+                    ${filteredPokemon
+                        .map(createPokemonCard)
+                        .join("")}
+
+                </div>
+
+            </section>
+        `;
+    }
+
+
+    /* HABITATS */
+
+    if (filteredHabitats.length) {
+
+        html += `
+            <section class="favorites-category">
+
+                <h2 class="favorites-category-title">
+                    🌿 Habitats
+                </h2>
+
+                <div class="favorites-category-grid">
+
+                    ${filteredHabitats
+                        .map(createHabitatFavoriteCard)
+                        .join("")}
+
+                </div>
+
+            </section>
+        `;
+    }
+
+
+    app.innerHTML = html;
+
+
+    activateFavoriteButtons(
+        filteredPokemon
+    );
+
+
+    activateHabitatFavoriteButtons();
 }
 
 

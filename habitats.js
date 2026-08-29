@@ -268,10 +268,27 @@ function createHabitatCard(habitat) {
                     src="${getRequirementImage(item)}"
                     alt=""
                     class="requirement-item-image"
+                    onerror="
+                        this.style.display='none';
+                        this.nextElementSibling.style.display='inline-flex';
+                    "
                 >
+
+                <span
+                    class="requirement-item-fallback"
+                    style="display:none;"
+                >
+                    🧱
+                </span>
             `
-            : "🧱"
+            : `
+                <span class="requirement-item-fallback">
+                    🧱
+                </span>
+            `
     }
+
+</span>
 
 </span>
 

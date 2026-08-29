@@ -322,7 +322,42 @@ function getPokemonUrl(pokemon) {
 
     return `pokemon.html?section=${section}&number=${pokemon.number}`;
 }
+// =========================================================
+// TYPE REQUIREMENT BEPALEN
+// =========================================================
 
+function getRequirementType(item) {
+
+    if (!item) {
+        return "item";
+    }
+
+    const text = item.toLowerCase();
+
+    const conditions = [
+        "weather",
+        "weer",
+        "time",
+        "tijd",
+        "night",
+        "nacht",
+        "day",
+        "dag",
+        "rain",
+        "regen",
+        "sun",
+        "zon"
+    ];
+
+    const isCondition =
+        conditions.some((condition) =>
+            text.includes(condition)
+        );
+
+    return isCondition
+        ? "condition"
+        : "item";
+}
 
 /* =========================================================
    HABITAT KAART

@@ -80,6 +80,8 @@ function createPokemonCard(pokemon) {
 
     return `
         <article class="pokemon-card">
+        
+        ${createFavoriteButton(pokemon, "base")}
 
             <a
                 class="pokemon-detail-link"

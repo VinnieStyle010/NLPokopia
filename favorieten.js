@@ -152,54 +152,6 @@ function getFavoriteHabitats() {
                     "nl"
                 )
         );
-}
-
-
-            /* Special Pokémon */
-
-            if (favorite.section === "event") {
-
-                pokemon = pokemonData.find(
-                    (item) =>
-                        item.number === favorite.number &&
-                        item.name === favorite.name &&
-                        item.event === true
-                );
-
-            }
-
-
-            /* Bubbly Basin */
-
-            if (favorite.section === "dlc") {
-
-                pokemon = pokemonDLC.find(
-                    (item) =>
-                        item.number === favorite.number &&
-                        item.name === favorite.name
-                );
-
-            }
-
-
-            if (!pokemon) {
-
-                return {
-                    ...favorite,
-                    section: favorite.section
-                };
-
-            }
-
-
-            return {
-                ...pokemon,
-                section: favorite.section
-            };
-
-        })
-        .filter(Boolean);
-}
 
 
 /* =========================================================

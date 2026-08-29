@@ -5107,3 +5107,20 @@ header,
     }
 
 }
+/* =========================================================
+   DNA BANNER ALLEEN OP TIPS-PAGINA
+   ========================================================= */
+
+body:has(.tips-page) .dna-banner {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+body:has(.tips-page) .dna-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}

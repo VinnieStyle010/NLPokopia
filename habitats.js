@@ -44,6 +44,70 @@ function splitHabitats(habitatText) {
             !/^[A-Z]\)$/i.test(habitat)
         );
 }
+
+/* =========================================================
+   AFBEELDINGEN VAN BENODIGDHEDEN
+   ========================================================= */
+
+const requirementImages = {
+
+    "Hoog gras (Tall Grass)":
+        "images/items/tall-grass.png",
+
+    "Wilde bloemen (Wildflowers)":
+        "images/items/wildflowers.png",
+
+    "Grote boom (Large Tree)":
+        "images/items/large-tree.png",
+
+    "Grote rots (Large Boulder)":
+        "images/items/large-boulder.png",
+
+    "Water":
+        "images/items/water.png",
+
+    "Zeegras (Seabed Tall Grass)":
+        "images/items/seabed-tall-grass.png",
+
+    "Zeebloemen (Seabed Flowers)":
+        "images/items/seabed-flowers.png",
+
+    "Klein koraal (Small Coral)":
+        "images/items/small-coral.png",
+
+    "Hoog koraal (Tall Coral)":
+        "images/items/tall-coral.png",
+
+    "Kleurrijk koraal (Colorful Coral)":
+        "images/items/colorful-coral.png"
+};
+
+
+function getRequirementImage(requirementText) {
+
+    const cleanText =
+        requirementText
+            .replace(/×\s*\d+/gi, "")
+            .trim();
+
+
+    for (const [itemName, image] of
+        Object.entries(requirementImages)) {
+
+        if (
+            cleanText
+                .toLowerCase()
+                .includes(
+                    itemName.toLowerCase()
+                )
+        ) {
+            return image;
+        }
+    }
+
+
+    return null;
+}
 /* =========================================================
    BENODIGDHEDEN VAN EEN HABITAT
    ========================================================= */
@@ -204,9 +268,21 @@ function createHabitatCard(habitat) {
                 return `
                     <div class="habitat-requirement-item">
 
-                        <span class="requirement-icon">
-                            🧱
-                        </span>
+<span class="requirement-icon">
+
+    ${
+        getRequirementImage(item)
+            ? `
+                <img
+                    src="${getRequirementImage(item)}"
+                    alt=""
+                    class="requirement-item-image"
+                >
+            `
+            : "🧱"
+    }
+
+</span>
 
                         <span>
                             ${item}

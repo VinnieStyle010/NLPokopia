@@ -5649,3 +5649,17 @@ header,
     }
 
 }
+/* Favorieten groepen */
+
+.floating-favorites-group {
+    margin-bottom: 14px;
+}
+
+.floating-favorites-group-title {
+    margin: 8px 6px 10px;
+
+    font-size: 0.9rem;
+    font-weight: 800;
+
+    opacity: 0.8;
+}

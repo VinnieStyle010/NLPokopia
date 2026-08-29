@@ -5663,3 +5663,45 @@ header,
 
     opacity: 0.8;
 }
+/* =========================================================
+   FAVORIETEN PAGINA - GROEPEN
+   ========================================================= */
+
+#app:has(.favorites-category) {
+    display: block;
+}
+
+.favorites-category {
+    width: 100%;
+    margin-bottom: 34px;
+}
+
+.favorites-category-title {
+    margin: 0 0 18px;
+    font-size: 1.45rem;
+    font-weight: 800;
+}
+
+.favorites-category-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.favorite-habitat-card {
+    position: relative;
+}
+
+.habitat-favorite-page-button {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 5;
+
+    border: none;
+    background: transparent;
+
+    font-size: 1.7rem;
+    cursor: pointer;
+}

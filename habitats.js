@@ -283,6 +283,25 @@ function createHabitatCard(habitat) {
     const requirementsHtml = requirements.length
         ? requirements
             .map((item) => {
+                const requirementType =
+    getRequirementType(item);
+
+if (requirementType === "condition") {
+
+    return `
+        <div class="habitat-requirement-item habitat-condition-item">
+
+            <span class="requirement-icon">
+                📌
+            </span>
+
+            <span>
+                ${item}
+            </span>
+
+        </div>
+    `;
+}
 
                 return `
                     <div class="habitat-requirement-item">

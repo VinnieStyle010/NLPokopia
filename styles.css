@@ -5107,4 +5107,89 @@ header,
     }
 
 }
+/* =========================================================
+   FAVORIETEN KNOP OP POKEMON KAARTEN
+   ========================================================= */
 
+.pokemon-card {
+    position: relative;
+}
+
+
+.favorite-button {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.78);
+
+    font-size: 1.55rem;
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.22);
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    transition:
+        transform 0.18s ease,
+        background 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+
+.favorite-button:hover {
+    transform: scale(1.12);
+
+    background: rgba(255, 255, 255, 0.95);
+
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, 0.28);
+}
+
+
+.favorite-button:active {
+    transform: scale(0.95);
+}
+
+
+.favorite-button.is-favorite {
+    background: rgba(255, 230, 235, 0.95);
+
+    border-color: rgba(255, 90, 120, 0.7);
+
+    box-shadow:
+        0 5px 16px rgba(210, 30, 70, 0.35);
+}
+
+
+/* Mobiel */
+
+@media (max-width: 700px) {
+
+    .favorite-button {
+        top: 10px;
+        right: 10px;
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 1.4rem;
+    }
+
+}

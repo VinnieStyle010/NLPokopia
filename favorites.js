@@ -431,7 +431,7 @@ function renderFloatingFavorites() {
 
 
     const favorites =
-        getFavoritePanelPokemon();
+        getFavorites();
 
 
     count.textContent =
@@ -445,15 +445,9 @@ function renderFloatingFavorites() {
                 return true;
             }
 
-            return (
-                favorite.name
-                    .toLowerCase()
-                    .includes(searchValue) ||
-
-                String(favorite.number)
-                    .includes(searchValue)
-            );
-
+            return favorite.name
+                .toLowerCase()
+                .includes(searchValue);
         });
 
 
@@ -481,8 +475,39 @@ function renderFloatingFavorites() {
     }
 
 
-    list.innerHTML =
-        filtered
+    const pokemonFavorites =
+        filtered.filter(
+            (favorite) =>
+                favorite.favoriteType !== "habitat"
+        );
+
+
+    const habitatFavorites =
+        filtered.filter(
+            (favorite) =>
+                favorite.favoriteType === "habitat"
+        );
+
+
+    let html = "";
+
+
+    /* =====================================================
+       POKEMON
+       ===================================================== */
+
+    if (pokemonFavorites.length) {
+
+        html += `
+            <div class="floating-favorites-group">
+
+                <h4 class="floating-favorites-group-title">
+                    🔴 Pokémon
+                </h4>
+        `;
+
+
+        html += pokemonFavorites
             .map((favorite) => {
 
                 const number =
@@ -497,6 +522,7 @@ function renderFloatingFavorites() {
                             href="${getFavoriteDetailUrl(favorite)}"
                             class="floating-favorite-link"
                         >
+
                             <span class="floating-favorite-number">
                                 #${number}
                             </span>
@@ -504,6 +530,7 @@ function renderFloatingFavorites() {
                             <span class="floating-favorite-name">
                                 ${favorite.name}
                             </span>
+
                         </a>
 
 
@@ -523,6 +550,85 @@ function renderFloatingFavorites() {
             })
             .join("");
 
+
+        html += `
+            </div>
+        `;
+    }
+
+
+    /* =====================================================
+       HABITATS
+       ===================================================== */
+
+    if (habitatFavorites.length) {
+
+        html += `
+            <div class="floating-favorites-group">
+
+                <h4 class="floating-favorites-group-title">
+                    🌿 Habitats
+                </h4>
+        `;
+
+
+        html += habitatFavorites
+            .map((favorite) => {
+
+                const sectionLabel =
+                    favorite.section === "dlc"
+                        ? "🫧 DLC"
+                        : "🌿 Hoofdspel";
+
+
+                return `
+                    <div class="floating-favorite-item">
+
+                        <a
+                            href="habitats.html"
+                            class="floating-favorite-link"
+                        >
+
+                            <span class="floating-favorite-number">
+                                ${sectionLabel}
+                            </span>
+
+                            <span class="floating-favorite-name">
+                                ${favorite.name}
+                            </span>
+
+                        </a>
+
+
+                        <button
+                            type="button"
+                            class="floating-favorite-remove"
+                            data-favorite-id="${favorite.id}"
+                            aria-label="Verwijder ${favorite.name} uit favorieten"
+                            title="Verwijder uit favorieten"
+                        >
+                            ❤️
+                        </button>
+
+                    </div>
+                `;
+
+            })
+            .join("");
+
+
+        html += `
+            </div>
+        `;
+    }
+
+
+    list.innerHTML = html;
+
+
+    /* =====================================================
+       VERWIJDERKNOPPEN
+       ===================================================== */
 
     panel
         .querySelectorAll(".floating-favorite-remove")
@@ -549,10 +655,7 @@ function renderFloatingFavorites() {
                     renderFloatingFavorites();
 
 
-                    /*
-                     * Als er hartjes zichtbaar zijn op
-                     * de huidige pagina, die ook bijwerken.
-                     */
+                    /* Pokémon-hartjes bijwerken */
 
                     document
                         .querySelectorAll(".favorite-button")
@@ -570,7 +673,29 @@ function renderFloatingFavorites() {
 
                                 favoriteButton.textContent =
                                     "🤍";
+                            }
 
+                        });
+
+
+                    /* Habitat-hartjes bijwerken */
+
+                    document
+                        .querySelectorAll(".habitat-favorite-button")
+                        .forEach((favoriteButton) => {
+
+                            const id =
+                                `habitat-${favoriteButton.dataset.habitatSection}-${favoriteButton.dataset.habitatName}`;
+
+
+                            if (id === favoriteId) {
+
+                                favoriteButton.classList.remove(
+                                    "is-favorite"
+                                );
+
+                                favoriteButton.textContent =
+                                    "🤍";
                             }
 
                         });

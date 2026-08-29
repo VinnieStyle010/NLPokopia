@@ -256,6 +256,8 @@ function createHabitatCard(habitat) {
     return `
         <article class="habitat-overview-card">
 
+        ${createHabitatFavoriteButton(habitat.name, currentSection)}
+
 
             <!-- HABITAT -->
 

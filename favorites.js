@@ -227,6 +227,170 @@ function handleFavoriteButtonClick(event, pokemon, section = "base") {
     );
 }
 /* =========================================================
+   HABITAT FAVORIETEN
+   ========================================================= */
+
+function getHabitatFavoriteId(
+    habitatName,
+    section = "base"
+) {
+    return `habitat-${section}-${habitatName}`;
+}
+
+
+function isHabitatFavorite(
+    habitatName,
+    section = "base"
+) {
+
+    const favorites = getFavorites();
+
+    const favoriteId =
+        getHabitatFavoriteId(
+            habitatName,
+            section
+        );
+
+
+    return favorites.some(
+        (favorite) =>
+            favorite.id === favoriteId
+    );
+}
+
+
+function addHabitatFavorite(
+    habitatName,
+    section = "base"
+) {
+
+    const favorites = getFavorites();
+
+    const favoriteId =
+        getHabitatFavoriteId(
+            habitatName,
+            section
+        );
+
+
+    if (
+        favorites.some(
+            (favorite) =>
+                favorite.id === favoriteId
+        )
+    ) {
+        return;
+    }
+
+
+    favorites.push({
+
+        id: favoriteId,
+
+        favoriteType: "habitat",
+
+        name: habitatName,
+
+        section: section
+
+    });
+
+
+    saveFavorites(favorites);
+}
+
+
+function removeHabitatFavorite(
+    habitatName,
+    section = "base"
+) {
+
+    const favoriteId =
+        getHabitatFavoriteId(
+            habitatName,
+            section
+        );
+
+
+    const favorites =
+        getFavorites().filter(
+            (favorite) =>
+                favorite.id !== favoriteId
+        );
+
+
+    saveFavorites(favorites);
+}
+
+
+function toggleHabitatFavorite(
+    habitatName,
+    section = "base"
+) {
+
+    if (
+        isHabitatFavorite(
+            habitatName,
+            section
+        )
+    ) {
+
+        removeHabitatFavorite(
+            habitatName,
+            section
+        );
+
+        return false;
+    }
+
+
+    addHabitatFavorite(
+        habitatName,
+        section
+    );
+
+    return true;
+}
+
+
+/* =========================================================
+   HABITAT HARTJE
+   ========================================================= */
+
+function createHabitatFavoriteButton(
+    habitatName,
+    section = "base"
+) {
+
+    const active =
+        isHabitatFavorite(
+            habitatName,
+            section
+        );
+
+
+    return `
+        <button
+            type="button"
+            class="habitat-favorite-button ${active ? "is-favorite" : ""}"
+            data-habitat-name="${habitatName}"
+            data-habitat-section="${section}"
+            aria-label="${
+                active
+                    ? "Verwijder habitat uit favorieten"
+                    : "Voeg habitat toe aan favorieten"
+            }"
+            title="${
+                active
+                    ? "Verwijder uit favorieten"
+                    : "Voeg toe aan favorieten"
+            }"
+        >
+            ${active ? "❤️" : "🤍"}
+        </button>
+    `;
+}
+/* =========================================================
    ZWEVEND FAVORIETENPANEEL
    ========================================================= */
 

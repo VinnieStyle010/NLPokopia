@@ -5113,7 +5113,7 @@ header,
 
 body:has(.tips-page) .dna-banner {
     width: 100%;
-    height: 180px;
+    height: 140px;
     overflow: hidden;
 }
 

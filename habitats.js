@@ -44,7 +44,32 @@ function splitHabitats(habitatText) {
             !/^[A-Z]\)$/i.test(habitat)
         );
 }
+function getRequirementType(requirementText) {
 
+    if (!requirementText) {
+        return "item";
+    }
+
+    const text = requirementText.toLowerCase();
+
+    const conditions = [
+        "high-up location",
+        "hoge locatie",
+        "palette town only",
+        "alleen palette town",
+        "no habitat materials required",
+        "geen habitatmaterialen nodig"
+    ];
+
+    const isCondition =
+        conditions.some((condition) =>
+            text.includes(condition)
+        );
+
+    return isCondition
+        ? "condition"
+        : "item";
+}
 /* =========================================================
    AUTOMATISCHE ITEM AFBEELDINGEN
    ========================================================= */

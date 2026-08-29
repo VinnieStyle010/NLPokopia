@@ -601,10 +601,265 @@ function createFloatingFavoritesPanel() {
 
 
 /* =========================================================
-   FAVORIETENPANEEL STARTEN
+   ZWEVEND HARTJE VERSLEEPBAAR MAKEN
+   ========================================================= */
+
+function makeFloatingFavoritesDraggable() {
+
+    const wrapper =
+        document.getElementById("floatingFavoritesPanel");
+
+    const button =
+        document.getElementById("floatingFavoritesToggle");
+
+
+    if (!wrapper || !button) {
+        return;
+    }
+
+
+    /* Eerder gekozen positie terugzetten */
+
+    const savedPosition =
+        localStorage.getItem(
+            "nlpokopia-favorites-position"
+        );
+
+
+    if (savedPosition) {
+
+        try {
+
+            const position =
+                JSON.parse(savedPosition);
+
+
+            wrapper.style.left =
+                `${position.x}px`;
+
+            wrapper.style.top =
+                `${position.y}px`;
+
+            wrapper.style.right =
+                "auto";
+
+            wrapper.style.bottom =
+                "auto";
+
+            wrapper.style.transform =
+                "none";
+
+        } catch (error) {
+
+            console.error(
+                "Favorietenpositie kon niet worden geladen.",
+                error
+            );
+
+        }
+
+    }
+
+
+    let dragging = false;
+
+    let moved = false;
+
+    let offsetX = 0;
+    let offsetY = 0;
+
+
+    button.addEventListener(
+        "pointerdown",
+        (event) => {
+
+            /*
+             * Alleen primaire muisknop.
+             */
+
+            if (
+                event.pointerType === "mouse" &&
+                event.button !== 0
+            ) {
+                return;
+            }
+
+
+            const rect =
+                wrapper.getBoundingClientRect();
+
+
+            dragging = true;
+            moved = false;
+
+
+            offsetX =
+                event.clientX - rect.left;
+
+            offsetY =
+                event.clientY - rect.top;
+
+
+            button.setPointerCapture(
+                event.pointerId
+            );
+
+        }
+    );
+
+
+    button.addEventListener(
+        "pointermove",
+        (event) => {
+
+            if (!dragging) {
+                return;
+            }
+
+
+            let x =
+                event.clientX - offsetX;
+
+            let y =
+                event.clientY - offsetY;
+
+
+            /*
+             * Binnen het scherm houden.
+             */
+
+            const maxX =
+                window.innerWidth -
+                button.offsetWidth;
+
+            const maxY =
+                window.innerHeight -
+                button.offsetHeight;
+
+
+            x = Math.max(
+                0,
+                Math.min(x, maxX)
+            );
+
+
+            y = Math.max(
+                0,
+                Math.min(y, maxY)
+            );
+
+
+            /*
+             * Pas na een kleine beweging
+             * behandelen als slepen.
+             */
+
+            if (
+                Math.abs(
+                    event.movementX
+                ) > 1 ||
+                Math.abs(
+                    event.movementY
+                ) > 1
+            ) {
+                moved = true;
+            }
+
+
+            wrapper.style.left =
+                `${x}px`;
+
+            wrapper.style.top =
+                `${y}px`;
+
+            wrapper.style.right =
+                "auto";
+
+            wrapper.style.bottom =
+                "auto";
+
+            wrapper.style.transform =
+                "none";
+
+        }
+    );
+
+
+    button.addEventListener(
+        "pointerup",
+        (event) => {
+
+            if (!dragging) {
+                return;
+            }
+
+
+            dragging = false;
+
+
+            button.releasePointerCapture(
+                event.pointerId
+            );
+
+
+            const rect =
+                wrapper.getBoundingClientRect();
+
+
+            localStorage.setItem(
+                "nlpokopia-favorites-position",
+                JSON.stringify({
+                    x: rect.left,
+                    y: rect.top
+                })
+            );
+
+
+            /*
+             * Voorkomen dat het paneel opent
+             * wanneer iemand alleen het hartje
+             * heeft versleept.
+             */
+
+            if (moved) {
+
+                const stopClick =
+                    (clickEvent) => {
+
+                        clickEvent.preventDefault();
+                        clickEvent.stopImmediatePropagation();
+
+                    };
+
+
+                button.addEventListener(
+                    "click",
+                    stopClick,
+                    {
+                        once: true,
+                        capture: true
+                    }
+                );
+
+            }
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   START
    ========================================================= */
 
 document.addEventListener(
     "DOMContentLoaded",
-    createFloatingFavoritesPanel
+    () => {
+
+        createFloatingFavoritesPanel();
+
+        makeFloatingFavoritesDraggable();
+
+    }
 );

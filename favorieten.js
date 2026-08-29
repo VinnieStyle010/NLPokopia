@@ -58,7 +58,19 @@ function getFavoritePokemon() {
     const favorites = getFavorites();
 
 
-    return favorites
+    /*
+     * Alleen Pokémon pakken.
+     * Habitatfavorieten worden apart verwerkt.
+     */
+
+    const pokemonFavorites =
+        favorites.filter(
+            (favorite) =>
+                favorite.favoriteType !== "habitat"
+        );
+
+
+    return pokemonFavorites
         .map((favorite) => {
 
             let pokemon = null;
@@ -77,6 +89,70 @@ function getFavoritePokemon() {
                 );
 
             }
+
+
+            /* Special Pokémon */
+
+            if (favorite.section === "event") {
+
+                pokemon = pokemonData.find(
+                    (item) =>
+                        item.number === favorite.number &&
+                        item.name === favorite.name &&
+                        item.event === true
+                );
+
+            }
+
+
+            /* Bubbly Basin */
+
+            if (favorite.section === "dlc") {
+
+                pokemon = pokemonDLC.find(
+                    (item) =>
+                        item.number === favorite.number &&
+                        item.name === favorite.name
+                );
+
+            }
+
+
+            if (!pokemon) {
+                return null;
+            }
+
+
+            return {
+                ...pokemon,
+                favoriteType: "pokemon",
+                section: favorite.section
+            };
+
+        })
+        .filter(Boolean);
+}
+
+
+/* =========================================================
+   FAVORIETE HABITATS
+   ========================================================= */
+
+function getFavoriteHabitats() {
+
+    return getFavorites()
+        .filter(
+            (favorite) =>
+                favorite.favoriteType === "habitat"
+        )
+        .sort(
+            (a, b) =>
+                a.name.localeCompare(
+                    b.name,
+                    "nl"
+                )
+        );
+}
 
 
             /* Special Pokémon */

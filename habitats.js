@@ -49,64 +49,55 @@ function splitHabitats(habitatText) {
    AFBEELDINGEN VAN BENODIGDHEDEN
    ========================================================= */
 
-const requirementImages = {
-
-    "Hoog gras (Tall Grass)":
-        "images/items/tall-grass.png",
-
-    "Wilde bloemen (Wildflowers)":
-        "images/items/wildflowers.png",
-
-    "Grote boom (Large Tree)":
-        "images/items/large-tree.png",
-
-    "Grote rots (Large Boulder)":
-        "images/items/large-boulder.png",
-
-    "Water":
-        "images/items/water.png",
-
-    "Zeegras (Seabed Tall Grass)":
-        "images/items/seabed-tall-grass.png",
-
-    "Zeebloemen (Seabed Flowers)":
-        "images/items/seabed-flowers.png",
-
-    "Klein koraal (Small Coral)":
-        "images/items/small-coral.png",
-
-    "Hoog koraal (Tall Coral)":
-        "images/items/tall-coral.png",
-
-    "Kleurrijk koraal (Colorful Coral)":
-        "images/items/colorful-coral.png"
-};
-
+/* =========================================================
+   AUTOMATISCHE ITEM AFBEELDINGEN
+   ========================================================= */
 
 function getRequirementImage(requirementText) {
 
-    const cleanText =
-        requirementText
-            .replace(/×\s*\d+/gi, "")
-            .trim();
-
-
-    for (const [itemName, image] of
-        Object.entries(requirementImages)) {
-
-        if (
-            cleanText
-                .toLowerCase()
-                .includes(
-                    itemName.toLowerCase()
-                )
-        ) {
-            return image;
-        }
+    if (!requirementText) {
+        return null;
     }
 
+    /*
+     * Pak Engelse naam tussen haakjes.
+     *
+     * Voorbeeld:
+     * Rood hoog gras (Red Tall Grass) ×4
+     * wordt:
+     * Red Tall Grass
+     */
 
-    return null;
+    const englishMatch =
+        requirementText.match(/\(([^()]*)\)/);
+
+    if (!englishMatch) {
+        return null;
+    }
+
+    const englishName =
+        englishMatch[1]
+            .trim()
+            .toLowerCase();
+
+
+    /*
+     * Maak er automatisch een bestandsnaam van.
+     *
+     * Red Tall Grass
+     * wordt:
+     * red-tall-grass.png
+     */
+
+    const fileName =
+        englishName
+            .replace(/['’]/g, "")
+            .replace(/&/g, "and")
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-+|-+$/g, "");
+
+
+    return `images/items/${fileName}.png`;
 }
 /* =========================================================
    BENODIGDHEDEN VAN EEN HABITAT

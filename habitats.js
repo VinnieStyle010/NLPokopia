@@ -44,31 +44,65 @@ function splitHabitats(habitatText) {
             !/^[A-Z]\)$/i.test(habitat)
         );
 }
-function getRequirementType(requirementText) {
+function getRequirementImage(requirementText) {
 
     if (!requirementText) {
-        return "item";
+        return null;
     }
 
-    const text = requirementText.toLowerCase();
+    const cleanText =
+        requirementText
+            .replace(/\s*[×x]\s*\d+\s*$/i, "")
+            .trim();
 
-    const conditions = [
-        "high-up location",
-        "hoge locatie",
-        "palette town only",
-        "alleen palette town",
-        "no habitat materials required",
-        "geen habitatmaterialen nodig"
-    ];
+    const end =
+        cleanText.lastIndexOf(")");
 
-    const isCondition =
-        conditions.some((condition) =>
-            text.includes(condition)
-        );
+    if (end === -1) {
+        return null;
+    }
 
-    return isCondition
-        ? "condition"
-        : "item";
+    let depth = 0;
+    let start = -1;
+
+    for (let i = end; i >= 0; i--) {
+
+        if (cleanText[i] === ")") {
+            depth++;
+        }
+
+        if (cleanText[i] === "(") {
+            depth--;
+
+            if (depth === 0) {
+                start = i;
+                break;
+            }
+        }
+    }
+
+    if (start === -1) {
+        return null;
+    }
+
+    const englishName =
+        cleanText
+            .slice(start + 1, end)
+            .trim()
+            .toLowerCase();
+
+    const fileName =
+        englishName
+            .replace(/['’]/g, "")
+            .replace(/&/g, "and")
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-+|-+$/g, "");
+
+    if (!fileName) {
+        return null;
+    }
+
+    return `images/items/${fileName}.png`;
 }
 /* =========================================================
    AUTOMATISCHE ITEM AFBEELDINGEN

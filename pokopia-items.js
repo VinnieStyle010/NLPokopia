@@ -144,7 +144,8 @@ const pokopiaItems = {
   "Lunch Box": { image: "images/items/lunch-box.png" },
   "Lumber": { image: "images/items/lumber.png" },
   "Lush Seaweed": { image: "images/items/lush-seaweed.png" },
-  "Luxury Bed": { image: "images/items/luxury-bed.png" },
+"Luxury Bed": { image: 
+  "https://pokesprite.tootaio.com/extras/pokopia-items/luxury-bed.png" },
   "Luxury dresser": { image: "images/items/luxury-dresser.png" },
   "Luxury Lamp": { image: "images/items/luxury-lamp.png" },
   "Luxury Sofa": { image: "images/items/luxury-sofa.png" },

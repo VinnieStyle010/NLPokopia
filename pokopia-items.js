@@ -422,6 +422,106 @@ const pokopiaItems = {
   "Dry Tail Grass": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/grass-flooring.png" }
 };
 
+
+// ========================================
+// HABITAT-ALIASES / WILDCARDS
+// Gebaseerd op de volledige habitatlijst.
+// ========================================
+const pokopiaItemAliases = {
+  "bunfire": "Bonfire",
+  "canvas": "Blank Canvas",
+  "fire pit": "Firepit",
+  "poke ball sofa": "Poké Ball Sofa",
+  "poke ball bed": "Poké Ball Bed",
+  "poke ball table": "Poké Ball Table",
+  "poke ball light": "Poké Ball Light",
+  "pedestal/exhibition stand": "Pedestal / Exhibition Stand",
+  "pedestal / exhibition stand": "Pedestal / Exhibition Stand",
+
+  "seat (any)": "Garden Chair",
+  "seat (wide)": "Garden Chair",
+  "table (any)": "Garden Table",
+  "table (large)": "Garden Table",
+  "bed (any)": "Plain Bed",
+  "doll (any)": "Pikachu Doll",
+  "hedge (any)": "Chansey Plant",
+  "potted plant (any)": "Chansey Plant",
+  "large tree (any)": "Large Palm Tree",
+  "tree stump (any)": "Tree Stump",
+  "berry tree (any)": "Berry Tree",
+  "streetlight (any)": "Garden Light",
+  "lighting (any)": "Desk Light",
+  "toy (any)": "Tire Toy",
+  "waste bin (any)": "Garbage Bin",
+  "sign (any)": "Sign",
+  "closet (any)": "Antique chest",
+  "dresser (any)": "Antique dresser",
+  "partition (any)": "Wood Partition",
+  "post (any)": "Utility Pole",
+  "stand (any)": "Side Table",
+  "music mat (any)": "CD Player",
+  "vegetable field (any)": "Vegetable Field",
+  "tall grass (any)": "Tall Grass",
+
+  "water": "Duckweed",
+  "ocean water": "Duckweed",
+  "muddy water": "Duckweed",
+  "hot-spring water": "Duckweed",
+  "water basin": "Duckweed",
+  "waterfall": "Duckweed",
+  "lava": "Molten Rock",
+  "high-up location": "Spotlight",
+
+  "cardboard boxes": "Cardboard Boxes",
+  "beach parasol": "Beach Parasol",
+  "berry basket": "Berry Basket",
+  "berry bed": "Berry Bed",
+  "berry table lamp": "Berry Table Lamp",
+  "bread oven": "Bread Oven",
+  "plated food": "Plated Food",
+  "wildflowers": "Wildflowers",
+  "yellow tall grass": "Yellow Tail Grass",
+  "red tall grass": "Red Tail Grass",
+  "pink tall grass": "Pink Tail Grass",
+  "dry tall grass": "Dry Tall Grass",
+  "smooth rock": "Smooth Rock",
+  "iron beam or column": "Iron Beam or Column",
+  "fried potatoes": "Fried Potatoes",
+  "hot-spring spot": "Hot-spring Spot",
+  "moonlight dance statue": "Moonlight Dance Statue",
+  "ship's wheel": "Ship's Wheel",
+  "arcade machine": "Arcade Machine",
+  "alarm clock": "Alarm Clock",
+  "big drum": "Big Drum",
+  "simple cushion": "Simple Cushion",
+  "crystal ball": "Crystal Ball",
+  "antique closet": "Antique Closet",
+  "antique bed": "Antique Bed",
+  "antique chair": "Antique Chair",
+  "canoe": "Canoe",
+  "bathtub": "Bathtub",
+  "bike": "Bike",
+  "furnace": "Furnace",
+  "log bed": "Log Bed",
+
+  "wing fossil (head)": "Wing Fossil (head)",
+  "wing fossil (right wing)": "Wing Fossil (right wing)",
+  "wing fossil (left wing)": "Wing Fossil (left wing)",
+  "wing fossil (body)": "Wing Fossil (body)",
+  "wing fossil (tail)": "Wing Fossil (tail)",
+  "armor fossil": "Armor Fossil",
+  "headbutt fossil": "Headbutt Fossil",
+  "shield fossil (head)": "Shield Fossil (Head)",
+  "shield fossil (body)": "Shield Fossil (Body)",
+  "despot fossil (head)": "Despot Fossil (Head)",
+  "despot fossil (body)": "Despot Fossil (Body)",
+  "tundra fossil (head)": "Tundra Fossil (Head)",
+  "tundra fossil (body)": "Tundra Fossil (Body)",
+  "skull fossil": "Skull Fossil",
+  "jaw fossil": "Jaw Fossil",
+  "sail fossil": "Sail Fossil"
+};
+
 function normalizePokopiaItemName(itemName) {
   return String(itemName || "")
     .normalize("NFD")
@@ -437,14 +537,45 @@ const pokopiaItemsByNormalizedName = Object.fromEntries(
   ])
 );
 
+function slugifyPokopiaItemName(itemName) {
+  return String(itemName || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\(any\)/gi, "")
+    .replace(/[’']/g, "")
+    .replace(/&/g, "and")
+    .replace(/[^a-zA-Z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .toLowerCase();
+}
+
 function getPokopiaItem(itemName) {
   if (!itemName) return null;
 
-  return (
+  const normalized = normalizePokopiaItemName(itemName);
+
+  const direct =
     pokopiaItems[itemName] ||
-    pokopiaItemsByNormalizedName[normalizePokopiaItemName(itemName)] ||
-    null
-  );
+    pokopiaItemsByNormalizedName[normalized];
+
+  if (direct) return direct;
+
+  const aliasTarget = pokopiaItemAliases[normalized];
+
+  if (aliasTarget) {
+    const aliasItem =
+      pokopiaItems[aliasTarget] ||
+      pokopiaItemsByNormalizedName[normalizePokopiaItemName(aliasTarget)];
+
+    if (aliasItem) return aliasItem;
+  }
+
+  const slug = slugifyPokopiaItemName(itemName);
+  if (!slug) return null;
+
+  return {
+    image: `https://pokesprite.tootaio.com/extras/pokopia-items/${slug}.png`
+  };
 }
 
 function getPokopiaItemImage(itemName) {

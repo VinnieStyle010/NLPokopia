@@ -362,6 +362,120 @@ const pokopiaItems = {
   ,"Tall Grass (any)": { image: "images/items/tall-grass.png" }
   ,"Bunfire": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/bonfire.png" }
 
+  // ========================================
+  // V7 - ontbrekende habitat-icons
+  // Exacte naam waar mogelijk; anders een
+  // logisch representatief, werkend Pokopia-icoon.
+  // ========================================
+
+  ,"Hedge (any)": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/chansey-plant.png"
+  },
+
+  ,"Hot-spring Water": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/duckweed.png"
+  },
+
+  ,"Berry Basket": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/berry-chair.png"
+  },
+
+  ,"High-up Location": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/spotlight.png"
+  },
+
+  ,"Berry Bed": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/plain-bed.png"
+  },
+
+  ,"Berry Table Lamp": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/luxury-lamp.png"
+  },
+
+  ,"Bread Oven": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/stone-fireplace.png"
+  },
+
+  ,"Plated Food": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/pizza.png"
+  },
+
+  ,"Wildflowers": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/mountain-flowers.png"
+  },
+
+  ,"Yellow Tail Grass": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/grass-flooring.png"
+  },
+
+  ,"Tail Grass": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/grass-flooring.png"
+  },
+
+  ,"Red Tail Grass": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/grass-flooring.png"
+  },
+
+  ,"Pink Tail Grass": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/grass-flooring.png"
+  },
+
+  ,"Tall Grass (any)": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/grass-flooring.png"
+  },
+
+  ,"Water": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/duckweed.png"
+  },
+
+  ,"Berry Tree (any)": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/chansey-plant.png"
+  },
+
+  ,"Tree Stump (any)": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/chansey-plant.png"
+  },
+
+  ,"Canoe": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/inflatable-boat.png"
+  },
+
+  ,"Bathtub": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/shower.png"
+  },
+
+  ,"Moonlight Dance Statue": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/sign.png"
+  },
+
+  ,"Pedestal / Exhibition Stand": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/sign.png"
+  },
+
+  ,"Despot Fossil (head)": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/skull-fossil.png"
+  },
+
+  ,"Body": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/skull-fossil.png"
+  },
+
+  ,"Legs": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/skull-fossil.png"
+  },
+
+  ,"Tail": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/skull-fossil.png"
+  },
+
+  ,"Beach Parasol": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/beach-volleyball-set.png"
+  },
+
+  ,"Seat (wide)": {
+    image: "https://pokesprite.tootaio.com/extras/pokopia-items/garden-chair.png"
+  }
+
 };
 
 function normalizePokopiaItemName(itemName) {

@@ -345,12 +345,33 @@ const pokopiaItems = {
   "Wing Fossil (tail)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wing-fossil-tail.png" }
 };
 
+// ========================================
+// NLPokopia - robuuste itemzoeker
+// Zoekt eerst exact en daarna zonder verschil
+// tussen hoofdletters/kleine letters.
+// ========================================
+
+const pokopiaItemsByLowerName = Object.fromEntries(
+  Object.entries(pokopiaItems).map(([name, data]) => [
+    name.toLowerCase(),
+    data
+  ])
+);
+
 function getPokopiaItem(itemName) {
-  return pokopiaItems[itemName] || null;
+  if (!itemName) {
+    return null;
+  }
+
+  return (
+    pokopiaItems[itemName] ||
+    pokopiaItemsByLowerName[itemName.trim().toLowerCase()] ||
+    null
+  );
 }
 
 function getPokopiaItemImage(itemName) {
-  return pokopiaItems[itemName]?.image || null;
+  return getPokopiaItem(itemName)?.image || null;
 }
 
 window.pokopiaItems = pokopiaItems;

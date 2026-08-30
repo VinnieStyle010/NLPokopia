@@ -392,6 +392,91 @@ const pokopiaItems = {
   ,"Beach Parasol": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/inflatable-boat.png" }
   ,"Seat (wide)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/garden-chair.png" }
 
+  // ========================================
+  // V9 - volgende serie ontbrekende habitat-icons
+  // ========================================
+  ,"Fried Potatoes": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/plated-food.png" }
+  ,"Iron Beam or Column": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/iron-pipes.png" }
+  ,"Bike": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/cart.png" }
+  ,"Furnace": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/smelting-furnace.png" }
+  ,"Arcade Machine": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/gaming-pc.png" }
+  ,"Log Bed": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/plain-bed.png" }
+  ,"Dry Tall Grass": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/grass-flooring.png" }
+  ,"Smooth Rock": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/large-boulder.png" }
+  ,"Lava": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/molten-rock.png" }
+  ,"Boo-in-the-Box": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/arcade-machine.png" }
+  ,"Hot-spring Spot": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/firepit.png" }
+  ,"Water basin": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/duckweed.png" }
+  ,"Ocean Water": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/duckweed.png" }
+  ,"Dresser (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/office-shelf.png" }
+  ,"Closet (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/office-shelf.png" }
+  ,"Mirror (large)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wall-mirror.png" }
+  ,"Canvas": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/blank-canvas.png" }
+  ,"Headbutt Fossil (Head)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wing-fossil-head.png" }
+  ,"Post (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/utility-pole.png" }
+  ,"Lost Relic (large)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/pedestal.png" }
+  ,"Campfire": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/bonfire.png" }
+
+  // ========================================
+  // V10 - complete correctieronde screenshots
+  // Ontbrekende habitat-eisen krijgen een
+  // werkend, logisch representatief Pokopia-icoon.
+  // ========================================
+
+  ,"Lighting (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/desk-light.png" }
+  ,"Muddy Water": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/duckweed.png" }
+
+  ,"Simple Cushion": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/cushion-bed.png" }
+  ,"Crystal Ball": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/crystal-fragment.png" }
+
+  ,"Antique Closet": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/antique-chest.png" }
+  ,"Antique Bed": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/plain-bed.png" }
+  ,"Antique Chair": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/chic-chair.png" }
+
+  ,"Armor Fossil": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/armor-fragment.png" }
+  ,"Shield Fossil (Head)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wing-fossil-head.png" }
+  ,"Tundra Fossil (Head)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/sail-fossil.png" }
+  ,"Headbutt Fossil (Head)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/skull-fossil.png" }
+  ,"Despot Fossil (Head)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/jaw-fossil.png" }
+
+  ,"Tail": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wing-fossil-tail.png" }
+  ,"Body": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wing-fossil-body.png" }
+  ,"Legs": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wing-fossil-left-wing.png" }
+
+  ,"Barrel": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/metal-drum.png" }
+  ,"Ship's Wheel": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/cannon.png" }
+
+  ,"Partition (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wood-partition.png" }
+  ,"Music Mat (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/cd-player.png" }
+
+  ,"Alarm Clock": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/desk-light.png" }
+  ,"Big Drum": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/metal-drum.png" }
+
+  ,"Stand (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/side-table.png" }
+  ,"Speakers": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/speaker.png" }
+
+  ,"Waterfall": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/duckweed.png" }
+  ,"Beach Chair": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/garden-chair.png" }
+
+  ,"Yellow Tail Grass": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/grass-flooring.png" }
+  ,"Tail Grass": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/grass-flooring.png" }
+  ,"Red Tail Grass": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/grass-flooring.png" }
+  ,"Pink Tail Grass": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/grass-flooring.png" }
+  ,"Dry Tail Grass": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/grass-flooring.png" }
+
+  ,"Ocean Water": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/duckweed.png" }
+  ,"Water basin": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/duckweed.png" }
+
+  ,"Boo-in-the-Box": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/arcade-machine.png" }
+  ,"Campfire": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/bonfire.png" }
+  ,"Furnace": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/bonfire.png" }
+
+  ,"Post (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/utility-pole.png" }
+  ,"Lost Relic (large)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/big-treasure-chest.png" }
+
+  ,"Fried Potatoes": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/plated-food.png" }
+  ,"Iron Beam or Column": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/iron-pipes.png" }
+
 };
 
 function normalizePokopiaItemName(itemName) {

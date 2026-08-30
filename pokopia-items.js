@@ -342,30 +342,33 @@ const pokopiaItems = {
   "Wing Fossil (head)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wing-fossil-head.png" },
   "Wing Fossil (left wing)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wing-fossil-left-wing.png" },
   "Wing Fossil (right wing)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wing-fossil-right-wing.png" },
-  "Wing Fossil (tail)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wing-fossil-tail.png" }
+  "Wing Fossil (tail)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wing-fossil-tail.png" },
+  "Cardboard Boxes": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/cardboard-boxes.png" },
+  "Waste Bin (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/garbage-bin.png" },
+  "Sign (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/sign.png" }
 };
 
-// ========================================
-// NLPokopia - robuuste itemzoeker
-// Zoekt eerst exact en daarna zonder verschil
-// tussen hoofdletters/kleine letters.
-// ========================================
+function normalizePokopiaItemName(itemName) {
+  return String(itemName || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim()
+    .toLowerCase();
+}
 
-const pokopiaItemsByLowerName = Object.fromEntries(
+const pokopiaItemsByNormalizedName = Object.fromEntries(
   Object.entries(pokopiaItems).map(([name, data]) => [
-    name.toLowerCase(),
+    normalizePokopiaItemName(name),
     data
   ])
 );
 
 function getPokopiaItem(itemName) {
-  if (!itemName) {
-    return null;
-  }
+  if (!itemName) return null;
 
   return (
     pokopiaItems[itemName] ||
-    pokopiaItemsByLowerName[itemName.trim().toLowerCase()] ||
+    pokopiaItemsByNormalizedName[normalizePokopiaItemName(itemName)] ||
     null
   );
 }

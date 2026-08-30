@@ -346,6 +346,22 @@ const pokopiaItems = {
   "Cardboard Boxes": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/cardboard-boxes.png" },
   "Waste Bin (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/garbage-bin.png" },
   "Sign (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/sign.png" }
+  // ========================================
+  // Algemene/alternatieve habitat-eisen
+  // Deze gebruiken een representatief icoon.
+  // ========================================
+  ,"Table (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/garden-table.png" }
+  ,"Seat (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/garden-chair.png" }
+  ,"Bed (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/plain-bed.png" }
+  ,"Doll (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/pikachu-doll.png" }
+  ,"Hedge (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/wall-plant.png" }
+  ,"Potted Plant (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/chansey-plant.png" }
+  ,"Toy (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/tire-toy.png" }
+  ,"Streetlight (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/garden-light.png" }
+  ,"Large Tree (any)": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/large-palm-tree.png" }
+  ,"Tall Grass (any)": { image: "images/items/tall-grass.png" }
+  ,"Bunfire": { image: "https://pokesprite.tootaio.com/extras/pokopia-items/bonfire.png" }
+
 };
 
 function normalizePokopiaItemName(itemName) {

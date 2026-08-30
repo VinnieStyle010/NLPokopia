@@ -45,6 +45,61 @@ function splitHabitats(habitatText) {
         );
 
 }
+// =========================================================
+// ITEMAFBEELDING UIT CENTRALE ITEMDATABASE
+// =========================================================
+
+function getRequirementImage(requirementText) {
+
+    if (!requirementText) {
+        return null;
+    }
+
+    const cleanText =
+        requirementText
+            .replace(/\s*[×x]\s*\d+\s*$/i, "")
+            .trim();
+
+    const end = cleanText.lastIndexOf(")");
+
+    if (end === -1) {
+        return null;
+    }
+
+    let depth = 0;
+    let start = -1;
+
+    for (let i = end; i >= 0; i--) {
+
+        if (cleanText[i] === ")") {
+            depth++;
+        }
+
+        if (cleanText[i] === "(") {
+            depth--;
+
+            if (depth === 0) {
+                start = i;
+                break;
+            }
+        }
+    }
+
+    if (start === -1) {
+        return null;
+    }
+
+    const englishName =
+        cleanText
+            .slice(start + 1, end)
+            .trim();
+
+    if (typeof getPokopiaItemImage !== "function") {
+        return null;
+    }
+
+    return getPokopiaItemImage(englishName);
+}
 function splitRequirementItems(text) {
 
     if (!text) {
